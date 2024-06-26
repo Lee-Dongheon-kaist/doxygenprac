@@ -1,0 +1,7 @@
+<map id="Captain::Node::EnhancedMicroLink::GetRecordings" name="Captain::Node::EnhancedMicroLink::GetRecordings">
+<area shape="rect" id="Node000001" title=" " alt="" coords="276,39,477,81"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_uniform_link.html#a165db1b76898984bca4565664be65075" title=" " alt="" coords="27,5,206,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="260,48,206,41,207,36,261,42"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_node_1_1_uniform_intersection_link.html#a8f2f7fc4cf52399fa65df856c98d66b0" title=" " alt="" coords="5,72,228,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="261,78,229,82,228,76,260,72"/>
+</map>

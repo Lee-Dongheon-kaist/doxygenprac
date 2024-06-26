@@ -1,0 +1,9 @@
+<map id="Captain::Engine::ReserveVehicleOutput" name="Captain::Engine::ReserveVehicleOutput">
+<area shape="rect" id="Node000001" title=" " alt="" coords="429,23,596,65"/>
+<area shape="rect" id="Node000002" href="$namespace_captain.html#a28d05f81eb9a6ae94957ef0d19dbadae" title=" " alt="" coords="150,5,381,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="413,37,381,33,382,28,414,31"/>
+<area shape="rect" id="Node000004" href="$namespace_captain.html#ab20cda797927448a2db09ebb3000e9fe" title=" " alt="" coords="156,56,375,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="414,57,376,61,375,55,413,51"/>
+<area shape="rect" id="Node000003" href="$_unit_tests_offline_2_tests_8cpp.html#ac3f953ba175aad09655a164a3cd6d61e" title=" " alt="" coords="5,5,102,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="134,21,102,21,102,16,134,16"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Captain::Node::SinkUnit::GetLeadingVehiclePtr" name="Captain::Node::SinkUnit::GetLeadingVehiclePtr">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,166,81"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_util_1_1_vehicle_queue.html#ae9b0282bd6a1ce223d2d8d4e2d4f8ea8" title=" " alt="" coords="214,5,395,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,45,198,40,198,45,167,50"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_util_1_1_vehicle_queue.html#a3d4c31f703ddc93aec3976f825ed7b23" title=" " alt="" coords="214,72,395,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="167,70,198,75,198,80,166,75"/>
+</map>

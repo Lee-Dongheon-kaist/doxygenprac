@@ -1,0 +1,5 @@
+<map id="Captain::SpinLockVehicleQueue" name="Captain::SpinLockVehicleQueue">
+<area shape="rect" id="Node000001" title=": Concurrent queue class wrapper for storing vehicles" alt="" coords="19,421,193,720"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_i_vehicle_queue.html" title=" " alt="" coords="5,5,207,373"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,388,109,421,103,421,103,388"/>
+</map>

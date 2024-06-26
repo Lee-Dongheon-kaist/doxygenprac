@@ -1,0 +1,9 @@
+<map id="Includes/captain/Network/UnitConnectionInfo.hpp" name="Includes/captain/Network/UnitConnectionInfo.hpp">
+<area shape="rect" id="Node000001" title=": This file contains declarations about Meso, which is used in computing meso algorithms" alt="" coords="9,5,175,48"/>
+<area shape="rect" id="Node000002" href="$_shared_ptr_8hpp.html" title=" " alt="" coords="5,96,179,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,49,95,80,89,80,89,49"/>
+<area shape="rect" id="Node000003" href="$_shared_ptr-_decl_8hpp.html" title=" " alt="" coords="18,171,166,213"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="95,123,95,155,89,155,89,123"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="62,261,122,288"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="95,214,95,245,89,245,89,214"/>
+</map>

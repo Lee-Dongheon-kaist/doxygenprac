@@ -1,0 +1,39 @@
+\doxysection{Includes/captain/\+Util/\+Enum\+To\+String\+Stream.hpp File Reference}
+\hypertarget{_enum_to_string_stream_8hpp}{}\label{_enum_to_string_stream_8hpp}\index{Includes/captain/Util/EnumToStringStream.hpp@{Includes/captain/Util/EnumToStringStream.hpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for Enum\+To\+String\+Stream.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{_enum_to_string_stream_8hpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_captain_1_1_enum_strings}{Captain\+::\+Enum\+Strings$<$ T $>$}}
+\item 
+struct \mbox{\hyperlink{struct_captain_1_1_enum_ref_holder}{Captain\+::\+Enum\+Ref\+Holder$<$ T $>$}}
+\item 
+struct \mbox{\hyperlink{struct_captain_1_1_enum_const_ref_holder}{Captain\+::\+Enum\+Const\+Ref\+Holder$<$ T $>$}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_captain}{Captain}}
+\begin{DoxyCompactList}\small\item\em \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::ostream \& \mbox{\hyperlink{namespace_captain_a23b8cf469d6f22741e56a73b194d9cdc}{Captain\+::operator$<$$<$}} (std\+::ostream \&str, \mbox{\hyperlink{struct_captain_1_1_enum_const_ref_holder}{Enum\+Const\+Ref\+Holder}}$<$ T $>$ const \&data)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::istream \& \mbox{\hyperlink{namespace_captain_a0bc01a1e836a9e451d98379548edea95}{Captain\+::operator$>$$>$}} (std\+::istream \&str, \mbox{\hyperlink{struct_captain_1_1_enum_ref_holder}{Enum\+Ref\+Holder}}$<$ T $>$ const \&data)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{struct_captain_1_1_enum_const_ref_holder}{Enum\+Const\+Ref\+Holder}}$<$ T $>$ \mbox{\hyperlink{namespace_captain_a36b9f382ffe89fd646678c552751c226}{Captain\+::enum\+To\+String}} (T const \&e)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{struct_captain_1_1_enum_ref_holder}{Enum\+Ref\+Holder}}$<$ T $>$ \mbox{\hyperlink{namespace_captain_a462e1649c17d5c5c0fb3ef3e75732035}{Captain\+::\+Enum\+From\+String\+Stream}} (T \&e)
+\end{DoxyCompactItemize}

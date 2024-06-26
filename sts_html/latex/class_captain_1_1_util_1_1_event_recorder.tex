@@ -1,0 +1,560 @@
+\doxysection{Captain\+::Util\+::Event\+Recorder Class Reference}
+\hypertarget{class_captain_1_1_util_1_1_event_recorder}{}\label{class_captain_1_1_util_1_1_event_recorder}\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+
+
+{\ttfamily \#include $<$Event\+Recorder.\+hpp$>$}
+
+
+
+Collaboration diagram for Captain\+::Util\+::Event\+Recorder\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_event_recorder__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_ac1af62c01ae816dfa357b0d29667c1ac}{Event\+Recorder}} (std\+::string prefix, std\+::filesystem\+::path file\+Path)
+\item 
+\mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_aec9ab888d4156ad26cfc1b802180f098}{Event\+Recorder}} (std\+::filesystem\+::path file\+Path)
+\item 
+\mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_a31c038636832e9efea6c45d9f7c6ae9c}{\texorpdfstring{$\sim$}{\string~}\+Event\+Recorder}} ()=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_a0dabdb2470d87fdc2c1847960922212c}{Event\+Recorder}} (const \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Event\+Recorder}} \&event\+Recorder)=delete
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_a6e599cfef588ee0798e16bd6a0f7d5ff}{Event\+Recorder}} (\mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Event\+Recorder}} \&\&event\+Recorder) noexcept
+\item 
+\mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Event\+Recorder}} \& \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_afc398251a75830916adcaafdfd86f50b}{operator=}} (const \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Event\+Recorder}} \&event\+Recorder)
+\item 
+\mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Event\+Recorder}} \& \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_a4b49e0be29be8afa70b126f7d9a12e17}{operator=}} (\mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Event\+Recorder}} \&\&event\+Recorder) noexcept
+\item 
+std\+::filesystem\+::path \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_a91a3dbb16ce65c52c74b3b819d7f4697}{Get\+File\+Path}} () const
+\item 
+bool \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_a5d2774e8b585a63c98ff5ec7fd3dc479}{Remove\+Existing\+File}} (const std\+::filesystem\+::path \&record\+Path) const
+\item 
+std\+::deque$<$ \mbox{\hyperlink{struct_captain_1_1_lane_record_info}{Lane\+Record\+Info}} $>$ \& \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_a11965d1c7100bb072c5e168555458ce2}{Get\+Lane\+Record\+Info\+Vector}} ()
+\item 
+std\+::deque$<$ \mbox{\hyperlink{struct_captain_1_1_vehicle_record_info}{Vehicle\+Record\+Info}} $>$ \& \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_aebe2528f1d9bbf0bd6efc4f1efa9996b}{Get\+Vehicle\+Record\+Info\+Vector}} ()
+\item 
+std\+::deque$<$ \mbox{\hyperlink{struct_captain_1_1_station_record_info}{Station\+Record\+Info}} $>$ \& \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_ad55e35e6c3c3363f1cf74c4efc904e30}{Get\+Station\+Record\+Info\+Vector}} ()
+\item 
+std\+::deque$<$ \mbox{\hyperlink{struct_captain_1_1_sink_record_info}{Sink\+Record\+Info}} $>$ \& \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_a174a4de39f771b1ffdd4fef4d9837033}{Get\+Sink\+Record\+Info\+Vector}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_a121776b415bbba3555aee47bc481c8d1}{Write\+Vehicle\+To\+File}} () const
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_af0ebef17ff894c2fa75a4e3e72aea667}{Write\+Lane\+To\+File}} () const
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_af2f57ac92d127c0353ddd5c897557f1e}{Write\+Station\+To\+File}} () const
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_ac13754621cc5d66b1357a97fd5492d4b}{Write\+Simulation\+To\+File}} () const
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_a745210bbc0f7c8904631e1d0bbb8775d}{Write\+Sink\+To\+File}} () const
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_a7b50ab5f3c04e09333b73ec7d45e0121}{Extract\+Vehicle\+To\+File}} (\mbox{\hyperlink{struct_captain_1_1_vehicle_descriptor}{Vehicle\+Descriptor}} descriptor, \mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} path, std\+::vector$<$ double $>$ lanepriority, int num\+Available\+Passergers, int num\+Passergers) const
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_abe1859d290f66b875b6cfa236aba465f}{Record\+Vehicle}} (const \mbox{\hyperlink{struct_captain_1_1_vehicle_record_info}{Vehicle\+Record\+Info}} \&vehicle\+Record\+Info)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_a966e6090c95e5d62a5515f5760743d85}{Record\+Lane}} (const \mbox{\hyperlink{struct_captain_1_1_lane_record_info}{Lane\+Record\+Info}} \&meso\+Record\+Info)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_a60a8f3bd61bd6a5f68a82a1b61107c98}{Record\+Station}} (const \mbox{\hyperlink{struct_captain_1_1_station_record_info}{Station\+Record\+Info}} \&station\+Record\+Info)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_a10c4ae161722c6df764462410d111268}{Record\+Sink}} (const \mbox{\hyperlink{struct_captain_1_1_sink_record_info}{Sink\+Record\+Info}} \&sink\+Record\+Info)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer}{Xml\+Writer}} \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_a85acb582ed86a019564113a4b00e67e1}{Vehicle\+XML}}
+\item 
+static \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer}{Xml\+Writer}} \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_a7afd79d89695d473dbc91fd51815f83e}{Lane\+XML}}
+\item 
+static \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer}{Xml\+Writer}} \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_a4b8e552e2c6bbc7d5553a5c0b621b857}{Station\+XML}}
+\item 
+static \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer}{Xml\+Writer}} \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_aea2ada3e9b74801474a848b264292a94}{Simulation\+XML}}
+\item 
+static \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer}{Xml\+Writer}} \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_add76c9abd60e28ed210742afd15b11eb}{Sink\+XML}}
+\item 
+static \mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer}{Json\+Writer}} \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_accb518b9d933cbf33f18875cc867c1c3}{Vehicle\+Json\+Writer}}
+\item 
+static \mbox{\hyperlink{class_captain_1_1_util_1_1_json_reader}{Json\+Reader}} \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_a792cd65007b80dd871e9150f94c7d700}{Vehicle\+Json\+Reader}}
+\item 
+static \mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer}{Json\+Writer}} \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_acea25f5c954486b6ce6eb7220dbb0725}{Route\+Json\+Writer}}
+\item 
+static \mbox{\hyperlink{class_captain_1_1_util_1_1_json_reader}{Json\+Reader}} \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder_aa2990cc3c3cee677008d7930fa597b28}{Route\+Json\+Reader}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_ac1af62c01ae816dfa357b0d29667c1ac}\label{class_captain_1_1_util_1_1_event_recorder_ac1af62c01ae816dfa357b0d29667c1ac} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!EventRecorder@{EventRecorder}}
+\index{EventRecorder@{EventRecorder}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{EventRecorder()}{EventRecorder()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Captain\+::\+Util\+::\+Event\+Recorder\+::\+Event\+Recorder (\begin{DoxyParamCaption}\item[{std\+::string}]{prefix,  }\item[{std\+::filesystem\+::path}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em prefix} & \+: Prefix to specify this recorder. This is used as prefix \\
+\hline
+{\em file\+Path} & \+: path to store log file when recording \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_event_recorder_ac1af62c01ae816dfa357b0d29667c1ac_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_aec9ab888d4156ad26cfc1b802180f098}\label{class_captain_1_1_util_1_1_event_recorder_aec9ab888d4156ad26cfc1b802180f098} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!EventRecorder@{EventRecorder}}
+\index{EventRecorder@{EventRecorder}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{EventRecorder()}{EventRecorder()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Captain\+::\+Util\+::\+Event\+Recorder\+::\+Event\+Recorder (\begin{DoxyParamCaption}\item[{std\+::filesystem\+::path}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_event_recorder_aec9ab888d4156ad26cfc1b802180f098_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_a31c038636832e9efea6c45d9f7c6ae9c}\label{class_captain_1_1_util_1_1_event_recorder_a31c038636832e9efea6c45d9f7c6ae9c} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!````~EventRecorder@{\texorpdfstring{$\sim$}{\string~}EventRecorder}}
+\index{````~EventRecorder@{\texorpdfstring{$\sim$}{\string~}EventRecorder}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}EventRecorder()}{\string~EventRecorder()}}
+{\footnotesize\ttfamily Captain\+::\+Util\+::\+Event\+Recorder\+::\texorpdfstring{$\sim$}{\string~}\+Event\+Recorder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_a0dabdb2470d87fdc2c1847960922212c}\label{class_captain_1_1_util_1_1_event_recorder_a0dabdb2470d87fdc2c1847960922212c} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!EventRecorder@{EventRecorder}}
+\index{EventRecorder@{EventRecorder}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{EventRecorder()}{EventRecorder()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Captain\+::\+Util\+::\+Event\+Recorder\+::\+Event\+Recorder (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Event\+Recorder}} \&}]{event\+Recorder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Move constructor. 
+
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_a6e599cfef588ee0798e16bd6a0f7d5ff}\label{class_captain_1_1_util_1_1_event_recorder_a6e599cfef588ee0798e16bd6a0f7d5ff} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!EventRecorder@{EventRecorder}}
+\index{EventRecorder@{EventRecorder}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{EventRecorder()}{EventRecorder()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Captain\+::\+Util\+::\+Event\+Recorder\+::\+Event\+Recorder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Event\+Recorder}} \&\&}]{event\+Recorder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_a7b50ab5f3c04e09333b73ec7d45e0121}\label{class_captain_1_1_util_1_1_event_recorder_a7b50ab5f3c04e09333b73ec7d45e0121} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!ExtractVehicleToFile@{ExtractVehicleToFile}}
+\index{ExtractVehicleToFile@{ExtractVehicleToFile}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{ExtractVehicleToFile()}{ExtractVehicleToFile()}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Event\+Recorder\+::\+Extract\+Vehicle\+To\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_descriptor}{Vehicle\+Descriptor}}}]{descriptor,  }\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}}}]{path,  }\item[{std\+::vector$<$ double $>$}]{lanepriority,  }\item[{int}]{num\+Available\+Passergers,  }\item[{int}]{num\+Passergers }\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_event_recorder_a7b50ab5f3c04e09333b73ec7d45e0121_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_event_recorder_a7b50ab5f3c04e09333b73ec7d45e0121_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_a91a3dbb16ce65c52c74b3b819d7f4697}\label{class_captain_1_1_util_1_1_event_recorder_a91a3dbb16ce65c52c74b3b819d7f4697} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!GetFilePath@{GetFilePath}}
+\index{GetFilePath@{GetFilePath}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{GetFilePath()}{GetFilePath()}}
+{\footnotesize\ttfamily std\+::filesystem\+::path Captain\+::\+Util\+::\+Event\+Recorder\+::\+Get\+File\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets file path to record the states \begin{DoxyReturn}{Returns}
+\+: filepath to record the states 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_event_recorder_a91a3dbb16ce65c52c74b3b819d7f4697_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_a11965d1c7100bb072c5e168555458ce2}\label{class_captain_1_1_util_1_1_event_recorder_a11965d1c7100bb072c5e168555458ce2} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!GetLaneRecordInfoVector@{GetLaneRecordInfoVector}}
+\index{GetLaneRecordInfoVector@{GetLaneRecordInfoVector}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{GetLaneRecordInfoVector()}{GetLaneRecordInfoVector()}}
+{\footnotesize\ttfamily std\+::deque$<$ \mbox{\hyperlink{struct_captain_1_1_lane_record_info}{Lane\+Record\+Info}} $>$ \& Captain\+::\+Util\+::\+Event\+Recorder\+::\+Get\+Lane\+Record\+Info\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_event_recorder_a11965d1c7100bb072c5e168555458ce2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_a174a4de39f771b1ffdd4fef4d9837033}\label{class_captain_1_1_util_1_1_event_recorder_a174a4de39f771b1ffdd4fef4d9837033} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!GetSinkRecordInfoVector@{GetSinkRecordInfoVector}}
+\index{GetSinkRecordInfoVector@{GetSinkRecordInfoVector}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{GetSinkRecordInfoVector()}{GetSinkRecordInfoVector()}}
+{\footnotesize\ttfamily std\+::deque$<$ \mbox{\hyperlink{struct_captain_1_1_sink_record_info}{Sink\+Record\+Info}} $>$ \& Captain\+::\+Util\+::\+Event\+Recorder\+::\+Get\+Sink\+Record\+Info\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_ad55e35e6c3c3363f1cf74c4efc904e30}\label{class_captain_1_1_util_1_1_event_recorder_ad55e35e6c3c3363f1cf74c4efc904e30} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!GetStationRecordInfoVector@{GetStationRecordInfoVector}}
+\index{GetStationRecordInfoVector@{GetStationRecordInfoVector}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{GetStationRecordInfoVector()}{GetStationRecordInfoVector()}}
+{\footnotesize\ttfamily std\+::deque$<$ \mbox{\hyperlink{struct_captain_1_1_station_record_info}{Station\+Record\+Info}} $>$ \& Captain\+::\+Util\+::\+Event\+Recorder\+::\+Get\+Station\+Record\+Info\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_event_recorder_ad55e35e6c3c3363f1cf74c4efc904e30_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_aebe2528f1d9bbf0bd6efc4f1efa9996b}\label{class_captain_1_1_util_1_1_event_recorder_aebe2528f1d9bbf0bd6efc4f1efa9996b} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!GetVehicleRecordInfoVector@{GetVehicleRecordInfoVector}}
+\index{GetVehicleRecordInfoVector@{GetVehicleRecordInfoVector}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{GetVehicleRecordInfoVector()}{GetVehicleRecordInfoVector()}}
+{\footnotesize\ttfamily std\+::deque$<$ \mbox{\hyperlink{struct_captain_1_1_vehicle_record_info}{Vehicle\+Record\+Info}} $>$ \& Captain\+::\+Util\+::\+Event\+Recorder\+::\+Get\+Vehicle\+Record\+Info\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_event_recorder_aebe2528f1d9bbf0bd6efc4f1efa9996b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_afc398251a75830916adcaafdfd86f50b}\label{class_captain_1_1_util_1_1_event_recorder_afc398251a75830916adcaafdfd86f50b} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Event\+Recorder}} \& Captain\+::\+Util\+::\+Event\+Recorder\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Event\+Recorder}} \&}]{event\+Recorder }\end{DoxyParamCaption})}
+
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_a4b49e0be29be8afa70b126f7d9a12e17}\label{class_captain_1_1_util_1_1_event_recorder_a4b49e0be29be8afa70b126f7d9a12e17} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Event\+Recorder}} \& Captain\+::\+Util\+::\+Event\+Recorder\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Event\+Recorder}} \&\&}]{event\+Recorder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Move assign operator 
+\begin{DoxyParams}{Parameters}
+{\em event\+Recorder} & \+: event\+Recorder \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: reference to current unit 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_a966e6090c95e5d62a5515f5760743d85}\label{class_captain_1_1_util_1_1_event_recorder_a966e6090c95e5d62a5515f5760743d85} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!RecordLane@{RecordLane}}
+\index{RecordLane@{RecordLane}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{RecordLane()}{RecordLane()}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Event\+Recorder\+::\+Record\+Lane (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_lane_record_info}{Lane\+Record\+Info}} \&}]{meso\+Record\+Info }\end{DoxyParamCaption})}
+
+Record information 
+\begin{DoxyParams}{Parameters}
+{\em meso\+Record\+Info} & \+: information to record for meso \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_event_recorder_a966e6090c95e5d62a5515f5760743d85_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_a10c4ae161722c6df764462410d111268}\label{class_captain_1_1_util_1_1_event_recorder_a10c4ae161722c6df764462410d111268} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!RecordSink@{RecordSink}}
+\index{RecordSink@{RecordSink}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{RecordSink()}{RecordSink()}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Event\+Recorder\+::\+Record\+Sink (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_sink_record_info}{Sink\+Record\+Info}} \&}]{sink\+Record\+Info }\end{DoxyParamCaption})}
+
+Record information 
+\begin{DoxyParams}{Parameters}
+{\em sink\+Record\+Info} & \+: information to record for micro \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_event_recorder_a10c4ae161722c6df764462410d111268_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_a60a8f3bd61bd6a5f68a82a1b61107c98}\label{class_captain_1_1_util_1_1_event_recorder_a60a8f3bd61bd6a5f68a82a1b61107c98} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!RecordStation@{RecordStation}}
+\index{RecordStation@{RecordStation}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{RecordStation()}{RecordStation()}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Event\+Recorder\+::\+Record\+Station (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_station_record_info}{Station\+Record\+Info}} \&}]{station\+Record\+Info }\end{DoxyParamCaption})}
+
+Record information 
+\begin{DoxyParams}{Parameters}
+{\em station\+Record\+Info} & \+: information to record for micro \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_event_recorder_a60a8f3bd61bd6a5f68a82a1b61107c98_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_abe1859d290f66b875b6cfa236aba465f}\label{class_captain_1_1_util_1_1_event_recorder_abe1859d290f66b875b6cfa236aba465f} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!RecordVehicle@{RecordVehicle}}
+\index{RecordVehicle@{RecordVehicle}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{RecordVehicle()}{RecordVehicle()}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Event\+Recorder\+::\+Record\+Vehicle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_vehicle_record_info}{Vehicle\+Record\+Info}} \&}]{vehicle\+Record\+Info }\end{DoxyParamCaption})}
+
+Records information for micro 
+\begin{DoxyParams}{Parameters}
+{\em vehicle\+Record\+Info} & \+: information to record for micro \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_event_recorder_abe1859d290f66b875b6cfa236aba465f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_a5d2774e8b585a63c98ff5ec7fd3dc479}\label{class_captain_1_1_util_1_1_event_recorder_a5d2774e8b585a63c98ff5ec7fd3dc479} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!RemoveExistingFile@{RemoveExistingFile}}
+\index{RemoveExistingFile@{RemoveExistingFile}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{RemoveExistingFile()}{RemoveExistingFile()}}
+{\footnotesize\ttfamily bool Captain\+::\+Util\+::\+Event\+Recorder\+::\+Remove\+Existing\+File (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{record\+Path }\end{DoxyParamCaption}) const}
+
+Creates file with current filename If file already exists in the path, it automatically removes the file and replaces it with new one \begin{DoxyReturn}{Returns}
+\+: True if new file was created without removal False if old file was removed 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_event_recorder_a5d2774e8b585a63c98ff5ec7fd3dc479_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_af0ebef17ff894c2fa75a4e3e72aea667}\label{class_captain_1_1_util_1_1_event_recorder_af0ebef17ff894c2fa75a4e3e72aea667} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!WriteLaneToFile@{WriteLaneToFile}}
+\index{WriteLaneToFile@{WriteLaneToFile}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{WriteLaneToFile()}{WriteLaneToFile()}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Event\+Recorder\+::\+Write\+Lane\+To\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_event_recorder_af0ebef17ff894c2fa75a4e3e72aea667_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_event_recorder_af0ebef17ff894c2fa75a4e3e72aea667_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_ac13754621cc5d66b1357a97fd5492d4b}\label{class_captain_1_1_util_1_1_event_recorder_ac13754621cc5d66b1357a97fd5492d4b} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!WriteSimulationToFile@{WriteSimulationToFile}}
+\index{WriteSimulationToFile@{WriteSimulationToFile}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{WriteSimulationToFile()}{WriteSimulationToFile()}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Event\+Recorder\+::\+Write\+Simulation\+To\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_a745210bbc0f7c8904631e1d0bbb8775d}\label{class_captain_1_1_util_1_1_event_recorder_a745210bbc0f7c8904631e1d0bbb8775d} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!WriteSinkToFile@{WriteSinkToFile}}
+\index{WriteSinkToFile@{WriteSinkToFile}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{WriteSinkToFile()}{WriteSinkToFile()}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Event\+Recorder\+::\+Write\+Sink\+To\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_event_recorder_a745210bbc0f7c8904631e1d0bbb8775d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_event_recorder_a745210bbc0f7c8904631e1d0bbb8775d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_af2f57ac92d127c0353ddd5c897557f1e}\label{class_captain_1_1_util_1_1_event_recorder_af2f57ac92d127c0353ddd5c897557f1e} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!WriteStationToFile@{WriteStationToFile}}
+\index{WriteStationToFile@{WriteStationToFile}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{WriteStationToFile()}{WriteStationToFile()}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Event\+Recorder\+::\+Write\+Station\+To\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_event_recorder_af2f57ac92d127c0353ddd5c897557f1e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_event_recorder_af2f57ac92d127c0353ddd5c897557f1e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_a121776b415bbba3555aee47bc481c8d1}\label{class_captain_1_1_util_1_1_event_recorder_a121776b415bbba3555aee47bc481c8d1} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!WriteVehicleToFile@{WriteVehicleToFile}}
+\index{WriteVehicleToFile@{WriteVehicleToFile}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{WriteVehicleToFile()}{WriteVehicleToFile()}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Event\+Recorder\+::\+Write\+Vehicle\+To\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_event_recorder_a121776b415bbba3555aee47bc481c8d1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_event_recorder_a121776b415bbba3555aee47bc481c8d1_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_a7afd79d89695d473dbc91fd51815f83e}\label{class_captain_1_1_util_1_1_event_recorder_a7afd79d89695d473dbc91fd51815f83e} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!LaneXML@{LaneXML}}
+\index{LaneXML@{LaneXML}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{LaneXML}{LaneXML}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer}{Xml\+Writer}} Captain\+::\+Util\+::\+Event\+Recorder\+::\+Lane\+XML\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ }
+\DoxyCodeLine{\ \ \ \ XmlWriter(\mbox{\hyperlink{namespace_captain_1_1_recorder_params_a46a9c2963bb4cb0603923365b64cc02e}{RecorderParams::UniformSavePath}})}
+
+\end{DoxyCode}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_aa2990cc3c3cee677008d7930fa597b28}\label{class_captain_1_1_util_1_1_event_recorder_aa2990cc3c3cee677008d7930fa597b28} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!RouteJsonReader@{RouteJsonReader}}
+\index{RouteJsonReader@{RouteJsonReader}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{RouteJsonReader}{RouteJsonReader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_util_1_1_json_reader}{Json\+Reader}} Captain\+::\+Util\+::\+Event\+Recorder\+::\+Route\+Json\+Reader\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ }
+\DoxyCodeLine{\ \ \ \ JsonReader(STSIO::RouteJSONPath)}
+
+\end{DoxyCode}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_acea25f5c954486b6ce6eb7220dbb0725}\label{class_captain_1_1_util_1_1_event_recorder_acea25f5c954486b6ce6eb7220dbb0725} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!RouteJsonWriter@{RouteJsonWriter}}
+\index{RouteJsonWriter@{RouteJsonWriter}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{RouteJsonWriter}{RouteJsonWriter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer}{Json\+Writer}} Captain\+::\+Util\+::\+Event\+Recorder\+::\+Route\+Json\+Writer\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ }
+\DoxyCodeLine{\ \ \ \ JsonWriter(STSIO::RouteJSONPath)}
+
+\end{DoxyCode}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_aea2ada3e9b74801474a848b264292a94}\label{class_captain_1_1_util_1_1_event_recorder_aea2ada3e9b74801474a848b264292a94} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!SimulationXML@{SimulationXML}}
+\index{SimulationXML@{SimulationXML}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{SimulationXML}{SimulationXML}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer}{Xml\+Writer}} Captain\+::\+Util\+::\+Event\+Recorder\+::\+Simulation\+XML\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ }
+\DoxyCodeLine{\ \ \ \ XmlWriter(\mbox{\hyperlink{namespace_captain_1_1_recorder_params_acb89315c486b24e278d3aee4fc7531ad}{RecorderParams::SimulationSavePath}})}
+
+\end{DoxyCode}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_add76c9abd60e28ed210742afd15b11eb}\label{class_captain_1_1_util_1_1_event_recorder_add76c9abd60e28ed210742afd15b11eb} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!SinkXML@{SinkXML}}
+\index{SinkXML@{SinkXML}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{SinkXML}{SinkXML}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer}{Xml\+Writer}} Captain\+::\+Util\+::\+Event\+Recorder\+::\+Sink\+XML\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ }
+\DoxyCodeLine{\ \ \ \ XmlWriter(\mbox{\hyperlink{namespace_captain_1_1_recorder_params_a4c11c771e84987c28f11eb079d193bae}{RecorderParams::SinkUnitSavePath}})}
+
+\end{DoxyCode}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_a4b8e552e2c6bbc7d5553a5c0b621b857}\label{class_captain_1_1_util_1_1_event_recorder_a4b8e552e2c6bbc7d5553a5c0b621b857} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!StationXML@{StationXML}}
+\index{StationXML@{StationXML}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{StationXML}{StationXML}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer}{Xml\+Writer}} Captain\+::\+Util\+::\+Event\+Recorder\+::\+Station\+XML\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ }
+\DoxyCodeLine{\ \ \ \ XmlWriter(\mbox{\hyperlink{namespace_captain_1_1_recorder_params_afc264037abc6f21014130e7bc9365883}{RecorderParams::StationSavePath}})}
+
+\end{DoxyCode}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_a792cd65007b80dd871e9150f94c7d700}\label{class_captain_1_1_util_1_1_event_recorder_a792cd65007b80dd871e9150f94c7d700} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!VehicleJsonReader@{VehicleJsonReader}}
+\index{VehicleJsonReader@{VehicleJsonReader}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{VehicleJsonReader}{VehicleJsonReader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_util_1_1_json_reader}{Json\+Reader}} Captain\+::\+Util\+::\+Event\+Recorder\+::\+Vehicle\+Json\+Reader\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ }
+\DoxyCodeLine{\ \ \ \ JsonReader(\mbox{\hyperlink{namespace_captain_1_1_recorder_params_a74a251e91eef074e882e9392c534a7b9}{RecorderParams::VehicleSavePath}})}
+
+\end{DoxyCode}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_accb518b9d933cbf33f18875cc867c1c3}\label{class_captain_1_1_util_1_1_event_recorder_accb518b9d933cbf33f18875cc867c1c3} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!VehicleJsonWriter@{VehicleJsonWriter}}
+\index{VehicleJsonWriter@{VehicleJsonWriter}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{VehicleJsonWriter}{VehicleJsonWriter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer}{Json\+Writer}} Captain\+::\+Util\+::\+Event\+Recorder\+::\+Vehicle\+Json\+Writer\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ }
+\DoxyCodeLine{\ \ \ \ JsonWriter(\mbox{\hyperlink{namespace_captain_1_1_recorder_params_a74a251e91eef074e882e9392c534a7b9}{RecorderParams::VehicleSavePath}})}
+
+\end{DoxyCode}
+\Hypertarget{class_captain_1_1_util_1_1_event_recorder_a85acb582ed86a019564113a4b00e67e1}\label{class_captain_1_1_util_1_1_event_recorder_a85acb582ed86a019564113a4b00e67e1} 
+\index{Captain::Util::EventRecorder@{Captain::Util::EventRecorder}!VehicleXML@{VehicleXML}}
+\index{VehicleXML@{VehicleXML}!Captain::Util::EventRecorder@{Captain::Util::EventRecorder}}
+\doxysubsubsection{\texorpdfstring{VehicleXML}{VehicleXML}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer}{Xml\+Writer}} Captain\+::\+Util\+::\+Event\+Recorder\+::\+Vehicle\+XML\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\ \ \ \ XmlWriter(\mbox{\hyperlink{namespace_captain_1_1_recorder_params_ae6f49ed4c11a087735913647a53ef717}{RecorderParams::VehicleRecordSavePath}})}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Util/\mbox{\hyperlink{_event_recorder_8hpp}{Event\+Recorder.\+hpp}}\item 
+Sources/captain/\+Util/\mbox{\hyperlink{_event_recorder_8cpp}{Event\+Recorder.\+cpp}}\end{DoxyCompactItemize}

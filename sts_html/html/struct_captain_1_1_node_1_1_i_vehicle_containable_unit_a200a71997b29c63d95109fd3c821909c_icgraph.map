@@ -1,0 +1,5 @@
+<map id="Captain::Node::IVehicleContainableUnit::Identifier" name="Captain::Node::IVehicleContainableUnit::Identifier">
+<area shape="rect" id="Node000001" title="Gets unique identifier of the particular unit." alt="" coords="229,5,454,48"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_source_unit.html#a7a34bf38f6c2401988ce2de74eb79267" title=" " alt="" coords="5,5,181,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,29,181,29,181,24,213,24"/>
+</map>

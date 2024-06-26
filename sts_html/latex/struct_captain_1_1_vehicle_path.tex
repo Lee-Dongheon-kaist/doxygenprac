@@ -1,0 +1,288 @@
+\doxysection{Captain\+::Vehicle\+Path Struct Reference}
+\hypertarget{struct_captain_1_1_vehicle_path}{}\label{struct_captain_1_1_vehicle_path}\index{Captain::VehiclePath@{Captain::VehiclePath}}
+
+
+Describes path of the vehicle.  
+
+
+
+
+{\ttfamily \#include $<$Vehicle\+Path.\+hpp$>$}
+
+
+
+Collaboration diagram for Captain\+::Vehicle\+Path\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{struct_captain_1_1_vehicle_path__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_vehicle_path_ad5aa8b8580aad860f4af724b3c513d46}{Vehicle\+Path}} ()=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_vehicle_path_a39bc13084a7b9dd9525e35fdc9ff979f}{Vehicle\+Path}} (std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} $>$ path\+Vector, std\+::vector$<$ std\+::vector$<$ double $>$ $>$ lane\+Priority\+Vector)
+\item 
+\mbox{\hyperlink{struct_captain_1_1_vehicle_path_a0a4e3005b967aa31e7787f89485fb99d}{Vehicle\+Path}} (std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} $>$ path\+Vector, std\+::vector$<$ std\+::vector$<$ double $>$ $>$ lane\+Priority\+Vector, double distance)
+\item 
+\mbox{\hyperlink{struct_captain_1_1_vehicle_path_a6b1455c0a7dbd69a07e7075bb0a6d293}{Vehicle\+Path}} (std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} $>$ path\+Vector, std\+::vector$<$ std\+::vector$<$ double $>$ $>$ lane\+Priority\+Vector, std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} $>$ station\+Vector, std\+::vector$<$ std\+::vector$<$ double $>$ $>$ station\+Dwell\+Time\+Vector, std\+::vector$<$ std\+::vector$<$ int $>$ $>$ station\+Pax\+In\+Vector, std\+::vector$<$ std\+::vector$<$ int $>$ $>$ station\+Pax\+Out\+Vector)
+\item 
+\mbox{\hyperlink{struct_captain_1_1_vehicle_path_ada2decaf6c2141813b72f5ff3d9c732a}{\texorpdfstring{$\sim$}{\string~}\+Vehicle\+Path}} ()=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_vehicle_path_a2d81e87189c43e1570d2acb36a96487c}{Vehicle\+Path}} (const \mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} \&vehicle\+Path)=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_vehicle_path_a8bfaa80f7fd9ea701e01635e6cd395cb}{Vehicle\+Path}} (\mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} \&\&vehicle\+Path) noexcept=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} \& \mbox{\hyperlink{struct_captain_1_1_vehicle_path_a9884350a017a7867f43021ba49ec1287}{operator=}} (const \mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} \&vehicle\+Path)=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} \& \mbox{\hyperlink{struct_captain_1_1_vehicle_path_a48a038862dd50e335f4329721f3f7315}{operator=}} (\mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} \&\&vehicle\+Path) noexcept=default
+\item 
+bool \mbox{\hyperlink{struct_captain_1_1_vehicle_path_a82d32c0ab2f6226de3e6dc0240027a82}{operator==}} (const \mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} \&vehicle\+Path) const
+\item 
+bool \mbox{\hyperlink{struct_captain_1_1_vehicle_path_ad95dd7b46c1ee569a818d28eba4d6647}{operator!=}} (const \mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} \&vehicle\+Path) const
+\item 
+std\+::optional$<$ std\+::size\+\_\+t $>$ \mbox{\hyperlink{struct_captain_1_1_vehicle_path_a86c3c20bfd461708026ef8e0dd917444}{Get\+Current\+Path\+Index}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&unit\+Identifier)
+\item 
+std\+::optional$<$ \mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} $>$ \mbox{\hyperlink{struct_captain_1_1_vehicle_path_a9f207f99d0400f377d4612650d16faa0}{Get\+Current\+Path\+Identifier}} ()
+\item 
+const std\+::vector$<$ double $>$ \& \mbox{\hyperlink{struct_captain_1_1_vehicle_path_a75c3cda46361ee04cc1378cb737a98bb}{Get\+Current\+Lane\+Priority\+Vector}} () const
+\item 
+std\+::optional$<$ \mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} $>$ \mbox{\hyperlink{struct_captain_1_1_vehicle_path_a69d8c8f04cdb989ecbeafe10e4874865}{Get\+Next\+Path\+Identifier}} ()
+\item 
+auto \mbox{\hyperlink{struct_captain_1_1_vehicle_path_a3b339e6ff54c19796e6981c2646d89c2}{Get\+Current\+Max\+Priority}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&unit\+Identifier)
+\item 
+auto \mbox{\hyperlink{struct_captain_1_1_vehicle_path_ae956cdfdfbd95ea025a72eaf815c87a6}{Get\+Current\+Dwell\+Time}} ()
+\item 
+auto \mbox{\hyperlink{struct_captain_1_1_vehicle_path_a3b561b36c3c8cf79538e0e9094ced9a3}{Get\+Current\+Pax\+In}} ()
+\item 
+auto \mbox{\hyperlink{struct_captain_1_1_vehicle_path_acd0c9fb1c29195447cb20aadf5f3a430}{Get\+Current\+Pax\+Out}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{struct_captain_1_1_vehicle_path_ab47e1c5f18e82bd19338cdaa1b57eddc}{Current\+Path\+Index}} = 0
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} $>$ \mbox{\hyperlink{struct_captain_1_1_vehicle_path_a7fc7da77b0ec18ffa61de76f7f57a331}{Path\+Vector}}
+\item 
+std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \mbox{\hyperlink{struct_captain_1_1_vehicle_path_a401e37d194cd454f2013b3c4fdbfa455}{Lane\+Priority\+Vector}}
+\begin{DoxyCompactList}\small\item\em Lane priority in each unit. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} $>$ \mbox{\hyperlink{struct_captain_1_1_vehicle_path_a437366824b8e46bb1cc2c7bc008129ba}{Station\+Vector}}
+\item 
+std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \mbox{\hyperlink{struct_captain_1_1_vehicle_path_a23b4f65a7303d99586d3de51cce5e6db}{Station\+Dwell\+Time\+Vector}}
+\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{struct_captain_1_1_vehicle_path_ac2d99077fffb2966cda9ef727bf494f3}{Station\+Pax\+In\+Vector}}
+\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{struct_captain_1_1_vehicle_path_a6b602a3d10ddad95a08c12a92551eda5}{Station\+Pax\+Out\+Vector}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{struct_captain_1_1_vehicle_path_a452854b685091c4dc48e7ee98b3bdf69}{Station\+Index}} = 0
+\item 
+double \mbox{\hyperlink{struct_captain_1_1_vehicle_path_ac72a14d17bc507d8dda35363c34b4245}{Path\+Distance}} = 0.\+0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Describes path of the vehicle. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_captain_1_1_vehicle_path_ad5aa8b8580aad860f4af724b3c513d46}\label{struct_captain_1_1_vehicle_path_ad5aa8b8580aad860f4af724b3c513d46} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!VehiclePath@{VehiclePath}}
+\index{VehiclePath@{VehiclePath}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{VehiclePath()}{VehiclePath()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily Captain\+::\+Vehicle\+Path\+::\+Vehicle\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Vector of \doxylink{struct_captain_1_1_unit_identifier}{Unit\+Identifier} representing the path Only Source , Meso, Micro, Source is allowed \Hypertarget{struct_captain_1_1_vehicle_path_a39bc13084a7b9dd9525e35fdc9ff979f}\label{struct_captain_1_1_vehicle_path_a39bc13084a7b9dd9525e35fdc9ff979f} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!VehiclePath@{VehiclePath}}
+\index{VehiclePath@{VehiclePath}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{VehiclePath()}{VehiclePath()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily Captain\+::\+Vehicle\+Path\+::\+Vehicle\+Path (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} $>$}]{path\+Vector,  }\item[{std\+::vector$<$ std\+::vector$<$ double $>$ $>$}]{lane\+Priority\+Vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_captain_1_1_vehicle_path_a0a4e3005b967aa31e7787f89485fb99d}\label{struct_captain_1_1_vehicle_path_a0a4e3005b967aa31e7787f89485fb99d} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!VehiclePath@{VehiclePath}}
+\index{VehiclePath@{VehiclePath}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{VehiclePath()}{VehiclePath()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily Captain\+::\+Vehicle\+Path\+::\+Vehicle\+Path (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} $>$}]{path\+Vector,  }\item[{std\+::vector$<$ std\+::vector$<$ double $>$ $>$}]{lane\+Priority\+Vector,  }\item[{double}]{distance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_captain_1_1_vehicle_path_a6b1455c0a7dbd69a07e7075bb0a6d293}\label{struct_captain_1_1_vehicle_path_a6b1455c0a7dbd69a07e7075bb0a6d293} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!VehiclePath@{VehiclePath}}
+\index{VehiclePath@{VehiclePath}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{VehiclePath()}{VehiclePath()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily Captain\+::\+Vehicle\+Path\+::\+Vehicle\+Path (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} $>$}]{path\+Vector,  }\item[{std\+::vector$<$ std\+::vector$<$ double $>$ $>$}]{lane\+Priority\+Vector,  }\item[{std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} $>$}]{station\+Vector,  }\item[{std\+::vector$<$ std\+::vector$<$ double $>$ $>$}]{station\+Dwell\+Time\+Vector,  }\item[{std\+::vector$<$ std\+::vector$<$ int $>$ $>$}]{station\+Pax\+In\+Vector,  }\item[{std\+::vector$<$ std\+::vector$<$ int $>$ $>$}]{station\+Pax\+Out\+Vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_captain_1_1_vehicle_path_ada2decaf6c2141813b72f5ff3d9c732a}\label{struct_captain_1_1_vehicle_path_ada2decaf6c2141813b72f5ff3d9c732a} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!````~VehiclePath@{\texorpdfstring{$\sim$}{\string~}VehiclePath}}
+\index{````~VehiclePath@{\texorpdfstring{$\sim$}{\string~}VehiclePath}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}VehiclePath()}{\string~VehiclePath()}}
+{\footnotesize\ttfamily Captain\+::\+Vehicle\+Path\+::\texorpdfstring{$\sim$}{\string~}\+Vehicle\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{struct_captain_1_1_vehicle_path_a2d81e87189c43e1570d2acb36a96487c}\label{struct_captain_1_1_vehicle_path_a2d81e87189c43e1570d2acb36a96487c} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!VehiclePath@{VehiclePath}}
+\index{VehiclePath@{VehiclePath}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{VehiclePath()}{VehiclePath()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily Captain\+::\+Vehicle\+Path\+::\+Vehicle\+Path (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} \&}]{vehicle\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{struct_captain_1_1_vehicle_path_a8bfaa80f7fd9ea701e01635e6cd395cb}\label{struct_captain_1_1_vehicle_path_a8bfaa80f7fd9ea701e01635e6cd395cb} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!VehiclePath@{VehiclePath}}
+\index{VehiclePath@{VehiclePath}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{VehiclePath()}{VehiclePath()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily Captain\+::\+Vehicle\+Path\+::\+Vehicle\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} \&\&}]{vehicle\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_captain_1_1_vehicle_path_ae956cdfdfbd95ea025a72eaf815c87a6}\label{struct_captain_1_1_vehicle_path_ae956cdfdfbd95ea025a72eaf815c87a6} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!GetCurrentDwellTime@{GetCurrentDwellTime}}
+\index{GetCurrentDwellTime@{GetCurrentDwellTime}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{GetCurrentDwellTime()}{GetCurrentDwellTime()}}
+{\footnotesize\ttfamily auto Captain\+::\+Vehicle\+Path\+::\+Get\+Current\+Dwell\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_captain_1_1_vehicle_path_a75c3cda46361ee04cc1378cb737a98bb}\label{struct_captain_1_1_vehicle_path_a75c3cda46361ee04cc1378cb737a98bb} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!GetCurrentLanePriorityVector@{GetCurrentLanePriorityVector}}
+\index{GetCurrentLanePriorityVector@{GetCurrentLanePriorityVector}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{GetCurrentLanePriorityVector()}{GetCurrentLanePriorityVector()}}
+{\footnotesize\ttfamily const std\+::vector$<$ double $>$ \& Captain\+::\+Vehicle\+Path\+::\+Get\+Current\+Lane\+Priority\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_captain_1_1_vehicle_path_a3b339e6ff54c19796e6981c2646d89c2}\label{struct_captain_1_1_vehicle_path_a3b339e6ff54c19796e6981c2646d89c2} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!GetCurrentMaxPriority@{GetCurrentMaxPriority}}
+\index{GetCurrentMaxPriority@{GetCurrentMaxPriority}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{GetCurrentMaxPriority()}{GetCurrentMaxPriority()}}
+{\footnotesize\ttfamily auto Captain\+::\+Vehicle\+Path\+::\+Get\+Current\+Max\+Priority (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{unit\+Identifier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{struct_captain_1_1_vehicle_path_a3b339e6ff54c19796e6981c2646d89c2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_captain_1_1_vehicle_path_a9f207f99d0400f377d4612650d16faa0}\label{struct_captain_1_1_vehicle_path_a9f207f99d0400f377d4612650d16faa0} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!GetCurrentPathIdentifier@{GetCurrentPathIdentifier}}
+\index{GetCurrentPathIdentifier@{GetCurrentPathIdentifier}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{GetCurrentPathIdentifier()}{GetCurrentPathIdentifier()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} $>$ Captain\+::\+Vehicle\+Path\+::\+Get\+Current\+Path\+Identifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_captain_1_1_vehicle_path_a86c3c20bfd461708026ef8e0dd917444}\label{struct_captain_1_1_vehicle_path_a86c3c20bfd461708026ef8e0dd917444} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!GetCurrentPathIndex@{GetCurrentPathIndex}}
+\index{GetCurrentPathIndex@{GetCurrentPathIndex}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{GetCurrentPathIndex()}{GetCurrentPathIndex()}}
+{\footnotesize\ttfamily std\+::optional$<$ std\+::size\+\_\+t $>$ Captain\+::\+Vehicle\+Path\+::\+Get\+Current\+Path\+Index (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{unit\+Identifier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{struct_captain_1_1_vehicle_path_a86c3c20bfd461708026ef8e0dd917444_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_captain_1_1_vehicle_path_a3b561b36c3c8cf79538e0e9094ced9a3}\label{struct_captain_1_1_vehicle_path_a3b561b36c3c8cf79538e0e9094ced9a3} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!GetCurrentPaxIn@{GetCurrentPaxIn}}
+\index{GetCurrentPaxIn@{GetCurrentPaxIn}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{GetCurrentPaxIn()}{GetCurrentPaxIn()}}
+{\footnotesize\ttfamily auto Captain\+::\+Vehicle\+Path\+::\+Get\+Current\+Pax\+In (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_captain_1_1_vehicle_path_acd0c9fb1c29195447cb20aadf5f3a430}\label{struct_captain_1_1_vehicle_path_acd0c9fb1c29195447cb20aadf5f3a430} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!GetCurrentPaxOut@{GetCurrentPaxOut}}
+\index{GetCurrentPaxOut@{GetCurrentPaxOut}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{GetCurrentPaxOut()}{GetCurrentPaxOut()}}
+{\footnotesize\ttfamily auto Captain\+::\+Vehicle\+Path\+::\+Get\+Current\+Pax\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_captain_1_1_vehicle_path_a69d8c8f04cdb989ecbeafe10e4874865}\label{struct_captain_1_1_vehicle_path_a69d8c8f04cdb989ecbeafe10e4874865} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!GetNextPathIdentifier@{GetNextPathIdentifier}}
+\index{GetNextPathIdentifier@{GetNextPathIdentifier}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{GetNextPathIdentifier()}{GetNextPathIdentifier()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} $>$ Captain\+::\+Vehicle\+Path\+::\+Get\+Next\+Path\+Identifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_captain_1_1_vehicle_path_ad95dd7b46c1ee569a818d28eba4d6647}\label{struct_captain_1_1_vehicle_path_ad95dd7b46c1ee569a818d28eba4d6647} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Captain\+::\+Vehicle\+Path\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} \&}]{vehicle\+Path }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_captain_1_1_vehicle_path_a9884350a017a7867f43021ba49ec1287}\label{struct_captain_1_1_vehicle_path_a9884350a017a7867f43021ba49ec1287} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} \& Captain\+::\+Vehicle\+Path\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} \&}]{vehicle\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{struct_captain_1_1_vehicle_path_a48a038862dd50e335f4329721f3f7315}\label{struct_captain_1_1_vehicle_path_a48a038862dd50e335f4329721f3f7315} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} \& Captain\+::\+Vehicle\+Path\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} \&\&}]{vehicle\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{struct_captain_1_1_vehicle_path_a82d32c0ab2f6226de3e6dc0240027a82}\label{struct_captain_1_1_vehicle_path_a82d32c0ab2f6226de3e6dc0240027a82} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!operator==@{operator==}}
+\index{operator==@{operator==}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Captain\+::\+Vehicle\+Path\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} \&}]{vehicle\+Path }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_captain_1_1_vehicle_path_ab47e1c5f18e82bd19338cdaa1b57eddc}\label{struct_captain_1_1_vehicle_path_ab47e1c5f18e82bd19338cdaa1b57eddc} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!CurrentPathIndex@{CurrentPathIndex}}
+\index{CurrentPathIndex@{CurrentPathIndex}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{CurrentPathIndex}{CurrentPathIndex}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Captain\+::\+Vehicle\+Path\+::\+Current\+Path\+Index = 0}
+
+\Hypertarget{struct_captain_1_1_vehicle_path_a401e37d194cd454f2013b3c4fdbfa455}\label{struct_captain_1_1_vehicle_path_a401e37d194cd454f2013b3c4fdbfa455} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!LanePriorityVector@{LanePriorityVector}}
+\index{LanePriorityVector@{LanePriorityVector}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{LanePriorityVector}{LanePriorityVector}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$double$>$ $>$ Captain\+::\+Vehicle\+Path\+::\+Lane\+Priority\+Vector}
+
+
+
+Lane priority in each unit. 
+
+\Hypertarget{struct_captain_1_1_vehicle_path_ac72a14d17bc507d8dda35363c34b4245}\label{struct_captain_1_1_vehicle_path_ac72a14d17bc507d8dda35363c34b4245} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!PathDistance@{PathDistance}}
+\index{PathDistance@{PathDistance}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{PathDistance}{PathDistance}}
+{\footnotesize\ttfamily double Captain\+::\+Vehicle\+Path\+::\+Path\+Distance = 0.\+0}
+
+\Hypertarget{struct_captain_1_1_vehicle_path_a7fc7da77b0ec18ffa61de76f7f57a331}\label{struct_captain_1_1_vehicle_path_a7fc7da77b0ec18ffa61de76f7f57a331} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!PathVector@{PathVector}}
+\index{PathVector@{PathVector}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{PathVector}{PathVector}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}}$>$ Captain\+::\+Vehicle\+Path\+::\+Path\+Vector}
+
+\Hypertarget{struct_captain_1_1_vehicle_path_a23b4f65a7303d99586d3de51cce5e6db}\label{struct_captain_1_1_vehicle_path_a23b4f65a7303d99586d3de51cce5e6db} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!StationDwellTimeVector@{StationDwellTimeVector}}
+\index{StationDwellTimeVector@{StationDwellTimeVector}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{StationDwellTimeVector}{StationDwellTimeVector}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$double$>$ $>$ Captain\+::\+Vehicle\+Path\+::\+Station\+Dwell\+Time\+Vector}
+
+\Hypertarget{struct_captain_1_1_vehicle_path_a452854b685091c4dc48e7ee98b3bdf69}\label{struct_captain_1_1_vehicle_path_a452854b685091c4dc48e7ee98b3bdf69} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!StationIndex@{StationIndex}}
+\index{StationIndex@{StationIndex}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{StationIndex}{StationIndex}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Captain\+::\+Vehicle\+Path\+::\+Station\+Index = 0}
+
+\Hypertarget{struct_captain_1_1_vehicle_path_ac2d99077fffb2966cda9ef727bf494f3}\label{struct_captain_1_1_vehicle_path_ac2d99077fffb2966cda9ef727bf494f3} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!StationPaxInVector@{StationPaxInVector}}
+\index{StationPaxInVector@{StationPaxInVector}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{StationPaxInVector}{StationPaxInVector}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$int$>$ $>$ Captain\+::\+Vehicle\+Path\+::\+Station\+Pax\+In\+Vector}
+
+\Hypertarget{struct_captain_1_1_vehicle_path_a6b602a3d10ddad95a08c12a92551eda5}\label{struct_captain_1_1_vehicle_path_a6b602a3d10ddad95a08c12a92551eda5} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!StationPaxOutVector@{StationPaxOutVector}}
+\index{StationPaxOutVector@{StationPaxOutVector}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{StationPaxOutVector}{StationPaxOutVector}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$int$>$ $>$ Captain\+::\+Vehicle\+Path\+::\+Station\+Pax\+Out\+Vector}
+
+\Hypertarget{struct_captain_1_1_vehicle_path_a437366824b8e46bb1cc2c7bc008129ba}\label{struct_captain_1_1_vehicle_path_a437366824b8e46bb1cc2c7bc008129ba} 
+\index{Captain::VehiclePath@{Captain::VehiclePath}!StationVector@{StationVector}}
+\index{StationVector@{StationVector}!Captain::VehiclePath@{Captain::VehiclePath}}
+\doxysubsubsection{\texorpdfstring{StationVector}{StationVector}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}}$>$ Captain\+::\+Vehicle\+Path\+::\+Station\+Vector}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Structs/\mbox{\hyperlink{_vehicle_path_8hpp}{Vehicle\+Path.\+hpp}}\end{DoxyCompactItemize}

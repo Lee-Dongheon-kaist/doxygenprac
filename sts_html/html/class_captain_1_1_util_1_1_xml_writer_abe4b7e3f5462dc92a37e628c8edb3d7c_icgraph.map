@@ -1,0 +1,11 @@
+<map id="Captain::Util::XmlWriter::RecordLaneInfo" name="Captain::Util::XmlWriter::RecordLaneInfo">
+<area shape="rect" id="Node000001" title=" " alt="" coords="464,39,620,81"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_engine.html#a336c7ce29a2b0e841e4be079e054dfc9" title=" " alt="" coords="225,5,416,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="448,49,416,44,417,38,449,43"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_util_1_1_event_recorder.html#af0ebef17ff894c2fa75a4e3e72aea667" title=" " alt="" coords="228,72,413,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="449,77,413,82,412,77,448,71"/>
+<area shape="rect" id="Node000004" href="$class_captain_1_1_node_1_1_meso_unit.html#ac18ca35e3842d9fbe87037a6273013b2" title="Writes all recordings in the temporary buffer to file and flushes the buffer." alt="" coords="8,39,174,81"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="213,80,174,75,175,69,214,75"/>
+<area shape="rect" id="Node000005" href="$class_captain_1_1_node_1_1_micro_lane.html#a8de5be99a9e0f6642c51c6d9c06143c9" title="Records all remaining recordings stored in buffer." alt="" coords="5,105,177,148"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="213,112,177,117,177,112,213,106"/>
+</map>

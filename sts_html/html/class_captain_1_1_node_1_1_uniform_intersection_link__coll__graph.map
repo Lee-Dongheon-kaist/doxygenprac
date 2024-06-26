@@ -1,0 +1,12 @@
+<map id="Captain::Node::UniformIntersectionLink" name="Captain::Node::UniformIntersectionLink">
+<area shape="rect" id="Node000001" title=" " alt="" coords="48,1244,285,1607"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_uniform_link.html" title=" " alt="" coords="65,855,269,1196"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,1211,169,1244,164,1244,164,1211"/>
+<area shape="rect" id="Node000003" href="$struct_captain_1_1_node_1_1_i_linkable.html" title="Interface that defines classes that can link directly to other units in the network." alt="" coords="5,5,163,352"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="65,367,60,465,59,572,64,682,79,790,95,854,90,855,73,791,59,683,53,572,54,465,60,367"/>
+<area shape="rect" id="Node000005" href="$class_captain_1_1_node_1_1_meso_link.html" title="Link represents directional road connecting two intersections." alt="" coords="87,455,246,737"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="124,366,141,454,136,455,119,367"/>
+<area shape="rect" id="Node000004" href="$struct_captain_1_1_unit_identifier.html" title=" " alt="" coords="270,401,410,791"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="276,791,260,832,256,840,251,838,255,830,271,789"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="169,737,169,838,164,838,164,737"/>
+</map>

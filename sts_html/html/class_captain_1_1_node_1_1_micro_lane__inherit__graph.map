@@ -1,0 +1,7 @@
+<map id="Captain::Node::MicroLane" name="Captain::Node::MicroLane">
+<area shape="rect" id="Node000001" title=" " alt="" coords="131,464,347,768"/>
+<area shape="rect" id="Node000002" href="$struct_captain_1_1_node_1_1_i_vehicle_containable_unit.html" title="Interface that defines methods for classes that can possess vehicles required by meso and micro links..." alt="" coords="5,5,245,416"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,430,199,464,194,465,184,431"/>
+<area shape="rect" id="Node000003" href="$struct_captain_1_1_i_event_recordable.html" title="Interface for units that can record events." alt="" coords="269,112,435,309"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="323,324,284,465,278,464,318,323"/>
+</map>

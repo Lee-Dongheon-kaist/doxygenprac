@@ -1,0 +1,182 @@
+\doxysection{Captain\+::DMode\+::CCF Class Reference}
+\hypertarget{class_captain_1_1_d_mode_1_1_c_c_f}{}\label{class_captain_1_1_d_mode_1_1_c_c_f}\index{Captain::DMode::CCF@{Captain::DMode::CCF}}
+
+
+ 
+
+
+
+
+{\ttfamily \#include $<$General\+LC.\+hpp$>$}
+
+
+
+Inheritance diagram for Captain\+::DMode\+::CCF\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_d_mode_1_1_c_c_f__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Captain\+::DMode\+::CCF\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_d_mode_1_1_c_c_f__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_c_c_f_a102bc5998ca32ce5dd382f7ef24d22e0}{CCF}} ()
+\item 
+\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_c_c_f_a7e8e8c3447e99b0d134ff1f7a4c30e76}{\texorpdfstring{$\sim$}{\string~}\+CCF}} () override=default
+\item 
+std\+::tuple$<$ \mbox{\hyperlink{struct_captain_1_1_position}{Position}}, int, double, double $>$ \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_c_c_f_a9f242f9ae5f8c04fefcd5f92723e4d40}{operator()}} (\mbox{\hyperlink{namespace_captain_1_1_d_mode_af0bcc1092020155c4cf62ece22341b67}{Vehicle\+Info\+State\+Pair}} subject) override
+\begin{DoxyCompactList}\small\item\em Executes this functor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model}{Captain\+::\+DMode\+::\+Drive\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model_ace312d731c02a4c14cbfd360507985a8}{Drive\+Model}} ()=default
+\item 
+virtual \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model_acebebc46a3d9cf457b7cea97f50dde55}{\texorpdfstring{$\sim$}{\string~}\+Drive\+Model}} ()=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model_a141643964c0e0395cb06ca07f893e8ee}{Drive\+Model}} (const \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model}{Drive\+Model}} \&drive\+Model)=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model_ad54e97a8f33d9050d92c2c6cb525f1e3}{Drive\+Model}} (\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model}{Drive\+Model}} \&\&drive\+Model) noexcept=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model}{Drive\+Model}} \& \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model_ae41c2fa0f97df3a4d4d1b626fce9cd48}{operator=}} (const \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model}{Drive\+Model}} \&drive\+Model)=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model}{Drive\+Model}} \& \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model_aa08f3d444d3060385799fe9ba19132ce}{operator=}} (\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model}{Drive\+Model}} \&\&drive\+Model) noexcept=default
+\item 
+bool \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model_a579b3cc1c2042306bc22a1edb357f9f7}{Is\+Activated}} () const
+\item 
+void \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model_ae946fe843d24650a74d1c19517829e74}{Activate}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model_a2cdf4ab6b5bb7d2dcafb5bf3404f89a7}{Deactivate}} ()
+\item 
+double \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model_a2c98ad2020e3a5ebb6f42d9197219c14}{Get\+Elapsed\+Time}} () const
+\item 
+int \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model_a0197fbb4e0f8948bd8c517c1d01d7d02}{Get\+Leader\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Gets vehicle ID of the leader vehicle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}} \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model_a38fee8bacc2d8872f29d96e3cd8b7c7e}{Get\+Leader\+Vehicle\+Info}} ()
+\item 
+\mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model_a78314bb455dbf5350bc031ce7cf18f2c}{Get\+Leader\+Vehicle\+State}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model_ab1a2d3e8decab33c29fe422e48ad86e0}{Set\+Leader\+Vehicle}} (\mbox{\hyperlink{namespace_captain_1_1_d_mode_af0bcc1092020155c4cf62ece22341b67}{Vehicle\+Info\+State\+Pair}} new\+\_\+m\+\_\+leader\+Vehicle)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model_ab5559542f447d534e166e7f9509a16a7}{Set\+Elapsed\+Cycle}} (std\+::size\+\_\+t new\+\_\+m\+\_\+elapsed\+Cycle)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model_a06a9448a81b4cf278746a9e5718d00a6}{Set\+Active}} (std\+::size\+\_\+t new\+\_\+m\+\_\+active)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable}{Captain\+::\+DMode\+::\+IMultiple\+Vehicle\+Trackable}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a92dfa284eb4ed783c28c86d4f048e649}{IMultiple\+Vehicle\+Trackable}} ()=default
+\item 
+virtual \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_aff82786bbfdbcb2c758b5f0d206f7c21}{\texorpdfstring{$\sim$}{\string~}\+IMultiple\+Vehicle\+Trackable}} ()=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a9079c6095a25b38f4676dee054138f3f}{IMultiple\+Vehicle\+Trackable}} (const \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable}{IMultiple\+Vehicle\+Trackable}} \&other)=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_acda0ada48c86ae93dcc7a95167292c26}{IMultiple\+Vehicle\+Trackable}} (\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable}{IMultiple\+Vehicle\+Trackable}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable}{IMultiple\+Vehicle\+Trackable}} \& \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a800a6350251f7899208e37f894b3db1f}{operator=}} (const \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable}{IMultiple\+Vehicle\+Trackable}} \&other)=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable}{IMultiple\+Vehicle\+Trackable}} \& \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a9885bb846ff8135fcd7ccd0b62305efb}{operator=}} (\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable}{IMultiple\+Vehicle\+Trackable}} \&\&other) noexcept=default
+\item 
+std\+::list$<$ \mbox{\hyperlink{namespace_captain_1_1_d_mode_af0bcc1092020155c4cf62ece22341b67}{Vehicle\+Info\+State\+Pair}} $>$ \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a23918c57a01f7d37ea7176d451c13bf9}{Get\+Target\+Leader\+List}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a917938e5731b67214f06b3d61baea131}{Set\+Target\+Leader\+List}} (const std\+::list$<$ \mbox{\hyperlink{namespace_captain_1_1_d_mode_af0bcc1092020155c4cf62ece22341b67}{Vehicle\+Info\+State\+Pair}} $>$ \&target\+Vehicle\+Position\+Vector)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a88d86d33a19570a13c11ff6b9569f3c7}{Set\+Target\+Leader}} (\mbox{\hyperlink{namespace_captain_1_1_d_mode_af0bcc1092020155c4cf62ece22341b67}{Vehicle\+Info\+State\+Pair}} vehicle\+Info\+State\+Pair)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a5de873093fe9ee0c071aba71617f8152}{Add\+Tracking\+Vehicle}} (const \mbox{\hyperlink{namespace_captain_1_1_d_mode_af0bcc1092020155c4cf62ece22341b67}{Vehicle\+Info\+State\+Pair}} \&vehicle\+Info\+State\+Pair)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_ae02344b4fbc50fbb7a02302ca99b4606}{Remove\+Tracking\+Vehicle}} (const \mbox{\hyperlink{namespace_captain_1_1_d_mode_af0bcc1092020155c4cf62ece22341b67}{Vehicle\+Info\+State\+Pair}} \&vehicle\+Info\+State\+Pair)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_ade12fb2b39d02d172294fa6664d6114b}{Clear}} ()
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_aac3188b83ec3533ceef2f4b8be6665a8}{Num\+Tracking\+Vehicles}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model}{Captain\+::\+DMode\+::\+Drive\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model_ab88fad977d72141ebc04bb569e721ed0}{m\+\_\+get\+Safety\+Distance}} (const \mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}} \&subject\+Info, const \mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}} \&leader\+Info, const \mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} \&subject\+State, const \mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} \&leader\+State, double delta\+Time) const
+\item 
+std\+::tuple$<$ \mbox{\hyperlink{struct_captain_1_1_position}{Position}}, int, double, double $>$ \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model_aafad40d75cccd8666bd41d2524814d25}{m\+\_\+evaluate\+LCPosition}} (\mbox{\hyperlink{namespace_captain_1_1_d_mode_af0bcc1092020155c4cf62ece22341b67}{Vehicle\+Info\+State\+Pair}} subject) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model}{Captain\+::\+DMode\+::\+Drive\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model_a4df536e382ae94d88e2c9b03b0458bf9}{m\+\_\+get\+Minimum\+Constraint}} (const \mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}} \&vehicle\+Info, const \mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} \&vehicle\+State)
+\item 
+static double \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model_a896081f395ce695c541ec2a37f9c15cf}{m\+\_\+get\+Maximum\+Constraint}} (const \mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}} \&vehicle\+Info, const \mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} \&vehicle\+State)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model}{Captain\+::\+DMode\+::\+Drive\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_captain_1_1_d_mode_af0bcc1092020155c4cf62ece22341b67}{Vehicle\+Info\+State\+Pair}} \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model_aaf1d69fa6dc0c69e86e4e8442f706073}{m\+\_\+leader\+Vehicle}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model_afa95fecbe985c70a4c8b5ed3c408a496}{m\+\_\+elapsed\+Cycle}} = 0
+\item 
+bool \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model_a5721ba57698ee09e761f18255386347f}{m\+\_\+active}} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable}{Captain\+::\+DMode\+::\+IMultiple\+Vehicle\+Trackable}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::list$<$ \mbox{\hyperlink{namespace_captain_1_1_d_mode_af0bcc1092020155c4cf62ece22341b67}{Vehicle\+Info\+State\+Pair}} $>$ \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a5d6229fdc934938da7b38bcdc65a820d}{m\+\_\+tracking\+Vehicle\+List}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_captain_1_1_d_mode_1_1_c_c_f_a102bc5998ca32ce5dd382f7ef24d22e0}\label{class_captain_1_1_d_mode_1_1_c_c_f_a102bc5998ca32ce5dd382f7ef24d22e0} 
+\index{Captain::DMode::CCF@{Captain::DMode::CCF}!CCF@{CCF}}
+\index{CCF@{CCF}!Captain::DMode::CCF@{Captain::DMode::CCF}}
+\doxysubsubsection{\texorpdfstring{CCF()}{CCF()}}
+{\footnotesize\ttfamily Captain\+::\+DMode\+::\+CCF\+::\+CCF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_d_mode_1_1_c_c_f_a7e8e8c3447e99b0d134ff1f7a4c30e76}\label{class_captain_1_1_d_mode_1_1_c_c_f_a7e8e8c3447e99b0d134ff1f7a4c30e76} 
+\index{Captain::DMode::CCF@{Captain::DMode::CCF}!````~CCF@{\texorpdfstring{$\sim$}{\string~}CCF}}
+\index{````~CCF@{\texorpdfstring{$\sim$}{\string~}CCF}!Captain::DMode::CCF@{Captain::DMode::CCF}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CCF()}{\string~CCF()}}
+{\footnotesize\ttfamily Captain\+::\+DMode\+::\+CCF\+::\texorpdfstring{$\sim$}{\string~}\+CCF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_captain_1_1_d_mode_1_1_c_c_f_a9f242f9ae5f8c04fefcd5f92723e4d40}\label{class_captain_1_1_d_mode_1_1_c_c_f_a9f242f9ae5f8c04fefcd5f92723e4d40} 
+\index{Captain::DMode::CCF@{Captain::DMode::CCF}!operator()@{operator()}}
+\index{operator()@{operator()}!Captain::DMode::CCF@{Captain::DMode::CCF}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily std\+::tuple$<$ \mbox{\hyperlink{struct_captain_1_1_position}{Position}}, int, double, double $>$ Captain\+::\+DMode\+::\+CCF\+::operator() (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_captain_1_1_d_mode_af0bcc1092020155c4cf62ece22341b67}{Vehicle\+Info\+State\+Pair}}}]{subject }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes this functor. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_drive_model_a13821a3dc98b8621074976a030cc761b}{Captain\+::\+DMode\+::\+Drive\+Model}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_d_mode_1_1_c_c_f_a9f242f9ae5f8c04fefcd5f92723e4d40_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Micro\+Models/\mbox{\hyperlink{_general_l_c_8hpp}{General\+LC.\+hpp}}\item 
+Sources/captain/\+Micro\+Models/\mbox{\hyperlink{_general_l_c_8cpp}{General\+LC.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,99 @@
+\doxysection{Captain\+::Spin\+Lock\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_captain_1_1_spin_lock}{}\label{class_captain_1_1_spin_lock}\index{Captain::SpinLock$<$ T $>$@{Captain::SpinLock$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Spin\+Lock-\/\+Decl.\+hpp$>$}
+
+
+
+Collaboration diagram for Captain\+::Spin\+Lock\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{class_captain_1_1_spin_lock__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_captain_1_1_spin_lock_adac429ff3820393cb8e7450e453755a7}{Spin\+Lock}} ()
+\item 
+\mbox{\hyperlink{class_captain_1_1_spin_lock_a6dd33e703b075de805325c9a186d6cc0}{Spin\+Lock}} (\mbox{\hyperlink{class_captain_1_1_spin_lock}{Spin\+Lock}} \&\&spin\+Lock) noexcept
+\item 
+void \mbox{\hyperlink{class_captain_1_1_spin_lock_a095012ba0bf30d43ee704bc80ed376b9}{Exclusive\+Lock}} ()
+\begin{DoxyCompactList}\small\item\em Exclusively acquires resource. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_spin_lock_a688253676cba644a016c8c945fb73df0}{Exclusive\+Release}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_spin_lock_a6e33fd185440551d440182e829b8278b}{Shared\+Lock}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_spin_lock_a4bb0fd47c243cc49892ae6629950cae7}{Shared\+Release}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Captain\+::\+Spin\+Lock$<$ T $>$}
+Defines shared spin lock thread will busy wait for accessing some data with atomic variable 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_captain_1_1_spin_lock_adac429ff3820393cb8e7450e453755a7}\label{class_captain_1_1_spin_lock_adac429ff3820393cb8e7450e453755a7} 
+\index{Captain::SpinLock$<$ T $>$@{Captain::SpinLock$<$ T $>$}!SpinLock@{SpinLock}}
+\index{SpinLock@{SpinLock}!Captain::SpinLock$<$ T $>$@{Captain::SpinLock$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SpinLock()}{SpinLock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_captain_1_1_spin_lock}{Captain\+::\+Spin\+Lock}}$<$ T $>$\+::\+Spin\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_spin_lock_a6dd33e703b075de805325c9a186d6cc0}\label{class_captain_1_1_spin_lock_a6dd33e703b075de805325c9a186d6cc0} 
+\index{Captain::SpinLock$<$ T $>$@{Captain::SpinLock$<$ T $>$}!SpinLock@{SpinLock}}
+\index{SpinLock@{SpinLock}!Captain::SpinLock$<$ T $>$@{Captain::SpinLock$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SpinLock()}{SpinLock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_captain_1_1_spin_lock}{Captain\+::\+Spin\+Lock}}$<$ T $>$\+::\+Spin\+Lock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_spin_lock}{Spin\+Lock}}$<$ T $>$ \&\&}]{spin\+Lock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_captain_1_1_spin_lock_a095012ba0bf30d43ee704bc80ed376b9}\label{class_captain_1_1_spin_lock_a095012ba0bf30d43ee704bc80ed376b9} 
+\index{Captain::SpinLock$<$ T $>$@{Captain::SpinLock$<$ T $>$}!ExclusiveLock@{ExclusiveLock}}
+\index{ExclusiveLock@{ExclusiveLock}!Captain::SpinLock$<$ T $>$@{Captain::SpinLock$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ExclusiveLock()}{ExclusiveLock()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_captain_1_1_spin_lock}{Captain\+::\+Spin\+Lock}}$<$ T $>$\+::\+Exclusive\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Exclusively acquires resource. 
+
+\Hypertarget{class_captain_1_1_spin_lock_a688253676cba644a016c8c945fb73df0}\label{class_captain_1_1_spin_lock_a688253676cba644a016c8c945fb73df0} 
+\index{Captain::SpinLock$<$ T $>$@{Captain::SpinLock$<$ T $>$}!ExclusiveRelease@{ExclusiveRelease}}
+\index{ExclusiveRelease@{ExclusiveRelease}!Captain::SpinLock$<$ T $>$@{Captain::SpinLock$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ExclusiveRelease()}{ExclusiveRelease()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_captain_1_1_spin_lock}{Captain\+::\+Spin\+Lock}}$<$ T $>$\+::\+Exclusive\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Once thread was locked exclusively, it must call this method to release exclusive access to data \Hypertarget{class_captain_1_1_spin_lock_a6e33fd185440551d440182e829b8278b}\label{class_captain_1_1_spin_lock_a6e33fd185440551d440182e829b8278b} 
+\index{Captain::SpinLock$<$ T $>$@{Captain::SpinLock$<$ T $>$}!SharedLock@{SharedLock}}
+\index{SharedLock@{SharedLock}!Captain::SpinLock$<$ T $>$@{Captain::SpinLock$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SharedLock()}{SharedLock()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_captain_1_1_spin_lock}{Captain\+::\+Spin\+Lock}}$<$ T $>$\+::\+Shared\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+If some operation can be shared while exclusive operation is not being done, many threads can access the data using Shared\+Lock. It internally waits while exclusive resource is free, and acquires shared lock \Hypertarget{class_captain_1_1_spin_lock_a4bb0fd47c243cc49892ae6629950cae7}\label{class_captain_1_1_spin_lock_a4bb0fd47c243cc49892ae6629950cae7} 
+\index{Captain::SpinLock$<$ T $>$@{Captain::SpinLock$<$ T $>$}!SharedRelease@{SharedRelease}}
+\index{SharedRelease@{SharedRelease}!Captain::SpinLock$<$ T $>$@{Captain::SpinLock$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SharedRelease()}{SharedRelease()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_captain_1_1_spin_lock}{Captain\+::\+Spin\+Lock}}$<$ T $>$\+::\+Shared\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+If some thread acquired Shared\+Lock, it must free the lock using this method 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Util/\mbox{\hyperlink{_spin_lock-_decl_8hpp}{Spin\+Lock-\/\+Decl.\+hpp}}\item 
+Includes/captain/\+Util/\mbox{\hyperlink{_spin_lock_8hpp}{Spin\+Lock.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+<map id="Captain::Node::EnhancedMicroLink::m_updateStationState" name="Captain::Node::EnhancedMicroLink::m_updateStationState">
+<area shape="rect" id="Node000001" title=" " alt="" coords="482,5,683,48"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#a92137e1f328c103a6ae32edb921d6dcb" title=" " alt="" coords="233,5,434,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="466,29,434,29,434,24,466,24"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_node_1_1_uniform_link.html#af3ed63e39ca2f50d2c69a938c60d44d3" title=" " alt="" coords="5,5,185,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="217,29,185,29,185,24,217,24"/>
+</map>

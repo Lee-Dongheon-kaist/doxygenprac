@@ -1,0 +1,7 @@
+<map id="Captain::Node::UniformLink::AddEvent" name="Captain::Node::UniformLink::AddEvent">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,185,81"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#a6bc1b84f990f81cb708a81fa6e6f3b29" title="Adds the Event to the microlink." alt="" coords="233,5,434,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,45,217,40,217,46,185,50"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_node_1_1_uniform_link.html#a9959362900b59da90a3e93352538a45b" title=" " alt="" coords="244,72,423,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,70,229,76,228,81,185,75"/>
+</map>

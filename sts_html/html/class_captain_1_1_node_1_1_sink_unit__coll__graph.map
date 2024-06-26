@@ -1,0 +1,23 @@
+<map id="Captain::Node::SinkUnit" name="Captain::Node::SinkUnit">
+<area shape="rect" id="Node000001" title=" " alt="" coords="358,1301,574,1584"/>
+<area shape="rect" id="Node000002" href="$struct_captain_1_1_node_1_1_i_vehicle_containable_unit.html" title="Interface that defines methods for classes that can possess vehicles required by meso and micro links..." alt="" coords="97,869,337,1237"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="345,1249,378,1300,374,1303,340,1251"/>
+<area shape="rect" id="Node000003" href="$struct_captain_1_1_unit_identifier.html" title=" " alt="" coords="5,416,145,805"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="140,804,155,853,150,854,135,806"/>
+<area shape="rect" id="Node000004" href="$class_captain_1_1_util_1_1_event_recorder.html" title=" " alt="" coords="169,469,349,752"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="248,752,239,853,233,852,243,752"/>
+<area shape="rect" id="Node000005" href="$class_captain_1_1_util_1_1_xml_writer.html" title=" " alt="" coords="9,5,157,288"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="126,287,162,391,188,453,183,455,158,393,121,289"/>
+<area shape="rect" id="Node000006" href="$class_captain_1_1_util_1_1_json_writer.html" title=" " alt="" coords="181,5,337,288"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="262,288,262,452,257,452,257,288"/>
+<area shape="rect" id="Node000007" href="$class_captain_1_1_util_1_1_json_reader.html" title=" " alt="" coords="362,37,522,256"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="422,256,404,324,380,393,352,456,347,454,376,391,399,323,417,255"/>
+<area shape="rect" id="Node000008" href="$struct_captain_1_1_node_1_1_unit_connection_info.html" title="Used to store connections in perspective of lane." alt="" coords="361,944,571,1163"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="469,1162,469,1284,463,1284,463,1162"/>
+<area shape="rect" id="Node000009" href="$class_captain_1_1_v2_x.html" title=" " alt="" coords="389,459,543,763"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="469,762,469,927,463,927,463,762"/>
+<area shape="rect" id="Node000010" href="$class_captain_1_1_util_1_1_vehicle_queue.html" title=": Concurrent queue class wrapper for storing vehicles" alt="" coords="595,912,769,1195"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="663,1195,650,1238,631,1279,611,1310,587,1339,583,1336,607,1307,626,1276,645,1236,658,1194"/>
+<area shape="rect" id="Node000011" href="$class_captain_1_1_i_vehicle_queue.html" title=" " alt="" coords="581,427,783,795"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="685,809,685,912,679,912,679,809"/>
+</map>

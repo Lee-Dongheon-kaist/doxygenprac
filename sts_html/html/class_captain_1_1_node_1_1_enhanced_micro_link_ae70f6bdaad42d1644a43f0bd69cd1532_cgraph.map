@@ -1,0 +1,42 @@
+<map id="Captain::Node::EnhancedMicroLink::UpdateSpecialVehicleDriveMode" name="Captain::Node::EnhancedMicroLink::UpdateSpecialVehicleDriveMode">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,339,246,381"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#a330398954a622ed76f34aa9e29e41cda" title=" " alt="" coords="294,123,495,165"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,336,353,173,356,177,155,340"/>
+<area shape="rect" id="Node000004" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#a5b0402c14ce7772a9f3c3c275b39cee7" title=" " alt="" coords="294,305,495,348"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="246,342,278,338,278,344,247,348"/>
+<area shape="rect" id="Node000017" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#ac147a474e8f7a219a9b35494edf8ac56" title=" " alt="" coords="294,372,495,415"/>
+<area shape="poly" id="edge19_Node000001_Node000017" title=" " alt="" coords="247,372,278,376,278,382,246,378"/>
+<area shape="rect" id="Node000018" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#a6ef9b74bba9b1dc70eaafc57532b05c5" title="For ReRoute." alt="" coords="294,505,495,548"/>
+<area shape="poly" id="edge20_Node000001_Node000018" title=" " alt="" coords="163,380,347,495,344,499,160,384"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#a5532b163d3d6855c5af192a2705f7313" title="Used to make speed limits for vehicles." alt="" coords="550,5,763,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="428,120,480,88,542,58,558,51,560,56,544,62,483,93,430,124"/>
+<area shape="rect" id="Node000005" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#a7811ae6264376b0d99a5cbfb84c7219a" title="Finds leaders for the lane changing." alt="" coords="556,72,757,115"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="407,304,472,206,509,157,541,125,548,120,551,125,545,129,513,160,476,209,411,306"/>
+<area shape="rect" id="Node000010" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#ad662001f8d2983ee755ffb8bebe5d7ce" title=" " alt="" coords="556,139,757,181"/>
+<area shape="poly" id="edge11_Node000004_Node000010" title=" " alt="" coords="412,303,466,247,502,217,542,191,552,186,555,190,544,196,506,221,470,251,416,307"/>
+<area shape="rect" id="Node000011" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#a4674378238e702416d7a75783c1351dd" title=" " alt="" coords="556,205,757,248"/>
+<area shape="poly" id="edge12_Node000004_Node000011" title=" " alt="" coords="438,303,542,258,561,251,563,256,544,262,441,307"/>
+<area shape="rect" id="Node000012" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#a3448088ba92d9e5bbb9931bce52c7996" title=" " alt="" coords="556,272,757,315"/>
+<area shape="poly" id="edge13_Node000004_Node000012" title=" " alt="" coords="495,311,540,305,541,311,496,316"/>
+<area shape="rect" id="Node000013" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#a8ff8db7dfd4ee9975ba95489563d6c48" title=" " alt="" coords="556,339,757,381"/>
+<area shape="poly" id="edge14_Node000004_Node000013" title=" " alt="" coords="496,337,541,343,540,348,495,342"/>
+<area shape="rect" id="Node000014" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#a4866e1400a12cbe2c80a3885eea2637b" title=" " alt="" coords="556,405,757,448"/>
+<area shape="poly" id="edge15_Node000004_Node000014" title=" " alt="" coords="470,346,496,358,520,375,544,391,558,397,555,402,542,396,517,379,494,362,468,351"/>
+<area shape="rect" id="Node000015" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#a788373585a387dbde1d938c6cf64f472" title=" " alt="" coords="556,472,757,515"/>
+<area shape="poly" id="edge16_Node000004_Node000015" title=" " alt="" coords="480,346,497,358,508,371,515,384,521,410,527,435,534,446,545,458,549,461,545,465,541,462,530,449,522,436,516,411,510,386,504,374,493,362,477,351"/>
+<area shape="rect" id="Node000016" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#a543188e9c9f7b39a653698671f2d5796" title=" " alt="" coords="550,539,762,581"/>
+<area shape="poly" id="edge17_Node000004_Node000016" title=" " alt="" coords="483,347,497,358,513,380,520,401,521,444,523,485,530,505,545,525,547,527,544,531,541,528,525,507,517,486,516,444,515,402,508,382,493,362,479,351"/>
+<area shape="rect" id="Node000006" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#a010fe91973c801afcf64f41e7715a7e7" title=" " alt="" coords="817,305,1019,348"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="751,113,771,124,814,163,851,207,881,252,902,290,898,293,876,254,847,210,810,166,768,129,748,118"/>
+<area shape="poly" id="edge6_Node000006_Node000006" title=" " alt="" coords="871,305,869,295,877,286,893,281,918,279,945,281,961,287,959,292,943,286,918,284,894,286,880,291,874,297,876,304"/>
+<area shape="rect" id="Node000007" href="$class_captain_1_1_weak_ptr.html#af093fc8dcc84e64ff16fbeccb935d5ad" title=" " alt="" coords="1317,284,1467,311"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="1019,318,1301,300,1301,306,1019,323"/>
+<area shape="rect" id="Node000008" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#ad4b146bc4b9cdfd5717964c16d261796" title=" " alt="" coords="1067,335,1268,377"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="1020,336,1052,340,1051,345,1019,341"/>
+<area shape="poly" id="edge10_Node000008_Node000007" title=" " alt="" coords="1251,332,1323,312,1324,318,1252,337"/>
+<area shape="rect" id="Node000009" href="$struct_captain_1_1_path_identifier.html#ac637cd75014e617fba3926f9d53adffd" title=" " alt="" coords="1316,335,1467,377"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="1268,353,1300,353,1300,359,1268,359"/>
+<area shape="poly" id="edge18_Node000016_Node000006" title=" " alt="" coords="748,536,768,524,810,487,847,443,876,399,898,360,902,363,881,402,851,446,814,491,771,529,751,540"/>
+<area shape="rect" id="Node000019" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#a909c0020b6c81ec65231940b66a806a3" title="Gets UnitConnectionInfo connected to follower." alt="" coords="543,605,769,648"/>
+<area shape="poly" id="edge21_Node000018_Node000019" title=" " alt="" coords="441,546,544,591,563,598,561,603,542,596,438,551"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="Captain::SpinLockVehicleQueue::DefiniteDequeue" name="Captain::SpinLockVehicleQueue::DefiniteDequeue">
+<area shape="rect" id="Node000001" title=" " alt="" coords="476,72,646,115"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_source_unit.html#ab19f84652eeed3494500e64030eb17ec" title=" " alt="" coords="238,5,414,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="468,70,403,51,405,46,470,65"/>
+<area shape="rect" id="Node000003" href="$namespace_util_test.html#ae7a643ae574ce868d7974effa6882a8c" title=" " alt="" coords="224,72,428,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="460,96,428,96,428,91,460,91"/>
+<area shape="rect" id="Node000004" href="$namespace_util_test.html#a2b84c910a1938d0339b9fdd3d6e92a3a" title=" " alt="" coords="244,139,408,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="462,121,429,129,383,141,382,135,427,124,460,116"/>
+<area shape="rect" id="Node000005" href="$namespace_util_test.html#ad8caf84b46ff9a974082ebc3423f8990" title=" " alt="" coords="5,131,176,173"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="229,155,176,155,176,149,229,149"/>
+</map>

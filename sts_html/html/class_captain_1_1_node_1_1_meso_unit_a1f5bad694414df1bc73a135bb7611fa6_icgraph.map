@@ -1,0 +1,5 @@
+<map id="Captain::Node::MesoUnit::GetAverageSpeed" name="Captain::Node::MesoUnit::GetAverageSpeed">
+<area shape="rect" id="Node000001" title="Gets average speed of this cell in m/s." alt="" coords="220,5,386,48"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_meso_unit.html#acc1b172b3662b27185618d9910d4bbf6" title="omputes LC to lane change from current unit stores result to m_laneChangeIndexVector" alt="" coords="5,5,172,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,29,172,29,172,24,204,24"/>
+</map>

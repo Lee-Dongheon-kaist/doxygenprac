@@ -1,0 +1,239 @@
+\doxysection{Captain\+::Vehicle\+State Struct Reference}
+\hypertarget{struct_captain_1_1_vehicle_state}{}\label{struct_captain_1_1_vehicle_state}\index{Captain::VehicleState@{Captain::VehicleState}}
+
+
+This Expresses specific state of the vehicle.  
+
+
+
+
+{\ttfamily \#include $<$Vehicle\+Info.\+hpp$>$}
+
+
+
+Collaboration diagram for Captain\+::Vehicle\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{struct_captain_1_1_vehicle_state__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_vehicle_state_a37ce315e56cdb825a16d4159292d67ff}{Vehicle\+State}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} \mbox{\hyperlink{struct_captain_1_1_vehicle_state_ab5ccda8b40f2564607f129feb6e035c5}{Get\+Stop\+Vehicle\+State}} (double lane\+Length)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} \mbox{\hyperlink{struct_captain_1_1_vehicle_state_a55075cbc43318f3e1ef6eb827ec924c5}{Next\+Path\+Identifier}}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} \mbox{\hyperlink{struct_captain_1_1_vehicle_state_a17b5264f4158659e41a555918b135af1}{Current\+Path\+Identifier}}
+\item 
+int \mbox{\hyperlink{struct_captain_1_1_vehicle_state_a03cc2192be5cd79d4318ef6893aa71a6}{Previous\+Link\+ID}} = 0
+\item 
+int \mbox{\hyperlink{struct_captain_1_1_vehicle_state_aceae06e542cb7857dd57a016e79618f2}{Previous\+Lane\+ID}} = 0
+\item 
+int \mbox{\hyperlink{struct_captain_1_1_vehicle_state_a0a1e94e30d77c75e5056d5b2e662b121}{Current\+Link\+ID}} = 0
+\item 
+int \mbox{\hyperlink{struct_captain_1_1_vehicle_state_a1ddb3a42a816b32219df2e09e657a100}{Current\+Lane\+Index}} = 0
+\item 
+int \mbox{\hyperlink{struct_captain_1_1_vehicle_state_af6d959bdd2ed38ca2f3b9305f4423b12}{Target\+Lane\+Idx}} = 0
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{struct_captain_1_1_vehicle_state_a862e69284da528d87bd7e51570353a54}{Next\+Lane\+IDList}}
+\item 
+double \mbox{\hyperlink{struct_captain_1_1_vehicle_state_a4ba456f572f8b6462573323e63022113}{Speed}} = 0
+\item 
+double \mbox{\hyperlink{struct_captain_1_1_vehicle_state_a5aa284b36af6c4ca5ffd5ef94c33ec24}{v2xlength}} = 0
+\item 
+std\+::string \mbox{\hyperlink{struct_captain_1_1_vehicle_state_acbb587e99d2cc1b81d217c77c107be35}{v2x\+Msg\+Type}} = "{}"{}
+\item 
+double \mbox{\hyperlink{struct_captain_1_1_vehicle_state_ac2e1d49c85d6d838fdb7590a01d35498}{v2x\+Value}} = 0
+\item 
+\mbox{\hyperlink{struct_captain_1_1_position}{Position}} \mbox{\hyperlink{struct_captain_1_1_vehicle_state_aaadc072450914497234dae9376311107}{Vehicle\+Position}} = \mbox{\hyperlink{struct_captain_1_1_position}{Position}}()
+\item 
+\mbox{\hyperlink{struct_captain_1_1_position}{Position}} \mbox{\hyperlink{struct_captain_1_1_vehicle_state_a764417172fc3178cd16990e5630f7fd9}{Next\+Vehicle\+Position}} = \mbox{\hyperlink{struct_captain_1_1_position}{Position}}()
+\item 
+double \mbox{\hyperlink{struct_captain_1_1_vehicle_state_aec5dafe54bf3eb2a87d8c73e262298e9}{Remaining\+Distance}} = 0
+\item 
+\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \mbox{\hyperlink{struct_captain_1_1_vehicle_state_aaa06869a4eb68b3dc7a190777fc8f6a8}{Current\+Link\+Identifier}}
+\item 
+bool \mbox{\hyperlink{struct_captain_1_1_vehicle_state_ab06f2a4bac469bb10f7de0a4a1bf1516}{Parked}} = false
+\item 
+bool \mbox{\hyperlink{struct_captain_1_1_vehicle_state_a7a6d37db99f32beff3d6f1af79ad734b}{Communcation}} = false
+\item 
+bool \mbox{\hyperlink{struct_captain_1_1_vehicle_state_ad5f39e4e8e3e77ddf1093d17fa336c57}{Need\+LC}} = false
+\item 
+int \mbox{\hyperlink{struct_captain_1_1_vehicle_state_a61dea34c78406e641f1f154113aff904}{lc\+Counter}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This Expresses specific state of the vehicle. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_captain_1_1_vehicle_state_a37ce315e56cdb825a16d4159292d67ff}\label{struct_captain_1_1_vehicle_state_a37ce315e56cdb825a16d4159292d67ff} 
+\index{Captain::VehicleState@{Captain::VehicleState}!VehicleState@{VehicleState}}
+\index{VehicleState@{VehicleState}!Captain::VehicleState@{Captain::VehicleState}}
+\doxysubsubsection{\texorpdfstring{VehicleState()}{VehicleState()}}
+{\footnotesize\ttfamily Captain\+::\+Vehicle\+State\+::\+Vehicle\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{struct_captain_1_1_vehicle_state_a37ce315e56cdb825a16d4159292d67ff_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_captain_1_1_vehicle_state_ab5ccda8b40f2564607f129feb6e035c5}\label{struct_captain_1_1_vehicle_state_ab5ccda8b40f2564607f129feb6e035c5} 
+\index{Captain::VehicleState@{Captain::VehicleState}!GetStopVehicleState@{GetStopVehicleState}}
+\index{GetStopVehicleState@{GetStopVehicleState}!Captain::VehicleState@{Captain::VehicleState}}
+\doxysubsubsection{\texorpdfstring{GetStopVehicleState()}{GetStopVehicleState()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} Captain\+::\+Vehicle\+State\+::\+Get\+Stop\+Vehicle\+State (\begin{DoxyParamCaption}\item[{double}]{lane\+Length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{struct_captain_1_1_vehicle_state_ab5ccda8b40f2564607f129feb6e035c5_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_captain_1_1_vehicle_state_a7a6d37db99f32beff3d6f1af79ad734b}\label{struct_captain_1_1_vehicle_state_a7a6d37db99f32beff3d6f1af79ad734b} 
+\index{Captain::VehicleState@{Captain::VehicleState}!Communcation@{Communcation}}
+\index{Communcation@{Communcation}!Captain::VehicleState@{Captain::VehicleState}}
+\doxysubsubsection{\texorpdfstring{Communcation}{Communcation}}
+{\footnotesize\ttfamily bool Captain\+::\+Vehicle\+State\+::\+Communcation = false}
+
+\Hypertarget{struct_captain_1_1_vehicle_state_a1ddb3a42a816b32219df2e09e657a100}\label{struct_captain_1_1_vehicle_state_a1ddb3a42a816b32219df2e09e657a100} 
+\index{Captain::VehicleState@{Captain::VehicleState}!CurrentLaneIndex@{CurrentLaneIndex}}
+\index{CurrentLaneIndex@{CurrentLaneIndex}!Captain::VehicleState@{Captain::VehicleState}}
+\doxysubsubsection{\texorpdfstring{CurrentLaneIndex}{CurrentLaneIndex}}
+{\footnotesize\ttfamily int Captain\+::\+Vehicle\+State\+::\+Current\+Lane\+Index = 0}
+
+\Hypertarget{struct_captain_1_1_vehicle_state_a0a1e94e30d77c75e5056d5b2e662b121}\label{struct_captain_1_1_vehicle_state_a0a1e94e30d77c75e5056d5b2e662b121} 
+\index{Captain::VehicleState@{Captain::VehicleState}!CurrentLinkID@{CurrentLinkID}}
+\index{CurrentLinkID@{CurrentLinkID}!Captain::VehicleState@{Captain::VehicleState}}
+\doxysubsubsection{\texorpdfstring{CurrentLinkID}{CurrentLinkID}}
+{\footnotesize\ttfamily int Captain\+::\+Vehicle\+State\+::\+Current\+Link\+ID = 0}
+
+\Hypertarget{struct_captain_1_1_vehicle_state_aaa06869a4eb68b3dc7a190777fc8f6a8}\label{struct_captain_1_1_vehicle_state_aaa06869a4eb68b3dc7a190777fc8f6a8} 
+\index{Captain::VehicleState@{Captain::VehicleState}!CurrentLinkIdentifier@{CurrentLinkIdentifier}}
+\index{CurrentLinkIdentifier@{CurrentLinkIdentifier}!Captain::VehicleState@{Captain::VehicleState}}
+\doxysubsubsection{\texorpdfstring{CurrentLinkIdentifier}{CurrentLinkIdentifier}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} Captain\+::\+Vehicle\+State\+::\+Current\+Link\+Identifier}
+
+\Hypertarget{struct_captain_1_1_vehicle_state_a17b5264f4158659e41a555918b135af1}\label{struct_captain_1_1_vehicle_state_a17b5264f4158659e41a555918b135af1} 
+\index{Captain::VehicleState@{Captain::VehicleState}!CurrentPathIdentifier@{CurrentPathIdentifier}}
+\index{CurrentPathIdentifier@{CurrentPathIdentifier}!Captain::VehicleState@{Captain::VehicleState}}
+\doxysubsubsection{\texorpdfstring{CurrentPathIdentifier}{CurrentPathIdentifier}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} Captain\+::\+Vehicle\+State\+::\+Current\+Path\+Identifier}
+
+\Hypertarget{struct_captain_1_1_vehicle_state_a61dea34c78406e641f1f154113aff904}\label{struct_captain_1_1_vehicle_state_a61dea34c78406e641f1f154113aff904} 
+\index{Captain::VehicleState@{Captain::VehicleState}!lcCounter@{lcCounter}}
+\index{lcCounter@{lcCounter}!Captain::VehicleState@{Captain::VehicleState}}
+\doxysubsubsection{\texorpdfstring{lcCounter}{lcCounter}}
+{\footnotesize\ttfamily int Captain\+::\+Vehicle\+State\+::lc\+Counter = 0}
+
+\Hypertarget{struct_captain_1_1_vehicle_state_ad5f39e4e8e3e77ddf1093d17fa336c57}\label{struct_captain_1_1_vehicle_state_ad5f39e4e8e3e77ddf1093d17fa336c57} 
+\index{Captain::VehicleState@{Captain::VehicleState}!NeedLC@{NeedLC}}
+\index{NeedLC@{NeedLC}!Captain::VehicleState@{Captain::VehicleState}}
+\doxysubsubsection{\texorpdfstring{NeedLC}{NeedLC}}
+{\footnotesize\ttfamily bool Captain\+::\+Vehicle\+State\+::\+Need\+LC = false}
+
+\Hypertarget{struct_captain_1_1_vehicle_state_a862e69284da528d87bd7e51570353a54}\label{struct_captain_1_1_vehicle_state_a862e69284da528d87bd7e51570353a54} 
+\index{Captain::VehicleState@{Captain::VehicleState}!NextLaneIDList@{NextLaneIDList}}
+\index{NextLaneIDList@{NextLaneIDList}!Captain::VehicleState@{Captain::VehicleState}}
+\doxysubsubsection{\texorpdfstring{NextLaneIDList}{NextLaneIDList}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Captain\+::\+Vehicle\+State\+::\+Next\+Lane\+IDList}
+
+\Hypertarget{struct_captain_1_1_vehicle_state_a55075cbc43318f3e1ef6eb827ec924c5}\label{struct_captain_1_1_vehicle_state_a55075cbc43318f3e1ef6eb827ec924c5} 
+\index{Captain::VehicleState@{Captain::VehicleState}!NextPathIdentifier@{NextPathIdentifier}}
+\index{NextPathIdentifier@{NextPathIdentifier}!Captain::VehicleState@{Captain::VehicleState}}
+\doxysubsubsection{\texorpdfstring{NextPathIdentifier}{NextPathIdentifier}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} Captain\+::\+Vehicle\+State\+::\+Next\+Path\+Identifier}
+
+\Hypertarget{struct_captain_1_1_vehicle_state_a764417172fc3178cd16990e5630f7fd9}\label{struct_captain_1_1_vehicle_state_a764417172fc3178cd16990e5630f7fd9} 
+\index{Captain::VehicleState@{Captain::VehicleState}!NextVehiclePosition@{NextVehiclePosition}}
+\index{NextVehiclePosition@{NextVehiclePosition}!Captain::VehicleState@{Captain::VehicleState}}
+\doxysubsubsection{\texorpdfstring{NextVehiclePosition}{NextVehiclePosition}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_position}{Position}} Captain\+::\+Vehicle\+State\+::\+Next\+Vehicle\+Position = \mbox{\hyperlink{struct_captain_1_1_position}{Position}}()}
+
+\Hypertarget{struct_captain_1_1_vehicle_state_ab06f2a4bac469bb10f7de0a4a1bf1516}\label{struct_captain_1_1_vehicle_state_ab06f2a4bac469bb10f7de0a4a1bf1516} 
+\index{Captain::VehicleState@{Captain::VehicleState}!Parked@{Parked}}
+\index{Parked@{Parked}!Captain::VehicleState@{Captain::VehicleState}}
+\doxysubsubsection{\texorpdfstring{Parked}{Parked}}
+{\footnotesize\ttfamily bool Captain\+::\+Vehicle\+State\+::\+Parked = false}
+
+\Hypertarget{struct_captain_1_1_vehicle_state_aceae06e542cb7857dd57a016e79618f2}\label{struct_captain_1_1_vehicle_state_aceae06e542cb7857dd57a016e79618f2} 
+\index{Captain::VehicleState@{Captain::VehicleState}!PreviousLaneID@{PreviousLaneID}}
+\index{PreviousLaneID@{PreviousLaneID}!Captain::VehicleState@{Captain::VehicleState}}
+\doxysubsubsection{\texorpdfstring{PreviousLaneID}{PreviousLaneID}}
+{\footnotesize\ttfamily int Captain\+::\+Vehicle\+State\+::\+Previous\+Lane\+ID = 0}
+
+\Hypertarget{struct_captain_1_1_vehicle_state_a03cc2192be5cd79d4318ef6893aa71a6}\label{struct_captain_1_1_vehicle_state_a03cc2192be5cd79d4318ef6893aa71a6} 
+\index{Captain::VehicleState@{Captain::VehicleState}!PreviousLinkID@{PreviousLinkID}}
+\index{PreviousLinkID@{PreviousLinkID}!Captain::VehicleState@{Captain::VehicleState}}
+\doxysubsubsection{\texorpdfstring{PreviousLinkID}{PreviousLinkID}}
+{\footnotesize\ttfamily int Captain\+::\+Vehicle\+State\+::\+Previous\+Link\+ID = 0}
+
+\Hypertarget{struct_captain_1_1_vehicle_state_aec5dafe54bf3eb2a87d8c73e262298e9}\label{struct_captain_1_1_vehicle_state_aec5dafe54bf3eb2a87d8c73e262298e9} 
+\index{Captain::VehicleState@{Captain::VehicleState}!RemainingDistance@{RemainingDistance}}
+\index{RemainingDistance@{RemainingDistance}!Captain::VehicleState@{Captain::VehicleState}}
+\doxysubsubsection{\texorpdfstring{RemainingDistance}{RemainingDistance}}
+{\footnotesize\ttfamily double Captain\+::\+Vehicle\+State\+::\+Remaining\+Distance = 0}
+
+\Hypertarget{struct_captain_1_1_vehicle_state_a4ba456f572f8b6462573323e63022113}\label{struct_captain_1_1_vehicle_state_a4ba456f572f8b6462573323e63022113} 
+\index{Captain::VehicleState@{Captain::VehicleState}!Speed@{Speed}}
+\index{Speed@{Speed}!Captain::VehicleState@{Captain::VehicleState}}
+\doxysubsubsection{\texorpdfstring{Speed}{Speed}}
+{\footnotesize\ttfamily double Captain\+::\+Vehicle\+State\+::\+Speed = 0}
+
+\Hypertarget{struct_captain_1_1_vehicle_state_af6d959bdd2ed38ca2f3b9305f4423b12}\label{struct_captain_1_1_vehicle_state_af6d959bdd2ed38ca2f3b9305f4423b12} 
+\index{Captain::VehicleState@{Captain::VehicleState}!TargetLaneIdx@{TargetLaneIdx}}
+\index{TargetLaneIdx@{TargetLaneIdx}!Captain::VehicleState@{Captain::VehicleState}}
+\doxysubsubsection{\texorpdfstring{TargetLaneIdx}{TargetLaneIdx}}
+{\footnotesize\ttfamily int Captain\+::\+Vehicle\+State\+::\+Target\+Lane\+Idx = 0}
+
+\Hypertarget{struct_captain_1_1_vehicle_state_a5aa284b36af6c4ca5ffd5ef94c33ec24}\label{struct_captain_1_1_vehicle_state_a5aa284b36af6c4ca5ffd5ef94c33ec24} 
+\index{Captain::VehicleState@{Captain::VehicleState}!v2xlength@{v2xlength}}
+\index{v2xlength@{v2xlength}!Captain::VehicleState@{Captain::VehicleState}}
+\doxysubsubsection{\texorpdfstring{v2xlength}{v2xlength}}
+{\footnotesize\ttfamily double Captain\+::\+Vehicle\+State\+::v2xlength = 0}
+
+\Hypertarget{struct_captain_1_1_vehicle_state_acbb587e99d2cc1b81d217c77c107be35}\label{struct_captain_1_1_vehicle_state_acbb587e99d2cc1b81d217c77c107be35} 
+\index{Captain::VehicleState@{Captain::VehicleState}!v2xMsgType@{v2xMsgType}}
+\index{v2xMsgType@{v2xMsgType}!Captain::VehicleState@{Captain::VehicleState}}
+\doxysubsubsection{\texorpdfstring{v2xMsgType}{v2xMsgType}}
+{\footnotesize\ttfamily std\+::string Captain\+::\+Vehicle\+State\+::v2x\+Msg\+Type = "{}"{}}
+
+\Hypertarget{struct_captain_1_1_vehicle_state_ac2e1d49c85d6d838fdb7590a01d35498}\label{struct_captain_1_1_vehicle_state_ac2e1d49c85d6d838fdb7590a01d35498} 
+\index{Captain::VehicleState@{Captain::VehicleState}!v2xValue@{v2xValue}}
+\index{v2xValue@{v2xValue}!Captain::VehicleState@{Captain::VehicleState}}
+\doxysubsubsection{\texorpdfstring{v2xValue}{v2xValue}}
+{\footnotesize\ttfamily double Captain\+::\+Vehicle\+State\+::v2x\+Value = 0}
+
+\Hypertarget{struct_captain_1_1_vehicle_state_aaadc072450914497234dae9376311107}\label{struct_captain_1_1_vehicle_state_aaadc072450914497234dae9376311107} 
+\index{Captain::VehicleState@{Captain::VehicleState}!VehiclePosition@{VehiclePosition}}
+\index{VehiclePosition@{VehiclePosition}!Captain::VehicleState@{Captain::VehicleState}}
+\doxysubsubsection{\texorpdfstring{VehiclePosition}{VehiclePosition}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_position}{Position}} Captain\+::\+Vehicle\+State\+::\+Vehicle\+Position = \mbox{\hyperlink{struct_captain_1_1_position}{Position}}()}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Structs/\mbox{\hyperlink{_vehicle_info_8hpp}{Vehicle\+Info.\+hpp}}\end{DoxyCompactItemize}

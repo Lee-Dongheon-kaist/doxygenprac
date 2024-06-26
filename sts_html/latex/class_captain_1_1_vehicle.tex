@@ -1,0 +1,708 @@
+\doxysection{Captain\+::Vehicle Class Reference}
+\hypertarget{class_captain_1_1_vehicle}{}\label{class_captain_1_1_vehicle}\index{Captain::Vehicle@{Captain::Vehicle}}
+
+
+\doxylink{class_captain_1_1_vehicle}{Vehicle} class plays function of actual \doxylink{class_captain_1_1_vehicle}{Vehicle}.  
+
+
+
+
+{\ttfamily \#include $<$Vehicle.\+hpp$>$}
+
+
+
+Collaboration diagram for Captain\+::Vehicle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_captain_1_1_vehicle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_captain_1_1_vehicle_a2a08baf955ea6d9d79b1da99359d2d58}{Vehicle}} (const \mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}} \&vehicle\+Info, \mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} \&vehicle\+State)
+\item 
+\mbox{\hyperlink{class_captain_1_1_vehicle_a0de7834b9ce0899f33f0b6b7e8939161}{Vehicle}} (const \mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}} \&vehicle\+Info, \mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} \&vehicle\+State, \mbox{\hyperlink{namespace_captain_ac119685cba80fd1d1731e2884cf70181}{Vehicle\+Dummy\+Type}} type)
+\item 
+\mbox{\hyperlink{class_captain_1_1_vehicle_a741e1c51507334c8bd44344590564a6f}{Vehicle}} (\mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}} \&\&vehicle\+Info, \mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} \&\&vehicle\+State)
+\item 
+virtual \mbox{\hyperlink{class_captain_1_1_vehicle_ab4d204e8d6cf9f11bd16ace7fbec4477}{\texorpdfstring{$\sim$}{\string~}\+Vehicle}} ()=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_vehicle_a038fea5db6aee62263a0a2571eb10239}{Vehicle}} (const \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} \&vehicle)=delete
+\item 
+\mbox{\hyperlink{class_captain_1_1_vehicle_a22cd2450fa8b23c3222297c5caba3511}{Vehicle}} (\mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} \&\&vehicle) noexcept=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} \& \mbox{\hyperlink{class_captain_1_1_vehicle_a29eb7bb6828f59b0ec0ec4c4285fa25a}{operator=}} (const \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} \&vehicle)=delete
+\item 
+\mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} \& \mbox{\hyperlink{class_captain_1_1_vehicle_ad272a64f309dcc2a3ec3d03cdf0ea6c7}{operator=}} (\mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} \&\&vehicle) noexcept
+\item 
+bool \mbox{\hyperlink{class_captain_1_1_vehicle_a1922dc8cd3244b8f44dde0be6faefcfe}{operator==}} (const \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} \&vehicle) const
+\begin{DoxyCompactList}\small\item\em Equality operators will compare Info of vehicles. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_captain_1_1_vehicle_a4018d2a1d583007ba3a9838a5317c895}{operator!=}} (const \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} \&vehicle) const
+\item 
+\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \mbox{\hyperlink{class_captain_1_1_vehicle_a76be06ede91b502122b2c9f43a627e07}{Identifier}} () const
+\item 
+\mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} \& \mbox{\hyperlink{class_captain_1_1_vehicle_a78134f22e35647b28e5a0a02e81a9fbd}{Get\+State\+Ref}} ()
+\item 
+\mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}} \& \mbox{\hyperlink{class_captain_1_1_vehicle_a114b3572b6cdf647c1056a8546aae6d0}{Get\+Info}} ()
+\item 
+\mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} \& \mbox{\hyperlink{class_captain_1_1_vehicle_a25286d78fad30796945bf23f653651ec}{Get\+Path\+Ref}} ()
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{class_captain_1_1_vehicle_a678200c27c722c2c93b229df51a29077}{Get\+Lane\+Priority}} () const
+\item 
+std\+::pair$<$ \mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}}, \mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} $>$ \mbox{\hyperlink{class_captain_1_1_vehicle_a6ab10b6806334bf5f8477bf56f7faffd}{Get\+Info\+State\+Pair}} ()
+\item 
+double \mbox{\hyperlink{class_captain_1_1_vehicle_a71f0c13ad423c4e18881e0a19910a9a4}{Get\+Max\+Priority}} () const
+\item 
+std\+::optional$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{class_captain_1_1_vehicle_a80ac0ceb35a303bbaf3ac529e93c252d}{Get\+Max\+Priority\+Index\+Vector}} () const
+\item 
+\mbox{\hyperlink{struct_captain_1_1_position}{Position}} \mbox{\hyperlink{class_captain_1_1_vehicle_aafa9e54094bae85882d750b5c1cf2075}{Get\+Position}} () const
+\item 
+\mbox{\hyperlink{struct_captain_1_1_vehicle_record_info}{Vehicle\+Record\+Info}} \& \mbox{\hyperlink{class_captain_1_1_vehicle_a562275f0dd52ebc82ac203184c044a3d}{Get\+Vehicle\+Record\+Info}} ()
+\item 
+double \mbox{\hyperlink{class_captain_1_1_vehicle_a81653578343ec94e2747a92604d63093}{Get\+Minimum\+Stopping\+Distance}} () const
+\begin{DoxyCompactList}\small\item\em Required minimum distance in X to stop the vehicle. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_captain_1_1_vehicle_a4ae4873b7a0db1a3b86980ed0d05ce58}{Get\+Type}} () const
+\item 
+size\+\_\+t \mbox{\hyperlink{class_captain_1_1_vehicle_a24cdc9fada441c0414a61811a4ed500e}{Get\+Maximum\+Available\+Passengers}} () const
+\begin{DoxyCompactList}\small\item\em Gets maximum number of passengers this vehicle can contain. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_captain_1_1_vehicle_a90a5b25a281bf72ba8f5ba517b91a450}{Get\+Num\+Passengers}} () const
+\item 
+int \mbox{\hyperlink{class_captain_1_1_vehicle_a8f220e8e0b076c0d1357a3a928632722}{Get\+Num\+Available\+Additional\+Passengers}} () const
+\item 
+int \mbox{\hyperlink{class_captain_1_1_vehicle_ac7023e79be93a2a015c5e4f17a034787}{Append\+Passengers}} (int num\+Additional\+Passengers)
+\item 
+int \mbox{\hyperlink{class_captain_1_1_vehicle_a9b2578788b5f7de18d8b264a359af97a}{Pop\+Passengers}} (int num\+Passengers\+To\+Pop)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_vehicle_a4b4dc4771ae528a7132323679123ec21}{Set\+Vehicle\+State}} (\mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} \&vehicle\+State)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_vehicle_a174af3332d730a78a1aa141fafe8dcaf}{Set\+Position}} (\mbox{\hyperlink{struct_captain_1_1_position}{Position}} position)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_vehicle_a02d3a1755b42f6e89dfde072d4629f5a}{Set\+Speed}} (double speed)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_vehicle_a16a79039dab1acd2317898202ffb61d5}{Calculate\+Actual\+Position}} (double cell\+\_\+length, int cell\+\_\+id)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_vehicle_aa468f1ad3b335b216bb3a1c23bb10ac5}{Set\+Vehicle\+Path}} (\mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} vehicle\+Path)
+\begin{DoxyCompactList}\small\item\em Sets path of the vehicle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_vehicle_aa060412344b141f7cde3ddda259cbde4}{Set\+Lane\+Priority}} (std\+::vector$<$ double $>$ vehicle\+Lane\+Priority)
+\begin{DoxyCompactList}\small\item\em Initialize \doxylink{class_captain_1_1_vehicle}{Vehicle} Get\+State\+Ref. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_vehicle_a921b4f705b8a2558962789c9ff1f499e}{Set\+Max\+Passenger\+Num}} (int max\+Passenger\+Num)
+\begin{DoxyCompactList}\small\item\em Sets m\+\_\+max\+Passenger\+Num of the vehicle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_vehicle_a71cac94c6dcad18817b8bf9ade52e068}{Set\+Num\+Passenger}} (int num\+Passenger)
+\begin{DoxyCompactList}\small\item\em Sets m\+\_\+num\+Passenger of the vehicle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_vehicle_a0c73e4a224d475864010c1d4c75d61d5}{Set\+Parking\+State}} (bool parked)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_vehicle_af24807e9d6036d284a2be3bd1dd5a1e7}{Set\+Need\+LC}} (bool needlc)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_vehicle_a6868eb11edb10663eda6294c01133086}{Set\+V2\+XMessage}} (\mbox{\hyperlink{struct_captain_1_1_message}{Message}} message\+Recieved)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_vehicle_aa39db0c3d5437419b231a132414a11c2}{Initialize\+State}} ()
+\begin{DoxyCompactList}\small\item\em Initialize \doxylink{class_captain_1_1_vehicle}{Vehicle} State. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_vehicle_a6bdbb3d02fe8c7d7b217d35c8f21d786}{Update\+Current\+Unit}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&new\+Unit\+Identifier, bool update\+Link)
+\item 
+\mbox{\hyperlink{struct_captain_1_1_vehicle_record_info}{Vehicle\+Record\+Info}} \mbox{\hyperlink{class_captain_1_1_vehicle_abd1cdafa20116d36f38649d58bc9bc51}{Record}} (size\+\_\+t cycle, bool is\+Micro)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_vehicle_ad5ac2a520370969385b76dec6224de07}{Flush\+Recordings}} () const
+\item 
+void \mbox{\hyperlink{class_captain_1_1_vehicle_acf567b0e9f39f729cbda1800f10b8fca}{Get\+Recordings}} (\mbox{\hyperlink{struct_captain_1_1_util_1_1_event_recorder_container}{Captain\+::\+Util\+::\+Event\+Recorder\+Container}} \&container)
+\item 
+std\+::filesystem\+::path \mbox{\hyperlink{class_captain_1_1_vehicle_a3c8f2279f6b81c0d797f2d16ecc0ca17}{Get\+File\+Path}} () const
+\item 
+void \mbox{\hyperlink{class_captain_1_1_vehicle_a4ad0dd90e10a75c0f5533226fec1244f}{Extract\+Vehicle}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::optional$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{class_captain_1_1_vehicle_a574be5a4b799c615bb41d149baebbaf9}{Get\+Max\+Priority\+Index\+Vector}} (std\+::vector$<$ double $>$ priority)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_vehicle_record_info}{Vehicle\+Record\+Info}} \mbox{\hyperlink{class_captain_1_1_vehicle_a79f2114b7c847aff691382eeb8397b1a}{Record\+Info}}
+\begin{DoxyCompactList}\small\item\em Record required information while the vehicle is inside micro unit. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_captain_1_1_vehicle_descriptor}{Vehicle\+Descriptor}} \mbox{\hyperlink{class_captain_1_1_vehicle_a3269530f6a970755d55c84c8ef2f48b8}{Descriptor}}
+\begin{DoxyCompactList}\small\item\em Descriptor that contains \doxylink{struct_captain_1_1_vehicle_info}{Vehicle\+Info} and \doxylink{struct_captain_1_1_vehicle_state}{Vehicle\+State}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor}{Drive\+Mode\+Descriptor}} \mbox{\hyperlink{class_captain_1_1_vehicle_ab593da402be8e325c9e172f8e606a33a}{Drive\+Mode}}
+\begin{DoxyCompactList}\small\item\em Contains information about drive mode that this vehicle currently has. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} \mbox{\hyperlink{class_captain_1_1_vehicle_adea7555d9a8c25c2c68cc0e418003faa}{Path}}
+\begin{DoxyCompactList}\small\item\em Contains path set to this vehicle. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_captain_1_1_vehicle_aa2dc073676cb5063744c5a921be53ef6}{m\+\_\+num\+Passengers}} = 0
+\begin{DoxyCompactList}\small\item\em Current number of passengers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_captain_1_1_v2_x}{V2X}} \mbox{\hyperlink{class_captain_1_1_vehicle_abc1605fa26af8080135d7b638129488a}{v2x}}
+\item 
+\mbox{\hyperlink{namespace_captain_ac119685cba80fd1d1731e2884cf70181}{Vehicle\+Dummy\+Type}} \mbox{\hyperlink{class_captain_1_1_vehicle_a2485b515fe35978bf22b34b090a3e520}{Dummy\+Type}} = \mbox{\hyperlink{namespace_captain_ac119685cba80fd1d1731e2884cf70181ad2203cb1237cb6460cbad94564e39345}{Vehicle\+Dummy\+Type\+::\+Regular}}
+\begin{DoxyCompactList}\small\item\em vehicle dummy type to distinguish dummy and regular vehicles \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_captain_1_1_vehicle}{Vehicle} class plays function of actual \doxylink{class_captain_1_1_vehicle}{Vehicle}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_captain_1_1_vehicle_a2a08baf955ea6d9d79b1da99359d2d58}\label{class_captain_1_1_vehicle_a2a08baf955ea6d9d79b1da99359d2d58} 
+\index{Captain::Vehicle@{Captain::Vehicle}!Vehicle@{Vehicle}}
+\index{Vehicle@{Vehicle}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{Vehicle()}{Vehicle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Captain\+::\+Vehicle\+::\+Vehicle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}} \&}]{vehicle\+Info,  }\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} \&}]{vehicle\+State }\end{DoxyParamCaption})}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em vehicle\+Info} & \+: characteristic of the vehicle \\
+\hline
+{\em vehicle\+State} & \+: default state of the vehicle \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_captain_1_1_vehicle_a0de7834b9ce0899f33f0b6b7e8939161}\label{class_captain_1_1_vehicle_a0de7834b9ce0899f33f0b6b7e8939161} 
+\index{Captain::Vehicle@{Captain::Vehicle}!Vehicle@{Vehicle}}
+\index{Vehicle@{Vehicle}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{Vehicle()}{Vehicle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Captain\+::\+Vehicle\+::\+Vehicle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}} \&}]{vehicle\+Info,  }\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} \&}]{vehicle\+State,  }\item[{\mbox{\hyperlink{namespace_captain_ac119685cba80fd1d1731e2884cf70181}{Vehicle\+Dummy\+Type}}}]{type }\end{DoxyParamCaption})}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em vehicle\+Info} & \+: characteristic of the vehicle \\
+\hline
+{\em vehicle\+State} & \+: default state of the vehicle \\
+\hline
+{\em type} & \+: dummmy type is needed to distiunguish regular vehicles from others \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_captain_1_1_vehicle_a741e1c51507334c8bd44344590564a6f}\label{class_captain_1_1_vehicle_a741e1c51507334c8bd44344590564a6f} 
+\index{Captain::Vehicle@{Captain::Vehicle}!Vehicle@{Vehicle}}
+\index{Vehicle@{Vehicle}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{Vehicle()}{Vehicle()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Captain\+::\+Vehicle\+::\+Vehicle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}} \&\&}]{vehicle\+Info,  }\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} \&\&}]{vehicle\+State }\end{DoxyParamCaption})}
+
+Constructor for r-\/value params 
+\begin{DoxyParams}{Parameters}
+{\em vehicle\+Info} & \+: characteristic of the vehicle \\
+\hline
+{\em vehicle\+State} & \+: default state of the vehicle \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_captain_1_1_vehicle_ab4d204e8d6cf9f11bd16ace7fbec4477}\label{class_captain_1_1_vehicle_ab4d204e8d6cf9f11bd16ace7fbec4477} 
+\index{Captain::Vehicle@{Captain::Vehicle}!````~Vehicle@{\texorpdfstring{$\sim$}{\string~}Vehicle}}
+\index{````~Vehicle@{\texorpdfstring{$\sim$}{\string~}Vehicle}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Vehicle()}{\string~Vehicle()}}
+{\footnotesize\ttfamily virtual Captain\+::\+Vehicle\+::\texorpdfstring{$\sim$}{\string~}\+Vehicle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\Hypertarget{class_captain_1_1_vehicle_a038fea5db6aee62263a0a2571eb10239}\label{class_captain_1_1_vehicle_a038fea5db6aee62263a0a2571eb10239} 
+\index{Captain::Vehicle@{Captain::Vehicle}!Vehicle@{Vehicle}}
+\index{Vehicle@{Vehicle}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{Vehicle()}{Vehicle()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Captain\+::\+Vehicle\+::\+Vehicle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} \&}]{vehicle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{class_captain_1_1_vehicle_a22cd2450fa8b23c3222297c5caba3511}\label{class_captain_1_1_vehicle_a22cd2450fa8b23c3222297c5caba3511} 
+\index{Captain::Vehicle@{Captain::Vehicle}!Vehicle@{Vehicle}}
+\index{Vehicle@{Vehicle}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{Vehicle()}{Vehicle()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Captain\+::\+Vehicle\+::\+Vehicle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} \&\&}]{vehicle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_captain_1_1_vehicle_ac7023e79be93a2a015c5e4f17a034787}\label{class_captain_1_1_vehicle_ac7023e79be93a2a015c5e4f17a034787} 
+\index{Captain::Vehicle@{Captain::Vehicle}!AppendPassengers@{AppendPassengers}}
+\index{AppendPassengers@{AppendPassengers}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{AppendPassengers()}{AppendPassengers()}}
+{\footnotesize\ttfamily int Captain\+::\+Vehicle\+::\+Append\+Passengers (\begin{DoxyParamCaption}\item[{int}]{num\+Additional\+Passengers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_vehicle_a16a79039dab1acd2317898202ffb61d5}\label{class_captain_1_1_vehicle_a16a79039dab1acd2317898202ffb61d5} 
+\index{Captain::Vehicle@{Captain::Vehicle}!CalculateActualPosition@{CalculateActualPosition}}
+\index{CalculateActualPosition@{CalculateActualPosition}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{CalculateActualPosition()}{CalculateActualPosition()}}
+{\footnotesize\ttfamily void Captain\+::\+Vehicle\+::\+Calculate\+Actual\+Position (\begin{DoxyParamCaption}\item[{double}]{cell\+\_\+length,  }\item[{int}]{cell\+\_\+id }\end{DoxyParamCaption})}
+
+Calculate lane position of current vehicle (using for converting meso to micro) 
+\begin{DoxyParams}{Parameters}
+{\em cell\+\_\+length} & \\
+\hline
+{\em cell\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_captain_1_1_vehicle_a4ad0dd90e10a75c0f5533226fec1244f}\label{class_captain_1_1_vehicle_a4ad0dd90e10a75c0f5533226fec1244f} 
+\index{Captain::Vehicle@{Captain::Vehicle}!ExtractVehicle@{ExtractVehicle}}
+\index{ExtractVehicle@{ExtractVehicle}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{ExtractVehicle()}{ExtractVehicle()}}
+{\footnotesize\ttfamily void Captain\+::\+Vehicle\+::\+Extract\+Vehicle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_vehicle_a4ad0dd90e10a75c0f5533226fec1244f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_vehicle_ad5ac2a520370969385b76dec6224de07}\label{class_captain_1_1_vehicle_ad5ac2a520370969385b76dec6224de07} 
+\index{Captain::Vehicle@{Captain::Vehicle}!FlushRecordings@{FlushRecordings}}
+\index{FlushRecordings@{FlushRecordings}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{FlushRecordings()}{FlushRecordings()}}
+{\footnotesize\ttfamily void Captain\+::\+Vehicle\+::\+Flush\+Recordings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Writes all recordings in the temporary buffer to file and flushes the buffer Creates file if file does not exist by calling Remove\+Existing\+File() It will append recordings to file if file already exists Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_vehicle_ad5ac2a520370969385b76dec6224de07_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_vehicle_a3c8f2279f6b81c0d797f2d16ecc0ca17}\label{class_captain_1_1_vehicle_a3c8f2279f6b81c0d797f2d16ecc0ca17} 
+\index{Captain::Vehicle@{Captain::Vehicle}!GetFilePath@{GetFilePath}}
+\index{GetFilePath@{GetFilePath}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{GetFilePath()}{GetFilePath()}}
+{\footnotesize\ttfamily std\+::filesystem\+::path Captain\+::\+Vehicle\+::\+Get\+File\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets current target file path \begin{DoxyReturn}{Returns}
+\+: filepath that recordings are getting stored 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_vehicle_a3c8f2279f6b81c0d797f2d16ecc0ca17_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_vehicle_a114b3572b6cdf647c1056a8546aae6d0}\label{class_captain_1_1_vehicle_a114b3572b6cdf647c1056a8546aae6d0} 
+\index{Captain::Vehicle@{Captain::Vehicle}!GetInfo@{GetInfo}}
+\index{GetInfo@{GetInfo}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{GetInfo()}{GetInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}} \& Captain\+::\+Vehicle\+::\+Get\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets information about this vehicle \begin{DoxyReturn}{Returns}
+\+: \doxylink{struct_captain_1_1_vehicle_info}{Vehicle\+Info} representing information of this vehicle 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_vehicle_a114b3572b6cdf647c1056a8546aae6d0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_vehicle_a6ab10b6806334bf5f8477bf56f7faffd}\label{class_captain_1_1_vehicle_a6ab10b6806334bf5f8477bf56f7faffd} 
+\index{Captain::Vehicle@{Captain::Vehicle}!GetInfoStatePair@{GetInfoStatePair}}
+\index{GetInfoStatePair@{GetInfoStatePair}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{GetInfoStatePair()}{GetInfoStatePair()}}
+{\footnotesize\ttfamily std\+::pair$<$ \mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}}, \mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} $>$ Captain\+::\+Vehicle\+::\+Get\+Info\+State\+Pair (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_vehicle_a6ab10b6806334bf5f8477bf56f7faffd_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_vehicle_a678200c27c722c2c93b229df51a29077}\label{class_captain_1_1_vehicle_a678200c27c722c2c93b229df51a29077} 
+\index{Captain::Vehicle@{Captain::Vehicle}!GetLanePriority@{GetLanePriority}}
+\index{GetLanePriority@{GetLanePriority}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{GetLanePriority()}{GetLanePriority()}}
+{\footnotesize\ttfamily std\+::vector$<$ double $>$ Captain\+::\+Vehicle\+::\+Get\+Lane\+Priority (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets current lane\textquotesingle{}s priority \begin{DoxyReturn}{Returns}
+\+: vector representing lane priority in the current link 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_vehicle_a678200c27c722c2c93b229df51a29077_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_vehicle_a24cdc9fada441c0414a61811a4ed500e}\label{class_captain_1_1_vehicle_a24cdc9fada441c0414a61811a4ed500e} 
+\index{Captain::Vehicle@{Captain::Vehicle}!GetMaximumAvailablePassengers@{GetMaximumAvailablePassengers}}
+\index{GetMaximumAvailablePassengers@{GetMaximumAvailablePassengers}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{GetMaximumAvailablePassengers()}{GetMaximumAvailablePassengers()}}
+{\footnotesize\ttfamily size\+\_\+t Captain\+::\+Vehicle\+::\+Get\+Maximum\+Available\+Passengers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets maximum number of passengers this vehicle can contain. 
+
+\Hypertarget{class_captain_1_1_vehicle_a71f0c13ad423c4e18881e0a19910a9a4}\label{class_captain_1_1_vehicle_a71f0c13ad423c4e18881e0a19910a9a4} 
+\index{Captain::Vehicle@{Captain::Vehicle}!GetMaxPriority@{GetMaxPriority}}
+\index{GetMaxPriority@{GetMaxPriority}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{GetMaxPriority()}{GetMaxPriority()}}
+{\footnotesize\ttfamily double Captain\+::\+Vehicle\+::\+Get\+Max\+Priority (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets maximum priority \begin{DoxyReturn}{Returns}
+\+: maximum priority in the current link 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_vehicle_a80ac0ceb35a303bbaf3ac529e93c252d}\label{class_captain_1_1_vehicle_a80ac0ceb35a303bbaf3ac529e93c252d} 
+\index{Captain::Vehicle@{Captain::Vehicle}!GetMaxPriorityIndexVector@{GetMaxPriorityIndexVector}}
+\index{GetMaxPriorityIndexVector@{GetMaxPriorityIndexVector}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{GetMaxPriorityIndexVector()}{GetMaxPriorityIndexVector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::optional$<$ std\+::vector$<$ int $>$ $>$ Captain\+::\+Vehicle\+::\+Get\+Max\+Priority\+Index\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets index that has maximum priority \begin{DoxyReturn}{Returns}
+\+: Index that corresponds to maximum priority 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_vehicle_a574be5a4b799c615bb41d149baebbaf9}\label{class_captain_1_1_vehicle_a574be5a4b799c615bb41d149baebbaf9} 
+\index{Captain::Vehicle@{Captain::Vehicle}!GetMaxPriorityIndexVector@{GetMaxPriorityIndexVector}}
+\index{GetMaxPriorityIndexVector@{GetMaxPriorityIndexVector}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{GetMaxPriorityIndexVector()}{GetMaxPriorityIndexVector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::optional$<$ std\+::vector$<$ int $>$ $>$ Captain\+::\+Vehicle\+::\+Get\+Max\+Priority\+Index\+Vector (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$}]{priority }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_captain_1_1_vehicle_a81653578343ec94e2747a92604d63093}\label{class_captain_1_1_vehicle_a81653578343ec94e2747a92604d63093} 
+\index{Captain::Vehicle@{Captain::Vehicle}!GetMinimumStoppingDistance@{GetMinimumStoppingDistance}}
+\index{GetMinimumStoppingDistance@{GetMinimumStoppingDistance}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{GetMinimumStoppingDistance()}{GetMinimumStoppingDistance()}}
+{\footnotesize\ttfamily double Captain\+::\+Vehicle\+::\+Get\+Minimum\+Stopping\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Required minimum distance in X to stop the vehicle. 
+
+\Hypertarget{class_captain_1_1_vehicle_a8f220e8e0b076c0d1357a3a928632722}\label{class_captain_1_1_vehicle_a8f220e8e0b076c0d1357a3a928632722} 
+\index{Captain::Vehicle@{Captain::Vehicle}!GetNumAvailableAdditionalPassengers@{GetNumAvailableAdditionalPassengers}}
+\index{GetNumAvailableAdditionalPassengers@{GetNumAvailableAdditionalPassengers}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{GetNumAvailableAdditionalPassengers()}{GetNumAvailableAdditionalPassengers()}}
+{\footnotesize\ttfamily int Captain\+::\+Vehicle\+::\+Get\+Num\+Available\+Additional\+Passengers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_vehicle_a8f220e8e0b076c0d1357a3a928632722_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_vehicle_a90a5b25a281bf72ba8f5ba517b91a450}\label{class_captain_1_1_vehicle_a90a5b25a281bf72ba8f5ba517b91a450} 
+\index{Captain::Vehicle@{Captain::Vehicle}!GetNumPassengers@{GetNumPassengers}}
+\index{GetNumPassengers@{GetNumPassengers}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{GetNumPassengers()}{GetNumPassengers()}}
+{\footnotesize\ttfamily int Captain\+::\+Vehicle\+::\+Get\+Num\+Passengers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_vehicle_a90a5b25a281bf72ba8f5ba517b91a450_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_vehicle_a25286d78fad30796945bf23f653651ec}\label{class_captain_1_1_vehicle_a25286d78fad30796945bf23f653651ec} 
+\index{Captain::Vehicle@{Captain::Vehicle}!GetPathRef@{GetPathRef}}
+\index{GetPathRef@{GetPathRef}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{GetPathRef()}{GetPathRef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} \& Captain\+::\+Vehicle\+::\+Get\+Path\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets reference to path of the vehicle \begin{DoxyReturn}{Returns}
+\+: reference to \doxylink{struct_captain_1_1_vehicle_path}{Vehicle\+Path} object representing current 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_vehicle_aafa9e54094bae85882d750b5c1cf2075}\label{class_captain_1_1_vehicle_aafa9e54094bae85882d750b5c1cf2075} 
+\index{Captain::Vehicle@{Captain::Vehicle}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_position}{Position}} Captain\+::\+Vehicle\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets current position of the vehicle \begin{DoxyReturn}{Returns}
+\+: \doxylink{struct_captain_1_1_position}{Position} of current vehicle 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_vehicle_acf567b0e9f39f729cbda1800f10b8fca}\label{class_captain_1_1_vehicle_acf567b0e9f39f729cbda1800f10b8fca} 
+\index{Captain::Vehicle@{Captain::Vehicle}!GetRecordings@{GetRecordings}}
+\index{GetRecordings@{GetRecordings}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{GetRecordings()}{GetRecordings()}}
+{\footnotesize\ttfamily void Captain\+::\+Vehicle\+::\+Get\+Recordings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_util_1_1_event_recorder_container}{Captain\+::\+Util\+::\+Event\+Recorder\+Container}} \&}]{container }\end{DoxyParamCaption})}
+
+Stores all recordings in the temporary structure for further flushing into the file Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_vehicle_acf567b0e9f39f729cbda1800f10b8fca_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_vehicle_a78134f22e35647b28e5a0a02e81a9fbd}\label{class_captain_1_1_vehicle_a78134f22e35647b28e5a0a02e81a9fbd} 
+\index{Captain::Vehicle@{Captain::Vehicle}!GetStateRef@{GetStateRef}}
+\index{GetStateRef@{GetStateRef}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{GetStateRef()}{GetStateRef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} \& Captain\+::\+Vehicle\+::\+Get\+State\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets reference to state of the vehicle \begin{DoxyReturn}{Returns}
+\+: reference to \doxylink{struct_captain_1_1_vehicle_state}{Vehicle\+State} object representing current state of the vehicle 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_vehicle_a78134f22e35647b28e5a0a02e81a9fbd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_vehicle_a4ae4873b7a0db1a3b86980ed0d05ce58}\label{class_captain_1_1_vehicle_a4ae4873b7a0db1a3b86980ed0d05ce58} 
+\index{Captain::Vehicle@{Captain::Vehicle}!GetType@{GetType}}
+\index{GetType@{GetType}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily std\+::string Captain\+::\+Vehicle\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_vehicle_a562275f0dd52ebc82ac203184c044a3d}\label{class_captain_1_1_vehicle_a562275f0dd52ebc82ac203184c044a3d} 
+\index{Captain::Vehicle@{Captain::Vehicle}!GetVehicleRecordInfo@{GetVehicleRecordInfo}}
+\index{GetVehicleRecordInfo@{GetVehicleRecordInfo}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{GetVehicleRecordInfo()}{GetVehicleRecordInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_vehicle_record_info}{Vehicle\+Record\+Info}} \& Captain\+::\+Vehicle\+::\+Get\+Vehicle\+Record\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets recorded information for micro \begin{DoxyReturn}{Returns}
+\+: micro Information of this vehicle 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_vehicle_a76be06ede91b502122b2c9f43a627e07}\label{class_captain_1_1_vehicle_a76be06ede91b502122b2c9f43a627e07} 
+\index{Captain::Vehicle@{Captain::Vehicle}!Identifier@{Identifier}}
+\index{Identifier@{Identifier}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{Identifier()}{Identifier()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} Captain\+::\+Vehicle\+::\+Identifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_captain_1_1_vehicle_aa39db0c3d5437419b231a132414a11c2}\label{class_captain_1_1_vehicle_aa39db0c3d5437419b231a132414a11c2} 
+\index{Captain::Vehicle@{Captain::Vehicle}!InitializeState@{InitializeState}}
+\index{InitializeState@{InitializeState}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{InitializeState()}{InitializeState()}}
+{\footnotesize\ttfamily void Captain\+::\+Vehicle\+::\+Initialize\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize \doxylink{class_captain_1_1_vehicle}{Vehicle} State. 
+
+\Hypertarget{class_captain_1_1_vehicle_a4018d2a1d583007ba3a9838a5317c895}\label{class_captain_1_1_vehicle_a4018d2a1d583007ba3a9838a5317c895} 
+\index{Captain::Vehicle@{Captain::Vehicle}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Captain\+::\+Vehicle\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} \&}]{vehicle }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_captain_1_1_vehicle_a29eb7bb6828f59b0ec0ec4c4285fa25a}\label{class_captain_1_1_vehicle_a29eb7bb6828f59b0ec0ec4c4285fa25a} 
+\index{Captain::Vehicle@{Captain::Vehicle}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} \& Captain\+::\+Vehicle\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} \&}]{vehicle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{class_captain_1_1_vehicle_ad272a64f309dcc2a3ec3d03cdf0ea6c7}\label{class_captain_1_1_vehicle_ad272a64f309dcc2a3ec3d03cdf0ea6c7} 
+\index{Captain::Vehicle@{Captain::Vehicle}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} \& Captain\+::\+Vehicle\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} \&\&}]{vehicle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_captain_1_1_vehicle_a1922dc8cd3244b8f44dde0be6faefcfe}\label{class_captain_1_1_vehicle_a1922dc8cd3244b8f44dde0be6faefcfe} 
+\index{Captain::Vehicle@{Captain::Vehicle}!operator==@{operator==}}
+\index{operator==@{operator==}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Captain\+::\+Vehicle\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} \&}]{vehicle }\end{DoxyParamCaption}) const}
+
+
+
+Equality operators will compare Info of vehicles. 
+
+\Hypertarget{class_captain_1_1_vehicle_a9b2578788b5f7de18d8b264a359af97a}\label{class_captain_1_1_vehicle_a9b2578788b5f7de18d8b264a359af97a} 
+\index{Captain::Vehicle@{Captain::Vehicle}!PopPassengers@{PopPassengers}}
+\index{PopPassengers@{PopPassengers}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{PopPassengers()}{PopPassengers()}}
+{\footnotesize\ttfamily int Captain\+::\+Vehicle\+::\+Pop\+Passengers (\begin{DoxyParamCaption}\item[{int}]{num\+Passengers\+To\+Pop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_vehicle_abd1cdafa20116d36f38649d58bc9bc51}\label{class_captain_1_1_vehicle_abd1cdafa20116d36f38649d58bc9bc51} 
+\index{Captain::Vehicle@{Captain::Vehicle}!Record@{Record}}
+\index{Record@{Record}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{Record()}{Record()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_vehicle_record_info}{Vehicle\+Record\+Info}} Captain\+::\+Vehicle\+::\+Record (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{cycle,  }\item[{bool}]{is\+Micro }\end{DoxyParamCaption})}
+
+Records current Record\+Info to m\+\_\+event\+Recorder and initializes Record\+Info Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_vehicle_abd1cdafa20116d36f38649d58bc9bc51_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_vehicle_aa060412344b141f7cde3ddda259cbde4}\label{class_captain_1_1_vehicle_aa060412344b141f7cde3ddda259cbde4} 
+\index{Captain::Vehicle@{Captain::Vehicle}!SetLanePriority@{SetLanePriority}}
+\index{SetLanePriority@{SetLanePriority}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{SetLanePriority()}{SetLanePriority()}}
+{\footnotesize\ttfamily void Captain\+::\+Vehicle\+::\+Set\+Lane\+Priority (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$}]{vehicle\+Lane\+Priority }\end{DoxyParamCaption})}
+
+
+
+Initialize \doxylink{class_captain_1_1_vehicle}{Vehicle} Get\+State\+Ref. 
+
+Sets m\+\_\+lanepriority of the vehicle \Hypertarget{class_captain_1_1_vehicle_a921b4f705b8a2558962789c9ff1f499e}\label{class_captain_1_1_vehicle_a921b4f705b8a2558962789c9ff1f499e} 
+\index{Captain::Vehicle@{Captain::Vehicle}!SetMaxPassengerNum@{SetMaxPassengerNum}}
+\index{SetMaxPassengerNum@{SetMaxPassengerNum}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{SetMaxPassengerNum()}{SetMaxPassengerNum()}}
+{\footnotesize\ttfamily void Captain\+::\+Vehicle\+::\+Set\+Max\+Passenger\+Num (\begin{DoxyParamCaption}\item[{int}]{max\+Passenger\+Num }\end{DoxyParamCaption})}
+
+
+
+Sets m\+\_\+max\+Passenger\+Num of the vehicle. 
+
+\Hypertarget{class_captain_1_1_vehicle_af24807e9d6036d284a2be3bd1dd5a1e7}\label{class_captain_1_1_vehicle_af24807e9d6036d284a2be3bd1dd5a1e7} 
+\index{Captain::Vehicle@{Captain::Vehicle}!SetNeedLC@{SetNeedLC}}
+\index{SetNeedLC@{SetNeedLC}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{SetNeedLC()}{SetNeedLC()}}
+{\footnotesize\ttfamily void Captain\+::\+Vehicle\+::\+Set\+Need\+LC (\begin{DoxyParamCaption}\item[{bool}]{needlc }\end{DoxyParamCaption})}
+
+\Hypertarget{class_captain_1_1_vehicle_a71cac94c6dcad18817b8bf9ade52e068}\label{class_captain_1_1_vehicle_a71cac94c6dcad18817b8bf9ade52e068} 
+\index{Captain::Vehicle@{Captain::Vehicle}!SetNumPassenger@{SetNumPassenger}}
+\index{SetNumPassenger@{SetNumPassenger}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{SetNumPassenger()}{SetNumPassenger()}}
+{\footnotesize\ttfamily void Captain\+::\+Vehicle\+::\+Set\+Num\+Passenger (\begin{DoxyParamCaption}\item[{int}]{num\+Passenger }\end{DoxyParamCaption})}
+
+
+
+Sets m\+\_\+num\+Passenger of the vehicle. 
+
+\Hypertarget{class_captain_1_1_vehicle_a0c73e4a224d475864010c1d4c75d61d5}\label{class_captain_1_1_vehicle_a0c73e4a224d475864010c1d4c75d61d5} 
+\index{Captain::Vehicle@{Captain::Vehicle}!SetParkingState@{SetParkingState}}
+\index{SetParkingState@{SetParkingState}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{SetParkingState()}{SetParkingState()}}
+{\footnotesize\ttfamily void Captain\+::\+Vehicle\+::\+Set\+Parking\+State (\begin{DoxyParamCaption}\item[{bool}]{parked }\end{DoxyParamCaption})}
+
+Sets parking state of the vehicle 
+\begin{DoxyParams}{Parameters}
+{\em parked} & \+: true if parked \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_captain_1_1_vehicle_a174af3332d730a78a1aa141fafe8dcaf}\label{class_captain_1_1_vehicle_a174af3332d730a78a1aa141fafe8dcaf} 
+\index{Captain::Vehicle@{Captain::Vehicle}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void Captain\+::\+Vehicle\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_position}{Position}}}]{position }\end{DoxyParamCaption})}
+
+Sets position of current vehicle 
+\begin{DoxyParams}{Parameters}
+{\em position} & \+: position of current vehicle to be set \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_captain_1_1_vehicle_a02d3a1755b42f6e89dfde072d4629f5a}\label{class_captain_1_1_vehicle_a02d3a1755b42f6e89dfde072d4629f5a} 
+\index{Captain::Vehicle@{Captain::Vehicle}!SetSpeed@{SetSpeed}}
+\index{SetSpeed@{SetSpeed}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{SetSpeed()}{SetSpeed()}}
+{\footnotesize\ttfamily void Captain\+::\+Vehicle\+::\+Set\+Speed (\begin{DoxyParamCaption}\item[{double}]{speed }\end{DoxyParamCaption})}
+
+Sets speed of current vehicle 
+\begin{DoxyParams}{Parameters}
+{\em speed} & \+: speed of current vehicle to be set \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_captain_1_1_vehicle_a6868eb11edb10663eda6294c01133086}\label{class_captain_1_1_vehicle_a6868eb11edb10663eda6294c01133086} 
+\index{Captain::Vehicle@{Captain::Vehicle}!SetV2XMessage@{SetV2XMessage}}
+\index{SetV2XMessage@{SetV2XMessage}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{SetV2XMessage()}{SetV2XMessage()}}
+{\footnotesize\ttfamily void Captain\+::\+Vehicle\+::\+Set\+V2\+XMessage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_message}{Message}}}]{message\+Recieved }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_vehicle_a6868eb11edb10663eda6294c01133086_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_vehicle_aa468f1ad3b335b216bb3a1c23bb10ac5}\label{class_captain_1_1_vehicle_aa468f1ad3b335b216bb3a1c23bb10ac5} 
+\index{Captain::Vehicle@{Captain::Vehicle}!SetVehiclePath@{SetVehiclePath}}
+\index{SetVehiclePath@{SetVehiclePath}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{SetVehiclePath()}{SetVehiclePath()}}
+{\footnotesize\ttfamily void Captain\+::\+Vehicle\+::\+Set\+Vehicle\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}}}]{vehicle\+Path }\end{DoxyParamCaption})}
+
+
+
+Sets path of the vehicle. 
+
+\Hypertarget{class_captain_1_1_vehicle_a4b4dc4771ae528a7132323679123ec21}\label{class_captain_1_1_vehicle_a4b4dc4771ae528a7132323679123ec21} 
+\index{Captain::Vehicle@{Captain::Vehicle}!SetVehicleState@{SetVehicleState}}
+\index{SetVehicleState@{SetVehicleState}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{SetVehicleState()}{SetVehicleState()}}
+{\footnotesize\ttfamily void Captain\+::\+Vehicle\+::\+Set\+Vehicle\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} \&}]{vehicle\+State }\end{DoxyParamCaption})}
+
+Sets state of current vehicle 
+\begin{DoxyParams}{Parameters}
+{\em vehicle\+State} & \+: state to set \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_captain_1_1_vehicle_a6bdbb3d02fe8c7d7b217d35c8f21d786}\label{class_captain_1_1_vehicle_a6bdbb3d02fe8c7d7b217d35c8f21d786} 
+\index{Captain::Vehicle@{Captain::Vehicle}!UpdateCurrentUnit@{UpdateCurrentUnit}}
+\index{UpdateCurrentUnit@{UpdateCurrentUnit}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{UpdateCurrentUnit()}{UpdateCurrentUnit()}}
+{\footnotesize\ttfamily void Captain\+::\+Vehicle\+::\+Update\+Current\+Unit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{new\+Unit\+Identifier,  }\item[{bool}]{update\+Link }\end{DoxyParamCaption})}
+
+Updates States of the vehicle when it passes between links Called when vehicle moves to other unit 
+\begin{DoxyParams}{Parameters}
+{\em new\+Unit\+Identifier} & \+: unit identifier of new unit \\
+\hline
+{\em update\+Link} & \+: true if vehicle is moving to next link \\
+\hline
+\end{DoxyParams}
+Put default path\+Identifier for sink unit Todo \+: Consider changing this to a getter
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_captain_1_1_vehicle_a3269530f6a970755d55c84c8ef2f48b8}\label{class_captain_1_1_vehicle_a3269530f6a970755d55c84c8ef2f48b8} 
+\index{Captain::Vehicle@{Captain::Vehicle}!Descriptor@{Descriptor}}
+\index{Descriptor@{Descriptor}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{Descriptor}{Descriptor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_vehicle_descriptor}{Vehicle\+Descriptor}} Captain\+::\+Vehicle\+::\+Descriptor}
+
+
+
+Descriptor that contains \doxylink{struct_captain_1_1_vehicle_info}{Vehicle\+Info} and \doxylink{struct_captain_1_1_vehicle_state}{Vehicle\+State}. 
+
+\Hypertarget{class_captain_1_1_vehicle_ab593da402be8e325c9e172f8e606a33a}\label{class_captain_1_1_vehicle_ab593da402be8e325c9e172f8e606a33a} 
+\index{Captain::Vehicle@{Captain::Vehicle}!DriveMode@{DriveMode}}
+\index{DriveMode@{DriveMode}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{DriveMode}{DriveMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor}{Drive\+Mode\+Descriptor}} Captain\+::\+Vehicle\+::\+Drive\+Mode}
+
+
+
+Contains information about drive mode that this vehicle currently has. 
+
+\Hypertarget{class_captain_1_1_vehicle_a2485b515fe35978bf22b34b090a3e520}\label{class_captain_1_1_vehicle_a2485b515fe35978bf22b34b090a3e520} 
+\index{Captain::Vehicle@{Captain::Vehicle}!DummyType@{DummyType}}
+\index{DummyType@{DummyType}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{DummyType}{DummyType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_captain_ac119685cba80fd1d1731e2884cf70181}{Vehicle\+Dummy\+Type}} Captain\+::\+Vehicle\+::\+Dummy\+Type = \mbox{\hyperlink{namespace_captain_ac119685cba80fd1d1731e2884cf70181ad2203cb1237cb6460cbad94564e39345}{Vehicle\+Dummy\+Type\+::\+Regular}}}
+
+
+
+vehicle dummy type to distinguish dummy and regular vehicles 
+
+\Hypertarget{class_captain_1_1_vehicle_aa2dc073676cb5063744c5a921be53ef6}\label{class_captain_1_1_vehicle_aa2dc073676cb5063744c5a921be53ef6} 
+\index{Captain::Vehicle@{Captain::Vehicle}!m\_numPassengers@{m\_numPassengers}}
+\index{m\_numPassengers@{m\_numPassengers}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{m\_numPassengers}{m\_numPassengers}}
+{\footnotesize\ttfamily int Captain\+::\+Vehicle\+::m\+\_\+num\+Passengers = 0}
+
+
+
+Current number of passengers. 
+
+\Hypertarget{class_captain_1_1_vehicle_adea7555d9a8c25c2c68cc0e418003faa}\label{class_captain_1_1_vehicle_adea7555d9a8c25c2c68cc0e418003faa} 
+\index{Captain::Vehicle@{Captain::Vehicle}!Path@{Path}}
+\index{Path@{Path}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{Path}{Path}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} Captain\+::\+Vehicle\+::\+Path}
+
+
+
+Contains path set to this vehicle. 
+
+\Hypertarget{class_captain_1_1_vehicle_a79f2114b7c847aff691382eeb8397b1a}\label{class_captain_1_1_vehicle_a79f2114b7c847aff691382eeb8397b1a} 
+\index{Captain::Vehicle@{Captain::Vehicle}!RecordInfo@{RecordInfo}}
+\index{RecordInfo@{RecordInfo}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{RecordInfo}{RecordInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_vehicle_record_info}{Vehicle\+Record\+Info}} Captain\+::\+Vehicle\+::\+Record\+Info}
+
+
+
+Record required information while the vehicle is inside micro unit. 
+
+\Hypertarget{class_captain_1_1_vehicle_abc1605fa26af8080135d7b638129488a}\label{class_captain_1_1_vehicle_abc1605fa26af8080135d7b638129488a} 
+\index{Captain::Vehicle@{Captain::Vehicle}!v2x@{v2x}}
+\index{v2x@{v2x}!Captain::Vehicle@{Captain::Vehicle}}
+\doxysubsubsection{\texorpdfstring{v2x}{v2x}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_v2_x}{V2X}} Captain\+::\+Vehicle\+::v2x}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Structs/\mbox{\hyperlink{_vehicle_8hpp}{Vehicle.\+hpp}}\item 
+Sources/captain/\+Structs/\mbox{\hyperlink{_vehicle_8cpp}{Vehicle.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,25 @@
+var class_captain_1_1_util_1_1_vehicle_queue =
+[
+    [ "VehicleQueue", "class_captain_1_1_util_1_1_vehicle_queue.html#a9ac3ae3152e5ddebd797e3a7543434f9", null ],
+    [ "~VehicleQueue", "class_captain_1_1_util_1_1_vehicle_queue.html#aa7d3b74f955138b97a92df7f906fdc7b", null ],
+    [ "VehicleQueue", "class_captain_1_1_util_1_1_vehicle_queue.html#a8f5a1350be29e6767c3698b053c32c93", null ],
+    [ "VehicleQueue", "class_captain_1_1_util_1_1_vehicle_queue.html#a0f6706242356f5899848aed5d484d3a3", null ],
+    [ "At", "class_captain_1_1_util_1_1_vehicle_queue.html#abf94a44e54cfe64a5a522b8be85f3c87", null ],
+    [ "CompareAndInsertByPosition", "class_captain_1_1_util_1_1_vehicle_queue.html#a47afe186e18e15052f774138f4ed6d11", null ],
+    [ "Dequeue", "class_captain_1_1_util_1_1_vehicle_queue.html#a615e903a007fbedb5111262c2867b269", null ],
+    [ "Enqueue", "class_captain_1_1_util_1_1_vehicle_queue.html#a3b1d50e6a57ecce1358f76b874906805", null ],
+    [ "Extract", "class_captain_1_1_util_1_1_vehicle_queue.html#a4fba47e268eae735f1e2bd4def05a789", null ],
+    [ "FindAllFollowers", "class_captain_1_1_util_1_1_vehicle_queue.html#a25db7c4467b0eba6d53888217812e941", null ],
+    [ "FindAllLeaders", "class_captain_1_1_util_1_1_vehicle_queue.html#ac1d0e70d8b5517efe399a8e511f3851c", null ],
+    [ "FindFollowerVehicleByPosition", "class_captain_1_1_util_1_1_vehicle_queue.html#a27a378d835f6ceda6f1fd3f0a10e61df", null ],
+    [ "FindLeaderVehicleByPosition", "class_captain_1_1_util_1_1_vehicle_queue.html#a9e3a5fcf4682ac410aca2241773018dd", null ],
+    [ "GetAvgSpeed", "class_captain_1_1_util_1_1_vehicle_queue.html#a6c9ae6a573857a4e5bec65d59c44c1ff", null ],
+    [ "GetMaxCapacity", "class_captain_1_1_util_1_1_vehicle_queue.html#a50528de7c054eccf6014a0ef9cba9d6a", null ],
+    [ "GetVehicleList", "class_captain_1_1_util_1_1_vehicle_queue.html#a3593aca513fc49846d44d3cf620d5f1b", null ],
+    [ "Insert", "class_captain_1_1_util_1_1_vehicle_queue.html#a1c4f0d6747fd7ab18a55b3de33ec74cf", null ],
+    [ "operator=", "class_captain_1_1_util_1_1_vehicle_queue.html#aa0e1120e7756917679fcc34e8a2e37fa", null ],
+    [ "operator=", "class_captain_1_1_util_1_1_vehicle_queue.html#aef455ba1adbd7e814e221d8701deeba2", null ],
+    [ "Peek", "class_captain_1_1_util_1_1_vehicle_queue.html#ae9b0282bd6a1ce223d2d8d4e2d4f8ea8", null ],
+    [ "Size", "class_captain_1_1_util_1_1_vehicle_queue.html#a3d4c31f703ddc93aec3976f825ed7b23", null ],
+    [ "Sort", "class_captain_1_1_util_1_1_vehicle_queue.html#ab10028bf98dc7b0b252ac4685af3c06e", null ]
+];

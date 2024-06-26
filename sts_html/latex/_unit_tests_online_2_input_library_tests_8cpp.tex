@@ -1,0 +1,164 @@
+\doxysection{Tests/\+Unit\+Tests\+Online/\+Input\+Library\+Tests.cpp File Reference}
+\hypertarget{_unit_tests_online_2_input_library_tests_8cpp}{}\label{_unit_tests_online_2_input_library_tests_8cpp}\index{Tests/UnitTestsOnline/InputLibraryTests.cpp@{Tests/UnitTestsOnline/InputLibraryTests.cpp}}
+{\ttfamily \#include "{}Input\+Library\+Tests.\+hpp"{}}\newline
+{\ttfamily \#include $<$captain/\+Engine/\+Engine.\+hpp$>$}\newline
+{\ttfamily \#include $<$captain/\+Structs/\+General\+Structs.\+hpp$>$}\newline
+{\ttfamily \#include $<$captain/\+Util/\+Global\+Hyper\+Parameters.\+hpp$>$}\newline
+{\ttfamily \#include $<$captain/\+Util/\+Random.\+hpp$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$iterator$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$numeric$>$}\newline
+{\ttfamily \#include $<$tuple$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$optional$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/tinyapi/tinystr.\+h$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/tinyapi/tinyxml.\+h$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Agent\+Types\+Arr.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Agents\+Arr.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Demand.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Demand\+Info.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Event\+Arr.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Input\+Agent\+Types.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Input\+Agents.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Input\+Event.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Input\+Link.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Input\+Message.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Input\+Station.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Link\+Arr.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Message\+Arr.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Node\+Arr.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+ODMatrix.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Scenario.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Param\+Arr.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Station\+Arr.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Mode.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Mode\+Arr.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/intersection/connection.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/intersection/intersection\+Phase.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/intersection/port.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+File\+Path.\+hpp$>$}\newline
+Include dependency graph for Input\+Library\+Tests.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_unit_tests_online_2_input_library_tests_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_captain}{Captain}}
+\begin{DoxyCompactList}\small\item\em \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{namespace_captain_aa0330b3371dd46a64d8433e13d69472a}{Captain\+::calculate\+Probability\+Vector\+Source\+With\+Segments}} (const int first\+Link\+ID, std\+::vector$<$ \mbox{\hyperlink{class_input_link}{Input\+Link}} $>$ \&link\+Vector)
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{namespace_captain_aaa6e686bc3ae28229dcb959d796028ac}{Captain\+::calculate\+Probability\+Vector\+Sink\+With\+Segments}} (const int sink\+Link\+ID, std\+::vector$<$ \mbox{\hyperlink{class_input_link}{Input\+Link}} $>$ \&link\+Vector)
+\item 
+int \mbox{\hyperlink{namespace_captain_a691b47044d10ebe6e2c54f1bfd3625c1}{Captain\+::get\+Simulation\+Id}} ()
+\item 
+void \mbox{\hyperlink{namespace_captain_a28d05f81eb9a6ae94957ef0d19dbadae}{Captain\+::\+Executable\+Node\+Generation}} (size\+\_\+t meso\+Epochs, bool mode) noexcept
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_link_arr}{Link\+Arr}} \mbox{\hyperlink{_unit_tests_online_2_input_library_tests_8cpp_a55d7a41b9bf04a5df4e371ddac76d9c0}{link\+Arr}}
+\item 
+\mbox{\hyperlink{class_node_arr}{Node\+Arr}} \mbox{\hyperlink{_unit_tests_online_2_input_library_tests_8cpp_a378e64c92a5f932c983386557e7794a1}{node\+Arr}}
+\item 
+\mbox{\hyperlink{class_agents_arr}{Agents\+Arr}} \mbox{\hyperlink{_unit_tests_online_2_input_library_tests_8cpp_a2de11d9f3686d15da471f8066e3972f8}{agent\+Arr}}
+\item 
+\mbox{\hyperlink{class_agent_types_arr}{Agent\+Types\+Arr}} \mbox{\hyperlink{_unit_tests_online_2_input_library_tests_8cpp_ab467c047c832d50cd27c964b808327e6}{agent\+Types\+Arr}}
+\item 
+\mbox{\hyperlink{class_o_d_matrix}{ODMatrix}} \mbox{\hyperlink{_unit_tests_online_2_input_library_tests_8cpp_a3d89929170b09c1bbf9dfe622f3dcb10}{od\+Arr}}
+\item 
+\mbox{\hyperlink{class_scenario}{Scenario}} \mbox{\hyperlink{_unit_tests_online_2_input_library_tests_8cpp_a311d65293e6451a2a6f3a4bbb841150b}{od\+Scenario\+Arr}}
+\item 
+\mbox{\hyperlink{class_station_arr}{Station\+Arr}} \mbox{\hyperlink{_unit_tests_online_2_input_library_tests_8cpp_a81719a257555fd664b1ccd76153e976e}{station\+Arr}}
+\item 
+\mbox{\hyperlink{class_event_arr}{Event\+Arr}} \mbox{\hyperlink{_unit_tests_online_2_input_library_tests_8cpp_af94ee8da3e3d2bef645071a6fa9c7116}{event\+Arr}}
+\item 
+\mbox{\hyperlink{class_message_arr}{Message\+Arr}} \mbox{\hyperlink{_unit_tests_online_2_input_library_tests_8cpp_a550586a70c07dfde03743f89ea00d5b0}{message\+Arr}}
+\item 
+\mbox{\hyperlink{class_mode_arr}{Mode\+Arr}} \mbox{\hyperlink{_unit_tests_online_2_input_library_tests_8cpp_a682fa65d7e33088f1854a1e6e3d2c7ea}{mode\+Arr}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+STS19 \doxylink{namespace_captain}{Captain}
+
+\begin{DoxyVersion}{Version}
+\+: 2.\+0 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+\+: Jae Hwan Jeong 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_unit_tests_online_2_input_library_tests_8cpp_a2de11d9f3686d15da471f8066e3972f8}\label{_unit_tests_online_2_input_library_tests_8cpp_a2de11d9f3686d15da471f8066e3972f8} 
+\index{InputLibraryTests.cpp@{InputLibraryTests.cpp}!agentArr@{agentArr}}
+\index{agentArr@{agentArr}!InputLibraryTests.cpp@{InputLibraryTests.cpp}}
+\doxysubsubsection{\texorpdfstring{agentArr}{agentArr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_agents_arr}{Agents\+Arr}} agent\+Arr}
+
+\Hypertarget{_unit_tests_online_2_input_library_tests_8cpp_ab467c047c832d50cd27c964b808327e6}\label{_unit_tests_online_2_input_library_tests_8cpp_ab467c047c832d50cd27c964b808327e6} 
+\index{InputLibraryTests.cpp@{InputLibraryTests.cpp}!agentTypesArr@{agentTypesArr}}
+\index{agentTypesArr@{agentTypesArr}!InputLibraryTests.cpp@{InputLibraryTests.cpp}}
+\doxysubsubsection{\texorpdfstring{agentTypesArr}{agentTypesArr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_agent_types_arr}{Agent\+Types\+Arr}} agent\+Types\+Arr}
+
+\Hypertarget{_unit_tests_online_2_input_library_tests_8cpp_af94ee8da3e3d2bef645071a6fa9c7116}\label{_unit_tests_online_2_input_library_tests_8cpp_af94ee8da3e3d2bef645071a6fa9c7116} 
+\index{InputLibraryTests.cpp@{InputLibraryTests.cpp}!eventArr@{eventArr}}
+\index{eventArr@{eventArr}!InputLibraryTests.cpp@{InputLibraryTests.cpp}}
+\doxysubsubsection{\texorpdfstring{eventArr}{eventArr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_event_arr}{Event\+Arr}} event\+Arr}
+
+\Hypertarget{_unit_tests_online_2_input_library_tests_8cpp_a55d7a41b9bf04a5df4e371ddac76d9c0}\label{_unit_tests_online_2_input_library_tests_8cpp_a55d7a41b9bf04a5df4e371ddac76d9c0} 
+\index{InputLibraryTests.cpp@{InputLibraryTests.cpp}!linkArr@{linkArr}}
+\index{linkArr@{linkArr}!InputLibraryTests.cpp@{InputLibraryTests.cpp}}
+\doxysubsubsection{\texorpdfstring{linkArr}{linkArr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_link_arr}{Link\+Arr}} link\+Arr}
+
+\Hypertarget{_unit_tests_online_2_input_library_tests_8cpp_a550586a70c07dfde03743f89ea00d5b0}\label{_unit_tests_online_2_input_library_tests_8cpp_a550586a70c07dfde03743f89ea00d5b0} 
+\index{InputLibraryTests.cpp@{InputLibraryTests.cpp}!messageArr@{messageArr}}
+\index{messageArr@{messageArr}!InputLibraryTests.cpp@{InputLibraryTests.cpp}}
+\doxysubsubsection{\texorpdfstring{messageArr}{messageArr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_message_arr}{Message\+Arr}} message\+Arr}
+
+\Hypertarget{_unit_tests_online_2_input_library_tests_8cpp_a682fa65d7e33088f1854a1e6e3d2c7ea}\label{_unit_tests_online_2_input_library_tests_8cpp_a682fa65d7e33088f1854a1e6e3d2c7ea} 
+\index{InputLibraryTests.cpp@{InputLibraryTests.cpp}!modeArr@{modeArr}}
+\index{modeArr@{modeArr}!InputLibraryTests.cpp@{InputLibraryTests.cpp}}
+\doxysubsubsection{\texorpdfstring{modeArr}{modeArr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mode_arr}{Mode\+Arr}} mode\+Arr}
+
+\Hypertarget{_unit_tests_online_2_input_library_tests_8cpp_a378e64c92a5f932c983386557e7794a1}\label{_unit_tests_online_2_input_library_tests_8cpp_a378e64c92a5f932c983386557e7794a1} 
+\index{InputLibraryTests.cpp@{InputLibraryTests.cpp}!nodeArr@{nodeArr}}
+\index{nodeArr@{nodeArr}!InputLibraryTests.cpp@{InputLibraryTests.cpp}}
+\doxysubsubsection{\texorpdfstring{nodeArr}{nodeArr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_node_arr}{Node\+Arr}} node\+Arr}
+
+\Hypertarget{_unit_tests_online_2_input_library_tests_8cpp_a3d89929170b09c1bbf9dfe622f3dcb10}\label{_unit_tests_online_2_input_library_tests_8cpp_a3d89929170b09c1bbf9dfe622f3dcb10} 
+\index{InputLibraryTests.cpp@{InputLibraryTests.cpp}!odArr@{odArr}}
+\index{odArr@{odArr}!InputLibraryTests.cpp@{InputLibraryTests.cpp}}
+\doxysubsubsection{\texorpdfstring{odArr}{odArr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_o_d_matrix}{ODMatrix}} od\+Arr}
+
+\Hypertarget{_unit_tests_online_2_input_library_tests_8cpp_a311d65293e6451a2a6f3a4bbb841150b}\label{_unit_tests_online_2_input_library_tests_8cpp_a311d65293e6451a2a6f3a4bbb841150b} 
+\index{InputLibraryTests.cpp@{InputLibraryTests.cpp}!odScenarioArr@{odScenarioArr}}
+\index{odScenarioArr@{odScenarioArr}!InputLibraryTests.cpp@{InputLibraryTests.cpp}}
+\doxysubsubsection{\texorpdfstring{odScenarioArr}{odScenarioArr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scenario}{Scenario}} od\+Scenario\+Arr}
+
+\Hypertarget{_unit_tests_online_2_input_library_tests_8cpp_a81719a257555fd664b1ccd76153e976e}\label{_unit_tests_online_2_input_library_tests_8cpp_a81719a257555fd664b1ccd76153e976e} 
+\index{InputLibraryTests.cpp@{InputLibraryTests.cpp}!stationArr@{stationArr}}
+\index{stationArr@{stationArr}!InputLibraryTests.cpp@{InputLibraryTests.cpp}}
+\doxysubsubsection{\texorpdfstring{stationArr}{stationArr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_station_arr}{Station\+Arr}} station\+Arr}
+

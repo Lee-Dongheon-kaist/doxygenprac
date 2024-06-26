@@ -1,0 +1,13 @@
+<map id="Captain::Engine::ResetConnectionInfo" name="Captain::Engine::ResetConnectionInfo">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,147,246,173"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_engine.html#aa515c21ae8da4e8f4c445a7f1d01da4c" title=" " alt="" coords="319,5,451,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,144,210,103,292,58,305,52,307,57,295,62,213,108,149,148"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_engine.html#a03ca98f9f8443de3b9ee0a159dba1600" title=" " alt="" coords="302,72,468,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,143,287,116,288,121,181,149"/>
+<area shape="rect" id="Node000004" href="$class_captain_1_1_engine.html#a0491f35277ddadda1e3bc645740bdf60" title=" " alt="" coords="302,139,468,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="246,157,287,157,287,163,246,163"/>
+<area shape="rect" id="Node000005" href="$class_captain_1_1_engine.html#af24be9c94f0f16572554bd07eeb2fd81" title=" " alt="" coords="301,205,469,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="181,171,287,199,286,204,180,177"/>
+<area shape="rect" id="Node000006" href="$class_captain_1_1_engine.html#a5dac41f7bf360062bb6193f8684a2994" title=" " alt="" coords="294,272,476,315"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="149,172,213,212,295,258,307,263,305,268,292,262,210,217,146,176"/>
+</map>

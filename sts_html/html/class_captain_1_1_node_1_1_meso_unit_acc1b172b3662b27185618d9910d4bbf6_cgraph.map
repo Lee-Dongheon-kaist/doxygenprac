@@ -1,0 +1,12 @@
+<map id="Captain::Node::MesoUnit::ComputeLaneChange" name="Captain::Node::MesoUnit::ComputeLaneChange">
+<area shape="rect" id="Node000001" title="omputes LC to lane change from current unit stores result to m_laneChangeIndexVector" alt="" coords="5,89,172,132"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_util_1_1_vehicle_queue.html#abf94a44e54cfe64a5a522b8be85f3c87" title=" " alt="" coords="220,5,422,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,86,169,63,219,42,240,34,242,39,221,46,172,68,128,91"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_node_1_1_meso_unit.html#a1f5bad694414df1bc73a135bb7611fa6" title="Gets average speed of this cell in m/s." alt="" coords="238,56,404,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,96,222,89,222,94,172,101"/>
+<area shape="rect" id="Node000004" href="$class_captain_1_1_node_1_1_meso_unit.html#a5d2c8ab6900d6686555c6339463b707b" title="Brings current number of vehicles." alt="" coords="236,123,406,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="172,120,221,127,221,132,172,125"/>
+<area shape="rect" id="Node000005" href="$class_captain_1_1_util_1_1_vehicle_queue.html#a3d4c31f703ddc93aec3976f825ed7b23" title=" " alt="" coords="470,152,651,195"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="123,130,168,155,220,175,280,185,341,189,455,185,455,190,341,195,279,190,219,180,166,160,120,135"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="406,152,455,158,454,163,406,157"/>
+</map>

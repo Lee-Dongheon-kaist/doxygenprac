@@ -1,0 +1,124 @@
+\doxysection{Captain\+::Random\+Distribution\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_captain_1_1_random_distribution}{}\label{class_captain_1_1_random_distribution}\index{Captain::RandomDistribution$<$ T $>$@{Captain::RandomDistribution$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Random.\+hpp$>$}
+
+
+
+Inheritance diagram for Captain\+::Random\+Distribution\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_random_distribution__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Captain\+::Random\+Distribution\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{class_captain_1_1_random_distribution__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_captain_1_1_random_distribution_a6a945e375dad9b319e4916dd94be293c}{Random\+Distribution}} (T min, T max)
+\item 
+virtual \mbox{\hyperlink{class_captain_1_1_random_distribution_a9dd198d9aa41d2b0e919a625f1a89c0b}{\texorpdfstring{$\sim$}{\string~}\+Random\+Distribution}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_random_distribution_a415a200043b91ef77e302bb8557824d1}{Set\+Boundaries}} (T min, T max)
+\item 
+virtual T \mbox{\hyperlink{class_captain_1_1_random_distribution_af4840e5eb7c74ab9dd72438e0e4975cf}{operator()}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_captain_1_1_random_distribution_a8d9249cb0734c2a233e8ad58dced1869}{Generate\+Random}} (int min, int max)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T \mbox{\hyperlink{class_captain_1_1_random_distribution_a7f42b342681757af4e3116acaa9f2e63}{m\+\_\+min}}
+\item 
+T \mbox{\hyperlink{class_captain_1_1_random_distribution_a40391fcd6275a18d8c32fb296286cef4}{m\+\_\+max}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_captain_1_1_random_distribution_a6a945e375dad9b319e4916dd94be293c}\label{class_captain_1_1_random_distribution_a6a945e375dad9b319e4916dd94be293c} 
+\index{Captain::RandomDistribution$<$ T $>$@{Captain::RandomDistribution$<$ T $>$}!RandomDistribution@{RandomDistribution}}
+\index{RandomDistribution@{RandomDistribution}!Captain::RandomDistribution$<$ T $>$@{Captain::RandomDistribution$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{RandomDistribution()}{RandomDistribution()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_captain_1_1_random_distribution}{Captain\+::\+Random\+Distribution}}$<$ T $>$\+::\+Random\+Distribution (\begin{DoxyParamCaption}\item[{T}]{min,  }\item[{T}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks if template parameter is integer or floating point\Hypertarget{class_captain_1_1_random_distribution_a9dd198d9aa41d2b0e919a625f1a89c0b}\label{class_captain_1_1_random_distribution_a9dd198d9aa41d2b0e919a625f1a89c0b} 
+\index{Captain::RandomDistribution$<$ T $>$@{Captain::RandomDistribution$<$ T $>$}!````~RandomDistribution@{\texorpdfstring{$\sim$}{\string~}RandomDistribution}}
+\index{````~RandomDistribution@{\texorpdfstring{$\sim$}{\string~}RandomDistribution}!Captain::RandomDistribution$<$ T $>$@{Captain::RandomDistribution$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}RandomDistribution()}{\string~RandomDistribution()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual \mbox{\hyperlink{class_captain_1_1_random_distribution}{Captain\+::\+Random\+Distribution}}$<$ T $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_captain_1_1_random_distribution}{Random\+Distribution}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_captain_1_1_random_distribution_a8d9249cb0734c2a233e8ad58dced1869}\label{class_captain_1_1_random_distribution_a8d9249cb0734c2a233e8ad58dced1869} 
+\index{Captain::RandomDistribution$<$ T $>$@{Captain::RandomDistribution$<$ T $>$}!GenerateRandom@{GenerateRandom}}
+\index{GenerateRandom@{GenerateRandom}!Captain::RandomDistribution$<$ T $>$@{Captain::RandomDistribution$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GenerateRandom()}{GenerateRandom()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static int \mbox{\hyperlink{class_captain_1_1_random_distribution}{Captain\+::\+Random\+Distribution}}$<$ T $>$\+::\+Generate\+Random (\begin{DoxyParamCaption}\item[{int}]{min,  }\item[{int}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{class_captain_1_1_random_distribution_af4840e5eb7c74ab9dd72438e0e4975cf}\label{class_captain_1_1_random_distribution_af4840e5eb7c74ab9dd72438e0e4975cf} 
+\index{Captain::RandomDistribution$<$ T $>$@{Captain::RandomDistribution$<$ T $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!Captain::RandomDistribution$<$ T $>$@{Captain::RandomDistribution$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual T \mbox{\hyperlink{class_captain_1_1_random_distribution}{Captain\+::\+Random\+Distribution}}$<$ T $>$\+::operator() (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_normal_distribution_a94b2546480dd2207c7fb82d576265907}{Captain\+::\+Normal\+Distribution$<$ T $>$}}, \mbox{\hyperlink{class_captain_1_1_normal_distribution_a94b2546480dd2207c7fb82d576265907}{Captain\+::\+Normal\+Distribution$<$ double $>$}}, \mbox{\hyperlink{class_captain_1_1_uniform_distribution_a0a957971408baa119f66a6c02688aa72}{Captain\+::\+Uniform\+Distribution$<$ T $>$}}, \mbox{\hyperlink{class_captain_1_1_exponential_distribution_ad35c4682dd8702b5cc992258ef6b20a6}{Captain\+::\+Exponential\+Distribution$<$ T $>$}}, and \mbox{\hyperlink{class_captain_1_1_poisson_distribution_af27f61f407ef7ef836d1c165d9cf7698}{Captain\+::\+Poisson\+Distribution$<$ T $>$}}.
+
+\Hypertarget{class_captain_1_1_random_distribution_a415a200043b91ef77e302bb8557824d1}\label{class_captain_1_1_random_distribution_a415a200043b91ef77e302bb8557824d1} 
+\index{Captain::RandomDistribution$<$ T $>$@{Captain::RandomDistribution$<$ T $>$}!SetBoundaries@{SetBoundaries}}
+\index{SetBoundaries@{SetBoundaries}!Captain::RandomDistribution$<$ T $>$@{Captain::RandomDistribution$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SetBoundaries()}{SetBoundaries()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_captain_1_1_random_distribution}{Captain\+::\+Random\+Distribution}}$<$ T $>$\+::\+Set\+Boundaries (\begin{DoxyParamCaption}\item[{T}]{min,  }\item[{T}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_random_distribution_a415a200043b91ef77e302bb8557824d1_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_captain_1_1_random_distribution_a40391fcd6275a18d8c32fb296286cef4}\label{class_captain_1_1_random_distribution_a40391fcd6275a18d8c32fb296286cef4} 
+\index{Captain::RandomDistribution$<$ T $>$@{Captain::RandomDistribution$<$ T $>$}!m\_max@{m\_max}}
+\index{m\_max@{m\_max}!Captain::RandomDistribution$<$ T $>$@{Captain::RandomDistribution$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{m\_max}{m\_max}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{class_captain_1_1_random_distribution}{Captain\+::\+Random\+Distribution}}$<$ T $>$\+::m\+\_\+max\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_captain_1_1_random_distribution_a7f42b342681757af4e3116acaa9f2e63}\label{class_captain_1_1_random_distribution_a7f42b342681757af4e3116acaa9f2e63} 
+\index{Captain::RandomDistribution$<$ T $>$@{Captain::RandomDistribution$<$ T $>$}!m\_min@{m\_min}}
+\index{m\_min@{m\_min}!Captain::RandomDistribution$<$ T $>$@{Captain::RandomDistribution$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{m\_min}{m\_min}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{class_captain_1_1_random_distribution}{Captain\+::\+Random\+Distribution}}$<$ T $>$\+::m\+\_\+min\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Util/\mbox{\hyperlink{_random_8hpp}{Random.\+hpp}}\end{DoxyCompactItemize}

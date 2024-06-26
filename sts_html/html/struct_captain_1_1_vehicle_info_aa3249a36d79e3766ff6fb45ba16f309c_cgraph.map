@@ -1,0 +1,26 @@
+<map id="Captain::VehicleInfo::VehicleInfo" name="Captain::VehicleInfo::VehicleInfo">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,175,142,217"/>
+<area shape="rect" id="Node000002" href="$class_input_agent_types.html#a6642160db86210ee9bebd00b2dc8d731" title=" " alt="" coords="208,5,397,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,173,122,108,152,72,188,42,198,36,200,41,191,46,156,76,127,111,87,176"/>
+<area shape="rect" id="Node000004" href="$class_input_agent_types.html#a6d442fb0ec78a26df86d5952dbf2c4d1" title=" " alt="" coords="202,56,403,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="91,172,133,131,160,110,188,92,203,86,205,91,191,97,163,114,136,135,95,176"/>
+<area shape="rect" id="Node000005" href="$class_input_agent_types.html#a92eb7cea3a497b80566ee11d55d32767" title=" " alt="" coords="202,107,403,133"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="118,172,189,143,215,135,216,140,191,148,120,177"/>
+<area shape="rect" id="Node000006" href="$class_input_agent_types.html#a1ae0bc65e65bb73b4d1234f6ddfb005e" title=" " alt="" coords="190,157,415,184"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="142,186,174,182,174,188,142,191"/>
+<area shape="rect" id="Node000007" href="$class_input_agent_types.html#aad7abdd01f504d9db51ad6e3add1980e" title=" " alt="" coords="207,208,398,235"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="142,201,192,206,192,212,142,206"/>
+<area shape="rect" id="Node000008" href="$class_input_agent_types.html#ac21dbea9940289c92353f90e65158bc7" title=" " alt="" coords="225,259,380,285"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="120,215,191,244,216,252,215,257,189,249,118,220"/>
+<area shape="rect" id="Node000009" href="$class_input_agent_types.html#a5829e8b7f6051688a73b1c8e4e8b8623" title=" " alt="" coords="204,309,401,336"/>
+<area shape="poly" id="edge13_Node000001_Node000009" title=" " alt="" coords="95,216,136,257,163,278,191,295,205,301,203,306,188,300,160,282,133,261,91,220"/>
+<area shape="rect" id="Node000010" href="$class_input_agent_types.html#adc68ea2878c2699ff75bae361574b99d" title=" " alt="" coords="207,360,398,387"/>
+<area shape="poly" id="edge14_Node000001_Node000010" title=" " alt="" coords="87,216,127,281,156,316,191,346,200,351,198,356,188,350,152,320,122,284,83,219"/>
+<area shape="rect" id="Node000003" href="$class_input_distribution.html#abf1204557173592e84700dced4b4181b" title=" " alt="" coords="463,124,585,167"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="389,30,416,42,462,74,498,111,494,114,458,78,414,46,386,35"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="376,81,416,92,469,114,467,119,414,97,375,86"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="403,129,448,134,447,139,403,134"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="415,155,447,151,448,157,415,160"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="375,205,414,193,467,171,469,176,416,199,376,210"/>
+<area shape="poly" id="edge12_Node000008_Node000003" title=" " alt="" coords="379,258,414,244,458,213,494,176,498,180,462,217,416,249,381,263"/>
+</map>

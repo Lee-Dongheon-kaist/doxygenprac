@@ -1,0 +1,9 @@
+<map id="UtilTest::VehicleQueueInsertExtract" name="UtilTest::VehicleQueueInsertExtract">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,72,192,115"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_util_1_1_vehicle_queue.html#a4fba47e268eae735f1e2bd4def05a789" title=" " alt="" coords="240,5,421,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,69,238,50,240,55,176,74"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_util_1_1_vehicle_queue.html#a1c4f0d6747fd7ab18a55b3de33ec74cf" title=" " alt="" coords="240,72,421,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="192,91,224,91,224,96,192,96"/>
+<area shape="rect" id="Node000004" href="$class_captain_1_1_util_1_1_vehicle_queue.html#a3d4c31f703ddc93aec3976f825ed7b23" title=" " alt="" coords="240,139,421,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="176,113,240,131,238,136,174,118"/>
+</map>

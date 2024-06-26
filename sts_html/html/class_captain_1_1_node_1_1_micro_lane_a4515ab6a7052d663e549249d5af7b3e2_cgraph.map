@@ -1,0 +1,7 @@
+<map id="Captain::Node::MicroLane::MoveFromNearbyLane" name="Captain::Node::MicroLane::MoveFromNearbyLane">
+<area shape="rect" id="Node000001" title="Moves vehicles from lane change queue of nearby lane." alt="" coords="5,39,177,81"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_util_1_1_vehicle_queue.html#a47afe186e18e15052f774138f4ed6d11" title=" " alt="" coords="225,5,424,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,45,209,40,210,46,177,50"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_util_1_1_vehicle_queue.html#ab10028bf98dc7b0b252ac4685af3c06e" title=" " alt="" coords="234,72,415,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,70,219,76,218,81,177,75"/>
+</map>

@@ -1,0 +1,325 @@
+\doxysection{Captain\+::Node\+::Station Class Reference}
+\hypertarget{class_captain_1_1_node_1_1_station}{}\label{class_captain_1_1_node_1_1_station}\index{Captain::Node::Station@{Captain::Node::Station}}
+
+
+{\ttfamily \#include $<$Station.\+hpp$>$}
+
+
+
+Inheritance diagram for Captain\+::Node\+::Station\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{class_captain_1_1_node_1_1_station__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Captain\+::Node\+::Station\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_captain_1_1_node_1_1_station__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_captain_1_1_node_1_1_station_a2d31c2a6e12cddb558855221425e6967}{Station}} (\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} identifier, std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_position}{Position}} $>$ park\+Position\+Vector)
+\item 
+\mbox{\hyperlink{class_captain_1_1_node_1_1_station_a4563075f300216d85282dfbedcf1c635}{\texorpdfstring{$\sim$}{\string~}\+Station}} ()=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_node_1_1_station_af89353cffa9aa889efb683f2ab302843}{Station}} (const \mbox{\hyperlink{class_captain_1_1_node_1_1_station}{Station}} \&station)=delete
+\item 
+\mbox{\hyperlink{class_captain_1_1_node_1_1_station_afa99e91aa5109d775bc91167cebf732b}{Station}} (\mbox{\hyperlink{class_captain_1_1_node_1_1_station}{Station}} \&\&station) noexcept
+\item 
+\mbox{\hyperlink{class_captain_1_1_node_1_1_station}{Station}} \& \mbox{\hyperlink{class_captain_1_1_node_1_1_station_a3cb93c501744f907d7dfa3e80507f5e5}{operator=}} (const \mbox{\hyperlink{class_captain_1_1_node_1_1_station}{Station}} \&station)=delete
+\item 
+\mbox{\hyperlink{class_captain_1_1_node_1_1_station}{Station}} \& \mbox{\hyperlink{class_captain_1_1_node_1_1_station_a87c7f26fddaf0305d89ad7fcbd0fd367}{operator=}} (\mbox{\hyperlink{class_captain_1_1_node_1_1_station}{Station}} \&\&station) noexcept
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_position}{Position}} $>$ \& \mbox{\hyperlink{class_captain_1_1_node_1_1_station_a4df3fe5bf4ecf2e4868d7c1c1640d154}{Get\+Park\+Position\+Vector}} () const
+\item 
+\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \mbox{\hyperlink{class_captain_1_1_node_1_1_station_a189155df186ad1bfa512c1f233709a79}{Identifier}} () const
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_station_ab9dd0e93ecb845f90c3ad71dfa7f8b90}{Reserve\+Parking\+Position}} (\mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$ vehicle)
+\item 
+std\+::optional$<$ \mbox{\hyperlink{struct_captain_1_1_position}{Position}} $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_station_a6a2edcbdda8b795aae74a4e686ffb342}{Update\+Position}} (\mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$ vehicle)
+\item 
+\mbox{\hyperlink{struct_captain_1_1_position}{Position}} \mbox{\hyperlink{class_captain_1_1_node_1_1_station_a2094e45862934f420d140c15fd008a60}{Get\+Park\+Position}} ()
+\item 
+std\+::optional$<$ \mbox{\hyperlink{struct_captain_1_1_position}{Position}} $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_station_afa862bfb3780486e85386d896eb6bad0}{Get\+Reserved\+Park\+Position}} (\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} vehicle\+Id)
+\item 
+bool \mbox{\hyperlink{class_captain_1_1_node_1_1_station_a117c400a821ffeb5a7e1258c20c0904a}{Free\+Park\+Position}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&vehicle\+Id)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_station_ad4c63c45f328370297801adf4758dae2}{Sort\+Reserved\+Vehicles}} ()
+\begin{DoxyCompactList}\small\item\em Sorts reserved list of vehicles by vehicle\textquotesingle{}s current position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_captain_1_1_position}{Position}} \mbox{\hyperlink{class_captain_1_1_node_1_1_station_af6f015b4c49cb55f41350e76dbd623fe}{Get\+Last\+Park\+Position}} () const
+\item 
+int \mbox{\hyperlink{class_captain_1_1_node_1_1_station_a162af563a41a3d87c817a69594f0f0b4}{Get\+ID}} () const
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_station_aa9543a171a1c6267c1d80bf62b7ce4c6}{Record}} (std\+::size\+\_\+t cycle)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_station_aa471124406839eab16ef0e33699a5b1b}{Flush\+Recordings}} () override
+\begin{DoxyCompactList}\small\item\em Writes all recordings in the temporary buffer to file and flushes the buffer. \end{DoxyCompactList}\item 
+std\+::filesystem\+::path \mbox{\hyperlink{class_captain_1_1_node_1_1_station_a6c4ad417b2a1884cdeb1b89c90f5f614}{Get\+File\+Path}} () override
+\begin{DoxyCompactList}\small\item\em Gets current target file path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{struct_captain_1_1_i_event_recordable}{Captain\+::\+IEvent\+Recordable}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_i_event_recordable_ad50163c1ce3c5b72548a6904db592172}{IEvent\+Recordable}} ()=default
+\item 
+virtual \mbox{\hyperlink{struct_captain_1_1_i_event_recordable_aed6ba9b275dfef1362cf6ad32d092453}{\texorpdfstring{$\sim$}{\string~}\+IEvent\+Recordable}} ()=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_i_event_recordable_a2e2807a122f1f25887a2e12fe9e82a74}{IEvent\+Recordable}} (const \mbox{\hyperlink{struct_captain_1_1_i_event_recordable}{IEvent\+Recordable}} \&other)=delete
+\item 
+\mbox{\hyperlink{struct_captain_1_1_i_event_recordable}{IEvent\+Recordable}} \& \mbox{\hyperlink{struct_captain_1_1_i_event_recordable_a697041150e34f0bcd57b85592b6d0254}{operator=}} (const \mbox{\hyperlink{struct_captain_1_1_i_event_recordable}{IEvent\+Recordable}} \&other)=delete
+\item 
+virtual void \mbox{\hyperlink{struct_captain_1_1_i_event_recordable_a7056daa9c8bb0712b5086f695481d232}{Record}} (size\+\_\+t cycle)=0
+\begin{DoxyCompactList}\small\item\em Records information to temporary buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_station_record_info}{Station\+Record\+Info}} \mbox{\hyperlink{class_captain_1_1_node_1_1_station_aa2be6464e18e43fd509e9f49c2a5433f}{Record\+Info}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_captain_1_1_node_1_1_station_a2d31c2a6e12cddb558855221425e6967}\label{class_captain_1_1_node_1_1_station_a2d31c2a6e12cddb558855221425e6967} 
+\index{Captain::Node::Station@{Captain::Node::Station}!Station@{Station}}
+\index{Station@{Station}!Captain::Node::Station@{Captain::Node::Station}}
+\doxysubsubsection{\texorpdfstring{Station()}{Station()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Captain\+::\+Node\+::\+Station\+::\+Station (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}}}]{identifier,  }\item[{std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_position}{Position}} $>$}]{park\+Position\+Vector }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em identifier} & \+: identifier for this station \\
+\hline
+{\em park\+Position\+Vector} & \+: target positions for vehicles to stop \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_captain_1_1_node_1_1_station_a4563075f300216d85282dfbedcf1c635}\label{class_captain_1_1_node_1_1_station_a4563075f300216d85282dfbedcf1c635} 
+\index{Captain::Node::Station@{Captain::Node::Station}!````~Station@{\texorpdfstring{$\sim$}{\string~}Station}}
+\index{````~Station@{\texorpdfstring{$\sim$}{\string~}Station}!Captain::Node::Station@{Captain::Node::Station}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Station()}{\string~Station()}}
+{\footnotesize\ttfamily Captain\+::\+Node\+::\+Station\+::\texorpdfstring{$\sim$}{\string~}\+Station (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_captain_1_1_node_1_1_station_af89353cffa9aa889efb683f2ab302843}\label{class_captain_1_1_node_1_1_station_af89353cffa9aa889efb683f2ab302843} 
+\index{Captain::Node::Station@{Captain::Node::Station}!Station@{Station}}
+\index{Station@{Station}!Captain::Node::Station@{Captain::Node::Station}}
+\doxysubsubsection{\texorpdfstring{Station()}{Station()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Captain\+::\+Node\+::\+Station\+::\+Station (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_captain_1_1_node_1_1_station}{Station}} \&}]{station }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{class_captain_1_1_node_1_1_station_afa99e91aa5109d775bc91167cebf732b}\label{class_captain_1_1_node_1_1_station_afa99e91aa5109d775bc91167cebf732b} 
+\index{Captain::Node::Station@{Captain::Node::Station}!Station@{Station}}
+\index{Station@{Station}!Captain::Node::Station@{Captain::Node::Station}}
+\doxysubsubsection{\texorpdfstring{Station()}{Station()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Captain\+::\+Node\+::\+Station\+::\+Station (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_node_1_1_station}{Station}} \&\&}]{station }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_captain_1_1_node_1_1_station_aa471124406839eab16ef0e33699a5b1b}\label{class_captain_1_1_node_1_1_station_aa471124406839eab16ef0e33699a5b1b} 
+\index{Captain::Node::Station@{Captain::Node::Station}!FlushRecordings@{FlushRecordings}}
+\index{FlushRecordings@{FlushRecordings}!Captain::Node::Station@{Captain::Node::Station}}
+\doxysubsubsection{\texorpdfstring{FlushRecordings()}{FlushRecordings()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Station\+::\+Flush\+Recordings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Writes all recordings in the temporary buffer to file and flushes the buffer. 
+
+\begin{DoxyNote}{Note}
+Creates file if file does not exist by calling Remove\+Existing\+File() 
+
+It will append recordings to file if file already exists 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_i_event_recordable_a3fc2cbece40bb830c49854ecc2211fc3}{Captain\+::\+IEvent\+Recordable}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_station_aa471124406839eab16ef0e33699a5b1b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_station_a117c400a821ffeb5a7e1258c20c0904a}\label{class_captain_1_1_node_1_1_station_a117c400a821ffeb5a7e1258c20c0904a} 
+\index{Captain::Node::Station@{Captain::Node::Station}!FreeParkPosition@{FreeParkPosition}}
+\index{FreeParkPosition@{FreeParkPosition}!Captain::Node::Station@{Captain::Node::Station}}
+\doxysubsubsection{\texorpdfstring{FreeParkPosition()}{FreeParkPosition()}}
+{\footnotesize\ttfamily bool Captain\+::\+Node\+::\+Station\+::\+Free\+Park\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{vehicle\+Id }\end{DoxyParamCaption})}
+
+Frees granted park position 
+\begin{DoxyParams}{Parameters}
+{\em vehicle\+Id} & \+: \doxylink{struct_captain_1_1_unit_identifier}{Unit\+Identifier} of vehicle to free the position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: true if park position was freed, false if granted park position was not found 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_node_1_1_station_a6c4ad417b2a1884cdeb1b89c90f5f614}\label{class_captain_1_1_node_1_1_station_a6c4ad417b2a1884cdeb1b89c90f5f614} 
+\index{Captain::Node::Station@{Captain::Node::Station}!GetFilePath@{GetFilePath}}
+\index{GetFilePath@{GetFilePath}!Captain::Node::Station@{Captain::Node::Station}}
+\doxysubsubsection{\texorpdfstring{GetFilePath()}{GetFilePath()}}
+{\footnotesize\ttfamily std\+::filesystem\+::path Captain\+::\+Node\+::\+Station\+::\+Get\+File\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets current target file path. 
+
+\begin{DoxyReturn}{Returns}
+filepath that recordings are getting stored 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_i_event_recordable_aa84d827817e17a117fb9db090efd1605}{Captain\+::\+IEvent\+Recordable}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_station_a6c4ad417b2a1884cdeb1b89c90f5f614_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_station_a162af563a41a3d87c817a69594f0f0b4}\label{class_captain_1_1_node_1_1_station_a162af563a41a3d87c817a69594f0f0b4} 
+\index{Captain::Node::Station@{Captain::Node::Station}!GetID@{GetID}}
+\index{GetID@{GetID}!Captain::Node::Station@{Captain::Node::Station}}
+\doxysubsubsection{\texorpdfstring{GetID()}{GetID()}}
+{\footnotesize\ttfamily int Captain\+::\+Node\+::\+Station\+::\+Get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_node_1_1_station_af6f015b4c49cb55f41350e76dbd623fe}\label{class_captain_1_1_node_1_1_station_af6f015b4c49cb55f41350e76dbd623fe} 
+\index{Captain::Node::Station@{Captain::Node::Station}!GetLastParkPosition@{GetLastParkPosition}}
+\index{GetLastParkPosition@{GetLastParkPosition}!Captain::Node::Station@{Captain::Node::Station}}
+\doxysubsubsection{\texorpdfstring{GetLastParkPosition()}{GetLastParkPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_position}{Position}} Captain\+::\+Node\+::\+Station\+::\+Get\+Last\+Park\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets Last park position \begin{DoxyReturn}{Returns}
+\+: last park position 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_node_1_1_station_a2094e45862934f420d140c15fd008a60}\label{class_captain_1_1_node_1_1_station_a2094e45862934f420d140c15fd008a60} 
+\index{Captain::Node::Station@{Captain::Node::Station}!GetParkPosition@{GetParkPosition}}
+\index{GetParkPosition@{GetParkPosition}!Captain::Node::Station@{Captain::Node::Station}}
+\doxysubsubsection{\texorpdfstring{GetParkPosition()}{GetParkPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_position}{Position}} Captain\+::\+Node\+::\+Station\+::\+Get\+Park\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets park position \begin{DoxyReturn}{Returns}
+\+: minimum position 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_node_1_1_station_a4df3fe5bf4ecf2e4868d7c1c1640d154}\label{class_captain_1_1_node_1_1_station_a4df3fe5bf4ecf2e4868d7c1c1640d154} 
+\index{Captain::Node::Station@{Captain::Node::Station}!GetParkPositionVector@{GetParkPositionVector}}
+\index{GetParkPositionVector@{GetParkPositionVector}!Captain::Node::Station@{Captain::Node::Station}}
+\doxysubsubsection{\texorpdfstring{GetParkPositionVector()}{GetParkPositionVector()}}
+{\footnotesize\ttfamily const std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_position}{Position}} $>$ \& Captain\+::\+Node\+::\+Station\+::\+Get\+Park\+Position\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_node_1_1_station_afa862bfb3780486e85386d896eb6bad0}\label{class_captain_1_1_node_1_1_station_afa862bfb3780486e85386d896eb6bad0} 
+\index{Captain::Node::Station@{Captain::Node::Station}!GetReservedParkPosition@{GetReservedParkPosition}}
+\index{GetReservedParkPosition@{GetReservedParkPosition}!Captain::Node::Station@{Captain::Node::Station}}
+\doxysubsubsection{\texorpdfstring{GetReservedParkPosition()}{GetReservedParkPosition()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{struct_captain_1_1_position}{Position}} $>$ Captain\+::\+Node\+::\+Station\+::\+Get\+Reserved\+Park\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}}}]{vehicle\+Id }\end{DoxyParamCaption})}
+
+Gets granted park position if vehicle exists in reserved list \begin{DoxyReturn}{Returns}
+\+: reserved position if vehicle is reserved, nullopt if vehicle was not reserved 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_node_1_1_station_a189155df186ad1bfa512c1f233709a79}\label{class_captain_1_1_node_1_1_station_a189155df186ad1bfa512c1f233709a79} 
+\index{Captain::Node::Station@{Captain::Node::Station}!Identifier@{Identifier}}
+\index{Identifier@{Identifier}!Captain::Node::Station@{Captain::Node::Station}}
+\doxysubsubsection{\texorpdfstring{Identifier()}{Identifier()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} Captain\+::\+Node\+::\+Station\+::\+Identifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_node_1_1_station_a3cb93c501744f907d7dfa3e80507f5e5}\label{class_captain_1_1_node_1_1_station_a3cb93c501744f907d7dfa3e80507f5e5} 
+\index{Captain::Node::Station@{Captain::Node::Station}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::Node::Station@{Captain::Node::Station}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_node_1_1_station}{Station}} \& Captain\+::\+Node\+::\+Station\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_captain_1_1_node_1_1_station}{Station}} \&}]{station }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{class_captain_1_1_node_1_1_station_a87c7f26fddaf0305d89ad7fcbd0fd367}\label{class_captain_1_1_node_1_1_station_a87c7f26fddaf0305d89ad7fcbd0fd367} 
+\index{Captain::Node::Station@{Captain::Node::Station}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::Node::Station@{Captain::Node::Station}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_node_1_1_station}{Station}} \& Captain\+::\+Node\+::\+Station\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_node_1_1_station}{Station}} \&\&}]{station }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{class_captain_1_1_node_1_1_station_aa9543a171a1c6267c1d80bf62b7ce4c6}\label{class_captain_1_1_node_1_1_station_aa9543a171a1c6267c1d80bf62b7ce4c6} 
+\index{Captain::Node::Station@{Captain::Node::Station}!Record@{Record}}
+\index{Record@{Record}!Captain::Node::Station@{Captain::Node::Station}}
+\doxysubsubsection{\texorpdfstring{Record()}{Record()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Station\+::\+Record (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_station_aa9543a171a1c6267c1d80bf62b7ce4c6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_station_ab9dd0e93ecb845f90c3ad71dfa7f8b90}\label{class_captain_1_1_node_1_1_station_ab9dd0e93ecb845f90c3ad71dfa7f8b90} 
+\index{Captain::Node::Station@{Captain::Node::Station}!ReserveParkingPosition@{ReserveParkingPosition}}
+\index{ReserveParkingPosition@{ReserveParkingPosition}!Captain::Node::Station@{Captain::Node::Station}}
+\doxysubsubsection{\texorpdfstring{ReserveParkingPosition()}{ReserveParkingPosition()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Station\+::\+Reserve\+Parking\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$}]{vehicle }\end{DoxyParamCaption})}
+
+Reserves parking position if vehicle already exists, it updates the position. If not, it appends vehicle to the reservation list 
+\begin{DoxyParams}{Parameters}
+{\em vehicle} & \+: \doxylink{struct_captain_1_1_unit_identifier}{Unit\+Identifier} of the vehicle to grant the position \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_station_ab9dd0e93ecb845f90c3ad71dfa7f8b90_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_station_ad4c63c45f328370297801adf4758dae2}\label{class_captain_1_1_node_1_1_station_ad4c63c45f328370297801adf4758dae2} 
+\index{Captain::Node::Station@{Captain::Node::Station}!SortReservedVehicles@{SortReservedVehicles}}
+\index{SortReservedVehicles@{SortReservedVehicles}!Captain::Node::Station@{Captain::Node::Station}}
+\doxysubsubsection{\texorpdfstring{SortReservedVehicles()}{SortReservedVehicles()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Station\+::\+Sort\+Reserved\+Vehicles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sorts reserved list of vehicles by vehicle\textquotesingle{}s current position. 
+
+\Hypertarget{class_captain_1_1_node_1_1_station_a6a2edcbdda8b795aae74a4e686ffb342}\label{class_captain_1_1_node_1_1_station_a6a2edcbdda8b795aae74a4e686ffb342} 
+\index{Captain::Node::Station@{Captain::Node::Station}!UpdatePosition@{UpdatePosition}}
+\index{UpdatePosition@{UpdatePosition}!Captain::Node::Station@{Captain::Node::Station}}
+\doxysubsubsection{\texorpdfstring{UpdatePosition()}{UpdatePosition()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{struct_captain_1_1_position}{Position}} $>$ Captain\+::\+Node\+::\+Station\+::\+Update\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$}]{vehicle }\end{DoxyParamCaption})}
+
+Gets granted position of the vehicle 
+\begin{DoxyParams}{Parameters}
+{\em vehicle} & \+: \doxylink{struct_captain_1_1_unit_identifier}{Unit\+Identifier} of the vehicle to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: Updated position if position has been updated, nullopt if vehicle was not found 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_station_a6a2edcbdda8b795aae74a4e686ffb342_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_captain_1_1_node_1_1_station_aa2be6464e18e43fd509e9f49c2a5433f}\label{class_captain_1_1_node_1_1_station_aa2be6464e18e43fd509e9f49c2a5433f} 
+\index{Captain::Node::Station@{Captain::Node::Station}!RecordInfo@{RecordInfo}}
+\index{RecordInfo@{RecordInfo}!Captain::Node::Station@{Captain::Node::Station}}
+\doxysubsubsection{\texorpdfstring{RecordInfo}{RecordInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_station_record_info}{Station\+Record\+Info}} Captain\+::\+Node\+::\+Station\+::\+Record\+Info}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Network/\mbox{\hyperlink{_station_8hpp}{Station.\+hpp}}\item 
+Sources/captain/\+Network/\mbox{\hyperlink{_station_8cpp}{Station.\+cpp}}\end{DoxyCompactItemize}

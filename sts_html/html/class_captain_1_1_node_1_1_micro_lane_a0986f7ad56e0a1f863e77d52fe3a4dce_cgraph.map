@@ -1,0 +1,7 @@
+<map id="Captain::Node::MicroLane::GetFollowingVehiclePtr" name="Captain::Node::MicroLane::GetFollowingVehiclePtr">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,27,177,69"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_util_1_1_vehicle_queue.html#abf94a44e54cfe64a5a522b8be85f3c87" title=" " alt="" coords="225,5,427,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,35,209,31,210,36,177,40"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_util_1_1_vehicle_queue.html#a3d4c31f703ddc93aec3976f825ed7b23" title=" " alt="" coords="235,56,417,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,56,220,61,219,67,176,61"/>
+</map>

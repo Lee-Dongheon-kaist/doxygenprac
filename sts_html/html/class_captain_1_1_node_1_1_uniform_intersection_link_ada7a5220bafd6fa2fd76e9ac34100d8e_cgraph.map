@@ -1,0 +1,5 @@
+<map id="Captain::Node::UniformIntersectionLink::GetLeaderLaneConnectionInfo" name="Captain::Node::UniformIntersectionLink::GetLeaderLaneConnectionInfo">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,232,48"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#a909c0020b6c81ec65231940b66a806a3" title="Gets UnitConnectionInfo connected to follower." alt="" coords="280,5,506,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,24,264,24,264,29,232,29"/>
+</map>

@@ -1,0 +1,383 @@
+\doxysection{Intersection\+Node Class Reference}
+\hypertarget{class_intersection_node}{}\label{class_intersection_node}\index{IntersectionNode@{IntersectionNode}}
+
+
+{\ttfamily \#include $<$Intersection\+Node.\+hpp$>$}
+
+
+
+Collaboration diagram for Intersection\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{class_intersection_node__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_intersection_node_a8d0fff1a895776c780c4e88c535ece72}{Intersection\+Node}} (int type, int id, int num\+\_\+connection, int num\+\_\+port, bool v2x\+Active)
+\item 
+void \mbox{\hyperlink{class_intersection_node_a26212f8c5846d7c32e1c533bb8307fa6}{init\+Phase}} ()
+\item 
+void \mbox{\hyperlink{class_intersection_node_a4fb93d787321ee4ec8907fdec0326ac2}{set\+Phase}} (int phase)
+\item 
+void \mbox{\hyperlink{class_intersection_node_aa9445c90c6bfb6569e74a0efc4c4bc4b}{set\+Phase\+Offset}} (int offset)
+\item 
+void \mbox{\hyperlink{class_intersection_node_a7a5677a31560561d34a94d2e049052a7}{push\+Connection}} (\mbox{\hyperlink{classconnection}{connection}} conn)
+\item 
+void \mbox{\hyperlink{class_intersection_node_a830e25d5f00c12c9c862f8fe120a0163}{push\+Link}} (\mbox{\hyperlink{classport}{port}} link)
+\item 
+void \mbox{\hyperlink{class_intersection_node_a69e6de119039739a4e47ec23e406858b}{push\+Phase}} (\mbox{\hyperlink{classintersection_phase}{intersection\+Phase}} phase)
+\item 
+void \mbox{\hyperlink{class_intersection_node_aaa3fda31bd0411c77abf44feadb3ee88}{push\+Phase\+Length}} (int length)
+\item 
+void \mbox{\hyperlink{class_intersection_node_acc438b2e3c06934224eb3a7218d60b8c}{push\+Phase\+Order}} (int order)
+\item 
+int \mbox{\hyperlink{class_intersection_node_a92d86ae2d05c2001e4ef6619ddd6132e}{get\+Id}} () const
+\item 
+int \mbox{\hyperlink{class_intersection_node_a3643828af9c731a464d2a4c2650e20ce}{get\+Type}} ()
+\item 
+int \mbox{\hyperlink{class_intersection_node_a7eb196a3278490fad95e659a488fd37e}{get\+Num\+Conn}} ()
+\item 
+int \mbox{\hyperlink{class_intersection_node_ade00cd182466ff85536f3ee75aefbc64}{get\+Num\+Link}} ()
+\item 
+bool \mbox{\hyperlink{class_intersection_node_a2c6b0c47c6a142420b50a2bf69edc06f}{get\+V2\+XActive}} ()
+\item 
+int \mbox{\hyperlink{class_intersection_node_a7744c95d24294ee4a1c9e0fe7833f40a}{get\+Phase\+Offset}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classport}{port}} $>$ \mbox{\hyperlink{class_intersection_node_ae8e003d9581091fca0706c20262c9b7b}{get\+Links}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classconnection}{connection}} $>$ \mbox{\hyperlink{class_intersection_node_a6fc31e8f78ad89e9ac7ed61407dbe6cb}{get\+Connections}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classintersection_phase}{intersection\+Phase}} $>$ \mbox{\hyperlink{class_intersection_node_ab9ef03b24296a6f1674d64041049b2f8}{get\+Phase\+Table}} ()
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_intersection_node_a7f7d0b3b140a8b9db52c9fca22365696}{get\+Phase\+Length}} ()
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_intersection_node_a8ab96fc07fa9a9c48d8405d959cbbd16}{get\+Phase\+Order}} ()
+\item 
+void \mbox{\hyperlink{class_intersection_node_a50dc8aba9125fe9450e0f86cfacf3034}{free\+Connected\+Links}} ()
+\item 
+void \mbox{\hyperlink{class_intersection_node_ab5f8c25a694cc3af90bbea760fe1ac7f}{free\+Connected\+Table}} ()
+\item 
+void \mbox{\hyperlink{class_intersection_node_a7aa4392ae0421e41f27d5b5c0b27d874}{free\+Phase\+Table}} ()
+\item 
+void \mbox{\hyperlink{class_intersection_node_aad8acaa162504dbd64efd905d38255e4}{free\+Phase\+Length}} ()
+\item 
+void \mbox{\hyperlink{class_intersection_node_a6a184119e62b96d18247eea37f862989}{free\+Phase\+Order}} ()
+\item 
+bool \mbox{\hyperlink{class_intersection_node_aa29acf4fd75d3644ad31c29c80023c37}{has\+Phase}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_intersection_node_a8d0fff1a895776c780c4e88c535ece72}\label{class_intersection_node_a8d0fff1a895776c780c4e88c535ece72} 
+\index{IntersectionNode@{IntersectionNode}!IntersectionNode@{IntersectionNode}}
+\index{IntersectionNode@{IntersectionNode}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{IntersectionNode()}{IntersectionNode()}}
+{\footnotesize\ttfamily Intersection\+Node\+::\+Intersection\+Node (\begin{DoxyParamCaption}\item[{int}]{type,  }\item[{int}]{id,  }\item[{int}]{num\+\_\+connection,  }\item[{int}]{num\+\_\+port,  }\item[{bool}]{v2x\+Active }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_intersection_node_a50dc8aba9125fe9450e0f86cfacf3034}\label{class_intersection_node_a50dc8aba9125fe9450e0f86cfacf3034} 
+\index{IntersectionNode@{IntersectionNode}!freeConnectedLinks@{freeConnectedLinks}}
+\index{freeConnectedLinks@{freeConnectedLinks}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{freeConnectedLinks()}{freeConnectedLinks()}}
+{\footnotesize\ttfamily void Intersection\+Node\+::free\+Connected\+Links (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_intersection_node_a50dc8aba9125fe9450e0f86cfacf3034_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_intersection_node_ab5f8c25a694cc3af90bbea760fe1ac7f}\label{class_intersection_node_ab5f8c25a694cc3af90bbea760fe1ac7f} 
+\index{IntersectionNode@{IntersectionNode}!freeConnectedTable@{freeConnectedTable}}
+\index{freeConnectedTable@{freeConnectedTable}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{freeConnectedTable()}{freeConnectedTable()}}
+{\footnotesize\ttfamily void Intersection\+Node\+::free\+Connected\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_intersection_node_ab5f8c25a694cc3af90bbea760fe1ac7f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_intersection_node_aad8acaa162504dbd64efd905d38255e4}\label{class_intersection_node_aad8acaa162504dbd64efd905d38255e4} 
+\index{IntersectionNode@{IntersectionNode}!freePhaseLength@{freePhaseLength}}
+\index{freePhaseLength@{freePhaseLength}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{freePhaseLength()}{freePhaseLength()}}
+{\footnotesize\ttfamily void Intersection\+Node\+::free\+Phase\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_intersection_node_a6a184119e62b96d18247eea37f862989}\label{class_intersection_node_a6a184119e62b96d18247eea37f862989} 
+\index{IntersectionNode@{IntersectionNode}!freePhaseOrder@{freePhaseOrder}}
+\index{freePhaseOrder@{freePhaseOrder}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{freePhaseOrder()}{freePhaseOrder()}}
+{\footnotesize\ttfamily void Intersection\+Node\+::free\+Phase\+Order (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_intersection_node_a7aa4392ae0421e41f27d5b5c0b27d874}\label{class_intersection_node_a7aa4392ae0421e41f27d5b5c0b27d874} 
+\index{IntersectionNode@{IntersectionNode}!freePhaseTable@{freePhaseTable}}
+\index{freePhaseTable@{freePhaseTable}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{freePhaseTable()}{freePhaseTable()}}
+{\footnotesize\ttfamily void Intersection\+Node\+::free\+Phase\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{class_intersection_node_a7aa4392ae0421e41f27d5b5c0b27d874_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_intersection_node_a6fc31e8f78ad89e9ac7ed61407dbe6cb}\label{class_intersection_node_a6fc31e8f78ad89e9ac7ed61407dbe6cb} 
+\index{IntersectionNode@{IntersectionNode}!getConnections@{getConnections}}
+\index{getConnections@{getConnections}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{getConnections()}{getConnections()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classconnection}{connection}} $>$ Intersection\+Node\+::get\+Connections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_intersection_node_a6fc31e8f78ad89e9ac7ed61407dbe6cb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_intersection_node_a92d86ae2d05c2001e4ef6619ddd6132e}\label{class_intersection_node_a92d86ae2d05c2001e4ef6619ddd6132e} 
+\index{IntersectionNode@{IntersectionNode}!getId@{getId}}
+\index{getId@{getId}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Intersection\+Node\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_intersection_node_a92d86ae2d05c2001e4ef6619ddd6132e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_intersection_node_ae8e003d9581091fca0706c20262c9b7b}\label{class_intersection_node_ae8e003d9581091fca0706c20262c9b7b} 
+\index{IntersectionNode@{IntersectionNode}!getLinks@{getLinks}}
+\index{getLinks@{getLinks}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{getLinks()}{getLinks()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classport}{port}} $>$ Intersection\+Node\+::get\+Links (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_intersection_node_ae8e003d9581091fca0706c20262c9b7b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_intersection_node_a7eb196a3278490fad95e659a488fd37e}\label{class_intersection_node_a7eb196a3278490fad95e659a488fd37e} 
+\index{IntersectionNode@{IntersectionNode}!getNumConn@{getNumConn}}
+\index{getNumConn@{getNumConn}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{getNumConn()}{getNumConn()}}
+{\footnotesize\ttfamily int Intersection\+Node\+::get\+Num\+Conn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_intersection_node_ade00cd182466ff85536f3ee75aefbc64}\label{class_intersection_node_ade00cd182466ff85536f3ee75aefbc64} 
+\index{IntersectionNode@{IntersectionNode}!getNumLink@{getNumLink}}
+\index{getNumLink@{getNumLink}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{getNumLink()}{getNumLink()}}
+{\footnotesize\ttfamily int Intersection\+Node\+::get\+Num\+Link (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_intersection_node_a7f7d0b3b140a8b9db52c9fca22365696}\label{class_intersection_node_a7f7d0b3b140a8b9db52c9fca22365696} 
+\index{IntersectionNode@{IntersectionNode}!getPhaseLength@{getPhaseLength}}
+\index{getPhaseLength@{getPhaseLength}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{getPhaseLength()}{getPhaseLength()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Intersection\+Node\+::get\+Phase\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_intersection_node_a7f7d0b3b140a8b9db52c9fca22365696_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_intersection_node_a7744c95d24294ee4a1c9e0fe7833f40a}\label{class_intersection_node_a7744c95d24294ee4a1c9e0fe7833f40a} 
+\index{IntersectionNode@{IntersectionNode}!getPhaseOffset@{getPhaseOffset}}
+\index{getPhaseOffset@{getPhaseOffset}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{getPhaseOffset()}{getPhaseOffset()}}
+{\footnotesize\ttfamily int Intersection\+Node\+::get\+Phase\+Offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_intersection_node_a7744c95d24294ee4a1c9e0fe7833f40a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_intersection_node_a8ab96fc07fa9a9c48d8405d959cbbd16}\label{class_intersection_node_a8ab96fc07fa9a9c48d8405d959cbbd16} 
+\index{IntersectionNode@{IntersectionNode}!getPhaseOrder@{getPhaseOrder}}
+\index{getPhaseOrder@{getPhaseOrder}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{getPhaseOrder()}{getPhaseOrder()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Intersection\+Node\+::get\+Phase\+Order (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_intersection_node_a8ab96fc07fa9a9c48d8405d959cbbd16_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_intersection_node_ab9ef03b24296a6f1674d64041049b2f8}\label{class_intersection_node_ab9ef03b24296a6f1674d64041049b2f8} 
+\index{IntersectionNode@{IntersectionNode}!getPhaseTable@{getPhaseTable}}
+\index{getPhaseTable@{getPhaseTable}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{getPhaseTable()}{getPhaseTable()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classintersection_phase}{intersection\+Phase}} $>$ Intersection\+Node\+::get\+Phase\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_intersection_node_ab9ef03b24296a6f1674d64041049b2f8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_intersection_node_a3643828af9c731a464d2a4c2650e20ce}\label{class_intersection_node_a3643828af9c731a464d2a4c2650e20ce} 
+\index{IntersectionNode@{IntersectionNode}!getType@{getType}}
+\index{getType@{getType}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily int Intersection\+Node\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_intersection_node_a2c6b0c47c6a142420b50a2bf69edc06f}\label{class_intersection_node_a2c6b0c47c6a142420b50a2bf69edc06f} 
+\index{IntersectionNode@{IntersectionNode}!getV2XActive@{getV2XActive}}
+\index{getV2XActive@{getV2XActive}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{getV2XActive()}{getV2XActive()}}
+{\footnotesize\ttfamily bool Intersection\+Node\+::get\+V2\+XActive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_intersection_node_a2c6b0c47c6a142420b50a2bf69edc06f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_intersection_node_aa29acf4fd75d3644ad31c29c80023c37}\label{class_intersection_node_aa29acf4fd75d3644ad31c29c80023c37} 
+\index{IntersectionNode@{IntersectionNode}!hasPhase@{hasPhase}}
+\index{hasPhase@{hasPhase}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{hasPhase()}{hasPhase()}}
+{\footnotesize\ttfamily bool Intersection\+Node\+::has\+Phase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_intersection_node_aa29acf4fd75d3644ad31c29c80023c37_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_intersection_node_a26212f8c5846d7c32e1c533bb8307fa6}\label{class_intersection_node_a26212f8c5846d7c32e1c533bb8307fa6} 
+\index{IntersectionNode@{IntersectionNode}!initPhase@{initPhase}}
+\index{initPhase@{initPhase}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{initPhase()}{initPhase()}}
+{\footnotesize\ttfamily void Intersection\+Node\+::init\+Phase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_intersection_node_a7a5677a31560561d34a94d2e049052a7}\label{class_intersection_node_a7a5677a31560561d34a94d2e049052a7} 
+\index{IntersectionNode@{IntersectionNode}!pushConnection@{pushConnection}}
+\index{pushConnection@{pushConnection}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{pushConnection()}{pushConnection()}}
+{\footnotesize\ttfamily void Intersection\+Node\+::push\+Connection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classconnection}{connection}}}]{conn }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_intersection_node_a7a5677a31560561d34a94d2e049052a7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_intersection_node_a830e25d5f00c12c9c862f8fe120a0163}\label{class_intersection_node_a830e25d5f00c12c9c862f8fe120a0163} 
+\index{IntersectionNode@{IntersectionNode}!pushLink@{pushLink}}
+\index{pushLink@{pushLink}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{pushLink()}{pushLink()}}
+{\footnotesize\ttfamily void Intersection\+Node\+::push\+Link (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classport}{port}}}]{link }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_intersection_node_a830e25d5f00c12c9c862f8fe120a0163_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_intersection_node_a69e6de119039739a4e47ec23e406858b}\label{class_intersection_node_a69e6de119039739a4e47ec23e406858b} 
+\index{IntersectionNode@{IntersectionNode}!pushPhase@{pushPhase}}
+\index{pushPhase@{pushPhase}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{pushPhase()}{pushPhase()}}
+{\footnotesize\ttfamily void Intersection\+Node\+::push\+Phase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classintersection_phase}{intersection\+Phase}}}]{phase }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_intersection_node_a69e6de119039739a4e47ec23e406858b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_intersection_node_aaa3fda31bd0411c77abf44feadb3ee88}\label{class_intersection_node_aaa3fda31bd0411c77abf44feadb3ee88} 
+\index{IntersectionNode@{IntersectionNode}!pushPhaseLength@{pushPhaseLength}}
+\index{pushPhaseLength@{pushPhaseLength}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{pushPhaseLength()}{pushPhaseLength()}}
+{\footnotesize\ttfamily void Intersection\+Node\+::push\+Phase\+Length (\begin{DoxyParamCaption}\item[{int}]{length }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_intersection_node_aaa3fda31bd0411c77abf44feadb3ee88_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_intersection_node_acc438b2e3c06934224eb3a7218d60b8c}\label{class_intersection_node_acc438b2e3c06934224eb3a7218d60b8c} 
+\index{IntersectionNode@{IntersectionNode}!pushPhaseOrder@{pushPhaseOrder}}
+\index{pushPhaseOrder@{pushPhaseOrder}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{pushPhaseOrder()}{pushPhaseOrder()}}
+{\footnotesize\ttfamily void Intersection\+Node\+::push\+Phase\+Order (\begin{DoxyParamCaption}\item[{int}]{order }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_intersection_node_acc438b2e3c06934224eb3a7218d60b8c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_intersection_node_a4fb93d787321ee4ec8907fdec0326ac2}\label{class_intersection_node_a4fb93d787321ee4ec8907fdec0326ac2} 
+\index{IntersectionNode@{IntersectionNode}!setPhase@{setPhase}}
+\index{setPhase@{setPhase}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{setPhase()}{setPhase()}}
+{\footnotesize\ttfamily void Intersection\+Node\+::set\+Phase (\begin{DoxyParamCaption}\item[{int}]{phase }\end{DoxyParamCaption})}
+
+\Hypertarget{class_intersection_node_aa9445c90c6bfb6569e74a0efc4c4bc4b}\label{class_intersection_node_aa9445c90c6bfb6569e74a0efc4c4bc4b} 
+\index{IntersectionNode@{IntersectionNode}!setPhaseOffset@{setPhaseOffset}}
+\index{setPhaseOffset@{setPhaseOffset}!IntersectionNode@{IntersectionNode}}
+\doxysubsubsection{\texorpdfstring{setPhaseOffset()}{setPhaseOffset()}}
+{\footnotesize\ttfamily void Intersection\+Node\+::set\+Phase\+Offset (\begin{DoxyParamCaption}\item[{int}]{offset }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_intersection_node_aa9445c90c6bfb6569e74a0efc4c4bc4b_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Libraries/gookto\+\_\+io/includes/gookto\+\_\+io/\mbox{\hyperlink{_intersection_node_8hpp}{Intersection\+Node.\+hpp}}\item 
+Libraries/gookto\+\_\+io/sources/gookto\+\_\+io/\mbox{\hyperlink{_intersection_node_8cpp}{Intersection\+Node.\+cpp}}\end{DoxyCompactItemize}

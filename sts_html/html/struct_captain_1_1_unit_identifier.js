@@ -1,0 +1,26 @@
+var struct_captain_1_1_unit_identifier =
+[
+    [ "UnitIdentifier", "struct_captain_1_1_unit_identifier.html#ac533cb1cbf910aa0a5b30075c5cdd15e", null ],
+    [ "UnitIdentifier", "struct_captain_1_1_unit_identifier.html#af2a6440c56fda27b55d93f45b421423d", null ],
+    [ "UnitIdentifier", "struct_captain_1_1_unit_identifier.html#ad26e52bd26ab2deb82feedb48a0a361a", null ],
+    [ "UnitIdentifier", "struct_captain_1_1_unit_identifier.html#a21189f5a7c956bfa4920f30a0e759193", null ],
+    [ "~UnitIdentifier", "struct_captain_1_1_unit_identifier.html#a26dea611c66254c117071baf405417be", null ],
+    [ "UnitIdentifier", "struct_captain_1_1_unit_identifier.html#a6bc2d03ff7d10e96815ed50a45eef8f6", null ],
+    [ "UnitIdentifier", "struct_captain_1_1_unit_identifier.html#a07114bd0335a149ad9d67e4ca07b1daa", null ],
+    [ "GetFilePath", "struct_captain_1_1_unit_identifier.html#afffc9a87382802c99fa8ec4dd9933ed7", null ],
+    [ "GetPrefix", "struct_captain_1_1_unit_identifier.html#aa2fff54586061f179fb7f41acc41d802", null ],
+    [ "operator!=", "struct_captain_1_1_unit_identifier.html#a6a1c11d08e55db87e850e77a3b02e1cc", null ],
+    [ "operator=", "struct_captain_1_1_unit_identifier.html#afdb36443385494f0a83e16a05d622815", null ],
+    [ "operator=", "struct_captain_1_1_unit_identifier.html#acb8c204f8e264cd3ce73f66d3903f5d3", null ],
+    [ "operator==", "struct_captain_1_1_unit_identifier.html#a6214904c89ba52714b11989f117ada74", null ],
+    [ "SetRecordInfo", "struct_captain_1_1_unit_identifier.html#a32c0be890b3b2ba760e4548f3be3a805", null ],
+    [ "SetRecordInfo", "struct_captain_1_1_unit_identifier.html#acd5139c561f81f73253ab2c1af4c1949", null ],
+    [ "SetSaveDir", "struct_captain_1_1_unit_identifier.html#ab4cc54cd2c8f1cd60f55401b43061bea", null ],
+    [ "WithSubID", "struct_captain_1_1_unit_identifier.html#aa3c00b710caca42b33a2c2977cabd23d", null ],
+    [ "PrimaryID", "struct_captain_1_1_unit_identifier.html#a02ffd5bac139e8da74137cd91ea0527d", null ],
+    [ "RecordLaneIdVector", "struct_captain_1_1_unit_identifier.html#a65e9c43c687d6551602981ef1d3022a7", null ],
+    [ "RecordOffsetVector", "struct_captain_1_1_unit_identifier.html#af30a85efdf064d4bb0ff8e2ae2a2618d", null ],
+    [ "RecordPrimaryID", "struct_captain_1_1_unit_identifier.html#add6f488dfb184802ae262fbfb1218db0", null ],
+    [ "SubID", "struct_captain_1_1_unit_identifier.html#aa4e713c12f8ae18c5a9b704eee9c7097", null ],
+    [ "Type", "struct_captain_1_1_unit_identifier.html#ac105f7546699da74ab3db76adb3f2a48", null ]
+];

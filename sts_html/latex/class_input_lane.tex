@@ -1,0 +1,215 @@
+\doxysection{Input\+Lane Class Reference}
+\hypertarget{class_input_lane}{}\label{class_input_lane}\index{InputLane@{InputLane}}
+
+
+{\ttfamily \#include $<$Input\+Lane.\+hpp$>$}
+
+
+
+Collaboration diagram for Input\+Lane\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{class_input_lane__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_input_lane_a676d3a627f3890144f06cd905fb3a272}{Input\+Lane}} (std\+::size\+\_\+t id\+Val, std\+::size\+\_\+t left\+Lane\+Id\+Val, std\+::size\+\_\+t right\+Lane\+Id\+Val, int num\+Cell\+Val)
+\item 
+\mbox{\hyperlink{class_input_lane_ab2dc3cd282888b95e20fe82a927f5afd}{Input\+Lane}} (std\+::size\+\_\+t id\+\_\+val, std\+::size\+\_\+t left\+\_\+lane\+\_\+id\+\_\+val, std\+::size\+\_\+t right\+\_\+lane\+\_\+id\+\_\+val, int num\+\_\+cell\+\_\+val, bool Right\+Empty, bool Left\+Empty)
+\item 
+\mbox{\hyperlink{class_input_lane_add2ca9992f787a0b023c9e313bc42e48}{Input\+Lane}} ()=default
+\item 
+\mbox{\hyperlink{class_input_lane_a37f9c62ca4a0f5434adbcce19c81dfb1}{\texorpdfstring{$\sim$}{\string~}\+Input\+Lane}} ()=default
+\item 
+\mbox{\hyperlink{class_input_lane_a7249e00584ce99223eb729200414cc7c}{Input\+Lane}} (const \mbox{\hyperlink{class_input_lane}{Input\+Lane}} \&lane)=default
+\item 
+\mbox{\hyperlink{class_input_lane}{Input\+Lane}} \& \mbox{\hyperlink{class_input_lane_a6826ed159382aa0f9acf5b219a7f51af}{operator=}} (const \mbox{\hyperlink{class_input_lane}{Input\+Lane}} \&lane)=default
+\item 
+void \mbox{\hyperlink{class_input_lane_a550dab3ca9c984770147dbfa2a705dc9}{Set\+ID}} (const std\+::size\+\_\+t id)
+\item 
+void \mbox{\hyperlink{class_input_lane_a2032217a64ab3379b3591c5552734476}{set\+Left\+Lane\+ID}} (std\+::size\+\_\+t left\+\_\+lane\+\_\+id\+\_\+val)
+\item 
+void \mbox{\hyperlink{class_input_lane_aba8a7c08898f3903f67457d75e863cce}{set\+Right\+Lane\+ID}} (std\+::size\+\_\+t right\+\_\+lane\+\_\+id\+\_\+val)
+\item 
+void \mbox{\hyperlink{class_input_lane_a549678b4953072cb67562e78dac36eaf}{set\+Num\+Cell}} (int num\+\_\+cell\+\_\+val)
+\item 
+void \mbox{\hyperlink{class_input_lane_a21b89999c23be4dcba6fc64d7765d3c5}{push\+Cell}} (\mbox{\hyperlink{class_input_cell}{Input\+Cell}} cell)
+\item 
+void \mbox{\hyperlink{class_input_lane_ad9d85740e936b18098a1197549e40685}{push\+Segment}} (\mbox{\hyperlink{class_input_segment}{Input\+Segment}} segment)
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_input_lane_aff54022614ee43040ab5840bcdec1e53}{get\+ID}} () const
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_input_lane_a5b19fe13b24894805e2d2b641c53e9ac}{get\+Left\+Lane\+ID}} ()
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_input_lane_ae337f456af365462c9a33a78eee9881d}{get\+Right\+Lane\+ID}} ()
+\item 
+int \mbox{\hyperlink{class_input_lane_a4fc054fdab0dd6aad920610dd366baae}{get\+Num\+Cell}} ()
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{class_input_cell}{Input\+Cell}} $>$ \& \mbox{\hyperlink{class_input_lane_a2bd8472e668fb6f6e306cf949e9920b9}{Get\+Cell\+Vector}} () const
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{class_input_segment}{Input\+Segment}} $>$ \& \mbox{\hyperlink{class_input_lane_aeca58f57eced0656cd13d06d600a3f71}{Get\+Segment\+Vector}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_input_lane_a676d3a627f3890144f06cd905fb3a272}\label{class_input_lane_a676d3a627f3890144f06cd905fb3a272} 
+\index{InputLane@{InputLane}!InputLane@{InputLane}}
+\index{InputLane@{InputLane}!InputLane@{InputLane}}
+\doxysubsubsection{\texorpdfstring{InputLane()}{InputLane()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Input\+Lane\+::\+Input\+Lane (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{id\+Val,  }\item[{std\+::size\+\_\+t}]{left\+Lane\+Id\+Val,  }\item[{std\+::size\+\_\+t}]{right\+Lane\+Id\+Val,  }\item[{int}]{num\+Cell\+Val }\end{DoxyParamCaption})}
+
+\Hypertarget{class_input_lane_ab2dc3cd282888b95e20fe82a927f5afd}\label{class_input_lane_ab2dc3cd282888b95e20fe82a927f5afd} 
+\index{InputLane@{InputLane}!InputLane@{InputLane}}
+\index{InputLane@{InputLane}!InputLane@{InputLane}}
+\doxysubsubsection{\texorpdfstring{InputLane()}{InputLane()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Input\+Lane\+::\+Input\+Lane (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{id\+\_\+val,  }\item[{std\+::size\+\_\+t}]{left\+\_\+lane\+\_\+id\+\_\+val,  }\item[{std\+::size\+\_\+t}]{right\+\_\+lane\+\_\+id\+\_\+val,  }\item[{int}]{num\+\_\+cell\+\_\+val,  }\item[{bool}]{Right\+Empty,  }\item[{bool}]{Left\+Empty }\end{DoxyParamCaption})}
+
+\Hypertarget{class_input_lane_add2ca9992f787a0b023c9e313bc42e48}\label{class_input_lane_add2ca9992f787a0b023c9e313bc42e48} 
+\index{InputLane@{InputLane}!InputLane@{InputLane}}
+\index{InputLane@{InputLane}!InputLane@{InputLane}}
+\doxysubsubsection{\texorpdfstring{InputLane()}{InputLane()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Input\+Lane\+::\+Input\+Lane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_input_lane_a37f9c62ca4a0f5434adbcce19c81dfb1}\label{class_input_lane_a37f9c62ca4a0f5434adbcce19c81dfb1} 
+\index{InputLane@{InputLane}!````~InputLane@{\texorpdfstring{$\sim$}{\string~}InputLane}}
+\index{````~InputLane@{\texorpdfstring{$\sim$}{\string~}InputLane}!InputLane@{InputLane}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}InputLane()}{\string~InputLane()}}
+{\footnotesize\ttfamily Input\+Lane\+::\texorpdfstring{$\sim$}{\string~}\+Input\+Lane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_input_lane_a7249e00584ce99223eb729200414cc7c}\label{class_input_lane_a7249e00584ce99223eb729200414cc7c} 
+\index{InputLane@{InputLane}!InputLane@{InputLane}}
+\index{InputLane@{InputLane}!InputLane@{InputLane}}
+\doxysubsubsection{\texorpdfstring{InputLane()}{InputLane()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Input\+Lane\+::\+Input\+Lane (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_input_lane}{Input\+Lane}} \&}]{lane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_input_lane_a2bd8472e668fb6f6e306cf949e9920b9}\label{class_input_lane_a2bd8472e668fb6f6e306cf949e9920b9} 
+\index{InputLane@{InputLane}!GetCellVector@{GetCellVector}}
+\index{GetCellVector@{GetCellVector}!InputLane@{InputLane}}
+\doxysubsubsection{\texorpdfstring{GetCellVector()}{GetCellVector()}}
+{\footnotesize\ttfamily const std\+::vector$<$ \mbox{\hyperlink{class_input_cell}{Input\+Cell}} $>$ \& Input\+Lane\+::\+Get\+Cell\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_input_lane_aff54022614ee43040ab5840bcdec1e53}\label{class_input_lane_aff54022614ee43040ab5840bcdec1e53} 
+\index{InputLane@{InputLane}!getID@{getID}}
+\index{getID@{getID}!InputLane@{InputLane}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Input\+Lane\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_input_lane_aff54022614ee43040ab5840bcdec1e53_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_input_lane_a5b19fe13b24894805e2d2b641c53e9ac}\label{class_input_lane_a5b19fe13b24894805e2d2b641c53e9ac} 
+\index{InputLane@{InputLane}!getLeftLaneID@{getLeftLaneID}}
+\index{getLeftLaneID@{getLeftLaneID}!InputLane@{InputLane}}
+\doxysubsubsection{\texorpdfstring{getLeftLaneID()}{getLeftLaneID()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Input\+Lane\+::get\+Left\+Lane\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_input_lane_a4fc054fdab0dd6aad920610dd366baae}\label{class_input_lane_a4fc054fdab0dd6aad920610dd366baae} 
+\index{InputLane@{InputLane}!getNumCell@{getNumCell}}
+\index{getNumCell@{getNumCell}!InputLane@{InputLane}}
+\doxysubsubsection{\texorpdfstring{getNumCell()}{getNumCell()}}
+{\footnotesize\ttfamily int Input\+Lane\+::get\+Num\+Cell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_input_lane_a4fc054fdab0dd6aad920610dd366baae_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_input_lane_ae337f456af365462c9a33a78eee9881d}\label{class_input_lane_ae337f456af365462c9a33a78eee9881d} 
+\index{InputLane@{InputLane}!getRightLaneID@{getRightLaneID}}
+\index{getRightLaneID@{getRightLaneID}!InputLane@{InputLane}}
+\doxysubsubsection{\texorpdfstring{getRightLaneID()}{getRightLaneID()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Input\+Lane\+::get\+Right\+Lane\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_input_lane_aeca58f57eced0656cd13d06d600a3f71}\label{class_input_lane_aeca58f57eced0656cd13d06d600a3f71} 
+\index{InputLane@{InputLane}!GetSegmentVector@{GetSegmentVector}}
+\index{GetSegmentVector@{GetSegmentVector}!InputLane@{InputLane}}
+\doxysubsubsection{\texorpdfstring{GetSegmentVector()}{GetSegmentVector()}}
+{\footnotesize\ttfamily const std\+::vector$<$ \mbox{\hyperlink{class_input_segment}{Input\+Segment}} $>$ \& Input\+Lane\+::\+Get\+Segment\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_input_lane_aeca58f57eced0656cd13d06d600a3f71_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_input_lane_a6826ed159382aa0f9acf5b219a7f51af}\label{class_input_lane_a6826ed159382aa0f9acf5b219a7f51af} 
+\index{InputLane@{InputLane}!operator=@{operator=}}
+\index{operator=@{operator=}!InputLane@{InputLane}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_input_lane}{Input\+Lane}} \& Input\+Lane\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_input_lane}{Input\+Lane}} \&}]{lane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_input_lane_a21b89999c23be4dcba6fc64d7765d3c5}\label{class_input_lane_a21b89999c23be4dcba6fc64d7765d3c5} 
+\index{InputLane@{InputLane}!pushCell@{pushCell}}
+\index{pushCell@{pushCell}!InputLane@{InputLane}}
+\doxysubsubsection{\texorpdfstring{pushCell()}{pushCell()}}
+{\footnotesize\ttfamily void Input\+Lane\+::push\+Cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_input_cell}{Input\+Cell}}}]{cell }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{class_input_lane_a21b89999c23be4dcba6fc64d7765d3c5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_input_lane_ad9d85740e936b18098a1197549e40685}\label{class_input_lane_ad9d85740e936b18098a1197549e40685} 
+\index{InputLane@{InputLane}!pushSegment@{pushSegment}}
+\index{pushSegment@{pushSegment}!InputLane@{InputLane}}
+\doxysubsubsection{\texorpdfstring{pushSegment()}{pushSegment()}}
+{\footnotesize\ttfamily void Input\+Lane\+::push\+Segment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_input_segment}{Input\+Segment}}}]{segment }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{class_input_lane_ad9d85740e936b18098a1197549e40685_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_input_lane_a550dab3ca9c984770147dbfa2a705dc9}\label{class_input_lane_a550dab3ca9c984770147dbfa2a705dc9} 
+\index{InputLane@{InputLane}!SetID@{SetID}}
+\index{SetID@{SetID}!InputLane@{InputLane}}
+\doxysubsubsection{\texorpdfstring{SetID()}{SetID()}}
+{\footnotesize\ttfamily void Input\+Lane\+::\+Set\+ID (\begin{DoxyParamCaption}\item[{const std\+::size\+\_\+t}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_input_lane_a2032217a64ab3379b3591c5552734476}\label{class_input_lane_a2032217a64ab3379b3591c5552734476} 
+\index{InputLane@{InputLane}!setLeftLaneID@{setLeftLaneID}}
+\index{setLeftLaneID@{setLeftLaneID}!InputLane@{InputLane}}
+\doxysubsubsection{\texorpdfstring{setLeftLaneID()}{setLeftLaneID()}}
+{\footnotesize\ttfamily void Input\+Lane\+::set\+Left\+Lane\+ID (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{left\+\_\+lane\+\_\+id\+\_\+val }\end{DoxyParamCaption})}
+
+\Hypertarget{class_input_lane_a549678b4953072cb67562e78dac36eaf}\label{class_input_lane_a549678b4953072cb67562e78dac36eaf} 
+\index{InputLane@{InputLane}!setNumCell@{setNumCell}}
+\index{setNumCell@{setNumCell}!InputLane@{InputLane}}
+\doxysubsubsection{\texorpdfstring{setNumCell()}{setNumCell()}}
+{\footnotesize\ttfamily void Input\+Lane\+::set\+Num\+Cell (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+cell\+\_\+val }\end{DoxyParamCaption})}
+
+\Hypertarget{class_input_lane_aba8a7c08898f3903f67457d75e863cce}\label{class_input_lane_aba8a7c08898f3903f67457d75e863cce} 
+\index{InputLane@{InputLane}!setRightLaneID@{setRightLaneID}}
+\index{setRightLaneID@{setRightLaneID}!InputLane@{InputLane}}
+\doxysubsubsection{\texorpdfstring{setRightLaneID()}{setRightLaneID()}}
+{\footnotesize\ttfamily void Input\+Lane\+::set\+Right\+Lane\+ID (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{right\+\_\+lane\+\_\+id\+\_\+val }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Libraries/gookto\+\_\+io/includes/gookto\+\_\+io/\mbox{\hyperlink{_input_lane_8hpp}{Input\+Lane.\+hpp}}\item 
+Libraries/gookto\+\_\+io/sources/gookto\+\_\+io/\mbox{\hyperlink{_input_lane_8cpp}{Input\+Lane.\+cpp}}\end{DoxyCompactItemize}

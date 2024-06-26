@@ -1,0 +1,7 @@
+<map id="Captain::Vehicle::GetRecordings" name="Captain::Vehicle::GetRecordings">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,216,40"/>
+<area shape="rect" id="Node000002" href="$struct_captain_1_1_util_1_1_event_recorder_container.html#a478c6c74de5d3441db5a1f90f5a28b74" title=" " alt="" coords="264,5,523,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,24,248,24,248,29,216,29"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_util_1_1_event_recorder.html#aebe2528f1d9bbf0bd6efc4f1efa9996b" title=" " alt="" coords="571,5,763,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="523,24,555,24,555,29,523,29"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Captain::IVehicleQueue" name="Captain::IVehicleQueue">
+<area shape="rect" id="Node000001" title=" " alt="" coords="91,5,292,373"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_spin_lock_vehicle_queue.html" title=": Concurrent queue class wrapper for storing vehicles" alt="" coords="5,421,180,720"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,388,134,422,129,421,138,387"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_util_1_1_vehicle_queue.html" title=": Concurrent queue class wrapper for storing vehicles" alt="" coords="205,429,378,712"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="246,387,257,429,252,430,241,388"/>
+</map>

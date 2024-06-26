@@ -1,0 +1,19 @@
+<map id="Libraries/gookto_io/sources/gookto_io/tinyapi/tinyxmlerror.cpp" name="Libraries/gookto_io/sources/gookto_io/tinyapi/tinyxmlerror.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="158,5,331,64"/>
+<area shape="rect" id="Node000002" href="$tinyxml_8h.html" title=" " alt="" coords="156,112,332,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="247,64,247,96,242,96,242,64"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,187,70,213"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="209,142,85,185,83,180,207,137"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="94,187,154,213"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="225,141,159,181,157,176,222,137"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="178,187,241,213"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="241,140,224,174,220,171,236,138"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="273,261,338,288"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="252,138,297,246,292,248,247,140"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="375,261,444,288"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="321,137,363,155,383,168,400,185,408,199,413,215,415,246,410,246,407,216,403,201,395,188,380,172,361,159,318,142"/>
+<area shape="rect" id="Node000008" href="$tinystr_8h.html" title=" " alt="" coords="317,187,385,213"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="264,137,321,175,318,180,261,141"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="345,215,324,249,319,247,341,212"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="363,212,392,247,388,251,359,216"/>
+</map>

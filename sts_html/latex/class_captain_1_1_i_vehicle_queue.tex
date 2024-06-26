@@ -1,0 +1,256 @@
+\doxysection{Captain\+::IVehicle\+Queue Class Reference}
+\hypertarget{class_captain_1_1_i_vehicle_queue}{}\label{class_captain_1_1_i_vehicle_queue}\index{Captain::IVehicleQueue@{Captain::IVehicleQueue}}
+
+
+{\ttfamily \#include $<$Vehicle\+Queue\+Interface.\+hpp$>$}
+
+
+
+Inheritance diagram for Captain\+::IVehicle\+Queue\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_captain_1_1_i_vehicle_queue__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Captain\+::IVehicle\+Queue\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{class_captain_1_1_i_vehicle_queue__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_captain_1_1_i_vehicle_queue_a4f30e70d936d820af99235f03b1acd9c}{IVehicle\+Queue}} ()=default
+\item 
+virtual \mbox{\hyperlink{class_captain_1_1_i_vehicle_queue_ab56d2030d2279898c1eaff1fdf7b28fa}{\texorpdfstring{$\sim$}{\string~}\+IVehicle\+Queue}} ()=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_i_vehicle_queue_ababc08747c563a9f990bc8d9ab9d171f}{IVehicle\+Queue}} (const \mbox{\hyperlink{class_captain_1_1_i_vehicle_queue}{IVehicle\+Queue}} \&other)=delete
+\item 
+\mbox{\hyperlink{class_captain_1_1_i_vehicle_queue_a37e8b2b3318e40501c42fa66418a55ff}{IVehicle\+Queue}} (\mbox{\hyperlink{class_captain_1_1_i_vehicle_queue}{IVehicle\+Queue}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_i_vehicle_queue}{IVehicle\+Queue}} \& \mbox{\hyperlink{class_captain_1_1_i_vehicle_queue_a5843d1ddd94351a5c2ec328bd07e8b61}{operator=}} (const \mbox{\hyperlink{class_captain_1_1_i_vehicle_queue}{IVehicle\+Queue}} \&other)=delete
+\item 
+\mbox{\hyperlink{class_captain_1_1_i_vehicle_queue}{IVehicle\+Queue}} \& \mbox{\hyperlink{class_captain_1_1_i_vehicle_queue_a311b56de27b05c866401c7eb5db0cd78}{operator=}} (\mbox{\hyperlink{class_captain_1_1_i_vehicle_queue}{IVehicle\+Queue}} \&\&other) noexcept
+\item 
+virtual bool \mbox{\hyperlink{class_captain_1_1_i_vehicle_queue_aa69e2f2d2e3095b476cf2e1abd336085}{Enqueue}} (\mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} \&\&vehicle\+Ptr)=0
+\item 
+virtual std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ \mbox{\hyperlink{class_captain_1_1_i_vehicle_queue_aad65d10632bca4369194073796e08c8d}{Dequeue}} ()=0
+\item 
+virtual \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} \& \mbox{\hyperlink{class_captain_1_1_i_vehicle_queue_a1ee3e1eff74807b1b276f8a8a8c27efe}{Peek}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{class_captain_1_1_i_vehicle_queue_a37018bf8b9e23c24f00a568a6fadd412}{Insert}} (\mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} \&\&vehicle\+Ptr, std\+::size\+\_\+t index)=0
+\item 
+virtual bool \mbox{\hyperlink{class_captain_1_1_i_vehicle_queue_ac09c411b073434bc5df8615847409039}{Compare\+And\+Insert\+By\+Position}} (\mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} \&\&vehicle\+Ptr)=0
+\item 
+virtual std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ \mbox{\hyperlink{class_captain_1_1_i_vehicle_queue_a1885d556e8c1f4f4e7ce380f50025639}{Extract}} (std\+::size\+\_\+t index)=0
+\item 
+virtual \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} \& \mbox{\hyperlink{class_captain_1_1_i_vehicle_queue_ab407d6b76776fec9d8cd2f03e9d72803}{At}} (std\+::size\+\_\+t index)=0
+\item 
+virtual std\+::size\+\_\+t \mbox{\hyperlink{class_captain_1_1_i_vehicle_queue_aa9a6cb2f386f15ae4c11ff142e2f9849}{Size}} ()=0
+\item 
+virtual std\+::size\+\_\+t \mbox{\hyperlink{class_captain_1_1_i_vehicle_queue_a752fbf2eafbfa6268663d81551a603b8}{Get\+Max\+Capacity}} () const =0
+\begin{DoxyCompactList}\small\item\em Gets maximum capacity of the this vehicle\+Queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_captain_1_1_i_vehicle_queue_a4f30e70d936d820af99235f03b1acd9c}\label{class_captain_1_1_i_vehicle_queue_a4f30e70d936d820af99235f03b1acd9c} 
+\index{Captain::IVehicleQueue@{Captain::IVehicleQueue}!IVehicleQueue@{IVehicleQueue}}
+\index{IVehicleQueue@{IVehicleQueue}!Captain::IVehicleQueue@{Captain::IVehicleQueue}}
+\doxysubsubsection{\texorpdfstring{IVehicleQueue()}{IVehicleQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Captain\+::\+IVehicle\+Queue\+::\+IVehicle\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_captain_1_1_i_vehicle_queue_ab56d2030d2279898c1eaff1fdf7b28fa}\label{class_captain_1_1_i_vehicle_queue_ab56d2030d2279898c1eaff1fdf7b28fa} 
+\index{Captain::IVehicleQueue@{Captain::IVehicleQueue}!````~IVehicleQueue@{\texorpdfstring{$\sim$}{\string~}IVehicleQueue}}
+\index{````~IVehicleQueue@{\texorpdfstring{$\sim$}{\string~}IVehicleQueue}!Captain::IVehicleQueue@{Captain::IVehicleQueue}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IVehicleQueue()}{\string~IVehicleQueue()}}
+{\footnotesize\ttfamily virtual Captain\+::\+IVehicle\+Queue\+::\texorpdfstring{$\sim$}{\string~}\+IVehicle\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\Hypertarget{class_captain_1_1_i_vehicle_queue_ababc08747c563a9f990bc8d9ab9d171f}\label{class_captain_1_1_i_vehicle_queue_ababc08747c563a9f990bc8d9ab9d171f} 
+\index{Captain::IVehicleQueue@{Captain::IVehicleQueue}!IVehicleQueue@{IVehicleQueue}}
+\index{IVehicleQueue@{IVehicleQueue}!Captain::IVehicleQueue@{Captain::IVehicleQueue}}
+\doxysubsubsection{\texorpdfstring{IVehicleQueue()}{IVehicleQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Captain\+::\+IVehicle\+Queue\+::\+IVehicle\+Queue (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_captain_1_1_i_vehicle_queue}{IVehicle\+Queue}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{class_captain_1_1_i_vehicle_queue_a37e8b2b3318e40501c42fa66418a55ff}\label{class_captain_1_1_i_vehicle_queue_a37e8b2b3318e40501c42fa66418a55ff} 
+\index{Captain::IVehicleQueue@{Captain::IVehicleQueue}!IVehicleQueue@{IVehicleQueue}}
+\index{IVehicleQueue@{IVehicleQueue}!Captain::IVehicleQueue@{Captain::IVehicleQueue}}
+\doxysubsubsection{\texorpdfstring{IVehicleQueue()}{IVehicleQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Captain\+::\+IVehicle\+Queue\+::\+IVehicle\+Queue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_i_vehicle_queue}{IVehicle\+Queue}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_captain_1_1_i_vehicle_queue_ab407d6b76776fec9d8cd2f03e9d72803}\label{class_captain_1_1_i_vehicle_queue_ab407d6b76776fec9d8cd2f03e9d72803} 
+\index{Captain::IVehicleQueue@{Captain::IVehicleQueue}!At@{At}}
+\index{At@{At}!Captain::IVehicleQueue@{Captain::IVehicleQueue}}
+\doxysubsubsection{\texorpdfstring{At()}{At()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} \& Captain\+::\+IVehicle\+Queue\+::\+At (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Accesses to given index 
+\begin{DoxyParams}{Parameters}
+{\em index} & \+: index to access in m\+\_\+vehicle\+List \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: Vehicle\+Ptr at index 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_spin_lock_vehicle_queue_a0c7180d17827989bf4d116ffa262b380}{Captain\+::\+Spin\+Lock\+Vehicle\+Queue}}, and \mbox{\hyperlink{class_captain_1_1_util_1_1_vehicle_queue_abf94a44e54cfe64a5a522b8be85f3c87}{Captain\+::\+Util\+::\+Vehicle\+Queue}}.
+
+\Hypertarget{class_captain_1_1_i_vehicle_queue_ac09c411b073434bc5df8615847409039}\label{class_captain_1_1_i_vehicle_queue_ac09c411b073434bc5df8615847409039} 
+\index{Captain::IVehicleQueue@{Captain::IVehicleQueue}!CompareAndInsertByPosition@{CompareAndInsertByPosition}}
+\index{CompareAndInsertByPosition@{CompareAndInsertByPosition}!Captain::IVehicleQueue@{Captain::IVehicleQueue}}
+\doxysubsubsection{\texorpdfstring{CompareAndInsertByPosition()}{CompareAndInsertByPosition()}}
+{\footnotesize\ttfamily virtual bool Captain\+::\+IVehicle\+Queue\+::\+Compare\+And\+Insert\+By\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} \&\&}]{vehicle\+Ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Compares vehicle\textquotesingle{}s position and inserts vehicle\+Ptr waits when container is not available 
+\begin{DoxyParams}{Parameters}
+{\em vehicle\+Ptr} & \+: vehicle\+Ptr to insert \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_spin_lock_vehicle_queue_a2f6f038f8831a645dde1412739054a79}{Captain\+::\+Spin\+Lock\+Vehicle\+Queue}}, and \mbox{\hyperlink{class_captain_1_1_util_1_1_vehicle_queue_a47afe186e18e15052f774138f4ed6d11}{Captain\+::\+Util\+::\+Vehicle\+Queue}}.
+
+\Hypertarget{class_captain_1_1_i_vehicle_queue_aad65d10632bca4369194073796e08c8d}\label{class_captain_1_1_i_vehicle_queue_aad65d10632bca4369194073796e08c8d} 
+\index{Captain::IVehicleQueue@{Captain::IVehicleQueue}!Dequeue@{Dequeue}}
+\index{Dequeue@{Dequeue}!Captain::IVehicleQueue@{Captain::IVehicleQueue}}
+\doxysubsubsection{\texorpdfstring{Dequeue()}{Dequeue()}}
+{\footnotesize\ttfamily virtual std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ Captain\+::\+IVehicle\+Queue\+::\+Dequeue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Dequeue vehicle object from queue \begin{DoxyReturn}{Returns}
+\+: Dequeued vehicle\+Ptr 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_spin_lock_vehicle_queue_a1332460ea31d0e25673596da1952a5d3}{Captain\+::\+Spin\+Lock\+Vehicle\+Queue}}, and \mbox{\hyperlink{class_captain_1_1_util_1_1_vehicle_queue_a615e903a007fbedb5111262c2867b269}{Captain\+::\+Util\+::\+Vehicle\+Queue}}.
+
+\Hypertarget{class_captain_1_1_i_vehicle_queue_aa69e2f2d2e3095b476cf2e1abd336085}\label{class_captain_1_1_i_vehicle_queue_aa69e2f2d2e3095b476cf2e1abd336085} 
+\index{Captain::IVehicleQueue@{Captain::IVehicleQueue}!Enqueue@{Enqueue}}
+\index{Enqueue@{Enqueue}!Captain::IVehicleQueue@{Captain::IVehicleQueue}}
+\doxysubsubsection{\texorpdfstring{Enqueue()}{Enqueue()}}
+{\footnotesize\ttfamily virtual bool Captain\+::\+IVehicle\+Queue\+::\+Enqueue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} \&\&}]{vehicle\+Ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Tries to Definite\+Enqueue vehicle\+Ptr object to queue 
+\begin{DoxyParams}{Parameters}
+{\em vehicle\+Ptr} & \+: vehicle\+Ptr to enqueue \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: true if Definite\+Enqueue succeeded false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_spin_lock_vehicle_queue_af7a762fdcb2aa8d68d2453932ba06d2c}{Captain\+::\+Spin\+Lock\+Vehicle\+Queue}}, and \mbox{\hyperlink{class_captain_1_1_util_1_1_vehicle_queue_a3b1d50e6a57ecce1358f76b874906805}{Captain\+::\+Util\+::\+Vehicle\+Queue}}.
+
+\Hypertarget{class_captain_1_1_i_vehicle_queue_a1885d556e8c1f4f4e7ce380f50025639}\label{class_captain_1_1_i_vehicle_queue_a1885d556e8c1f4f4e7ce380f50025639} 
+\index{Captain::IVehicleQueue@{Captain::IVehicleQueue}!Extract@{Extract}}
+\index{Extract@{Extract}!Captain::IVehicleQueue@{Captain::IVehicleQueue}}
+\doxysubsubsection{\texorpdfstring{Extract()}{Extract()}}
+{\footnotesize\ttfamily virtual std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ Captain\+::\+IVehicle\+Queue\+::\+Extract (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Tries to extract vehicle\+Ptr in the specified index Causes assertion error if index is out of range 
+\begin{DoxyParams}{Parameters}
+{\em index} & \+: index to extract vehicle\+Ptr \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: ptr that has been extracted nullptr if extraction failed 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_spin_lock_vehicle_queue_a6ec9292147de023748c200aeb4282807}{Captain\+::\+Spin\+Lock\+Vehicle\+Queue}}, and \mbox{\hyperlink{class_captain_1_1_util_1_1_vehicle_queue_a4fba47e268eae735f1e2bd4def05a789}{Captain\+::\+Util\+::\+Vehicle\+Queue}}.
+
+\Hypertarget{class_captain_1_1_i_vehicle_queue_a752fbf2eafbfa6268663d81551a603b8}\label{class_captain_1_1_i_vehicle_queue_a752fbf2eafbfa6268663d81551a603b8} 
+\index{Captain::IVehicleQueue@{Captain::IVehicleQueue}!GetMaxCapacity@{GetMaxCapacity}}
+\index{GetMaxCapacity@{GetMaxCapacity}!Captain::IVehicleQueue@{Captain::IVehicleQueue}}
+\doxysubsubsection{\texorpdfstring{GetMaxCapacity()}{GetMaxCapacity()}}
+{\footnotesize\ttfamily virtual std\+::size\+\_\+t Captain\+::\+IVehicle\+Queue\+::\+Get\+Max\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets maximum capacity of the this vehicle\+Queue. 
+
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_spin_lock_vehicle_queue_a2725937a6c6f1376609adfa94e12cf71}{Captain\+::\+Spin\+Lock\+Vehicle\+Queue}}, and \mbox{\hyperlink{class_captain_1_1_util_1_1_vehicle_queue_a50528de7c054eccf6014a0ef9cba9d6a}{Captain\+::\+Util\+::\+Vehicle\+Queue}}.
+
+\Hypertarget{class_captain_1_1_i_vehicle_queue_a37018bf8b9e23c24f00a568a6fadd412}\label{class_captain_1_1_i_vehicle_queue_a37018bf8b9e23c24f00a568a6fadd412} 
+\index{Captain::IVehicleQueue@{Captain::IVehicleQueue}!Insert@{Insert}}
+\index{Insert@{Insert}!Captain::IVehicleQueue@{Captain::IVehicleQueue}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily virtual bool Captain\+::\+IVehicle\+Queue\+::\+Insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} \&\&}]{vehicle\+Ptr,  }\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Inserts vehicle\+Ptr to specified index causes assertion error if index is out of range 
+\begin{DoxyParams}{Parameters}
+{\em vehicle\+Ptr} & \+: vehicle\+Ptr to insert \\
+\hline
+{\em index} & \+: index to insert vehicle\+Ptr \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: true if insertion succeeded false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_spin_lock_vehicle_queue_ad153ca6154d70fb109d6dfe437090084}{Captain\+::\+Spin\+Lock\+Vehicle\+Queue}}, and \mbox{\hyperlink{class_captain_1_1_util_1_1_vehicle_queue_a1c4f0d6747fd7ab18a55b3de33ec74cf}{Captain\+::\+Util\+::\+Vehicle\+Queue}}.
+
+\Hypertarget{class_captain_1_1_i_vehicle_queue_a5843d1ddd94351a5c2ec328bd07e8b61}\label{class_captain_1_1_i_vehicle_queue_a5843d1ddd94351a5c2ec328bd07e8b61} 
+\index{Captain::IVehicleQueue@{Captain::IVehicleQueue}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::IVehicleQueue@{Captain::IVehicleQueue}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_i_vehicle_queue}{IVehicle\+Queue}} \& Captain\+::\+IVehicle\+Queue\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_captain_1_1_i_vehicle_queue}{IVehicle\+Queue}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_i_vehicle_queue_a5843d1ddd94351a5c2ec328bd07e8b61_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_i_vehicle_queue_a311b56de27b05c866401c7eb5db0cd78}\label{class_captain_1_1_i_vehicle_queue_a311b56de27b05c866401c7eb5db0cd78} 
+\index{Captain::IVehicleQueue@{Captain::IVehicleQueue}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::IVehicleQueue@{Captain::IVehicleQueue}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_i_vehicle_queue}{IVehicle\+Queue}} \& Captain\+::\+IVehicle\+Queue\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_i_vehicle_queue}{IVehicle\+Queue}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{class_captain_1_1_i_vehicle_queue_a1ee3e1eff74807b1b276f8a8a8c27efe}\label{class_captain_1_1_i_vehicle_queue_a1ee3e1eff74807b1b276f8a8a8c27efe} 
+\index{Captain::IVehicleQueue@{Captain::IVehicleQueue}!Peek@{Peek}}
+\index{Peek@{Peek}!Captain::IVehicleQueue@{Captain::IVehicleQueue}}
+\doxysubsubsection{\texorpdfstring{Peek()}{Peek()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} \& Captain\+::\+IVehicle\+Queue\+::\+Peek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Peeks last Vehicle\+Ptr from the queue \begin{DoxyReturn}{Returns}
+\+: reference to last element in the vehicle queue 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_spin_lock_vehicle_queue_ad3369d2b42b702224924ceb1215368ba}{Captain\+::\+Spin\+Lock\+Vehicle\+Queue}}, and \mbox{\hyperlink{class_captain_1_1_util_1_1_vehicle_queue_ae9b0282bd6a1ce223d2d8d4e2d4f8ea8}{Captain\+::\+Util\+::\+Vehicle\+Queue}}.
+
+\Hypertarget{class_captain_1_1_i_vehicle_queue_aa9a6cb2f386f15ae4c11ff142e2f9849}\label{class_captain_1_1_i_vehicle_queue_aa9a6cb2f386f15ae4c11ff142e2f9849} 
+\index{Captain::IVehicleQueue@{Captain::IVehicleQueue}!Size@{Size}}
+\index{Size@{Size}!Captain::IVehicleQueue@{Captain::IVehicleQueue}}
+\doxysubsubsection{\texorpdfstring{Size()}{Size()}}
+{\footnotesize\ttfamily virtual std\+::size\+\_\+t Captain\+::\+IVehicle\+Queue\+::\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets size of this vehicle\+Queue \begin{DoxyReturn}{Returns}
+\+: size of this vehicle\+Queue 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_spin_lock_vehicle_queue_a57e192eb1ae67c0ca307ae347a8e0b3b}{Captain\+::\+Spin\+Lock\+Vehicle\+Queue}}, and \mbox{\hyperlink{class_captain_1_1_util_1_1_vehicle_queue_a3d4c31f703ddc93aec3976f825ed7b23}{Captain\+::\+Util\+::\+Vehicle\+Queue}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Util/\mbox{\hyperlink{_vehicle_queue_interface_8hpp}{Vehicle\+Queue\+Interface.\+hpp}}\end{DoxyCompactItemize}

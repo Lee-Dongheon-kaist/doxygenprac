@@ -1,0 +1,7 @@
+<map id="Captain::Node::MesoLink::FlushRecordings" name="Captain::Node::MesoLink::FlushRecordings">
+<area shape="rect" id="Node000001" title="Records and flushes remaining recordings in each meso unit this link contains." alt="" coords="276,39,443,81"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_uniform_link.html#a79fba2f1df5ed0bfe973e15c3177dd3b" title=" " alt="" coords="27,5,206,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="260,49,206,42,207,36,261,44"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_node_1_1_uniform_intersection_link.html#a72e165a019f3f4f18f1a10854444f0c2" title=" " alt="" coords="5,72,228,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="260,76,228,81,228,75,259,71"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Captain::Node::MicroLane::MoveFromPreviousUnit" name="Captain::Node::MicroLane::MoveFromPreviousUnit">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,177,81"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_micro_lane.html#af77172356d81f381192975326c0b068c" title=" " alt="" coords="225,5,429,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,45,209,41,209,46,178,51"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_node_1_1_micro_lane.html#a371d0acacc60bc38174621375cb5f5ae" title=" " alt="" coords="232,72,422,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="178,69,217,75,216,80,177,75"/>
+</map>

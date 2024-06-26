@@ -1,0 +1,17 @@
+<map id="Captain::Node::EnhancedMicroLink" name="Captain::Node::EnhancedMicroLink">
+<area shape="rect" id="Node000001" title=" " alt="" coords="230,885,447,1723"/>
+<area shape="rect" id="Node000002" href="$struct_captain_1_1_node_1_1_i_linkable.html" title="Interface that defines classes that can link directly to other units in the network." alt="" coords="5,437,163,784"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,797,233,1007,228,1009,150,799"/>
+<area shape="rect" id="Node000003" href="$struct_captain_1_1_unit_identifier.html" title=" " alt="" coords="187,416,327,805"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="278,805,284,861,285,868,280,869,279,862,273,805"/>
+<area shape="rect" id="Node000004" href="$class_captain_1_1_util_1_1_event_recorder.html" title=" " alt="" coords="351,469,531,752"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="423,752,406,869,401,869,418,751"/>
+<area shape="rect" id="Node000005" href="$class_captain_1_1_util_1_1_xml_writer.html" title=" " alt="" coords="191,5,339,288"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="308,287,344,391,370,453,365,455,340,393,303,289"/>
+<area shape="rect" id="Node000006" href="$class_captain_1_1_util_1_1_json_writer.html" title=" " alt="" coords="363,5,519,288"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="444,288,444,452,439,452,439,288"/>
+<area shape="rect" id="Node000007" href="$class_captain_1_1_util_1_1_json_reader.html" title=" " alt="" coords="544,37,704,256"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="606,256,588,325,562,393,546,417,524,456,519,453,542,415,558,391,583,323,601,255"/>
+<area shape="rect" id="Node000008" href="$class_captain_1_1_v2_x.html" title=" " alt="" coords="556,459,711,763"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="572,763,456,1033,452,1031,567,761"/>
+</map>

@@ -1,0 +1,337 @@
+\doxysection{Util\+Test Namespace Reference}
+\hypertarget{namespace_util_test}{}\label{namespace_util_test}\index{UtilTest@{UtilTest}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_util_test_1_1_task}{Task}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{namespace_util_test_a575b0c7d1a86debcd924ed587803267c}{size\+\_\+t}} = std\+::size\+\_\+t
+\begin{DoxyCompactList}\small\item\em define size\+\_\+t as size\+\_\+t from stddef.\+h (for compilation in GNU environment) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07}{Task\+Type}} \{ \newline
+\mbox{\hyperlink{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07a960b44c579bc2f6818d2daaf9e4c16f0}{Normal}}
+, \mbox{\hyperlink{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07aa286d9991c6a547ae25a5f5216164b8f}{Join}}
+, \mbox{\hyperlink{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07ace2c8aed9c2fa0cfbed56cbda4d8bf07}{Empty}}
+, \mbox{\hyperlink{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07a960b44c579bc2f6818d2daaf9e4c16f0}{Normal}}
+, \newline
+\mbox{\hyperlink{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07aa286d9991c6a547ae25a5f5216164b8f}{Join}}
+, \mbox{\hyperlink{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07ace2c8aed9c2fa0cfbed56cbda4d8bf07}{Empty}}
+ \}
+\item 
+enum class \mbox{\hyperlink{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07}{Task\+Type}} \{ \newline
+\mbox{\hyperlink{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07a960b44c579bc2f6818d2daaf9e4c16f0}{Normal}}
+, \mbox{\hyperlink{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07aa286d9991c6a547ae25a5f5216164b8f}{Join}}
+, \mbox{\hyperlink{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07ace2c8aed9c2fa0cfbed56cbda4d8bf07}{Empty}}
+, \mbox{\hyperlink{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07a960b44c579bc2f6818d2daaf9e4c16f0}{Normal}}
+, \newline
+\mbox{\hyperlink{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07aa286d9991c6a547ae25a5f5216164b8f}{Join}}
+, \mbox{\hyperlink{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07ace2c8aed9c2fa0cfbed56cbda4d8bf07}{Empty}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_util_test_a516b72083700c488d8f1b9923622933f}{Spin\+Lock\+Vehicle\+Queue\+Enqueue\+Dequeue}} ()
+\item 
+void \mbox{\hyperlink{namespace_util_test_ae7a643ae574ce868d7974effa6882a8c}{Spin\+Lock\+Vehicle\+Queue\+Definite\+Enqueue\+Dequeue}} ()
+\item 
+void \mbox{\hyperlink{namespace_util_test_aefcd34bdd1418b09f9fcebec1519818e}{Thread\+Enqueue}} (\mbox{\hyperlink{class_captain_1_1_spin_lock_vehicle_queue}{Spin\+Lock\+Vehicle\+Queue}} \texorpdfstring{$\ast$}{*}vehicle\+Queue\+Ptr, \mbox{\hyperlink{namespace_util_test_a575b0c7d1a86debcd924ed587803267c}{size\+\_\+t}} num)
+\item 
+void \mbox{\hyperlink{namespace_util_test_a2b84c910a1938d0339b9fdd3d6e92a3a}{Thread\+Dequeue}} (\mbox{\hyperlink{class_captain_1_1_spin_lock_vehicle_queue}{Spin\+Lock\+Vehicle\+Queue}} \texorpdfstring{$\ast$}{*}vehicle\+Queue\+Ptr, \mbox{\hyperlink{namespace_util_test_a575b0c7d1a86debcd924ed587803267c}{size\+\_\+t}} num)
+\item 
+void \mbox{\hyperlink{namespace_util_test_ad8caf84b46ff9a974082ebc3423f8990}{Spin\+Lock\+Parallel\+Enqueue\+Dequeue}} (\mbox{\hyperlink{namespace_util_test_a575b0c7d1a86debcd924ed587803267c}{size\+\_\+t}} thread\+Num)
+\item 
+void \mbox{\hyperlink{namespace_util_test_a64f0062ccc7c63c0e29f78e8aa5df61e}{Spin\+Lock\+Serial\+Enqueue\+Dequeue}} ()
+\item 
+void \mbox{\hyperlink{namespace_util_test_aeb873af6536b653bdc82817590316d82}{Spin\+Lock\+Parallel\+Enqueue\+Dequeue}} ()
+\item 
+void \mbox{\hyperlink{namespace_util_test_a86ab91e561dc794a669256c9e3ef6671}{Spin\+Lock\+Queue\+Insert\+Extract}} ()
+\item 
+void \mbox{\hyperlink{namespace_util_test_ac7df144f01b0eb844d8e9ca6e43b50c1}{Spin\+Lock\+Vehicle\+Queue\+Compare\+Insert\+Test}} (\mbox{\hyperlink{namespace_util_test_a575b0c7d1a86debcd924ed587803267c}{size\+\_\+t}} capacity)
+\item 
+void \mbox{\hyperlink{namespace_util_test_a0aee757492e38610beff550a95e63f2c}{Vehicle\+Queue\+Try\+Enqueue\+Dequeue}} ()
+\item 
+void \mbox{\hyperlink{namespace_util_test_a5103e6ad5dff7cbfa52d417bef7cd94f}{Vehicle\+Queue\+Insert\+Extract}} ()
+\item 
+void \mbox{\hyperlink{namespace_util_test_a96505972417d0458ea9f3aed78ca612c}{Vehicle\+Queue\+Compare\+Insert\+Test}} (std\+::size\+\_\+t capacity)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{namespace_util_test_a575b0c7d1a86debcd924ed587803267c}\label{namespace_util_test_a575b0c7d1a86debcd924ed587803267c} 
+\index{UtilTest@{UtilTest}!size\_t@{size\_t}}
+\index{size\_t@{size\_t}!UtilTest@{UtilTest}}
+\doxysubsubsection{\texorpdfstring{size\_t}{size\_t}}
+{\footnotesize\ttfamily typedef std\+::size\+\_\+t \mbox{\hyperlink{namespace_util_test_a575b0c7d1a86debcd924ed587803267c}{Util\+Test\+::size\+\_\+t}} = std\+::size\+\_\+t}
+
+
+
+define size\+\_\+t as size\+\_\+t from stddef.\+h (for compilation in GNU environment) 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07}\label{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07} 
+\index{UtilTest@{UtilTest}!TaskType@{TaskType}}
+\index{TaskType@{TaskType}!UtilTest@{UtilTest}}
+\doxysubsubsection{\texorpdfstring{TaskType}{TaskType}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07}{Util\+Test\+::\+Task\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Normal@{Normal}!UtilTest@{UtilTest}}\index{UtilTest@{UtilTest}!Normal@{Normal}}}\Hypertarget{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07a960b44c579bc2f6818d2daaf9e4c16f0}\label{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07a960b44c579bc2f6818d2daaf9e4c16f0} 
+Normal&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Join@{Join}!UtilTest@{UtilTest}}\index{UtilTest@{UtilTest}!Join@{Join}}}\Hypertarget{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07aa286d9991c6a547ae25a5f5216164b8f}\label{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07aa286d9991c6a547ae25a5f5216164b8f} 
+Join&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Empty@{Empty}!UtilTest@{UtilTest}}\index{UtilTest@{UtilTest}!Empty@{Empty}}}\Hypertarget{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07ace2c8aed9c2fa0cfbed56cbda4d8bf07}\label{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07ace2c8aed9c2fa0cfbed56cbda4d8bf07} 
+Empty&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Normal@{Normal}!UtilTest@{UtilTest}}\index{UtilTest@{UtilTest}!Normal@{Normal}}}\Hypertarget{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07a960b44c579bc2f6818d2daaf9e4c16f0}\label{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07a960b44c579bc2f6818d2daaf9e4c16f0} 
+Normal&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Join@{Join}!UtilTest@{UtilTest}}\index{UtilTest@{UtilTest}!Join@{Join}}}\Hypertarget{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07aa286d9991c6a547ae25a5f5216164b8f}\label{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07aa286d9991c6a547ae25a5f5216164b8f} 
+Join&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Empty@{Empty}!UtilTest@{UtilTest}}\index{UtilTest@{UtilTest}!Empty@{Empty}}}\Hypertarget{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07ace2c8aed9c2fa0cfbed56cbda4d8bf07}\label{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07ace2c8aed9c2fa0cfbed56cbda4d8bf07} 
+Empty&\\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07}\label{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07} 
+\index{UtilTest@{UtilTest}!TaskType@{TaskType}}
+\index{TaskType@{TaskType}!UtilTest@{UtilTest}}
+\doxysubsubsection{\texorpdfstring{TaskType}{TaskType}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07}{Util\+Test\+::\+Task\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Normal@{Normal}!UtilTest@{UtilTest}}\index{UtilTest@{UtilTest}!Normal@{Normal}}}\Hypertarget{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07a960b44c579bc2f6818d2daaf9e4c16f0}\label{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07a960b44c579bc2f6818d2daaf9e4c16f0} 
+Normal&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Join@{Join}!UtilTest@{UtilTest}}\index{UtilTest@{UtilTest}!Join@{Join}}}\Hypertarget{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07aa286d9991c6a547ae25a5f5216164b8f}\label{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07aa286d9991c6a547ae25a5f5216164b8f} 
+Join&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Empty@{Empty}!UtilTest@{UtilTest}}\index{UtilTest@{UtilTest}!Empty@{Empty}}}\Hypertarget{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07ace2c8aed9c2fa0cfbed56cbda4d8bf07}\label{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07ace2c8aed9c2fa0cfbed56cbda4d8bf07} 
+Empty&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Normal@{Normal}!UtilTest@{UtilTest}}\index{UtilTest@{UtilTest}!Normal@{Normal}}}\Hypertarget{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07a960b44c579bc2f6818d2daaf9e4c16f0}\label{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07a960b44c579bc2f6818d2daaf9e4c16f0} 
+Normal&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Join@{Join}!UtilTest@{UtilTest}}\index{UtilTest@{UtilTest}!Join@{Join}}}\Hypertarget{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07aa286d9991c6a547ae25a5f5216164b8f}\label{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07aa286d9991c6a547ae25a5f5216164b8f} 
+Join&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Empty@{Empty}!UtilTest@{UtilTest}}\index{UtilTest@{UtilTest}!Empty@{Empty}}}\Hypertarget{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07ace2c8aed9c2fa0cfbed56cbda4d8bf07}\label{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07ace2c8aed9c2fa0cfbed56cbda4d8bf07} 
+Empty&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_util_test_aeb873af6536b653bdc82817590316d82}\label{namespace_util_test_aeb873af6536b653bdc82817590316d82} 
+\index{UtilTest@{UtilTest}!SpinLockParallelEnqueueDequeue@{SpinLockParallelEnqueueDequeue}}
+\index{SpinLockParallelEnqueueDequeue@{SpinLockParallelEnqueueDequeue}!UtilTest@{UtilTest}}
+\doxysubsubsection{\texorpdfstring{SpinLockParallelEnqueueDequeue()}{SpinLockParallelEnqueueDequeue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Util\+Test\+::\+Spin\+Lock\+Parallel\+Enqueue\+Dequeue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Dummy function to make thread busy wait
+
+Dummy function to make thread busy wait
+
+Dummy function to make thread busy waitHere is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_util_test_aeb873af6536b653bdc82817590316d82_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespace_util_test_ad8caf84b46ff9a974082ebc3423f8990}\label{namespace_util_test_ad8caf84b46ff9a974082ebc3423f8990} 
+\index{UtilTest@{UtilTest}!SpinLockParallelEnqueueDequeue@{SpinLockParallelEnqueueDequeue}}
+\index{SpinLockParallelEnqueueDequeue@{SpinLockParallelEnqueueDequeue}!UtilTest@{UtilTest}}
+\doxysubsubsection{\texorpdfstring{SpinLockParallelEnqueueDequeue()}{SpinLockParallelEnqueueDequeue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Util\+Test\+::\+Spin\+Lock\+Parallel\+Enqueue\+Dequeue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_util_test_a575b0c7d1a86debcd924ed587803267c}{size\+\_\+t}}}]{thread\+Num }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_util_test_ad8caf84b46ff9a974082ebc3423f8990_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespace_util_test_a86ab91e561dc794a669256c9e3ef6671}\label{namespace_util_test_a86ab91e561dc794a669256c9e3ef6671} 
+\index{UtilTest@{UtilTest}!SpinLockQueueInsertExtract@{SpinLockQueueInsertExtract}}
+\index{SpinLockQueueInsertExtract@{SpinLockQueueInsertExtract}!UtilTest@{UtilTest}}
+\doxysubsubsection{\texorpdfstring{SpinLockQueueInsertExtract()}{SpinLockQueueInsertExtract()}}
+{\footnotesize\ttfamily void Util\+Test\+::\+Spin\+Lock\+Queue\+Insert\+Extract (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_util_test_a86ab91e561dc794a669256c9e3ef6671_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespace_util_test_a64f0062ccc7c63c0e29f78e8aa5df61e}\label{namespace_util_test_a64f0062ccc7c63c0e29f78e8aa5df61e} 
+\index{UtilTest@{UtilTest}!SpinLockSerialEnqueueDequeue@{SpinLockSerialEnqueueDequeue}}
+\index{SpinLockSerialEnqueueDequeue@{SpinLockSerialEnqueueDequeue}!UtilTest@{UtilTest}}
+\doxysubsubsection{\texorpdfstring{SpinLockSerialEnqueueDequeue()}{SpinLockSerialEnqueueDequeue()}}
+{\footnotesize\ttfamily void Util\+Test\+::\+Spin\+Lock\+Serial\+Enqueue\+Dequeue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Dummy function to make thread busy wait
+
+Dummy function to make thread busy wait
+
+Dummy function to make thread busy waitHere is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_util_test_a64f0062ccc7c63c0e29f78e8aa5df61e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespace_util_test_ac7df144f01b0eb844d8e9ca6e43b50c1}\label{namespace_util_test_ac7df144f01b0eb844d8e9ca6e43b50c1} 
+\index{UtilTest@{UtilTest}!SpinLockVehicleQueueCompareInsertTest@{SpinLockVehicleQueueCompareInsertTest}}
+\index{SpinLockVehicleQueueCompareInsertTest@{SpinLockVehicleQueueCompareInsertTest}!UtilTest@{UtilTest}}
+\doxysubsubsection{\texorpdfstring{SpinLockVehicleQueueCompareInsertTest()}{SpinLockVehicleQueueCompareInsertTest()}}
+{\footnotesize\ttfamily void Util\+Test\+::\+Spin\+Lock\+Vehicle\+Queue\+Compare\+Insert\+Test (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_util_test_a575b0c7d1a86debcd924ed587803267c}{size\+\_\+t}}}]{capacity }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_util_test_ac7df144f01b0eb844d8e9ca6e43b50c1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespace_util_test_ae7a643ae574ce868d7974effa6882a8c}\label{namespace_util_test_ae7a643ae574ce868d7974effa6882a8c} 
+\index{UtilTest@{UtilTest}!SpinLockVehicleQueueDefiniteEnqueueDequeue@{SpinLockVehicleQueueDefiniteEnqueueDequeue}}
+\index{SpinLockVehicleQueueDefiniteEnqueueDequeue@{SpinLockVehicleQueueDefiniteEnqueueDequeue}!UtilTest@{UtilTest}}
+\doxysubsubsection{\texorpdfstring{SpinLockVehicleQueueDefiniteEnqueueDequeue()}{SpinLockVehicleQueueDefiniteEnqueueDequeue()}}
+{\footnotesize\ttfamily void Util\+Test\+::\+Spin\+Lock\+Vehicle\+Queue\+Definite\+Enqueue\+Dequeue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_util_test_ae7a643ae574ce868d7974effa6882a8c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespace_util_test_a516b72083700c488d8f1b9923622933f}\label{namespace_util_test_a516b72083700c488d8f1b9923622933f} 
+\index{UtilTest@{UtilTest}!SpinLockVehicleQueueEnqueueDequeue@{SpinLockVehicleQueueEnqueueDequeue}}
+\index{SpinLockVehicleQueueEnqueueDequeue@{SpinLockVehicleQueueEnqueueDequeue}!UtilTest@{UtilTest}}
+\doxysubsubsection{\texorpdfstring{SpinLockVehicleQueueEnqueueDequeue()}{SpinLockVehicleQueueEnqueueDequeue()}}
+{\footnotesize\ttfamily void Util\+Test\+::\+Spin\+Lock\+Vehicle\+Queue\+Enqueue\+Dequeue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_util_test_a516b72083700c488d8f1b9923622933f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespace_util_test_a2b84c910a1938d0339b9fdd3d6e92a3a}\label{namespace_util_test_a2b84c910a1938d0339b9fdd3d6e92a3a} 
+\index{UtilTest@{UtilTest}!ThreadDequeue@{ThreadDequeue}}
+\index{ThreadDequeue@{ThreadDequeue}!UtilTest@{UtilTest}}
+\doxysubsubsection{\texorpdfstring{ThreadDequeue()}{ThreadDequeue()}}
+{\footnotesize\ttfamily void Util\+Test\+::\+Thread\+Dequeue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_spin_lock_vehicle_queue}{Spin\+Lock\+Vehicle\+Queue}} \texorpdfstring{$\ast$}{*}}]{vehicle\+Queue\+Ptr,  }\item[{\mbox{\hyperlink{namespace_util_test_a575b0c7d1a86debcd924ed587803267c}{size\+\_\+t}}}]{num }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_util_test_a2b84c910a1938d0339b9fdd3d6e92a3a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_util_test_a2b84c910a1938d0339b9fdd3d6e92a3a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespace_util_test_aefcd34bdd1418b09f9fcebec1519818e}\label{namespace_util_test_aefcd34bdd1418b09f9fcebec1519818e} 
+\index{UtilTest@{UtilTest}!ThreadEnqueue@{ThreadEnqueue}}
+\index{ThreadEnqueue@{ThreadEnqueue}!UtilTest@{UtilTest}}
+\doxysubsubsection{\texorpdfstring{ThreadEnqueue()}{ThreadEnqueue()}}
+{\footnotesize\ttfamily void Util\+Test\+::\+Thread\+Enqueue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_spin_lock_vehicle_queue}{Spin\+Lock\+Vehicle\+Queue}} \texorpdfstring{$\ast$}{*}}]{vehicle\+Queue\+Ptr,  }\item[{\mbox{\hyperlink{namespace_util_test_a575b0c7d1a86debcd924ed587803267c}{size\+\_\+t}}}]{num }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_util_test_aefcd34bdd1418b09f9fcebec1519818e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_util_test_aefcd34bdd1418b09f9fcebec1519818e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespace_util_test_a96505972417d0458ea9f3aed78ca612c}\label{namespace_util_test_a96505972417d0458ea9f3aed78ca612c} 
+\index{UtilTest@{UtilTest}!VehicleQueueCompareInsertTest@{VehicleQueueCompareInsertTest}}
+\index{VehicleQueueCompareInsertTest@{VehicleQueueCompareInsertTest}!UtilTest@{UtilTest}}
+\doxysubsubsection{\texorpdfstring{VehicleQueueCompareInsertTest()}{VehicleQueueCompareInsertTest()}}
+{\footnotesize\ttfamily void Util\+Test\+::\+Vehicle\+Queue\+Compare\+Insert\+Test (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{capacity }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_util_test_a96505972417d0458ea9f3aed78ca612c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespace_util_test_a5103e6ad5dff7cbfa52d417bef7cd94f}\label{namespace_util_test_a5103e6ad5dff7cbfa52d417bef7cd94f} 
+\index{UtilTest@{UtilTest}!VehicleQueueInsertExtract@{VehicleQueueInsertExtract}}
+\index{VehicleQueueInsertExtract@{VehicleQueueInsertExtract}!UtilTest@{UtilTest}}
+\doxysubsubsection{\texorpdfstring{VehicleQueueInsertExtract()}{VehicleQueueInsertExtract()}}
+{\footnotesize\ttfamily void Util\+Test\+::\+Vehicle\+Queue\+Insert\+Extract (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_util_test_a5103e6ad5dff7cbfa52d417bef7cd94f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespace_util_test_a0aee757492e38610beff550a95e63f2c}\label{namespace_util_test_a0aee757492e38610beff550a95e63f2c} 
+\index{UtilTest@{UtilTest}!VehicleQueueTryEnqueueDequeue@{VehicleQueueTryEnqueueDequeue}}
+\index{VehicleQueueTryEnqueueDequeue@{VehicleQueueTryEnqueueDequeue}!UtilTest@{UtilTest}}
+\doxysubsubsection{\texorpdfstring{VehicleQueueTryEnqueueDequeue()}{VehicleQueueTryEnqueueDequeue()}}
+{\footnotesize\ttfamily void Util\+Test\+::\+Vehicle\+Queue\+Try\+Enqueue\+Dequeue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_util_test_a0aee757492e38610beff550a95e63f2c_cgraph}
+\end{center}
+\end{figure}

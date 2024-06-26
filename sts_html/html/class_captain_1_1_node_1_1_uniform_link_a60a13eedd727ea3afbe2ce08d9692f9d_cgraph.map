@@ -1,0 +1,7 @@
+<map id="Captain::Node::UniformLink::SetVirtualVehicle" name="Captain::Node::UniformLink::SetVirtualVehicle">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,185,81"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_meso_link.html#a9c70dd892330658628c1424c8c32d2e2" title=" " alt="" coords="250,5,417,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,45,234,38,235,43,185,50"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#a3e054b24bffc5eab77a312701b17e8e3" title=" " alt="" coords="233,72,434,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,70,217,74,217,80,185,75"/>
+</map>

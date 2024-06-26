@@ -1,0 +1,9 @@
+<map id="Captain::Node::MicroLane::UpdateVehiclePosition" name="Captain::Node::MicroLane::UpdateVehiclePosition">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,177,99"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_util_1_1_vehicle_queue.html#abf94a44e54cfe64a5a522b8be85f3c87" title=" " alt="" coords="225,5,427,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,53,254,34,255,39,177,59"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_util_1_1_vehicle_queue.html#a3d4c31f703ddc93aec3976f825ed7b23" title=" " alt="" coords="235,56,417,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,75,219,75,219,80,177,80"/>
+<area shape="rect" id="Node000004" href="$class_captain_1_1_util_1_1_vehicle_queue.html#ab10028bf98dc7b0b252ac4685af3c06e" title=" " alt="" coords="235,123,417,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="169,97,234,115,233,120,168,102"/>
+</map>

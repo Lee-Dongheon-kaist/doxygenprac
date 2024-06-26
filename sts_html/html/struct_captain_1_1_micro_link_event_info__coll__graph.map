@@ -1,0 +1,5 @@
+<map id="Captain::MicroLinkEventInfo" name="Captain::MicroLinkEventInfo">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,181,179,293"/>
+<area shape="rect" id="Node000002" href="$struct_captain_1_1_position.html" title="Wrapper for representing positions of units." alt="" coords="36,5,148,117"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,117,95,165,89,165,89,117"/>
+</map>

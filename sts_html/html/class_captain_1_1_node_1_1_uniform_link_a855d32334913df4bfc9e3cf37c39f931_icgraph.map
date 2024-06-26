@@ -1,0 +1,5 @@
+<map id="Captain::Node::UniformLink::Initialize" name="Captain::Node::UniformLink::Initialize">
+<area shape="rect" id="Node000001" title="Initializes Linkable unit and ready to be executed." alt="" coords="276,5,455,48"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_uniform_intersection_link.html#acf29dec344b5b4845b0a5464d6b44a06" title="Initializes Linkable unit and ready to be executed." alt="" coords="5,5,228,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="260,29,228,29,228,24,260,24"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Captain::DMode::Stay" name="Captain::DMode::Stay">
+<area shape="rect" id="Node000001" title=" " alt="" coords="133,464,275,576"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_d_mode_1_1_drive_model.html" title=" " alt="" coords="5,5,189,416"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,429,188,463,183,465,171,431"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_d_mode_1_1_i_automatically_deactivated.html" title=" " alt="" coords="214,104,410,317"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="273,332,226,465,221,463,268,330"/>
+</map>

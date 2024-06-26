@@ -1,0 +1,23 @@
+<map id="StationArr::StationArr" name="StationArr::StationArr">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,151,133"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_document.html#a03d596f13b24ebae712b2c42b019a5ab" title="Contains a textual (english) description of the error if one occurs." alt="" coords="212,5,390,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,104,140,73,198,42,216,35,218,40,200,46,143,77,98,108"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_node.html#a12c973e1da9e90a178924b8ea5a5f4d1" title="Convenience function to get through elements." alt="" coords="204,56,398,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,103,224,84,225,89,141,109"/>
+<area shape="rect" id="Node000007" href="$class_ti_xml_document.html#a4c852a889c02cf251117fd1d9fe1845f" title=" " alt="" coords="217,181,385,208"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="121,131,245,173,243,178,119,136"/>
+<area shape="rect" id="Node000008" href="$class_ti_xml_node.html#a3b260dd22313f310c0acb2e68ada6f5b" title=" " alt="" coords="468,207,591,233"/>
+<area shape="poly" id="edge12_Node000001_Node000008" title=" " alt="" coords="92,132,135,177,166,200,200,218,264,234,331,239,395,238,452,232,453,237,396,243,331,245,263,239,198,222,163,205,132,181,88,136"/>
+<area shape="rect" id="Node000009" href="$class_ti_xml_node.html#ac6105781c913a42aa7f3f17bd1964f7c" title=" " alt="" coords="199,107,403,133"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="151,117,183,117,183,123,151,123"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_node.html#ae4fc3b6726cc9593784e1b622af249d5" title="The first child of this node. Will be null if there are no children." alt="" coords="457,5,602,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="364,53,450,33,452,39,365,58"/>
+<area shape="rect" id="Node000005" href="$class_ti_xml_node.html#a3db05b0249218e94fd41c766df87426c" title="Navigate to a sibling node." alt="" coords="451,56,607,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="398,67,435,67,435,72,398,72"/>
+<area shape="rect" id="Node000006" href="$class_ti_xml_node.html#ad05bc141115b9e49f5ab2ee72cf6cfd1" title="Cast to a more defined type. Will return null if not of the requested type." alt="" coords="453,107,605,133"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="365,81,452,100,450,105,364,86"/>
+<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="263,182,256,173,261,163,276,157,301,155,327,157,341,164,339,168,326,162,301,160,277,162,265,167,262,172,268,179"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="386,201,452,209,452,214,385,207"/>
+<area shape="poly" id="edge10_Node000009_Node000005" title=" " alt="" coords="364,103,450,84,452,89,365,109"/>
+<area shape="poly" id="edge11_Node000009_Node000006" title=" " alt="" coords="403,117,437,117,437,123,403,123"/>
+</map>

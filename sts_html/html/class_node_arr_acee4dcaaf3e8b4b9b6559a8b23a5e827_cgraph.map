@@ -1,0 +1,47 @@
+<map id="NodeArr::NodeArr" name="NodeArr::NodeArr">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,483,129,509"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_node.html#a708e7f953df61d4d2d12f73171550a4b" title="Delete all the children of this node. Does not affect &#39;this&#39;." alt="" coords="226,5,347,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,482,78,394,99,261,114,192,131,129,151,77,175,42,191,30,210,22,212,27,194,35,179,46,156,80,136,131,119,194,104,262,83,395,72,483"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_document.html#a03d596f13b24ebae712b2c42b019a5ab" title="Contains a textual (english) description of the error if one occurs." alt="" coords="198,56,375,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="68,482,80,402,102,285,134,169,153,124,175,93,183,86,186,90,179,96,158,126,139,171,107,286,85,403,73,483"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_node.html#a12c973e1da9e90a178924b8ea5a5f4d1" title="Convenience function to get through elements." alt="" coords="190,107,383,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="65,482,68,420,81,329,95,279,114,230,141,183,175,143,179,140,182,144,179,147,145,187,119,232,100,281,87,330,73,421,71,482"/>
+<area shape="rect" id="Node000008" href="$class_intersection_node.html#a50dc8aba9125fe9450e0f86cfacf3034" title=" " alt="" coords="182,208,391,251"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="68,481,78,439,98,379,129,316,150,286,175,261,179,257,182,262,178,265,154,290,134,319,103,381,83,440,73,483"/>
+<area shape="rect" id="Node000009" href="$class_intersection_node.html#ab5f8c25a694cc3af90bbea760fe1ac7f" title=" " alt="" coords="182,275,391,317"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="71,481,85,449,107,408,137,365,175,327,181,323,184,328,178,331,141,368,111,411,90,452,76,483"/>
+<area shape="rect" id="Node000010" href="$class_intersection_node.html#a7aa4392ae0421e41f27d5b5c0b27d874" title=" " alt="" coords="194,341,379,384"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="78,480,118,438,145,414,175,394,186,388,188,393,178,398,148,418,121,442,81,484"/>
+<area shape="rect" id="Node000011" href="$class_ti_xml_document.html#a4c852a889c02cf251117fd1d9fe1845f" title=" " alt="" coords="202,432,371,459"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="128,479,210,460,211,465,129,485"/>
+<area shape="rect" id="Node000012" href="$class_ti_xml_node.html#a3b260dd22313f310c0acb2e68ada6f5b" title=" " alt="" coords="461,457,584,484"/>
+<area shape="poly" id="edge24_Node000001_Node000012" title=" " alt="" coords="129,490,445,472,445,478,129,495"/>
+<area shape="rect" id="Node000013" href="$class_ti_xml_node.html#ac6105781c913a42aa7f3f17bd1964f7c" title=" " alt="" coords="184,157,389,184"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="66,482,72,428,88,350,102,308,120,266,144,228,175,194,179,191,182,195,179,198,149,231,125,269,106,310,93,352,77,429,72,482"/>
+<area shape="rect" id="Node000014" href="$class_intersection_node.html#a7a5677a31560561d34a94d2e049052a7" title=" " alt="" coords="177,533,396,560"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="129,507,211,527,210,532,128,513"/>
+<area shape="rect" id="Node000015" href="$classintersection_phase.html#a19510e00542e427e606a3e1e036251dd" title=" " alt="" coords="220,584,353,627"/>
+<area shape="poly" id="edge17_Node000001_Node000015" title=" " alt="" coords="86,508,127,539,178,570,206,581,204,586,175,574,124,543,83,512"/>
+<area shape="rect" id="Node000016" href="$class_intersection_node.html#a830e25d5f00c12c9c862f8fe120a0163" title=" " alt="" coords="197,651,376,677"/>
+<area shape="poly" id="edge18_Node000001_Node000016" title=" " alt="" coords="77,509,114,571,143,607,178,636,187,642,185,646,175,641,139,610,110,574,72,511"/>
+<area shape="rect" id="Node000017" href="$class_intersection_node.html#a69e6de119039739a4e47ec23e406858b" title=" " alt="" coords="191,701,382,728"/>
+<area shape="poly" id="edge19_Node000001_Node000017" title=" " alt="" coords="74,509,86,545,107,594,137,645,156,668,178,687,185,692,182,696,175,691,152,671,133,648,102,596,81,547,69,511"/>
+<area shape="rect" id="Node000018" href="$class_intersection_node.html#aaa3fda31bd0411c77abf44feadb3ee88" title=" " alt="" coords="191,752,382,795"/>
+<area shape="poly" id="edge20_Node000001_Node000018" title=" " alt="" coords="73,509,82,554,101,615,132,681,153,712,178,738,182,741,179,745,175,742,149,715,128,684,96,617,77,555,68,510"/>
+<area shape="rect" id="Node000019" href="$class_intersection_node.html#acc438b2e3c06934224eb3a7218d60b8c" title=" " alt="" coords="191,819,382,861"/>
+<area shape="poly" id="edge21_Node000001_Node000019" title=" " alt="" coords="72,509,77,564,93,643,107,687,125,729,149,770,179,805,182,807,178,811,175,809,144,773,120,732,102,688,88,644,72,564,66,510"/>
+<area shape="rect" id="Node000020" href="$classintersection_phase.html#aae9013399b78d6e4599bccf07a7a858d" title=" " alt="" coords="220,885,353,928"/>
+<area shape="poly" id="edge22_Node000001_Node000020" title=" " alt="" coords="71,510,72,575,85,671,98,725,118,778,144,828,178,871,206,890,204,894,175,875,140,831,113,780,93,726,80,672,67,575,65,510"/>
+<area shape="rect" id="Node000021" href="$class_intersection_node.html#aa9445c90c6bfb6569e74a0efc4c4bc4b" title=" " alt="" coords="196,952,377,995"/>
+<area shape="poly" id="edge23_Node000001_Node000021" title=" " alt="" coords="73,509,84,596,106,725,120,792,138,854,157,904,179,938,185,944,181,948,175,942,152,907,133,856,115,794,100,726,79,597,67,510"/>
+<area shape="rect" id="Node000005" href="$class_ti_xml_node.html#ae4fc3b6726cc9593784e1b622af249d5" title="The first child of this node. Will be null if there are no children." alt="" coords="450,56,595,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="351,103,441,84,442,89,353,109"/>
+<area shape="rect" id="Node000006" href="$class_ti_xml_node.html#a3db05b0249218e94fd41c766df87426c" title="Navigate to a sibling node." alt="" coords="444,107,600,133"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="384,117,428,117,428,123,384,123"/>
+<area shape="rect" id="Node000007" href="$class_ti_xml_node.html#ad05bc141115b9e49f5ab2ee72cf6cfd1" title="Cast to a more defined type. Will return null if not of the requested type." alt="" coords="446,157,598,184"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="353,131,442,151,441,156,351,137"/>
+<area shape="poly" id="edge11_Node000011_Node000011" title=" " alt="" coords="249,433,243,423,247,413,262,407,286,405,312,408,326,414,324,419,311,413,286,411,263,413,251,417,248,423,254,430"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="371,452,445,460,444,465,370,457"/>
+<area shape="poly" id="edge14_Node000013_Node000006" title=" " alt="" coords="351,154,441,135,442,140,353,159"/>
+<area shape="poly" id="edge15_Node000013_Node000007" title=" " alt="" coords="389,168,431,168,431,173,389,173"/>
+</map>

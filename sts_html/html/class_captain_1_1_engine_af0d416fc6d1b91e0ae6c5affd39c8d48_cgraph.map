@@ -1,0 +1,9 @@
+<map id="Captain::Engine::RecordSimulationTime" name="Captain::Engine::RecordSimulationTime">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,257,107"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_util_1_1_xml_writer.html#adf7b2502cbde141e5410d69cfbd8ae81" title=" " alt="" coords="305,5,461,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,77,289,49,291,54,185,82"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_util_1_1_xml_writer.html#a158ce87e5a79fba6bb179dc77f58814b" title=" " alt="" coords="305,72,461,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="257,91,289,91,289,96,257,96"/>
+<area shape="rect" id="Node000004" href="$class_captain_1_1_util_1_1_xml_writer.html#a77b3f451c6f1ee8572586ff670b27ce3" title=" " alt="" coords="305,139,461,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="185,105,291,133,289,138,184,110"/>
+</map>

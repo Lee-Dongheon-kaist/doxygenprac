@@ -1,0 +1,222 @@
+\doxysection{Captain\+::Util\+::Xml\+Writer Class Reference}
+\hypertarget{class_captain_1_1_util_1_1_xml_writer}{}\label{class_captain_1_1_util_1_1_xml_writer}\index{Captain::Util::XmlWriter@{Captain::Util::XmlWriter}}
+
+
+{\ttfamily \#include $<$Xml\+Parser.\+hpp$>$}
+
+
+
+Collaboration diagram for Captain\+::Util\+::Xml\+Writer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{class_captain_1_1_util_1_1_xml_writer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer_a9440ff85c3bb6288c60b66d9b8add108}{Xml\+Writer}} (std\+::filesystem\+::path file\+Path)
+\item 
+\mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer_a594dd86e1d0268e3c97db7f76dfe5a2e}{\texorpdfstring{$\sim$}{\string~}\+Xml\+Writer}} ()=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer_aee57a301a030db1a6d4695d2561edac2}{Xml\+Writer}} (const \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer}{Xml\+Writer}} \&other)=delete
+\item 
+\mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer_a76ce8991666e3d5f46d08fd8fb79acc8}{Xml\+Writer}} (\mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer}{Xml\+Writer}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer}{Xml\+Writer}} \& \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer_af2119f9f507b7bb99fcafb9fb8ad958c}{operator=}} (const \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer}{Xml\+Writer}} \&other)=delete
+\item 
+\mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer}{Xml\+Writer}} \& \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer_a195fbf4702cdafc369037041ad31c3b3}{operator=}} (\mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer}{Xml\+Writer}} \&\&other) noexcept=default
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer_a77b3f451c6f1ee8572586ff670b27ce3}{Write\+Header}} (std\+::string type)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer_a158ce87e5a79fba6bb179dc77f58814b}{Write\+Closer}} (std\+::string type)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer_abe4b7e3f5462dc92a37e628c8edb3d7c}{Record\+Lane\+Info}} (const std\+::deque$<$ \mbox{\hyperlink{struct_captain_1_1_lane_record_info}{Lane\+Record\+Info}} $>$ \&lane\+Info\+Vector)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer_a7d70039bb20187c953739d2bef4be31f}{Record\+Lane\+Info}} (const std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_lane_record_info}{Lane\+Record\+Info}} $>$ \&lane\+Info\+Vector)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer_a61b4faed38be2e378f294c058bb49543}{Record\+Vehicle\+Info}} (const std\+::deque$<$ \mbox{\hyperlink{struct_captain_1_1_vehicle_record_info}{Vehicle\+Record\+Info}} $>$ \&vehicle\+Info\+Vector)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer_a30811d669c29d3323901bd72d6e3977c}{Record\+Vehicle\+Info}} (const std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_vehicle_record_info}{Vehicle\+Record\+Info}} $>$ \&vehicle\+Info\+Vector)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer_a987f82493d98a89e5347879b5a66f50e}{Record\+Station\+Info}} (const std\+::deque$<$ \mbox{\hyperlink{struct_captain_1_1_station_record_info}{Station\+Record\+Info}} $>$ \&station\+Info\+Vector)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer_ac961a711f1a57b273883b29142f47540}{Record\+Station\+Info}} (const std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_station_record_info}{Station\+Record\+Info}} $>$ \&station\+Info\+Vector)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer_adf7b2502cbde141e5410d69cfbd8ae81}{Record\+Simulation\+Info}} (\mbox{\hyperlink{struct_captain_1_1_simulation_record_info}{Simulation\+Record\+Info}} Simulation\+Info)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer_ab0aafe3f914c036d1257a8a59b15c047}{Record\+Sink\+Info}} (const std\+::deque$<$ \mbox{\hyperlink{struct_captain_1_1_sink_record_info}{Sink\+Record\+Info}} $>$ \&sink\+Info\+Vector)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer_a8777db34778c7a46848b305ab2560a2d}{Record\+Sink\+Info}} (const std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_sink_record_info}{Sink\+Record\+Info}} $>$ \&sink\+Info\+Vector)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_captain_1_1_util_1_1_xml_writer_a9440ff85c3bb6288c60b66d9b8add108}\label{class_captain_1_1_util_1_1_xml_writer_a9440ff85c3bb6288c60b66d9b8add108} 
+\index{Captain::Util::XmlWriter@{Captain::Util::XmlWriter}!XmlWriter@{XmlWriter}}
+\index{XmlWriter@{XmlWriter}!Captain::Util::XmlWriter@{Captain::Util::XmlWriter}}
+\doxysubsubsection{\texorpdfstring{XmlWriter()}{XmlWriter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Captain\+::\+Util\+::\+Xml\+Writer\+::\+Xml\+Writer (\begin{DoxyParamCaption}\item[{std\+::filesystem\+::path}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_util_1_1_xml_writer_a594dd86e1d0268e3c97db7f76dfe5a2e}\label{class_captain_1_1_util_1_1_xml_writer_a594dd86e1d0268e3c97db7f76dfe5a2e} 
+\index{Captain::Util::XmlWriter@{Captain::Util::XmlWriter}!````~XmlWriter@{\texorpdfstring{$\sim$}{\string~}XmlWriter}}
+\index{````~XmlWriter@{\texorpdfstring{$\sim$}{\string~}XmlWriter}!Captain::Util::XmlWriter@{Captain::Util::XmlWriter}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}XmlWriter()}{\string~XmlWriter()}}
+{\footnotesize\ttfamily Captain\+::\+Util\+::\+Xml\+Writer\+::\texorpdfstring{$\sim$}{\string~}\+Xml\+Writer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_captain_1_1_util_1_1_xml_writer_aee57a301a030db1a6d4695d2561edac2}\label{class_captain_1_1_util_1_1_xml_writer_aee57a301a030db1a6d4695d2561edac2} 
+\index{Captain::Util::XmlWriter@{Captain::Util::XmlWriter}!XmlWriter@{XmlWriter}}
+\index{XmlWriter@{XmlWriter}!Captain::Util::XmlWriter@{Captain::Util::XmlWriter}}
+\doxysubsubsection{\texorpdfstring{XmlWriter()}{XmlWriter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Captain\+::\+Util\+::\+Xml\+Writer\+::\+Xml\+Writer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer}{Xml\+Writer}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{class_captain_1_1_util_1_1_xml_writer_a76ce8991666e3d5f46d08fd8fb79acc8}\label{class_captain_1_1_util_1_1_xml_writer_a76ce8991666e3d5f46d08fd8fb79acc8} 
+\index{Captain::Util::XmlWriter@{Captain::Util::XmlWriter}!XmlWriter@{XmlWriter}}
+\index{XmlWriter@{XmlWriter}!Captain::Util::XmlWriter@{Captain::Util::XmlWriter}}
+\doxysubsubsection{\texorpdfstring{XmlWriter()}{XmlWriter()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Captain\+::\+Util\+::\+Xml\+Writer\+::\+Xml\+Writer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer}{Xml\+Writer}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_captain_1_1_util_1_1_xml_writer_af2119f9f507b7bb99fcafb9fb8ad958c}\label{class_captain_1_1_util_1_1_xml_writer_af2119f9f507b7bb99fcafb9fb8ad958c} 
+\index{Captain::Util::XmlWriter@{Captain::Util::XmlWriter}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::Util::XmlWriter@{Captain::Util::XmlWriter}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer}{Xml\+Writer}} \& Captain\+::\+Util\+::\+Xml\+Writer\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer}{Xml\+Writer}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{class_captain_1_1_util_1_1_xml_writer_a195fbf4702cdafc369037041ad31c3b3}\label{class_captain_1_1_util_1_1_xml_writer_a195fbf4702cdafc369037041ad31c3b3} 
+\index{Captain::Util::XmlWriter@{Captain::Util::XmlWriter}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::Util::XmlWriter@{Captain::Util::XmlWriter}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer}{Xml\+Writer}} \& Captain\+::\+Util\+::\+Xml\+Writer\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer}{Xml\+Writer}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{class_captain_1_1_util_1_1_xml_writer_abe4b7e3f5462dc92a37e628c8edb3d7c}\label{class_captain_1_1_util_1_1_xml_writer_abe4b7e3f5462dc92a37e628c8edb3d7c} 
+\index{Captain::Util::XmlWriter@{Captain::Util::XmlWriter}!RecordLaneInfo@{RecordLaneInfo}}
+\index{RecordLaneInfo@{RecordLaneInfo}!Captain::Util::XmlWriter@{Captain::Util::XmlWriter}}
+\doxysubsubsection{\texorpdfstring{RecordLaneInfo()}{RecordLaneInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Xml\+Writer\+::\+Record\+Lane\+Info (\begin{DoxyParamCaption}\item[{const std\+::deque$<$ \mbox{\hyperlink{struct_captain_1_1_lane_record_info}{Lane\+Record\+Info}} $>$ \&}]{lane\+Info\+Vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_xml_writer_abe4b7e3f5462dc92a37e628c8edb3d7c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_xml_writer_a7d70039bb20187c953739d2bef4be31f}\label{class_captain_1_1_util_1_1_xml_writer_a7d70039bb20187c953739d2bef4be31f} 
+\index{Captain::Util::XmlWriter@{Captain::Util::XmlWriter}!RecordLaneInfo@{RecordLaneInfo}}
+\index{RecordLaneInfo@{RecordLaneInfo}!Captain::Util::XmlWriter@{Captain::Util::XmlWriter}}
+\doxysubsubsection{\texorpdfstring{RecordLaneInfo()}{RecordLaneInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Xml\+Writer\+::\+Record\+Lane\+Info (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_lane_record_info}{Lane\+Record\+Info}} $>$ \&}]{lane\+Info\+Vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_util_1_1_xml_writer_adf7b2502cbde141e5410d69cfbd8ae81}\label{class_captain_1_1_util_1_1_xml_writer_adf7b2502cbde141e5410d69cfbd8ae81} 
+\index{Captain::Util::XmlWriter@{Captain::Util::XmlWriter}!RecordSimulationInfo@{RecordSimulationInfo}}
+\index{RecordSimulationInfo@{RecordSimulationInfo}!Captain::Util::XmlWriter@{Captain::Util::XmlWriter}}
+\doxysubsubsection{\texorpdfstring{RecordSimulationInfo()}{RecordSimulationInfo()}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Xml\+Writer\+::\+Record\+Simulation\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_simulation_record_info}{Simulation\+Record\+Info}}}]{Simulation\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_xml_writer_adf7b2502cbde141e5410d69cfbd8ae81_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_xml_writer_ab0aafe3f914c036d1257a8a59b15c047}\label{class_captain_1_1_util_1_1_xml_writer_ab0aafe3f914c036d1257a8a59b15c047} 
+\index{Captain::Util::XmlWriter@{Captain::Util::XmlWriter}!RecordSinkInfo@{RecordSinkInfo}}
+\index{RecordSinkInfo@{RecordSinkInfo}!Captain::Util::XmlWriter@{Captain::Util::XmlWriter}}
+\doxysubsubsection{\texorpdfstring{RecordSinkInfo()}{RecordSinkInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Xml\+Writer\+::\+Record\+Sink\+Info (\begin{DoxyParamCaption}\item[{const std\+::deque$<$ \mbox{\hyperlink{struct_captain_1_1_sink_record_info}{Sink\+Record\+Info}} $>$ \&}]{sink\+Info\+Vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_xml_writer_ab0aafe3f914c036d1257a8a59b15c047_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_xml_writer_a8777db34778c7a46848b305ab2560a2d}\label{class_captain_1_1_util_1_1_xml_writer_a8777db34778c7a46848b305ab2560a2d} 
+\index{Captain::Util::XmlWriter@{Captain::Util::XmlWriter}!RecordSinkInfo@{RecordSinkInfo}}
+\index{RecordSinkInfo@{RecordSinkInfo}!Captain::Util::XmlWriter@{Captain::Util::XmlWriter}}
+\doxysubsubsection{\texorpdfstring{RecordSinkInfo()}{RecordSinkInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Xml\+Writer\+::\+Record\+Sink\+Info (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_sink_record_info}{Sink\+Record\+Info}} $>$ \&}]{sink\+Info\+Vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_util_1_1_xml_writer_a987f82493d98a89e5347879b5a66f50e}\label{class_captain_1_1_util_1_1_xml_writer_a987f82493d98a89e5347879b5a66f50e} 
+\index{Captain::Util::XmlWriter@{Captain::Util::XmlWriter}!RecordStationInfo@{RecordStationInfo}}
+\index{RecordStationInfo@{RecordStationInfo}!Captain::Util::XmlWriter@{Captain::Util::XmlWriter}}
+\doxysubsubsection{\texorpdfstring{RecordStationInfo()}{RecordStationInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Xml\+Writer\+::\+Record\+Station\+Info (\begin{DoxyParamCaption}\item[{const std\+::deque$<$ \mbox{\hyperlink{struct_captain_1_1_station_record_info}{Station\+Record\+Info}} $>$ \&}]{station\+Info\+Vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_xml_writer_a987f82493d98a89e5347879b5a66f50e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_xml_writer_ac961a711f1a57b273883b29142f47540}\label{class_captain_1_1_util_1_1_xml_writer_ac961a711f1a57b273883b29142f47540} 
+\index{Captain::Util::XmlWriter@{Captain::Util::XmlWriter}!RecordStationInfo@{RecordStationInfo}}
+\index{RecordStationInfo@{RecordStationInfo}!Captain::Util::XmlWriter@{Captain::Util::XmlWriter}}
+\doxysubsubsection{\texorpdfstring{RecordStationInfo()}{RecordStationInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Xml\+Writer\+::\+Record\+Station\+Info (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_station_record_info}{Station\+Record\+Info}} $>$ \&}]{station\+Info\+Vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_util_1_1_xml_writer_a61b4faed38be2e378f294c058bb49543}\label{class_captain_1_1_util_1_1_xml_writer_a61b4faed38be2e378f294c058bb49543} 
+\index{Captain::Util::XmlWriter@{Captain::Util::XmlWriter}!RecordVehicleInfo@{RecordVehicleInfo}}
+\index{RecordVehicleInfo@{RecordVehicleInfo}!Captain::Util::XmlWriter@{Captain::Util::XmlWriter}}
+\doxysubsubsection{\texorpdfstring{RecordVehicleInfo()}{RecordVehicleInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Xml\+Writer\+::\+Record\+Vehicle\+Info (\begin{DoxyParamCaption}\item[{const std\+::deque$<$ \mbox{\hyperlink{struct_captain_1_1_vehicle_record_info}{Vehicle\+Record\+Info}} $>$ \&}]{vehicle\+Info\+Vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_xml_writer_a61b4faed38be2e378f294c058bb49543_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_xml_writer_a30811d669c29d3323901bd72d6e3977c}\label{class_captain_1_1_util_1_1_xml_writer_a30811d669c29d3323901bd72d6e3977c} 
+\index{Captain::Util::XmlWriter@{Captain::Util::XmlWriter}!RecordVehicleInfo@{RecordVehicleInfo}}
+\index{RecordVehicleInfo@{RecordVehicleInfo}!Captain::Util::XmlWriter@{Captain::Util::XmlWriter}}
+\doxysubsubsection{\texorpdfstring{RecordVehicleInfo()}{RecordVehicleInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Xml\+Writer\+::\+Record\+Vehicle\+Info (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_vehicle_record_info}{Vehicle\+Record\+Info}} $>$ \&}]{vehicle\+Info\+Vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_util_1_1_xml_writer_a158ce87e5a79fba6bb179dc77f58814b}\label{class_captain_1_1_util_1_1_xml_writer_a158ce87e5a79fba6bb179dc77f58814b} 
+\index{Captain::Util::XmlWriter@{Captain::Util::XmlWriter}!WriteCloser@{WriteCloser}}
+\index{WriteCloser@{WriteCloser}!Captain::Util::XmlWriter@{Captain::Util::XmlWriter}}
+\doxysubsubsection{\texorpdfstring{WriteCloser()}{WriteCloser()}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Xml\+Writer\+::\+Write\+Closer (\begin{DoxyParamCaption}\item[{std\+::string}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_xml_writer_a158ce87e5a79fba6bb179dc77f58814b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_xml_writer_a77b3f451c6f1ee8572586ff670b27ce3}\label{class_captain_1_1_util_1_1_xml_writer_a77b3f451c6f1ee8572586ff670b27ce3} 
+\index{Captain::Util::XmlWriter@{Captain::Util::XmlWriter}!WriteHeader@{WriteHeader}}
+\index{WriteHeader@{WriteHeader}!Captain::Util::XmlWriter@{Captain::Util::XmlWriter}}
+\doxysubsubsection{\texorpdfstring{WriteHeader()}{WriteHeader()}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Xml\+Writer\+::\+Write\+Header (\begin{DoxyParamCaption}\item[{std\+::string}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_xml_writer_a77b3f451c6f1ee8572586ff670b27ce3_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Util/\mbox{\hyperlink{_xml_parser_8hpp}{Xml\+Parser.\+hpp}}\end{DoxyCompactItemize}

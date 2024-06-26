@@ -1,0 +1,7 @@
+<map id="Captain::SimpleOwnershipTransfer" name="Captain::SimpleOwnershipTransfer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,27,180,69"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_weak_ptr.html#ad950a8d15e114ef80c955a5b95a11377" title=" " alt="" coords="228,5,388,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,33,212,29,213,34,181,39"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_shared_ptr.html#a3ce867882c9bd7bafb68250d0b475e60" title=" " alt="" coords="242,56,374,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="181,57,227,64,226,69,180,63"/>
+</map>

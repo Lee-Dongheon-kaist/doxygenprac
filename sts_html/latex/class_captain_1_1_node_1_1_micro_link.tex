@@ -1,0 +1,249 @@
+\doxysection{Captain\+::Node\+::Micro\+Link Class Reference}
+\hypertarget{class_captain_1_1_node_1_1_micro_link}{}\label{class_captain_1_1_node_1_1_micro_link}\index{Captain::Node::MicroLink@{Captain::Node::MicroLink}}
+
+
+{\ttfamily \#include $<$Micro\+Link.\+hpp$>$}
+
+
+
+Inheritance diagram for Captain\+::Node\+::Micro\+Link\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_captain_1_1_node_1_1_micro_link__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Captain\+::Node\+::Micro\+Link\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_captain_1_1_node_1_1_micro_link__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_captain_1_1_node_1_1_micro_link_a8567dced238bca3b979ed326974df48b}{Micro\+Link}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&unit\+Identifier, const \mbox{\hyperlink{struct_captain_1_1_micro_link_info}{Micro\+Link\+Info}} \&micro\+Link\+Info)
+\item 
+\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_link_ab8febe90fb4eafa190cefb9a42417a02}{Get\+Identifier}} () const override
+\begin{DoxyCompactList}\small\item\em Gets Unique identifier of the link. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_link_a7dedcebfe47aa74a60c200986c7da390}{Get\+ID}} () const override
+\begin{DoxyCompactList}\small\item\em Gets unique ID of this link in whole network. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_link_a2ece8d34f4113c90830b5d81b8cd04b9}{Get\+Lane\+Size}} () const override
+\begin{DoxyCompactList}\small\item\em Gets back number of lanes available. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_link_a22413ef0efda5709f522a72cca96bce7}{Initialize}} () override
+\begin{DoxyCompactList}\small\item\em Initializes Linkable unit and ready to be executed. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_link_a899cc490169985004af10f4b3a34fe01}{Get\+Weight}} () override
+\item 
+std\+::optional$<$ \mbox{\hyperlink{namespace_captain_ac03838c8d2941d5da8169c3ec7a4d868}{Vehicle\+Weak\+Ptr}} $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_link_ae4032f9577cb65fc0fce7329faf402ca}{Get\+Leading\+Vehicle\+Ptr}} (std\+::size\+\_\+t lane\+Index) override
+\item 
+std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_link_ad39357b8aa3794460103a339853b61a0}{Get\+Last\+Vehicle\+Ptr}} (std\+::size\+\_\+t lane\+Index) override
+\item 
+\mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_link_a514808d89eac28175de9761142c7a25d}{Get\+Lane}} (std\+::size\+\_\+t lane\+Index) override
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_link_a9c89febfa46bcbf8779e16b2c63e7803}{Move\+Lane\+Changing\+Vehicles}} ()
+\begin{DoxyCompactList}\small\item\em Move vehicles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_link_a89df3b46e2b419669fecadf0879eb26e}{Move\+From\+Previous\+Unit}} (std\+::size\+\_\+t cycle)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_link_a9f5862bf2a45f6e7fb184825c2340046}{Update\+Station\+State}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_link_a7f2d686261069a2e8b531117dd8ec909}{Compute\+New\+Vehicle\+State}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_link_a06a1157e68e290586aed3df09698a00d}{Update\+Vehicle\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{Captain\+::\+Node\+::\+ILinkable}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_aedaa60013dde57a9692ac0b05300aa29}{ILinkable}} ()=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_adc08acf3b1c8faaeca697c97885b4f2c}{ILinkable}} (const \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{ILinkable}} \&i\+Linkable)=delete
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_aff8aea7f62294bec99daf8d1dfc20d8e}{ILinkable}} (\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{ILinkable}} \&\&i\+Linkable) noexcept=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{ILinkable}} \& \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_ac6c06f7e69fd698f5e089ee6d22640f0}{operator=}} (const \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{ILinkable}} \&i\+Linkable)=delete
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{ILinkable}} \& \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_ad52278fab2d6fc07a33b7f4a862c1837}{operator=}} (\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{ILinkable}} \&\&i\+Linkable) noexcept=default
+\item 
+virtual \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_aaf5a99727e56142bbd34e068589c9bc4}{\texorpdfstring{$\sim$}{\string~}\+ILinkable}} ()=default
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_captain_1_1_node_1_1_micro_link_a8567dced238bca3b979ed326974df48b}\label{class_captain_1_1_node_1_1_micro_link_a8567dced238bca3b979ed326974df48b} 
+\index{Captain::Node::MicroLink@{Captain::Node::MicroLink}!MicroLink@{MicroLink}}
+\index{MicroLink@{MicroLink}!Captain::Node::MicroLink@{Captain::Node::MicroLink}}
+\doxysubsubsection{\texorpdfstring{MicroLink()}{MicroLink()}}
+{\footnotesize\ttfamily Captain\+::\+Node\+::\+Micro\+Link\+::\+Micro\+Link (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{unit\+Identifier,  }\item[{const \mbox{\hyperlink{struct_captain_1_1_micro_link_info}{Micro\+Link\+Info}} \&}]{micro\+Link\+Info }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_captain_1_1_node_1_1_micro_link_a7f2d686261069a2e8b531117dd8ec909}\label{class_captain_1_1_node_1_1_micro_link_a7f2d686261069a2e8b531117dd8ec909} 
+\index{Captain::Node::MicroLink@{Captain::Node::MicroLink}!ComputeNewVehicleState@{ComputeNewVehicleState}}
+\index{ComputeNewVehicleState@{ComputeNewVehicleState}!Captain::Node::MicroLink@{Captain::Node::MicroLink}}
+\doxysubsubsection{\texorpdfstring{ComputeNewVehicleState()}{ComputeNewVehicleState()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Link\+::\+Compute\+New\+Vehicle\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_link_a7dedcebfe47aa74a60c200986c7da390}\label{class_captain_1_1_node_1_1_micro_link_a7dedcebfe47aa74a60c200986c7da390} 
+\index{Captain::Node::MicroLink@{Captain::Node::MicroLink}!GetID@{GetID}}
+\index{GetID@{GetID}!Captain::Node::MicroLink@{Captain::Node::MicroLink}}
+\doxysubsubsection{\texorpdfstring{GetID()}{GetID()}}
+{\footnotesize\ttfamily int Captain\+::\+Node\+::\+Micro\+Link\+::\+Get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets unique ID of this link in whole network. 
+
+\begin{DoxyReturn}{Returns}
+ID of this link 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_aafeb9b76916384649d93aeb5a4366f34}{Captain\+::\+Node\+::\+ILinkable}}.
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_link_ab8febe90fb4eafa190cefb9a42417a02}\label{class_captain_1_1_node_1_1_micro_link_ab8febe90fb4eafa190cefb9a42417a02} 
+\index{Captain::Node::MicroLink@{Captain::Node::MicroLink}!GetIdentifier@{GetIdentifier}}
+\index{GetIdentifier@{GetIdentifier}!Captain::Node::MicroLink@{Captain::Node::MicroLink}}
+\doxysubsubsection{\texorpdfstring{GetIdentifier()}{GetIdentifier()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} Captain\+::\+Node\+::\+Micro\+Link\+::\+Get\+Identifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets Unique identifier of the link. 
+
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_a1d02456407b492adcc960d026907bd5a}{Captain\+::\+Node\+::\+ILinkable}}.
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_link_a514808d89eac28175de9761142c7a25d}\label{class_captain_1_1_node_1_1_micro_link_a514808d89eac28175de9761142c7a25d} 
+\index{Captain::Node::MicroLink@{Captain::Node::MicroLink}!GetLane@{GetLane}}
+\index{GetLane@{GetLane}!Captain::Node::MicroLink@{Captain::Node::MicroLink}}
+\doxysubsubsection{\texorpdfstring{GetLane()}{GetLane()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} $>$ Captain\+::\+Node\+::\+Micro\+Link\+::\+Get\+Lane (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{lane\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns reference of lane in corresponding lane index 
+\begin{DoxyParams}{Parameters}
+{\em lane\+Index} & \+: index of the lane \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: reference to \doxylink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit} which represents corresponding lane 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_af1a5b71ba586c95a24edd860243e7c72}{Captain\+::\+Node\+::\+ILinkable}}.
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_link_a2ece8d34f4113c90830b5d81b8cd04b9}\label{class_captain_1_1_node_1_1_micro_link_a2ece8d34f4113c90830b5d81b8cd04b9} 
+\index{Captain::Node::MicroLink@{Captain::Node::MicroLink}!GetLaneSize@{GetLaneSize}}
+\index{GetLaneSize@{GetLaneSize}!Captain::Node::MicroLink@{Captain::Node::MicroLink}}
+\doxysubsubsection{\texorpdfstring{GetLaneSize()}{GetLaneSize()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Captain\+::\+Node\+::\+Micro\+Link\+::\+Get\+Lane\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets back number of lanes available. 
+
+\begin{DoxyReturn}{Returns}
+number of lanes available 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_a05c0cd8fd23d4aae688f099c385b1030}{Captain\+::\+Node\+::\+ILinkable}}.
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_link_ad39357b8aa3794460103a339853b61a0}\label{class_captain_1_1_node_1_1_micro_link_ad39357b8aa3794460103a339853b61a0} 
+\index{Captain::Node::MicroLink@{Captain::Node::MicroLink}!GetLastVehiclePtr@{GetLastVehiclePtr}}
+\index{GetLastVehiclePtr@{GetLastVehiclePtr}!Captain::Node::MicroLink@{Captain::Node::MicroLink}}
+\doxysubsubsection{\texorpdfstring{GetLastVehiclePtr()}{GetLastVehiclePtr()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ Captain\+::\+Node\+::\+Micro\+Link\+::\+Get\+Last\+Vehicle\+Ptr (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{lane\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns vehicle\+Ptr of last vehicle from specific lane 
+\begin{DoxyParams}{Parameters}
+{\em lane\+Index} & \+: index of the target lane \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: vehicle\+Ptr of leading vehicle of the unit m\+\_\+default\+Vehicle\+Ptr if such vehicle does not exist 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_ac23877e32f204f4abdd22abd177e4bb2}{Captain\+::\+Node\+::\+ILinkable}}.
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_link_ae4032f9577cb65fc0fce7329faf402ca}\label{class_captain_1_1_node_1_1_micro_link_ae4032f9577cb65fc0fce7329faf402ca} 
+\index{Captain::Node::MicroLink@{Captain::Node::MicroLink}!GetLeadingVehiclePtr@{GetLeadingVehiclePtr}}
+\index{GetLeadingVehiclePtr@{GetLeadingVehiclePtr}!Captain::Node::MicroLink@{Captain::Node::MicroLink}}
+\doxysubsubsection{\texorpdfstring{GetLeadingVehiclePtr()}{GetLeadingVehiclePtr()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{namespace_captain_ac03838c8d2941d5da8169c3ec7a4d868}{Vehicle\+Weak\+Ptr}} $>$ Captain\+::\+Node\+::\+Micro\+Link\+::\+Get\+Leading\+Vehicle\+Ptr (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{lane\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns vehicle\+Ptr of last vehicle from specific lane 
+\begin{DoxyParams}{Parameters}
+{\em lane\+Index} & \+: index of the target lane \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: vehicle\+Ptr of leading vehicle of the unit m\+\_\+default\+Vehicle\+Ptr if such vehicle does not exist 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_a64965ac3452a264fc27f4d792653a0f3}{Captain\+::\+Node\+::\+ILinkable}}.
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_link_a899cc490169985004af10f4b3a34fe01}\label{class_captain_1_1_node_1_1_micro_link_a899cc490169985004af10f4b3a34fe01} 
+\index{Captain::Node::MicroLink@{Captain::Node::MicroLink}!GetWeight@{GetWeight}}
+\index{GetWeight@{GetWeight}!Captain::Node::MicroLink@{Captain::Node::MicroLink}}
+\doxysubsubsection{\texorpdfstring{GetWeight()}{GetWeight()}}
+{\footnotesize\ttfamily double Captain\+::\+Node\+::\+Micro\+Link\+::\+Get\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get Weight of the Link Used for automatic route generation 
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_a4b0ae91888cf13316a2181046eaa811a}{Captain\+::\+Node\+::\+ILinkable}}.
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_link_a22413ef0efda5709f522a72cca96bce7}\label{class_captain_1_1_node_1_1_micro_link_a22413ef0efda5709f522a72cca96bce7} 
+\index{Captain::Node::MicroLink@{Captain::Node::MicroLink}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Captain::Node::MicroLink@{Captain::Node::MicroLink}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Link\+::\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initializes Linkable unit and ready to be executed. 
+
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_a486dc97cf759f1aaa1a711244c6ca60d}{Captain\+::\+Node\+::\+ILinkable}}.
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_link_a89df3b46e2b419669fecadf0879eb26e}\label{class_captain_1_1_node_1_1_micro_link_a89df3b46e2b419669fecadf0879eb26e} 
+\index{Captain::Node::MicroLink@{Captain::Node::MicroLink}!MoveFromPreviousUnit@{MoveFromPreviousUnit}}
+\index{MoveFromPreviousUnit@{MoveFromPreviousUnit}!Captain::Node::MicroLink@{Captain::Node::MicroLink}}
+\doxysubsubsection{\texorpdfstring{MoveFromPreviousUnit()}{MoveFromPreviousUnit()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Link\+::\+Move\+From\+Previous\+Unit (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle }\end{DoxyParamCaption})}
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_link_a9c89febfa46bcbf8779e16b2c63e7803}\label{class_captain_1_1_node_1_1_micro_link_a9c89febfa46bcbf8779e16b2c63e7803} 
+\index{Captain::Node::MicroLink@{Captain::Node::MicroLink}!MoveLaneChangingVehicles@{MoveLaneChangingVehicles}}
+\index{MoveLaneChangingVehicles@{MoveLaneChangingVehicles}!Captain::Node::MicroLink@{Captain::Node::MicroLink}}
+\doxysubsubsection{\texorpdfstring{MoveLaneChangingVehicles()}{MoveLaneChangingVehicles()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Link\+::\+Move\+Lane\+Changing\+Vehicles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Move vehicles. 
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_link_a9f5862bf2a45f6e7fb184825c2340046}\label{class_captain_1_1_node_1_1_micro_link_a9f5862bf2a45f6e7fb184825c2340046} 
+\index{Captain::Node::MicroLink@{Captain::Node::MicroLink}!UpdateStationState@{UpdateStationState}}
+\index{UpdateStationState@{UpdateStationState}!Captain::Node::MicroLink@{Captain::Node::MicroLink}}
+\doxysubsubsection{\texorpdfstring{UpdateStationState()}{UpdateStationState()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Link\+::\+Update\+Station\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_link_a06a1157e68e290586aed3df09698a00d}\label{class_captain_1_1_node_1_1_micro_link_a06a1157e68e290586aed3df09698a00d} 
+\index{Captain::Node::MicroLink@{Captain::Node::MicroLink}!UpdateVehicleState@{UpdateVehicleState}}
+\index{UpdateVehicleState@{UpdateVehicleState}!Captain::Node::MicroLink@{Captain::Node::MicroLink}}
+\doxysubsubsection{\texorpdfstring{UpdateVehicleState()}{UpdateVehicleState()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Link\+::\+Update\+Vehicle\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Network/\mbox{\hyperlink{_micro_link_8hpp}{Micro\+Link.\+hpp}}\end{DoxyCompactItemize}

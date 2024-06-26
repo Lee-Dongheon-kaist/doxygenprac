@@ -1,0 +1,40 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_captain_1_1_d_mode_1_1_drive_model.html" title=" " alt="" coords="15,296,200,323"/>
+<area shape="rect" id="Node000001" href="$class_captain_1_1_d_mode_1_1_adj_speed.html" title=" " alt="" coords="272,5,450,32"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="120,281,192,143,230,77,256,42,276,30,279,35,259,46,234,80,197,146,125,283"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_d_mode_1_1_approach_station.html" title=" " alt="" coords="272,56,450,99"/>
+<area shape="poly" id="edge2_Node000000_Node000003" title=" " alt="" coords="120,281,141,243,172,196,210,149,256,109,276,97,279,102,259,113,214,153,176,199,146,245,124,283"/>
+<area shape="rect" id="Node000005" href="$class_captain_1_1_d_mode_1_1_b_c_f.html" title=" " alt="" coords="287,325,435,352"/>
+<area shape="poly" id="edge3_Node000000_Node000005" title=" " alt="" coords="216,319,286,327,286,333,215,324"/>
+<area shape="rect" id="Node000007" href="$class_captain_1_1_d_mode_1_1_b_l_c.html" title=" " alt="" coords="287,376,435,403"/>
+<area shape="poly" id="edge4_Node000000_Node000007" title=" " alt="" coords="158,326,258,361,300,373,298,378,257,367,157,331"/>
+<area shape="rect" id="Node000008" href="$class_captain_1_1_d_mode_1_1_c_c_f.html" title=" " alt="" coords="287,427,435,453"/>
+<area shape="poly" id="edge5_Node000000_Node000008" title=" " alt="" coords="142,330,259,412,290,424,288,429,256,417,139,334"/>
+<area shape="rect" id="Node000009" href="$class_captain_1_1_d_mode_1_1_c_f.html" title=" " alt="" coords="291,477,431,504"/>
+<area shape="poly" id="edge6_Node000000_Node000009" title=" " alt="" coords="149,329,181,351,212,380,227,403,234,425,242,444,259,463,292,479,290,484,256,467,237,447,229,426,222,405,208,383,178,356,145,333"/>
+<area shape="rect" id="Node000014" href="$class_captain_1_1_d_mode_1_1_c_v.html" title=" " alt="" coords="291,173,431,200"/>
+<area shape="poly" id="edge7_Node000000_Node000014" title=" " alt="" coords="136,284,190,246,257,210,290,198,291,203,259,214,193,251,139,289"/>
+<area shape="rect" id="Node000010" href="$class_captain_1_1_d_mode_1_1_d_l_c.html" title=" " alt="" coords="287,528,435,555"/>
+<area shape="poly" id="edge8_Node000000_Node000010" title=" " alt="" coords="151,328,183,351,212,380,223,399,229,417,233,451,238,483,246,499,259,514,288,530,285,535,256,518,241,502,233,485,228,452,224,418,218,401,208,383,180,355,148,333"/>
+<area shape="rect" id="Node000011" href="$class_captain_1_1_d_mode_1_1_e_l_c.html" title=" " alt="" coords="287,579,435,605"/>
+<area shape="poly" id="edge9_Node000000_Node000011" title=" " alt="" coords="153,328,184,350,212,380,226,406,232,431,232,478,231,500,234,522,243,543,259,565,288,582,285,586,256,569,238,546,229,523,226,500,226,478,226,432,221,408,207,383,181,355,150,333"/>
+<area shape="rect" id="Node000012" href="$class_captain_1_1_d_mode_1_1_intersection_c_f.html" title=" " alt="" coords="258,224,464,251"/>
+<area shape="poly" id="edge10_Node000000_Node000012" title=" " alt="" coords="164,288,257,260,301,249,302,254,258,265,166,293"/>
+<area shape="rect" id="Node000013" href="$class_captain_1_1_d_mode_1_1_m_c_f.html" title=" " alt="" coords="286,275,436,301"/>
+<area shape="poly" id="edge11_Node000000_Node000013" title=" " alt="" coords="216,298,285,292,285,297,216,303"/>
+<area shape="rect" id="Node000004" href="$class_captain_1_1_d_mode_1_1_stay.html" title=" " alt="" coords="286,123,436,149"/>
+<area shape="poly" id="edge12_Node000000_Node000004" title=" " alt="" coords="125,282,179,220,216,187,256,159,285,147,287,152,259,164,219,191,183,224,130,285"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_d_mode_1_1_i_automatically_deactivated.html" title=" " alt="" coords="5,56,210,99"/>
+<area shape="poly" id="edge13_Node000002_Node000001" title=" " alt="" coords="217,49,299,30,300,35,218,55"/>
+<area shape="poly" id="edge14_Node000002_Node000003" title=" " alt="" coords="225,75,272,75,272,80,225,80"/>
+<area shape="poly" id="edge15_Node000002_Node000004" title=" " alt="" coords="218,100,300,119,299,125,217,105"/>
+<area shape="rect" id="Node000006" href="$class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable.html" title=" " alt="" coords="22,393,193,436"/>
+<area shape="poly" id="edge16_Node000006_Node000005" title=" " alt="" coords="183,385,257,361,299,350,301,355,258,367,185,390"/>
+<area shape="poly" id="edge17_Node000006_Node000007" title=" " alt="" coords="208,402,287,394,287,399,209,407"/>
+<area shape="poly" id="edge18_Node000006_Node000008" title=" " alt="" coords="208,422,286,430,286,435,208,427"/>
+<area shape="poly" id="edge19_Node000006_Node000009" title=" " alt="" coords="185,439,258,463,301,474,299,479,257,468,183,444"/>
+<area shape="poly" id="edge20_Node000006_Node000010" title=" " alt="" coords="148,444,199,480,259,514,290,525,288,530,257,518,196,485,145,448"/>
+<area shape="poly" id="edge21_Node000006_Node000011" title=" " alt="" coords="135,447,188,508,222,538,259,564,288,577,286,582,256,569,218,543,184,511,131,450"/>
+<area shape="poly" id="edge22_Node000006_Node000012" title=" " alt="" coords="152,382,208,333,221,313,229,295,238,278,256,261,278,249,280,254,259,265,243,281,234,298,226,316,212,336,155,386"/>
+<area shape="poly" id="edge23_Node000006_Node000013" title=" " alt="" coords="145,381,196,345,257,311,288,299,290,304,259,316,199,349,148,386"/>
+</map>

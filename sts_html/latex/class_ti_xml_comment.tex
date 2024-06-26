@@ -1,0 +1,515 @@
+\doxysection{Ti\+Xml\+Comment Class Reference}
+\hypertarget{class_ti_xml_comment}{}\label{class_ti_xml_comment}\index{TiXmlComment@{TiXmlComment}}
+
+
+{\ttfamily \#include $<$tinyxml.\+h$>$}
+
+
+
+Inheritance diagram for Ti\+Xml\+Comment\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_ti_xml_comment__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Ti\+Xml\+Comment\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_ti_xml_comment__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ti_xml_comment_aaa3252031d3e8bd3a2bf51a1c61201b7}{Ti\+Xml\+Comment}} ()
+\begin{DoxyCompactList}\small\item\em Constructs an empty comment. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ti_xml_comment_a37e7802ef17bc03ebe5ae79bf0713d47}{Ti\+Xml\+Comment}} (const char \texorpdfstring{$\ast$}{*}\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Construct a comment from text. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ti_xml_comment_afaec41ac2760ce946ba1590eb5708e50}{Ti\+Xml\+Comment}} (const \mbox{\hyperlink{class_ti_xml_comment}{Ti\+Xml\+Comment}} \&)
+\item 
+void \mbox{\hyperlink{class_ti_xml_comment_a46373f99b65cb960637dccb1f126bd49}{operator=}} (const \mbox{\hyperlink{class_ti_xml_comment}{Ti\+Xml\+Comment}} \&base)
+\item 
+virtual \mbox{\hyperlink{class_ti_xml_comment_a3264ae2e9c4a127edfa03289bb2c9aa2}{\texorpdfstring{$\sim$}{\string~}\+Ti\+Xml\+Comment}} ()
+\item 
+virtual \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_comment_a1f9f06e2ed3f77875093436193b16c16}{Clone}} () const
+\begin{DoxyCompactList}\small\item\em Returns a copy of this Comment. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_ti_xml_comment_a873171beac19d40f0eaae945711c98ed}{Print}} (FILE \texorpdfstring{$\ast$}{*}cfile, int depth) const
+\item 
+virtual const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_comment_a43bddc18ac057734b41d84653b71d3e0}{Parse}} (const char \texorpdfstring{$\ast$}{*}p, \mbox{\hyperlink{class_ti_xml_parsing_data}{Ti\+Xml\+Parsing\+Data}} \texorpdfstring{$\ast$}{*}data, \mbox{\hyperlink{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96}{Ti\+Xml\+Encoding}} encoding)
+\item 
+virtual const \mbox{\hyperlink{class_ti_xml_comment}{Ti\+Xml\+Comment}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_comment_a1ba35041f43548ff9e6d431beea5bd4d}{To\+Comment}} () const
+\begin{DoxyCompactList}\small\item\em Cast to a more defined type. Will return null not of the requested type. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_ti_xml_comment}{Ti\+Xml\+Comment}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_comment_ad1a522962d357ed568816f9294f74fe1}{To\+Comment}} ()
+\begin{DoxyCompactList}\small\item\em Cast to a more defined type. Will return null not of the requested type. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_ti_xml_comment_ac894241530d1d266131a5026cb251a95}{Accept}} (\mbox{\hyperlink{class_ti_xml_visitor}{Ti\+Xml\+Visitor}} \texorpdfstring{$\ast$}{*}visitor) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_ti_xml_node_a027a76cccd359c831ee4024b58c49625}{\texorpdfstring{$\sim$}{\string~}\+Ti\+Xml\+Node}} ()
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a3b260dd22313f310c0acb2e68ada6f5b}{Value}} () const
+\item 
+const \mbox{\hyperlink{tinyxml_8h_a92bada05fd84d9a0c9a5bbe53de26887}{TIXML\+\_\+\+STRING}} \& \mbox{\hyperlink{class_ti_xml_node_af59b2b26e416acdf7bb0895fdbe05fa9}{Value\+TStr}} () const
+\item 
+void \mbox{\hyperlink{class_ti_xml_node_a2a38329ca5d3f28f98ce932b8299ae90}{Set\+Value}} (const char \texorpdfstring{$\ast$}{*}\+\_\+value)
+\item 
+void \mbox{\hyperlink{class_ti_xml_node_a708e7f953df61d4d2d12f73171550a4b}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em Delete all the children of this node. Does not affect \textquotesingle{}this\textquotesingle{}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a98ccf4dfc53c8eb12839f3680fdbf839}{Parent}} ()
+\begin{DoxyCompactList}\small\item\em One step up the DOM. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a31a1bdf2827686f3f9fb493ce803339e}{Parent}} () const
+\item 
+const \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_ae4fc3b6726cc9593784e1b622af249d5}{First\+Child}} () const
+\begin{DoxyCompactList}\small\item\em The first child of this node. Will be null if there are no children. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a8d0c64d4d6237d8b2f9b716c1d598401}{First\+Child}} ()
+\item 
+const \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_ae98c367f664890c4b5a5183481ec128a}{First\+Child}} (const char \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_ti_xml_node_aead528b3cedc33c16a6c539872c7cc8b}{value}}) const
+\item 
+\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_ab1dda042ebd0253f36519b76afa645fb}{First\+Child}} (const char \texorpdfstring{$\ast$}{*}\+\_\+value)
+\begin{DoxyCompactList}\small\item\em The first child of this node with the matching \textquotesingle{}value\textquotesingle{}. Will be null if none found. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a94889d7ecf2eb3a00f4fd4ffab26488d}{Last\+Child}} () const
+\item 
+\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a418603b3d7a2cf33d146521d96e6af20}{Last\+Child}} ()
+\begin{DoxyCompactList}\small\item\em The last child of this node. Will be null if there are no children. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_afdd7b6ba456fdd570610c1d841f91eb3}{Last\+Child}} (const char \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_ti_xml_node_aead528b3cedc33c16a6c539872c7cc8b}{value}}) const
+\item 
+\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_afe68e2adbf007c58d9348b25c44faa79}{Last\+Child}} (const char \texorpdfstring{$\ast$}{*}\+\_\+value)
+\begin{DoxyCompactList}\small\item\em The last child of this node matching \textquotesingle{}value\textquotesingle{}. Will be null if there are no children. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a67c3a02b797f08d9a31b2553661257e1}{Iterate\+Children}} (const \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*}previous) const
+\item 
+\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a768a68665202adf666330e62391735a6}{Iterate\+Children}} (const \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*}previous)
+\item 
+const \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a74bc68a536c279a42af346cb1454f143}{Iterate\+Children}} (const char \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_ti_xml_node_aead528b3cedc33c16a6c539872c7cc8b}{value}}, const \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*}previous) const
+\begin{DoxyCompactList}\small\item\em This flavor of Iterate\+Children searches for children with a particular \textquotesingle{}value\textquotesingle{}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a230124cbed0dad93fae9a2fd27aa56ed}{Iterate\+Children}} (const char \texorpdfstring{$\ast$}{*}\+\_\+value, const \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*}previous)
+\item 
+\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_af287a913ce46d8dbf7ef24fec69bbaf0}{Insert\+End\+Child}} (const \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \&add\+This)
+\item 
+\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a1a881212554b759865f6cac79a851d38}{Link\+End\+Child}} (\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*}add\+This)
+\item 
+\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a71e54e393336382bc9875f64aab5cb15}{Insert\+Before\+Child}} (\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*}before\+This, const \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \&add\+This)
+\item 
+\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a274db3292218202805c093f66a964cb5}{Insert\+After\+Child}} (\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*}after\+This, const \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \&add\+This)
+\item 
+\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a543208c2c801c84a213529541e904b9f}{Replace\+Child}} (\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*}replace\+This, const \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \&with\+This)
+\item 
+bool \mbox{\hyperlink{class_ti_xml_node_ae19d8510efc90596552f4feeac9a8fbf}{Remove\+Child}} (\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*}remove\+This)
+\begin{DoxyCompactList}\small\item\em Delete a child of this node. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a33375eafbc6cb1bdd75be47bcfb3ea1e}{Previous\+Sibling}} () const
+\begin{DoxyCompactList}\small\item\em Navigate to a sibling node. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_acf6dc9a20c4b0adaddd0a153b9ba588b}{Previous\+Sibling}} ()
+\item 
+const \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_ace1b618fe58b2b9305fe89bfbc8dd17b}{Previous\+Sibling}} (const char \texorpdfstring{$\ast$}{*}) const
+\begin{DoxyCompactList}\small\item\em Navigate to a sibling node. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a68019b427d54a4f0a16b64c0c347aa55}{Previous\+Sibling}} (const char \texorpdfstring{$\ast$}{*}\+\_\+prev)
+\item 
+const \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a3db05b0249218e94fd41c766df87426c}{Next\+Sibling}} () const
+\begin{DoxyCompactList}\small\item\em Navigate to a sibling node. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_aeb7db8156d55c5d849e4a5504e911ba8}{Next\+Sibling}} ()
+\item 
+const \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a0864ea784b53cdca0a37829d3391ca4b}{Next\+Sibling}} (const char \texorpdfstring{$\ast$}{*}) const
+\begin{DoxyCompactList}\small\item\em Navigate to a sibling node with the given \textquotesingle{}value\textquotesingle{}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a857eea30f32772d433fad52a6c912f53}{Next\+Sibling}} (const char \texorpdfstring{$\ast$}{*}\+\_\+next)
+\item 
+const \mbox{\hyperlink{class_ti_xml_element}{Ti\+Xml\+Element}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_ac6105781c913a42aa7f3f17bd1964f7c}{Next\+Sibling\+Element}} () const
+\item 
+\mbox{\hyperlink{class_ti_xml_element}{Ti\+Xml\+Element}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_afae8d91f6ffc742ab5f1236ed099951a}{Next\+Sibling\+Element}} ()
+\item 
+const \mbox{\hyperlink{class_ti_xml_element}{Ti\+Xml\+Element}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a22def4746238abaee042f99b47ef3c94}{Next\+Sibling\+Element}} (const char \texorpdfstring{$\ast$}{*}) const
+\item 
+\mbox{\hyperlink{class_ti_xml_element}{Ti\+Xml\+Element}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a57859abb261b589ff9bcc71e6b997acc}{Next\+Sibling\+Element}} (const char \texorpdfstring{$\ast$}{*}\+\_\+next)
+\item 
+const \mbox{\hyperlink{class_ti_xml_element}{Ti\+Xml\+Element}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a12c973e1da9e90a178924b8ea5a5f4d1}{First\+Child\+Element}} () const
+\begin{DoxyCompactList}\small\item\em Convenience function to get through elements. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ti_xml_element}{Ti\+Xml\+Element}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a62358e3837be85a823195049e86f652d}{First\+Child\+Element}} ()
+\item 
+const \mbox{\hyperlink{class_ti_xml_element}{Ti\+Xml\+Element}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_aab23fca4c2455c1d926c35d85a663842}{First\+Child\+Element}} (const char \texorpdfstring{$\ast$}{*}\+\_\+value) const
+\begin{DoxyCompactList}\small\item\em Convenience function to get through elements. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ti_xml_element}{Ti\+Xml\+Element}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a36616e033049346623443c0f457626c3}{First\+Child\+Element}} (const char \texorpdfstring{$\ast$}{*}\+\_\+value)
+\item 
+int \mbox{\hyperlink{class_ti_xml_node_a0f4dd916b2afc2ab2f1a84f3e2b8fd5d}{Type}} () const
+\item 
+const \mbox{\hyperlink{class_ti_xml_document}{Ti\+Xml\+Document}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_adcb070acefcbaedaa0673d82e530538b}{Get\+Document}} () const
+\item 
+\mbox{\hyperlink{class_ti_xml_document}{Ti\+Xml\+Document}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a06c93ecc42b765af56180ce2671fbbf0}{Get\+Document}} ()
+\item 
+bool \mbox{\hyperlink{class_ti_xml_node_abe85e0ec04ea59c033f324c8504653e5}{No\+Children}} () const
+\begin{DoxyCompactList}\small\item\em Returns true if this node has no children. \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{class_ti_xml_document}{Ti\+Xml\+Document}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a82fb1921862d1619dd302d00e2bdc280}{To\+Document}} () const
+\begin{DoxyCompactList}\small\item\em Cast to a more defined type. Will return null if not of the requested type. \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{class_ti_xml_element}{Ti\+Xml\+Element}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_ad05bc141115b9e49f5ab2ee72cf6cfd1}{To\+Element}} () const
+\begin{DoxyCompactList}\small\item\em Cast to a more defined type. Will return null if not of the requested type. \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{class_ti_xml_unknown}{Ti\+Xml\+Unknown}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a9a513c44f34b597b4aaf89fd034eab7d}{To\+Unknown}} () const
+\begin{DoxyCompactList}\small\item\em Cast to a more defined type. Will return null if not of the requested type. \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{class_ti_xml_text}{Ti\+Xml\+Text}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a249f8cfd73c1fd7259529fa7c606bbd3}{To\+Text}} () const
+\begin{DoxyCompactList}\small\item\em Cast to a more defined type. Will return null if not of the requested type. \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{class_ti_xml_declaration}{Ti\+Xml\+Declaration}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a57b8c8ff1924891d0d683aa250c9a961}{To\+Declaration}} () const
+\begin{DoxyCompactList}\small\item\em Cast to a more defined type. Will return null if not of the requested type. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_ti_xml_document}{Ti\+Xml\+Document}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a7946c320fb8ba3fa94ed0ef2da946f24}{To\+Document}} ()
+\begin{DoxyCompactList}\small\item\em Cast to a more defined type. Will return null if not of the requested type. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_ti_xml_element}{Ti\+Xml\+Element}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_acf4c98b9da8f60f9312bcc9ddd0a4d24}{To\+Element}} ()
+\begin{DoxyCompactList}\small\item\em Cast to a more defined type. Will return null if not of the requested type. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_ti_xml_unknown}{Ti\+Xml\+Unknown}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a9e5c565c0e9e5ca1ba9e8be9d6557fda}{To\+Unknown}} ()
+\begin{DoxyCompactList}\small\item\em Cast to a more defined type. Will return null if not of the requested type. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_ti_xml_text}{Ti\+Xml\+Text}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a8e2e910e97726d80309dbb485bcf774d}{To\+Text}} ()
+\begin{DoxyCompactList}\small\item\em Cast to a more defined type. Will return null if not of the requested type. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_ti_xml_declaration}{Ti\+Xml\+Declaration}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a847ab30e2655ffa1a66ea79a31d62af2}{To\+Declaration}} ()
+\begin{DoxyCompactList}\small\item\em Cast to a more defined type. Will return null if not of the requested type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_ti_xml_base}{Ti\+Xml\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ti_xml_base_ac6753fe8a2c89669038fcf281cb301bf}{Ti\+Xml\+Base}} ()
+\item 
+virtual \mbox{\hyperlink{class_ti_xml_base_ad1837ecb25a913612fa1115f090cbb56}{\texorpdfstring{$\sim$}{\string~}\+Ti\+Xml\+Base}} ()
+\item 
+int \mbox{\hyperlink{class_ti_xml_base_ad0cacca5d76d156b26511f46080b442e}{Row}} () const
+\item 
+int \mbox{\hyperlink{class_ti_xml_base_ad283b95d9858d5d78c334f4a61b07bb4}{Column}} () const
+\begin{DoxyCompactList}\small\item\em See \doxylink{class_ti_xml_base_ad0cacca5d76d156b26511f46080b442e}{Row()} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ti_xml_base_ac6b3e0f790930d4970ec30764e937b5d}{Set\+User\+Data}} (void \texorpdfstring{$\ast$}{*}user)
+\begin{DoxyCompactList}\small\item\em Set a pointer to arbitrary user data. \end{DoxyCompactList}\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_base_a436b80c865d437835d370a9eada6f9f5}{Get\+User\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Get a pointer to arbitrary user data. \end{DoxyCompactList}\item 
+const void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_base_aa44896ae7cc0e9b1007429b150a81d92}{Get\+User\+Data}} () const
+\begin{DoxyCompactList}\small\item\em Get a pointer to arbitrary user data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_ti_xml_comment_aaeb8a0b2d503f603879a2d04ceb54295}{Copy\+To}} (\mbox{\hyperlink{class_ti_xml_comment}{Ti\+Xml\+Comment}} \texorpdfstring{$\ast$}{*}target) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ti_xml_node_a3f46721695868667113c7487ff123f20}{Ti\+Xml\+Node}} (\mbox{\hyperlink{class_ti_xml_node_a836eded4920ab9e9ef28496f48cd95a2}{Node\+Type}} \+\_\+type)
+\item 
+void \mbox{\hyperlink{class_ti_xml_node_aaadd5bb9c94f84c4472b649b95de4a0b}{Copy\+To}} (\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*}target) const
+\item 
+\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_ac1e3a8e7578be463b04617786120c2bb}{Identify}} (const char \texorpdfstring{$\ast$}{*}start, \mbox{\hyperlink{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96}{Ti\+Xml\+Encoding}} encoding)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Types inherited from \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}}}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_ti_xml_node_a836eded4920ab9e9ef28496f48cd95a2}{Node\+Type}} \{ \newline
+\mbox{\hyperlink{class_ti_xml_node_a836eded4920ab9e9ef28496f48cd95a2a76c4c520453398cd033e8b97ec9a0b04}{TINYXML\+\_\+\+DOCUMENT}}
+, \mbox{\hyperlink{class_ti_xml_node_a836eded4920ab9e9ef28496f48cd95a2a9ad167b17c3148d7a018fde9a41ce976}{TINYXML\+\_\+\+ELEMENT}}
+, \mbox{\hyperlink{class_ti_xml_node_a836eded4920ab9e9ef28496f48cd95a2a742eb78855db1e81614848072de03721}{TINYXML\+\_\+\+COMMENT}}
+, \mbox{\hyperlink{class_ti_xml_node_a836eded4920ab9e9ef28496f48cd95a2a7376f9420c8ab507842c8a0813bb077e}{TINYXML\+\_\+\+UNKNOWN}}
+, \newline
+\mbox{\hyperlink{class_ti_xml_node_a836eded4920ab9e9ef28496f48cd95a2aa6177e9506461cdca7062559387a2714}{TINYXML\+\_\+\+TEXT}}
+, \mbox{\hyperlink{class_ti_xml_node_a836eded4920ab9e9ef28496f48cd95a2a1e2351ad8cd0c805538d94222f3d8cd0}{TINYXML\+\_\+\+DECLARATION}}
+, \mbox{\hyperlink{class_ti_xml_node_a836eded4920ab9e9ef28496f48cd95a2a878567737ed539bd3de6a941027e9309}{TINYXML\+\_\+\+TYPECOUNT}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types inherited from \mbox{\hyperlink{class_ti_xml_base}{Ti\+Xml\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{class_ti_xml_base_a9a7e9344415956ab96e8c75f6a0bbd48a750a76ca602241c416d5ec357d55fba1}{TIXML\+\_\+\+NO\+\_\+\+ERROR}} = 0
+, \mbox{\hyperlink{class_ti_xml_base_a9a7e9344415956ab96e8c75f6a0bbd48abcabc1b8efabeda1cc4352aa73d64390}{TIXML\+\_\+\+ERROR}}
+, \mbox{\hyperlink{class_ti_xml_base_a9a7e9344415956ab96e8c75f6a0bbd48ab803949b8f12e03b5b57f86d9c52b614}{TIXML\+\_\+\+ERROR\+\_\+\+OPENING\+\_\+\+FILE}}
+, \mbox{\hyperlink{class_ti_xml_base_a9a7e9344415956ab96e8c75f6a0bbd48a5cbfcf7fe5e67f0cd1aef98deac55dd2}{TIXML\+\_\+\+ERROR\+\_\+\+PARSING\+\_\+\+ELEMENT}}
+, \newline
+\mbox{\hyperlink{class_ti_xml_base_a9a7e9344415956ab96e8c75f6a0bbd48adcc31ca78a9d507a88c9fafb3d18a3c4}{TIXML\+\_\+\+ERROR\+\_\+\+FAILED\+\_\+\+TO\+\_\+\+READ\+\_\+\+ELEMENT\+\_\+\+NAME}}
+, \mbox{\hyperlink{class_ti_xml_base_a9a7e9344415956ab96e8c75f6a0bbd48afefdc75db23215e846605a2b5af0c2d3}{TIXML\+\_\+\+ERROR\+\_\+\+READING\+\_\+\+ELEMENT\+\_\+\+VALUE}}
+, \mbox{\hyperlink{class_ti_xml_base_a9a7e9344415956ab96e8c75f6a0bbd48a670fac23171b64829f90639cc3696d6e}{TIXML\+\_\+\+ERROR\+\_\+\+READING\+\_\+\+ATTRIBUTES}}
+, \mbox{\hyperlink{class_ti_xml_base_a9a7e9344415956ab96e8c75f6a0bbd48a5f2aee664733a20f13f6f77556b9fa85}{TIXML\+\_\+\+ERROR\+\_\+\+PARSING\+\_\+\+EMPTY}}
+, \newline
+\mbox{\hyperlink{class_ti_xml_base_a9a7e9344415956ab96e8c75f6a0bbd48a175f7c72e2f9630bb96ef5137b325502}{TIXML\+\_\+\+ERROR\+\_\+\+READING\+\_\+\+END\+\_\+\+TAG}}
+, \mbox{\hyperlink{class_ti_xml_base_a9a7e9344415956ab96e8c75f6a0bbd48a24c814fdcf1d84704869e6f76b19cb6e}{TIXML\+\_\+\+ERROR\+\_\+\+PARSING\+\_\+\+UNKNOWN}}
+, \mbox{\hyperlink{class_ti_xml_base_a9a7e9344415956ab96e8c75f6a0bbd48a72e3072a44be499edb89593f6ce10f6c}{TIXML\+\_\+\+ERROR\+\_\+\+PARSING\+\_\+\+COMMENT}}
+, \mbox{\hyperlink{class_ti_xml_base_a9a7e9344415956ab96e8c75f6a0bbd48a4c200f9d125027ab449e2be7be471ba0}{TIXML\+\_\+\+ERROR\+\_\+\+PARSING\+\_\+\+DECLARATION}}
+, \newline
+\mbox{\hyperlink{class_ti_xml_base_a9a7e9344415956ab96e8c75f6a0bbd48ab345f3e42e6ae9cdedee2b95e4d461b9}{TIXML\+\_\+\+ERROR\+\_\+\+DOCUMENT\+\_\+\+EMPTY}}
+, \mbox{\hyperlink{class_ti_xml_base_a9a7e9344415956ab96e8c75f6a0bbd48ade7edbad3a94a6c161cac2638f380e17}{TIXML\+\_\+\+ERROR\+\_\+\+EMBEDDED\+\_\+\+NULL}}
+, \mbox{\hyperlink{class_ti_xml_base_a9a7e9344415956ab96e8c75f6a0bbd48aab2c858631b5d38eae1e6675949b9cd4}{TIXML\+\_\+\+ERROR\+\_\+\+PARSING\+\_\+\+CDATA}}
+, \mbox{\hyperlink{class_ti_xml_base_a9a7e9344415956ab96e8c75f6a0bbd48a679b15d950f29257700a724bb118c34d}{TIXML\+\_\+\+ERROR\+\_\+\+DOCUMENT\+\_\+\+TOP\+\_\+\+ONLY}}
+, \newline
+\mbox{\hyperlink{class_ti_xml_base_a9a7e9344415956ab96e8c75f6a0bbd48a14552894942250efcec6b00dc52fc48a}{TIXML\+\_\+\+ERROR\+\_\+\+STRING\+\_\+\+COUNT}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_ti_xml_base}{Ti\+Xml\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_ti_xml_base_a0f799ec645bfb8d8a969e83478f379c1}{Set\+Condense\+White\+Space}} (bool condense)
+\item 
+static bool \mbox{\hyperlink{class_ti_xml_base_ad4b1472531c647a25b1840a87ae42438}{Is\+White\+Space\+Condensed}} ()
+\begin{DoxyCompactList}\small\item\em Return the current white space setting. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_ti_xml_base_a32ed202562b58de64c7d799ca3c9db98}{Encode\+String}} (const \mbox{\hyperlink{tinyxml_8h_a92bada05fd84d9a0c9a5bbe53de26887}{TIXML\+\_\+\+STRING}} \&str, \mbox{\hyperlink{tinyxml_8h_a92bada05fd84d9a0c9a5bbe53de26887}{TIXML\+\_\+\+STRING}} \texorpdfstring{$\ast$}{*}out)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_ti_xml_base}{Ti\+Xml\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{class_ti_xml_base_ac8c86058137bdb4b413c3eca58f2d467}{utf8\+Byte\+Table}} \mbox{[}256\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{class_ti_xml_base}{Ti\+Xml\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+static const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_base_ac0c3d66d8a9e6996a1fa016275e16875}{Skip\+White\+Space}} (const char \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96}{Ti\+Xml\+Encoding}} encoding)
+\item 
+static bool \mbox{\hyperlink{class_ti_xml_base_af56296d561c0bab4bc8e198cdcf5c48e}{Is\+White\+Space}} (char c)
+\item 
+static bool \mbox{\hyperlink{class_ti_xml_base_a3de391ea9f4c4a8aa10d04480b048795}{Is\+White\+Space}} (int c)
+\item 
+static const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_base_a1c21a6ab5f7b503acd91f35f183734b3}{Read\+Name}} (const char \texorpdfstring{$\ast$}{*}p, \mbox{\hyperlink{tinyxml_8h_a92bada05fd84d9a0c9a5bbe53de26887}{TIXML\+\_\+\+STRING}} \texorpdfstring{$\ast$}{*}name, \mbox{\hyperlink{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96}{Ti\+Xml\+Encoding}} encoding)
+\item 
+static const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_base_aa646c74921aa33156968b802bbf5566e}{Read\+Text}} (const char \texorpdfstring{$\ast$}{*}in, \mbox{\hyperlink{tinyxml_8h_a92bada05fd84d9a0c9a5bbe53de26887}{TIXML\+\_\+\+STRING}} \texorpdfstring{$\ast$}{*}text, bool ignore\+White\+Space, const char \texorpdfstring{$\ast$}{*}end\+Tag, bool ignore\+Case, \mbox{\hyperlink{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96}{Ti\+Xml\+Encoding}} encoding)
+\item 
+static const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_base_ac5c08bf3deffcda0bf8ce2958372b584}{Get\+Entity}} (const char \texorpdfstring{$\ast$}{*}in, char \texorpdfstring{$\ast$}{*}value, int \texorpdfstring{$\ast$}{*}length, \mbox{\hyperlink{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96}{Ti\+Xml\+Encoding}} encoding)
+\item 
+static const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_base_a5c309eba97f91f719e7834f6a7ddaf22}{Get\+Char}} (const char \texorpdfstring{$\ast$}{*}p, char \texorpdfstring{$\ast$}{*}\+\_\+value, int \texorpdfstring{$\ast$}{*}length, \mbox{\hyperlink{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96}{Ti\+Xml\+Encoding}} encoding)
+\item 
+static bool \mbox{\hyperlink{class_ti_xml_base_a51631e6986179558b9e5850723ed165a}{String\+Equal}} (const char \texorpdfstring{$\ast$}{*}p, const char \texorpdfstring{$\ast$}{*}end\+Tag, bool ignore\+Case, \mbox{\hyperlink{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96}{Ti\+Xml\+Encoding}} encoding)
+\item 
+static int \mbox{\hyperlink{class_ti_xml_base_ae22522b2e8e1ac43102d16394f639fc8}{Is\+Alpha}} (unsigned char any\+Byte, \mbox{\hyperlink{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96}{Ti\+Xml\+Encoding}} encoding)
+\item 
+static int \mbox{\hyperlink{class_ti_xml_base_a321919055c115c78ded17f85a793f368}{Is\+Alpha\+Num}} (unsigned char any\+Byte, \mbox{\hyperlink{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96}{Ti\+Xml\+Encoding}} encoding)
+\item 
+static int \mbox{\hyperlink{class_ti_xml_base_a799f17405a86a5c2029618e85f11a097}{To\+Lower}} (int v, \mbox{\hyperlink{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96}{Ti\+Xml\+Encoding}} encoding)
+\item 
+static void \mbox{\hyperlink{class_ti_xml_base_a07c765e3a7f979d343e646ea797b180b}{Convert\+UTF32\+To\+UTF8}} (unsigned long input, char \texorpdfstring{$\ast$}{*}output, int \texorpdfstring{$\ast$}{*}length)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a662c4de61244e4fa5bd4e2d8c63143a5}{parent}}
+\item 
+\mbox{\hyperlink{class_ti_xml_node_a836eded4920ab9e9ef28496f48cd95a2}{Node\+Type}} \mbox{\hyperlink{class_ti_xml_node_a2619c6379181c16ba95ae6922e2ca839}{type}}
+\item 
+\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_af749fb7f22010b80e8f904c32653d50e}{first\+Child}}
+\item 
+\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a5b30756d21b304580d22a841ec9d61f8}{last\+Child}}
+\item 
+\mbox{\hyperlink{tinyxml_8h_a92bada05fd84d9a0c9a5bbe53de26887}{TIXML\+\_\+\+STRING}} \mbox{\hyperlink{class_ti_xml_node_aead528b3cedc33c16a6c539872c7cc8b}{value}}
+\item 
+\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a9c5370ea2cbfd9f0e0f7b30a57fd68f5}{prev}}
+\item 
+\mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_node_a2f329cc993d2d34df76e17dcbb776b45}{next}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_ti_xml_base}{Ti\+Xml\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_ti_xml_cursor}{Ti\+Xml\+Cursor}} \mbox{\hyperlink{class_ti_xml_base_a0d992580f3bc264909f898e942677a3c}{location}}
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_base_ab242c01590191f644569fa89a080d97c}{user\+Data}}
+\begin{DoxyCompactList}\small\item\em Field containing a generic user pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_ti_xml_base}{Ti\+Xml\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+static const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ti_xml_base_a7ac8feec4100e446b3d78e1ac0659700}{error\+String}} \mbox{[}\mbox{\hyperlink{class_ti_xml_base_a9a7e9344415956ab96e8c75f6a0bbd48a14552894942250efcec6b00dc52fc48a}{TIXML\+\_\+\+ERROR\+\_\+\+STRING\+\_\+\+COUNT}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An XML comment. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ti_xml_comment_aaa3252031d3e8bd3a2bf51a1c61201b7}\label{class_ti_xml_comment_aaa3252031d3e8bd3a2bf51a1c61201b7} 
+\index{TiXmlComment@{TiXmlComment}!TiXmlComment@{TiXmlComment}}
+\index{TiXmlComment@{TiXmlComment}!TiXmlComment@{TiXmlComment}}
+\doxysubsubsection{\texorpdfstring{TiXmlComment()}{TiXmlComment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Ti\+Xml\+Comment\+::\+Ti\+Xml\+Comment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs an empty comment. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ti_xml_comment_aaa3252031d3e8bd3a2bf51a1c61201b7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_ti_xml_comment_a37e7802ef17bc03ebe5ae79bf0713d47}\label{class_ti_xml_comment_a37e7802ef17bc03ebe5ae79bf0713d47} 
+\index{TiXmlComment@{TiXmlComment}!TiXmlComment@{TiXmlComment}}
+\index{TiXmlComment@{TiXmlComment}!TiXmlComment@{TiXmlComment}}
+\doxysubsubsection{\texorpdfstring{TiXmlComment()}{TiXmlComment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Ti\+Xml\+Comment\+::\+Ti\+Xml\+Comment (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{\+\_\+value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a comment from text. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ti_xml_comment_a37e7802ef17bc03ebe5ae79bf0713d47_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_ti_xml_comment_afaec41ac2760ce946ba1590eb5708e50}\label{class_ti_xml_comment_afaec41ac2760ce946ba1590eb5708e50} 
+\index{TiXmlComment@{TiXmlComment}!TiXmlComment@{TiXmlComment}}
+\index{TiXmlComment@{TiXmlComment}!TiXmlComment@{TiXmlComment}}
+\doxysubsubsection{\texorpdfstring{TiXmlComment()}{TiXmlComment()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Ti\+Xml\+Comment\+::\+Ti\+Xml\+Comment (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_ti_xml_comment}{Ti\+Xml\+Comment}} \&}]{copy }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ti_xml_comment_afaec41ac2760ce946ba1590eb5708e50_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_ti_xml_comment_a3264ae2e9c4a127edfa03289bb2c9aa2}\label{class_ti_xml_comment_a3264ae2e9c4a127edfa03289bb2c9aa2} 
+\index{TiXmlComment@{TiXmlComment}!````~TiXmlComment@{\texorpdfstring{$\sim$}{\string~}TiXmlComment}}
+\index{````~TiXmlComment@{\texorpdfstring{$\sim$}{\string~}TiXmlComment}!TiXmlComment@{TiXmlComment}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}TiXmlComment()}{\string~TiXmlComment()}}
+{\footnotesize\ttfamily virtual Ti\+Xml\+Comment\+::\texorpdfstring{$\sim$}{\string~}\+Ti\+Xml\+Comment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ti_xml_comment_ac894241530d1d266131a5026cb251a95}\label{class_ti_xml_comment_ac894241530d1d266131a5026cb251a95} 
+\index{TiXmlComment@{TiXmlComment}!Accept@{Accept}}
+\index{Accept@{Accept}!TiXmlComment@{TiXmlComment}}
+\doxysubsubsection{\texorpdfstring{Accept()}{Accept()}}
+{\footnotesize\ttfamily bool Ti\+Xml\+Comment\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ti_xml_visitor}{Ti\+Xml\+Visitor}} \texorpdfstring{$\ast$}{*}}]{visitor }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Walk the XML tree visiting this node and all of its children. 
+
+Implements \mbox{\hyperlink{class_ti_xml_node_acc0f88b7462c6cb73809d410a4f5bb86}{Ti\+Xml\+Node}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{class_ti_xml_comment_ac894241530d1d266131a5026cb251a95_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_ti_xml_comment_a1f9f06e2ed3f77875093436193b16c16}\label{class_ti_xml_comment_a1f9f06e2ed3f77875093436193b16c16} 
+\index{TiXmlComment@{TiXmlComment}!Clone@{Clone}}
+\index{Clone@{Clone}!TiXmlComment@{TiXmlComment}}
+\doxysubsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}} \texorpdfstring{$\ast$}{*} Ti\+Xml\+Comment\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns a copy of this Comment. 
+
+
+
+Implements \mbox{\hyperlink{class_ti_xml_node_a8393385d6431e5e046c78c91ea44843e}{Ti\+Xml\+Node}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ti_xml_comment_a1f9f06e2ed3f77875093436193b16c16_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_ti_xml_comment_aaeb8a0b2d503f603879a2d04ceb54295}\label{class_ti_xml_comment_aaeb8a0b2d503f603879a2d04ceb54295} 
+\index{TiXmlComment@{TiXmlComment}!CopyTo@{CopyTo}}
+\index{CopyTo@{CopyTo}!TiXmlComment@{TiXmlComment}}
+\doxysubsubsection{\texorpdfstring{CopyTo()}{CopyTo()}}
+{\footnotesize\ttfamily void Ti\+Xml\+Comment\+::\+Copy\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ti_xml_comment}{Ti\+Xml\+Comment}} \texorpdfstring{$\ast$}{*}}]{target }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ti_xml_comment_aaeb8a0b2d503f603879a2d04ceb54295_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ti_xml_comment_aaeb8a0b2d503f603879a2d04ceb54295_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_ti_xml_comment_a46373f99b65cb960637dccb1f126bd49}\label{class_ti_xml_comment_a46373f99b65cb960637dccb1f126bd49} 
+\index{TiXmlComment@{TiXmlComment}!operator=@{operator=}}
+\index{operator=@{operator=}!TiXmlComment@{TiXmlComment}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily void Ti\+Xml\+Comment\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_ti_xml_comment}{Ti\+Xml\+Comment}} \&}]{base }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ti_xml_comment_a46373f99b65cb960637dccb1f126bd49_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_ti_xml_comment_a43bddc18ac057734b41d84653b71d3e0}\label{class_ti_xml_comment_a43bddc18ac057734b41d84653b71d3e0} 
+\index{TiXmlComment@{TiXmlComment}!Parse@{Parse}}
+\index{Parse@{Parse}!TiXmlComment@{TiXmlComment}}
+\doxysubsubsection{\texorpdfstring{Parse()}{Parse()}}
+{\footnotesize\ttfamily const char \texorpdfstring{$\ast$}{*} Ti\+Xml\+Comment\+::\+Parse (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{p,  }\item[{\mbox{\hyperlink{class_ti_xml_parsing_data}{Ti\+Xml\+Parsing\+Data}} \texorpdfstring{$\ast$}{*}}]{data,  }\item[{\mbox{\hyperlink{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96}{Ti\+Xml\+Encoding}}}]{encoding }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_ti_xml_base_a70f7afb95ad04e61f45a3325cb8382f3}{Ti\+Xml\+Base}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ti_xml_comment_a43bddc18ac057734b41d84653b71d3e0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_ti_xml_comment_a873171beac19d40f0eaae945711c98ed}\label{class_ti_xml_comment_a873171beac19d40f0eaae945711c98ed} 
+\index{TiXmlComment@{TiXmlComment}!Print@{Print}}
+\index{Print@{Print}!TiXmlComment@{TiXmlComment}}
+\doxysubsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void Ti\+Xml\+Comment\+::\+Print (\begin{DoxyParamCaption}\item[{FILE \texorpdfstring{$\ast$}{*}}]{cfile,  }\item[{int}]{depth }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+All Tiny\+Xml classes can print themselves to a filestream or the string class (\doxylink{class_ti_xml_string}{Ti\+Xml\+String} in non-\/\+STL mode, std\+::string in STL mode.) Either or both cfile and str can be null.
+
+This is a formatted print, and will insert tabs and newlines.
+
+(For an unformatted stream, use the \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} operator.) 
+
+Implements \mbox{\hyperlink{class_ti_xml_base_a0de56b3f2ef14c65091a3b916437b512}{Ti\+Xml\+Base}}.
+
+\Hypertarget{class_ti_xml_comment_ad1a522962d357ed568816f9294f74fe1}\label{class_ti_xml_comment_ad1a522962d357ed568816f9294f74fe1} 
+\index{TiXmlComment@{TiXmlComment}!ToComment@{ToComment}}
+\index{ToComment@{ToComment}!TiXmlComment@{TiXmlComment}}
+\doxysubsubsection{\texorpdfstring{ToComment()}{ToComment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_ti_xml_comment}{Ti\+Xml\+Comment}} \texorpdfstring{$\ast$}{*} Ti\+Xml\+Comment\+::\+To\+Comment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Cast to a more defined type. Will return null not of the requested type. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_ti_xml_node_a690352c7851dddd448385d197b5ef83e}{Ti\+Xml\+Node}}.
+
+\Hypertarget{class_ti_xml_comment_a1ba35041f43548ff9e6d431beea5bd4d}\label{class_ti_xml_comment_a1ba35041f43548ff9e6d431beea5bd4d} 
+\index{TiXmlComment@{TiXmlComment}!ToComment@{ToComment}}
+\index{ToComment@{ToComment}!TiXmlComment@{TiXmlComment}}
+\doxysubsubsection{\texorpdfstring{ToComment()}{ToComment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{class_ti_xml_comment}{Ti\+Xml\+Comment}} \texorpdfstring{$\ast$}{*} Ti\+Xml\+Comment\+::\+To\+Comment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Cast to a more defined type. Will return null not of the requested type. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_ti_xml_node_a124af8d4f18a027384c92871cfcd5ca2}{Ti\+Xml\+Node}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Libraries/gookto\+\_\+io/includes/gookto\+\_\+io/tinyapi/\mbox{\hyperlink{tinyxml_8h}{tinyxml.\+h}}\item 
+Libraries/gookto\+\_\+io/sources/gookto\+\_\+io/tinyapi/\mbox{\hyperlink{tinyxml_8cpp}{tinyxml.\+cpp}}\item 
+Libraries/gookto\+\_\+io/sources/gookto\+\_\+io/tinyapi/\mbox{\hyperlink{tinyxmlparser_8cpp}{tinyxmlparser.\+cpp}}\end{DoxyCompactItemize}

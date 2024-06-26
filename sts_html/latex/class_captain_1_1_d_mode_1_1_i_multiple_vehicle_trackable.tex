@@ -1,0 +1,166 @@
+\doxysection{Captain\+::DMode\+::IMultiple\+Vehicle\+Trackable Class Reference}
+\hypertarget{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable}{}\label{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable}\index{Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}}
+
+
+ 
+
+
+
+
+{\ttfamily \#include $<$Drive\+Model.\+hpp$>$}
+
+
+
+Inheritance diagram for Captain\+::DMode\+::IMultiple\+Vehicle\+Trackable\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Captain\+::DMode\+::IMultiple\+Vehicle\+Trackable\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a92dfa284eb4ed783c28c86d4f048e649}{IMultiple\+Vehicle\+Trackable}} ()=default
+\item 
+virtual \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_aff82786bbfdbcb2c758b5f0d206f7c21}{\texorpdfstring{$\sim$}{\string~}\+IMultiple\+Vehicle\+Trackable}} ()=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a9079c6095a25b38f4676dee054138f3f}{IMultiple\+Vehicle\+Trackable}} (const \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable}{IMultiple\+Vehicle\+Trackable}} \&other)=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_acda0ada48c86ae93dcc7a95167292c26}{IMultiple\+Vehicle\+Trackable}} (\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable}{IMultiple\+Vehicle\+Trackable}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable}{IMultiple\+Vehicle\+Trackable}} \& \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a800a6350251f7899208e37f894b3db1f}{operator=}} (const \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable}{IMultiple\+Vehicle\+Trackable}} \&other)=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable}{IMultiple\+Vehicle\+Trackable}} \& \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a9885bb846ff8135fcd7ccd0b62305efb}{operator=}} (\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable}{IMultiple\+Vehicle\+Trackable}} \&\&other) noexcept=default
+\item 
+std\+::list$<$ \mbox{\hyperlink{namespace_captain_1_1_d_mode_af0bcc1092020155c4cf62ece22341b67}{Vehicle\+Info\+State\+Pair}} $>$ \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a23918c57a01f7d37ea7176d451c13bf9}{Get\+Target\+Leader\+List}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a917938e5731b67214f06b3d61baea131}{Set\+Target\+Leader\+List}} (const std\+::list$<$ \mbox{\hyperlink{namespace_captain_1_1_d_mode_af0bcc1092020155c4cf62ece22341b67}{Vehicle\+Info\+State\+Pair}} $>$ \&target\+Vehicle\+Position\+Vector)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a88d86d33a19570a13c11ff6b9569f3c7}{Set\+Target\+Leader}} (\mbox{\hyperlink{namespace_captain_1_1_d_mode_af0bcc1092020155c4cf62ece22341b67}{Vehicle\+Info\+State\+Pair}} vehicle\+Info\+State\+Pair)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a5de873093fe9ee0c071aba71617f8152}{Add\+Tracking\+Vehicle}} (const \mbox{\hyperlink{namespace_captain_1_1_d_mode_af0bcc1092020155c4cf62ece22341b67}{Vehicle\+Info\+State\+Pair}} \&vehicle\+Info\+State\+Pair)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_ae02344b4fbc50fbb7a02302ca99b4606}{Remove\+Tracking\+Vehicle}} (const \mbox{\hyperlink{namespace_captain_1_1_d_mode_af0bcc1092020155c4cf62ece22341b67}{Vehicle\+Info\+State\+Pair}} \&vehicle\+Info\+State\+Pair)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_ade12fb2b39d02d172294fa6664d6114b}{Clear}} ()
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_aac3188b83ec3533ceef2f4b8be6665a8}{Num\+Tracking\+Vehicles}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::list$<$ \mbox{\hyperlink{namespace_captain_1_1_d_mode_af0bcc1092020155c4cf62ece22341b67}{Vehicle\+Info\+State\+Pair}} $>$ \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a5d6229fdc934938da7b38bcdc65a820d}{m\+\_\+tracking\+Vehicle\+List}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a92dfa284eb4ed783c28c86d4f048e649}\label{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a92dfa284eb4ed783c28c86d4f048e649} 
+\index{Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}!IMultipleVehicleTrackable@{IMultipleVehicleTrackable}}
+\index{IMultipleVehicleTrackable@{IMultipleVehicleTrackable}!Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}}
+\doxysubsubsection{\texorpdfstring{IMultipleVehicleTrackable()}{IMultipleVehicleTrackable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Captain\+::\+DMode\+::\+IMultiple\+Vehicle\+Trackable\+::\+IMultiple\+Vehicle\+Trackable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_aff82786bbfdbcb2c758b5f0d206f7c21}\label{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_aff82786bbfdbcb2c758b5f0d206f7c21} 
+\index{Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}!````~IMultipleVehicleTrackable@{\texorpdfstring{$\sim$}{\string~}IMultipleVehicleTrackable}}
+\index{````~IMultipleVehicleTrackable@{\texorpdfstring{$\sim$}{\string~}IMultipleVehicleTrackable}!Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IMultipleVehicleTrackable()}{\string~IMultipleVehicleTrackable()}}
+{\footnotesize\ttfamily virtual Captain\+::\+DMode\+::\+IMultiple\+Vehicle\+Trackable\+::\texorpdfstring{$\sim$}{\string~}\+IMultiple\+Vehicle\+Trackable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\Hypertarget{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a9079c6095a25b38f4676dee054138f3f}\label{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a9079c6095a25b38f4676dee054138f3f} 
+\index{Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}!IMultipleVehicleTrackable@{IMultipleVehicleTrackable}}
+\index{IMultipleVehicleTrackable@{IMultipleVehicleTrackable}!Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}}
+\doxysubsubsection{\texorpdfstring{IMultipleVehicleTrackable()}{IMultipleVehicleTrackable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Captain\+::\+DMode\+::\+IMultiple\+Vehicle\+Trackable\+::\+IMultiple\+Vehicle\+Trackable (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable}{IMultiple\+Vehicle\+Trackable}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_acda0ada48c86ae93dcc7a95167292c26}\label{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_acda0ada48c86ae93dcc7a95167292c26} 
+\index{Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}!IMultipleVehicleTrackable@{IMultipleVehicleTrackable}}
+\index{IMultipleVehicleTrackable@{IMultipleVehicleTrackable}!Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}}
+\doxysubsubsection{\texorpdfstring{IMultipleVehicleTrackable()}{IMultipleVehicleTrackable()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Captain\+::\+DMode\+::\+IMultiple\+Vehicle\+Trackable\+::\+IMultiple\+Vehicle\+Trackable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable}{IMultiple\+Vehicle\+Trackable}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a5de873093fe9ee0c071aba71617f8152}\label{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a5de873093fe9ee0c071aba71617f8152} 
+\index{Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}!AddTrackingVehicle@{AddTrackingVehicle}}
+\index{AddTrackingVehicle@{AddTrackingVehicle}!Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}}
+\doxysubsubsection{\texorpdfstring{AddTrackingVehicle()}{AddTrackingVehicle()}}
+{\footnotesize\ttfamily void Captain\+::\+DMode\+::\+IMultiple\+Vehicle\+Trackable\+::\+Add\+Tracking\+Vehicle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_captain_1_1_d_mode_af0bcc1092020155c4cf62ece22341b67}{Vehicle\+Info\+State\+Pair}} \&}]{vehicle\+Info\+State\+Pair }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_ade12fb2b39d02d172294fa6664d6114b}\label{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_ade12fb2b39d02d172294fa6664d6114b} 
+\index{Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}!Clear@{Clear}}
+\index{Clear@{Clear}!Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void Captain\+::\+DMode\+::\+IMultiple\+Vehicle\+Trackable\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a23918c57a01f7d37ea7176d451c13bf9}\label{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a23918c57a01f7d37ea7176d451c13bf9} 
+\index{Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}!GetTargetLeaderList@{GetTargetLeaderList}}
+\index{GetTargetLeaderList@{GetTargetLeaderList}!Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}}
+\doxysubsubsection{\texorpdfstring{GetTargetLeaderList()}{GetTargetLeaderList()}}
+{\footnotesize\ttfamily std\+::list$<$ \mbox{\hyperlink{namespace_captain_1_1_d_mode_af0bcc1092020155c4cf62ece22341b67}{Vehicle\+Info\+State\+Pair}} $>$ Captain\+::\+DMode\+::\+IMultiple\+Vehicle\+Trackable\+::\+Get\+Target\+Leader\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_aac3188b83ec3533ceef2f4b8be6665a8}\label{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_aac3188b83ec3533ceef2f4b8be6665a8} 
+\index{Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}!NumTrackingVehicles@{NumTrackingVehicles}}
+\index{NumTrackingVehicles@{NumTrackingVehicles}!Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}}
+\doxysubsubsection{\texorpdfstring{NumTrackingVehicles()}{NumTrackingVehicles()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Captain\+::\+DMode\+::\+IMultiple\+Vehicle\+Trackable\+::\+Num\+Tracking\+Vehicles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a800a6350251f7899208e37f894b3db1f}\label{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a800a6350251f7899208e37f894b3db1f} 
+\index{Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable}{IMultiple\+Vehicle\+Trackable}} \& Captain\+::\+DMode\+::\+IMultiple\+Vehicle\+Trackable\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable}{IMultiple\+Vehicle\+Trackable}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a9885bb846ff8135fcd7ccd0b62305efb}\label{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a9885bb846ff8135fcd7ccd0b62305efb} 
+\index{Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable}{IMultiple\+Vehicle\+Trackable}} \& Captain\+::\+DMode\+::\+IMultiple\+Vehicle\+Trackable\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable}{IMultiple\+Vehicle\+Trackable}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_ae02344b4fbc50fbb7a02302ca99b4606}\label{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_ae02344b4fbc50fbb7a02302ca99b4606} 
+\index{Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}!RemoveTrackingVehicle@{RemoveTrackingVehicle}}
+\index{RemoveTrackingVehicle@{RemoveTrackingVehicle}!Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}}
+\doxysubsubsection{\texorpdfstring{RemoveTrackingVehicle()}{RemoveTrackingVehicle()}}
+{\footnotesize\ttfamily void Captain\+::\+DMode\+::\+IMultiple\+Vehicle\+Trackable\+::\+Remove\+Tracking\+Vehicle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_captain_1_1_d_mode_af0bcc1092020155c4cf62ece22341b67}{Vehicle\+Info\+State\+Pair}} \&}]{vehicle\+Info\+State\+Pair }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a88d86d33a19570a13c11ff6b9569f3c7}\label{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a88d86d33a19570a13c11ff6b9569f3c7} 
+\index{Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}!SetTargetLeader@{SetTargetLeader}}
+\index{SetTargetLeader@{SetTargetLeader}!Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}}
+\doxysubsubsection{\texorpdfstring{SetTargetLeader()}{SetTargetLeader()}}
+{\footnotesize\ttfamily void Captain\+::\+DMode\+::\+IMultiple\+Vehicle\+Trackable\+::\+Set\+Target\+Leader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_captain_1_1_d_mode_af0bcc1092020155c4cf62ece22341b67}{Vehicle\+Info\+State\+Pair}}}]{vehicle\+Info\+State\+Pair }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a917938e5731b67214f06b3d61baea131}\label{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a917938e5731b67214f06b3d61baea131} 
+\index{Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}!SetTargetLeaderList@{SetTargetLeaderList}}
+\index{SetTargetLeaderList@{SetTargetLeaderList}!Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}}
+\doxysubsubsection{\texorpdfstring{SetTargetLeaderList()}{SetTargetLeaderList()}}
+{\footnotesize\ttfamily void Captain\+::\+DMode\+::\+IMultiple\+Vehicle\+Trackable\+::\+Set\+Target\+Leader\+List (\begin{DoxyParamCaption}\item[{const std\+::list$<$ \mbox{\hyperlink{namespace_captain_1_1_d_mode_af0bcc1092020155c4cf62ece22341b67}{Vehicle\+Info\+State\+Pair}} $>$ \&}]{target\+Vehicle\+Position\+Vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a5d6229fdc934938da7b38bcdc65a820d}\label{class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable_a5d6229fdc934938da7b38bcdc65a820d} 
+\index{Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}!m\_trackingVehicleList@{m\_trackingVehicleList}}
+\index{m\_trackingVehicleList@{m\_trackingVehicleList}!Captain::DMode::IMultipleVehicleTrackable@{Captain::DMode::IMultipleVehicleTrackable}}
+\doxysubsubsection{\texorpdfstring{m\_trackingVehicleList}{m\_trackingVehicleList}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{namespace_captain_1_1_d_mode_af0bcc1092020155c4cf62ece22341b67}{Vehicle\+Info\+State\+Pair}}$>$ Captain\+::\+DMode\+::\+IMultiple\+Vehicle\+Trackable\+::m\+\_\+tracking\+Vehicle\+List\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Micro\+Models/\mbox{\hyperlink{_drive_model_8hpp}{Drive\+Model.\+hpp}}\end{DoxyCompactItemize}

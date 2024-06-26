@@ -1,0 +1,1238 @@
+\doxysection{Captain\+::Engine Class Reference}
+\hypertarget{class_captain_1_1_engine}{}\label{class_captain_1_1_engine}\index{Captain::Engine@{Captain::Engine}}
+
+
+ 
+
+
+
+
+{\ttfamily \#include $<$Engine.\+hpp$>$}
+
+
+
+Collaboration diagram for Captain\+::Engine\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{class_captain_1_1_engine__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_captain_1_1_engine_ac3145375a7873613bade539f8b6d8d4a}{Engine}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{struct_captain_1_1_meso_computation_model}{Meso\+Computation\+Model}} $>$ computation\+Model)
+\item 
+\mbox{\hyperlink{class_captain_1_1_engine_a5b8b47066aea12419b5b19da51762cac}{\texorpdfstring{$\sim$}{\string~}\+Engine}} ()=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link}{Node\+::\+Uniform\+Link}} $>$ \mbox{\hyperlink{class_captain_1_1_engine_aef63ffd5f6b7a376ab9d64c90cfb6c62}{Add\+Uniform\+Link}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&unit\+Identifier, const \mbox{\hyperlink{struct_captain_1_1_meso_link_info}{Meso\+Link\+Info}} \&meso\+Link\+Info, const \mbox{\hyperlink{struct_captain_1_1_micro_link_info}{Micro\+Link\+Info}} \&micro\+Link\+Info, bool mode)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a0af10fbfcfaba6cdd394c930acddb10e}{Add\+Intersection\+Link}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&unit\+Identifier, const \mbox{\hyperlink{struct_captain_1_1_meso_link_info}{Meso\+Link\+Info}} \&meso\+Link\+Info, const \mbox{\hyperlink{struct_captain_1_1_micro_link_info}{Micro\+Link\+Info}} \&micro\+Link\+Info, bool mode)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_ac7380a7e3c05d9b752f6f78f03664cf0}{Add\+Source\+Unit}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&unit\+Identifier, int capacity)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_ad4d9eabb260c28cbcd952d5ffad74028}{Add\+Source\+Unitfor\+Routing}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&unit\+Identifier)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a76864950f085e13467b266467034e0de}{Add\+Source\+Unit}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&unit\+Identifier, int capacity, std\+::vector$<$ std\+::vector$<$ std\+::tuple$<$ \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}}, std\+::size\+\_\+t, double $>$ $>$ $>$ sink\+Demand\+Pair\+Vector, std\+::vector$<$ std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}}, std\+::size\+\_\+t $>$ $>$ $>$ path\+Demand\+Pair\+Vector)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_aff915ba22d5c8a79d1e05660b7469ed6}{Add\+Station}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&unit\+Identifier, const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&target\+Identifier, std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_position}{Position}} $>$ park\+Position\+Vector)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a2fbea5df62a7e07293abc15bf821404a}{Set\+V2X}} (const int node\+\_\+id, bool v2x\+Active)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_ae4ffa9c1bafae6d9b49a2dfbf5836548}{Add\+Node\+Message}} (const int node\+\_\+id, \mbox{\hyperlink{struct_captain_1_1_message}{Message}} message)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_aa618a24b4be7c19eaac60feb4bfda040}{Add\+Event}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&target\+Identifier, int type, double event\+Position, double s\+Time, double e\+Time, int sern)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a52b7d47a6f13cac998f68fd0f2f8b6a1}{Reserve\+Vehicle\+Output}} (const std\+::vector$<$ \mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info}{Vehicle\+Reservation\+Info}} $>$ \&reserved\+Vehicle\+Info, const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&source\+Identifier)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_abffad9c88f05d3949fffa11d70e14d05}{Add\+Sink\+Unit}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&unit\+Identifier, int capacity)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a907a2b17101c5cd094f0f365653b97ba}{Add\+Sink\+Unitfor\+Routing}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&unit\+Identifier)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a7c12b81f74b1951b2a8297438e1873b8}{Initialize\+Links}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a3122c1492154eb6c35c7397198a02348}{Set\+Sink\+Demand\+Pair\+Vector}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&source\+Id, const std\+::vector$<$ std\+::vector$<$ std\+::tuple$<$ \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}}, std\+::size\+\_\+t, double $>$ $>$ $>$ \&sink\+Demand\+Pair\+Vector)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a39ee5bf779d7881c6e78abebb54e7a42}{Set\+Path\+Demand\+Pair\+Vector}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&source\+Id, const std\+::vector$<$ std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}}, std\+::size\+\_\+t $>$ $>$ $>$ \&path\+Demand\+Pair\+Vector)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a16df9c4d85958a3bf3298afe112ec99d}{Set\+Stop\+Vehicle\+Map}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&target\+Unit, const std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_unit_connection_descriptor}{Unit\+Connection\+Descriptor}} $>$ \&follower\+Connection\+Info, int lane\+ID)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a03ca98f9f8443de3b9ee0a159dba1600}{Set\+Link\+Follower\+Connection\+Info}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&target\+Unit, const std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_unit_connection_descriptor}{Unit\+Connection\+Descriptor}} $>$ \&follower\+Connection\+Info, int lane\+ID)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a0491f35277ddadda1e3bc645740bdf60}{Set\+Link\+Leader\+Connection\+Info}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&target\+Unit, const \mbox{\hyperlink{struct_captain_1_1_unit_connection_descriptor}{Unit\+Connection\+Descriptor}} \&leader\+Connection\+Info, int lane\+ID)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_af24be9c94f0f16572554bd07eeb2fd81}{Set\+Sink\+Connection\+Info}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&sink\+Identifier, const \mbox{\hyperlink{struct_captain_1_1_unit_connection_descriptor}{Unit\+Connection\+Descriptor}} \&follower\+Connection\+Info)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a5dac41f7bf360062bb6193f8684a2994}{Set\+Source\+Connection\+Info}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&source\+Identifier, const \mbox{\hyperlink{struct_captain_1_1_unit_connection_descriptor}{Unit\+Connection\+Descriptor}} \&leader\+Connection\+Info)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_ac3df71347e216ad9eaf62cbbc12323f6}{Set\+Meso\+Computation\+Model}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{struct_captain_1_1_meso_computation_model}{Meso\+Computation\+Model}} $>$ meso\+Model)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a4e8507734ff9120e35cff8f87dab2708}{Reset\+Connection\+Info}} (std\+::vector$<$ int $>$ micro\+Link\+Arr, std\+::vector$<$ int $>$ meso\+Link\+Arr)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a6c3acfc13f33e013ea740ba3d2864f97}{Set\+Micro\+Link\+Map}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a2443918ce6c97dbc59e49d3a70bf681c}{Update\+Unit\+Map}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_ae893c85b61c1f249ee217e41fc65e6ac}{Initialize\+Signal}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_af2e18d79381d5bf9b9b6a7f1c9f89fbb}{Set\+Follower\+Connection\+Map}} (std\+::tuple$<$ int, int, \mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}} $>$ unit, std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_unit_connection_descriptor}{Unit\+Connection\+Descriptor}} $>$ followers)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a6620266005121be3ccc236de6806e746}{Set\+Leader\+Connection\+Map}} (std\+::tuple$<$ int, int, \mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}} $>$ unit, std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_unit_connection_descriptor}{Unit\+Connection\+Descriptor}} $>$ leaders)
+\item 
+bool \mbox{\hyperlink{class_captain_1_1_engine_a04f89ada5be6c944be38bfaae85e8249}{Temporal\+Transition}} (std\+::size\+\_\+t cycle, std\+::vector$<$ \mbox{\hyperlink{class_mode}{Mode}} $>$ mode\+Vector)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a229e6caae0725391dc7f20e26a994d30}{Execute\+Uniform}} (std\+::size\+\_\+t cycle, bool mode=true)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a2a9bc738a8a85cd57cff9fabe32fc47a}{Execute\+Source}} (std\+::size\+\_\+t cycle, bool is\+Micro)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_ae09d3975baded4b5ac4e5e373d657d8d}{Execute\+Sink}} (std\+::size\+\_\+t cycle)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_aec5c3db7e2919dfefbe4c1d95c1787cf}{Execute\+Sink\+With\+Sorted\+Flushing}} (std\+::size\+\_\+t cycle)
+\begin{DoxyCompactList}\small\item\em Executes sink cycle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a583a2c7168d2eb5a47c7c084d65e28ad}{Flush\+Recordings}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a336c7ce29a2b0e841e4be079e054dfc9}{Flush\+Sorted\+Recordings}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_ac6d69a2cb8dd2929a442d84aa986b9e7}{Initialize\+Recordings}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a49522fc7a56073ed57824d98b357c164}{Terminate\+Recordings}} ()
+\item 
+\mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}} \mbox{\hyperlink{class_captain_1_1_engine_a4bf7b146a05d4eb94733cbcee3b2f096}{parse\+Vehicle\+Info}} (const rapidjson\+::\+Value \&vehicle\+Info\+Object)
+\item 
+\mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} \mbox{\hyperlink{class_captain_1_1_engine_ad81e51c73e2b257fe0df2aedf1d6a424}{parse\+Vehicle\+State}} (const rapidjson\+::\+Value \&vehicle\+State\+Object)
+\item 
+\mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} \mbox{\hyperlink{class_captain_1_1_engine_a1d24c67492ad8ce4ae4ba01e216dd90a}{parse\+Vehicle\+Path}} (const rapidjson\+::\+Value \&vehicle\+Path\+Object)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a921cc1015bd55ffc7c1674d8b74f02b1}{Extract\+Vehicle}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_af256ec7a83b9a7d1cf794aac0c978dd9}{Add\+Vehicle}} ()
+\item 
+\mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link}{Node\+::\+Uniform\+Link}} $>$ \mbox{\hyperlink{class_captain_1_1_engine_a83fdafe3250e122f8ed4ebc4ba13ea10}{Get\+Uniform\+Link}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&unit\+Identifier)
+\item 
+\mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_node_1_1_sink_unit}{Node\+::\+Sink\+Unit}} $>$ \mbox{\hyperlink{class_captain_1_1_engine_aa6178100315d50f8141609e3af35b3cb}{Get\+Sink\+Unit}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&unit\+Identifier)
+\item 
+\mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_node_1_1_source_unit}{Node\+::\+Source\+Unit}} $>$ \mbox{\hyperlink{class_captain_1_1_engine_a23ef6f8337c49b1d5cf3b4492db3845d}{Get\+Source\+Unit}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&unit\+Identifier)
+\item 
+\mbox{\hyperlink{struct_captain_1_1_route}{Route}} \mbox{\hyperlink{class_captain_1_1_engine_aa956fe0cc5d2d9fc0fadcf6642affca5}{Find\+Route\+From\+Intersection}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&interection, const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&destination, std\+::size\+\_\+t cycle)
+\item 
+\mbox{\hyperlink{struct_captain_1_1_route}{Route}} \mbox{\hyperlink{class_captain_1_1_engine_a731f77785fe80d16d7ecbaabbaa60db8}{Find\+Route}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&source, const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&destination, std\+::size\+\_\+t cycle)
+\item 
+std\+::pair$<$ std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} $>$, std\+::vector$<$ std\+::vector$<$ double $>$ $>$ $>$ \mbox{\hyperlink{class_captain_1_1_engine_acf288a69cc65a6ae9a170f1fea887623}{Unit\+IDto\+Path\+ID}} (std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} $>$ Unit\+Vector)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a7736c382a399803aa7e1dca27d1b3112}{Generate\+Routes}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a647b50d68f8ab0e5a8626c43030c8bba}{Generate\+Routes\+From\+Intersection}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a0444f771c729ba6f40d29ec9c57b0a5f}{Initialize\+Extracting\+Routes}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_ad37d2ef3bc43787bc2cfb5c8c02f0c8e}{Extract\+Routes}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a89d809e4a2570a738b8454fa37bf656e}{Extract\+Routes\+From\+Intersection}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a35bea714497e63ced4fd1d00805b8adc}{Terminate\+Extracting\+Routes}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_a6cd29623750e0874cb7b4b6080570035}{Add\+Routes}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_engine_af0d416fc6d1b91e0ae6c5affd39c8d48}{Record\+Simulation\+Time}} (size\+\_\+t meso\+Epochs, double duration)
+\item 
+\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \mbox{\hyperlink{class_captain_1_1_engine_aa515c21ae8da4e8f4c445a7f1d01da4c}{m\+\_\+find\+Unit}} (int unit\+ID, \mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}} type)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_captain_1_1_engine_ac3145375a7873613bade539f8b6d8d4a}\label{class_captain_1_1_engine_ac3145375a7873613bade539f8b6d8d4a} 
+\index{Captain::Engine@{Captain::Engine}!Engine@{Engine}}
+\index{Engine@{Engine}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{Engine()}{Engine()}}
+{\footnotesize\ttfamily Captain\+::\+Engine\+::\+Engine (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{struct_captain_1_1_meso_computation_model}{Meso\+Computation\+Model}} $>$}]{computation\+Model }\end{DoxyParamCaption})}
+
+\Hypertarget{class_captain_1_1_engine_a5b8b47066aea12419b5b19da51762cac}\label{class_captain_1_1_engine_a5b8b47066aea12419b5b19da51762cac} 
+\index{Captain::Engine@{Captain::Engine}!````~Engine@{\texorpdfstring{$\sim$}{\string~}Engine}}
+\index{````~Engine@{\texorpdfstring{$\sim$}{\string~}Engine}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Engine()}{\string~Engine()}}
+{\footnotesize\ttfamily Captain\+::\+Engine\+::\texorpdfstring{$\sim$}{\string~}\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_captain_1_1_engine_aa618a24b4be7c19eaac60feb4bfda040}\label{class_captain_1_1_engine_aa618a24b4be7c19eaac60feb4bfda040} 
+\index{Captain::Engine@{Captain::Engine}!AddEvent@{AddEvent}}
+\index{AddEvent@{AddEvent}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{AddEvent()}{AddEvent()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Add\+Event (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{target\+Identifier,  }\item[{int}]{type,  }\item[{double}]{event\+Position,  }\item[{double}]{s\+Time,  }\item[{double}]{e\+Time,  }\item[{int}]{sern }\end{DoxyParamCaption})}
+
+Adds Event to the engine. 
+\begin{DoxyParams}{Parameters}
+{\em target\+Identifier} & \doxylink{struct_captain_1_1_unit_identifier}{Unit\+Identifier} of the unit to locate the event \\
+\hline
+{\em type} & event type \\
+\hline
+{\em event\+Position} & double \\
+\hline
+{\em s\+Time} & starting Time \\
+\hline
+{\em e\+Time} & End Time \\
+\hline
+{\em sern} & severity of the event \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_aa618a24b4be7c19eaac60feb4bfda040_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_aa618a24b4be7c19eaac60feb4bfda040_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a0af10fbfcfaba6cdd394c930acddb10e}\label{class_captain_1_1_engine_a0af10fbfcfaba6cdd394c930acddb10e} 
+\index{Captain::Engine@{Captain::Engine}!AddIntersectionLink@{AddIntersectionLink}}
+\index{AddIntersectionLink@{AddIntersectionLink}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{AddIntersectionLink()}{AddIntersectionLink()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Add\+Intersection\+Link (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{unit\+Identifier,  }\item[{const \mbox{\hyperlink{struct_captain_1_1_meso_link_info}{Meso\+Link\+Info}} \&}]{meso\+Link\+Info,  }\item[{const \mbox{\hyperlink{struct_captain_1_1_micro_link_info}{Micro\+Link\+Info}} \&}]{micro\+Link\+Info,  }\item[{bool}]{mode }\end{DoxyParamCaption})}
+
+Adds intersection link 
+\begin{DoxyParams}{Parameters}
+{\em unit\+Identifier} & intersection identifier \\
+\hline
+{\em meso\+Link\+Infot} & intersection meso link information \\
+\hline
+{\em micro\+Link\+Info} & intersection micro link information \\
+\hline
+{\em mode} & true if micro, false if meso \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a0af10fbfcfaba6cdd394c930acddb10e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a0af10fbfcfaba6cdd394c930acddb10e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_ae4ffa9c1bafae6d9b49a2dfbf5836548}\label{class_captain_1_1_engine_ae4ffa9c1bafae6d9b49a2dfbf5836548} 
+\index{Captain::Engine@{Captain::Engine}!AddNodeMessage@{AddNodeMessage}}
+\index{AddNodeMessage@{AddNodeMessage}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{AddNodeMessage()}{AddNodeMessage()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Add\+Node\+Message (\begin{DoxyParamCaption}\item[{const int}]{node\+\_\+id,  }\item[{\mbox{\hyperlink{struct_captain_1_1_message}{Message}}}]{message }\end{DoxyParamCaption})}
+
+Adds node \doxylink{class_captain_1_1_v2_x}{V2X} to the engine. 
+\begin{DoxyParams}{Parameters}
+{\em node\+\_\+id} & id of the target node \\
+\hline
+{\em message} & message that will be locate to v2x \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_ae4ffa9c1bafae6d9b49a2dfbf5836548_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a6cd29623750e0874cb7b4b6080570035}\label{class_captain_1_1_engine_a6cd29623750e0874cb7b4b6080570035} 
+\index{Captain::Engine@{Captain::Engine}!AddRoutes@{AddRoutes}}
+\index{AddRoutes@{AddRoutes}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{AddRoutes()}{AddRoutes()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Add\+Routes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a6cd29623750e0874cb7b4b6080570035_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a6cd29623750e0874cb7b4b6080570035_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_abffad9c88f05d3949fffa11d70e14d05}\label{class_captain_1_1_engine_abffad9c88f05d3949fffa11d70e14d05} 
+\index{Captain::Engine@{Captain::Engine}!AddSinkUnit@{AddSinkUnit}}
+\index{AddSinkUnit@{AddSinkUnit}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{AddSinkUnit()}{AddSinkUnit()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Add\+Sink\+Unit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{unit\+Identifier,  }\item[{int}]{capacity }\end{DoxyParamCaption})}
+
+Adds Sink to m\+\_\+sink\+Unit\+Ptr\+Vector by Constructing it from given parameters 
+\begin{DoxyParams}{Parameters}
+{\em unit\+Identifier} & Unique \doxylink{struct_captain_1_1_unit_identifier}{Unit\+Identifier} used to represent this unit \\
+\hline
+{\em capacity} & maximum capacity of m\+\_\+vehicle\+Queue \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_abffad9c88f05d3949fffa11d70e14d05_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_abffad9c88f05d3949fffa11d70e14d05_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a907a2b17101c5cd094f0f365653b97ba}\label{class_captain_1_1_engine_a907a2b17101c5cd094f0f365653b97ba} 
+\index{Captain::Engine@{Captain::Engine}!AddSinkUnitforRouting@{AddSinkUnitforRouting}}
+\index{AddSinkUnitforRouting@{AddSinkUnitforRouting}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{AddSinkUnitforRouting()}{AddSinkUnitforRouting()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Add\+Sink\+Unitfor\+Routing (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{unit\+Identifier }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_captain_1_1_engine_a907a2b17101c5cd094f0f365653b97ba_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a907a2b17101c5cd094f0f365653b97ba_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_ac7380a7e3c05d9b752f6f78f03664cf0}\label{class_captain_1_1_engine_ac7380a7e3c05d9b752f6f78f03664cf0} 
+\index{Captain::Engine@{Captain::Engine}!AddSourceUnit@{AddSourceUnit}}
+\index{AddSourceUnit@{AddSourceUnit}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{AddSourceUnit()}{AddSourceUnit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Add\+Source\+Unit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{unit\+Identifier,  }\item[{int}]{capacity }\end{DoxyParamCaption})}
+
+Adds Source to m\+\_\+source\+Unit\+Ptr\+Vector by constructing it with given parameters 
+\begin{DoxyParams}{Parameters}
+{\em unit\+Identifier} & \doxylink{struct_captain_1_1_unit_identifier}{Unit\+Identifier} for identifying this particular unit \\
+\hline
+{\em capacity} & maximum capacity of m\+\_\+vehicle\+Queue for \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_ac7380a7e3c05d9b752f6f78f03664cf0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_ac7380a7e3c05d9b752f6f78f03664cf0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a76864950f085e13467b266467034e0de}\label{class_captain_1_1_engine_a76864950f085e13467b266467034e0de} 
+\index{Captain::Engine@{Captain::Engine}!AddSourceUnit@{AddSourceUnit}}
+\index{AddSourceUnit@{AddSourceUnit}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{AddSourceUnit()}{AddSourceUnit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Add\+Source\+Unit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{unit\+Identifier,  }\item[{int}]{capacity,  }\item[{std\+::vector$<$ std\+::vector$<$ std\+::tuple$<$ \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}}, std\+::size\+\_\+t, double $>$ $>$ $>$}]{sink\+Demand\+Pair\+Vector,  }\item[{std\+::vector$<$ std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}}, std\+::size\+\_\+t $>$ $>$ $>$}]{path\+Demand\+Pair\+Vector }\end{DoxyParamCaption})}
+
+Adds Source to m\+\_\+source\+Unit\+Ptr\+Vector by constructing it with given parameters 
+\begin{DoxyParams}{Parameters}
+{\em unit\+Identifier} & \doxylink{struct_captain_1_1_unit_identifier}{Unit\+Identifier} for identifying this particular unit \\
+\hline
+{\em capacity} & maximum capacity of m\+\_\+vehicle\+Queue for \\
+\hline
+{\em sink\+Demand\+Pair\+Vector} & pair of sink and demand of \doxylink{struct_captain_1_1_unit_identifier}{Unit\+Identifier} for vehicle creation \\
+\hline
+{\em path\+Demand\+Pair\+Vector} & vector that describes vehicles that are generated at specific phase storing vehicles temporarily \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a76864950f085e13467b266467034e0de_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_ad4d9eabb260c28cbcd952d5ffad74028}\label{class_captain_1_1_engine_ad4d9eabb260c28cbcd952d5ffad74028} 
+\index{Captain::Engine@{Captain::Engine}!AddSourceUnitforRouting@{AddSourceUnitforRouting}}
+\index{AddSourceUnitforRouting@{AddSourceUnitforRouting}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{AddSourceUnitforRouting()}{AddSourceUnitforRouting()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Add\+Source\+Unitfor\+Routing (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{unit\+Identifier }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_ad4d9eabb260c28cbcd952d5ffad74028_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_ad4d9eabb260c28cbcd952d5ffad74028_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_aff915ba22d5c8a79d1e05660b7469ed6}\label{class_captain_1_1_engine_aff915ba22d5c8a79d1e05660b7469ed6} 
+\index{Captain::Engine@{Captain::Engine}!AddStation@{AddStation}}
+\index{AddStation@{AddStation}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{AddStation()}{AddStation()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Add\+Station (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{unit\+Identifier,  }\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{target\+Identifier,  }\item[{std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_position}{Position}} $>$}]{park\+Position\+Vector }\end{DoxyParamCaption})}
+
+Adds Station to the engine. 
+\begin{DoxyParams}{Parameters}
+{\em unit\+Identifier} & \doxylink{struct_captain_1_1_unit_identifier}{Unit\+Identifier} for identifying this particular unit \\
+\hline
+{\em target\+Identifier} & \doxylink{struct_captain_1_1_unit_identifier}{Unit\+Identifier} of the unit to locate the station \\
+\hline
+{\em park\+Position\+Vector} & position of parking slots \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_aff915ba22d5c8a79d1e05660b7469ed6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_aff915ba22d5c8a79d1e05660b7469ed6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_aef63ffd5f6b7a376ab9d64c90cfb6c62}\label{class_captain_1_1_engine_aef63ffd5f6b7a376ab9d64c90cfb6c62} 
+\index{Captain::Engine@{Captain::Engine}!AddUniformLink@{AddUniformLink}}
+\index{AddUniformLink@{AddUniformLink}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{AddUniformLink()}{AddUniformLink()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link}{Node\+::\+Uniform\+Link}} $>$ Captain\+::\+Engine\+::\+Add\+Uniform\+Link (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{unit\+Identifier,  }\item[{const \mbox{\hyperlink{struct_captain_1_1_meso_link_info}{Meso\+Link\+Info}} \&}]{meso\+Link\+Info,  }\item[{const \mbox{\hyperlink{struct_captain_1_1_micro_link_info}{Micro\+Link\+Info}} \&}]{micro\+Link\+Info,  }\item[{bool}]{mode }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_aef63ffd5f6b7a376ab9d64c90cfb6c62_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_aef63ffd5f6b7a376ab9d64c90cfb6c62_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_af256ec7a83b9a7d1cf794aac0c978dd9}\label{class_captain_1_1_engine_af256ec7a83b9a7d1cf794aac0c978dd9} 
+\index{Captain::Engine@{Captain::Engine}!AddVehicle@{AddVehicle}}
+\index{AddVehicle@{AddVehicle}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{AddVehicle()}{AddVehicle()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Add\+Vehicle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_af256ec7a83b9a7d1cf794aac0c978dd9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_ae09d3975baded4b5ac4e5e373d657d8d}\label{class_captain_1_1_engine_ae09d3975baded4b5ac4e5e373d657d8d} 
+\index{Captain::Engine@{Captain::Engine}!ExecuteSink@{ExecuteSink}}
+\index{ExecuteSink@{ExecuteSink}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{ExecuteSink()}{ExecuteSink()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Execute\+Sink (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle }\end{DoxyParamCaption})}
+
+Executes sink cycle 
+\begin{DoxyParams}{Parameters}
+{\em cycle} & micro time step cycle \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_ae09d3975baded4b5ac4e5e373d657d8d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_aec5c3db7e2919dfefbe4c1d95c1787cf}\label{class_captain_1_1_engine_aec5c3db7e2919dfefbe4c1d95c1787cf} 
+\index{Captain::Engine@{Captain::Engine}!ExecuteSinkWithSortedFlushing@{ExecuteSinkWithSortedFlushing}}
+\index{ExecuteSinkWithSortedFlushing@{ExecuteSinkWithSortedFlushing}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{ExecuteSinkWithSortedFlushing()}{ExecuteSinkWithSortedFlushing()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Execute\+Sink\+With\+Sorted\+Flushing (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle }\end{DoxyParamCaption})}
+
+
+
+Executes sink cycle. 
+
+With sorted flushing if flushing is necessary 
+\begin{DoxyParams}{Parameters}
+{\em cycle} & micro time step cycle \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_captain_1_1_engine_a2a9bc738a8a85cd57cff9fabe32fc47a}\label{class_captain_1_1_engine_a2a9bc738a8a85cd57cff9fabe32fc47a} 
+\index{Captain::Engine@{Captain::Engine}!ExecuteSource@{ExecuteSource}}
+\index{ExecuteSource@{ExecuteSource}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{ExecuteSource()}{ExecuteSource()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Execute\+Source (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle,  }\item[{bool}]{is\+Micro }\end{DoxyParamCaption})}
+
+Executes one source cycle 
+\begin{DoxyParams}{Parameters}
+{\em cycle} & micro time step cycle \\
+\hline
+{\em is\+Micro} & Guarantees number of generated vehicles equals demand \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a2a9bc738a8a85cd57cff9fabe32fc47a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a229e6caae0725391dc7f20e26a994d30}\label{class_captain_1_1_engine_a229e6caae0725391dc7f20e26a994d30} 
+\index{Captain::Engine@{Captain::Engine}!ExecuteUniform@{ExecuteUniform}}
+\index{ExecuteUniform@{ExecuteUniform}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{ExecuteUniform()}{ExecuteUniform()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Execute\+Uniform (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle,  }\item[{bool}]{mode = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Executes unified unit 
+\begin{DoxyParams}{Parameters}
+{\em cycle} & micro time step cycle \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a229e6caae0725391dc7f20e26a994d30_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_ad37d2ef3bc43787bc2cfb5c8c02f0c8e}\label{class_captain_1_1_engine_ad37d2ef3bc43787bc2cfb5c8c02f0c8e} 
+\index{Captain::Engine@{Captain::Engine}!ExtractRoutes@{ExtractRoutes}}
+\index{ExtractRoutes@{ExtractRoutes}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{ExtractRoutes()}{ExtractRoutes()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Extract\+Routes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_ad37d2ef3bc43787bc2cfb5c8c02f0c8e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_ad37d2ef3bc43787bc2cfb5c8c02f0c8e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a89d809e4a2570a738b8454fa37bf656e}\label{class_captain_1_1_engine_a89d809e4a2570a738b8454fa37bf656e} 
+\index{Captain::Engine@{Captain::Engine}!ExtractRoutesFromIntersection@{ExtractRoutesFromIntersection}}
+\index{ExtractRoutesFromIntersection@{ExtractRoutesFromIntersection}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{ExtractRoutesFromIntersection()}{ExtractRoutesFromIntersection()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Extract\+Routes\+From\+Intersection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a89d809e4a2570a738b8454fa37bf656e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a89d809e4a2570a738b8454fa37bf656e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a921cc1015bd55ffc7c1674d8b74f02b1}\label{class_captain_1_1_engine_a921cc1015bd55ffc7c1674d8b74f02b1} 
+\index{Captain::Engine@{Captain::Engine}!ExtractVehicle@{ExtractVehicle}}
+\index{ExtractVehicle@{ExtractVehicle}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{ExtractVehicle()}{ExtractVehicle()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Extract\+Vehicle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a921cc1015bd55ffc7c1674d8b74f02b1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a921cc1015bd55ffc7c1674d8b74f02b1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a731f77785fe80d16d7ecbaabbaa60db8}\label{class_captain_1_1_engine_a731f77785fe80d16d7ecbaabbaa60db8} 
+\index{Captain::Engine@{Captain::Engine}!FindRoute@{FindRoute}}
+\index{FindRoute@{FindRoute}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{FindRoute()}{FindRoute()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_route}{Route}} Captain\+::\+Engine\+::\+Find\+Route (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{source,  }\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{destination,  }\item[{std\+::size\+\_\+t}]{cycle }\end{DoxyParamCaption})}
+
+Finds shortest Unit\+Route from source to destination Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a731f77785fe80d16d7ecbaabbaa60db8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_aa956fe0cc5d2d9fc0fadcf6642affca5}\label{class_captain_1_1_engine_aa956fe0cc5d2d9fc0fadcf6642affca5} 
+\index{Captain::Engine@{Captain::Engine}!FindRouteFromIntersection@{FindRouteFromIntersection}}
+\index{FindRouteFromIntersection@{FindRouteFromIntersection}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{FindRouteFromIntersection()}{FindRouteFromIntersection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_route}{Route}} Captain\+::\+Engine\+::\+Find\+Route\+From\+Intersection (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{interection,  }\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{destination,  }\item[{std\+::size\+\_\+t}]{cycle }\end{DoxyParamCaption})}
+
+Finds shortest Unit\+Route from current intersection to destination Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_aa956fe0cc5d2d9fc0fadcf6642affca5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a583a2c7168d2eb5a47c7c084d65e28ad}\label{class_captain_1_1_engine_a583a2c7168d2eb5a47c7c084d65e28ad} 
+\index{Captain::Engine@{Captain::Engine}!FlushRecordings@{FlushRecordings}}
+\index{FlushRecordings@{FlushRecordings}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{FlushRecordings()}{FlushRecordings()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Flush\+Recordings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a583a2c7168d2eb5a47c7c084d65e28ad_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a336c7ce29a2b0e841e4be079e054dfc9}\label{class_captain_1_1_engine_a336c7ce29a2b0e841e4be079e054dfc9} 
+\index{Captain::Engine@{Captain::Engine}!FlushSortedRecordings@{FlushSortedRecordings}}
+\index{FlushSortedRecordings@{FlushSortedRecordings}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{FlushSortedRecordings()}{FlushSortedRecordings()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Flush\+Sorted\+Recordings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a336c7ce29a2b0e841e4be079e054dfc9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a7736c382a399803aa7e1dca27d1b3112}\label{class_captain_1_1_engine_a7736c382a399803aa7e1dca27d1b3112} 
+\index{Captain::Engine@{Captain::Engine}!GenerateRoutes@{GenerateRoutes}}
+\index{GenerateRoutes@{GenerateRoutes}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{GenerateRoutes()}{GenerateRoutes()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Generate\+Routes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Finds shortest paths in the networks Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a7736c382a399803aa7e1dca27d1b3112_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a7736c382a399803aa7e1dca27d1b3112_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a647b50d68f8ab0e5a8626c43030c8bba}\label{class_captain_1_1_engine_a647b50d68f8ab0e5a8626c43030c8bba} 
+\index{Captain::Engine@{Captain::Engine}!GenerateRoutesFromIntersection@{GenerateRoutesFromIntersection}}
+\index{GenerateRoutesFromIntersection@{GenerateRoutesFromIntersection}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{GenerateRoutesFromIntersection()}{GenerateRoutesFromIntersection()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Generate\+Routes\+From\+Intersection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Finds shortest paths from intersection to destination in the networks Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a647b50d68f8ab0e5a8626c43030c8bba_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a647b50d68f8ab0e5a8626c43030c8bba_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_aa6178100315d50f8141609e3af35b3cb}\label{class_captain_1_1_engine_aa6178100315d50f8141609e3af35b3cb} 
+\index{Captain::Engine@{Captain::Engine}!GetSinkUnit@{GetSinkUnit}}
+\index{GetSinkUnit@{GetSinkUnit}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{GetSinkUnit()}{GetSinkUnit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_node_1_1_sink_unit}{Node\+::\+Sink\+Unit}} $>$ Captain\+::\+Engine\+::\+Get\+Sink\+Unit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{unit\+Identifier }\end{DoxyParamCaption})}
+
+\Hypertarget{class_captain_1_1_engine_a23ef6f8337c49b1d5cf3b4492db3845d}\label{class_captain_1_1_engine_a23ef6f8337c49b1d5cf3b4492db3845d} 
+\index{Captain::Engine@{Captain::Engine}!GetSourceUnit@{GetSourceUnit}}
+\index{GetSourceUnit@{GetSourceUnit}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{GetSourceUnit()}{GetSourceUnit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_node_1_1_source_unit}{Node\+::\+Source\+Unit}} $>$ Captain\+::\+Engine\+::\+Get\+Source\+Unit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{unit\+Identifier }\end{DoxyParamCaption})}
+
+\Hypertarget{class_captain_1_1_engine_a83fdafe3250e122f8ed4ebc4ba13ea10}\label{class_captain_1_1_engine_a83fdafe3250e122f8ed4ebc4ba13ea10} 
+\index{Captain::Engine@{Captain::Engine}!GetUniformLink@{GetUniformLink}}
+\index{GetUniformLink@{GetUniformLink}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{GetUniformLink()}{GetUniformLink()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link}{Node\+::\+Uniform\+Link}} $>$ Captain\+::\+Engine\+::\+Get\+Uniform\+Link (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{unit\+Identifier }\end{DoxyParamCaption})}
+
+\Hypertarget{class_captain_1_1_engine_a0444f771c729ba6f40d29ec9c57b0a5f}\label{class_captain_1_1_engine_a0444f771c729ba6f40d29ec9c57b0a5f} 
+\index{Captain::Engine@{Captain::Engine}!InitializeExtractingRoutes@{InitializeExtractingRoutes}}
+\index{InitializeExtractingRoutes@{InitializeExtractingRoutes}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{InitializeExtractingRoutes()}{InitializeExtractingRoutes()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Initialize\+Extracting\+Routes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a0444f771c729ba6f40d29ec9c57b0a5f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a0444f771c729ba6f40d29ec9c57b0a5f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a7c12b81f74b1951b2a8297438e1873b8}\label{class_captain_1_1_engine_a7c12b81f74b1951b2a8297438e1873b8} 
+\index{Captain::Engine@{Captain::Engine}!InitializeLinks@{InitializeLinks}}
+\index{InitializeLinks@{InitializeLinks}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{InitializeLinks()}{InitializeLinks()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Initialize\+Links (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initializes all links Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a7c12b81f74b1951b2a8297438e1873b8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_ac6d69a2cb8dd2929a442d84aa986b9e7}\label{class_captain_1_1_engine_ac6d69a2cb8dd2929a442d84aa986b9e7} 
+\index{Captain::Engine@{Captain::Engine}!InitializeRecordings@{InitializeRecordings}}
+\index{InitializeRecordings@{InitializeRecordings}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{InitializeRecordings()}{InitializeRecordings()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Initialize\+Recordings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_ac6d69a2cb8dd2929a442d84aa986b9e7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_ac6d69a2cb8dd2929a442d84aa986b9e7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_ae893c85b61c1f249ee217e41fc65e6ac}\label{class_captain_1_1_engine_ae893c85b61c1f249ee217e41fc65e6ac} 
+\index{Captain::Engine@{Captain::Engine}!InitializeSignal@{InitializeSignal}}
+\index{InitializeSignal@{InitializeSignal}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{InitializeSignal()}{InitializeSignal()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Initialize\+Signal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_ae893c85b61c1f249ee217e41fc65e6ac_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_aa515c21ae8da4e8f4c445a7f1d01da4c}\label{class_captain_1_1_engine_aa515c21ae8da4e8f4c445a7f1d01da4c} 
+\index{Captain::Engine@{Captain::Engine}!m\_findUnit@{m\_findUnit}}
+\index{m\_findUnit@{m\_findUnit}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{m\_findUnit()}{m\_findUnit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} Captain\+::\+Engine\+::m\+\_\+find\+Unit (\begin{DoxyParamCaption}\item[{int}]{unit\+ID,  }\item[{\mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}}}]{type }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_aa515c21ae8da4e8f4c445a7f1d01da4c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a4bf7b146a05d4eb94733cbcee3b2f096}\label{class_captain_1_1_engine_a4bf7b146a05d4eb94733cbcee3b2f096} 
+\index{Captain::Engine@{Captain::Engine}!parseVehicleInfo@{parseVehicleInfo}}
+\index{parseVehicleInfo@{parseVehicleInfo}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{parseVehicleInfo()}{parseVehicleInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}} Captain\+::\+Engine\+::parse\+Vehicle\+Info (\begin{DoxyParamCaption}\item[{const rapidjson\+::\+Value \&}]{vehicle\+Info\+Object }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a4bf7b146a05d4eb94733cbcee3b2f096_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a1d24c67492ad8ce4ae4ba01e216dd90a}\label{class_captain_1_1_engine_a1d24c67492ad8ce4ae4ba01e216dd90a} 
+\index{Captain::Engine@{Captain::Engine}!parseVehiclePath@{parseVehiclePath}}
+\index{parseVehiclePath@{parseVehiclePath}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{parseVehiclePath()}{parseVehiclePath()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} Captain\+::\+Engine\+::parse\+Vehicle\+Path (\begin{DoxyParamCaption}\item[{const rapidjson\+::\+Value \&}]{vehicle\+Path\+Object }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a1d24c67492ad8ce4ae4ba01e216dd90a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a1d24c67492ad8ce4ae4ba01e216dd90a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_ad81e51c73e2b257fe0df2aedf1d6a424}\label{class_captain_1_1_engine_ad81e51c73e2b257fe0df2aedf1d6a424} 
+\index{Captain::Engine@{Captain::Engine}!parseVehicleState@{parseVehicleState}}
+\index{parseVehicleState@{parseVehicleState}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{parseVehicleState()}{parseVehicleState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} Captain\+::\+Engine\+::parse\+Vehicle\+State (\begin{DoxyParamCaption}\item[{const rapidjson\+::\+Value \&}]{vehicle\+State\+Object }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_ad81e51c73e2b257fe0df2aedf1d6a424_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_ad81e51c73e2b257fe0df2aedf1d6a424_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_af0d416fc6d1b91e0ae6c5affd39c8d48}\label{class_captain_1_1_engine_af0d416fc6d1b91e0ae6c5affd39c8d48} 
+\index{Captain::Engine@{Captain::Engine}!RecordSimulationTime@{RecordSimulationTime}}
+\index{RecordSimulationTime@{RecordSimulationTime}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{RecordSimulationTime()}{RecordSimulationTime()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Record\+Simulation\+Time (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{meso\+Epochs,  }\item[{double}]{duration }\end{DoxyParamCaption})}
+
+Record Simulation Information at the end of Simulation Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_af0d416fc6d1b91e0ae6c5affd39c8d48_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a52b7d47a6f13cac998f68fd0f2f8b6a1}\label{class_captain_1_1_engine_a52b7d47a6f13cac998f68fd0f2f8b6a1} 
+\index{Captain::Engine@{Captain::Engine}!ReserveVehicleOutput@{ReserveVehicleOutput}}
+\index{ReserveVehicleOutput@{ReserveVehicleOutput}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{ReserveVehicleOutput()}{ReserveVehicleOutput()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Reserve\+Vehicle\+Output (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info}{Vehicle\+Reservation\+Info}} $>$ \&}]{reserved\+Vehicle\+Info,  }\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{source\+Identifier }\end{DoxyParamCaption})}
+
+Reserves vehicle output from the source 
+\begin{DoxyParams}{Parameters}
+{\em reserved\+Vehicle\+Info} & Vector of information about the reserved vehicles \\
+\hline
+{\em source\+Identifier} & \doxylink{struct_captain_1_1_unit_identifier}{Unit\+Identifier} of the source unit to create reserved vehicle \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a52b7d47a6f13cac998f68fd0f2f8b6a1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a4e8507734ff9120e35cff8f87dab2708}\label{class_captain_1_1_engine_a4e8507734ff9120e35cff8f87dab2708} 
+\index{Captain::Engine@{Captain::Engine}!ResetConnectionInfo@{ResetConnectionInfo}}
+\index{ResetConnectionInfo@{ResetConnectionInfo}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{ResetConnectionInfo()}{ResetConnectionInfo()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Reset\+Connection\+Info (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{micro\+Link\+Arr,  }\item[{std\+::vector$<$ int $>$}]{meso\+Link\+Arr }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a4e8507734ff9120e35cff8f87dab2708_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a4e8507734ff9120e35cff8f87dab2708_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_af2e18d79381d5bf9b9b6a7f1c9f89fbb}\label{class_captain_1_1_engine_af2e18d79381d5bf9b9b6a7f1c9f89fbb} 
+\index{Captain::Engine@{Captain::Engine}!SetFollowerConnectionMap@{SetFollowerConnectionMap}}
+\index{SetFollowerConnectionMap@{SetFollowerConnectionMap}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{SetFollowerConnectionMap()}{SetFollowerConnectionMap()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Set\+Follower\+Connection\+Map (\begin{DoxyParamCaption}\item[{std\+::tuple$<$ int, int, \mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}} $>$}]{unit,  }\item[{std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_unit_connection_descriptor}{Unit\+Connection\+Descriptor}} $>$}]{followers }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_af2e18d79381d5bf9b9b6a7f1c9f89fbb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a6620266005121be3ccc236de6806e746}\label{class_captain_1_1_engine_a6620266005121be3ccc236de6806e746} 
+\index{Captain::Engine@{Captain::Engine}!SetLeaderConnectionMap@{SetLeaderConnectionMap}}
+\index{SetLeaderConnectionMap@{SetLeaderConnectionMap}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{SetLeaderConnectionMap()}{SetLeaderConnectionMap()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Set\+Leader\+Connection\+Map (\begin{DoxyParamCaption}\item[{std\+::tuple$<$ int, int, \mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}} $>$}]{unit,  }\item[{std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_unit_connection_descriptor}{Unit\+Connection\+Descriptor}} $>$}]{leaders }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a6620266005121be3ccc236de6806e746_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a03ca98f9f8443de3b9ee0a159dba1600}\label{class_captain_1_1_engine_a03ca98f9f8443de3b9ee0a159dba1600} 
+\index{Captain::Engine@{Captain::Engine}!SetLinkFollowerConnectionInfo@{SetLinkFollowerConnectionInfo}}
+\index{SetLinkFollowerConnectionInfo@{SetLinkFollowerConnectionInfo}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{SetLinkFollowerConnectionInfo()}{SetLinkFollowerConnectionInfo()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Set\+Link\+Follower\+Connection\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{target\+Unit,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_unit_connection_descriptor}{Unit\+Connection\+Descriptor}} $>$ \&}]{follower\+Connection\+Info,  }\item[{int}]{lane\+ID }\end{DoxyParamCaption})}
+
+Sets follower connection information to subject lane of subject link 
+\begin{DoxyParams}{Parameters}
+{\em target\+Unit} & subject unit to set relationship \\
+\hline
+{\em follower\+Connection\+Info} & connection Information for subject towards follower \\
+\hline
+{\em lane\+ID} & ID of the lane unit to follower \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a03ca98f9f8443de3b9ee0a159dba1600_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a0491f35277ddadda1e3bc645740bdf60}\label{class_captain_1_1_engine_a0491f35277ddadda1e3bc645740bdf60} 
+\index{Captain::Engine@{Captain::Engine}!SetLinkLeaderConnectionInfo@{SetLinkLeaderConnectionInfo}}
+\index{SetLinkLeaderConnectionInfo@{SetLinkLeaderConnectionInfo}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{SetLinkLeaderConnectionInfo()}{SetLinkLeaderConnectionInfo()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Set\+Link\+Leader\+Connection\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{target\+Unit,  }\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_connection_descriptor}{Unit\+Connection\+Descriptor}} \&}]{leader\+Connection\+Info,  }\item[{int}]{lane\+ID }\end{DoxyParamCaption})}
+
+Sets follower connection information to subject lane of subject link 
+\begin{DoxyParams}{Parameters}
+{\em target\+Unit} & subject unit to set relationship \\
+\hline
+{\em follower\+Connection\+Info} & connection Information for subject towards leader \\
+\hline
+{\em lane\+ID} & ID for the subject lane \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a0491f35277ddadda1e3bc645740bdf60_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_ac3df71347e216ad9eaf62cbbc12323f6}\label{class_captain_1_1_engine_ac3df71347e216ad9eaf62cbbc12323f6} 
+\index{Captain::Engine@{Captain::Engine}!SetMesoComputationModel@{SetMesoComputationModel}}
+\index{SetMesoComputationModel@{SetMesoComputationModel}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{SetMesoComputationModel()}{SetMesoComputationModel()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Set\+Meso\+Computation\+Model (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{struct_captain_1_1_meso_computation_model}{Meso\+Computation\+Model}} $>$}]{meso\+Model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_engine_a6c3acfc13f33e013ea740ba3d2864f97}\label{class_captain_1_1_engine_a6c3acfc13f33e013ea740ba3d2864f97} 
+\index{Captain::Engine@{Captain::Engine}!SetMicroLinkMap@{SetMicroLinkMap}}
+\index{SetMicroLinkMap@{SetMicroLinkMap}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{SetMicroLinkMap()}{SetMicroLinkMap()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Set\+Micro\+Link\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a6c3acfc13f33e013ea740ba3d2864f97_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a39ee5bf779d7881c6e78abebb54e7a42}\label{class_captain_1_1_engine_a39ee5bf779d7881c6e78abebb54e7a42} 
+\index{Captain::Engine@{Captain::Engine}!SetPathDemandPairVector@{SetPathDemandPairVector}}
+\index{SetPathDemandPairVector@{SetPathDemandPairVector}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{SetPathDemandPairVector()}{SetPathDemandPairVector()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Set\+Path\+Demand\+Pair\+Vector (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{source\+Id,  }\item[{const std\+::vector$<$ std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}}, std\+::size\+\_\+t $>$ $>$ $>$ \&}]{path\+Demand\+Pair\+Vector }\end{DoxyParamCaption})}
+
+Sets path\+Demand\+Pair\+Vector to existing source\+Unit 
+\begin{DoxyParams}{Parameters}
+{\em source\+Id} & \doxylink{struct_captain_1_1_unit_identifier}{Unit\+Identifier} of the source to set path\+Demand\+Pair\+Vector \\
+\hline
+{\em path\+Demand\+Pair\+Vector} & Vector of sink demand pair to set \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_captain_1_1_engine_af24be9c94f0f16572554bd07eeb2fd81}\label{class_captain_1_1_engine_af24be9c94f0f16572554bd07eeb2fd81} 
+\index{Captain::Engine@{Captain::Engine}!SetSinkConnectionInfo@{SetSinkConnectionInfo}}
+\index{SetSinkConnectionInfo@{SetSinkConnectionInfo}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{SetSinkConnectionInfo()}{SetSinkConnectionInfo()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Set\+Sink\+Connection\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{sink\+Identifier,  }\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_connection_descriptor}{Unit\+Connection\+Descriptor}} \&}]{follower\+Connection\+Info }\end{DoxyParamCaption})}
+
+??? 
+\begin{DoxyParams}{Parameters}
+{\em sink\+Identifier} & \\
+\hline
+{\em follower\+Connection\+Info} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_af24be9c94f0f16572554bd07eeb2fd81_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a3122c1492154eb6c35c7397198a02348}\label{class_captain_1_1_engine_a3122c1492154eb6c35c7397198a02348} 
+\index{Captain::Engine@{Captain::Engine}!SetSinkDemandPairVector@{SetSinkDemandPairVector}}
+\index{SetSinkDemandPairVector@{SetSinkDemandPairVector}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{SetSinkDemandPairVector()}{SetSinkDemandPairVector()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Set\+Sink\+Demand\+Pair\+Vector (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{source\+Id,  }\item[{const std\+::vector$<$ std\+::vector$<$ std\+::tuple$<$ \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}}, std\+::size\+\_\+t, double $>$ $>$ $>$ \&}]{sink\+Demand\+Pair\+Vector }\end{DoxyParamCaption})}
+
+Sets sink\+Demand\+Pair\+Vector to existing source\+Unit 
+\begin{DoxyParams}{Parameters}
+{\em source\+Id} & \doxylink{struct_captain_1_1_unit_identifier}{Unit\+Identifier} of the source to set sink\+Demand\+Pair\+Vector \\
+\hline
+{\em sink\+Demand\+Pair\+Vector} & Vector of sink demand pair to set \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a3122c1492154eb6c35c7397198a02348_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a5dac41f7bf360062bb6193f8684a2994}\label{class_captain_1_1_engine_a5dac41f7bf360062bb6193f8684a2994} 
+\index{Captain::Engine@{Captain::Engine}!SetSourceConnectionInfo@{SetSourceConnectionInfo}}
+\index{SetSourceConnectionInfo@{SetSourceConnectionInfo}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{SetSourceConnectionInfo()}{SetSourceConnectionInfo()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Set\+Source\+Connection\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{source\+Identifier,  }\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_connection_descriptor}{Unit\+Connection\+Descriptor}} \&}]{leader\+Connection\+Info }\end{DoxyParamCaption})}
+
+Sets leader information to Sink\+Unit 
+\begin{DoxyParams}{Parameters}
+{\em source\+Identifier} & subject source Identifier to add leader information \\
+\hline
+{\em leader\+Connection\+Info} & connection information towards leader \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a5dac41f7bf360062bb6193f8684a2994_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a16df9c4d85958a3bf3298afe112ec99d}\label{class_captain_1_1_engine_a16df9c4d85958a3bf3298afe112ec99d} 
+\index{Captain::Engine@{Captain::Engine}!SetStopVehicleMap@{SetStopVehicleMap}}
+\index{SetStopVehicleMap@{SetStopVehicleMap}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{SetStopVehicleMap()}{SetStopVehicleMap()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Set\+Stop\+Vehicle\+Map (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{target\+Unit,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_unit_connection_descriptor}{Unit\+Connection\+Descriptor}} $>$ \&}]{follower\+Connection\+Info,  }\item[{int}]{lane\+ID }\end{DoxyParamCaption})}
+
+Sets Steop\+Vehicle 
+\begin{DoxyParams}{Parameters}
+{\em target\+Unit} & \\
+\hline
+{\em follower\+Connection\+Info} & \\
+\hline
+{\em lane\+ID} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a16df9c4d85958a3bf3298afe112ec99d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a2fbea5df62a7e07293abc15bf821404a}\label{class_captain_1_1_engine_a2fbea5df62a7e07293abc15bf821404a} 
+\index{Captain::Engine@{Captain::Engine}!SetV2X@{SetV2X}}
+\index{SetV2X@{SetV2X}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{SetV2X()}{SetV2X()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Set\+V2X (\begin{DoxyParamCaption}\item[{const int}]{node\+\_\+id,  }\item[{bool}]{v2x\+Active }\end{DoxyParamCaption})}
+
+Set V2x to the link. 
+\begin{DoxyParams}{Parameters}
+{\em node\+\_\+id} & id of the target node \\
+\hline
+{\em v2x\+Active} & Active of v2x \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a2fbea5df62a7e07293abc15bf821404a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a04f89ada5be6c944be38bfaae85e8249}\label{class_captain_1_1_engine_a04f89ada5be6c944be38bfaae85e8249} 
+\index{Captain::Engine@{Captain::Engine}!TemporalTransition@{TemporalTransition}}
+\index{TemporalTransition@{TemporalTransition}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{TemporalTransition()}{TemporalTransition()}}
+{\footnotesize\ttfamily bool Captain\+::\+Engine\+::\+Temporal\+Transition (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_mode}{Mode}} $>$}]{mode\+Vector }\end{DoxyParamCaption})}
+
+Temporal \doxylink{class_mode}{Mode} Transition 
+\begin{DoxyParams}{Parameters}
+{\em cycle} & micro time step cycle \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a04f89ada5be6c944be38bfaae85e8249_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a04f89ada5be6c944be38bfaae85e8249_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a35bea714497e63ced4fd1d00805b8adc}\label{class_captain_1_1_engine_a35bea714497e63ced4fd1d00805b8adc} 
+\index{Captain::Engine@{Captain::Engine}!TerminateExtractingRoutes@{TerminateExtractingRoutes}}
+\index{TerminateExtractingRoutes@{TerminateExtractingRoutes}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{TerminateExtractingRoutes()}{TerminateExtractingRoutes()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Terminate\+Extracting\+Routes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a35bea714497e63ced4fd1d00805b8adc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a35bea714497e63ced4fd1d00805b8adc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a49522fc7a56073ed57824d98b357c164}\label{class_captain_1_1_engine_a49522fc7a56073ed57824d98b357c164} 
+\index{Captain::Engine@{Captain::Engine}!TerminateRecordings@{TerminateRecordings}}
+\index{TerminateRecordings@{TerminateRecordings}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{TerminateRecordings()}{TerminateRecordings()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Terminate\+Recordings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a49522fc7a56073ed57824d98b357c164_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_a49522fc7a56073ed57824d98b357c164_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_acf288a69cc65a6ae9a170f1fea887623}\label{class_captain_1_1_engine_acf288a69cc65a6ae9a170f1fea887623} 
+\index{Captain::Engine@{Captain::Engine}!UnitIDtoPathID@{UnitIDtoPathID}}
+\index{UnitIDtoPathID@{UnitIDtoPathID}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{UnitIDtoPathID()}{UnitIDtoPathID()}}
+{\footnotesize\ttfamily std\+::pair$<$ std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} $>$, std\+::vector$<$ std\+::vector$<$ double $>$ $>$ $>$ Captain\+::\+Engine\+::\+Unit\+IDto\+Path\+ID (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} $>$}]{Unit\+Vector }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_engine_acf288a69cc65a6ae9a170f1fea887623_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_engine_a2443918ce6c97dbc59e49d3a70bf681c}\label{class_captain_1_1_engine_a2443918ce6c97dbc59e49d3a70bf681c} 
+\index{Captain::Engine@{Captain::Engine}!UpdateUnitMap@{UpdateUnitMap}}
+\index{UpdateUnitMap@{UpdateUnitMap}!Captain::Engine@{Captain::Engine}}
+\doxysubsubsection{\texorpdfstring{UpdateUnitMap()}{UpdateUnitMap()}}
+{\footnotesize\ttfamily void Captain\+::\+Engine\+::\+Update\+Unit\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Engine/\mbox{\hyperlink{_engine_8hpp}{Engine.\+hpp}}\item 
+Sources/captain/\+Engine/\mbox{\hyperlink{_engine_8cpp}{Engine.\+cpp}}\end{DoxyCompactItemize}

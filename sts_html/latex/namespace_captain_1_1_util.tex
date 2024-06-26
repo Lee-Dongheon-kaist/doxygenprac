@@ -1,0 +1,109 @@
+\doxysection{Captain\+::Util Namespace Reference}
+\hypertarget{namespace_captain_1_1_util}{}\label{namespace_captain_1_1_util}\index{Captain::Util@{Captain::Util}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Event\+Recorder}}
+\item 
+struct \mbox{\hyperlink{struct_captain_1_1_util_1_1_event_recorder_container}{Event\+Recorder\+Container}}
+\begin{DoxyCompactList}\small\item\em structure used to store Event\+Recorders for further record flushing \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_captain_1_1_util_1_1_json_reader}{Json\+Reader}}
+\item 
+class \mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer}{Json\+Writer}}
+\item 
+class \mbox{\hyperlink{class_captain_1_1_util_1_1_vehicle_queue}{Vehicle\+Queue}}
+\begin{DoxyCompactList}\small\item\em \+: Concurrent queue class wrapper for storing vehicles \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_captain_1_1_util_1_1_xml_writer}{Xml\+Writer}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespace_captain_1_1_util_a53b4cb54f3218c67643407a602174f41}{Event\+Type}} \{ \mbox{\hyperlink{namespace_captain_1_1_util_a53b4cb54f3218c67643407a602174f41a902b0d55fddef6f8d651fe1035b7d4bd}{Error}}
+, \mbox{\hyperlink{namespace_captain_1_1_util_a53b4cb54f3218c67643407a602174f41a0eaadb4fcb48a0a0ed7bc9868be9fbaa}{Warning}}
+, \mbox{\hyperlink{namespace_captain_1_1_util_a53b4cb54f3218c67643407a602174f41a29c2c02a361c9d7028472e5d92cd4a54}{Output}}
+ \}
+\item 
+enum class \mbox{\hyperlink{namespace_captain_1_1_util_a0ed47eb0380f54b9ff76d8a40e794832}{Event\+Recording\+Type}} \{ \mbox{\hyperlink{namespace_captain_1_1_util_a0ed47eb0380f54b9ff76d8a40e794832a8fa7fe786724b2340a8ed6d7fc21439c}{LANE}}
+, \mbox{\hyperlink{namespace_captain_1_1_util_a0ed47eb0380f54b9ff76d8a40e794832ae9fa318f4d73c31493e98096efa497e2}{VEHICLE}}
+, \mbox{\hyperlink{namespace_captain_1_1_util_a0ed47eb0380f54b9ff76d8a40e794832aa0b67bb0a7cfbb35a3b71363059d5d80}{STATION}}
+, \mbox{\hyperlink{namespace_captain_1_1_util_a0ed47eb0380f54b9ff76d8a40e794832acb226b99e7aeebd6f05f2314b416f7a7}{MESO}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{namespace_captain_1_1_util_abdabc05bebfc76ae7dbc60972a59e8a7}{compare\+Timestamp}} (const T \&lhs, const T \&rhs)
+\item 
+std\+::string \mbox{\hyperlink{namespace_captain_1_1_util_ae3f131a909132d19ba648351b29b2529}{Vehicle\+Record\+Info\+To\+Text}} (const \mbox{\hyperlink{struct_captain_1_1_vehicle_record_info}{Vehicle\+Record\+Info}} \&vehicle\+Record\+Info)
+\item 
+std\+::string \mbox{\hyperlink{namespace_captain_1_1_util_ad4f9b0cdca913106b62c914748221126}{Lane\+Record\+Info\+To\+Text}} (const \mbox{\hyperlink{struct_captain_1_1_lane_record_info}{Lane\+Record\+Info}} \&meso\+Record\+Info)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{namespace_captain_1_1_util_a0ed47eb0380f54b9ff76d8a40e794832}\label{namespace_captain_1_1_util_a0ed47eb0380f54b9ff76d8a40e794832} 
+\index{Captain::Util@{Captain::Util}!EventRecordingType@{EventRecordingType}}
+\index{EventRecordingType@{EventRecordingType}!Captain::Util@{Captain::Util}}
+\doxysubsubsection{\texorpdfstring{EventRecordingType}{EventRecordingType}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{namespace_captain_1_1_util_a0ed47eb0380f54b9ff76d8a40e794832}{Captain\+::\+Util\+::\+Event\+Recording\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LANE@{LANE}!Captain::Util@{Captain::Util}}\index{Captain::Util@{Captain::Util}!LANE@{LANE}}}\Hypertarget{namespace_captain_1_1_util_a0ed47eb0380f54b9ff76d8a40e794832a8fa7fe786724b2340a8ed6d7fc21439c}\label{namespace_captain_1_1_util_a0ed47eb0380f54b9ff76d8a40e794832a8fa7fe786724b2340a8ed6d7fc21439c} 
+LANE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VEHICLE@{VEHICLE}!Captain::Util@{Captain::Util}}\index{Captain::Util@{Captain::Util}!VEHICLE@{VEHICLE}}}\Hypertarget{namespace_captain_1_1_util_a0ed47eb0380f54b9ff76d8a40e794832ae9fa318f4d73c31493e98096efa497e2}\label{namespace_captain_1_1_util_a0ed47eb0380f54b9ff76d8a40e794832ae9fa318f4d73c31493e98096efa497e2} 
+VEHICLE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STATION@{STATION}!Captain::Util@{Captain::Util}}\index{Captain::Util@{Captain::Util}!STATION@{STATION}}}\Hypertarget{namespace_captain_1_1_util_a0ed47eb0380f54b9ff76d8a40e794832aa0b67bb0a7cfbb35a3b71363059d5d80}\label{namespace_captain_1_1_util_a0ed47eb0380f54b9ff76d8a40e794832aa0b67bb0a7cfbb35a3b71363059d5d80} 
+STATION&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MESO@{MESO}!Captain::Util@{Captain::Util}}\index{Captain::Util@{Captain::Util}!MESO@{MESO}}}\Hypertarget{namespace_captain_1_1_util_a0ed47eb0380f54b9ff76d8a40e794832acb226b99e7aeebd6f05f2314b416f7a7}\label{namespace_captain_1_1_util_a0ed47eb0380f54b9ff76d8a40e794832acb226b99e7aeebd6f05f2314b416f7a7} 
+MESO&\\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{namespace_captain_1_1_util_a53b4cb54f3218c67643407a602174f41}\label{namespace_captain_1_1_util_a53b4cb54f3218c67643407a602174f41} 
+\index{Captain::Util@{Captain::Util}!EventType@{EventType}}
+\index{EventType@{EventType}!Captain::Util@{Captain::Util}}
+\doxysubsubsection{\texorpdfstring{EventType}{EventType}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{namespace_captain_1_1_util_a53b4cb54f3218c67643407a602174f41}{Captain\+::\+Util\+::\+Event\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Error@{Error}!Captain::Util@{Captain::Util}}\index{Captain::Util@{Captain::Util}!Error@{Error}}}\Hypertarget{namespace_captain_1_1_util_a53b4cb54f3218c67643407a602174f41a902b0d55fddef6f8d651fe1035b7d4bd}\label{namespace_captain_1_1_util_a53b4cb54f3218c67643407a602174f41a902b0d55fddef6f8d651fe1035b7d4bd} 
+Error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Warning@{Warning}!Captain::Util@{Captain::Util}}\index{Captain::Util@{Captain::Util}!Warning@{Warning}}}\Hypertarget{namespace_captain_1_1_util_a53b4cb54f3218c67643407a602174f41a0eaadb4fcb48a0a0ed7bc9868be9fbaa}\label{namespace_captain_1_1_util_a53b4cb54f3218c67643407a602174f41a0eaadb4fcb48a0a0ed7bc9868be9fbaa} 
+Warning&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Output@{Output}!Captain::Util@{Captain::Util}}\index{Captain::Util@{Captain::Util}!Output@{Output}}}\Hypertarget{namespace_captain_1_1_util_a53b4cb54f3218c67643407a602174f41a29c2c02a361c9d7028472e5d92cd4a54}\label{namespace_captain_1_1_util_a53b4cb54f3218c67643407a602174f41a29c2c02a361c9d7028472e5d92cd4a54} 
+Output&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_captain_1_1_util_abdabc05bebfc76ae7dbc60972a59e8a7}\label{namespace_captain_1_1_util_abdabc05bebfc76ae7dbc60972a59e8a7} 
+\index{Captain::Util@{Captain::Util}!compareTimestamp@{compareTimestamp}}
+\index{compareTimestamp@{compareTimestamp}!Captain::Util@{Captain::Util}}
+\doxysubsubsection{\texorpdfstring{compareTimestamp()}{compareTimestamp()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool Captain\+::\+Util\+::compare\+Timestamp (\begin{DoxyParamCaption}\item[{const T \&}]{lhs,  }\item[{const T \&}]{rhs }\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_captain_1_1_util_ad4f9b0cdca913106b62c914748221126}\label{namespace_captain_1_1_util_ad4f9b0cdca913106b62c914748221126} 
+\index{Captain::Util@{Captain::Util}!LaneRecordInfoToText@{LaneRecordInfoToText}}
+\index{LaneRecordInfoToText@{LaneRecordInfoToText}!Captain::Util@{Captain::Util}}
+\doxysubsubsection{\texorpdfstring{LaneRecordInfoToText()}{LaneRecordInfoToText()}}
+{\footnotesize\ttfamily std\+::string Captain\+::\+Util\+::\+Lane\+Record\+Info\+To\+Text (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_lane_record_info}{Lane\+Record\+Info}} \&}]{meso\+Record\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespace_captain_1_1_util_ae3f131a909132d19ba648351b29b2529}\label{namespace_captain_1_1_util_ae3f131a909132d19ba648351b29b2529} 
+\index{Captain::Util@{Captain::Util}!VehicleRecordInfoToText@{VehicleRecordInfoToText}}
+\index{VehicleRecordInfoToText@{VehicleRecordInfoToText}!Captain::Util@{Captain::Util}}
+\doxysubsubsection{\texorpdfstring{VehicleRecordInfoToText()}{VehicleRecordInfoToText()}}
+{\footnotesize\ttfamily std\+::string Captain\+::\+Util\+::\+Vehicle\+Record\+Info\+To\+Text (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_vehicle_record_info}{Vehicle\+Record\+Info}} \&}]{vehicle\+Record\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+

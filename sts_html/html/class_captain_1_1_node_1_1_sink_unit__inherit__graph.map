@@ -1,0 +1,5 @@
+<map id="Captain::Node::SinkUnit" name="Captain::Node::SinkUnit">
+<area shape="rect" id="Node000001" title=" " alt="" coords="17,464,233,768"/>
+<area shape="rect" id="Node000002" href="$struct_captain_1_1_node_1_1_i_vehicle_containable_unit.html" title="Interface that defines methods for classes that can possess vehicles required by meso and micro links..." alt="" coords="5,5,245,416"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,431,128,464,123,464,123,431"/>
+</map>

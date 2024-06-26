@@ -1,0 +1,9 @@
+<map id="Captain::Node::UniformLink::AppendMessage" name="Captain::Node::UniformLink::AppendMessage">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,185,65"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#ad5c998ee8d200845e16a89dc50f1b550" title=" " alt="" coords="233,23,434,65"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,41,217,41,217,47,185,47"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_v2_x.html#aa8718d96a1d4de06a0defa7a489337d8" title=" " alt="" coords="501,5,668,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="434,31,485,26,486,31,435,36"/>
+<area shape="rect" id="Node000004" href="$class_captain_1_1_v2_x.html#acda73df1857e03af4359929ca419488b" title=" " alt="" coords="482,56,687,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="435,52,467,55,466,60,434,57"/>
+</map>

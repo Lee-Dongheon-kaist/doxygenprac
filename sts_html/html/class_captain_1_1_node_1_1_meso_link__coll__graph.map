@@ -1,0 +1,5 @@
+<map id="Captain::Node::MesoLink" name="Captain::Node::MesoLink">
+<area shape="rect" id="Node000001" title="Link represents directional road connecting two intersections." alt="" coords="5,400,164,683"/>
+<area shape="rect" id="Node000002" href="$struct_captain_1_1_node_1_1_i_linkable.html" title="Interface that defines classes that can link directly to other units in the network." alt="" coords="6,5,163,352"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,367,87,400,82,400,82,367"/>
+</map>

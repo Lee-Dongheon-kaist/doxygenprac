@@ -1,0 +1,185 @@
+\doxysection{Libraries/gookto\+\_\+io/includes/gookto\+\_\+io/tinyapi/tinyxml.h File Reference}
+\hypertarget{tinyxml_8h}{}\label{tinyxml_8h}\index{Libraries/gookto\_io/includes/gookto\_io/tinyapi/tinyxml.h@{Libraries/gookto\_io/includes/gookto\_io/tinyapi/tinyxml.h}}
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include "{}tinystr.\+h"{}}\newline
+Include dependency graph for tinyxml.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tinyxml_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tinyxml_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_ti_xml_cursor}{Ti\+Xml\+Cursor}}
+\item 
+class \mbox{\hyperlink{class_ti_xml_visitor}{Ti\+Xml\+Visitor}}
+\item 
+class \mbox{\hyperlink{class_ti_xml_base}{Ti\+Xml\+Base}}
+\item 
+class \mbox{\hyperlink{class_ti_xml_node}{Ti\+Xml\+Node}}
+\item 
+class \mbox{\hyperlink{class_ti_xml_attribute}{Ti\+Xml\+Attribute}}
+\item 
+class \mbox{\hyperlink{class_ti_xml_attribute_set}{Ti\+Xml\+Attribute\+Set}}
+\item 
+class \mbox{\hyperlink{class_ti_xml_element}{Ti\+Xml\+Element}}
+\item 
+class \mbox{\hyperlink{class_ti_xml_comment}{Ti\+Xml\+Comment}}
+\item 
+class \mbox{\hyperlink{class_ti_xml_text}{Ti\+Xml\+Text}}
+\item 
+class \mbox{\hyperlink{class_ti_xml_declaration}{Ti\+Xml\+Declaration}}
+\item 
+class \mbox{\hyperlink{class_ti_xml_unknown}{Ti\+Xml\+Unknown}}
+\item 
+class \mbox{\hyperlink{class_ti_xml_document}{Ti\+Xml\+Document}}
+\item 
+class \mbox{\hyperlink{class_ti_xml_handle}{Ti\+Xml\+Handle}}
+\item 
+class \mbox{\hyperlink{class_ti_xml_printer}{Ti\+Xml\+Printer}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{tinyxml_8h_a92bada05fd84d9a0c9a5bbe53de26887}{TIXML\+\_\+\+STRING}}~\mbox{\hyperlink{class_ti_xml_string}{Ti\+Xml\+String}}
+\item 
+\#define \mbox{\hyperlink{tinyxml_8h_a5cdc3f402b6b8788f13a408d2be12e8d}{TIXML\+\_\+\+SAFE}}
+\item 
+\#define \mbox{\hyperlink{tinyxml_8h_afc6433f9b56e4f18833089b1df629e0a}{TIXML\+\_\+\+SNPRINTF}}~snprintf
+\item 
+\#define \mbox{\hyperlink{tinyxml_8h_a96f54d7c855ad92e705510904a040393}{TIXML\+\_\+\+SSCANF}}~sscanf
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{tinyxml_8h_a06fc87d81c62e9abb8790b6e5713c55baa3e89edb94c177db48c4e29f92d737d9}{TIXML\+\_\+\+SUCCESS}}
+, \mbox{\hyperlink{tinyxml_8h_a06fc87d81c62e9abb8790b6e5713c55bab5d83b77941b021a657f1223e40dc28d}{TIXML\+\_\+\+NO\+\_\+\+ATTRIBUTE}}
+, \mbox{\hyperlink{tinyxml_8h_a06fc87d81c62e9abb8790b6e5713c55ba4444723f0e0f7ba0bc120b172120d479}{TIXML\+\_\+\+WRONG\+\_\+\+TYPE}}
+ \}
+\item 
+enum \mbox{\hyperlink{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96}{Ti\+Xml\+Encoding}} \{ \mbox{\hyperlink{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96a4f7cb4a48feb16284f2c1620454b3909}{TIXML\+\_\+\+ENCODING\+\_\+\+UNKNOWN}}
+, \mbox{\hyperlink{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96af95195ddd184a603ec46225e87059d0a}{TIXML\+\_\+\+ENCODING\+\_\+\+UTF8}}
+, \mbox{\hyperlink{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96a6baf76361e2641bb52e08d8b4be412b1}{TIXML\+\_\+\+ENCODING\+\_\+\+LEGACY}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{tinyxml_8h_a3b0c714c9be8a776d5d02c5d80e56f34}{TIXML\+\_\+\+MAJOR\+\_\+\+VERSION}} = 2
+\item 
+const int \mbox{\hyperlink{tinyxml_8h_a4c9cab500d81e6741e23d5087b029764}{TIXML\+\_\+\+MINOR\+\_\+\+VERSION}} = 6
+\item 
+const int \mbox{\hyperlink{tinyxml_8h_a2413aed779b03d5768157b299ff79090}{TIXML\+\_\+\+PATCH\+\_\+\+VERSION}} = 1
+\item 
+const \mbox{\hyperlink{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96}{Ti\+Xml\+Encoding}} \mbox{\hyperlink{tinyxml_8h_ad5b8b092878e9010d6400cb6c13d4879}{TIXML\+\_\+\+DEFAULT\+\_\+\+ENCODING}} = \mbox{\hyperlink{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96a4f7cb4a48feb16284f2c1620454b3909}{TIXML\+\_\+\+ENCODING\+\_\+\+UNKNOWN}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{tinyxml_8h_a5cdc3f402b6b8788f13a408d2be12e8d}\label{tinyxml_8h_a5cdc3f402b6b8788f13a408d2be12e8d} 
+\index{tinyxml.h@{tinyxml.h}!TIXML\_SAFE@{TIXML\_SAFE}}
+\index{TIXML\_SAFE@{TIXML\_SAFE}!tinyxml.h@{tinyxml.h}}
+\doxysubsubsection{\texorpdfstring{TIXML\_SAFE}{TIXML\_SAFE}}
+{\footnotesize\ttfamily \#define TIXML\+\_\+\+SAFE}
+
+\Hypertarget{tinyxml_8h_afc6433f9b56e4f18833089b1df629e0a}\label{tinyxml_8h_afc6433f9b56e4f18833089b1df629e0a} 
+\index{tinyxml.h@{tinyxml.h}!TIXML\_SNPRINTF@{TIXML\_SNPRINTF}}
+\index{TIXML\_SNPRINTF@{TIXML\_SNPRINTF}!tinyxml.h@{tinyxml.h}}
+\doxysubsubsection{\texorpdfstring{TIXML\_SNPRINTF}{TIXML\_SNPRINTF}}
+{\footnotesize\ttfamily \#define TIXML\+\_\+\+SNPRINTF~snprintf}
+
+\Hypertarget{tinyxml_8h_a96f54d7c855ad92e705510904a040393}\label{tinyxml_8h_a96f54d7c855ad92e705510904a040393} 
+\index{tinyxml.h@{tinyxml.h}!TIXML\_SSCANF@{TIXML\_SSCANF}}
+\index{TIXML\_SSCANF@{TIXML\_SSCANF}!tinyxml.h@{tinyxml.h}}
+\doxysubsubsection{\texorpdfstring{TIXML\_SSCANF}{TIXML\_SSCANF}}
+{\footnotesize\ttfamily \#define TIXML\+\_\+\+SSCANF~sscanf}
+
+\Hypertarget{tinyxml_8h_a92bada05fd84d9a0c9a5bbe53de26887}\label{tinyxml_8h_a92bada05fd84d9a0c9a5bbe53de26887} 
+\index{tinyxml.h@{tinyxml.h}!TIXML\_STRING@{TIXML\_STRING}}
+\index{TIXML\_STRING@{TIXML\_STRING}!tinyxml.h@{tinyxml.h}}
+\doxysubsubsection{\texorpdfstring{TIXML\_STRING}{TIXML\_STRING}}
+{\footnotesize\ttfamily \#define TIXML\+\_\+\+STRING~\mbox{\hyperlink{class_ti_xml_string}{Ti\+Xml\+String}}}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{tinyxml_8h_a06fc87d81c62e9abb8790b6e5713c55b}\label{tinyxml_8h_a06fc87d81c62e9abb8790b6e5713c55b} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIXML\_SUCCESS@{TIXML\_SUCCESS}!tinyxml.h@{tinyxml.h}}\index{tinyxml.h@{tinyxml.h}!TIXML\_SUCCESS@{TIXML\_SUCCESS}}}\Hypertarget{tinyxml_8h_a06fc87d81c62e9abb8790b6e5713c55baa3e89edb94c177db48c4e29f92d737d9}\label{tinyxml_8h_a06fc87d81c62e9abb8790b6e5713c55baa3e89edb94c177db48c4e29f92d737d9} 
+TIXML\+\_\+\+SUCCESS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIXML\_NO\_ATTRIBUTE@{TIXML\_NO\_ATTRIBUTE}!tinyxml.h@{tinyxml.h}}\index{tinyxml.h@{tinyxml.h}!TIXML\_NO\_ATTRIBUTE@{TIXML\_NO\_ATTRIBUTE}}}\Hypertarget{tinyxml_8h_a06fc87d81c62e9abb8790b6e5713c55bab5d83b77941b021a657f1223e40dc28d}\label{tinyxml_8h_a06fc87d81c62e9abb8790b6e5713c55bab5d83b77941b021a657f1223e40dc28d} 
+TIXML\+\_\+\+NO\+\_\+\+ATTRIBUTE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIXML\_WRONG\_TYPE@{TIXML\_WRONG\_TYPE}!tinyxml.h@{tinyxml.h}}\index{tinyxml.h@{tinyxml.h}!TIXML\_WRONG\_TYPE@{TIXML\_WRONG\_TYPE}}}\Hypertarget{tinyxml_8h_a06fc87d81c62e9abb8790b6e5713c55ba4444723f0e0f7ba0bc120b172120d479}\label{tinyxml_8h_a06fc87d81c62e9abb8790b6e5713c55ba4444723f0e0f7ba0bc120b172120d479} 
+TIXML\+\_\+\+WRONG\+\_\+\+TYPE&\\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96}\label{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96} 
+\index{tinyxml.h@{tinyxml.h}!TiXmlEncoding@{TiXmlEncoding}}
+\index{TiXmlEncoding@{TiXmlEncoding}!tinyxml.h@{tinyxml.h}}
+\doxysubsubsection{\texorpdfstring{TiXmlEncoding}{TiXmlEncoding}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96}{Ti\+Xml\+Encoding}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIXML\_ENCODING\_UNKNOWN@{TIXML\_ENCODING\_UNKNOWN}!tinyxml.h@{tinyxml.h}}\index{tinyxml.h@{tinyxml.h}!TIXML\_ENCODING\_UNKNOWN@{TIXML\_ENCODING\_UNKNOWN}}}\Hypertarget{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96a4f7cb4a48feb16284f2c1620454b3909}\label{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96a4f7cb4a48feb16284f2c1620454b3909} 
+TIXML\+\_\+\+ENCODING\+\_\+\+UNKNOWN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIXML\_ENCODING\_UTF8@{TIXML\_ENCODING\_UTF8}!tinyxml.h@{tinyxml.h}}\index{tinyxml.h@{tinyxml.h}!TIXML\_ENCODING\_UTF8@{TIXML\_ENCODING\_UTF8}}}\Hypertarget{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96af95195ddd184a603ec46225e87059d0a}\label{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96af95195ddd184a603ec46225e87059d0a} 
+TIXML\+\_\+\+ENCODING\+\_\+\+UTF8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIXML\_ENCODING\_LEGACY@{TIXML\_ENCODING\_LEGACY}!tinyxml.h@{tinyxml.h}}\index{tinyxml.h@{tinyxml.h}!TIXML\_ENCODING\_LEGACY@{TIXML\_ENCODING\_LEGACY}}}\Hypertarget{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96a6baf76361e2641bb52e08d8b4be412b1}\label{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96a6baf76361e2641bb52e08d8b4be412b1} 
+TIXML\+\_\+\+ENCODING\+\_\+\+LEGACY&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{tinyxml_8h_ad5b8b092878e9010d6400cb6c13d4879}\label{tinyxml_8h_ad5b8b092878e9010d6400cb6c13d4879} 
+\index{tinyxml.h@{tinyxml.h}!TIXML\_DEFAULT\_ENCODING@{TIXML\_DEFAULT\_ENCODING}}
+\index{TIXML\_DEFAULT\_ENCODING@{TIXML\_DEFAULT\_ENCODING}!tinyxml.h@{tinyxml.h}}
+\doxysubsubsection{\texorpdfstring{TIXML\_DEFAULT\_ENCODING}{TIXML\_DEFAULT\_ENCODING}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96}{Ti\+Xml\+Encoding}} TIXML\+\_\+\+DEFAULT\+\_\+\+ENCODING = \mbox{\hyperlink{tinyxml_8h_a88d51847a13ee0f4b4d320d03d2c4d96a4f7cb4a48feb16284f2c1620454b3909}{TIXML\+\_\+\+ENCODING\+\_\+\+UNKNOWN}}}
+
+\Hypertarget{tinyxml_8h_a3b0c714c9be8a776d5d02c5d80e56f34}\label{tinyxml_8h_a3b0c714c9be8a776d5d02c5d80e56f34} 
+\index{tinyxml.h@{tinyxml.h}!TIXML\_MAJOR\_VERSION@{TIXML\_MAJOR\_VERSION}}
+\index{TIXML\_MAJOR\_VERSION@{TIXML\_MAJOR\_VERSION}!tinyxml.h@{tinyxml.h}}
+\doxysubsubsection{\texorpdfstring{TIXML\_MAJOR\_VERSION}{TIXML\_MAJOR\_VERSION}}
+{\footnotesize\ttfamily const int TIXML\+\_\+\+MAJOR\+\_\+\+VERSION = 2}
+
+\Hypertarget{tinyxml_8h_a4c9cab500d81e6741e23d5087b029764}\label{tinyxml_8h_a4c9cab500d81e6741e23d5087b029764} 
+\index{tinyxml.h@{tinyxml.h}!TIXML\_MINOR\_VERSION@{TIXML\_MINOR\_VERSION}}
+\index{TIXML\_MINOR\_VERSION@{TIXML\_MINOR\_VERSION}!tinyxml.h@{tinyxml.h}}
+\doxysubsubsection{\texorpdfstring{TIXML\_MINOR\_VERSION}{TIXML\_MINOR\_VERSION}}
+{\footnotesize\ttfamily const int TIXML\+\_\+\+MINOR\+\_\+\+VERSION = 6}
+
+\Hypertarget{tinyxml_8h_a2413aed779b03d5768157b299ff79090}\label{tinyxml_8h_a2413aed779b03d5768157b299ff79090} 
+\index{tinyxml.h@{tinyxml.h}!TIXML\_PATCH\_VERSION@{TIXML\_PATCH\_VERSION}}
+\index{TIXML\_PATCH\_VERSION@{TIXML\_PATCH\_VERSION}!tinyxml.h@{tinyxml.h}}
+\doxysubsubsection{\texorpdfstring{TIXML\_PATCH\_VERSION}{TIXML\_PATCH\_VERSION}}
+{\footnotesize\ttfamily const int TIXML\+\_\+\+PATCH\+\_\+\+VERSION = 1}
+

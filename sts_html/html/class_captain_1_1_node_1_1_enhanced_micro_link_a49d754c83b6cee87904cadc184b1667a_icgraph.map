@@ -1,0 +1,7 @@
+<map id="Captain::Node::EnhancedMicroLink::SetFollowerLaneConnectionInfo" name="Captain::Node::EnhancedMicroLink::SetFollowerLaneConnectionInfo">
+<area shape="rect" id="Node000001" title="Sets UnitConnectionInfo to follower for the target lane." alt="" coords="288,39,522,81"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_uniform_link.html#a6404bc89473ac8f59ea1d2de9c488a0c" title=" " alt="" coords="17,5,228,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="272,47,228,42,228,36,273,42"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_node_1_1_uniform_intersection_link.html#ada9d10618e66dbf0c30ea4c19781d3c2" title=" " alt="" coords="5,72,240,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="273,78,240,82,240,77,272,73"/>
+</map>

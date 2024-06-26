@@ -1,0 +1,94 @@
+\doxysection{Tests/\+Route\+Generator/\+Route\+Generator.cpp File Reference}
+\hypertarget{_route_generator_8cpp}{}\label{_route_generator_8cpp}\index{Tests/RouteGenerator/RouteGenerator.cpp@{Tests/RouteGenerator/RouteGenerator.cpp}}
+{\ttfamily \#include "{}Route\+Generator.\+hpp"{}}\newline
+{\ttfamily \#include $<$captain/\+Engine/\+Engine.\+hpp$>$}\newline
+{\ttfamily \#include $<$captain/\+Structs/\+General\+Structs.\+hpp$>$}\newline
+{\ttfamily \#include $<$captain/\+Util/\+Global\+Hyper\+Parameters.\+hpp$>$}\newline
+{\ttfamily \#include $<$captain/\+Util/\+Random.\+hpp$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$iterator$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$numeric$>$}\newline
+{\ttfamily \#include $<$tuple$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$optional$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/tinyapi/tinystr.\+h$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/tinyapi/tinyxml.\+h$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Demand.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Demand\+Info.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Input\+Link.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Input\+Station.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Link\+Arr.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Node\+Arr.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Param\+Arr.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+Station\+Arr.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/intersection/connection.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/intersection/intersection\+Phase.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/intersection/port.\+hpp$>$}\newline
+{\ttfamily \#include $<$gookto\+\_\+io/\+File\+Path.\+hpp$>$}\newline
+Include dependency graph for Route\+Generator.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_route_generator_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_captain}{Captain}}
+\begin{DoxyCompactList}\small\item\em \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{namespace_captain_aa0330b3371dd46a64d8433e13d69472a}{Captain\+::calculate\+Probability\+Vector\+Source\+With\+Segments}} (const int first\+Link\+ID, std\+::vector$<$ \mbox{\hyperlink{class_input_link}{Input\+Link}} $>$ \&link\+Vector)
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{namespace_captain_aaa6e686bc3ae28229dcb959d796028ac}{Captain\+::calculate\+Probability\+Vector\+Sink\+With\+Segments}} (const int sink\+Link\+ID, std\+::vector$<$ \mbox{\hyperlink{class_input_link}{Input\+Link}} $>$ \&link\+Vector)
+\item 
+void \mbox{\hyperlink{namespace_captain_a665a166c7e1e452720b28e98e4a977e8}{Captain\+::\+Route\+Generation}} () noexcept
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_link_arr}{Link\+Arr}} \mbox{\hyperlink{_route_generator_8cpp_a55d7a41b9bf04a5df4e371ddac76d9c0}{link\+Arr}}
+\item 
+\mbox{\hyperlink{class_node_arr}{Node\+Arr}} \mbox{\hyperlink{_route_generator_8cpp_a378e64c92a5f932c983386557e7794a1}{node\+Arr}}
+\item 
+\mbox{\hyperlink{class_station_arr}{Station\+Arr}} \mbox{\hyperlink{_route_generator_8cpp_a81719a257555fd664b1ccd76153e976e}{station\+Arr}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+STS19 \doxylink{namespace_captain}{Captain}
+
+\begin{DoxyVersion}{Version}
+\+: 2.\+0 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+\+: Sujae Jeon 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_route_generator_8cpp_a55d7a41b9bf04a5df4e371ddac76d9c0}\label{_route_generator_8cpp_a55d7a41b9bf04a5df4e371ddac76d9c0} 
+\index{RouteGenerator.cpp@{RouteGenerator.cpp}!linkArr@{linkArr}}
+\index{linkArr@{linkArr}!RouteGenerator.cpp@{RouteGenerator.cpp}}
+\doxysubsubsection{\texorpdfstring{linkArr}{linkArr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_link_arr}{Link\+Arr}} link\+Arr}
+
+\Hypertarget{_route_generator_8cpp_a378e64c92a5f932c983386557e7794a1}\label{_route_generator_8cpp_a378e64c92a5f932c983386557e7794a1} 
+\index{RouteGenerator.cpp@{RouteGenerator.cpp}!nodeArr@{nodeArr}}
+\index{nodeArr@{nodeArr}!RouteGenerator.cpp@{RouteGenerator.cpp}}
+\doxysubsubsection{\texorpdfstring{nodeArr}{nodeArr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_node_arr}{Node\+Arr}} node\+Arr}
+
+\Hypertarget{_route_generator_8cpp_a81719a257555fd664b1ccd76153e976e}\label{_route_generator_8cpp_a81719a257555fd664b1ccd76153e976e} 
+\index{RouteGenerator.cpp@{RouteGenerator.cpp}!stationArr@{stationArr}}
+\index{stationArr@{stationArr}!RouteGenerator.cpp@{RouteGenerator.cpp}}
+\doxysubsubsection{\texorpdfstring{stationArr}{stationArr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_station_arr}{Station\+Arr}} station\+Arr}
+

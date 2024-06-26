@@ -1,0 +1,7 @@
+<map id="Captain::V2X::setIsActive" name="Captain::V2X::setIsActive">
+<area shape="rect" id="Node000001" title=" " alt="" coords="482,13,649,40"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#ab25604fced6d61b0fd654ddf6b1ba556" title=" " alt="" coords="233,5,434,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="466,29,434,29,434,24,466,24"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_node_1_1_uniform_link.html#aa0f30d3fbb8b51d02c7e15f4da1a969f" title=" " alt="" coords="5,5,185,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="217,29,185,29,185,24,217,24"/>
+</map>

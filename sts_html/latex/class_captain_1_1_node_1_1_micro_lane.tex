@@ -1,0 +1,1081 @@
+\doxysection{Captain\+::Node\+::Micro\+Lane Class Reference}
+\hypertarget{class_captain_1_1_node_1_1_micro_lane}{}\label{class_captain_1_1_node_1_1_micro_lane}\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+
+
+{\ttfamily \#include $<$Micro\+Lane.\+hpp$>$}
+
+
+
+Inheritance diagram for Captain\+::Node\+::Micro\+Lane\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_captain_1_1_node_1_1_micro_lane__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Captain\+::Node\+::Micro\+Lane\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_captain_1_1_node_1_1_micro_lane__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a40e0f156caf0bd423d30bf20e492f2e6}{Micro\+Lane}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&unit\+Identifier, std\+::size\+\_\+t num\+Sect, std\+::size\+\_\+t max\+Vehicle, double q\+Max, double wave\+Speed, double free\+Flow\+Speed, double length, double width)
+\item 
+\mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a7b4f4aaa60c1e94b224b4d243633e999}{\texorpdfstring{$\sim$}{\string~}\+Micro\+Lane}} () override=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_ab46fecff9554542942af88f563b42fad}{Micro\+Lane}} (const \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane}{Micro\+Lane}} \&micro\+Lane)=delete
+\item 
+\mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a696ed6ca3652715702d4f0b1167ef37b}{Micro\+Lane}} (\mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane}{Micro\+Lane}} \&\&micro\+Lane) noexcept
+\item 
+\mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane}{Micro\+Lane}} \& \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a26de931f067c29e985a73b5f2a694565}{operator=}} (const \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane}{Micro\+Lane}} \&micro\+Lane)=delete
+\item 
+\mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane}{Micro\+Lane}} \& \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_aafda3d8638bc6def8198ba4e6207fa7f}{operator=}} (\mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane}{Micro\+Lane}} \&\&micro\+Lane) noexcept=delete
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a71fd46fa5babd47b8010adaf7f0527d3}{Get\+Current\+Num\+Vehicles}} () override
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_ab6689542eb425b15b11618322a0132f8}{Get\+Current\+Num\+Waiting\+Vehicles}} ()
+\item 
+std\+::optional$<$ \mbox{\hyperlink{namespace_captain_ac03838c8d2941d5da8169c3ec7a4d868}{Vehicle\+Weak\+Ptr}} $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a5804cd5a20b9e47642d108dd2d8bdafc}{Get\+Leading\+Vehicle\+Ptr}} () override
+\item 
+std\+::optional$<$ \mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} $>$ $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a4d8d6543fd304a88c14bcf8612b25aa8}{Get\+Following\+Container\+Ptr}} (std\+::size\+\_\+t cycle)
+\item 
+std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a0986f7ad56e0a1f863e77d52fe3a4dce}{Get\+Following\+Vehicle\+Ptr}} () override
+\item 
+std\+::optional$<$ \mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$ $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a7bd169080fa3941ebd3fbc92c93eb902}{Find\+Leader\+Vehicle\+By\+Position}} (\mbox{\hyperlink{struct_captain_1_1_position}{Position}} position) override
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$ $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_ac13f7e93c3aef3609ba111a87de75cae}{Find\+All\+Leaders}} (\mbox{\hyperlink{struct_captain_1_1_position}{Position}} position)
+\item 
+std\+::optional$<$ \mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$ $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a566b68b994166d1e5d6cf8ab55cd1185}{Find\+Follower\+Vehicle\+By\+Position}} (\mbox{\hyperlink{struct_captain_1_1_position}{Position}} position) override
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$ $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a904d9805c84daadffa2a2fa19d46a752}{Find\+All\+Followers}} (\mbox{\hyperlink{struct_captain_1_1_position}{Position}} position)
+\item 
+double \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a94ff7a97c295b30f209398bc8aebd4f5}{Get\+Weight}} () const
+\item 
+\mbox{\hyperlink{class_captain_1_1_util_1_1_vehicle_queue}{Util\+::\+Vehicle\+Queue}} \& \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a955a85b175314ca9f23d424ef53c6546}{Get\+Vehicle\+Queue}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a1268626fcdf20aef960d86d49efa668e}{Push\+Vehicle}} (\mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} \&\&vehicle\+Ptr) override
+\item 
+std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a44ef1d91152f4c065a0f10ea7cdc680f}{Pop\+Vehicle}} () override
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_acd960f884563dfea1fb028ec1556bbb8}{Get\+Num\+Vehicle\+In\+Cell}} (double length, std\+::size\+\_\+t cycle, bool from\+Front)
+\item 
+std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a4b7102e1805113a99fd626bbc022e361}{Peek\+Vehicle}} () override
+\item 
+double \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_af086e53cdead1318fcd1e9ea835a2344}{Get\+Length}} () const override
+\item 
+double \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a0e809c90e411c6e213147384a3ec9026}{Get\+Width}} () const override
+\item 
+double \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a223e88f8616632efed63c0b40678930f}{Get\+Avg\+Speed}} ()
+\item 
+double \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a4ca0147f214f34aa3e8c3c9fde7f57a9}{Get\+Avg\+Speed}} (\mbox{\hyperlink{struct_captain_1_1_position}{Position}} position, double length)
+\item 
+int \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_af77172356d81f381192975326c0b068c}{Get\+Current\+Follower\+Phase\+Num}} (std\+::size\+\_\+t cycle) const
+\item 
+int \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a371d0acacc60bc38174621375cb5f5ae}{Get\+Current\+Follower\+Unit\+Num}} (\mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} connection\+Info) const
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a92b1e077e5ea545330ee6c27c0852654}{Get\+Max\+Vehicle\+Num}} () const
+\item 
+std\+::optional$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_afb76e76490ca8ebe59fa6fa7d4341f23}{Get\+Follower\+Connection\+Info}} (std\+::size\+\_\+t cycle) const
+\item 
+std\+::optional$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a675927613232e5cf319e926b0dd806ee}{Get\+Leader\+Connection\+Info}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a6233b4cad8cfd620a169ccbf1aeeb50e}{Compute\+ICF}} (const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{struct_captain_1_1_meso_computation_model}{Meso\+Computation\+Model}} $>$ \&computation\+Model, std\+::size\+\_\+t cycle, bool mode)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a410e5bc6ffaef5d8759132f413989443}{Set\+Left\+Lane}} (\mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane}{Micro\+Lane}} $>$ micro\+Lane)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a8578f645e480fef70d8fcf3a99154d1a}{Set\+Right\+Lane}} (\mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane}{Micro\+Lane}} $>$ micro\+Lane)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_ad46f75351626a16c29addf1ea834d459}{Set\+Max\+Vehicle}} (size\+\_\+t maxvehicle)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_ad13ba1ad2693bb92981dc947321538df}{Set\+Stop\+Vehicle\+Map}} (const std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} $>$ \&unit\+Connection\+Info\+Vector)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_ad36ca6a60d94eee4343c8053e0dd6e7d}{Set\+Follower\+Connection\+Info}} (const std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} $>$ \&unit\+Connection\+Info\+Vector)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a0d6064a21248b90bbde503ed0c1e0062}{Set\+Leader\+Connection\+Info}} (const \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} \&unit\+Connection\+Info)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_ae4c0989c207f2e85d4eff39b9f42e198}{Apply\+V2\+XMessage\+To\+Vehicles}} (size\+\_\+t cycle)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a8f4badb49c37c72c825e3a70e7b41f88}{Update\+Vehicle\+Position}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a4515ab6a7052d663e549249d5af7b3e2}{Move\+From\+Nearby\+Lane}} ()
+\begin{DoxyCompactList}\small\item\em Moves vehicles from lane change queue of nearby lane. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_af76a177c26d2913f37b977f9a9b0a6f9}{Move\+From\+Previous\+Unit}} (std\+::size\+\_\+t cycle)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a1b7a35256242768fde5f54fb27145804}{Move\+From\+Previous\+Unit\+To\+Virtual\+Micro}} (std\+::size\+\_\+t cycle)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_aa496448e87b68ea66a5e80fa0747e254}{Extract\+Vehicle}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a5b02e0582aa2f9544619f8b33e593657}{Add\+Vehicle}} (\mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$ vehicle\+Ptr)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_aa382fde8403e66f8846bdfe735b568ed}{Update\+Follower\+Signal}} (std\+::size\+\_\+t cycle)
+\begin{DoxyCompactList}\small\item\em set signal for all follower connections \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a1a70849c68e9dccdb5e08d01dd043766}{Record}} (std\+::size\+\_\+t cycle) override
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a8de5be99a9e0f6642c51c6d9c06143c9}{Flush\+Recordings}} () override
+\begin{DoxyCompactList}\small\item\em Records all remaining recordings stored in buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a4fc7c481d4a0b2597fc84fabdc6ade56}{Get\+Recordings}} (\mbox{\hyperlink{struct_captain_1_1_util_1_1_event_recorder_container}{Captain\+::\+Util\+::\+Event\+Recorder\+Container}} \&container)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a8b56be99c13a0e6c024710355e646e65}{Set\+Segment\+Vehicle}} (\mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} state, \mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}} info)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a753ce3d06093abc36e6b211640815262}{Set\+Event\+Vehicle}} (\mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} state)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_ac0e2db20612b739a356cb324d267d6ff}{Remove\+Event\+Vehicle}} (\mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} state)
+\begin{DoxyCompactList}\small\item\em Removes the event vehicle from the corresponding vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a8518e6feaf7677d0c3c035a0389d056e}{Enqueue\+Wait\+Vehicle\+Ptr}} (\mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} \&\&vehicle\+Ptr)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_ae149c83a733608678da7f61a5ba5fe09}{Move\+Waiting\+Vehicles\+To\+Main\+Queue}} (std\+::size\+\_\+t cycle)
+\item 
+std\+::filesystem\+::path \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a487037fc2028c7378ad01b9a417080d4}{Get\+File\+Path}} () override
+\begin{DoxyCompactList}\small\item\em Gets current target file path. \end{DoxyCompactList}\item 
+std\+::list$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_ace4f1bbf2c0f5ed9cccdb3c3d0dc1fbd}{Enqueue\+To\+New\+Queue}} (std\+::list$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ New\+Queue)
+\begin{DoxyCompactList}\small\item\em Virtual vehicle that is used to stop followers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_ad2bb214356e543a415c857e72c9de8c4}{Transition\+To\+Micro}} (std\+::list$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ lanequeue)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_ab0b36f19d524fb663617ef316c29f068}{Set\+Virtual\+Vehicle}} (std\+::size\+\_\+t cycle, int lane\+Idx, double avg\+Speed)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a3db1dd4b55b697a798f64e8f5900b02c}{IVehicle\+Containable\+Unit}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&unit\+Identifier)
+\item 
+virtual \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_abfb684c58bb0826a607b417773ce8863}{\texorpdfstring{$\sim$}{\string~}\+IVehicle\+Containable\+Unit}} ()=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_aa56da4b677191490dc5209e59083bd6f}{IVehicle\+Containable\+Unit}} (const \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} \&i\+Vehicle\+Containable\+Unit)=delete
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a592d1e3a3110a78d054ddf08019d605d}{IVehicle\+Containable\+Unit}} (\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} \&\&i\+Vehicle\+Containable\+Unit) noexcept
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} \& \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a838a2faf2c5147dff03f4b903b4f145d}{operator=}} (const \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} \&i\+Linkable)=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} \& \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a9c8bb064ece505f6208335f24b61702b}{operator=}} (\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} \&\&i\+Linkable) noexcept=default
+\item 
+virtual \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a200a71997b29c63d95109fd3c821909c}{Identifier}} () const
+\begin{DoxyCompactList}\small\item\em Gets unique identifier of the particular unit. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a4c8737b7681dd892635d0b352f804405}{Get\+Stop\+Vehicle}} (\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} identifier)
+\item 
+void \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a01db5817d9fd00fb8103b0bfe0895fcb}{Set\+Stop\+Vehicle}} (\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} identifier, \mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} state)
+\item 
+void \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a1e88a800cb808f28b715444d5999eb02}{Initialize\+Signal}} ()
+\item 
+virtual \mbox{\hyperlink{namespace_captain_abc914229623e9ca890ab012482a5e89c}{Signal\+Mode}} \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a9c0d17f26b92fe37699922e13b6f8eb9}{Get\+Signal\+Mode}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&leader\+Unit) const
+\begin{DoxyCompactList}\small\item\em Gets signal mode of given leader Unit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_af7357fcfe246c5a1de302c4bfbdd1e00}{Set\+Signal}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&leader\+Unit, \mbox{\hyperlink{namespace_captain_abc914229623e9ca890ab012482a5e89c}{Signal\+Mode}} signal)
+\begin{DoxyCompactList}\small\item\em Sets signal for given leader unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{struct_captain_1_1_i_event_recordable}{Captain\+::\+IEvent\+Recordable}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_i_event_recordable_ad50163c1ce3c5b72548a6904db592172}{IEvent\+Recordable}} ()=default
+\item 
+virtual \mbox{\hyperlink{struct_captain_1_1_i_event_recordable_aed6ba9b275dfef1362cf6ad32d092453}{\texorpdfstring{$\sim$}{\string~}\+IEvent\+Recordable}} ()=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_i_event_recordable_a2e2807a122f1f25887a2e12fe9e82a74}{IEvent\+Recordable}} (const \mbox{\hyperlink{struct_captain_1_1_i_event_recordable}{IEvent\+Recordable}} \&other)=delete
+\item 
+\mbox{\hyperlink{struct_captain_1_1_i_event_recordable}{IEvent\+Recordable}} \& \mbox{\hyperlink{struct_captain_1_1_i_event_recordable_a697041150e34f0bcd57b85592b6d0254}{operator=}} (const \mbox{\hyperlink{struct_captain_1_1_i_event_recordable}{IEvent\+Recordable}} \&other)=delete
+\item 
+virtual void \mbox{\hyperlink{struct_captain_1_1_i_event_recordable_a7056daa9c8bb0712b5086f695481d232}{Record}} (size\+\_\+t cycle)=0
+\begin{DoxyCompactList}\small\item\em Records information to temporary buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a6b2aa11910363993bf83f48f8348d256}{Follower\+Signal\+Elapsed\+Time}} = 0
+\item 
+bool \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a081b6c71b3cae44fcdca623deed0abe4}{Found\+Leader\+Vehicle\+To\+Stop}} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a9bb687a4ebb768bf466d53dbf8b1c9d0}{Max\+Speed}} = 0
+\item 
+\mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}} \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a5d3e6931c36d2a3a72a1ed6fe884e8be}{Parent\+Link\+Unit\+Type}} = \mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12edaf19516d11f2946f894070e92fcb56b6d}{Unit\+Type\+::\+Uniform}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a1aedde0c7a1f383f31fbff1f2e8f1b63}{Is\+Equal}} (\mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} $>$ laneA, \mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} $>$ laneB)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_adfd5d171b6579448e9850efb9e46f658}{m\+\_\+identifier}}
+\item 
+std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}}, \mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$ $>$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_ae655029155119ae6b493b2bfece9eaf2}{m\+\_\+stop\+Vehicle\+Map}}
+\item 
+\mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Util\+::\+Event\+Recorder}} \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_adbca2a3847e90e8edc1bfe0342ed3e89}{m\+\_\+event\+Recorder}}
+\item 
+std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}}, \mbox{\hyperlink{namespace_captain_abc914229623e9ca890ab012482a5e89c}{Signal\+Mode}} $>$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a0f9cf92cd1b6df83d77d8c578896cab7}{m\+\_\+signal\+Map}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a40e0f156caf0bd423d30bf20e492f2e6}\label{class_captain_1_1_node_1_1_micro_lane_a40e0f156caf0bd423d30bf20e492f2e6} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!MicroLane@{MicroLane}}
+\index{MicroLane@{MicroLane}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{MicroLane()}{MicroLane()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Captain\+::\+Node\+::\+Micro\+Lane\+::\+Micro\+Lane (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{unit\+Identifier,  }\item[{std\+::size\+\_\+t}]{num\+Sect,  }\item[{std\+::size\+\_\+t}]{max\+Vehicle,  }\item[{double}]{q\+Max,  }\item[{double}]{wave\+Speed,  }\item[{double}]{free\+Flow\+Speed,  }\item[{double}]{length,  }\item[{double}]{width }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em unit\+Identifier} & \+: unit\+Identifier unique to this object \\
+\hline
+{\em max\+Vehicle} & \+: number of maximum vehicles \\
+\hline
+{\em num\+Sect} & \+: Number of section \\
+\hline
+{\em q\+Max} & \+: Q-\/max value of this lane \\
+\hline
+{\em wave\+Speed} & \+: wave\+Speed of this lane \\
+\hline
+{\em free\+Flow\+Speed} & \+: Free\+Flow\+Speed of this lane \\
+\hline
+{\em length} & \+: length of this lane \\
+\hline
+{\em width} & \+: width of this lane \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{class_captain_1_1_node_1_1_micro_lane_a40e0f156caf0bd423d30bf20e492f2e6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a7b4f4aaa60c1e94b224b4d243633e999}\label{class_captain_1_1_node_1_1_micro_lane_a7b4f4aaa60c1e94b224b4d243633e999} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!````~MicroLane@{\texorpdfstring{$\sim$}{\string~}MicroLane}}
+\index{````~MicroLane@{\texorpdfstring{$\sim$}{\string~}MicroLane}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MicroLane()}{\string~MicroLane()}}
+{\footnotesize\ttfamily Captain\+::\+Node\+::\+Micro\+Lane\+::\texorpdfstring{$\sim$}{\string~}\+Micro\+Lane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_ab46fecff9554542942af88f563b42fad}\label{class_captain_1_1_node_1_1_micro_lane_ab46fecff9554542942af88f563b42fad} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!MicroLane@{MicroLane}}
+\index{MicroLane@{MicroLane}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{MicroLane()}{MicroLane()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Captain\+::\+Node\+::\+Micro\+Lane\+::\+Micro\+Lane (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane}{Micro\+Lane}} \&}]{micro\+Lane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a696ed6ca3652715702d4f0b1167ef37b}\label{class_captain_1_1_node_1_1_micro_lane_a696ed6ca3652715702d4f0b1167ef37b} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!MicroLane@{MicroLane}}
+\index{MicroLane@{MicroLane}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{MicroLane()}{MicroLane()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Captain\+::\+Node\+::\+Micro\+Lane\+::\+Micro\+Lane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane}{Micro\+Lane}} \&\&}]{micro\+Lane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a5b02e0582aa2f9544619f8b33e593657}\label{class_captain_1_1_node_1_1_micro_lane_a5b02e0582aa2f9544619f8b33e593657} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!AddVehicle@{AddVehicle}}
+\index{AddVehicle@{AddVehicle}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{AddVehicle()}{AddVehicle()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Add\+Vehicle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$}]{vehicle\+Ptr }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_a5b02e0582aa2f9544619f8b33e593657_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_ae4c0989c207f2e85d4eff39b9f42e198}\label{class_captain_1_1_node_1_1_micro_lane_ae4c0989c207f2e85d4eff39b9f42e198} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!ApplyV2XMessageToVehicles@{ApplyV2XMessageToVehicles}}
+\index{ApplyV2XMessageToVehicles@{ApplyV2XMessageToVehicles}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{ApplyV2XMessageToVehicles()}{ApplyV2XMessageToVehicles()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Apply\+V2\+XMessage\+To\+Vehicles (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{cycle }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_ae4c0989c207f2e85d4eff39b9f42e198_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a6233b4cad8cfd620a169ccbf1aeeb50e}\label{class_captain_1_1_node_1_1_micro_lane_a6233b4cad8cfd620a169ccbf1aeeb50e} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!ComputeICF@{ComputeICF}}
+\index{ComputeICF@{ComputeICF}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{ComputeICF()}{ComputeICF()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Compute\+ICF (\begin{DoxyParamCaption}\item[{const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{struct_captain_1_1_meso_computation_model}{Meso\+Computation\+Model}} $>$ \&}]{computation\+Model,  }\item[{std\+::size\+\_\+t}]{cycle,  }\item[{bool}]{mode }\end{DoxyParamCaption})}
+
+Computes ICF from previous cell when multiple cells are forwarded to this cell 
+\begin{DoxyParams}{Parameters}
+{\em computation\+Model} & \+: model that implements formula to execute Meso algorithm\\
+\hline
+{\em cycle} & \+: number of micro cycles \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_a6233b4cad8cfd620a169ccbf1aeeb50e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_ace4f1bbf2c0f5ed9cccdb3c3d0dc1fbd}\label{class_captain_1_1_node_1_1_micro_lane_ace4f1bbf2c0f5ed9cccdb3c3d0dc1fbd} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!EnqueueToNewQueue@{EnqueueToNewQueue}}
+\index{EnqueueToNewQueue@{EnqueueToNewQueue}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{EnqueueToNewQueue()}{EnqueueToNewQueue()}}
+{\footnotesize\ttfamily std\+::list$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ Captain\+::\+Node\+::\+Micro\+Lane\+::\+Enqueue\+To\+New\+Queue (\begin{DoxyParamCaption}\item[{std\+::list$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$}]{New\+Queue }\end{DoxyParamCaption})}
+
+
+
+Virtual vehicle that is used to stop followers. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_ace4f1bbf2c0f5ed9cccdb3c3d0dc1fbd_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a8518e6feaf7677d0c3c035a0389d056e}\label{class_captain_1_1_node_1_1_micro_lane_a8518e6feaf7677d0c3c035a0389d056e} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!EnqueueWaitVehiclePtr@{EnqueueWaitVehiclePtr}}
+\index{EnqueueWaitVehiclePtr@{EnqueueWaitVehiclePtr}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{EnqueueWaitVehiclePtr()}{EnqueueWaitVehiclePtr()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Enqueue\+Wait\+Vehicle\+Ptr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Captain\+::\+Vehicle\+Ptr}} \&\&}]{vehicle\+Ptr }\end{DoxyParamCaption})}
+
+Enqueue vehicle\+Ptr into vehicle wait queue 
+\begin{DoxyParams}{Parameters}
+{\em vehicle\+Ptr} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_a8518e6feaf7677d0c3c035a0389d056e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_aa496448e87b68ea66a5e80fa0747e254}\label{class_captain_1_1_node_1_1_micro_lane_aa496448e87b68ea66a5e80fa0747e254} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!ExtractVehicle@{ExtractVehicle}}
+\index{ExtractVehicle@{ExtractVehicle}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{ExtractVehicle()}{ExtractVehicle()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Extract\+Vehicle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_aa496448e87b68ea66a5e80fa0747e254_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a904d9805c84daadffa2a2fa19d46a752}\label{class_captain_1_1_node_1_1_micro_lane_a904d9805c84daadffa2a2fa19d46a752} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!FindAllFollowers@{FindAllFollowers}}
+\index{FindAllFollowers@{FindAllFollowers}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{FindAllFollowers()}{FindAllFollowers()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$ $>$ Captain\+::\+Node\+::\+Micro\+Lane\+::\+Find\+All\+Followers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_position}{Position}}}]{position }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_a904d9805c84daadffa2a2fa19d46a752_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_ac13f7e93c3aef3609ba111a87de75cae}\label{class_captain_1_1_node_1_1_micro_lane_ac13f7e93c3aef3609ba111a87de75cae} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!FindAllLeaders@{FindAllLeaders}}
+\index{FindAllLeaders@{FindAllLeaders}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{FindAllLeaders()}{FindAllLeaders()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$ $>$ Captain\+::\+Node\+::\+Micro\+Lane\+::\+Find\+All\+Leaders (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_position}{Position}}}]{position }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_ac13f7e93c3aef3609ba111a87de75cae_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a566b68b994166d1e5d6cf8ab55cd1185}\label{class_captain_1_1_node_1_1_micro_lane_a566b68b994166d1e5d6cf8ab55cd1185} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!FindFollowerVehicleByPosition@{FindFollowerVehicleByPosition}}
+\index{FindFollowerVehicleByPosition@{FindFollowerVehicleByPosition}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{FindFollowerVehicleByPosition()}{FindFollowerVehicleByPosition()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$ $>$ Captain\+::\+Node\+::\+Micro\+Lane\+::\+Find\+Follower\+Vehicle\+By\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_position}{Position}}}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Finds following vehicle using the position 
+\begin{DoxyParams}{Parameters}
+{\em position} & \+: position to find the vehicle \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a7c51f1b3d268ce26ab44f54636e7f8fd}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_a566b68b994166d1e5d6cf8ab55cd1185_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a7bd169080fa3941ebd3fbc92c93eb902}\label{class_captain_1_1_node_1_1_micro_lane_a7bd169080fa3941ebd3fbc92c93eb902} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!FindLeaderVehicleByPosition@{FindLeaderVehicleByPosition}}
+\index{FindLeaderVehicleByPosition@{FindLeaderVehicleByPosition}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{FindLeaderVehicleByPosition()}{FindLeaderVehicleByPosition()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$ $>$ Captain\+::\+Node\+::\+Micro\+Lane\+::\+Find\+Leader\+Vehicle\+By\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_position}{Position}}}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Finds leading vehicle using the position 
+\begin{DoxyParams}{Parameters}
+{\em position} & \+: position to find the vehicle \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a88721d263688e77810d5a044a9525b2c}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_a7bd169080fa3941ebd3fbc92c93eb902_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a8de5be99a9e0f6642c51c6d9c06143c9}\label{class_captain_1_1_node_1_1_micro_lane_a8de5be99a9e0f6642c51c6d9c06143c9} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!FlushRecordings@{FlushRecordings}}
+\index{FlushRecordings@{FlushRecordings}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{FlushRecordings()}{FlushRecordings()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Flush\+Recordings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Records all remaining recordings stored in buffer. 
+
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_i_event_recordable_a3fc2cbece40bb830c49854ecc2211fc3}{Captain\+::\+IEvent\+Recordable}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_a8de5be99a9e0f6642c51c6d9c06143c9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a223e88f8616632efed63c0b40678930f}\label{class_captain_1_1_node_1_1_micro_lane_a223e88f8616632efed63c0b40678930f} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!GetAvgSpeed@{GetAvgSpeed}}
+\index{GetAvgSpeed@{GetAvgSpeed}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{GetAvgSpeed()}{GetAvgSpeed()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Captain\+::\+Node\+::\+Micro\+Lane\+::\+Get\+Avg\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns average speed \begin{DoxyReturn}{Returns}
+\+: Average speed of the lane 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_a223e88f8616632efed63c0b40678930f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a4ca0147f214f34aa3e8c3c9fde7f57a9}\label{class_captain_1_1_node_1_1_micro_lane_a4ca0147f214f34aa3e8c3c9fde7f57a9} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!GetAvgSpeed@{GetAvgSpeed}}
+\index{GetAvgSpeed@{GetAvgSpeed}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{GetAvgSpeed()}{GetAvgSpeed()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Captain\+::\+Node\+::\+Micro\+Lane\+::\+Get\+Avg\+Speed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_position}{Position}}}]{position,  }\item[{double}]{length }\end{DoxyParamCaption})}
+
+Returns average speed of specific range (from position.\+x to position.\+x + length) Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_a4ca0147f214f34aa3e8c3c9fde7f57a9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_af77172356d81f381192975326c0b068c}\label{class_captain_1_1_node_1_1_micro_lane_af77172356d81f381192975326c0b068c} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!GetCurrentFollowerPhaseNum@{GetCurrentFollowerPhaseNum}}
+\index{GetCurrentFollowerPhaseNum@{GetCurrentFollowerPhaseNum}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{GetCurrentFollowerPhaseNum()}{GetCurrentFollowerPhaseNum()}}
+{\footnotesize\ttfamily int Captain\+::\+Node\+::\+Micro\+Lane\+::\+Get\+Current\+Follower\+Phase\+Num (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle }\end{DoxyParamCaption}) const}
+
+Returns appropriate phase number for current phase\+Time if only 1 phase exists(with cycle\+Length 0) this will return 0 always Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_af77172356d81f381192975326c0b068c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a371d0acacc60bc38174621375cb5f5ae}\label{class_captain_1_1_node_1_1_micro_lane_a371d0acacc60bc38174621375cb5f5ae} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!GetCurrentFollowerUnitNum@{GetCurrentFollowerUnitNum}}
+\index{GetCurrentFollowerUnitNum@{GetCurrentFollowerUnitNum}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{GetCurrentFollowerUnitNum()}{GetCurrentFollowerUnitNum()}}
+{\footnotesize\ttfamily int Captain\+::\+Node\+::\+Micro\+Lane\+::\+Get\+Current\+Follower\+Unit\+Num (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}}}]{connection\+Info }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_a371d0acacc60bc38174621375cb5f5ae_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a71fd46fa5babd47b8010adaf7f0527d3}\label{class_captain_1_1_node_1_1_micro_lane_a71fd46fa5babd47b8010adaf7f0527d3} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!GetCurrentNumVehicles@{GetCurrentNumVehicles}}
+\index{GetCurrentNumVehicles@{GetCurrentNumVehicles}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{GetCurrentNumVehicles()}{GetCurrentNumVehicles()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Captain\+::\+Node\+::\+Micro\+Lane\+::\+Get\+Current\+Num\+Vehicles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Brings current number of vehicles This operations performs lock Used in micro units \begin{DoxyReturn}{Returns}
+\+: number of vehicles in the cell 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a5f5ff81d850ec7aad0e1db06d4360a2b}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_a71fd46fa5babd47b8010adaf7f0527d3_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_ab6689542eb425b15b11618322a0132f8}\label{class_captain_1_1_node_1_1_micro_lane_ab6689542eb425b15b11618322a0132f8} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!GetCurrentNumWaitingVehicles@{GetCurrentNumWaitingVehicles}}
+\index{GetCurrentNumWaitingVehicles@{GetCurrentNumWaitingVehicles}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{GetCurrentNumWaitingVehicles()}{GetCurrentNumWaitingVehicles()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Captain\+::\+Node\+::\+Micro\+Lane\+::\+Get\+Current\+Num\+Waiting\+Vehicles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns current number of vehicles in the wait queue \begin{DoxyReturn}{Returns}
+\+: number of vehicles in the wait queue of target lane 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a735c35cf60c90a1c21dcd856cb6d9fa7}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_ab6689542eb425b15b11618322a0132f8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a487037fc2028c7378ad01b9a417080d4}\label{class_captain_1_1_node_1_1_micro_lane_a487037fc2028c7378ad01b9a417080d4} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!GetFilePath@{GetFilePath}}
+\index{GetFilePath@{GetFilePath}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{GetFilePath()}{GetFilePath()}}
+{\footnotesize\ttfamily std\+::filesystem\+::path Captain\+::\+Node\+::\+Micro\+Lane\+::\+Get\+File\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets current target file path. 
+
+\begin{DoxyReturn}{Returns}
+filepath that recordings are getting stored 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_i_event_recordable_aa84d827817e17a117fb9db090efd1605}{Captain\+::\+IEvent\+Recordable}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_a487037fc2028c7378ad01b9a417080d4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_afb76e76490ca8ebe59fa6fa7d4341f23}\label{class_captain_1_1_node_1_1_micro_lane_afb76e76490ca8ebe59fa6fa7d4341f23} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!GetFollowerConnectionInfo@{GetFollowerConnectionInfo}}
+\index{GetFollowerConnectionInfo@{GetFollowerConnectionInfo}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{GetFollowerConnectionInfo()}{GetFollowerConnectionInfo()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} $>$ Captain\+::\+Node\+::\+Micro\+Lane\+::\+Get\+Follower\+Connection\+Info (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle }\end{DoxyParamCaption}) const}
+
+Returns connection information about the follower 
+\begin{DoxyParams}{Parameters}
+{\em cycle} & \+: micro phase time of current state \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: \doxylink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info} containing follower connection information 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_afb76e76490ca8ebe59fa6fa7d4341f23_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a4d8d6543fd304a88c14bcf8612b25aa8}\label{class_captain_1_1_node_1_1_micro_lane_a4d8d6543fd304a88c14bcf8612b25aa8} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!GetFollowingContainerPtr@{GetFollowingContainerPtr}}
+\index{GetFollowingContainerPtr@{GetFollowingContainerPtr}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{GetFollowingContainerPtr()}{GetFollowingContainerPtr()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} $>$ $>$ Captain\+::\+Node\+::\+Micro\+Lane\+::\+Get\+Following\+Container\+Ptr (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle }\end{DoxyParamCaption})}
+
+Returns Previous IVehicle\+Containable object ptr that this vehicle has passed before current unit This might return nullptr if following unit has no corresponding lane with current Sub\+ID 
+\begin{DoxyParams}{Parameters}
+{\em cycle} & \+: current micro time step \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_a4d8d6543fd304a88c14bcf8612b25aa8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a0986f7ad56e0a1f863e77d52fe3a4dce}\label{class_captain_1_1_node_1_1_micro_lane_a0986f7ad56e0a1f863e77d52fe3a4dce} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!GetFollowingVehiclePtr@{GetFollowingVehiclePtr}}
+\index{GetFollowingVehiclePtr@{GetFollowingVehiclePtr}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{GetFollowingVehiclePtr()}{GetFollowingVehiclePtr()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ Captain\+::\+Node\+::\+Micro\+Lane\+::\+Get\+Following\+Vehicle\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns vehicle\+Ptr of last vehicle \begin{DoxyReturn}{Returns}
+\+: vehicle\+Ptr of leading vehicle of the unit m\+\_\+default\+Vehicle\+Ptr if such vehicle does not exist 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a112617dfc6bde6bf4555699d2813d1d6}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_a0986f7ad56e0a1f863e77d52fe3a4dce_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a675927613232e5cf319e926b0dd806ee}\label{class_captain_1_1_node_1_1_micro_lane_a675927613232e5cf319e926b0dd806ee} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!GetLeaderConnectionInfo@{GetLeaderConnectionInfo}}
+\index{GetLeaderConnectionInfo@{GetLeaderConnectionInfo}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{GetLeaderConnectionInfo()}{GetLeaderConnectionInfo()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} $>$ Captain\+::\+Node\+::\+Micro\+Lane\+::\+Get\+Leader\+Connection\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns connection information about the leader \begin{DoxyReturn}{Returns}
+\+: \doxylink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info} containing leader connection information 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a5804cd5a20b9e47642d108dd2d8bdafc}\label{class_captain_1_1_node_1_1_micro_lane_a5804cd5a20b9e47642d108dd2d8bdafc} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!GetLeadingVehiclePtr@{GetLeadingVehiclePtr}}
+\index{GetLeadingVehiclePtr@{GetLeadingVehiclePtr}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{GetLeadingVehiclePtr()}{GetLeadingVehiclePtr()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{namespace_captain_ac03838c8d2941d5da8169c3ec7a4d868}{Vehicle\+Weak\+Ptr}} $>$ Captain\+::\+Node\+::\+Micro\+Lane\+::\+Get\+Leading\+Vehicle\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns vehicle\+Ptr of leading vehicle \begin{DoxyReturn}{Returns}
+\+: vehicle\+Ptr of leading vehicle of the unit m\+\_\+default\+Vehicle\+Ptr if such vehicle doesn\textquotesingle{}t exist 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a6a2df75712eaa89245eb1664dbd9e6d7}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_a5804cd5a20b9e47642d108dd2d8bdafc_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_af086e53cdead1318fcd1e9ea835a2344}\label{class_captain_1_1_node_1_1_micro_lane_af086e53cdead1318fcd1e9ea835a2344} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!GetLength@{GetLength}}
+\index{GetLength@{GetLength}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{GetLength()}{GetLength()}}
+{\footnotesize\ttfamily double Captain\+::\+Node\+::\+Micro\+Lane\+::\+Get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns Length of this micro\+Lane \begin{DoxyReturn}{Returns}
+\+: Length of this micro\+Lane 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a7a5ce0cc29d1acef69942f3ff6eb4029}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}.
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a92b1e077e5ea545330ee6c27c0852654}\label{class_captain_1_1_node_1_1_micro_lane_a92b1e077e5ea545330ee6c27c0852654} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!GetMaxVehicleNum@{GetMaxVehicleNum}}
+\index{GetMaxVehicleNum@{GetMaxVehicleNum}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{GetMaxVehicleNum()}{GetMaxVehicleNum()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Captain\+::\+Node\+::\+Micro\+Lane\+::\+Get\+Max\+Vehicle\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets maximum number of vehicles \begin{DoxyReturn}{Returns}
+\+: Maximum number of vehicles that this cell can hold(const) 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_acd960f884563dfea1fb028ec1556bbb8}\label{class_captain_1_1_node_1_1_micro_lane_acd960f884563dfea1fb028ec1556bbb8} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!GetNumVehicleInCell@{GetNumVehicleInCell}}
+\index{GetNumVehicleInCell@{GetNumVehicleInCell}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{GetNumVehicleInCell()}{GetNumVehicleInCell()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Captain\+::\+Node\+::\+Micro\+Lane\+::\+Get\+Num\+Vehicle\+In\+Cell (\begin{DoxyParamCaption}\item[{double}]{length,  }\item[{std\+::size\+\_\+t}]{cycle,  }\item[{bool}]{from\+Front }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_acf2c6e94010bee623330e583be4044c4}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_acd960f884563dfea1fb028ec1556bbb8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_acd960f884563dfea1fb028ec1556bbb8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a4fc7c481d4a0b2597fc84fabdc6ade56}\label{class_captain_1_1_node_1_1_micro_lane_a4fc7c481d4a0b2597fc84fabdc6ade56} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!GetRecordings@{GetRecordings}}
+\index{GetRecordings@{GetRecordings}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{GetRecordings()}{GetRecordings()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Get\+Recordings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_util_1_1_event_recorder_container}{Captain\+::\+Util\+::\+Event\+Recorder\+Container}} \&}]{container }\end{DoxyParamCaption})}
+
+Stores all recordings in the temporary buffer to designated container for further flushing Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_a4fc7c481d4a0b2597fc84fabdc6ade56_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a955a85b175314ca9f23d424ef53c6546}\label{class_captain_1_1_node_1_1_micro_lane_a955a85b175314ca9f23d424ef53c6546} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!GetVehicleQueue@{GetVehicleQueue}}
+\index{GetVehicleQueue@{GetVehicleQueue}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{GetVehicleQueue()}{GetVehicleQueue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_util_1_1_vehicle_queue}{Util\+::\+Vehicle\+Queue}} \& Captain\+::\+Node\+::\+Micro\+Lane\+::\+Get\+Vehicle\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns vehicle\+Queue of current lane \begin{DoxyReturn}{Returns}
+\doxylink{class_captain_1_1_spin_lock_vehicle_queue}{Spin\+Lock\+Vehicle\+Queue} of current lane 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a94ff7a97c295b30f209398bc8aebd4f5}\label{class_captain_1_1_node_1_1_micro_lane_a94ff7a97c295b30f209398bc8aebd4f5} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!GetWeight@{GetWeight}}
+\index{GetWeight@{GetWeight}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{GetWeight()}{GetWeight()}}
+{\footnotesize\ttfamily double Captain\+::\+Node\+::\+Micro\+Lane\+::\+Get\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns weight (average vehicle pass time) for routing \begin{DoxyReturn}{Returns}
+\+: average pass time 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a0e809c90e411c6e213147384a3ec9026}\label{class_captain_1_1_node_1_1_micro_lane_a0e809c90e411c6e213147384a3ec9026} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{GetWidth()}{GetWidth()}}
+{\footnotesize\ttfamily double Captain\+::\+Node\+::\+Micro\+Lane\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns Width of this micro\+Lane \begin{DoxyReturn}{Returns}
+\+: Width\+Vector of this micro\+Lane 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a064eeaeccd3c012721ddfaeeca64ee63}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}.
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a4515ab6a7052d663e549249d5af7b3e2}\label{class_captain_1_1_node_1_1_micro_lane_a4515ab6a7052d663e549249d5af7b3e2} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!MoveFromNearbyLane@{MoveFromNearbyLane}}
+\index{MoveFromNearbyLane@{MoveFromNearbyLane}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{MoveFromNearbyLane()}{MoveFromNearbyLane()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Move\+From\+Nearby\+Lane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Moves vehicles from lane change queue of nearby lane. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_a4515ab6a7052d663e549249d5af7b3e2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_af76a177c26d2913f37b977f9a9b0a6f9}\label{class_captain_1_1_node_1_1_micro_lane_af76a177c26d2913f37b977f9a9b0a6f9} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!MoveFromPreviousUnit@{MoveFromPreviousUnit}}
+\index{MoveFromPreviousUnit@{MoveFromPreviousUnit}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{MoveFromPreviousUnit()}{MoveFromPreviousUnit()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Move\+From\+Previous\+Unit (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle }\end{DoxyParamCaption})}
+
+Pops vehicles from previous Unit and stores it to current unit 
+\begin{DoxyParams}{Parameters}
+{\em cycle} & \+: micro time step Get\+Follower\+Lane\+Connection\+Info \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_af76a177c26d2913f37b977f9a9b0a6f9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a1b7a35256242768fde5f54fb27145804}\label{class_captain_1_1_node_1_1_micro_lane_a1b7a35256242768fde5f54fb27145804} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!MoveFromPreviousUnitToVirtualMicro@{MoveFromPreviousUnitToVirtualMicro}}
+\index{MoveFromPreviousUnitToVirtualMicro@{MoveFromPreviousUnitToVirtualMicro}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{MoveFromPreviousUnitToVirtualMicro()}{MoveFromPreviousUnitToVirtualMicro()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Move\+From\+Previous\+Unit\+To\+Virtual\+Micro (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_a1b7a35256242768fde5f54fb27145804_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_ae149c83a733608678da7f61a5ba5fe09}\label{class_captain_1_1_node_1_1_micro_lane_ae149c83a733608678da7f61a5ba5fe09} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!MoveWaitingVehiclesToMainQueue@{MoveWaitingVehiclesToMainQueue}}
+\index{MoveWaitingVehiclesToMainQueue@{MoveWaitingVehiclesToMainQueue}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{MoveWaitingVehiclesToMainQueue()}{MoveWaitingVehiclesToMainQueue()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Move\+Waiting\+Vehicles\+To\+Main\+Queue (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle }\end{DoxyParamCaption})}
+
+Move vehicles in the m\+\_\+vehicle\+Wait\+Queue\+Up to m\+\_\+vehicle\+Main\+Queue Stops if wait queue is empty If m\+\_\+vehicle\+Main\+Queue exceeds its limited size, assertion fails \Hypertarget{class_captain_1_1_node_1_1_micro_lane_a26de931f067c29e985a73b5f2a694565}\label{class_captain_1_1_node_1_1_micro_lane_a26de931f067c29e985a73b5f2a694565} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane}{Micro\+Lane}} \& Captain\+::\+Node\+::\+Micro\+Lane\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane}{Micro\+Lane}} \&}]{micro\+Lane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_aafda3d8638bc6def8198ba4e6207fa7f}\label{class_captain_1_1_node_1_1_micro_lane_aafda3d8638bc6def8198ba4e6207fa7f} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane}{Micro\+Lane}} \& Captain\+::\+Node\+::\+Micro\+Lane\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane}{Micro\+Lane}} \&\&}]{micro\+Lane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a4b7102e1805113a99fd626bbc022e361}\label{class_captain_1_1_node_1_1_micro_lane_a4b7102e1805113a99fd626bbc022e361} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!PeekVehicle@{PeekVehicle}}
+\index{PeekVehicle@{PeekVehicle}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{PeekVehicle()}{PeekVehicle()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ Captain\+::\+Node\+::\+Micro\+Lane\+::\+Peek\+Vehicle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns reference to last vehicle in the queue \begin{DoxyReturn}{Returns}
+\+: reference to last vehicle in the queue 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a7fb9975a6b067c428bf518e7e3e0c6fb}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_a4b7102e1805113a99fd626bbc022e361_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a44ef1d91152f4c065a0f10ea7cdc680f}\label{class_captain_1_1_node_1_1_micro_lane_a44ef1d91152f4c065a0f10ea7cdc680f} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!PopVehicle@{PopVehicle}}
+\index{PopVehicle@{PopVehicle}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{PopVehicle()}{PopVehicle()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ Captain\+::\+Node\+::\+Micro\+Lane\+::\+Pop\+Vehicle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Pops vehicle from previous Link from specific lane\textquotesingle{}s waiting container \begin{DoxyReturn}{Returns}
+\+: Vehicle\+Ptr that has been popped default\+Ptr is returned if it 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_aee7da19fad5088987ef15476f60594d6}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_a44ef1d91152f4c065a0f10ea7cdc680f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a1268626fcdf20aef960d86d49efa668e}\label{class_captain_1_1_node_1_1_micro_lane_a1268626fcdf20aef960d86d49efa668e} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!PushVehicle@{PushVehicle}}
+\index{PushVehicle@{PushVehicle}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{PushVehicle()}{PushVehicle()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Push\+Vehicle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} \&\&}]{vehicle\+Ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Pushes vehicle to current \doxylink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit} 
+\begin{DoxyParams}{Parameters}
+{\em vehicle\+Ptr} & \+: Unique Vehicle\+Ptr object to move \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_ae3fb8f20863fb4aeb1e569152763d3b4}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_a1268626fcdf20aef960d86d49efa668e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a1a70849c68e9dccdb5e08d01dd043766}\label{class_captain_1_1_node_1_1_micro_lane_a1a70849c68e9dccdb5e08d01dd043766} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!Record@{Record}}
+\index{Record@{Record}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{Record()}{Record()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Record (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+Records each vehicle\textquotesingle{}s information in the lane into Event\+Recorder of each vehicle Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_a1a70849c68e9dccdb5e08d01dd043766_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{class_captain_1_1_node_1_1_micro_lane_a1a70849c68e9dccdb5e08d01dd043766_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_ac0e2db20612b739a356cb324d267d6ff}\label{class_captain_1_1_node_1_1_micro_lane_ac0e2db20612b739a356cb324d267d6ff} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!RemoveEventVehicle@{RemoveEventVehicle}}
+\index{RemoveEventVehicle@{RemoveEventVehicle}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{RemoveEventVehicle()}{RemoveEventVehicle()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Remove\+Event\+Vehicle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Removes the event vehicle from the corresponding vector. 
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a753ce3d06093abc36e6b211640815262}\label{class_captain_1_1_node_1_1_micro_lane_a753ce3d06093abc36e6b211640815262} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!SetEventVehicle@{SetEventVehicle}}
+\index{SetEventVehicle@{SetEventVehicle}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{SetEventVehicle()}{SetEventVehicle()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Set\+Event\+Vehicle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}}}]{state }\end{DoxyParamCaption})}
+
+Models the event as as a vehicle with given state Sets and stores the described vehicle in the corresponding vector Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{class_captain_1_1_node_1_1_micro_lane_a753ce3d06093abc36e6b211640815262_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_ad36ca6a60d94eee4343c8053e0dd6e7d}\label{class_captain_1_1_node_1_1_micro_lane_ad36ca6a60d94eee4343c8053e0dd6e7d} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!SetFollowerConnectionInfo@{SetFollowerConnectionInfo}}
+\index{SetFollowerConnectionInfo@{SetFollowerConnectionInfo}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{SetFollowerConnectionInfo()}{SetFollowerConnectionInfo()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Set\+Follower\+Connection\+Info (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} $>$ \&}]{unit\+Connection\+Info\+Vector }\end{DoxyParamCaption})}
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a0d6064a21248b90bbde503ed0c1e0062}\label{class_captain_1_1_node_1_1_micro_lane_a0d6064a21248b90bbde503ed0c1e0062} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!SetLeaderConnectionInfo@{SetLeaderConnectionInfo}}
+\index{SetLeaderConnectionInfo@{SetLeaderConnectionInfo}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{SetLeaderConnectionInfo()}{SetLeaderConnectionInfo()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Set\+Leader\+Connection\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} \&}]{unit\+Connection\+Info }\end{DoxyParamCaption})}
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a410e5bc6ffaef5d8759132f413989443}\label{class_captain_1_1_node_1_1_micro_lane_a410e5bc6ffaef5d8759132f413989443} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!SetLeftLane@{SetLeftLane}}
+\index{SetLeftLane@{SetLeftLane}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{SetLeftLane()}{SetLeftLane()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Set\+Left\+Lane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane}{Micro\+Lane}} $>$}]{micro\+Lane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_ad46f75351626a16c29addf1ea834d459}\label{class_captain_1_1_node_1_1_micro_lane_ad46f75351626a16c29addf1ea834d459} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!SetMaxVehicle@{SetMaxVehicle}}
+\index{SetMaxVehicle@{SetMaxVehicle}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{SetMaxVehicle()}{SetMaxVehicle()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Set\+Max\+Vehicle (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{maxvehicle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a8578f645e480fef70d8fcf3a99154d1a}\label{class_captain_1_1_node_1_1_micro_lane_a8578f645e480fef70d8fcf3a99154d1a} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!SetRightLane@{SetRightLane}}
+\index{SetRightLane@{SetRightLane}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{SetRightLane()}{SetRightLane()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Set\+Right\+Lane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane}{Micro\+Lane}} $>$}]{micro\+Lane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a8b56be99c13a0e6c024710355e646e65}\label{class_captain_1_1_node_1_1_micro_lane_a8b56be99c13a0e6c024710355e646e65} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!SetSegmentVehicle@{SetSegmentVehicle}}
+\index{SetSegmentVehicle@{SetSegmentVehicle}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{SetSegmentVehicle()}{SetSegmentVehicle()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Set\+Segment\+Vehicle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}}}]{state,  }\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}}}]{info }\end{DoxyParamCaption})}
+
+Models the Segment as as a vehicle with given state and info Sets and stores the described vehicle in the corresponding vector Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{class_captain_1_1_node_1_1_micro_lane_a8b56be99c13a0e6c024710355e646e65_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_ad13ba1ad2693bb92981dc947321538df}\label{class_captain_1_1_node_1_1_micro_lane_ad13ba1ad2693bb92981dc947321538df} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!SetStopVehicleMap@{SetStopVehicleMap}}
+\index{SetStopVehicleMap@{SetStopVehicleMap}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{SetStopVehicleMap()}{SetStopVehicleMap()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Set\+Stop\+Vehicle\+Map (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} $>$ \&}]{unit\+Connection\+Info\+Vector }\end{DoxyParamCaption})}
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_ab0b36f19d524fb663617ef316c29f068}\label{class_captain_1_1_node_1_1_micro_lane_ab0b36f19d524fb663617ef316c29f068} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!SetVirtualVehicle@{SetVirtualVehicle}}
+\index{SetVirtualVehicle@{SetVirtualVehicle}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{SetVirtualVehicle()}{SetVirtualVehicle()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Set\+Virtual\+Vehicle (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle,  }\item[{int}]{lane\+Idx,  }\item[{double}]{avg\+Speed }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_ab0b36f19d524fb663617ef316c29f068_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_ad2bb214356e543a415c857e72c9de8c4}\label{class_captain_1_1_node_1_1_micro_lane_ad2bb214356e543a415c857e72c9de8c4} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!TransitionToMicro@{TransitionToMicro}}
+\index{TransitionToMicro@{TransitionToMicro}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{TransitionToMicro()}{TransitionToMicro()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Transition\+To\+Micro (\begin{DoxyParamCaption}\item[{std\+::list$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$}]{lanequeue }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_ad2bb214356e543a415c857e72c9de8c4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_aa382fde8403e66f8846bdfe735b568ed}\label{class_captain_1_1_node_1_1_micro_lane_aa382fde8403e66f8846bdfe735b568ed} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!UpdateFollowerSignal@{UpdateFollowerSignal}}
+\index{UpdateFollowerSignal@{UpdateFollowerSignal}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{UpdateFollowerSignal()}{UpdateFollowerSignal()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Update\+Follower\+Signal (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle }\end{DoxyParamCaption})}
+
+
+
+set signal for all follower connections 
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a8f4badb49c37c72c825e3a70e7b41f88}\label{class_captain_1_1_node_1_1_micro_lane_a8f4badb49c37c72c825e3a70e7b41f88} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!UpdateVehiclePosition@{UpdateVehiclePosition}}
+\index{UpdateVehiclePosition@{UpdateVehiclePosition}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{UpdateVehiclePosition()}{UpdateVehiclePosition()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Micro\+Lane\+::\+Update\+Vehicle\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Updates vehicle \doxylink{struct_captain_1_1_position}{Position} by setting current vehicle position as next vehicle position ane computes its speed Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_micro_lane_a8f4badb49c37c72c825e3a70e7b41f88_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a6b2aa11910363993bf83f48f8348d256}\label{class_captain_1_1_node_1_1_micro_lane_a6b2aa11910363993bf83f48f8348d256} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!FollowerSignalElapsedTime@{FollowerSignalElapsedTime}}
+\index{FollowerSignalElapsedTime@{FollowerSignalElapsedTime}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{FollowerSignalElapsedTime}{FollowerSignalElapsedTime}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Captain\+::\+Node\+::\+Micro\+Lane\+::\+Follower\+Signal\+Elapsed\+Time = 0}
+
+\Hypertarget{class_captain_1_1_node_1_1_micro_lane_a081b6c71b3cae44fcdca623deed0abe4}\label{class_captain_1_1_node_1_1_micro_lane_a081b6c71b3cae44fcdca623deed0abe4} 
+\index{Captain::Node::MicroLane@{Captain::Node::MicroLane}!FoundLeaderVehicleToStop@{FoundLeaderVehicleToStop}}
+\index{FoundLeaderVehicleToStop@{FoundLeaderVehicleToStop}!Captain::Node::MicroLane@{Captain::Node::MicroLane}}
+\doxysubsubsection{\texorpdfstring{FoundLeaderVehicleToStop}{FoundLeaderVehicleToStop}}
+{\footnotesize\ttfamily bool Captain\+::\+Node\+::\+Micro\+Lane\+::\+Found\+Leader\+Vehicle\+To\+Stop = false}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Network/\mbox{\hyperlink{_micro_lane_8hpp}{Micro\+Lane.\+hpp}}\item 
+Sources/captain/\+Network/\mbox{\hyperlink{_micro_lane_8cpp}{Micro\+Lane.\+cpp}}\end{DoxyCompactItemize}

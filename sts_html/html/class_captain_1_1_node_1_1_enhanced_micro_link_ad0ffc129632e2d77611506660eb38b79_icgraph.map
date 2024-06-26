@@ -1,0 +1,5 @@
+<map id="Captain::Node::EnhancedMicroLink::GetWeight" name="Captain::Node::EnhancedMicroLink::GetWeight">
+<area shape="rect" id="Node000001" title="Get Weight of the Link." alt="" coords="233,5,434,48"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_uniform_link.html#a605d692a49830ea0ac5378272e02dd8d" title="Gets weight (expected pass time) of the link." alt="" coords="5,5,185,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,29,185,29,185,24,217,24"/>
+</map>

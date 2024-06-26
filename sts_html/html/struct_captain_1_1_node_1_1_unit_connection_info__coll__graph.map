@@ -1,0 +1,5 @@
+<map id="Captain::Node::UnitConnectionInfo" name="Captain::Node::UnitConnectionInfo">
+<area shape="rect" id="Node000001" title="Used to store connections in perspective of lane." alt="" coords="5,373,216,592"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_v2_x.html" title=" " alt="" coords="33,5,188,309"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,309,113,356,108,356,108,309"/>
+</map>

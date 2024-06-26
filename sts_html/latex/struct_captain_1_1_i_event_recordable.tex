@@ -1,0 +1,132 @@
+\doxysection{Captain\+::IEvent\+Recordable Struct Reference}
+\hypertarget{struct_captain_1_1_i_event_recordable}{}\label{struct_captain_1_1_i_event_recordable}\index{Captain::IEventRecordable@{Captain::IEventRecordable}}
+
+
+Interface for units that can record events.  
+
+
+
+
+{\ttfamily \#include $<$IEvent\+Recordable.\+hpp$>$}
+
+
+
+Inheritance diagram for Captain\+::IEvent\+Recordable\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_captain_1_1_i_event_recordable__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Captain\+::IEvent\+Recordable\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{struct_captain_1_1_i_event_recordable__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_i_event_recordable_ad50163c1ce3c5b72548a6904db592172}{IEvent\+Recordable}} ()=default
+\item 
+virtual \mbox{\hyperlink{struct_captain_1_1_i_event_recordable_aed6ba9b275dfef1362cf6ad32d092453}{\texorpdfstring{$\sim$}{\string~}\+IEvent\+Recordable}} ()=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_i_event_recordable_a2e2807a122f1f25887a2e12fe9e82a74}{IEvent\+Recordable}} (const \mbox{\hyperlink{struct_captain_1_1_i_event_recordable}{IEvent\+Recordable}} \&other)=delete
+\item 
+\mbox{\hyperlink{struct_captain_1_1_i_event_recordable}{IEvent\+Recordable}} \& \mbox{\hyperlink{struct_captain_1_1_i_event_recordable_a697041150e34f0bcd57b85592b6d0254}{operator=}} (const \mbox{\hyperlink{struct_captain_1_1_i_event_recordable}{IEvent\+Recordable}} \&other)=delete
+\item 
+virtual void \mbox{\hyperlink{struct_captain_1_1_i_event_recordable_a7056daa9c8bb0712b5086f695481d232}{Record}} (size\+\_\+t cycle)=0
+\begin{DoxyCompactList}\small\item\em Records information to temporary buffer. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{struct_captain_1_1_i_event_recordable_a3fc2cbece40bb830c49854ecc2211fc3}{Flush\+Recordings}} ()=0
+\begin{DoxyCompactList}\small\item\em Writes all recordings in the temporary buffer to file and flushes the buffer. \end{DoxyCompactList}\item 
+virtual std\+::filesystem\+::path \mbox{\hyperlink{struct_captain_1_1_i_event_recordable_aa84d827817e17a117fb9db090efd1605}{Get\+File\+Path}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets current target file path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for units that can record events. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_captain_1_1_i_event_recordable_ad50163c1ce3c5b72548a6904db592172}\label{struct_captain_1_1_i_event_recordable_ad50163c1ce3c5b72548a6904db592172} 
+\index{Captain::IEventRecordable@{Captain::IEventRecordable}!IEventRecordable@{IEventRecordable}}
+\index{IEventRecordable@{IEventRecordable}!Captain::IEventRecordable@{Captain::IEventRecordable}}
+\doxysubsubsection{\texorpdfstring{IEventRecordable()}{IEventRecordable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Captain\+::\+IEvent\+Recordable\+::\+IEvent\+Recordable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{struct_captain_1_1_i_event_recordable_aed6ba9b275dfef1362cf6ad32d092453}\label{struct_captain_1_1_i_event_recordable_aed6ba9b275dfef1362cf6ad32d092453} 
+\index{Captain::IEventRecordable@{Captain::IEventRecordable}!````~IEventRecordable@{\texorpdfstring{$\sim$}{\string~}IEventRecordable}}
+\index{````~IEventRecordable@{\texorpdfstring{$\sim$}{\string~}IEventRecordable}!Captain::IEventRecordable@{Captain::IEventRecordable}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IEventRecordable()}{\string~IEventRecordable()}}
+{\footnotesize\ttfamily virtual Captain\+::\+IEvent\+Recordable\+::\texorpdfstring{$\sim$}{\string~}\+IEvent\+Recordable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\Hypertarget{struct_captain_1_1_i_event_recordable_a2e2807a122f1f25887a2e12fe9e82a74}\label{struct_captain_1_1_i_event_recordable_a2e2807a122f1f25887a2e12fe9e82a74} 
+\index{Captain::IEventRecordable@{Captain::IEventRecordable}!IEventRecordable@{IEventRecordable}}
+\index{IEventRecordable@{IEventRecordable}!Captain::IEventRecordable@{Captain::IEventRecordable}}
+\doxysubsubsection{\texorpdfstring{IEventRecordable()}{IEventRecordable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Captain\+::\+IEvent\+Recordable\+::\+IEvent\+Recordable (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_i_event_recordable}{IEvent\+Recordable}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_captain_1_1_i_event_recordable_a3fc2cbece40bb830c49854ecc2211fc3}\label{struct_captain_1_1_i_event_recordable_a3fc2cbece40bb830c49854ecc2211fc3} 
+\index{Captain::IEventRecordable@{Captain::IEventRecordable}!FlushRecordings@{FlushRecordings}}
+\index{FlushRecordings@{FlushRecordings}!Captain::IEventRecordable@{Captain::IEventRecordable}}
+\doxysubsubsection{\texorpdfstring{FlushRecordings()}{FlushRecordings()}}
+{\footnotesize\ttfamily virtual void Captain\+::\+IEvent\+Recordable\+::\+Flush\+Recordings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Writes all recordings in the temporary buffer to file and flushes the buffer. 
+
+\begin{DoxyNote}{Note}
+Creates file if file does not exist by calling Remove\+Existing\+File() 
+
+It will append recordings to file if file already exists 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_ac18ca35e3842d9fbe87037a6273013b2}{Captain\+::\+Node\+::\+Meso\+Unit}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a8de5be99a9e0f6642c51c6d9c06143c9}{Captain\+::\+Node\+::\+Micro\+Lane}}, and \mbox{\hyperlink{class_captain_1_1_node_1_1_station_aa471124406839eab16ef0e33699a5b1b}{Captain\+::\+Node\+::\+Station}}.
+
+\Hypertarget{struct_captain_1_1_i_event_recordable_aa84d827817e17a117fb9db090efd1605}\label{struct_captain_1_1_i_event_recordable_aa84d827817e17a117fb9db090efd1605} 
+\index{Captain::IEventRecordable@{Captain::IEventRecordable}!GetFilePath@{GetFilePath}}
+\index{GetFilePath@{GetFilePath}!Captain::IEventRecordable@{Captain::IEventRecordable}}
+\doxysubsubsection{\texorpdfstring{GetFilePath()}{GetFilePath()}}
+{\footnotesize\ttfamily virtual std\+::filesystem\+::path Captain\+::\+IEvent\+Recordable\+::\+Get\+File\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets current target file path. 
+
+\begin{DoxyReturn}{Returns}
+filepath that recordings are getting stored 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a189c11b81db2470f3d6553b38f09c435}{Captain\+::\+Node\+::\+Meso\+Unit}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a487037fc2028c7378ad01b9a417080d4}{Captain\+::\+Node\+::\+Micro\+Lane}}, and \mbox{\hyperlink{class_captain_1_1_node_1_1_station_a6c4ad417b2a1884cdeb1b89c90f5f614}{Captain\+::\+Node\+::\+Station}}.
+
+\Hypertarget{struct_captain_1_1_i_event_recordable_a697041150e34f0bcd57b85592b6d0254}\label{struct_captain_1_1_i_event_recordable_a697041150e34f0bcd57b85592b6d0254} 
+\index{Captain::IEventRecordable@{Captain::IEventRecordable}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::IEventRecordable@{Captain::IEventRecordable}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_i_event_recordable}{IEvent\+Recordable}} \& Captain\+::\+IEvent\+Recordable\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_i_event_recordable}{IEvent\+Recordable}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{struct_captain_1_1_i_event_recordable_a7056daa9c8bb0712b5086f695481d232}\label{struct_captain_1_1_i_event_recordable_a7056daa9c8bb0712b5086f695481d232} 
+\index{Captain::IEventRecordable@{Captain::IEventRecordable}!Record@{Record}}
+\index{Record@{Record}!Captain::IEventRecordable@{Captain::IEventRecordable}}
+\doxysubsubsection{\texorpdfstring{Record()}{Record()}}
+{\footnotesize\ttfamily virtual void Captain\+::\+IEvent\+Recordable\+::\+Record (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{cycle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Records information to temporary buffer. 
+
+record operation runs internally 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Network/\mbox{\hyperlink{_i_event_recordable_8hpp}{IEvent\+Recordable.\+hpp}}\end{DoxyCompactItemize}

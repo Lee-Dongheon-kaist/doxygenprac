@@ -1,0 +1,7 @@
+<map id="Captain::Node::UniformLink::GetRecordings" name="Captain::Node::UniformLink::GetRecordings">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,185,81"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#ac41d8631ba051f8d7755d9e99c7846eb" title=" " alt="" coords="233,5,434,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,45,217,40,217,46,185,50"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_node_1_1_meso_link.html#ab6240573faed6fbd70a7c1a6d6afe4e9" title="Stores the recordings in the designated container." alt="" coords="250,72,417,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,70,235,77,234,82,185,75"/>
+</map>

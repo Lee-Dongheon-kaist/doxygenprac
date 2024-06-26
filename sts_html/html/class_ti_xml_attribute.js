@@ -1,0 +1,28 @@
+var class_ti_xml_attribute =
+[
+    [ "TiXmlAttribute", "class_ti_xml_attribute.html#a9cfa3c8179873fd485d83003b114f8e1", null ],
+    [ "TiXmlAttribute", "class_ti_xml_attribute.html#a759d0b76fb8fcf765ecab243bc14f05e", null ],
+    [ "DoubleValue", "class_ti_xml_attribute.html#a8cca240fb2a7130c87b0fc6156e8b34f", null ],
+    [ "IntValue", "class_ti_xml_attribute.html#ac8501370b065df31a35003c81d87cef2", null ],
+    [ "Name", "class_ti_xml_attribute.html#a83798ef3113c3522154c3fc37b4db85b", null ],
+    [ "NameTStr", "class_ti_xml_attribute.html#a3250b043f2593312a99b4ae8d14f9805", null ],
+    [ "Next", "class_ti_xml_attribute.html#a83f8f06bba60c32335bc7bc11d5b2168", null ],
+    [ "Next", "class_ti_xml_attribute.html#af2e78f1ba9ed56a26ddc80614ed1c393", null ],
+    [ "operator<", "class_ti_xml_attribute.html#a80dcb758cc5ab27ce9865301e2da1335", null ],
+    [ "operator==", "class_ti_xml_attribute.html#a51eef33c2cdd55831447af46be0baf8b", null ],
+    [ "operator>", "class_ti_xml_attribute.html#a697c2dde7ac60fccaa7049cee906eb3e", null ],
+    [ "Parse", "class_ti_xml_attribute.html#ad62774421b814894b995af3b5d231dda", null ],
+    [ "Previous", "class_ti_xml_attribute.html#a184fd6cfbd6ab05a23bc5b9bdce66334", null ],
+    [ "Previous", "class_ti_xml_attribute.html#afc7bbfdf83d59fbc4ff5e283d27b5d7d", null ],
+    [ "Print", "class_ti_xml_attribute.html#a68ae373e03b9c35be4c9d0c3c233b894", null ],
+    [ "Print", "class_ti_xml_attribute.html#a5c8f72a7d1a49972434d45f4c2889e0e", null ],
+    [ "QueryDoubleValue", "class_ti_xml_attribute.html#a6fa41b710c1b79de37a97004aa600c06", null ],
+    [ "QueryIntValue", "class_ti_xml_attribute.html#a6caa8090d2fbb7966700a16e45ed33de", null ],
+    [ "SetDocument", "class_ti_xml_attribute.html#ac12a94d4548302afb12f488ba101f7d1", null ],
+    [ "SetDoubleValue", "class_ti_xml_attribute.html#a0316da31373496c4368ad549bf711394", null ],
+    [ "SetIntValue", "class_ti_xml_attribute.html#a7e065df640116a62ea4f4b7da5449cc8", null ],
+    [ "SetName", "class_ti_xml_attribute.html#ab7fa3d21ff8d7c5764cf9af15b667a99", null ],
+    [ "SetValue", "class_ti_xml_attribute.html#a2dae44178f668b3cb48101be4f2236a0", null ],
+    [ "Value", "class_ti_xml_attribute.html#a0da84344b585308878ec68605f1cbb20", null ],
+    [ "TiXmlAttributeSet", "class_ti_xml_attribute.html#a35a7b7f89f708527677d5078d41ce0bf", null ]
+];

@@ -1,0 +1,7 @@
+<map id="Captain::Node::UniformLink::GetLeadingVehiclePtr" name="Captain::Node::UniformLink::GetLeadingVehiclePtr">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,185,81"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#ae2f3bab90651f838ac5a1386cf034568" title="Gets vehiclePtr of last vehicle from specific lane." alt="" coords="233,5,434,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,45,217,40,217,46,185,50"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_node_1_1_meso_link.html#a0fc42e78ae700411bc785e84e4bb77c9" title="Gets vehiclePtr of leading vehicle from specific lane." alt="" coords="250,72,417,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,70,235,77,234,82,185,75"/>
+</map>

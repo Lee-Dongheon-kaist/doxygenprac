@@ -1,0 +1,7 @@
+<map id="Captain::Node::MesoUnit::MoveFromPreviousUnit" name="Captain::Node::MesoUnit::MoveFromPreviousUnit">
+<area shape="rect" id="Node000001" title="Move vehicles from previous unit&#39;s m_vehicleMainQueue to m_vehicleMainQueueUp." alt="" coords="5,39,172,81"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_meso_unit.html#ac9f51055492e4d4f92cb2a1500c6c069" title=" " alt="" coords="230,5,435,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,46,215,40,215,45,173,51"/>
+<area shape="rect" id="Node000003" href="$struct_captain_1_1_node_1_1_i_vehicle_containable_unit.html#a1aedde0c7a1f383f31fbff1f2e8f1b63" title=" " alt="" coords="220,72,445,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,69,205,73,204,78,172,74"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Captain::Node::MesoLink::SetFollowerLaneConnectionInfo" name="Captain::Node::MesoLink::SetFollowerLaneConnectionInfo">
+<area shape="rect" id="Node000001" title="Sets UnitConnectionInfo to follower for the target lane." alt="" coords="264,5,474,48"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_uniform_link.html#a6404bc89473ac8f59ea1d2de9c488a0c" title=" " alt="" coords="5,5,216,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,29,216,29,216,24,248,24"/>
+</map>

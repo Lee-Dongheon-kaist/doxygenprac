@@ -1,0 +1,1266 @@
+\doxysection{Captain\+::Node\+::Meso\+Unit Class Reference}
+\hypertarget{class_captain_1_1_node_1_1_meso_unit}{}\label{class_captain_1_1_node_1_1_meso_unit}\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+
+
+\+: Meso class represents a single cell in the lane which is computed using meso-\/based model  
+
+
+
+
+{\ttfamily \#include $<$Meso\+Unit.\+hpp$>$}
+
+
+
+Inheritance diagram for Captain\+::Node\+::Meso\+Unit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_captain_1_1_node_1_1_meso_unit__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Captain\+::Node\+::Meso\+Unit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_captain_1_1_node_1_1_meso_unit__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a99d2030f2b11508b3ed0a0322b6921d3}{Meso\+Unit}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&unit\+Identifier, int cell\+Id, std\+::size\+\_\+t max\+Vehicle, double q\+Max, double wave\+Speed, double free\+Flow\+Speed, double length, double width)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a1312d96ed3fe3fbea418bbb7567158c9}{Meso\+Unit}} (const \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit}{Meso\+Unit}} \&meso\+Unit)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor is deleted. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_acb034828e7ba2aa1031d9236e6443474}{Meso\+Unit}} (\mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit}{Meso\+Unit}} \&\&meso\+Unit) noexcept
+\begin{DoxyCompactList}\small\item\em Move-\/constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit}{Meso\+Unit}} \& \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_af073887a325199c749a94141a04be6ac}{operator=}} (const \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit}{Meso\+Unit}} \&meso\+Unit)=delete
+\begin{DoxyCompactList}\small\item\em copy assign operator is not allowed \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit}{Meso\+Unit}} \& \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_aa359e6e09ad6f3f138a56feb1593195a}{operator=}} (\mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit}{Meso\+Unit}} \&\&meso\+Unit) noexcept=delete
+\begin{DoxyCompactList}\small\item\em move assign operator is not allowed \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a53b8fa4c80d60eddc2372610ce816b8a}{\texorpdfstring{$\sim$}{\string~}\+Meso\+Unit}} ()=default
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a5d2c8ab6900d6686555c6339463b707b}{Get\+Current\+Num\+Vehicles}} () override
+\begin{DoxyCompactList}\small\item\em Brings current number of vehicles. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_ab0acad8e1d9a7afbfa897de15bfe27de}{Get\+Current\+Num\+Waiting\+Vehicles}} () override
+\begin{DoxyCompactList}\small\item\em Gets current number of vehicles in the wait queue. \end{DoxyCompactList}\item 
+std\+::optional$<$ \mbox{\hyperlink{namespace_captain_ac03838c8d2941d5da8169c3ec7a4d868}{Vehicle\+Weak\+Ptr}} $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a77c9bfe76f3c87ab8dda54ecd2ec0414}{Get\+Leading\+Vehicle\+Ptr}} () override
+\begin{DoxyCompactList}\small\item\em Brings back vehicle\+Ptr of leading vehicle. \end{DoxyCompactList}\item 
+std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a37b669b81efce94d681fb46711add799}{Get\+Following\+Vehicle\+Ptr}} () override
+\begin{DoxyCompactList}\small\item\em Brings back vehicle\+Ptr of last vehicle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_captain_1_1_util_1_1_vehicle_queue}{Util\+::\+Vehicle\+Queue}} \& \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_af4824723244460b961204fdb8886bd4a}{Get\+Vehicle\+Queue}} ()
+\begin{DoxyCompactList}\small\item\em Returns vehicle\+Queue of current lane. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a942d8030b0dd71d82f7e769c51715be1}{Push\+Vehicle}} (\mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} \&\&vehicle\+Ptr) override
+\begin{DoxyCompactList}\small\item\em Receives vehicle from previous Link. \end{DoxyCompactList}\item 
+std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a5c6e0a074a9d2e1eb5b5d0ccb22af0c6}{Pop\+Vehicle}} () override
+\begin{DoxyCompactList}\small\item\em Pops vehicle from vehicle\+Queue. \end{DoxyCompactList}\item 
+std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_ab5435bd1e06cd98cafd200cb6a3d3900}{Peek\+Vehicle}} () override
+\begin{DoxyCompactList}\small\item\em Gets reference of last vehicle in the vehicle\+Queue without popping it out. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a870178534f01be86d89cbb5038f061ce}{Get\+Length}} () const override
+\begin{DoxyCompactList}\small\item\em Gets Length of unit. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a4b7c22bcc037931355790e2f0d7effa8}{Get\+Width}} () const override
+\begin{DoxyCompactList}\small\item\em Gets Width of unit. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a6635de8aaa4bed2c2a870da5caa7827a}{Get\+Current\+Follower}} (std\+::size\+\_\+t cycle) const
+\begin{DoxyCompactList}\small\item\em Gets appropriate phase number for current Get\+Follower\+Lane\+Connection\+Info. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_ac9f51055492e4d4f92cb2a1500c6c069}{Get\+Current\+Follower\+Phase\+Num}} (std\+::size\+\_\+t cycle) const
+\item 
+int \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a599b1c5d133e71b9c43b234bc4f359e4}{Get\+Current\+Leader}} (std\+::size\+\_\+t cycle) const
+\begin{DoxyCompactList}\small\item\em Gets appropriate phase number for current Get\+Follower\+Lane\+Connection\+Info. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_ac57e0a365f404fd1748cfc10a929fd57}{Get\+QMax}} () const
+\begin{DoxyCompactList}\small\item\em Brings Qmax value. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a66f7658469283bbadca85d3b3b27b389}{Get\+Wave\+Speed}} () const
+\begin{DoxyCompactList}\small\item\em Gets\+Wave\+Speed. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a684524900dada6d609cf9768b48a70bc}{Get\+Max\+Vehicle\+Num}} ()
+\begin{DoxyCompactList}\small\item\em Gets maximum number of vehicles. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a1f5bad694414df1bc73a135bb7611fa6}{Get\+Average\+Speed}} () const
+\begin{DoxyCompactList}\small\item\em Gets average speed of this cell in m/s. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a312cbc0f500938b017e101d9f7469d43}{Get\+Free\+Flow\+Speed}} () const
+\begin{DoxyCompactList}\small\item\em Gets free flow speed of this cell. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a0b773761ca1f7aa49ea4cd718398e6b5}{Get\+Weight}} ()
+\begin{DoxyCompactList}\small\item\em Gets weight (average pass time) of this unit. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a135f26b3cb49b3bc7de1d12051e80856}{Get\+Blocked}} ()
+\item 
+double \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a5fe5ed5f52a15aefb937e6a15854dacb}{Get\+Blocked\+Length}} ()
+\item 
+const \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} \& \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_ac0d58751a813db1c60634b4d647f6559}{Get\+Follower\+Connection\+Info}} (std\+::size\+\_\+t cycle)
+\begin{DoxyCompactList}\small\item\em Gets connection relationship with follower. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a0a76dc9f5c509d7dfa80d689e81fdba5}{Set\+Follower\+Connection\+Info}} (const std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} $>$ \&unit\+Connection\+Info)
+\begin{DoxyCompactList}\small\item\em Sets connection relationship with follower. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_ad264af7effabe62417af364db13b11c1}{Set\+Stop\+Vehicle\+Map}} (const std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} $>$ \&unit\+Connection\+Info\+Vector)
+\item 
+const \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} \& \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a8f8e3a923ded1b32b844b9798741c0b0}{Get\+Leader\+Connection\+Info}} (std\+::size\+\_\+t cycle)
+\begin{DoxyCompactList}\small\item\em Gets connection relationship with leader. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a9a9c66a513b6a9fa95de7e99d297a499}{Set\+Leader\+Connection\+Info}} (const \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} \&unit\+Connection\+Info)
+\begin{DoxyCompactList}\small\item\em Sets connection relationship with leader. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_ae0e3da7234d36793cb7e0dc13c8ed94e}{Set\+Free\+Flow\+Speed}} (double free\+Flow\+Speed)
+\begin{DoxyCompactList}\small\item\em Sets free flow speed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_ad0e4ea2e4322db3cb1c209cf8949274e}{Set\+Blocking\+Info}} (std\+::optional$<$ \mbox{\hyperlink{struct_captain_1_1_segment_info}{Segment\+Info}} $>$ segment\+Info)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a36ea2e1ebe24a9baa283ac8288e8a40f}{Set\+Left\+Cell\+Ptr}} (\mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit}{Meso\+Unit}} $>$ left\+Cell\+Ptr)
+\begin{DoxyCompactList}\small\item\em Sets ptr for left cell. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_adbd9bdce12da79472e1cf60e63da9701}{Set\+Right\+Cell\+Ptr}} (\mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit}{Meso\+Unit}} $>$ right\+Cell\+Ptr)
+\begin{DoxyCompactList}\small\item\em Sets ptr for right cell. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a893c9001359acfef6909400471705bdf}{Is\+Acceptable}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a7fb4956ca4a45ac714fcbaf8a9566ff1}{Enqueue\+Wait\+Vehicle\+Ptr}} (\mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} \&\&vehicle\+Ptr)
+\begin{DoxyCompactList}\small\item\em Enqueue vehicle\+Ptr into vehicle wait queue. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a4e22bb0015e7d0ab1a1c610c9001f08b}{Enqueue\+Vehicle}} (T \&\&vehicle)
+\begin{DoxyCompactList}\small\item\em Enqueue \doxylink{class_captain_1_1_vehicle}{Vehicle} to vehicle\+Queue. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Ts$>$ }\\void \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a5ec681a806424d5791bd2e13638b59ee}{Enqueue\+Vehicle}} (Ts \&\&... args)
+\begin{DoxyCompactList}\small\item\em Enqueue vehicle to vehicle\+Queue by constructing it with arguments. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a32c6b715c2411a2d1678d0caa8cb3e56}{Enqueue\+Vehicle\+Ptr}} (\mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} \&\&vehicle\+Ptr)
+\begin{DoxyCompactList}\small\item\em Enqueue vehicle\+Ptr to vehicle\+Queue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a007315c626225f2d9f56e50e9e987a57}{Update\+Vehicle\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Computes X position of vehicles inside the vehicle\+Queue. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_abe783a2e964a03b9f425499f56d7ee5a}{Get\+Num\+Vehicle\+In\+Cell}} (double length, std\+::size\+\_\+t cycle, bool from\+Front) override
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a150630bae9d84917bb3ccadd51d840ef}{Compute\+ICF}} (const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{struct_captain_1_1_meso_computation_model}{Meso\+Computation\+Model}} $>$ \&computation\+Model, std\+::size\+\_\+t cycle, bool mode)
+\begin{DoxyCompactList}\small\item\em Computes ICF from previous cell when multiple cells are forwarded to this cell. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_acc1b172b3662b27185618d9910d4bbf6}{Compute\+Lane\+Change}} (const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{struct_captain_1_1_meso_computation_model}{Meso\+Computation\+Model}} $>$ \&computation\+Model)
+\begin{DoxyCompactList}\small\item\em omputes LC to lane change from current unit stores result to m\+\_\+lane\+Change\+Index\+Vector \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a78c3d54f5ffb6369404d21a1a8cb71a9}{Move\+Lane\+Change\+Vehicles}} ()
+\begin{DoxyCompactList}\small\item\em Moves vehicle that will Lane change to left or right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a5da6c9e16c0f7e505f6382f710f6cae1}{Move\+Lane\+Change\+Waiting\+Vehicles}} ()
+\begin{DoxyCompactList}\small\item\em Moves vehicles in the m\+\_\+lane\+Change\+Wait\+Queue to m\+\_\+vehicle\+Wait\+Queue\+Up using compare and insert algorithm. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a111f8003bde0e4265a04548005a7e116}{Extract\+Vehicle}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_ad5e8f0ec18876f1c39157b27b8ef6884}{Move\+From\+Previous\+Unit}} (std\+::size\+\_\+t cycle)
+\begin{DoxyCompactList}\small\item\em Move vehicles from previous unit\textquotesingle{}s m\+\_\+vehicle\+Main\+Queue to m\+\_\+vehicle\+Main\+Queue\+Up. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a4461a47df0362155f713f49c14e49e77}{Move\+Waiting\+Vehicles\+To\+Main\+Queue}} (std\+::size\+\_\+t cycle)
+\begin{DoxyCompactList}\small\item\em Move vehicles in the m\+\_\+vehicle\+Wait\+Queue\+Up to m\+\_\+vehicle\+Main\+Queue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_ab09b7181c64a8b8cc48f5c0ac2ddd418}{Record}} (std\+::size\+\_\+t cycle) override
+\begin{DoxyCompactList}\small\item\em Records information to temporary buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_ac18ca35e3842d9fbe87037a6273013b2}{Flush\+Recordings}} () override
+\begin{DoxyCompactList}\small\item\em Writes all recordings in the temporary buffer to file and flushes the buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a15f8d5e6ba3608f7ff0f2c424984ee82}{Get\+Recordings}} (\mbox{\hyperlink{struct_captain_1_1_util_1_1_event_recorder_container}{Captain\+::\+Util\+::\+Event\+Recorder\+Container}} \&container)
+\begin{DoxyCompactList}\small\item\em Stores all recordings in the temporary buffer to designated container for further flushing. \end{DoxyCompactList}\item 
+std\+::filesystem\+::path \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a189c11b81db2470f3d6553b38f09c435}{Get\+File\+Path}} () override
+\begin{DoxyCompactList}\small\item\em Gets current target file path. \end{DoxyCompactList}\item 
+std\+::list$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a618e29a7141b14da6a93f90536d2d940}{Enqueue\+To\+New\+Queue}} (std\+::list$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ New\+Queue)
+\begin{DoxyCompactList}\small\item\em dfd \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a6bd257cf179ba1b04cd5624d0bc4158c}{Transition\+To\+Meso}} (std\+::list$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ unitqueue)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a1287b750172d1b9f8f49b6af5c31196a}{Change\+From\+Micro}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a3db1dd4b55b697a798f64e8f5900b02c}{IVehicle\+Containable\+Unit}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&unit\+Identifier)
+\item 
+virtual \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_abfb684c58bb0826a607b417773ce8863}{\texorpdfstring{$\sim$}{\string~}\+IVehicle\+Containable\+Unit}} ()=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_aa56da4b677191490dc5209e59083bd6f}{IVehicle\+Containable\+Unit}} (const \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} \&i\+Vehicle\+Containable\+Unit)=delete
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a592d1e3a3110a78d054ddf08019d605d}{IVehicle\+Containable\+Unit}} (\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} \&\&i\+Vehicle\+Containable\+Unit) noexcept
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} \& \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a838a2faf2c5147dff03f4b903b4f145d}{operator=}} (const \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} \&i\+Linkable)=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} \& \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a9c8bb064ece505f6208335f24b61702b}{operator=}} (\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} \&\&i\+Linkable) noexcept=default
+\item 
+virtual std\+::optional$<$ \mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$ $>$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a88721d263688e77810d5a044a9525b2c}{Find\+Leader\+Vehicle\+By\+Position}} (\mbox{\hyperlink{struct_captain_1_1_position}{Position}} position)
+\item 
+virtual std\+::optional$<$ \mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$ $>$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a7c51f1b3d268ce26ab44f54636e7f8fd}{Find\+Follower\+Vehicle\+By\+Position}} (\mbox{\hyperlink{struct_captain_1_1_position}{Position}} position)
+\item 
+virtual \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a200a71997b29c63d95109fd3c821909c}{Identifier}} () const
+\begin{DoxyCompactList}\small\item\em Gets unique identifier of the particular unit. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a4c8737b7681dd892635d0b352f804405}{Get\+Stop\+Vehicle}} (\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} identifier)
+\item 
+void \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a01db5817d9fd00fb8103b0bfe0895fcb}{Set\+Stop\+Vehicle}} (\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} identifier, \mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} state)
+\item 
+void \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a1e88a800cb808f28b715444d5999eb02}{Initialize\+Signal}} ()
+\item 
+virtual \mbox{\hyperlink{namespace_captain_abc914229623e9ca890ab012482a5e89c}{Signal\+Mode}} \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a9c0d17f26b92fe37699922e13b6f8eb9}{Get\+Signal\+Mode}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&leader\+Unit) const
+\begin{DoxyCompactList}\small\item\em Gets signal mode of given leader Unit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_af7357fcfe246c5a1de302c4bfbdd1e00}{Set\+Signal}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&leader\+Unit, \mbox{\hyperlink{namespace_captain_abc914229623e9ca890ab012482a5e89c}{Signal\+Mode}} signal)
+\begin{DoxyCompactList}\small\item\em Sets signal for given leader unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{struct_captain_1_1_i_event_recordable}{Captain\+::\+IEvent\+Recordable}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_i_event_recordable_ad50163c1ce3c5b72548a6904db592172}{IEvent\+Recordable}} ()=default
+\item 
+virtual \mbox{\hyperlink{struct_captain_1_1_i_event_recordable_aed6ba9b275dfef1362cf6ad32d092453}{\texorpdfstring{$\sim$}{\string~}\+IEvent\+Recordable}} ()=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_i_event_recordable_a2e2807a122f1f25887a2e12fe9e82a74}{IEvent\+Recordable}} (const \mbox{\hyperlink{struct_captain_1_1_i_event_recordable}{IEvent\+Recordable}} \&other)=delete
+\item 
+\mbox{\hyperlink{struct_captain_1_1_i_event_recordable}{IEvent\+Recordable}} \& \mbox{\hyperlink{struct_captain_1_1_i_event_recordable_a697041150e34f0bcd57b85592b6d0254}{operator=}} (const \mbox{\hyperlink{struct_captain_1_1_i_event_recordable}{IEvent\+Recordable}} \&other)=delete
+\item 
+virtual void \mbox{\hyperlink{struct_captain_1_1_i_event_recordable_a7056daa9c8bb0712b5086f695481d232}{Record}} (size\+\_\+t cycle)=0
+\begin{DoxyCompactList}\small\item\em Records information to temporary buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a9ebd5f497e70bebbd612862188073088}{Follower\+Signal\+Elapsed\+Time}} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a9bb687a4ebb768bf466d53dbf8b1c9d0}{Max\+Speed}} = 0
+\item 
+\mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}} \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a5d3e6931c36d2a3a72a1ed6fe884e8be}{Parent\+Link\+Unit\+Type}} = \mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12edaf19516d11f2946f894070e92fcb56b6d}{Unit\+Type\+::\+Uniform}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a1aedde0c7a1f383f31fbff1f2e8f1b63}{Is\+Equal}} (\mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} $>$ laneA, \mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} $>$ laneB)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_adfd5d171b6579448e9850efb9e46f658}{m\+\_\+identifier}}
+\item 
+std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}}, \mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$ $>$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_ae655029155119ae6b493b2bfece9eaf2}{m\+\_\+stop\+Vehicle\+Map}}
+\item 
+\mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Util\+::\+Event\+Recorder}} \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_adbca2a3847e90e8edc1bfe0342ed3e89}{m\+\_\+event\+Recorder}}
+\item 
+std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}}, \mbox{\hyperlink{namespace_captain_abc914229623e9ca890ab012482a5e89c}{Signal\+Mode}} $>$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a0f9cf92cd1b6df83d77d8c578896cab7}{m\+\_\+signal\+Map}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\+: Meso class represents a single cell in the lane which is computed using meso-\/based model 
+
+Process Get\+Follower\+Lane\+Connection\+Info\+: Compute\+Lane\+Change -\/\texorpdfstring{$>$}{>} Move\+Lane\+Change\+Vehicles (from \doxylink{class_captain_1_1_spin_lock_vehicle_queue}{Spin\+Lock\+Vehicle\+Queue} to corresponding lane change queue) -\/\texorpdfstring{$>$}{>} Move\+Lane\+Change\+Waiting\+Vehicles (Move vehicle from Lane\+Change\+Wait\+Queue to \doxylink{class_captain_1_1_spin_lock_vehicle_queue}{Spin\+Lock\+Vehicle\+Queue} by compare and insertion algorithm) position) -\/\texorpdfstring{$>$}{>} Compute\+ICF -\/\texorpdfstring{$>$}{>} Move\+From\+Previous\+Unit (Move vehicle from previous units to wait queue and update the state) -\/\texorpdfstring{$>$}{>} Move\+Waiting\+Vehicle\+To\+Main\+Queue (moves vehicle in the wait queue to main queue) -\/\texorpdfstring{$>$}{>} Update\+Vehicle\+Position(\+Update position of the vehicles) -\/\texorpdfstring{$>$}{>} Record
+
+Meso class represents a single cell in the lane which is computed using meso-\/based model 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a99d2030f2b11508b3ed0a0322b6921d3}\label{class_captain_1_1_node_1_1_meso_unit_a99d2030f2b11508b3ed0a0322b6921d3} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!MesoUnit@{MesoUnit}}
+\index{MesoUnit@{MesoUnit}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{MesoUnit()}{MesoUnit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Captain\+::\+Node\+::\+Meso\+Unit\+::\+Meso\+Unit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{unit\+Identifier,  }\item[{int}]{cell\+Id,  }\item[{std\+::size\+\_\+t}]{max\+Vehicle,  }\item[{double}]{q\+Max,  }\item[{double}]{wave\+Speed,  }\item[{double}]{free\+Flow\+Speed,  }\item[{double}]{length,  }\item[{double}]{width }\end{DoxyParamCaption})}
+
+
+
+constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unit\+Identifier} & Location wrapper for representing this unit \\
+\hline
+{\em cell\+Id} & ID of each unit cell \\
+\hline
+{\em max\+Vehicle} & maximum number of vehicles that this cell can hold \\
+\hline
+{\em q\+Max} & Q-\/max value of this unit \\
+\hline
+{\em wave\+Speed} & wave\+Speed of this unit \\
+\hline
+{\em free\+Flow\+Speed} & Free\+Flow\+Speed of this unit \\
+\hline
+{\em length} & length of this unit \\
+\hline
+{\em width} & width of this unit \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a1312d96ed3fe3fbea418bbb7567158c9}\label{class_captain_1_1_node_1_1_meso_unit_a1312d96ed3fe3fbea418bbb7567158c9} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!MesoUnit@{MesoUnit}}
+\index{MesoUnit@{MesoUnit}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{MesoUnit()}{MesoUnit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Captain\+::\+Node\+::\+Meso\+Unit\+::\+Meso\+Unit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit}{Meso\+Unit}} \&}]{meso\+Unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy constructor is deleted. 
+
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_acb034828e7ba2aa1031d9236e6443474}\label{class_captain_1_1_node_1_1_meso_unit_acb034828e7ba2aa1031d9236e6443474} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!MesoUnit@{MesoUnit}}
+\index{MesoUnit@{MesoUnit}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{MesoUnit()}{MesoUnit()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Captain\+::\+Node\+::\+Meso\+Unit\+::\+Meso\+Unit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit}{Meso\+Unit}} \&\&}]{meso\+Unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Move-\/constructor. 
+
+\begin{DoxyNote}{Note}
+Only move-\/constructor is allowed 
+\end{DoxyNote}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a53b8fa4c80d60eddc2372610ce816b8a}\label{class_captain_1_1_node_1_1_meso_unit_a53b8fa4c80d60eddc2372610ce816b8a} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!````~MesoUnit@{\texorpdfstring{$\sim$}{\string~}MesoUnit}}
+\index{````~MesoUnit@{\texorpdfstring{$\sim$}{\string~}MesoUnit}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MesoUnit()}{\string~MesoUnit()}}
+{\footnotesize\ttfamily Captain\+::\+Node\+::\+Meso\+Unit\+::\texorpdfstring{$\sim$}{\string~}\+Meso\+Unit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a1287b750172d1b9f8f49b6af5c31196a}\label{class_captain_1_1_node_1_1_meso_unit_a1287b750172d1b9f8f49b6af5c31196a} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!ChangeFromMicro@{ChangeFromMicro}}
+\index{ChangeFromMicro@{ChangeFromMicro}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{ChangeFromMicro()}{ChangeFromMicro()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Meso\+Unit\+::\+Change\+From\+Micro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a150630bae9d84917bb3ccadd51d840ef}\label{class_captain_1_1_node_1_1_meso_unit_a150630bae9d84917bb3ccadd51d840ef} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!ComputeICF@{ComputeICF}}
+\index{ComputeICF@{ComputeICF}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{ComputeICF()}{ComputeICF()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Meso\+Unit\+::\+Compute\+ICF (\begin{DoxyParamCaption}\item[{const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{struct_captain_1_1_meso_computation_model}{Meso\+Computation\+Model}} $>$ \&}]{computation\+Model,  }\item[{std\+::size\+\_\+t}]{cycle,  }\item[{bool}]{mode }\end{DoxyParamCaption})}
+
+
+
+Computes ICF from previous cell when multiple cells are forwarded to this cell. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em computation\+Model} & model that implements formula to execute Meso algorithm \\
+\hline
+{\em cycle} & number of micro cycles \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_a150630bae9d84917bb3ccadd51d840ef_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_acc1b172b3662b27185618d9910d4bbf6}\label{class_captain_1_1_node_1_1_meso_unit_acc1b172b3662b27185618d9910d4bbf6} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!ComputeLaneChange@{ComputeLaneChange}}
+\index{ComputeLaneChange@{ComputeLaneChange}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{ComputeLaneChange()}{ComputeLaneChange()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Meso\+Unit\+::\+Compute\+Lane\+Change (\begin{DoxyParamCaption}\item[{const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{struct_captain_1_1_meso_computation_model}{Meso\+Computation\+Model}} $>$ \&}]{computation\+Model }\end{DoxyParamCaption})}
+
+
+
+omputes LC to lane change from current unit stores result to m\+\_\+lane\+Change\+Index\+Vector 
+
+Process \+:
+\begin{DoxyEnumerate}
+\item Get average speed from left and right unit ptr (speed is set to zero if no left or right unit exists)
+\item Get max priority index of the vehicle
+\item If lane with maximum priority is current lane, then perform OLC otherwise, perform MLC to corresponding lane
+\item For OLC, computes possibility of straight, left, right lane changes and uses multinomial distribution to compute lane to lane change
+\item Store the results for both MLC case and OLC case into m\+\_\+lane\+Change\+Index\+Vector for use in Move\+Lane\+Change\+Vehicle ~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em computation\+Model} & computation\+Model to use for computing LC \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyEnumerate}Check if current Lane ID is identical to vehicle\textquotesingle{}s Current\+Lane\+IndexHere is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_acc1b172b3662b27185618d9910d4bbf6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a618e29a7141b14da6a93f90536d2d940}\label{class_captain_1_1_node_1_1_meso_unit_a618e29a7141b14da6a93f90536d2d940} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!EnqueueToNewQueue@{EnqueueToNewQueue}}
+\index{EnqueueToNewQueue@{EnqueueToNewQueue}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{EnqueueToNewQueue()}{EnqueueToNewQueue()}}
+{\footnotesize\ttfamily std\+::list$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ Captain\+::\+Node\+::\+Meso\+Unit\+::\+Enqueue\+To\+New\+Queue (\begin{DoxyParamCaption}\item[{std\+::list$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$}]{New\+Queue }\end{DoxyParamCaption})}
+
+
+
+dfd 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lane\+Idx} & lane index of meso link \\
+\hline
+{\em New\+Queue} & \doxylink{class_captain_1_1_vehicle}{Vehicle} Queue of meso link \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_a618e29a7141b14da6a93f90536d2d940_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a4e22bb0015e7d0ab1a1c610c9001f08b}\label{class_captain_1_1_node_1_1_meso_unit_a4e22bb0015e7d0ab1a1c610c9001f08b} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!EnqueueVehicle@{EnqueueVehicle}}
+\index{EnqueueVehicle@{EnqueueVehicle}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{EnqueueVehicle()}{EnqueueVehicle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Captain\+::\+Node\+::\+Meso\+Unit\+::\+Enqueue\+Vehicle (\begin{DoxyParamCaption}\item[{T \&\&}]{vehicle }\end{DoxyParamCaption})}
+
+
+
+Enqueue \doxylink{class_captain_1_1_vehicle}{Vehicle} to vehicle\+Queue. 
+
+Constructs unique vehicle\+Ptr and moves it into the vehicle\+Queue 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em vehicle} & r-\/value of vehicle to move \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_a4e22bb0015e7d0ab1a1c610c9001f08b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a5ec681a806424d5791bd2e13638b59ee}\label{class_captain_1_1_node_1_1_meso_unit_a5ec681a806424d5791bd2e13638b59ee} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!EnqueueVehicle@{EnqueueVehicle}}
+\index{EnqueueVehicle@{EnqueueVehicle}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{EnqueueVehicle()}{EnqueueVehicle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename... Ts$>$ \\
+void Captain\+::\+Node\+::\+Meso\+Unit\+::\+Enqueue\+Vehicle (\begin{DoxyParamCaption}\item[{Ts \&\&...}]{args }\end{DoxyParamCaption})}
+
+
+
+Enqueue vehicle to vehicle\+Queue by constructing it with arguments. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Ts} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em args} & arguments to create vehicle \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_a5ec681a806424d5791bd2e13638b59ee_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a32c6b715c2411a2d1678d0caa8cb3e56}\label{class_captain_1_1_node_1_1_meso_unit_a32c6b715c2411a2d1678d0caa8cb3e56} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!EnqueueVehiclePtr@{EnqueueVehiclePtr}}
+\index{EnqueueVehiclePtr@{EnqueueVehiclePtr}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{EnqueueVehiclePtr()}{EnqueueVehiclePtr()}}
+{\footnotesize\ttfamily bool Captain\+::\+Node\+::\+Meso\+Unit\+::\+Enqueue\+Vehicle\+Ptr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} \&\&}]{vehicle\+Ptr }\end{DoxyParamCaption})}
+
+
+
+Enqueue vehicle\+Ptr to vehicle\+Queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vehicle\+Ptr} & vehicle\+Ptr to move \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_a32c6b715c2411a2d1678d0caa8cb3e56_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a7fb4956ca4a45ac714fcbaf8a9566ff1}\label{class_captain_1_1_node_1_1_meso_unit_a7fb4956ca4a45ac714fcbaf8a9566ff1} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!EnqueueWaitVehiclePtr@{EnqueueWaitVehiclePtr}}
+\index{EnqueueWaitVehiclePtr@{EnqueueWaitVehiclePtr}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{EnqueueWaitVehiclePtr()}{EnqueueWaitVehiclePtr()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Meso\+Unit\+::\+Enqueue\+Wait\+Vehicle\+Ptr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Captain\+::\+Vehicle\+Ptr}} \&\&}]{vehicle\+Ptr }\end{DoxyParamCaption})}
+
+
+
+Enqueue vehicle\+Ptr into vehicle wait queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vehicle\+Ptr} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_a7fb4956ca4a45ac714fcbaf8a9566ff1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a111f8003bde0e4265a04548005a7e116}\label{class_captain_1_1_node_1_1_meso_unit_a111f8003bde0e4265a04548005a7e116} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!ExtractVehicle@{ExtractVehicle}}
+\index{ExtractVehicle@{ExtractVehicle}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{ExtractVehicle()}{ExtractVehicle()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Meso\+Unit\+::\+Extract\+Vehicle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_a111f8003bde0e4265a04548005a7e116_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_ac18ca35e3842d9fbe87037a6273013b2}\label{class_captain_1_1_node_1_1_meso_unit_ac18ca35e3842d9fbe87037a6273013b2} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!FlushRecordings@{FlushRecordings}}
+\index{FlushRecordings@{FlushRecordings}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{FlushRecordings()}{FlushRecordings()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Meso\+Unit\+::\+Flush\+Recordings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Writes all recordings in the temporary buffer to file and flushes the buffer. 
+
+Creates file if file does not exist by calling Remove\+Existing\+File() \begin{DoxyNote}{Note}
+It will append recordings to file if file already exists 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_i_event_recordable_a3fc2cbece40bb830c49854ecc2211fc3}{Captain\+::\+IEvent\+Recordable}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_ac18ca35e3842d9fbe87037a6273013b2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a1f5bad694414df1bc73a135bb7611fa6}\label{class_captain_1_1_node_1_1_meso_unit_a1f5bad694414df1bc73a135bb7611fa6} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!GetAverageSpeed@{GetAverageSpeed}}
+\index{GetAverageSpeed@{GetAverageSpeed}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{GetAverageSpeed()}{GetAverageSpeed()}}
+{\footnotesize\ttfamily double Captain\+::\+Node\+::\+Meso\+Unit\+::\+Get\+Average\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets average speed of this cell in m/s. 
+
+\begin{DoxyReturn}{Returns}
+average speed of this cell 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_a1f5bad694414df1bc73a135bb7611fa6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a135f26b3cb49b3bc7de1d12051e80856}\label{class_captain_1_1_node_1_1_meso_unit_a135f26b3cb49b3bc7de1d12051e80856} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!GetBlocked@{GetBlocked}}
+\index{GetBlocked@{GetBlocked}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{GetBlocked()}{GetBlocked()}}
+{\footnotesize\ttfamily bool Captain\+::\+Node\+::\+Meso\+Unit\+::\+Get\+Blocked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a5fe5ed5f52a15aefb937e6a15854dacb}\label{class_captain_1_1_node_1_1_meso_unit_a5fe5ed5f52a15aefb937e6a15854dacb} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!GetBlockedLength@{GetBlockedLength}}
+\index{GetBlockedLength@{GetBlockedLength}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{GetBlockedLength()}{GetBlockedLength()}}
+{\footnotesize\ttfamily double Captain\+::\+Node\+::\+Meso\+Unit\+::\+Get\+Blocked\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a6635de8aaa4bed2c2a870da5caa7827a}\label{class_captain_1_1_node_1_1_meso_unit_a6635de8aaa4bed2c2a870da5caa7827a} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!GetCurrentFollower@{GetCurrentFollower}}
+\index{GetCurrentFollower@{GetCurrentFollower}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{GetCurrentFollower()}{GetCurrentFollower()}}
+{\footnotesize\ttfamily int Captain\+::\+Node\+::\+Meso\+Unit\+::\+Get\+Current\+Follower (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle }\end{DoxyParamCaption}) const}
+
+
+
+Gets appropriate phase number for current Get\+Follower\+Lane\+Connection\+Info. 
+
+if only 1 phase exists(with cycle\+Length 0) this will return 0 always Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_a6635de8aaa4bed2c2a870da5caa7827a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_ac9f51055492e4d4f92cb2a1500c6c069}\label{class_captain_1_1_node_1_1_meso_unit_ac9f51055492e4d4f92cb2a1500c6c069} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!GetCurrentFollowerPhaseNum@{GetCurrentFollowerPhaseNum}}
+\index{GetCurrentFollowerPhaseNum@{GetCurrentFollowerPhaseNum}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{GetCurrentFollowerPhaseNum()}{GetCurrentFollowerPhaseNum()}}
+{\footnotesize\ttfamily int Captain\+::\+Node\+::\+Meso\+Unit\+::\+Get\+Current\+Follower\+Phase\+Num (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_ac9f51055492e4d4f92cb2a1500c6c069_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a599b1c5d133e71b9c43b234bc4f359e4}\label{class_captain_1_1_node_1_1_meso_unit_a599b1c5d133e71b9c43b234bc4f359e4} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!GetCurrentLeader@{GetCurrentLeader}}
+\index{GetCurrentLeader@{GetCurrentLeader}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{GetCurrentLeader()}{GetCurrentLeader()}}
+{\footnotesize\ttfamily int Captain\+::\+Node\+::\+Meso\+Unit\+::\+Get\+Current\+Leader (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle }\end{DoxyParamCaption}) const}
+
+
+
+Gets appropriate phase number for current Get\+Follower\+Lane\+Connection\+Info. 
+
+if only 1 phase exists(with cycle\+Length 0) this will return 0 always \Hypertarget{class_captain_1_1_node_1_1_meso_unit_a5d2c8ab6900d6686555c6339463b707b}\label{class_captain_1_1_node_1_1_meso_unit_a5d2c8ab6900d6686555c6339463b707b} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!GetCurrentNumVehicles@{GetCurrentNumVehicles}}
+\index{GetCurrentNumVehicles@{GetCurrentNumVehicles}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{GetCurrentNumVehicles()}{GetCurrentNumVehicles()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Captain\+::\+Node\+::\+Meso\+Unit\+::\+Get\+Current\+Num\+Vehicles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Brings current number of vehicles. 
+
+This operations performs lock \begin{DoxyReturn}{Returns}
+current number of vehicles left in the cell 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a5f5ff81d850ec7aad0e1db06d4360a2b}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_a5d2c8ab6900d6686555c6339463b707b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_a5d2c8ab6900d6686555c6339463b707b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_ab0acad8e1d9a7afbfa897de15bfe27de}\label{class_captain_1_1_node_1_1_meso_unit_ab0acad8e1d9a7afbfa897de15bfe27de} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!GetCurrentNumWaitingVehicles@{GetCurrentNumWaitingVehicles}}
+\index{GetCurrentNumWaitingVehicles@{GetCurrentNumWaitingVehicles}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{GetCurrentNumWaitingVehicles()}{GetCurrentNumWaitingVehicles()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Captain\+::\+Node\+::\+Meso\+Unit\+::\+Get\+Current\+Num\+Waiting\+Vehicles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets current number of vehicles in the wait queue. 
+
+\begin{DoxyReturn}{Returns}
+number of vehicles in the wait queue of target lane 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a735c35cf60c90a1c21dcd856cb6d9fa7}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_ab0acad8e1d9a7afbfa897de15bfe27de_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a189c11b81db2470f3d6553b38f09c435}\label{class_captain_1_1_node_1_1_meso_unit_a189c11b81db2470f3d6553b38f09c435} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!GetFilePath@{GetFilePath}}
+\index{GetFilePath@{GetFilePath}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{GetFilePath()}{GetFilePath()}}
+{\footnotesize\ttfamily std\+::filesystem\+::path Captain\+::\+Node\+::\+Meso\+Unit\+::\+Get\+File\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets current target file path. 
+
+\begin{DoxyReturn}{Returns}
+filepath that recordings are getting stored 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_i_event_recordable_aa84d827817e17a117fb9db090efd1605}{Captain\+::\+IEvent\+Recordable}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_a189c11b81db2470f3d6553b38f09c435_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_ac0d58751a813db1c60634b4d647f6559}\label{class_captain_1_1_node_1_1_meso_unit_ac0d58751a813db1c60634b4d647f6559} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!GetFollowerConnectionInfo@{GetFollowerConnectionInfo}}
+\index{GetFollowerConnectionInfo@{GetFollowerConnectionInfo}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{GetFollowerConnectionInfo()}{GetFollowerConnectionInfo()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} \& Captain\+::\+Node\+::\+Meso\+Unit\+::\+Get\+Follower\+Connection\+Info (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle }\end{DoxyParamCaption})}
+
+
+
+Gets connection relationship with follower. 
+
+\begin{DoxyReturn}{Returns}
+connection relationship with follower 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_ac0d58751a813db1c60634b4d647f6559_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a37b669b81efce94d681fb46711add799}\label{class_captain_1_1_node_1_1_meso_unit_a37b669b81efce94d681fb46711add799} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!GetFollowingVehiclePtr@{GetFollowingVehiclePtr}}
+\index{GetFollowingVehiclePtr@{GetFollowingVehiclePtr}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{GetFollowingVehiclePtr()}{GetFollowingVehiclePtr()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ Captain\+::\+Node\+::\+Meso\+Unit\+::\+Get\+Following\+Vehicle\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Brings back vehicle\+Ptr of last vehicle. 
+
+\begin{DoxyReturn}{Returns}
+vehicle\+Ptr of leading vehicle of the unit m\+\_\+default\+Vehicle\+Ptr if such vehicle doesn\textquotesingle{}t exist 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a112617dfc6bde6bf4555699d2813d1d6}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_a37b669b81efce94d681fb46711add799_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a312cbc0f500938b017e101d9f7469d43}\label{class_captain_1_1_node_1_1_meso_unit_a312cbc0f500938b017e101d9f7469d43} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!GetFreeFlowSpeed@{GetFreeFlowSpeed}}
+\index{GetFreeFlowSpeed@{GetFreeFlowSpeed}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{GetFreeFlowSpeed()}{GetFreeFlowSpeed()}}
+{\footnotesize\ttfamily double Captain\+::\+Node\+::\+Meso\+Unit\+::\+Get\+Free\+Flow\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets free flow speed of this cell. 
+
+\begin{DoxyReturn}{Returns}
+free flow speed of this cell(const) 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a8f8e3a923ded1b32b844b9798741c0b0}\label{class_captain_1_1_node_1_1_meso_unit_a8f8e3a923ded1b32b844b9798741c0b0} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!GetLeaderConnectionInfo@{GetLeaderConnectionInfo}}
+\index{GetLeaderConnectionInfo@{GetLeaderConnectionInfo}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{GetLeaderConnectionInfo()}{GetLeaderConnectionInfo()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} \& Captain\+::\+Node\+::\+Meso\+Unit\+::\+Get\+Leader\+Connection\+Info (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle }\end{DoxyParamCaption})}
+
+
+
+Gets connection relationship with leader. 
+
+\begin{DoxyReturn}{Returns}
+connection relationship with leader 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_a8f8e3a923ded1b32b844b9798741c0b0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a77c9bfe76f3c87ab8dda54ecd2ec0414}\label{class_captain_1_1_node_1_1_meso_unit_a77c9bfe76f3c87ab8dda54ecd2ec0414} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!GetLeadingVehiclePtr@{GetLeadingVehiclePtr}}
+\index{GetLeadingVehiclePtr@{GetLeadingVehiclePtr}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{GetLeadingVehiclePtr()}{GetLeadingVehiclePtr()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{namespace_captain_ac03838c8d2941d5da8169c3ec7a4d868}{Vehicle\+Weak\+Ptr}} $>$ Captain\+::\+Node\+::\+Meso\+Unit\+::\+Get\+Leading\+Vehicle\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Brings back vehicle\+Ptr of leading vehicle. 
+
+\begin{DoxyReturn}{Returns}
+vehicle\+Ptr of leading vehicle of the unit m\+\_\+default\+Vehicle\+Ptr if such vehicle doesn\textquotesingle{}t exist 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a6a2df75712eaa89245eb1664dbd9e6d7}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_a77c9bfe76f3c87ab8dda54ecd2ec0414_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a870178534f01be86d89cbb5038f061ce}\label{class_captain_1_1_node_1_1_meso_unit_a870178534f01be86d89cbb5038f061ce} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!GetLength@{GetLength}}
+\index{GetLength@{GetLength}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{GetLength()}{GetLength()}}
+{\footnotesize\ttfamily double Captain\+::\+Node\+::\+Meso\+Unit\+::\+Get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets Length of unit. 
+
+\begin{DoxyReturn}{Returns}
+Length of the unit 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a7a5ce0cc29d1acef69942f3ff6eb4029}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}.
+
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a684524900dada6d609cf9768b48a70bc}\label{class_captain_1_1_node_1_1_meso_unit_a684524900dada6d609cf9768b48a70bc} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!GetMaxVehicleNum@{GetMaxVehicleNum}}
+\index{GetMaxVehicleNum@{GetMaxVehicleNum}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{GetMaxVehicleNum()}{GetMaxVehicleNum()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Captain\+::\+Node\+::\+Meso\+Unit\+::\+Get\+Max\+Vehicle\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets maximum number of vehicles. 
+
+\begin{DoxyReturn}{Returns}
+Maximum number of vehicles that this cell can hold(const?) 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_abe783a2e964a03b9f425499f56d7ee5a}\label{class_captain_1_1_node_1_1_meso_unit_abe783a2e964a03b9f425499f56d7ee5a} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!GetNumVehicleInCell@{GetNumVehicleInCell}}
+\index{GetNumVehicleInCell@{GetNumVehicleInCell}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{GetNumVehicleInCell()}{GetNumVehicleInCell()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Captain\+::\+Node\+::\+Meso\+Unit\+::\+Get\+Num\+Vehicle\+In\+Cell (\begin{DoxyParamCaption}\item[{double}]{length,  }\item[{std\+::size\+\_\+t}]{cycle,  }\item[{bool}]{from\+Front }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_acf2c6e94010bee623330e583be4044c4}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}.
+
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_ac57e0a365f404fd1748cfc10a929fd57}\label{class_captain_1_1_node_1_1_meso_unit_ac57e0a365f404fd1748cfc10a929fd57} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!GetQMax@{GetQMax}}
+\index{GetQMax@{GetQMax}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{GetQMax()}{GetQMax()}}
+{\footnotesize\ttfamily double Captain\+::\+Node\+::\+Meso\+Unit\+::\+Get\+QMax (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Brings Qmax value. 
+
+\begin{DoxyReturn}{Returns}
+Qmax (const) of this Cell 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a15f8d5e6ba3608f7ff0f2c424984ee82}\label{class_captain_1_1_node_1_1_meso_unit_a15f8d5e6ba3608f7ff0f2c424984ee82} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!GetRecordings@{GetRecordings}}
+\index{GetRecordings@{GetRecordings}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{GetRecordings()}{GetRecordings()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Meso\+Unit\+::\+Get\+Recordings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_util_1_1_event_recorder_container}{Captain\+::\+Util\+::\+Event\+Recorder\+Container}} \&}]{container }\end{DoxyParamCaption})}
+
+
+
+Stores all recordings in the temporary buffer to designated container for further flushing. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_a15f8d5e6ba3608f7ff0f2c424984ee82_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_af4824723244460b961204fdb8886bd4a}\label{class_captain_1_1_node_1_1_meso_unit_af4824723244460b961204fdb8886bd4a} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!GetVehicleQueue@{GetVehicleQueue}}
+\index{GetVehicleQueue@{GetVehicleQueue}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{GetVehicleQueue()}{GetVehicleQueue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_util_1_1_vehicle_queue}{Util\+::\+Vehicle\+Queue}} \& Captain\+::\+Node\+::\+Meso\+Unit\+::\+Get\+Vehicle\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns vehicle\+Queue of current lane. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_captain_1_1_spin_lock_vehicle_queue}{Spin\+Lock\+Vehicle\+Queue} of current lane 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a66f7658469283bbadca85d3b3b27b389}\label{class_captain_1_1_node_1_1_meso_unit_a66f7658469283bbadca85d3b3b27b389} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!GetWaveSpeed@{GetWaveSpeed}}
+\index{GetWaveSpeed@{GetWaveSpeed}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{GetWaveSpeed()}{GetWaveSpeed()}}
+{\footnotesize\ttfamily double Captain\+::\+Node\+::\+Meso\+Unit\+::\+Get\+Wave\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets\+Wave\+Speed. 
+
+\begin{DoxyReturn}{Returns}
+current wave\+Speed of this cell 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a0b773761ca1f7aa49ea4cd718398e6b5}\label{class_captain_1_1_node_1_1_meso_unit_a0b773761ca1f7aa49ea4cd718398e6b5} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!GetWeight@{GetWeight}}
+\index{GetWeight@{GetWeight}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{GetWeight()}{GetWeight()}}
+{\footnotesize\ttfamily double Captain\+::\+Node\+::\+Meso\+Unit\+::\+Get\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets weight (average pass time) of this unit. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_a0b773761ca1f7aa49ea4cd718398e6b5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a4b7c22bcc037931355790e2f0d7effa8}\label{class_captain_1_1_node_1_1_meso_unit_a4b7c22bcc037931355790e2f0d7effa8} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{GetWidth()}{GetWidth()}}
+{\footnotesize\ttfamily double Captain\+::\+Node\+::\+Meso\+Unit\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets Width of unit. 
+
+\begin{DoxyReturn}{Returns}
+Width\+Vector of the unit 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a064eeaeccd3c012721ddfaeeca64ee63}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}.
+
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a893c9001359acfef6909400471705bdf}\label{class_captain_1_1_node_1_1_meso_unit_a893c9001359acfef6909400471705bdf} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!IsAcceptable@{IsAcceptable}}
+\index{IsAcceptable@{IsAcceptable}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{IsAcceptable()}{IsAcceptable()}}
+{\footnotesize\ttfamily bool Captain\+::\+Node\+::\+Meso\+Unit\+::\+Is\+Acceptable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_a893c9001359acfef6909400471705bdf_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_ad5e8f0ec18876f1c39157b27b8ef6884}\label{class_captain_1_1_node_1_1_meso_unit_ad5e8f0ec18876f1c39157b27b8ef6884} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!MoveFromPreviousUnit@{MoveFromPreviousUnit}}
+\index{MoveFromPreviousUnit@{MoveFromPreviousUnit}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{MoveFromPreviousUnit()}{MoveFromPreviousUnit()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Meso\+Unit\+::\+Move\+From\+Previous\+Unit (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle }\end{DoxyParamCaption})}
+
+
+
+Move vehicles from previous unit\textquotesingle{}s m\+\_\+vehicle\+Main\+Queue to m\+\_\+vehicle\+Main\+Queue\+Up. 
+
+when this cell is head does nothing if this cell is not head Amount of vehicles being moved is determined by m\+\_\+icf\+From\+Previous\+Cell but it will stop when vehicle\+Queue is full 
+\begin{DoxyParams}{Parameters}
+{\em cycle} & Meso phase time of current state \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_ad5e8f0ec18876f1c39157b27b8ef6884_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a78c3d54f5ffb6369404d21a1a8cb71a9}\label{class_captain_1_1_node_1_1_meso_unit_a78c3d54f5ffb6369404d21a1a8cb71a9} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!MoveLaneChangeVehicles@{MoveLaneChangeVehicles}}
+\index{MoveLaneChangeVehicles@{MoveLaneChangeVehicles}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{MoveLaneChangeVehicles()}{MoveLaneChangeVehicles()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Meso\+Unit\+::\+Move\+Lane\+Change\+Vehicles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Moves vehicle that will Lane change to left or right. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_a78c3d54f5ffb6369404d21a1a8cb71a9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a5da6c9e16c0f7e505f6382f710f6cae1}\label{class_captain_1_1_node_1_1_meso_unit_a5da6c9e16c0f7e505f6382f710f6cae1} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!MoveLaneChangeWaitingVehicles@{MoveLaneChangeWaitingVehicles}}
+\index{MoveLaneChangeWaitingVehicles@{MoveLaneChangeWaitingVehicles}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{MoveLaneChangeWaitingVehicles()}{MoveLaneChangeWaitingVehicles()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Meso\+Unit\+::\+Move\+Lane\+Change\+Waiting\+Vehicles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Moves vehicles in the m\+\_\+lane\+Change\+Wait\+Queue to m\+\_\+vehicle\+Wait\+Queue\+Up using compare and insert algorithm. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_a5da6c9e16c0f7e505f6382f710f6cae1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a4461a47df0362155f713f49c14e49e77}\label{class_captain_1_1_node_1_1_meso_unit_a4461a47df0362155f713f49c14e49e77} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!MoveWaitingVehiclesToMainQueue@{MoveWaitingVehiclesToMainQueue}}
+\index{MoveWaitingVehiclesToMainQueue@{MoveWaitingVehiclesToMainQueue}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{MoveWaitingVehiclesToMainQueue()}{MoveWaitingVehiclesToMainQueue()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Meso\+Unit\+::\+Move\+Waiting\+Vehicles\+To\+Main\+Queue (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle }\end{DoxyParamCaption})}
+
+
+
+Move vehicles in the m\+\_\+vehicle\+Wait\+Queue\+Up to m\+\_\+vehicle\+Main\+Queue. 
+
+\begin{DoxyNote}{Note}
+Stops if wait queue is empty 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+If m\+\_\+vehicle\+Main\+Queue exceeds its limited size, assertion fails 
+\end{DoxyWarning}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_a4461a47df0362155f713f49c14e49e77_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_af073887a325199c749a94141a04be6ac}\label{class_captain_1_1_node_1_1_meso_unit_af073887a325199c749a94141a04be6ac} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit}{Meso\+Unit}} \& Captain\+::\+Node\+::\+Meso\+Unit\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit}{Meso\+Unit}} \&}]{meso\+Unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+copy assign operator is not allowed 
+
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_aa359e6e09ad6f3f138a56feb1593195a}\label{class_captain_1_1_node_1_1_meso_unit_aa359e6e09ad6f3f138a56feb1593195a} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit}{Meso\+Unit}} \& Captain\+::\+Node\+::\+Meso\+Unit\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit}{Meso\+Unit}} \&\&}]{meso\+Unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}, {\ttfamily [noexcept]}}
+
+
+
+move assign operator is not allowed 
+
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_ab5435bd1e06cd98cafd200cb6a3d3900}\label{class_captain_1_1_node_1_1_meso_unit_ab5435bd1e06cd98cafd200cb6a3d3900} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!PeekVehicle@{PeekVehicle}}
+\index{PeekVehicle@{PeekVehicle}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{PeekVehicle()}{PeekVehicle()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ Captain\+::\+Node\+::\+Meso\+Unit\+::\+Peek\+Vehicle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets reference of last vehicle in the vehicle\+Queue without popping it out. 
+
+\begin{DoxyReturn}{Returns}
+Reference to last vehicle in the \doxylink{class_captain_1_1_spin_lock_vehicle_queue}{Spin\+Lock\+Vehicle\+Queue} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a7fb9975a6b067c428bf518e7e3e0c6fb}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_ab5435bd1e06cd98cafd200cb6a3d3900_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a5c6e0a074a9d2e1eb5b5d0ccb22af0c6}\label{class_captain_1_1_node_1_1_meso_unit_a5c6e0a074a9d2e1eb5b5d0ccb22af0c6} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!PopVehicle@{PopVehicle}}
+\index{PopVehicle@{PopVehicle}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{PopVehicle()}{PopVehicle()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ Captain\+::\+Node\+::\+Meso\+Unit\+::\+Pop\+Vehicle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Pops vehicle from vehicle\+Queue. 
+
+\begin{DoxyReturn}{Returns}
+Vehicle\+Ptr that has been popped default\+Ptr is returned if it fails 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_aee7da19fad5088987ef15476f60594d6}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_a5c6e0a074a9d2e1eb5b5d0ccb22af0c6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a942d8030b0dd71d82f7e769c51715be1}\label{class_captain_1_1_node_1_1_meso_unit_a942d8030b0dd71d82f7e769c51715be1} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!PushVehicle@{PushVehicle}}
+\index{PushVehicle@{PushVehicle}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{PushVehicle()}{PushVehicle()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Meso\+Unit\+::\+Push\+Vehicle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} \&\&}]{vehicle\+Ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Receives vehicle from previous Link. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vehicle\+Ptr} & Unique Vehicle\+Ptr object to move \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_ae3fb8f20863fb4aeb1e569152763d3b4}{Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_a942d8030b0dd71d82f7e769c51715be1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_ab09b7181c64a8b8cc48f5c0ac2ddd418}\label{class_captain_1_1_node_1_1_meso_unit_ab09b7181c64a8b8cc48f5c0ac2ddd418} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!Record@{Record}}
+\index{Record@{Record}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{Record()}{Record()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Meso\+Unit\+::\+Record (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Records information to temporary buffer. 
+
+record operation runs internally Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_ab09b7181c64a8b8cc48f5c0ac2ddd418_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_ad0e4ea2e4322db3cb1c209cf8949274e}\label{class_captain_1_1_node_1_1_meso_unit_ad0e4ea2e4322db3cb1c209cf8949274e} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!SetBlockingInfo@{SetBlockingInfo}}
+\index{SetBlockingInfo@{SetBlockingInfo}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{SetBlockingInfo()}{SetBlockingInfo()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Meso\+Unit\+::\+Set\+Blocking\+Info (\begin{DoxyParamCaption}\item[{std\+::optional$<$ \mbox{\hyperlink{struct_captain_1_1_segment_info}{Segment\+Info}} $>$}]{segment\+Info }\end{DoxyParamCaption})}
+
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a0a76dc9f5c509d7dfa80d689e81fdba5}\label{class_captain_1_1_node_1_1_meso_unit_a0a76dc9f5c509d7dfa80d689e81fdba5} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!SetFollowerConnectionInfo@{SetFollowerConnectionInfo}}
+\index{SetFollowerConnectionInfo@{SetFollowerConnectionInfo}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{SetFollowerConnectionInfo()}{SetFollowerConnectionInfo()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Meso\+Unit\+::\+Set\+Follower\+Connection\+Info (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} $>$ \&}]{unit\+Connection\+Info }\end{DoxyParamCaption})}
+
+
+
+Sets connection relationship with follower. 
+
+\begin{DoxyNote}{Note}
+If one of the units in unit\+Connection\+Info is micro, every Unit inside unit\+Connection\+Info should be micro 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em unit\+Connection\+Info} & connection information to set between follower \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_ae0e3da7234d36793cb7e0dc13c8ed94e}\label{class_captain_1_1_node_1_1_meso_unit_ae0e3da7234d36793cb7e0dc13c8ed94e} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!SetFreeFlowSpeed@{SetFreeFlowSpeed}}
+\index{SetFreeFlowSpeed@{SetFreeFlowSpeed}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{SetFreeFlowSpeed()}{SetFreeFlowSpeed()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Meso\+Unit\+::\+Set\+Free\+Flow\+Speed (\begin{DoxyParamCaption}\item[{double}]{free\+Flow\+Speed }\end{DoxyParamCaption})}
+
+
+
+Sets free flow speed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em free\+Flow\+Speed} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a9a9c66a513b6a9fa95de7e99d297a499}\label{class_captain_1_1_node_1_1_meso_unit_a9a9c66a513b6a9fa95de7e99d297a499} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!SetLeaderConnectionInfo@{SetLeaderConnectionInfo}}
+\index{SetLeaderConnectionInfo@{SetLeaderConnectionInfo}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{SetLeaderConnectionInfo()}{SetLeaderConnectionInfo()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Meso\+Unit\+::\+Set\+Leader\+Connection\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} \&}]{unit\+Connection\+Info }\end{DoxyParamCaption})}
+
+
+
+Sets connection relationship with leader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unit\+Connection\+Info} & connection information to set between leader \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a36ea2e1ebe24a9baa283ac8288e8a40f}\label{class_captain_1_1_node_1_1_meso_unit_a36ea2e1ebe24a9baa283ac8288e8a40f} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!SetLeftCellPtr@{SetLeftCellPtr}}
+\index{SetLeftCellPtr@{SetLeftCellPtr}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{SetLeftCellPtr()}{SetLeftCellPtr()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Meso\+Unit\+::\+Set\+Left\+Cell\+Ptr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit}{Meso\+Unit}} $>$}]{left\+Cell\+Ptr }\end{DoxyParamCaption})}
+
+
+
+Sets ptr for left cell. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left\+Cell\+Ptr} & ptr of cell in the left \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_adbd9bdce12da79472e1cf60e63da9701}\label{class_captain_1_1_node_1_1_meso_unit_adbd9bdce12da79472e1cf60e63da9701} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!SetRightCellPtr@{SetRightCellPtr}}
+\index{SetRightCellPtr@{SetRightCellPtr}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{SetRightCellPtr()}{SetRightCellPtr()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Meso\+Unit\+::\+Set\+Right\+Cell\+Ptr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit}{Meso\+Unit}} $>$}]{right\+Cell\+Ptr }\end{DoxyParamCaption})}
+
+
+
+Sets ptr for right cell. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em right\+Cell\+Ptr} & ptr of cell in the right \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_ad264af7effabe62417af364db13b11c1}\label{class_captain_1_1_node_1_1_meso_unit_ad264af7effabe62417af364db13b11c1} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!SetStopVehicleMap@{SetStopVehicleMap}}
+\index{SetStopVehicleMap@{SetStopVehicleMap}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{SetStopVehicleMap()}{SetStopVehicleMap()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Meso\+Unit\+::\+Set\+Stop\+Vehicle\+Map (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} $>$ \&}]{unit\+Connection\+Info\+Vector }\end{DoxyParamCaption})}
+
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a6bd257cf179ba1b04cd5624d0bc4158c}\label{class_captain_1_1_node_1_1_meso_unit_a6bd257cf179ba1b04cd5624d0bc4158c} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!TransitionToMeso@{TransitionToMeso}}
+\index{TransitionToMeso@{TransitionToMeso}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{TransitionToMeso()}{TransitionToMeso()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Meso\+Unit\+::\+Transition\+To\+Meso (\begin{DoxyParamCaption}\item[{std\+::list$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$}]{unitqueue }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_a6bd257cf179ba1b04cd5624d0bc4158c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a007315c626225f2d9f56e50e9e987a57}\label{class_captain_1_1_node_1_1_meso_unit_a007315c626225f2d9f56e50e9e987a57} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!UpdateVehiclePosition@{UpdateVehiclePosition}}
+\index{UpdateVehiclePosition@{UpdateVehiclePosition}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{UpdateVehiclePosition()}{UpdateVehiclePosition()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Meso\+Unit\+::\+Update\+Vehicle\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Computes X position of vehicles inside the vehicle\+Queue. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_meso_unit_a007315c626225f2d9f56e50e9e987a57_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_captain_1_1_node_1_1_meso_unit_a9ebd5f497e70bebbd612862188073088}\label{class_captain_1_1_node_1_1_meso_unit_a9ebd5f497e70bebbd612862188073088} 
+\index{Captain::Node::MesoUnit@{Captain::Node::MesoUnit}!FollowerSignalElapsedTime@{FollowerSignalElapsedTime}}
+\index{FollowerSignalElapsedTime@{FollowerSignalElapsedTime}!Captain::Node::MesoUnit@{Captain::Node::MesoUnit}}
+\doxysubsubsection{\texorpdfstring{FollowerSignalElapsedTime}{FollowerSignalElapsedTime}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Captain\+::\+Node\+::\+Meso\+Unit\+::\+Follower\+Signal\+Elapsed\+Time = 0}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Network/\mbox{\hyperlink{_meso_unit_8hpp}{Meso\+Unit.\+hpp}}\item 
+Sources/captain/\+Network/\mbox{\hyperlink{_meso_unit_8cpp}{Meso\+Unit.\+cpp}}\end{DoxyCompactItemize}

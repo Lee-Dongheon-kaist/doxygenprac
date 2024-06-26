@@ -1,0 +1,7 @@
+<map id="Captain::Node::IVehicleContainableUnit::IsEqual" name="Captain::Node::IVehicleContainableUnit::IsEqual">
+<area shape="rect" id="Node000001" title=" " alt="" coords="253,39,478,81"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_meso_unit.html#ad5e8f0ec18876f1c39157b27b8ef6884" title="Move vehicles from previous unit&#39;s m_vehicleMainQueue to m_vehicleMainQueueUp." alt="" coords="22,5,188,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,46,188,40,189,35,237,41"/>
+<area shape="rect" id="Node000003" href="$struct_captain_1_1_node_1_1_unit_connection_info.html#a51599b08717a088e4f4f33aacde75d5b" title=" " alt="" coords="5,72,205,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="237,79,206,83,205,78,237,74"/>
+</map>

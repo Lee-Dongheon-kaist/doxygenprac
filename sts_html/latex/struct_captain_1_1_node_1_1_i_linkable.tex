@@ -1,0 +1,247 @@
+\doxysection{Captain\+::Node\+::ILinkable Struct Reference}
+\hypertarget{struct_captain_1_1_node_1_1_i_linkable}{}\label{struct_captain_1_1_node_1_1_i_linkable}\index{Captain::Node::ILinkable@{Captain::Node::ILinkable}}
+
+
+Interface that defines classes that can link directly to other units in the network.  
+
+
+
+
+{\ttfamily \#include $<$ILinkable.\+hpp$>$}
+
+
+
+Inheritance diagram for Captain\+::Node\+::ILinkable\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{struct_captain_1_1_node_1_1_i_linkable__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Captain\+::Node\+::ILinkable\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{struct_captain_1_1_node_1_1_i_linkable__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_aedaa60013dde57a9692ac0b05300aa29}{ILinkable}} ()=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_adc08acf3b1c8faaeca697c97885b4f2c}{ILinkable}} (const \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{ILinkable}} \&i\+Linkable)=delete
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_aff8aea7f62294bec99daf8d1dfc20d8e}{ILinkable}} (\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{ILinkable}} \&\&i\+Linkable) noexcept=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{ILinkable}} \& \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_ac6c06f7e69fd698f5e089ee6d22640f0}{operator=}} (const \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{ILinkable}} \&i\+Linkable)=delete
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{ILinkable}} \& \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_ad52278fab2d6fc07a33b7f4a862c1837}{operator=}} (\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{ILinkable}} \&\&i\+Linkable) noexcept=default
+\item 
+virtual \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_aaf5a99727e56142bbd34e068589c9bc4}{\texorpdfstring{$\sim$}{\string~}\+ILinkable}} ()=default
+\item 
+virtual \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_a1d02456407b492adcc960d026907bd5a}{Get\+Identifier}} () const =0
+\begin{DoxyCompactList}\small\item\em Gets Unique identifier of the link. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_aafeb9b76916384649d93aeb5a4366f34}{Get\+ID}} () const =0
+\begin{DoxyCompactList}\small\item\em Gets unique ID of this link in whole network. \end{DoxyCompactList}\item 
+virtual std\+::size\+\_\+t \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_a05c0cd8fd23d4aae688f099c385b1030}{Get\+Lane\+Size}} () const =0
+\begin{DoxyCompactList}\small\item\em Gets back number of lanes available. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_a486dc97cf759f1aaa1a711244c6ca60d}{Initialize}} ()=0
+\begin{DoxyCompactList}\small\item\em Initializes Linkable unit and ready to be executed. \end{DoxyCompactList}\item 
+virtual std\+::optional$<$ \mbox{\hyperlink{namespace_captain_ac03838c8d2941d5da8169c3ec7a4d868}{Vehicle\+Weak\+Ptr}} $>$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_a64965ac3452a264fc27f4d792653a0f3}{Get\+Leading\+Vehicle\+Ptr}} (std\+::size\+\_\+t lane\+Index)=0
+\begin{DoxyCompactList}\small\item\em Brings back reference to leading vehicle\+Ptr from corresponding index. \end{DoxyCompactList}\item 
+virtual std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_ac23877e32f204f4abdd22abd177e4bb2}{Get\+Last\+Vehicle\+Ptr}} (std\+::size\+\_\+t lane\+Index)=0
+\begin{DoxyCompactList}\small\item\em Brings back reference to last vehicle\+Ptr from corresponding index. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} $>$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_af1a5b71ba586c95a24edd860243e7c72}{Get\+Lane}} (std\+::size\+\_\+t lane\+Index)=0
+\begin{DoxyCompactList}\small\item\em Returns reference of lane in corresponding lane index. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_a4b0ae91888cf13316a2181046eaa811a}{Get\+Weight}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets weight (expected pass time) of the link. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface that defines classes that can link directly to other units in the network. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_captain_1_1_node_1_1_i_linkable_aedaa60013dde57a9692ac0b05300aa29}\label{struct_captain_1_1_node_1_1_i_linkable_aedaa60013dde57a9692ac0b05300aa29} 
+\index{Captain::Node::ILinkable@{Captain::Node::ILinkable}!ILinkable@{ILinkable}}
+\index{ILinkable@{ILinkable}!Captain::Node::ILinkable@{Captain::Node::ILinkable}}
+\doxysubsubsection{\texorpdfstring{ILinkable()}{ILinkable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Captain\+::\+Node\+::\+ILinkable\+::\+ILinkable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_linkable_adc08acf3b1c8faaeca697c97885b4f2c}\label{struct_captain_1_1_node_1_1_i_linkable_adc08acf3b1c8faaeca697c97885b4f2c} 
+\index{Captain::Node::ILinkable@{Captain::Node::ILinkable}!ILinkable@{ILinkable}}
+\index{ILinkable@{ILinkable}!Captain::Node::ILinkable@{Captain::Node::ILinkable}}
+\doxysubsubsection{\texorpdfstring{ILinkable()}{ILinkable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Captain\+::\+Node\+::\+ILinkable\+::\+ILinkable (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{ILinkable}} \&}]{i\+Linkable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_linkable_aff8aea7f62294bec99daf8d1dfc20d8e}\label{struct_captain_1_1_node_1_1_i_linkable_aff8aea7f62294bec99daf8d1dfc20d8e} 
+\index{Captain::Node::ILinkable@{Captain::Node::ILinkable}!ILinkable@{ILinkable}}
+\index{ILinkable@{ILinkable}!Captain::Node::ILinkable@{Captain::Node::ILinkable}}
+\doxysubsubsection{\texorpdfstring{ILinkable()}{ILinkable()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Captain\+::\+Node\+::\+ILinkable\+::\+ILinkable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{ILinkable}} \&\&}]{i\+Linkable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_linkable_aaf5a99727e56142bbd34e068589c9bc4}\label{struct_captain_1_1_node_1_1_i_linkable_aaf5a99727e56142bbd34e068589c9bc4} 
+\index{Captain::Node::ILinkable@{Captain::Node::ILinkable}!````~ILinkable@{\texorpdfstring{$\sim$}{\string~}ILinkable}}
+\index{````~ILinkable@{\texorpdfstring{$\sim$}{\string~}ILinkable}!Captain::Node::ILinkable@{Captain::Node::ILinkable}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ILinkable()}{\string~ILinkable()}}
+{\footnotesize\ttfamily virtual Captain\+::\+Node\+::\+ILinkable\+::\texorpdfstring{$\sim$}{\string~}\+ILinkable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_captain_1_1_node_1_1_i_linkable_aafeb9b76916384649d93aeb5a4366f34}\label{struct_captain_1_1_node_1_1_i_linkable_aafeb9b76916384649d93aeb5a4366f34} 
+\index{Captain::Node::ILinkable@{Captain::Node::ILinkable}!GetID@{GetID}}
+\index{GetID@{GetID}!Captain::Node::ILinkable@{Captain::Node::ILinkable}}
+\doxysubsubsection{\texorpdfstring{GetID()}{GetID()}}
+{\footnotesize\ttfamily virtual int Captain\+::\+Node\+::\+ILinkable\+::\+Get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets unique ID of this link in whole network. 
+
+\begin{DoxyReturn}{Returns}
+ID of this link 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_node_1_1_enhanced_micro_link_ab501a11849f10cefbf736c2aa5c3fe7e}{Captain\+::\+Node\+::\+Enhanced\+Micro\+Link}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_link_aa94838e1d83de61a01281ec5de7d06c9}{Captain\+::\+Node\+::\+Meso\+Link}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_link_a7dedcebfe47aa74a60c200986c7da390}{Captain\+::\+Node\+::\+Micro\+Link}}, and \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_aab3ed63f1b2e2d5929deb14a9bd13d5b}{Captain\+::\+Node\+::\+Uniform\+Link}}.
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_linkable_a1d02456407b492adcc960d026907bd5a}\label{struct_captain_1_1_node_1_1_i_linkable_a1d02456407b492adcc960d026907bd5a} 
+\index{Captain::Node::ILinkable@{Captain::Node::ILinkable}!GetIdentifier@{GetIdentifier}}
+\index{GetIdentifier@{GetIdentifier}!Captain::Node::ILinkable@{Captain::Node::ILinkable}}
+\doxysubsubsection{\texorpdfstring{GetIdentifier()}{GetIdentifier()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} Captain\+::\+Node\+::\+ILinkable\+::\+Get\+Identifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets Unique identifier of the link. 
+
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_node_1_1_enhanced_micro_link_a408eac5e30a8ed123657a7e6894500aa}{Captain\+::\+Node\+::\+Enhanced\+Micro\+Link}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_link_a9fd0dc77ff7967413ab8fe8228a7ff62}{Captain\+::\+Node\+::\+Meso\+Link}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_link_ab8febe90fb4eafa190cefb9a42417a02}{Captain\+::\+Node\+::\+Micro\+Link}}, and \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_aa962c9068042092a88d8273269140f25}{Captain\+::\+Node\+::\+Uniform\+Link}}.
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_linkable_af1a5b71ba586c95a24edd860243e7c72}\label{struct_captain_1_1_node_1_1_i_linkable_af1a5b71ba586c95a24edd860243e7c72} 
+\index{Captain::Node::ILinkable@{Captain::Node::ILinkable}!GetLane@{GetLane}}
+\index{GetLane@{GetLane}!Captain::Node::ILinkable@{Captain::Node::ILinkable}}
+\doxysubsubsection{\texorpdfstring{GetLane()}{GetLane()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} $>$ Captain\+::\+Node\+::\+ILinkable\+::\+Get\+Lane (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{lane\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns reference of lane in corresponding lane index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lane\+Index} & index of the lane \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to \doxylink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit} which represents corresponding lane 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_node_1_1_enhanced_micro_link_a4bf3d64990b07e9ba85b8fde270e77c8}{Captain\+::\+Node\+::\+Enhanced\+Micro\+Link}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_link_abd150ceb3f6a3e54c6b7bc40086481e9}{Captain\+::\+Node\+::\+Meso\+Link}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_link_a514808d89eac28175de9761142c7a25d}{Captain\+::\+Node\+::\+Micro\+Link}}, and \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_ab26aab863610b180f1214fe6d3795dd8}{Captain\+::\+Node\+::\+Uniform\+Link}}.
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_linkable_a05c0cd8fd23d4aae688f099c385b1030}\label{struct_captain_1_1_node_1_1_i_linkable_a05c0cd8fd23d4aae688f099c385b1030} 
+\index{Captain::Node::ILinkable@{Captain::Node::ILinkable}!GetLaneSize@{GetLaneSize}}
+\index{GetLaneSize@{GetLaneSize}!Captain::Node::ILinkable@{Captain::Node::ILinkable}}
+\doxysubsubsection{\texorpdfstring{GetLaneSize()}{GetLaneSize()}}
+{\footnotesize\ttfamily virtual std\+::size\+\_\+t Captain\+::\+Node\+::\+ILinkable\+::\+Get\+Lane\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets back number of lanes available. 
+
+\begin{DoxyReturn}{Returns}
+number of lanes available 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_node_1_1_enhanced_micro_link_acabbbda2fc77777f0f5f09cccded45a5}{Captain\+::\+Node\+::\+Enhanced\+Micro\+Link}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_link_a4cd476ebc01b4db8b275edd8703e974c}{Captain\+::\+Node\+::\+Meso\+Link}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_link_a2ece8d34f4113c90830b5d81b8cd04b9}{Captain\+::\+Node\+::\+Micro\+Link}}, and \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_af2e36ae53cb5ba736529659dc2f5545e}{Captain\+::\+Node\+::\+Uniform\+Link}}.
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_linkable_ac23877e32f204f4abdd22abd177e4bb2}\label{struct_captain_1_1_node_1_1_i_linkable_ac23877e32f204f4abdd22abd177e4bb2} 
+\index{Captain::Node::ILinkable@{Captain::Node::ILinkable}!GetLastVehiclePtr@{GetLastVehiclePtr}}
+\index{GetLastVehiclePtr@{GetLastVehiclePtr}!Captain::Node::ILinkable@{Captain::Node::ILinkable}}
+\doxysubsubsection{\texorpdfstring{GetLastVehiclePtr()}{GetLastVehiclePtr()}}
+{\footnotesize\ttfamily virtual std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ Captain\+::\+Node\+::\+ILinkable\+::\+Get\+Last\+Vehicle\+Ptr (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{lane\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Brings back reference to last vehicle\+Ptr from corresponding index. 
+
+\begin{DoxyReturn}{Returns}
+reference of Vehicle\+Ptr to last vehicle of corresponding lane 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_node_1_1_enhanced_micro_link_aefc977cc573cd539c62c97871e7acd84}{Captain\+::\+Node\+::\+Enhanced\+Micro\+Link}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_link_a239981fb46a54f1205fc8751f6b9ab7f}{Captain\+::\+Node\+::\+Meso\+Link}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_link_ad39357b8aa3794460103a339853b61a0}{Captain\+::\+Node\+::\+Micro\+Link}}, and \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a37132e607eb3ac40e1c2d77d10edeac7}{Captain\+::\+Node\+::\+Uniform\+Link}}.
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_linkable_a64965ac3452a264fc27f4d792653a0f3}\label{struct_captain_1_1_node_1_1_i_linkable_a64965ac3452a264fc27f4d792653a0f3} 
+\index{Captain::Node::ILinkable@{Captain::Node::ILinkable}!GetLeadingVehiclePtr@{GetLeadingVehiclePtr}}
+\index{GetLeadingVehiclePtr@{GetLeadingVehiclePtr}!Captain::Node::ILinkable@{Captain::Node::ILinkable}}
+\doxysubsubsection{\texorpdfstring{GetLeadingVehiclePtr()}{GetLeadingVehiclePtr()}}
+{\footnotesize\ttfamily virtual std\+::optional$<$ \mbox{\hyperlink{namespace_captain_ac03838c8d2941d5da8169c3ec7a4d868}{Vehicle\+Weak\+Ptr}} $>$ Captain\+::\+Node\+::\+ILinkable\+::\+Get\+Leading\+Vehicle\+Ptr (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{lane\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Brings back reference to leading vehicle\+Ptr from corresponding index. 
+
+\begin{DoxyReturn}{Returns}
+reference of Vehicle\+Ptr to last vehicle of corresponding lane 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_node_1_1_enhanced_micro_link_ae2f3bab90651f838ac5a1386cf034568}{Captain\+::\+Node\+::\+Enhanced\+Micro\+Link}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_link_a0fc42e78ae700411bc785e84e4bb77c9}{Captain\+::\+Node\+::\+Meso\+Link}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_link_ae4032f9577cb65fc0fce7329faf402ca}{Captain\+::\+Node\+::\+Micro\+Link}}, and \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_abb94afdd386c84c1a6ceebde8f986655}{Captain\+::\+Node\+::\+Uniform\+Link}}.
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_linkable_a4b0ae91888cf13316a2181046eaa811a}\label{struct_captain_1_1_node_1_1_i_linkable_a4b0ae91888cf13316a2181046eaa811a} 
+\index{Captain::Node::ILinkable@{Captain::Node::ILinkable}!GetWeight@{GetWeight}}
+\index{GetWeight@{GetWeight}!Captain::Node::ILinkable@{Captain::Node::ILinkable}}
+\doxysubsubsection{\texorpdfstring{GetWeight()}{GetWeight()}}
+{\footnotesize\ttfamily virtual double Captain\+::\+Node\+::\+ILinkable\+::\+Get\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets weight (expected pass time) of the link. 
+
+\begin{DoxyReturn}{Returns}
+predicted weight (expected time to pass the link) 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_node_1_1_enhanced_micro_link_ad0ffc129632e2d77611506660eb38b79}{Captain\+::\+Node\+::\+Enhanced\+Micro\+Link}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_link_a3030a6a0260675c7f8ff3deac4b51988}{Captain\+::\+Node\+::\+Meso\+Link}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_link_a899cc490169985004af10f4b3a34fe01}{Captain\+::\+Node\+::\+Micro\+Link}}, and \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a605d692a49830ea0ac5378272e02dd8d}{Captain\+::\+Node\+::\+Uniform\+Link}}.
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_linkable_a486dc97cf759f1aaa1a711244c6ca60d}\label{struct_captain_1_1_node_1_1_i_linkable_a486dc97cf759f1aaa1a711244c6ca60d} 
+\index{Captain::Node::ILinkable@{Captain::Node::ILinkable}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Captain::Node::ILinkable@{Captain::Node::ILinkable}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily virtual void Captain\+::\+Node\+::\+ILinkable\+::\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Initializes Linkable unit and ready to be executed. 
+
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_node_1_1_enhanced_micro_link_acf9f7157d71be31246535b03a70b802b}{Captain\+::\+Node\+::\+Enhanced\+Micro\+Link}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_link_a0942f8c3c10a975234e453d0dcc66f13}{Captain\+::\+Node\+::\+Meso\+Link}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_link_a22413ef0efda5709f522a72cca96bce7}{Captain\+::\+Node\+::\+Micro\+Link}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_intersection_link_acf29dec344b5b4845b0a5464d6b44a06}{Captain\+::\+Node\+::\+Uniform\+Intersection\+Link}}, and \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a855d32334913df4bfc9e3cf37c39f931}{Captain\+::\+Node\+::\+Uniform\+Link}}.
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_linkable_ac6c06f7e69fd698f5e089ee6d22640f0}\label{struct_captain_1_1_node_1_1_i_linkable_ac6c06f7e69fd698f5e089ee6d22640f0} 
+\index{Captain::Node::ILinkable@{Captain::Node::ILinkable}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::Node::ILinkable@{Captain::Node::ILinkable}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{ILinkable}} \& Captain\+::\+Node\+::\+ILinkable\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{ILinkable}} \&}]{i\+Linkable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_linkable_ad52278fab2d6fc07a33b7f4a862c1837}\label{struct_captain_1_1_node_1_1_i_linkable_ad52278fab2d6fc07a33b7f4a862c1837} 
+\index{Captain::Node::ILinkable@{Captain::Node::ILinkable}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::Node::ILinkable@{Captain::Node::ILinkable}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{ILinkable}} \& Captain\+::\+Node\+::\+ILinkable\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{ILinkable}} \&\&}]{i\+Linkable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Network/\mbox{\hyperlink{_i_linkable_8hpp}{ILinkable.\+hpp}}\end{DoxyCompactItemize}

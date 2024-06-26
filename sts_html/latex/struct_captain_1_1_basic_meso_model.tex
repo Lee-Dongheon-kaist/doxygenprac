@@ -1,0 +1,100 @@
+\doxysection{Captain\+::Basic\+Meso\+Model Struct Reference}
+\hypertarget{struct_captain_1_1_basic_meso_model}{}\label{struct_captain_1_1_basic_meso_model}\index{Captain::BasicMesoModel@{Captain::BasicMesoModel}}
+
+
+{\ttfamily \#include $<$Meso\+Computations.\+hpp$>$}
+
+
+
+Inheritance diagram for Captain\+::Basic\+Meso\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{struct_captain_1_1_basic_meso_model__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Captain\+::Basic\+Meso\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{struct_captain_1_1_basic_meso_model__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_basic_meso_model_a8de3deba709aa4f6f5d85c63384d0d37}{Basic\+Meso\+Model}} ()=default
+\item 
+std\+::pair$<$ int, double $>$ \mbox{\hyperlink{struct_captain_1_1_basic_meso_model_a153ce8299a2fd09c1ad4edee4c494c44}{Compute\+ICF}} (size\+\_\+t dest\+Max\+Vehicles, size\+\_\+t origin\+Num\+Vehicles, size\+\_\+t dest\+Num\+Vehicles, double dest\+Qmax, double dest\+Wave\+Speed, double dest\+Free\+Flow\+Speed, double dest\+Cell\+Length) const override
+\item 
+double \mbox{\hyperlink{struct_captain_1_1_basic_meso_model_a509fc1b41787ce400c0ade99d215b979}{Compute\+Lane\+Change}} (double target\+Cell\+Speed, double free\+Flow\+Speed, double target\+Cell\+Density) const override
+\item 
+std\+::tuple$<$ double, double, double $>$ \mbox{\hyperlink{struct_captain_1_1_basic_meso_model_a7508ca6c2c1eac0a86019517811dfa6c}{Get\+Prob}} (double arg1, double arg2, double arg3) const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{struct_captain_1_1_meso_computation_model}{Captain\+::\+Meso\+Computation\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::tuple$<$ double, double, double $>$ \mbox{\hyperlink{struct_captain_1_1_meso_computation_model_afc86d70bf328476737a3e4da0fccb5fb}{Soft\+Max}} (double arg1, double arg2, double arg3) const
+\item 
+virtual \mbox{\hyperlink{struct_captain_1_1_meso_computation_model_ae75faa52ee8c9b40b2fcbc33b58be003}{\texorpdfstring{$\sim$}{\string~}\+Meso\+Computation\+Model}} ()=default
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_captain_1_1_basic_meso_model_a8de3deba709aa4f6f5d85c63384d0d37}\label{struct_captain_1_1_basic_meso_model_a8de3deba709aa4f6f5d85c63384d0d37} 
+\index{Captain::BasicMesoModel@{Captain::BasicMesoModel}!BasicMesoModel@{BasicMesoModel}}
+\index{BasicMesoModel@{BasicMesoModel}!Captain::BasicMesoModel@{Captain::BasicMesoModel}}
+\doxysubsubsection{\texorpdfstring{BasicMesoModel()}{BasicMesoModel()}}
+{\footnotesize\ttfamily Captain\+::\+Basic\+Meso\+Model\+::\+Basic\+Meso\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_captain_1_1_basic_meso_model_a153ce8299a2fd09c1ad4edee4c494c44}\label{struct_captain_1_1_basic_meso_model_a153ce8299a2fd09c1ad4edee4c494c44} 
+\index{Captain::BasicMesoModel@{Captain::BasicMesoModel}!ComputeICF@{ComputeICF}}
+\index{ComputeICF@{ComputeICF}!Captain::BasicMesoModel@{Captain::BasicMesoModel}}
+\doxysubsubsection{\texorpdfstring{ComputeICF()}{ComputeICF()}}
+{\footnotesize\ttfamily std\+::pair$<$ int, double $>$ Captain\+::\+Basic\+Meso\+Model\+::\+Compute\+ICF (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{dest\+Max\+Vehicles,  }\item[{size\+\_\+t}]{origin\+Num\+Vehicles,  }\item[{size\+\_\+t}]{dest\+Num\+Vehicles,  }\item[{double}]{dest\+Qmax,  }\item[{double}]{dest\+Wave\+Speed,  }\item[{double}]{dest\+Free\+Flow\+Speed,  }\item[{double}]{dest\+Cell\+Length }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_meso_computation_model_a213486f6a0217f2fcef1b72342691643}{Captain\+::\+Meso\+Computation\+Model}}.
+
+\Hypertarget{struct_captain_1_1_basic_meso_model_a509fc1b41787ce400c0ade99d215b979}\label{struct_captain_1_1_basic_meso_model_a509fc1b41787ce400c0ade99d215b979} 
+\index{Captain::BasicMesoModel@{Captain::BasicMesoModel}!ComputeLaneChange@{ComputeLaneChange}}
+\index{ComputeLaneChange@{ComputeLaneChange}!Captain::BasicMesoModel@{Captain::BasicMesoModel}}
+\doxysubsubsection{\texorpdfstring{ComputeLaneChange()}{ComputeLaneChange()}}
+{\footnotesize\ttfamily double Captain\+::\+Basic\+Meso\+Model\+::\+Compute\+Lane\+Change (\begin{DoxyParamCaption}\item[{double}]{target\+Cell\+Speed,  }\item[{double}]{free\+Flow\+Speed,  }\item[{double}]{target\+Cell\+Density }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_meso_computation_model_a29e96d556ec6a01b5000ab7c7f261613}{Captain\+::\+Meso\+Computation\+Model}}.
+
+\Hypertarget{struct_captain_1_1_basic_meso_model_a7508ca6c2c1eac0a86019517811dfa6c}\label{struct_captain_1_1_basic_meso_model_a7508ca6c2c1eac0a86019517811dfa6c} 
+\index{Captain::BasicMesoModel@{Captain::BasicMesoModel}!GetProb@{GetProb}}
+\index{GetProb@{GetProb}!Captain::BasicMesoModel@{Captain::BasicMesoModel}}
+\doxysubsubsection{\texorpdfstring{GetProb()}{GetProb()}}
+{\footnotesize\ttfamily std\+::tuple$<$ double, double, double $>$ Captain\+::\+Basic\+Meso\+Model\+::\+Get\+Prob (\begin{DoxyParamCaption}\item[{double}]{arg1,  }\item[{double}]{arg2,  }\item[{double}]{arg3 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{struct_captain_1_1_meso_computation_model_a01f6b26f985ea011c18e473df3ab84ab}{Captain\+::\+Meso\+Computation\+Model}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_captain_1_1_basic_meso_model_a7508ca6c2c1eac0a86019517811dfa6c_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Util/\mbox{\hyperlink{_meso_computations_8hpp}{Meso\+Computations.\+hpp}}\item 
+Sources/captain/\+Util/\mbox{\hyperlink{_meso_computations_8cpp}{Meso\+Computations.\+cpp}}\end{DoxyCompactItemize}

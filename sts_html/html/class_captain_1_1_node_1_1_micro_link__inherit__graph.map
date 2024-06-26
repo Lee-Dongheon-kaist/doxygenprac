@@ -1,0 +1,5 @@
+<map id="Captain::Node::MicroLink" name="Captain::Node::MicroLink">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,400,199,747"/>
+<area shape="rect" id="Node000002" href="$struct_captain_1_1_node_1_1_i_linkable.html" title="Interface that defines classes that can link directly to other units in the network." alt="" coords="23,5,181,352"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,367,105,400,99,400,99,367"/>
+</map>

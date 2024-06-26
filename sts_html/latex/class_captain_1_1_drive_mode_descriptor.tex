@@ -1,0 +1,219 @@
+\doxysection{Captain\+::Drive\+Mode\+Descriptor Class Reference}
+\hypertarget{class_captain_1_1_drive_mode_descriptor}{}\label{class_captain_1_1_drive_mode_descriptor}\index{Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}}
+
+
+Class for describing Drive Modes.  
+
+
+
+
+{\ttfamily \#include $<$Drive\+Mode\+Descriptor.\+hpp$>$}
+
+
+
+Collaboration diagram for Captain\+::Drive\+Mode\+Descriptor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_captain_1_1_drive_mode_descriptor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor_a1b869e2b99a0bf19966fc6147e4e504d}{Drive\+Mode\+Descriptor}} ()
+\item 
+\mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor_a6aefd6467d1b1a46c39d36ba67f0522e}{\texorpdfstring{$\sim$}{\string~}\+Drive\+Mode\+Descriptor}} ()=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor_aa47d1da3f359e9629b687ce8cb91cc44}{Drive\+Mode\+Descriptor}} (const \mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor}{Drive\+Mode\+Descriptor}} \&other)=delete
+\item 
+\mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor_afcf7da1357541f8d5fb55b6f17f0278b}{Drive\+Mode\+Descriptor}} (\mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor}{Drive\+Mode\+Descriptor}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor}{Drive\+Mode\+Descriptor}} \& \mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor_a2ca3123cf76f40726ac540a32506c80e}{operator=}} (const \mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor}{Drive\+Mode\+Descriptor}} \&other)=delete
+\item 
+\mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor}{Drive\+Mode\+Descriptor}} \& \mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor_a058731d3651da011c0b7997510889f42}{operator=}} (\mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor}{Drive\+Mode\+Descriptor}} \&\&drive\+Mode\+Descriptor) noexcept
+\item 
+bool \mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor_a3d7f6586729040e0639e54bb2dd62c73}{Is\+In\+LCState}} () const
+\item 
+std\+::vector$<$ \mbox{\hyperlink{namespace_captain_adb2da0ffbadc1747f448261fec9e7d2b}{Drive\+Mode}} $>$ \mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor_af3491c2332a4fd909bebdb026a6559bd}{Get\+Activated\+Drive\+Modes}} () const
+\item 
+std\+::tuple$<$ \mbox{\hyperlink{struct_captain_1_1_position}{Position}}, \mbox{\hyperlink{namespace_captain_adb2da0ffbadc1747f448261fec9e7d2b}{Drive\+Mode}}, int, double, double $>$ \mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor_a71a1c2af59f4ce2a111c957b9578934c}{Compute\+Position}} (\mbox{\hyperlink{namespace_captain_1_1_d_mode_af0bcc1092020155c4cf62ece22341b67}{DMode\+::\+Vehicle\+Info\+State\+Pair}} subject) const
+\begin{DoxyCompactList}\small\item\em Computes \doxylink{struct_captain_1_1_position}{Position} of the vehicle with integrated drive\+Modes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_b_c_f}{DMode\+::\+BCF}} $>$ \mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor_aee4b2ae0ab0182e267d1ec6dca194832}{Bcf\+Mode}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_c_f}{DMode\+::\+CF}} $>$ \mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor_a7331c01ef4d2ce3a6cacb160f1cdcc40}{Cf\+Mode}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_adj_speed}{DMode\+::\+Adj\+Speed}} $>$ \mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor_a9bf14e277101f2ee8d4e0fcc42a74a16}{Adj\+Speed\+Mode}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_c_v}{DMode\+::\+CV}} $>$ \mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor_a3212f4e339891e46a225fdf3417c8993}{Cv\+Mode}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_b_l_c}{DMode\+::\+BLC}} $>$ \mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor_ae7a031b0b9c608ca0b3807b5ce01c70e}{Blc\+Mode}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_d_l_c}{DMode\+::\+DLC}} $>$ \mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor_ae8126f36b6c7c9ebb3a88160ff3cb2c8}{Dlc\+Mode}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_e_l_c}{DMode\+::\+ELC}} $>$ \mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor_aa2dbfe1344e9f20ac0c6991d41168b7a}{Elc\+Mode}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_intersection_c_f}{DMode\+::\+Intersection\+CF}} $>$ \mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor_a970af19f46006172f416ae962946f623}{Intersection\+Cf\+Mode}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_c_c_f}{DMode\+::\+CCF}} $>$ \mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor_a5682c59be01599da6e5f867fef8db549}{CCFMode}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_stay}{DMode\+::\+Stay}} $>$ \mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor_a361dbed181e560f80a6e8c7d97dfe248}{Stay\+Mode}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_captain_1_1_d_mode_1_1_approach_station}{DMode\+::\+Approach\+Station}} $>$ \mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor_af9a4b99a9db589c7225461bd5b3721f8}{Approach\+Station\+Mode}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for describing Drive Modes. 
+
+This class contains functors of various drive modes that vehicle can have, and provides access, set operators for them 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_captain_1_1_drive_mode_descriptor_a1b869e2b99a0bf19966fc6147e4e504d}\label{class_captain_1_1_drive_mode_descriptor_a1b869e2b99a0bf19966fc6147e4e504d} 
+\index{Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}!DriveModeDescriptor@{DriveModeDescriptor}}
+\index{DriveModeDescriptor@{DriveModeDescriptor}!Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}}
+\doxysubsubsection{\texorpdfstring{DriveModeDescriptor()}{DriveModeDescriptor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Captain\+::\+Drive\+Mode\+Descriptor\+::\+Drive\+Mode\+Descriptor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_drive_mode_descriptor_a6aefd6467d1b1a46c39d36ba67f0522e}\label{class_captain_1_1_drive_mode_descriptor_a6aefd6467d1b1a46c39d36ba67f0522e} 
+\index{Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}!````~DriveModeDescriptor@{\texorpdfstring{$\sim$}{\string~}DriveModeDescriptor}}
+\index{````~DriveModeDescriptor@{\texorpdfstring{$\sim$}{\string~}DriveModeDescriptor}!Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}DriveModeDescriptor()}{\string~DriveModeDescriptor()}}
+{\footnotesize\ttfamily Captain\+::\+Drive\+Mode\+Descriptor\+::\texorpdfstring{$\sim$}{\string~}\+Drive\+Mode\+Descriptor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_captain_1_1_drive_mode_descriptor_aa47d1da3f359e9629b687ce8cb91cc44}\label{class_captain_1_1_drive_mode_descriptor_aa47d1da3f359e9629b687ce8cb91cc44} 
+\index{Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}!DriveModeDescriptor@{DriveModeDescriptor}}
+\index{DriveModeDescriptor@{DriveModeDescriptor}!Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}}
+\doxysubsubsection{\texorpdfstring{DriveModeDescriptor()}{DriveModeDescriptor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Captain\+::\+Drive\+Mode\+Descriptor\+::\+Drive\+Mode\+Descriptor (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor}{Drive\+Mode\+Descriptor}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{class_captain_1_1_drive_mode_descriptor_afcf7da1357541f8d5fb55b6f17f0278b}\label{class_captain_1_1_drive_mode_descriptor_afcf7da1357541f8d5fb55b6f17f0278b} 
+\index{Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}!DriveModeDescriptor@{DriveModeDescriptor}}
+\index{DriveModeDescriptor@{DriveModeDescriptor}!Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}}
+\doxysubsubsection{\texorpdfstring{DriveModeDescriptor()}{DriveModeDescriptor()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Captain\+::\+Drive\+Mode\+Descriptor\+::\+Drive\+Mode\+Descriptor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor}{Drive\+Mode\+Descriptor}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_captain_1_1_drive_mode_descriptor_a71a1c2af59f4ce2a111c957b9578934c}\label{class_captain_1_1_drive_mode_descriptor_a71a1c2af59f4ce2a111c957b9578934c} 
+\index{Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}!ComputePosition@{ComputePosition}}
+\index{ComputePosition@{ComputePosition}!Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}}
+\doxysubsubsection{\texorpdfstring{ComputePosition()}{ComputePosition()}}
+{\footnotesize\ttfamily std\+::tuple$<$ \mbox{\hyperlink{struct_captain_1_1_position}{Position}}, \mbox{\hyperlink{namespace_captain_adb2da0ffbadc1747f448261fec9e7d2b}{Drive\+Mode}}, int, double, double $>$ Captain\+::\+Drive\+Mode\+Descriptor\+::\+Compute\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_captain_1_1_d_mode_af0bcc1092020155c4cf62ece22341b67}{DMode\+::\+Vehicle\+Info\+State\+Pair}}}]{subject }\end{DoxyParamCaption}) const}
+
+
+
+Computes \doxylink{struct_captain_1_1_position}{Position} of the vehicle with integrated drive\+Modes. 
+
+Finds functor that updates the position for the least amount 
+\begin{DoxyParams}{Parameters}
+{\em subject} & information and state pair of subject vehicle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tuple of position, valid drive mode, leader vehicle ID, distance tp Leader 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_drive_mode_descriptor_af3491c2332a4fd909bebdb026a6559bd}\label{class_captain_1_1_drive_mode_descriptor_af3491c2332a4fd909bebdb026a6559bd} 
+\index{Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}!GetActivatedDriveModes@{GetActivatedDriveModes}}
+\index{GetActivatedDriveModes@{GetActivatedDriveModes}!Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}}
+\doxysubsubsection{\texorpdfstring{GetActivatedDriveModes()}{GetActivatedDriveModes()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{namespace_captain_adb2da0ffbadc1747f448261fec9e7d2b}{Drive\+Mode}} $>$ Captain\+::\+Drive\+Mode\+Descriptor\+::\+Get\+Activated\+Drive\+Modes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_captain_1_1_drive_mode_descriptor_a3d7f6586729040e0639e54bb2dd62c73}\label{class_captain_1_1_drive_mode_descriptor_a3d7f6586729040e0639e54bb2dd62c73} 
+\index{Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}!IsInLCState@{IsInLCState}}
+\index{IsInLCState@{IsInLCState}!Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}}
+\doxysubsubsection{\texorpdfstring{IsInLCState()}{IsInLCState()}}
+{\footnotesize\ttfamily bool Captain\+::\+Drive\+Mode\+Descriptor\+::\+Is\+In\+LCState (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_captain_1_1_drive_mode_descriptor_a2ca3123cf76f40726ac540a32506c80e}\label{class_captain_1_1_drive_mode_descriptor_a2ca3123cf76f40726ac540a32506c80e} 
+\index{Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor}{Drive\+Mode\+Descriptor}} \& Captain\+::\+Drive\+Mode\+Descriptor\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor}{Drive\+Mode\+Descriptor}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{class_captain_1_1_drive_mode_descriptor_a058731d3651da011c0b7997510889f42}\label{class_captain_1_1_drive_mode_descriptor_a058731d3651da011c0b7997510889f42} 
+\index{Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor}{Drive\+Mode\+Descriptor}} \& Captain\+::\+Drive\+Mode\+Descriptor\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_drive_mode_descriptor}{Drive\+Mode\+Descriptor}} \&\&}]{drive\+Mode\+Descriptor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_captain_1_1_drive_mode_descriptor_a9bf14e277101f2ee8d4e0fcc42a74a16}\label{class_captain_1_1_drive_mode_descriptor_a9bf14e277101f2ee8d4e0fcc42a74a16} 
+\index{Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}!AdjSpeedMode@{AdjSpeedMode}}
+\index{AdjSpeedMode@{AdjSpeedMode}!Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}}
+\doxysubsubsection{\texorpdfstring{AdjSpeedMode}{AdjSpeedMode}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_adj_speed}{DMode\+::\+Adj\+Speed}}$>$ Captain\+::\+Drive\+Mode\+Descriptor\+::\+Adj\+Speed\+Mode}
+
+\Hypertarget{class_captain_1_1_drive_mode_descriptor_af9a4b99a9db589c7225461bd5b3721f8}\label{class_captain_1_1_drive_mode_descriptor_af9a4b99a9db589c7225461bd5b3721f8} 
+\index{Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}!ApproachStationMode@{ApproachStationMode}}
+\index{ApproachStationMode@{ApproachStationMode}!Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}}
+\doxysubsubsection{\texorpdfstring{ApproachStationMode}{ApproachStationMode}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_approach_station}{DMode\+::\+Approach\+Station}}$>$ Captain\+::\+Drive\+Mode\+Descriptor\+::\+Approach\+Station\+Mode}
+
+\Hypertarget{class_captain_1_1_drive_mode_descriptor_aee4b2ae0ab0182e267d1ec6dca194832}\label{class_captain_1_1_drive_mode_descriptor_aee4b2ae0ab0182e267d1ec6dca194832} 
+\index{Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}!BcfMode@{BcfMode}}
+\index{BcfMode@{BcfMode}!Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}}
+\doxysubsubsection{\texorpdfstring{BcfMode}{BcfMode}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_b_c_f}{DMode\+::\+BCF}}$>$ Captain\+::\+Drive\+Mode\+Descriptor\+::\+Bcf\+Mode}
+
+\Hypertarget{class_captain_1_1_drive_mode_descriptor_ae7a031b0b9c608ca0b3807b5ce01c70e}\label{class_captain_1_1_drive_mode_descriptor_ae7a031b0b9c608ca0b3807b5ce01c70e} 
+\index{Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}!BlcMode@{BlcMode}}
+\index{BlcMode@{BlcMode}!Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}}
+\doxysubsubsection{\texorpdfstring{BlcMode}{BlcMode}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_b_l_c}{DMode\+::\+BLC}}$>$ Captain\+::\+Drive\+Mode\+Descriptor\+::\+Blc\+Mode}
+
+\Hypertarget{class_captain_1_1_drive_mode_descriptor_a5682c59be01599da6e5f867fef8db549}\label{class_captain_1_1_drive_mode_descriptor_a5682c59be01599da6e5f867fef8db549} 
+\index{Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}!CCFMode@{CCFMode}}
+\index{CCFMode@{CCFMode}!Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}}
+\doxysubsubsection{\texorpdfstring{CCFMode}{CCFMode}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_c_c_f}{DMode\+::\+CCF}}$>$ Captain\+::\+Drive\+Mode\+Descriptor\+::\+CCFMode}
+
+\Hypertarget{class_captain_1_1_drive_mode_descriptor_a7331c01ef4d2ce3a6cacb160f1cdcc40}\label{class_captain_1_1_drive_mode_descriptor_a7331c01ef4d2ce3a6cacb160f1cdcc40} 
+\index{Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}!CfMode@{CfMode}}
+\index{CfMode@{CfMode}!Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}}
+\doxysubsubsection{\texorpdfstring{CfMode}{CfMode}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_c_f}{DMode\+::\+CF}}$>$ Captain\+::\+Drive\+Mode\+Descriptor\+::\+Cf\+Mode}
+
+\Hypertarget{class_captain_1_1_drive_mode_descriptor_a3212f4e339891e46a225fdf3417c8993}\label{class_captain_1_1_drive_mode_descriptor_a3212f4e339891e46a225fdf3417c8993} 
+\index{Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}!CvMode@{CvMode}}
+\index{CvMode@{CvMode}!Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}}
+\doxysubsubsection{\texorpdfstring{CvMode}{CvMode}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_c_v}{DMode\+::\+CV}}$>$ Captain\+::\+Drive\+Mode\+Descriptor\+::\+Cv\+Mode}
+
+\Hypertarget{class_captain_1_1_drive_mode_descriptor_ae8126f36b6c7c9ebb3a88160ff3cb2c8}\label{class_captain_1_1_drive_mode_descriptor_ae8126f36b6c7c9ebb3a88160ff3cb2c8} 
+\index{Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}!DlcMode@{DlcMode}}
+\index{DlcMode@{DlcMode}!Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}}
+\doxysubsubsection{\texorpdfstring{DlcMode}{DlcMode}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_d_l_c}{DMode\+::\+DLC}}$>$ Captain\+::\+Drive\+Mode\+Descriptor\+::\+Dlc\+Mode}
+
+\Hypertarget{class_captain_1_1_drive_mode_descriptor_aa2dbfe1344e9f20ac0c6991d41168b7a}\label{class_captain_1_1_drive_mode_descriptor_aa2dbfe1344e9f20ac0c6991d41168b7a} 
+\index{Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}!ElcMode@{ElcMode}}
+\index{ElcMode@{ElcMode}!Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}}
+\doxysubsubsection{\texorpdfstring{ElcMode}{ElcMode}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_e_l_c}{DMode\+::\+ELC}}$>$ Captain\+::\+Drive\+Mode\+Descriptor\+::\+Elc\+Mode}
+
+\Hypertarget{class_captain_1_1_drive_mode_descriptor_a970af19f46006172f416ae962946f623}\label{class_captain_1_1_drive_mode_descriptor_a970af19f46006172f416ae962946f623} 
+\index{Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}!IntersectionCfMode@{IntersectionCfMode}}
+\index{IntersectionCfMode@{IntersectionCfMode}!Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}}
+\doxysubsubsection{\texorpdfstring{IntersectionCfMode}{IntersectionCfMode}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_intersection_c_f}{DMode\+::\+Intersection\+CF}}$>$ Captain\+::\+Drive\+Mode\+Descriptor\+::\+Intersection\+Cf\+Mode}
+
+\Hypertarget{class_captain_1_1_drive_mode_descriptor_a361dbed181e560f80a6e8c7d97dfe248}\label{class_captain_1_1_drive_mode_descriptor_a361dbed181e560f80a6e8c7d97dfe248} 
+\index{Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}!StayMode@{StayMode}}
+\index{StayMode@{StayMode}!Captain::DriveModeDescriptor@{Captain::DriveModeDescriptor}}
+\doxysubsubsection{\texorpdfstring{StayMode}{StayMode}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_captain_1_1_d_mode_1_1_stay}{DMode\+::\+Stay}}$>$ Captain\+::\+Drive\+Mode\+Descriptor\+::\+Stay\+Mode}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Structs/\mbox{\hyperlink{_drive_mode_descriptor_8hpp}{Drive\+Mode\+Descriptor.\+hpp}}\item 
+Sources/captain/\+Structs/\mbox{\hyperlink{_drive_mode_descriptor_8cpp}{Drive\+Mode\+Descriptor.\+cpp}}\end{DoxyCompactItemize}

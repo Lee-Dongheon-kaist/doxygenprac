@@ -1,0 +1,237 @@
+\doxysection{Captain\+::Concurrent\+Queue\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_captain_1_1_concurrent_queue}{}\label{class_captain_1_1_concurrent_queue}\index{Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Concurrent\+Queue-\/\+Decl.\+hpp$>$}
+
+
+
+Collaboration diagram for Captain\+::Concurrent\+Queue\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{class_captain_1_1_concurrent_queue__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_captain_1_1_concurrent_queue_a9a76c062dede8c85f049b65729f3af24}{Concurrent\+Queue}} (size\+\_\+t max\+Capacity)
+\item 
+\mbox{\hyperlink{class_captain_1_1_concurrent_queue_acda9df1e45d3ad69b13da36b01eab985}{\texorpdfstring{$\sim$}{\string~}\+Concurrent\+Queue}} ()=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_concurrent_queue_af2b2990a3cde0aec7a8bbb49772b845d}{Concurrent\+Queue}} (\mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Concurrent\+Queue}} \&concurrent\+Queue)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor is deleted by default. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_captain_1_1_concurrent_queue_a27806cdd14d9a0895534a3e2e382e088}{Concurrent\+Queue}} (\mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Concurrent\+Queue}} \&\&concurrent\+Queue) noexcept
+\item 
+\mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Concurrent\+Queue}} \& \mbox{\hyperlink{class_captain_1_1_concurrent_queue_a8517fc41ef6051d3f8ebd40d8a7320ea}{operator=}} (\mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Concurrent\+Queue}} \&\&concurrent\+Queue) noexcept
+\item 
+\mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Concurrent\+Queue}} \& \mbox{\hyperlink{class_captain_1_1_concurrent_queue_ae3858c22d7a78714bdd623f7e5e86c29}{operator=}} (\mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Concurrent\+Queue}} \&concurrent\+Queue)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor delete by default. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U $>$ }\\void \mbox{\hyperlink{class_captain_1_1_concurrent_queue_a881ea6afb932e11fd58a3ee4dac01d2d}{Enqueue}} (U \&\&elem)
+\item 
+bool \mbox{\hyperlink{class_captain_1_1_concurrent_queue_a45cde49fb35324b98bbf7461a32da1ff}{Try\+Enqueue}} (T \&\&elem)
+\item 
+T \mbox{\hyperlink{class_captain_1_1_concurrent_queue_aa5e7eb08ff0fa5056be98e9eb4099b44}{Dequeue}} ()
+\item 
+std\+::tuple$<$ T, bool $>$ \mbox{\hyperlink{class_captain_1_1_concurrent_queue_aa8a68a0bf09c4b4929f61f9da67356c8}{Try\+Dequeue}} ()
+\item 
+T \mbox{\hyperlink{class_captain_1_1_concurrent_queue_ab7fbb2a09eb26c02d9e5eea083be8765}{At}} (size\+\_\+t index)
+\item 
+T \mbox{\hyperlink{class_captain_1_1_concurrent_queue_a74814e7e547d4c7f7ec5bcbedbe393cf}{Front}} ()
+\item 
+size\+\_\+t \mbox{\hyperlink{class_captain_1_1_concurrent_queue_a18fe4e32759ec466333ec5efb8a7a848}{Size}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_concurrent_queue_a65b07cf2347f21a76782b01b80f5d51f}{Clear}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Captain\+::\+Concurrent\+Queue$<$ T $>$}
+\doxylink{class_captain_1_1_concurrent_queue}{Concurrent\+Queue} Thread-\/safe queue for allowing access from multiple threads safely using mutexes and conditional variables 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \+: type of elements to store \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_captain_1_1_concurrent_queue_a9a76c062dede8c85f049b65729f3af24}\label{class_captain_1_1_concurrent_queue_a9a76c062dede8c85f049b65729f3af24} 
+\index{Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}!ConcurrentQueue@{ConcurrentQueue}}
+\index{ConcurrentQueue@{ConcurrentQueue}!Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ConcurrentQueue()}{ConcurrentQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Captain\+::\+Concurrent\+Queue}}$<$ T $>$\+::\+Concurrent\+Queue (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{max\+Capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em max\+Capacity} & \+: maximum size of this \doxylink{class_captain_1_1_concurrent_queue}{Concurrent\+Queue} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_captain_1_1_concurrent_queue_acda9df1e45d3ad69b13da36b01eab985}\label{class_captain_1_1_concurrent_queue_acda9df1e45d3ad69b13da36b01eab985} 
+\index{Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}!````~ConcurrentQueue@{\texorpdfstring{$\sim$}{\string~}ConcurrentQueue}}
+\index{````~ConcurrentQueue@{\texorpdfstring{$\sim$}{\string~}ConcurrentQueue}!Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ConcurrentQueue()}{\string~ConcurrentQueue()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Captain\+::\+Concurrent\+Queue}}$<$ T $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Concurrent\+Queue}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_captain_1_1_concurrent_queue_af2b2990a3cde0aec7a8bbb49772b845d}\label{class_captain_1_1_concurrent_queue_af2b2990a3cde0aec7a8bbb49772b845d} 
+\index{Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}!ConcurrentQueue@{ConcurrentQueue}}
+\index{ConcurrentQueue@{ConcurrentQueue}!Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ConcurrentQueue()}{ConcurrentQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Captain\+::\+Concurrent\+Queue}}$<$ T $>$\+::\+Concurrent\+Queue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Concurrent\+Queue}}$<$ T $>$ \&}]{concurrent\+Queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy constructor is deleted by default. 
+
+\Hypertarget{class_captain_1_1_concurrent_queue_a27806cdd14d9a0895534a3e2e382e088}\label{class_captain_1_1_concurrent_queue_a27806cdd14d9a0895534a3e2e382e088} 
+\index{Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}!ConcurrentQueue@{ConcurrentQueue}}
+\index{ConcurrentQueue@{ConcurrentQueue}!Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ConcurrentQueue()}{ConcurrentQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Captain\+::\+Concurrent\+Queue}}$<$ T $>$\+::\+Concurrent\+Queue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Concurrent\+Queue}}$<$ T $>$ \&\&}]{concurrent\+Queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Move constructor (Copy constructor is implicitly deleted) 
+\begin{DoxyParams}{Parameters}
+{\em concurrent\+Queue} & \+: \doxylink{class_captain_1_1_concurrent_queue}{Concurrent\+Queue} to move from \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_captain_1_1_concurrent_queue_ab7fbb2a09eb26c02d9e5eea083be8765}\label{class_captain_1_1_concurrent_queue_ab7fbb2a09eb26c02d9e5eea083be8765} 
+\index{Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}!At@{At}}
+\index{At@{At}!Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{At()}{At()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Captain\+::\+Concurrent\+Queue}}$<$ T $>$\+::\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+Access operator for queue Multiple threads can access this queue concurrently raises exception when index is out of range 
+\begin{DoxyParams}{Parameters}
+{\em index} & \+: index to look at \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: element at index 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_concurrent_queue_a65b07cf2347f21a76782b01b80f5d51f}\label{class_captain_1_1_concurrent_queue_a65b07cf2347f21a76782b01b80f5d51f} 
+\index{Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}!Clear@{Clear}}
+\index{Clear@{Clear}!Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Captain\+::\+Concurrent\+Queue}}$<$ T $>$\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_captain_1_1_concurrent_queue_aa5e7eb08ff0fa5056be98e9eb4099b44}\label{class_captain_1_1_concurrent_queue_aa5e7eb08ff0fa5056be98e9eb4099b44} 
+\index{Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}!Dequeue@{Dequeue}}
+\index{Dequeue@{Dequeue}!Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Dequeue()}{Dequeue()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Captain\+::\+Concurrent\+Queue}}$<$ T $>$\+::\+Dequeue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Concurrently dequeue element from m\+\_\+list \begin{DoxyReturn}{Returns}
+\+: last element from m\+\_\+list Waits until queue receives new element 
+\end{DoxyReturn}
+Notify other threads that queue is not full anymore\Hypertarget{class_captain_1_1_concurrent_queue_a881ea6afb932e11fd58a3ee4dac01d2d}\label{class_captain_1_1_concurrent_queue_a881ea6afb932e11fd58a3ee4dac01d2d} 
+\index{Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}!Enqueue@{Enqueue}}
+\index{Enqueue@{Enqueue}!Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Enqueue()}{Enqueue()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename U $>$ \\
+void \mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Captain\+::\+Concurrent\+Queue}}$<$ T $>$\+::\+Enqueue (\begin{DoxyParamCaption}\item[{U \&\&}]{elem }\end{DoxyParamCaption})}
+
+Concurrently enqueue element to a queue 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em U} & \+: template type parameter for forwarding reference this must have same type with T\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em elem} & \+: Element to enqueue \\
+\hline
+\end{DoxyParams}
+Notify other threads that queue is not empty anymore\Hypertarget{class_captain_1_1_concurrent_queue_a74814e7e547d4c7f7ec5bcbedbe393cf}\label{class_captain_1_1_concurrent_queue_a74814e7e547d4c7f7ec5bcbedbe393cf} 
+\index{Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}!Front@{Front}}
+\index{Front@{Front}!Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Front()}{Front()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Captain\+::\+Concurrent\+Queue}}$<$ T $>$\+::\+Front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Accesses front element of the queue if queue is not empty \begin{DoxyReturn}{Returns}
+\+: front element of the queue 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_concurrent_queue_a8517fc41ef6051d3f8ebd40d8a7320ea}\label{class_captain_1_1_concurrent_queue_a8517fc41ef6051d3f8ebd40d8a7320ea} 
+\index{Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Concurrent\+Queue}}$<$ T $>$ \& \mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Captain\+::\+Concurrent\+Queue}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Concurrent\+Queue}}$<$ T $>$ \&\&}]{concurrent\+Queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Move assign operator (Copy assign operator is implicitly deleted) 
+\begin{DoxyParams}{Parameters}
+{\em concurrent\+Queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: reference of this \doxylink{class_captain_1_1_concurrent_queue}{Concurrent\+Queue} 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_concurrent_queue_ae3858c22d7a78714bdd623f7e5e86c29}\label{class_captain_1_1_concurrent_queue_ae3858c22d7a78714bdd623f7e5e86c29} 
+\index{Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Concurrent\+Queue}} \& \mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Captain\+::\+Concurrent\+Queue}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Concurrent\+Queue}}$<$ T $>$ \&}]{concurrent\+Queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Copy constructor delete by default. 
+
+\Hypertarget{class_captain_1_1_concurrent_queue_a18fe4e32759ec466333ec5efb8a7a848}\label{class_captain_1_1_concurrent_queue_a18fe4e32759ec466333ec5efb8a7a848} 
+\index{Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}!Size@{Size}}
+\index{Size@{Size}!Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Size()}{Size()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+size\+\_\+t \mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Captain\+::\+Concurrent\+Queue}}$<$ T $>$\+::\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter for size of this \doxylink{class_captain_1_1_concurrent_queue}{Concurrent\+Queue} \begin{DoxyReturn}{Returns}
+\+: Size of the m\+\_\+list 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_concurrent_queue_aa8a68a0bf09c4b4929f61f9da67356c8}\label{class_captain_1_1_concurrent_queue_aa8a68a0bf09c4b4929f61f9da67356c8} 
+\index{Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}!TryDequeue@{TryDequeue}}
+\index{TryDequeue@{TryDequeue}!Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TryDequeue()}{TryDequeue()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::tuple$<$ T, bool $>$ \mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Captain\+::\+Concurrent\+Queue}}$<$ T $>$\+::\+Try\+Dequeue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Concurrently dequeue element from m\+\_\+list Only when the queue has element 
+\begin{DoxyParams}{Parameters}
+{\em or\+Else} & \+: parameter to return if dequeue fails \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: dequeued element if success or\+Else if fails 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_concurrent_queue_a45cde49fb35324b98bbf7461a32da1ff}\label{class_captain_1_1_concurrent_queue_a45cde49fb35324b98bbf7461a32da1ff} 
+\index{Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}!TryEnqueue@{TryEnqueue}}
+\index{TryEnqueue@{TryEnqueue}!Captain::ConcurrentQueue$<$ T $>$@{Captain::ConcurrentQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TryEnqueue()}{TryEnqueue()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{class_captain_1_1_concurrent_queue}{Captain\+::\+Concurrent\+Queue}}$<$ T $>$\+::\+Try\+Enqueue (\begin{DoxyParamCaption}\item[{T \&\&}]{elem }\end{DoxyParamCaption})}
+
+Concurrently enqueues element to a queue only when size is inside the limit 
+\begin{DoxyParams}{Parameters}
+{\em elem} & \+: element to enqueue \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: true if enqueue successes false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Util/\mbox{\hyperlink{_concurrent_queue-_decl_8hpp}{Concurrent\+Queue-\/\+Decl.\+hpp}}\item 
+Includes/captain/\+Util/\mbox{\hyperlink{_concurrent_queue_8hpp}{Concurrent\+Queue.\+hpp}}\end{DoxyCompactItemize}

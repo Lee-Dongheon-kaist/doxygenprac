@@ -1,0 +1,15 @@
+<map id="Includes/captain/Structs/UnitIdentifier.hpp" name="Includes/captain/Structs/UnitIdentifier.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="195,5,357,48"/>
+<area shape="rect" id="Node000002" href="$_enumerations_8hpp.html" title=" " alt="" coords="5,96,224,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,51,154,91,152,86,233,46"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="248,96,304,123"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="279,49,279,80,273,80,273,49"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="328,96,408,123"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="301,47,344,84,340,88,298,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="13,171,64,197"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="103,125,64,162,61,158,99,121"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="88,171,141,197"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="117,123,117,155,112,155,112,123"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="165,171,248,197"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="132,121,181,159,177,163,129,125"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Captain::DMode::IAutomaticallyDeactivated" name="Captain::DMode::IAutomaticallyDeactivated">
+<area shape="rect" id="Node000001" title=" " alt="" coords="185,5,381,219"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_d_mode_1_1_adj_speed.html" title=" " alt="" coords="5,267,175,485"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,232,172,268,168,265,195,229"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_d_mode_1_1_approach_station.html" title=" " alt="" coords="199,312,368,440"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="286,234,286,312,281,312,281,234"/>
+<area shape="rect" id="Node000004" href="$class_captain_1_1_d_mode_1_1_stay.html" title=" " alt="" coords="393,320,534,432"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="366,229,428,319,424,322,362,232"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Captain::Util::EventRecorder::WriteStationToFile" name="Captain::Util::EventRecorder::WriteStationToFile">
+<area shape="rect" id="Node000001" title=" " alt="" coords="206,5,390,48"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_station.html#aa471124406839eab16ef0e33699a5b1b" title="Writes all recordings in the temporary buffer to file and flushes the buffer." alt="" coords="5,5,158,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,29,158,29,158,24,190,24"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Captain::Util::JsonWriter::vehicleInfoToJson" name="Captain::Util::JsonWriter::vehicleInfoToJson">
+<area shape="rect" id="Node000001" title=" " alt="" coords="662,5,825,48"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_util_1_1_json_writer.html#a8b4d8516d9229fdbab5e68f1f97786df" title=" " alt="" coords="452,5,614,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="647,29,615,29,615,24,647,24"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_util_1_1_event_recorder.html#a7b50ab5f3c04e09333b73ec7d45e0121" title=" " alt="" coords="220,5,404,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="436,29,404,29,404,24,436,24"/>
+<area shape="rect" id="Node000004" href="$class_captain_1_1_vehicle.html#a4ad0dd90e10a75c0f5533226fec1244f" title=" " alt="" coords="5,5,172,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="204,29,172,29,172,24,204,24"/>
+</map>

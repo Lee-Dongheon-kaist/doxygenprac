@@ -1,0 +1,388 @@
+\doxysection{Captain\+::Node\+::Uniform\+Intersection\+Link Class Reference}
+\hypertarget{class_captain_1_1_node_1_1_uniform_intersection_link}{}\label{class_captain_1_1_node_1_1_uniform_intersection_link}\index{Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}}
+
+
+{\ttfamily \#include $<$Uniform\+Intersection\+Link.\+hpp$>$}
+
+
+
+Inheritance diagram for Captain\+::Node\+::Uniform\+Intersection\+Link\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_captain_1_1_node_1_1_uniform_intersection_link__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Captain\+::Node\+::Uniform\+Intersection\+Link\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_captain_1_1_node_1_1_uniform_intersection_link__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_intersection_link_a5cc96caa6848f3a5f12d5eead048afa5}{Uniform\+Intersection\+Link}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&identifier, const \mbox{\hyperlink{struct_captain_1_1_meso_link_info}{Meso\+Link\+Info}} \&meso\+Link\+Info, const \mbox{\hyperlink{struct_captain_1_1_micro_link_info}{Micro\+Link\+Info}} \&micro\+Link\+Info, bool mode)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_intersection_link_acf29dec344b5b4845b0a5464d6b44a06}{Initialize}} () override
+\begin{DoxyCompactList}\small\item\em Initializes Linkable unit and ready to be executed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_intersection_link_a0e716bda1c0ccff4cd2e71fd200ef445}{Move\+From\+Previous\+Unit}} (std\+::size\+\_\+t cycle) override
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_intersection_link_a4f0bdd191ac3ab27338b4bdacc097d66}{Compute\+Uniform\+ICF}} (const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{struct_captain_1_1_meso_computation_model}{Meso\+Computation\+Model}} $>$ \&computation\+Model, std\+::size\+\_\+t cycle) override
+\begin{DoxyCompactList}\small\item\em Computes inter cell flow for both micro and meso models. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_intersection_link_afc4e64e1b727fdef9a29635ef039951d}{Update\+Station\+State}} () override
+\item 
+virtual void \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_intersection_link_ab74874f2fa4e1eb926fdaf3f287ad0c5}{Update\+V2\+XMessage}} (std\+::size\+\_\+t cycle, std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_enhanced_micro_link}{Node\+::\+Enhanced\+Micro\+Link}} \texorpdfstring{$\ast$}{*} $>$ \&m\+\_\+micro\+Link\+Map)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_intersection_link_ae308e6f9b41291b7a132508ca51fe507}{Append\+Station}} (\mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_node_1_1_station}{Station}} $>$ station\+Ptr, std\+::size\+\_\+t target\+Lane\+Id) override
+\item 
+\mbox{\hyperlink{class_captain_1_1_node_1_1_enhanced_micro_link}{Enhanced\+Micro\+Link}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_intersection_link_a0e2795746d8e9c9ec6dbe5b4481e95b6}{Get\+Micro\+Link\+Ptr}} () override
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_intersection_link_ada9d10618e66dbf0c30ea4c19781d3c2}{Set\+Follower\+Lane\+Connection\+Info}} (std\+::size\+\_\+t target\+Lane\+ID, std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} $>$ unit\+Connection\+Ptr\+Info) override
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_intersection_link_a6b88a7c34208c0433bd1bdcda197ad27}{Set\+Leader\+Lane\+Connection\+Info}} (std\+::size\+\_\+t target\+Lane\+ID, const \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} \&unit\+Connection\+Info) override
+\item 
+std\+::optional$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_intersection_link_ada7a5220bafd6fa2fd76e9ac34100d8e}{Get\+Leader\+Lane\+Connection\+Info}} (int target\+Lane\+ID) override
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_intersection_link_a40b016aabadf0c2f47989d752b3332e7}{Record}} (std\+::size\+\_\+t cycle) override
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_intersection_link_a72e165a019f3f4f18f1a10854444f0c2}{Flush\+Recordings}} () override
+\item 
+void \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_intersection_link_a8f2f7fc4cf52399fa65df856c98d66b0}{Get\+Recordings}} (\mbox{\hyperlink{struct_captain_1_1_util_1_1_event_recorder_container}{Captain\+::\+Util\+::\+Event\+Recorder\+Container}} \&container) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link}{Captain\+::\+Node\+::\+Uniform\+Link}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_afa10f05bf39cb0edc699353012060828}{Uniform\+Link}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&identifier, const \mbox{\hyperlink{struct_captain_1_1_meso_link_info}{Meso\+Link\+Info}} \&meso\+Link\+Info, const \mbox{\hyperlink{struct_captain_1_1_micro_link_info}{Micro\+Link\+Info}} \&micro\+Link\+Info, bool mode)
+\item 
+\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_aa962c9068042092a88d8273269140f25}{Get\+Identifier}} () const override
+\begin{DoxyCompactList}\small\item\em Gets Unique identifier of the link. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_aab3ed63f1b2e2d5929deb14a9bd13d5b}{Get\+ID}} () const override
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_af2e36ae53cb5ba736529659dc2f5545e}{Get\+Lane\+Size}} () const override
+\item 
+std\+::optional$<$ \mbox{\hyperlink{namespace_captain_ac03838c8d2941d5da8169c3ec7a4d868}{Vehicle\+Weak\+Ptr}} $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_abb94afdd386c84c1a6ceebde8f986655}{Get\+Leading\+Vehicle\+Ptr}} (std\+::size\+\_\+t lane\+Index) override
+\item 
+std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a37132e607eb3ac40e1c2d77d10edeac7}{Get\+Last\+Vehicle\+Ptr}} (std\+::size\+\_\+t lane\+Index) override
+\item 
+\mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_ab26aab863610b180f1214fe6d3795dd8}{Get\+Lane}} (std\+::size\+\_\+t lane\+Index) override
+\item 
+std\+::optional$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a01c7268204459e5037fe0d223d57519b}{Get\+Follower\+Lane\+Connection\+Info}} (int target\+Lane\+ID, std\+::size\+\_\+t cycle) const
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a0993d57ad17466a340fa5899533e13af}{Get\+Adjacent\+Links}} (std\+::size\+\_\+t cycle) const
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_acaad6401e651ea9ee9f9f1d8c84593b5}{Get\+Adjacent\+Leader\+Links}} ()
+\item 
+int \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a653bf938ea11a3666502ca8915b5ba23}{Get\+Num\+Lane}} ()
+\item 
+bool \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a9959362900b59da90a3e93352538a45b}{Is\+Micro}} () const
+\item 
+\mbox{\hyperlink{class_captain_1_1_node_1_1_meso_link}{Meso\+Link}} \& \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_adc2effdb17fa3e3a0b661bf046e7afbd}{Get\+Meso\+Link}} ()
+\item 
+double \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a605d692a49830ea0ac5378272e02dd8d}{Get\+Weight}} () override
+\begin{DoxyCompactList}\small\item\em Gets weight (expected pass time) of the link. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_ab8d688a9ac09f640086134be0a10fd21}{Set\+Stop\+Vehicle\+Map}} (std\+::size\+\_\+t target\+Lane\+ID, std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} $>$ unit\+Connection\+Ptr\+Info)
+\item 
+virtual void \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_aa0f30d3fbb8b51d02c7e15f4da1a969f}{Set\+V2\+XOn\+Off}} (bool v2x\+Active)
+\item 
+virtual void \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a28e0cd43223bbbb0ed06d75121e124b1}{Append\+Message}} (\mbox{\hyperlink{struct_captain_1_1_message}{Message}} message)
+\item 
+\mbox{\hyperlink{class_captain_1_1_v2_x}{V2X}} \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a39c7608a29aff1d2d89f5521e2c47b73}{Get\+V2X}} ()
+\item 
+virtual void \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a279e91c72e1143433f4c321ac29c5b37}{Add\+Event}} (double pos, double s\+Time, double e\+Time, std\+::size\+\_\+t target\+Lane\+Id)
+\item 
+virtual void \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a65b8d23530cdbb9bff93d5a2c11a00fa}{Temporal\+Transition\+To\+Micro}} ()
+\item 
+virtual void \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_ae62817e6ac7cf4b85ebd27c15c4c1f96}{Temporal\+Transition\+To\+Meso}} ()
+\item 
+virtual void \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a8f13f67216e66c086cf37a75d346217e}{Update\+Follower\+Signal}} (std\+::size\+\_\+t cycle)
+\item 
+virtual void \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a60a13eedd727ea3afbe2ce08d9692f9d}{Set\+Virtual\+Vehicle}} (std\+::size\+\_\+t cycle)
+\item 
+virtual void \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a20a8aebe5065c93520f453a4e1e22461}{Set\+To\+Sink\+Path\+Map}} (std\+::unordered\+\_\+map$<$ int, std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} $>$ $>$ sink\+Path\+Map)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{Captain\+::\+Node\+::\+ILinkable}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_aedaa60013dde57a9692ac0b05300aa29}{ILinkable}} ()=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_adc08acf3b1c8faaeca697c97885b4f2c}{ILinkable}} (const \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{ILinkable}} \&i\+Linkable)=delete
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_aff8aea7f62294bec99daf8d1dfc20d8e}{ILinkable}} (\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{ILinkable}} \&\&i\+Linkable) noexcept=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{ILinkable}} \& \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_ac6c06f7e69fd698f5e089ee6d22640f0}{operator=}} (const \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{ILinkable}} \&i\+Linkable)=delete
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{ILinkable}} \& \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_ad52278fab2d6fc07a33b7f4a862c1837}{operator=}} (\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable}{ILinkable}} \&\&i\+Linkable) noexcept=default
+\item 
+virtual \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_linkable_aaf5a99727e56142bbd34e068589c9bc4}{\texorpdfstring{$\sim$}{\string~}\+ILinkable}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link}{Captain\+::\+Node\+::\+Uniform\+Link}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a43c4486e22b6108b478bc2694dd1ca8d}{m\+\_\+identifier}}
+\item 
+int \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a3e2f63b3121f792253445b075d31bd4d}{m\+\_\+num\+Lane}}
+\item 
+bool \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a3078523e2e9262e51057a8cde7f68e11}{m\+\_\+mode}}
+\begin{DoxyCompactList}\small\item\em True if micro False if meso. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ std\+::pair$<$ int, double $>$ $>$ $>$ \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_ade4f76570e6a89a118fd722266f2c2c5}{m\+\_\+icf\+Vector}}
+\item 
+\mbox{\hyperlink{class_captain_1_1_node_1_1_meso_link}{Meso\+Link}} \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a99fa81ad460f0f5f30bdf75b6188c9dc}{m\+\_\+meso\+Link}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_captain_1_1_node_1_1_uniform_intersection_link_a5cc96caa6848f3a5f12d5eead048afa5}\label{class_captain_1_1_node_1_1_uniform_intersection_link_a5cc96caa6848f3a5f12d5eead048afa5} 
+\index{Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}!UniformIntersectionLink@{UniformIntersectionLink}}
+\index{UniformIntersectionLink@{UniformIntersectionLink}!Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}}
+\doxysubsubsection{\texorpdfstring{UniformIntersectionLink()}{UniformIntersectionLink()}}
+{\footnotesize\ttfamily Captain\+::\+Node\+::\+Uniform\+Intersection\+Link\+::\+Uniform\+Intersection\+Link (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{identifier,  }\item[{const \mbox{\hyperlink{struct_captain_1_1_meso_link_info}{Meso\+Link\+Info}} \&}]{meso\+Link\+Info,  }\item[{const \mbox{\hyperlink{struct_captain_1_1_micro_link_info}{Micro\+Link\+Info}} \&}]{micro\+Link\+Info,  }\item[{bool}]{mode }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_captain_1_1_node_1_1_uniform_intersection_link_ae308e6f9b41291b7a132508ca51fe507}\label{class_captain_1_1_node_1_1_uniform_intersection_link_ae308e6f9b41291b7a132508ca51fe507} 
+\index{Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}!AppendStation@{AppendStation}}
+\index{AppendStation@{AppendStation}!Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}}
+\doxysubsubsection{\texorpdfstring{AppendStation()}{AppendStation()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Uniform\+Intersection\+Link\+::\+Append\+Station (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_node_1_1_station}{Station}} $>$}]{station\+Ptr,  }\item[{std\+::size\+\_\+t}]{target\+Lane\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a38f2fb240c3dc5ca58d8e9d07b4661d5}{Captain\+::\+Node\+::\+Uniform\+Link}}.
+
+\Hypertarget{class_captain_1_1_node_1_1_uniform_intersection_link_a4f0bdd191ac3ab27338b4bdacc097d66}\label{class_captain_1_1_node_1_1_uniform_intersection_link_a4f0bdd191ac3ab27338b4bdacc097d66} 
+\index{Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}!ComputeUniformICF@{ComputeUniformICF}}
+\index{ComputeUniformICF@{ComputeUniformICF}!Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}}
+\doxysubsubsection{\texorpdfstring{ComputeUniformICF()}{ComputeUniformICF()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Uniform\+Intersection\+Link\+::\+Compute\+Uniform\+ICF (\begin{DoxyParamCaption}\item[{const std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{struct_captain_1_1_meso_computation_model}{Meso\+Computation\+Model}} $>$ \&}]{computation\+Model,  }\item[{std\+::size\+\_\+t}]{cycle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Computes inter cell flow for both micro and meso models. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_ae417ea77beb70662c38f9a2d367b6f12}{Captain\+::\+Node\+::\+Uniform\+Link}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_uniform_intersection_link_a4f0bdd191ac3ab27338b4bdacc097d66_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_uniform_intersection_link_a72e165a019f3f4f18f1a10854444f0c2}\label{class_captain_1_1_node_1_1_uniform_intersection_link_a72e165a019f3f4f18f1a10854444f0c2} 
+\index{Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}!FlushRecordings@{FlushRecordings}}
+\index{FlushRecordings@{FlushRecordings}!Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}}
+\doxysubsubsection{\texorpdfstring{FlushRecordings()}{FlushRecordings()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Uniform\+Intersection\+Link\+::\+Flush\+Recordings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a79fba2f1df5ed0bfe973e15c3177dd3b}{Captain\+::\+Node\+::\+Uniform\+Link}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_uniform_intersection_link_a72e165a019f3f4f18f1a10854444f0c2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_uniform_intersection_link_ada7a5220bafd6fa2fd76e9ac34100d8e}\label{class_captain_1_1_node_1_1_uniform_intersection_link_ada7a5220bafd6fa2fd76e9ac34100d8e} 
+\index{Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}!GetLeaderLaneConnectionInfo@{GetLeaderLaneConnectionInfo}}
+\index{GetLeaderLaneConnectionInfo@{GetLeaderLaneConnectionInfo}!Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}}
+\doxysubsubsection{\texorpdfstring{GetLeaderLaneConnectionInfo()}{GetLeaderLaneConnectionInfo()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} $>$ Captain\+::\+Node\+::\+Uniform\+Intersection\+Link\+::\+Get\+Leader\+Lane\+Connection\+Info (\begin{DoxyParamCaption}\item[{int}]{target\+Lane\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Gets \doxylink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info} connected to leader 
+\begin{DoxyParams}{Parameters}
+{\em target\+Lane\+ID} & \+: ID of the target lane \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: const reference of \doxylink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info} 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_ae69a9a35106793b182b1e017a776d34f}{Captain\+::\+Node\+::\+Uniform\+Link}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_uniform_intersection_link_ada7a5220bafd6fa2fd76e9ac34100d8e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_uniform_intersection_link_a0e2795746d8e9c9ec6dbe5b4481e95b6}\label{class_captain_1_1_node_1_1_uniform_intersection_link_a0e2795746d8e9c9ec6dbe5b4481e95b6} 
+\index{Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}!GetMicroLinkPtr@{GetMicroLinkPtr}}
+\index{GetMicroLinkPtr@{GetMicroLinkPtr}!Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}}
+\doxysubsubsection{\texorpdfstring{GetMicroLinkPtr()}{GetMicroLinkPtr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_node_1_1_enhanced_micro_link}{Enhanced\+Micro\+Link}} \texorpdfstring{$\ast$}{*} Captain\+::\+Node\+::\+Uniform\+Intersection\+Link\+::\+Get\+Micro\+Link\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_ae54b9379ce77fab77da7ea5510e29f89}{Captain\+::\+Node\+::\+Uniform\+Link}}.
+
+\Hypertarget{class_captain_1_1_node_1_1_uniform_intersection_link_a8f2f7fc4cf52399fa65df856c98d66b0}\label{class_captain_1_1_node_1_1_uniform_intersection_link_a8f2f7fc4cf52399fa65df856c98d66b0} 
+\index{Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}!GetRecordings@{GetRecordings}}
+\index{GetRecordings@{GetRecordings}!Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}}
+\doxysubsubsection{\texorpdfstring{GetRecordings()}{GetRecordings()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Uniform\+Intersection\+Link\+::\+Get\+Recordings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_util_1_1_event_recorder_container}{Captain\+::\+Util\+::\+Event\+Recorder\+Container}} \&}]{container }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a165db1b76898984bca4565664be65075}{Captain\+::\+Node\+::\+Uniform\+Link}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_uniform_intersection_link_a8f2f7fc4cf52399fa65df856c98d66b0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_uniform_intersection_link_acf29dec344b5b4845b0a5464d6b44a06}\label{class_captain_1_1_node_1_1_uniform_intersection_link_acf29dec344b5b4845b0a5464d6b44a06} 
+\index{Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Uniform\+Intersection\+Link\+::\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initializes Linkable unit and ready to be executed. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a855d32334913df4bfc9e3cf37c39f931}{Captain\+::\+Node\+::\+Uniform\+Link}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_uniform_intersection_link_acf29dec344b5b4845b0a5464d6b44a06_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_uniform_intersection_link_a0e716bda1c0ccff4cd2e71fd200ef445}\label{class_captain_1_1_node_1_1_uniform_intersection_link_a0e716bda1c0ccff4cd2e71fd200ef445} 
+\index{Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}!MoveFromPreviousUnit@{MoveFromPreviousUnit}}
+\index{MoveFromPreviousUnit@{MoveFromPreviousUnit}!Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}}
+\doxysubsubsection{\texorpdfstring{MoveFromPreviousUnit()}{MoveFromPreviousUnit()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Uniform\+Intersection\+Link\+::\+Move\+From\+Previous\+Unit (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a4ab0896d169c331ae70ff3f42293780a}{Captain\+::\+Node\+::\+Uniform\+Link}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_uniform_intersection_link_a0e716bda1c0ccff4cd2e71fd200ef445_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_uniform_intersection_link_a40b016aabadf0c2f47989d752b3332e7}\label{class_captain_1_1_node_1_1_uniform_intersection_link_a40b016aabadf0c2f47989d752b3332e7} 
+\index{Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}!Record@{Record}}
+\index{Record@{Record}!Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}}
+\doxysubsubsection{\texorpdfstring{Record()}{Record()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Uniform\+Intersection\+Link\+::\+Record (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_aed43fb3e7b7ed374be6df09708fa7b26}{Captain\+::\+Node\+::\+Uniform\+Link}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_uniform_intersection_link_a40b016aabadf0c2f47989d752b3332e7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_uniform_intersection_link_ada9d10618e66dbf0c30ea4c19781d3c2}\label{class_captain_1_1_node_1_1_uniform_intersection_link_ada9d10618e66dbf0c30ea4c19781d3c2} 
+\index{Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}!SetFollowerLaneConnectionInfo@{SetFollowerLaneConnectionInfo}}
+\index{SetFollowerLaneConnectionInfo@{SetFollowerLaneConnectionInfo}!Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}}
+\doxysubsubsection{\texorpdfstring{SetFollowerLaneConnectionInfo()}{SetFollowerLaneConnectionInfo()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Uniform\+Intersection\+Link\+::\+Set\+Follower\+Lane\+Connection\+Info (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{target\+Lane\+ID,  }\item[{std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} $>$}]{unit\+Connection\+Ptr\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Sets \doxylink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info} to follower for the target lane 
+\begin{DoxyParams}{Parameters}
+{\em target\+Lane\+ID} & \+: Id of the target lane \\
+\hline
+{\em unit\+Connection\+Ptr\+Info} & \+: phase vector of \doxylink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info} to the target \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a6404bc89473ac8f59ea1d2de9c488a0c}{Captain\+::\+Node\+::\+Uniform\+Link}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_uniform_intersection_link_ada9d10618e66dbf0c30ea4c19781d3c2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_uniform_intersection_link_a6b88a7c34208c0433bd1bdcda197ad27}\label{class_captain_1_1_node_1_1_uniform_intersection_link_a6b88a7c34208c0433bd1bdcda197ad27} 
+\index{Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}!SetLeaderLaneConnectionInfo@{SetLeaderLaneConnectionInfo}}
+\index{SetLeaderLaneConnectionInfo@{SetLeaderLaneConnectionInfo}!Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}}
+\doxysubsubsection{\texorpdfstring{SetLeaderLaneConnectionInfo()}{SetLeaderLaneConnectionInfo()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Uniform\+Intersection\+Link\+::\+Set\+Leader\+Lane\+Connection\+Info (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{target\+Lane\+ID,  }\item[{const \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} \&}]{unit\+Connection\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a83136bc41149fabb1765a5657ef99d31}{Captain\+::\+Node\+::\+Uniform\+Link}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_uniform_intersection_link_a6b88a7c34208c0433bd1bdcda197ad27_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_node_1_1_uniform_intersection_link_afc4e64e1b727fdef9a29635ef039951d}\label{class_captain_1_1_node_1_1_uniform_intersection_link_afc4e64e1b727fdef9a29635ef039951d} 
+\index{Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}!UpdateStationState@{UpdateStationState}}
+\index{UpdateStationState@{UpdateStationState}!Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}}
+\doxysubsubsection{\texorpdfstring{UpdateStationState()}{UpdateStationState()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Uniform\+Intersection\+Link\+::\+Update\+Station\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_af3ed63e39ca2f50d2c69a938c60d44d3}{Captain\+::\+Node\+::\+Uniform\+Link}}.
+
+\Hypertarget{class_captain_1_1_node_1_1_uniform_intersection_link_ab74874f2fa4e1eb926fdaf3f287ad0c5}\label{class_captain_1_1_node_1_1_uniform_intersection_link_ab74874f2fa4e1eb926fdaf3f287ad0c5} 
+\index{Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}!UpdateV2XMessage@{UpdateV2XMessage}}
+\index{UpdateV2XMessage@{UpdateV2XMessage}!Captain::Node::UniformIntersectionLink@{Captain::Node::UniformIntersectionLink}}
+\doxysubsubsection{\texorpdfstring{UpdateV2XMessage()}{UpdateV2XMessage()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+Uniform\+Intersection\+Link\+::\+Update\+V2\+XMessage (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{cycle,  }\item[{std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_enhanced_micro_link}{Node\+::\+Enhanced\+Micro\+Link}} \texorpdfstring{$\ast$}{*} $>$ \&}]{m\+\_\+micro\+Link\+Map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_captain_1_1_node_1_1_uniform_link_a0d6041476a4e88f85e67c5e67d7bd7ef}{Captain\+::\+Node\+::\+Uniform\+Link}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_node_1_1_uniform_intersection_link_ab74874f2fa4e1eb926fdaf3f287ad0c5_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Network/\mbox{\hyperlink{_uniform_intersection_link_8hpp}{Uniform\+Intersection\+Link.\+hpp}}\item 
+Sources/captain/\+Network/\mbox{\hyperlink{_uniform_intersection_link_8cpp}{Uniform\+Intersection\+Link.\+cpp}}\end{DoxyCompactItemize}

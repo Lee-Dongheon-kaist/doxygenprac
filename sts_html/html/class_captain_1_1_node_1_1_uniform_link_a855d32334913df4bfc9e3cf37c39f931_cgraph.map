@@ -1,0 +1,13 @@
+<map id="Captain::Node::UniformLink::Initialize" name="Captain::Node::UniformLink::Initialize">
+<area shape="rect" id="Node000001" title="Initializes Linkable unit and ready to be executed." alt="" coords="5,39,185,81"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#acf9f7157d71be31246535b03a70b802b" title="Initializes Linkable unit and ready to be executed." alt="" coords="233,5,434,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,45,217,40,217,46,185,50"/>
+<area shape="rect" id="Node000005" href="$class_captain_1_1_node_1_1_meso_link.html#a0942f8c3c10a975234e453d0dcc66f13" title="Initializes link with lanes and cells with given information." alt="" coords="250,72,417,115"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="185,70,235,77,234,82,185,75"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_shared_ptr.html#a3ce867882c9bd7bafb68250d0b475e60" title=" " alt="" coords="489,5,620,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="434,24,473,24,473,29,434,29"/>
+<area shape="rect" id="Node000004" href="$struct_captain_1_1_unit_identifier.html#acd5139c561f81f73253ab2c1af4c1949" title=" " alt="" coords="482,72,626,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="407,46,468,65,466,70,405,51"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="405,69,473,48,474,53,407,74"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="417,91,466,91,466,96,417,96"/>
+</map>

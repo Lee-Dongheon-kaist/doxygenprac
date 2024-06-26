@@ -1,0 +1,173 @@
+\doxysection{Captain\+::Path\+Identifier Struct Reference}
+\hypertarget{struct_captain_1_1_path_identifier}{}\label{struct_captain_1_1_path_identifier}\index{Captain::PathIdentifier@{Captain::PathIdentifier}}
+
+
+{\ttfamily \#include $<$Path\+Identifier.\+hpp$>$}
+
+
+
+Collaboration diagram for Captain\+::Path\+Identifier\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{struct_captain_1_1_path_identifier__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_path_identifier_a0fb93cc5c1df42dddaba70268a7f9f7e}{Path\+Identifier}} ()=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_path_identifier_a80fb8b2fa3d8877cd9009f5c66307ee4}{Path\+Identifier}} (\mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}} type, int link\+Id, std\+::initializer\+\_\+list$<$ int $>$ lane\+Id\+List)
+\item 
+\mbox{\hyperlink{struct_captain_1_1_path_identifier_adebafd3d96dbd83312ccfc235a74c533}{Path\+Identifier}} (\mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}} type, int link\+Id, std\+::vector$<$ int $>$ lane\+Id\+List)
+\item 
+\mbox{\hyperlink{struct_captain_1_1_path_identifier_abd1b50756d38cdc0d47cffb0623ca44b}{Path\+Identifier}} (\mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}} type, int link\+Id, std\+::vector$<$ int $>$ lane\+Id\+List, std\+::vector$<$ std\+::list$<$ int $>$ $>$ station\+Id\+Vector)
+\item 
+\mbox{\hyperlink{struct_captain_1_1_path_identifier_a8a7155066ca3a4b67234400c80665db1}{\texorpdfstring{$\sim$}{\string~}\+Path\+Identifier}} ()=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_path_identifier_a4e866b299a0a5b013ae62853ae875a0e}{Path\+Identifier}} (const \mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} \&path\+Identifier)=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_path_identifier_a76a0f1f93fc5ebab84757bf6999d892f}{Path\+Identifier}} (\mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} \&\&path\+Identifier) noexcept=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} \& \mbox{\hyperlink{struct_captain_1_1_path_identifier_a8db3c96a8b5fac023be0424891b0e76d}{operator=}} (const \mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} \&path\+Identifier)
+\item 
+\mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} \& \mbox{\hyperlink{struct_captain_1_1_path_identifier_ad56d33fc9613d953f9823cea1b47ffd0}{operator=}} (\mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} \&\&path\+Identifier) noexcept
+\item 
+bool \mbox{\hyperlink{struct_captain_1_1_path_identifier_af76dd3141b85a70636ae689316762c05}{operator==}} (const \mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} \&path\+Identifier) const
+\item 
+bool \mbox{\hyperlink{struct_captain_1_1_path_identifier_a7a08a89716fcf4f36c197092626fc9f8}{operator!=}} (const \mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} \&path\+Identifier) const
+\item 
+bool \mbox{\hyperlink{struct_captain_1_1_path_identifier_ac637cd75014e617fba3926f9d53adffd}{Contains\+Unit\+Identifier}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&unit\+Identifier) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}} \mbox{\hyperlink{struct_captain_1_1_path_identifier_ac78737a2e79cb3241421bcbffd0cd0b0}{Type}} = \mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12edaec0fc0100c4fc1ce4eea230c3dc10360}{Unit\+Type\+::\+Undefined}}
+\item 
+int \mbox{\hyperlink{struct_captain_1_1_path_identifier_aae03238172aa8030a660cd0fc536fe19}{Link\+ID}} = -\/1
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{struct_captain_1_1_path_identifier_aed4fd45bbb4f6db7537518bc98f34049}{Lane\+Id\+Vector}}
+\item 
+std\+::vector$<$ std\+::list$<$ int $>$ $>$ \mbox{\hyperlink{struct_captain_1_1_path_identifier_a80ca8828c611382e4dcbebe0391be260}{Station\+Id\+Vector}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_captain_1_1_path_identifier_a0fb93cc5c1df42dddaba70268a7f9f7e}\label{struct_captain_1_1_path_identifier_a0fb93cc5c1df42dddaba70268a7f9f7e} 
+\index{Captain::PathIdentifier@{Captain::PathIdentifier}!PathIdentifier@{PathIdentifier}}
+\index{PathIdentifier@{PathIdentifier}!Captain::PathIdentifier@{Captain::PathIdentifier}}
+\doxysubsubsection{\texorpdfstring{PathIdentifier()}{PathIdentifier()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily Captain\+::\+Path\+Identifier\+::\+Path\+Identifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{struct_captain_1_1_path_identifier_a80fb8b2fa3d8877cd9009f5c66307ee4}\label{struct_captain_1_1_path_identifier_a80fb8b2fa3d8877cd9009f5c66307ee4} 
+\index{Captain::PathIdentifier@{Captain::PathIdentifier}!PathIdentifier@{PathIdentifier}}
+\index{PathIdentifier@{PathIdentifier}!Captain::PathIdentifier@{Captain::PathIdentifier}}
+\doxysubsubsection{\texorpdfstring{PathIdentifier()}{PathIdentifier()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily Captain\+::\+Path\+Identifier\+::\+Path\+Identifier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}}}]{type,  }\item[{int}]{link\+Id,  }\item[{std\+::initializer\+\_\+list$<$ int $>$}]{lane\+Id\+List }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_captain_1_1_path_identifier_adebafd3d96dbd83312ccfc235a74c533}\label{struct_captain_1_1_path_identifier_adebafd3d96dbd83312ccfc235a74c533} 
+\index{Captain::PathIdentifier@{Captain::PathIdentifier}!PathIdentifier@{PathIdentifier}}
+\index{PathIdentifier@{PathIdentifier}!Captain::PathIdentifier@{Captain::PathIdentifier}}
+\doxysubsubsection{\texorpdfstring{PathIdentifier()}{PathIdentifier()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily Captain\+::\+Path\+Identifier\+::\+Path\+Identifier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}}}]{type,  }\item[{int}]{link\+Id,  }\item[{std\+::vector$<$ int $>$}]{lane\+Id\+List }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_captain_1_1_path_identifier_abd1b50756d38cdc0d47cffb0623ca44b}\label{struct_captain_1_1_path_identifier_abd1b50756d38cdc0d47cffb0623ca44b} 
+\index{Captain::PathIdentifier@{Captain::PathIdentifier}!PathIdentifier@{PathIdentifier}}
+\index{PathIdentifier@{PathIdentifier}!Captain::PathIdentifier@{Captain::PathIdentifier}}
+\doxysubsubsection{\texorpdfstring{PathIdentifier()}{PathIdentifier()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily Captain\+::\+Path\+Identifier\+::\+Path\+Identifier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}}}]{type,  }\item[{int}]{link\+Id,  }\item[{std\+::vector$<$ int $>$}]{lane\+Id\+List,  }\item[{std\+::vector$<$ std\+::list$<$ int $>$ $>$}]{station\+Id\+Vector }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_captain_1_1_path_identifier_a8a7155066ca3a4b67234400c80665db1}\label{struct_captain_1_1_path_identifier_a8a7155066ca3a4b67234400c80665db1} 
+\index{Captain::PathIdentifier@{Captain::PathIdentifier}!````~PathIdentifier@{\texorpdfstring{$\sim$}{\string~}PathIdentifier}}
+\index{````~PathIdentifier@{\texorpdfstring{$\sim$}{\string~}PathIdentifier}!Captain::PathIdentifier@{Captain::PathIdentifier}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}PathIdentifier()}{\string~PathIdentifier()}}
+{\footnotesize\ttfamily Captain\+::\+Path\+Identifier\+::\texorpdfstring{$\sim$}{\string~}\+Path\+Identifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{struct_captain_1_1_path_identifier_a4e866b299a0a5b013ae62853ae875a0e}\label{struct_captain_1_1_path_identifier_a4e866b299a0a5b013ae62853ae875a0e} 
+\index{Captain::PathIdentifier@{Captain::PathIdentifier}!PathIdentifier@{PathIdentifier}}
+\index{PathIdentifier@{PathIdentifier}!Captain::PathIdentifier@{Captain::PathIdentifier}}
+\doxysubsubsection{\texorpdfstring{PathIdentifier()}{PathIdentifier()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily Captain\+::\+Path\+Identifier\+::\+Path\+Identifier (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} \&}]{path\+Identifier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{struct_captain_1_1_path_identifier_a76a0f1f93fc5ebab84757bf6999d892f}\label{struct_captain_1_1_path_identifier_a76a0f1f93fc5ebab84757bf6999d892f} 
+\index{Captain::PathIdentifier@{Captain::PathIdentifier}!PathIdentifier@{PathIdentifier}}
+\index{PathIdentifier@{PathIdentifier}!Captain::PathIdentifier@{Captain::PathIdentifier}}
+\doxysubsubsection{\texorpdfstring{PathIdentifier()}{PathIdentifier()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily Captain\+::\+Path\+Identifier\+::\+Path\+Identifier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} \&\&}]{path\+Identifier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_captain_1_1_path_identifier_ac637cd75014e617fba3926f9d53adffd}\label{struct_captain_1_1_path_identifier_ac637cd75014e617fba3926f9d53adffd} 
+\index{Captain::PathIdentifier@{Captain::PathIdentifier}!ContainsUnitIdentifier@{ContainsUnitIdentifier}}
+\index{ContainsUnitIdentifier@{ContainsUnitIdentifier}!Captain::PathIdentifier@{Captain::PathIdentifier}}
+\doxysubsubsection{\texorpdfstring{ContainsUnitIdentifier()}{ContainsUnitIdentifier()}}
+{\footnotesize\ttfamily bool Captain\+::\+Path\+Identifier\+::\+Contains\+Unit\+Identifier (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{unit\+Identifier }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_captain_1_1_path_identifier_ac637cd75014e617fba3926f9d53adffd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_captain_1_1_path_identifier_a7a08a89716fcf4f36c197092626fc9f8}\label{struct_captain_1_1_path_identifier_a7a08a89716fcf4f36c197092626fc9f8} 
+\index{Captain::PathIdentifier@{Captain::PathIdentifier}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Captain::PathIdentifier@{Captain::PathIdentifier}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Captain\+::\+Path\+Identifier\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} \&}]{path\+Identifier }\end{DoxyParamCaption}) const}
+
+\Hypertarget{struct_captain_1_1_path_identifier_a8db3c96a8b5fac023be0424891b0e76d}\label{struct_captain_1_1_path_identifier_a8db3c96a8b5fac023be0424891b0e76d} 
+\index{Captain::PathIdentifier@{Captain::PathIdentifier}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::PathIdentifier@{Captain::PathIdentifier}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} \& Captain\+::\+Path\+Identifier\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} \&}]{path\+Identifier }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_captain_1_1_path_identifier_ad56d33fc9613d953f9823cea1b47ffd0}\label{struct_captain_1_1_path_identifier_ad56d33fc9613d953f9823cea1b47ffd0} 
+\index{Captain::PathIdentifier@{Captain::PathIdentifier}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::PathIdentifier@{Captain::PathIdentifier}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} \& Captain\+::\+Path\+Identifier\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} \&\&}]{path\+Identifier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{struct_captain_1_1_path_identifier_af76dd3141b85a70636ae689316762c05}\label{struct_captain_1_1_path_identifier_af76dd3141b85a70636ae689316762c05} 
+\index{Captain::PathIdentifier@{Captain::PathIdentifier}!operator==@{operator==}}
+\index{operator==@{operator==}!Captain::PathIdentifier@{Captain::PathIdentifier}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Captain\+::\+Path\+Identifier\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_path_identifier}{Path\+Identifier}} \&}]{path\+Identifier }\end{DoxyParamCaption}) const}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_captain_1_1_path_identifier_aed4fd45bbb4f6db7537518bc98f34049}\label{struct_captain_1_1_path_identifier_aed4fd45bbb4f6db7537518bc98f34049} 
+\index{Captain::PathIdentifier@{Captain::PathIdentifier}!LaneIdVector@{LaneIdVector}}
+\index{LaneIdVector@{LaneIdVector}!Captain::PathIdentifier@{Captain::PathIdentifier}}
+\doxysubsubsection{\texorpdfstring{LaneIdVector}{LaneIdVector}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Captain\+::\+Path\+Identifier\+::\+Lane\+Id\+Vector}
+
+\Hypertarget{struct_captain_1_1_path_identifier_aae03238172aa8030a660cd0fc536fe19}\label{struct_captain_1_1_path_identifier_aae03238172aa8030a660cd0fc536fe19} 
+\index{Captain::PathIdentifier@{Captain::PathIdentifier}!LinkID@{LinkID}}
+\index{LinkID@{LinkID}!Captain::PathIdentifier@{Captain::PathIdentifier}}
+\doxysubsubsection{\texorpdfstring{LinkID}{LinkID}}
+{\footnotesize\ttfamily int Captain\+::\+Path\+Identifier\+::\+Link\+ID = -\/1}
+
+\Hypertarget{struct_captain_1_1_path_identifier_a80ca8828c611382e4dcbebe0391be260}\label{struct_captain_1_1_path_identifier_a80ca8828c611382e4dcbebe0391be260} 
+\index{Captain::PathIdentifier@{Captain::PathIdentifier}!StationIdVector@{StationIdVector}}
+\index{StationIdVector@{StationIdVector}!Captain::PathIdentifier@{Captain::PathIdentifier}}
+\doxysubsubsection{\texorpdfstring{StationIdVector}{StationIdVector}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::list$<$int$>$ $>$ Captain\+::\+Path\+Identifier\+::\+Station\+Id\+Vector}
+
+\Hypertarget{struct_captain_1_1_path_identifier_ac78737a2e79cb3241421bcbffd0cd0b0}\label{struct_captain_1_1_path_identifier_ac78737a2e79cb3241421bcbffd0cd0b0} 
+\index{Captain::PathIdentifier@{Captain::PathIdentifier}!Type@{Type}}
+\index{Type@{Type}!Captain::PathIdentifier@{Captain::PathIdentifier}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}} Captain\+::\+Path\+Identifier\+::\+Type = \mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12edaec0fc0100c4fc1ce4eea230c3dc10360}{Unit\+Type\+::\+Undefined}}}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Structs/\mbox{\hyperlink{_path_identifier_8hpp}{Path\+Identifier.\+hpp}}\item 
+Sources/captain/\+Structs/\mbox{\hyperlink{_path_identifier_8cpp}{Path\+Identifier.\+cpp}}\end{DoxyCompactItemize}

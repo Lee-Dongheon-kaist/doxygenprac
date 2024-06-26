@@ -1,0 +1,7 @@
+<map id="Captain::Node::Station" name="Captain::Node::Station">
+<area shape="rect" id="Node000001" title=" " alt="" coords="99,267,267,549"/>
+<area shape="rect" id="Node000002" href="$struct_captain_1_1_i_event_recordable.html" title="Interface for units that can record events." alt="" coords="5,5,171,203"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,216,141,266,136,268,120,217"/>
+<area shape="rect" id="Node000003" href="$struct_captain_1_1_station_record_info.html" title=" " alt="" coords="195,5,362,203"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="250,203,235,251,230,250,245,202"/>
+</map>

@@ -1,0 +1,187 @@
+\doxysection{Captain\+::Vehicle\+Reservation\+Info Class Reference}
+\hypertarget{class_captain_1_1_vehicle_reservation_info}{}\label{class_captain_1_1_vehicle_reservation_info}\index{Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}}
+
+
+{\ttfamily \#include $<$Vehicle\+Reservation\+Info.\+hpp$>$}
+
+
+
+Collaboration diagram for Captain\+::Vehicle\+Reservation\+Info\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_captain_1_1_vehicle_reservation_info__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info_a64fb106974dd5a4bf6ba12467a7c7a01}{Vehicle\+Reservation\+Info}} (\mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}} vehicle\+Info, \mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} vehicle\+Path, std\+::size\+\_\+t output\+Cycle, std\+::size\+\_\+t vehicle\+Num)
+\item 
+\mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info_a888f1135f61c60594a0df13bb0be3e62}{Vehicle\+Reservation\+Info}} (\mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}} vehicle\+Info, \mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} vehicle\+Path, bool \mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info_a407781a6532fa00b8fa86b06b4a9be11}{v2x\+Active}}, std\+::size\+\_\+t output\+Cycle, std\+::size\+\_\+t vehicle\+Num)
+\item 
+\mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info_a692932d5d5ad97c4d72a356b2b70fcc8}{Vehicle\+Reservation\+Info}} (\mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}} vehicle\+Info, \mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} vehicle\+Path, bool \mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info_a407781a6532fa00b8fa86b06b4a9be11}{v2x\+Active}}, \mbox{\hyperlink{struct_captain_1_1_message}{Message}} \mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info_a9b6edd3e3b2b770b14e6a9c6338f00ea}{message\+Send}}, std\+::size\+\_\+t output\+Cycle, std\+::size\+\_\+t vehicle\+Num)
+\item 
+\mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info_aa149b732bb1dc59617d4939d53051d3b}{Vehicle\+Reservation\+Info}} (const \mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info}{Vehicle\+Reservation\+Info}} \&other)=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info_a914babf35d433f013bffce304ab8e6cf}{Vehicle\+Reservation\+Info}} (\mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info}{Vehicle\+Reservation\+Info}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info}{Vehicle\+Reservation\+Info}} \& \mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info_ab103e0040a24d777472c1013d72efd81}{operator=}} (const \mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info}{Vehicle\+Reservation\+Info}} \&other)=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info}{Vehicle\+Reservation\+Info}} \& \mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info_a29b7c0b9bf9ca84013811097fa13917b}{operator=}} (\mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info}{Vehicle\+Reservation\+Info}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info_ae86f2f68bde09a98330a63e266450d8b}{\texorpdfstring{$\sim$}{\string~}\+Vehicle\+Reservation\+Info}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}} \mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info_ac369ca77be09797fad688c7857ad7901}{Info}}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} \mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info_a8f3c0e641381f475f05f38f116c50873}{Path}}
+\item 
+bool \mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info_a407781a6532fa00b8fa86b06b4a9be11}{v2x\+Active}} = false
+\item 
+\mbox{\hyperlink{struct_captain_1_1_message}{Message}} \mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info_a9b6edd3e3b2b770b14e6a9c6338f00ea}{message\+Send}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info_a4865a1df80bb24cb4a1c8ebd6afe9c3e}{Output\+Cycle}}
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info_a42616b47a7829165700009bce7345969}{Vehicle\+Num}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_captain_1_1_vehicle_reservation_info_a64fb106974dd5a4bf6ba12467a7c7a01}\label{class_captain_1_1_vehicle_reservation_info_a64fb106974dd5a4bf6ba12467a7c7a01} 
+\index{Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}!VehicleReservationInfo@{VehicleReservationInfo}}
+\index{VehicleReservationInfo@{VehicleReservationInfo}!Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}}
+\doxysubsubsection{\texorpdfstring{VehicleReservationInfo()}{VehicleReservationInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Captain\+::\+Vehicle\+Reservation\+Info\+::\+Vehicle\+Reservation\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}}}]{vehicle\+Info,  }\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}}}]{vehicle\+Path,  }\item[{std\+::size\+\_\+t}]{output\+Cycle,  }\item[{std\+::size\+\_\+t}]{vehicle\+Num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em vehicle\+Info} & \+: information of the vehicle to reserve \\
+\hline
+{\em vehicle\+Path} & \+: \doxylink{struct_captain_1_1_vehicle_path}{Vehicle\+Path} of reserved vehicle \\
+\hline
+{\em output\+Cycle} & \+: desired cycle that this vehicle is going to be generated \\
+\hline
+{\em vehicle\+Num} & \+: number of vehicles to generate with given configurations in desired cycle \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_captain_1_1_vehicle_reservation_info_a888f1135f61c60594a0df13bb0be3e62}\label{class_captain_1_1_vehicle_reservation_info_a888f1135f61c60594a0df13bb0be3e62} 
+\index{Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}!VehicleReservationInfo@{VehicleReservationInfo}}
+\index{VehicleReservationInfo@{VehicleReservationInfo}!Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}}
+\doxysubsubsection{\texorpdfstring{VehicleReservationInfo()}{VehicleReservationInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Captain\+::\+Vehicle\+Reservation\+Info\+::\+Vehicle\+Reservation\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}}}]{vehicle\+Info,  }\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}}}]{vehicle\+Path,  }\item[{bool}]{v2x\+Active,  }\item[{std\+::size\+\_\+t}]{output\+Cycle,  }\item[{std\+::size\+\_\+t}]{vehicle\+Num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em vehicle\+Info} & \+: information of the vehicle to reserve \\
+\hline
+{\em vehicle\+Path} & \+: \doxylink{struct_captain_1_1_vehicle_path}{Vehicle\+Path} of reserved vehicle \\
+\hline
+{\em v2x\+Active} & \+: Active of v2x module in vehicle \\
+\hline
+{\em output\+Cycle} & \+: desired cycle that this vehicle is going to be generated \\
+\hline
+{\em vehicle\+Num} & \+: number of vehicles to generate with given configurations in desired cycle \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_captain_1_1_vehicle_reservation_info_a692932d5d5ad97c4d72a356b2b70fcc8}\label{class_captain_1_1_vehicle_reservation_info_a692932d5d5ad97c4d72a356b2b70fcc8} 
+\index{Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}!VehicleReservationInfo@{VehicleReservationInfo}}
+\index{VehicleReservationInfo@{VehicleReservationInfo}!Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}}
+\doxysubsubsection{\texorpdfstring{VehicleReservationInfo()}{VehicleReservationInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Captain\+::\+Vehicle\+Reservation\+Info\+::\+Vehicle\+Reservation\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}}}]{vehicle\+Info,  }\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}}}]{vehicle\+Path,  }\item[{bool}]{v2x\+Active,  }\item[{\mbox{\hyperlink{struct_captain_1_1_message}{Message}}}]{message\+Send,  }\item[{std\+::size\+\_\+t}]{output\+Cycle,  }\item[{std\+::size\+\_\+t}]{vehicle\+Num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em vehicle\+Info} & \+: information of the vehicle to reserve \\
+\hline
+{\em vehicle\+Path} & \+: \doxylink{struct_captain_1_1_vehicle_path}{Vehicle\+Path} of reserved vehicle \\
+\hline
+{\em v2x\+Active} & \+: Active of v2x module in vehicle \\
+\hline
+{\em message\+Send} & \+: \doxylink{struct_captain_1_1_message}{Message} to send \\
+\hline
+{\em output\+Cycle} & \+: desired cycle that this vehicle is going to be generated \\
+\hline
+{\em vehicle\+Num} & \+: number of vehicles to generate with given configurations in desired cycle \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_captain_1_1_vehicle_reservation_info_aa149b732bb1dc59617d4939d53051d3b}\label{class_captain_1_1_vehicle_reservation_info_aa149b732bb1dc59617d4939d53051d3b} 
+\index{Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}!VehicleReservationInfo@{VehicleReservationInfo}}
+\index{VehicleReservationInfo@{VehicleReservationInfo}!Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}}
+\doxysubsubsection{\texorpdfstring{VehicleReservationInfo()}{VehicleReservationInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Captain\+::\+Vehicle\+Reservation\+Info\+::\+Vehicle\+Reservation\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info}{Vehicle\+Reservation\+Info}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_captain_1_1_vehicle_reservation_info_a914babf35d433f013bffce304ab8e6cf}\label{class_captain_1_1_vehicle_reservation_info_a914babf35d433f013bffce304ab8e6cf} 
+\index{Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}!VehicleReservationInfo@{VehicleReservationInfo}}
+\index{VehicleReservationInfo@{VehicleReservationInfo}!Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}}
+\doxysubsubsection{\texorpdfstring{VehicleReservationInfo()}{VehicleReservationInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Captain\+::\+Vehicle\+Reservation\+Info\+::\+Vehicle\+Reservation\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info}{Vehicle\+Reservation\+Info}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{class_captain_1_1_vehicle_reservation_info_ae86f2f68bde09a98330a63e266450d8b}\label{class_captain_1_1_vehicle_reservation_info_ae86f2f68bde09a98330a63e266450d8b} 
+\index{Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}!````~VehicleReservationInfo@{\texorpdfstring{$\sim$}{\string~}VehicleReservationInfo}}
+\index{````~VehicleReservationInfo@{\texorpdfstring{$\sim$}{\string~}VehicleReservationInfo}!Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}VehicleReservationInfo()}{\string~VehicleReservationInfo()}}
+{\footnotesize\ttfamily Captain\+::\+Vehicle\+Reservation\+Info\+::\texorpdfstring{$\sim$}{\string~}\+Vehicle\+Reservation\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_captain_1_1_vehicle_reservation_info_ab103e0040a24d777472c1013d72efd81}\label{class_captain_1_1_vehicle_reservation_info_ab103e0040a24d777472c1013d72efd81} 
+\index{Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info}{Vehicle\+Reservation\+Info}} \& Captain\+::\+Vehicle\+Reservation\+Info\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info}{Vehicle\+Reservation\+Info}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_captain_1_1_vehicle_reservation_info_a29b7c0b9bf9ca84013811097fa13917b}\label{class_captain_1_1_vehicle_reservation_info_a29b7c0b9bf9ca84013811097fa13917b} 
+\index{Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info}{Vehicle\+Reservation\+Info}} \& Captain\+::\+Vehicle\+Reservation\+Info\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_vehicle_reservation_info}{Vehicle\+Reservation\+Info}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_captain_1_1_vehicle_reservation_info_ac369ca77be09797fad688c7857ad7901}\label{class_captain_1_1_vehicle_reservation_info_ac369ca77be09797fad688c7857ad7901} 
+\index{Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}!Info@{Info}}
+\index{Info@{Info}!Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}}
+\doxysubsubsection{\texorpdfstring{Info}{Info}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}} Captain\+::\+Vehicle\+Reservation\+Info\+::\+Info}
+
+\Hypertarget{class_captain_1_1_vehicle_reservation_info_a9b6edd3e3b2b770b14e6a9c6338f00ea}\label{class_captain_1_1_vehicle_reservation_info_a9b6edd3e3b2b770b14e6a9c6338f00ea} 
+\index{Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}!messageSend@{messageSend}}
+\index{messageSend@{messageSend}!Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}}
+\doxysubsubsection{\texorpdfstring{messageSend}{messageSend}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_message}{Message}} Captain\+::\+Vehicle\+Reservation\+Info\+::message\+Send}
+
+\Hypertarget{class_captain_1_1_vehicle_reservation_info_a4865a1df80bb24cb4a1c8ebd6afe9c3e}\label{class_captain_1_1_vehicle_reservation_info_a4865a1df80bb24cb4a1c8ebd6afe9c3e} 
+\index{Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}!OutputCycle@{OutputCycle}}
+\index{OutputCycle@{OutputCycle}!Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}}
+\doxysubsubsection{\texorpdfstring{OutputCycle}{OutputCycle}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Captain\+::\+Vehicle\+Reservation\+Info\+::\+Output\+Cycle}
+
+\Hypertarget{class_captain_1_1_vehicle_reservation_info_a8f3c0e641381f475f05f38f116c50873}\label{class_captain_1_1_vehicle_reservation_info_a8f3c0e641381f475f05f38f116c50873} 
+\index{Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}!Path@{Path}}
+\index{Path@{Path}!Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}}
+\doxysubsubsection{\texorpdfstring{Path}{Path}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} Captain\+::\+Vehicle\+Reservation\+Info\+::\+Path}
+
+\Hypertarget{class_captain_1_1_vehicle_reservation_info_a407781a6532fa00b8fa86b06b4a9be11}\label{class_captain_1_1_vehicle_reservation_info_a407781a6532fa00b8fa86b06b4a9be11} 
+\index{Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}!v2xActive@{v2xActive}}
+\index{v2xActive@{v2xActive}!Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}}
+\doxysubsubsection{\texorpdfstring{v2xActive}{v2xActive}}
+{\footnotesize\ttfamily bool Captain\+::\+Vehicle\+Reservation\+Info\+::v2x\+Active = false}
+
+\Hypertarget{class_captain_1_1_vehicle_reservation_info_a42616b47a7829165700009bce7345969}\label{class_captain_1_1_vehicle_reservation_info_a42616b47a7829165700009bce7345969} 
+\index{Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}!VehicleNum@{VehicleNum}}
+\index{VehicleNum@{VehicleNum}!Captain::VehicleReservationInfo@{Captain::VehicleReservationInfo}}
+\doxysubsubsection{\texorpdfstring{VehicleNum}{VehicleNum}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Captain\+::\+Vehicle\+Reservation\+Info\+::\+Vehicle\+Num}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Structs/\mbox{\hyperlink{_vehicle_reservation_info_8hpp}{Vehicle\+Reservation\+Info.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,270 @@
+\doxysection{Captain\+::Util\+::Json\+Writer Class Reference}
+\hypertarget{class_captain_1_1_util_1_1_json_writer}{}\label{class_captain_1_1_util_1_1_json_writer}\index{Captain::Util::JsonWriter@{Captain::Util::JsonWriter}}
+
+
+{\ttfamily \#include $<$Json\+Parser.\+hpp$>$}
+
+
+
+Collaboration diagram for Captain\+::Util\+::Json\+Writer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{class_captain_1_1_util_1_1_json_writer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer_a5fe5e892611923d7fc116e3adb919dea}{Json\+Writer}} (std\+::filesystem\+::path file\+Path)
+\item 
+\mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer_a0eaa8a3db5684071d31054a6f13579a9}{\texorpdfstring{$\sim$}{\string~}\+Json\+Writer}} ()=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer_a97ec78593ef6638f2ef9c234d1aa79d1}{Json\+Writer}} (const \mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer}{Json\+Writer}} \&other)=delete
+\item 
+\mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer_a2252b4050d178c38132893c29ef1bc94}{Json\+Writer}} (\mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer}{Json\+Writer}} \&\&other) noexcept=default
+\item 
+\mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer}{Json\+Writer}} \& \mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer_af697f2103779bbda1ffcdc01e2c6dde4}{operator=}} (const \mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer}{Json\+Writer}} \&other)=delete
+\item 
+\mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer}{Json\+Writer}} \& \mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer_ad3d53a00a53b9bb1e85dd4eb073d27c2}{operator=}} (\mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer}{Json\+Writer}} \&\&other) noexcept=default
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer_a5540025af897a9700d3173f613458a2c}{Initialize\+Writer}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer_a7c7e3bdf839e54ef13a7f6930a8b6c66}{Initialize\+Writing\+Json}} (std\+::string type)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer_a743748764d7e9d4183c5e1816a73cc82}{Terminate\+Writing\+Json}} ()
+\item 
+rapidjson\+::\+Value \mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer_aa019b7ef54940c16e806e77c8e9f781b}{identifier\+To\+Json}} (\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} identifier, rapidjson\+::\+Document\+::\+Allocator\+Type \&allocator)
+\item 
+rapidjson\+::\+Value \mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer_a923efc1e3c77c3671ae37e7a8ff7fd9d}{vehicle\+Info\+To\+Json}} (\mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}} vehicle\+Info, rapidjson\+::\+Document\+::\+Allocator\+Type \&allocator)
+\item 
+rapidjson\+::\+Value \mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer_a4c180bec35cbfe8d095dcc20a28d997a}{vehicle\+State\+To\+Json}} (\mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} vehicle\+State, rapidjson\+::\+Document\+::\+Allocator\+Type \&allocator)
+\item 
+rapidjson\+::\+Value \mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer_a2e07b5af26a6d7b33a62a1f23d120f27}{vehicle\+Path\+To\+Json}} (\mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} vehicle\+Path, rapidjson\+::\+Document\+::\+Allocator\+Type \&allocator)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer_a8b4d8516d9229fdbab5e68f1f97786df}{Write\+Vehicle}} (\mbox{\hyperlink{struct_captain_1_1_vehicle_descriptor}{Vehicle\+Descriptor}} descriptor, \mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} path, std\+::vector$<$ double $>$ lanepriority, int num\+Available\+Passengers, int num\+Passengers)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer_a4fcec9906fe58ba9c0c5f1b7e708b23a}{Write\+Route}} (\mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} path, int source\+Id, int sink\+Id)
+\item 
+void \mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer_aaf384bec138d0dcad085e156a43c23d7}{Write\+Route\+From\+Intersection}} (\mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}} path, int intersection\+Id, int sink\+Id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_captain_1_1_util_1_1_json_writer_a5fe5e892611923d7fc116e3adb919dea}\label{class_captain_1_1_util_1_1_json_writer_a5fe5e892611923d7fc116e3adb919dea} 
+\index{Captain::Util::JsonWriter@{Captain::Util::JsonWriter}!JsonWriter@{JsonWriter}}
+\index{JsonWriter@{JsonWriter}!Captain::Util::JsonWriter@{Captain::Util::JsonWriter}}
+\doxysubsubsection{\texorpdfstring{JsonWriter()}{JsonWriter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Captain\+::\+Util\+::\+Json\+Writer\+::\+Json\+Writer (\begin{DoxyParamCaption}\item[{std\+::filesystem\+::path}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_captain_1_1_util_1_1_json_writer_a0eaa8a3db5684071d31054a6f13579a9}\label{class_captain_1_1_util_1_1_json_writer_a0eaa8a3db5684071d31054a6f13579a9} 
+\index{Captain::Util::JsonWriter@{Captain::Util::JsonWriter}!````~JsonWriter@{\texorpdfstring{$\sim$}{\string~}JsonWriter}}
+\index{````~JsonWriter@{\texorpdfstring{$\sim$}{\string~}JsonWriter}!Captain::Util::JsonWriter@{Captain::Util::JsonWriter}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}JsonWriter()}{\string~JsonWriter()}}
+{\footnotesize\ttfamily Captain\+::\+Util\+::\+Json\+Writer\+::\texorpdfstring{$\sim$}{\string~}\+Json\+Writer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_captain_1_1_util_1_1_json_writer_a97ec78593ef6638f2ef9c234d1aa79d1}\label{class_captain_1_1_util_1_1_json_writer_a97ec78593ef6638f2ef9c234d1aa79d1} 
+\index{Captain::Util::JsonWriter@{Captain::Util::JsonWriter}!JsonWriter@{JsonWriter}}
+\index{JsonWriter@{JsonWriter}!Captain::Util::JsonWriter@{Captain::Util::JsonWriter}}
+\doxysubsubsection{\texorpdfstring{JsonWriter()}{JsonWriter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Captain\+::\+Util\+::\+Json\+Writer\+::\+Json\+Writer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer}{Json\+Writer}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{class_captain_1_1_util_1_1_json_writer_a2252b4050d178c38132893c29ef1bc94}\label{class_captain_1_1_util_1_1_json_writer_a2252b4050d178c38132893c29ef1bc94} 
+\index{Captain::Util::JsonWriter@{Captain::Util::JsonWriter}!JsonWriter@{JsonWriter}}
+\index{JsonWriter@{JsonWriter}!Captain::Util::JsonWriter@{Captain::Util::JsonWriter}}
+\doxysubsubsection{\texorpdfstring{JsonWriter()}{JsonWriter()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Captain\+::\+Util\+::\+Json\+Writer\+::\+Json\+Writer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer}{Json\+Writer}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_captain_1_1_util_1_1_json_writer_aa019b7ef54940c16e806e77c8e9f781b}\label{class_captain_1_1_util_1_1_json_writer_aa019b7ef54940c16e806e77c8e9f781b} 
+\index{Captain::Util::JsonWriter@{Captain::Util::JsonWriter}!identifierToJson@{identifierToJson}}
+\index{identifierToJson@{identifierToJson}!Captain::Util::JsonWriter@{Captain::Util::JsonWriter}}
+\doxysubsubsection{\texorpdfstring{identifierToJson()}{identifierToJson()}}
+{\footnotesize\ttfamily rapidjson\+::\+Value Captain\+::\+Util\+::\+Json\+Writer\+::identifier\+To\+Json (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}}}]{identifier,  }\item[{rapidjson\+::\+Document\+::\+Allocator\+Type \&}]{allocator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_json_writer_aa019b7ef54940c16e806e77c8e9f781b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_json_writer_a5540025af897a9700d3173f613458a2c}\label{class_captain_1_1_util_1_1_json_writer_a5540025af897a9700d3173f613458a2c} 
+\index{Captain::Util::JsonWriter@{Captain::Util::JsonWriter}!InitializeWriter@{InitializeWriter}}
+\index{InitializeWriter@{InitializeWriter}!Captain::Util::JsonWriter@{Captain::Util::JsonWriter}}
+\doxysubsubsection{\texorpdfstring{InitializeWriter()}{InitializeWriter()}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Json\+Writer\+::\+Initialize\+Writer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_json_writer_a5540025af897a9700d3173f613458a2c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_json_writer_a7c7e3bdf839e54ef13a7f6930a8b6c66}\label{class_captain_1_1_util_1_1_json_writer_a7c7e3bdf839e54ef13a7f6930a8b6c66} 
+\index{Captain::Util::JsonWriter@{Captain::Util::JsonWriter}!InitializeWritingJson@{InitializeWritingJson}}
+\index{InitializeWritingJson@{InitializeWritingJson}!Captain::Util::JsonWriter@{Captain::Util::JsonWriter}}
+\doxysubsubsection{\texorpdfstring{InitializeWritingJson()}{InitializeWritingJson()}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Json\+Writer\+::\+Initialize\+Writing\+Json (\begin{DoxyParamCaption}\item[{std\+::string}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_json_writer_a7c7e3bdf839e54ef13a7f6930a8b6c66_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_json_writer_af697f2103779bbda1ffcdc01e2c6dde4}\label{class_captain_1_1_util_1_1_json_writer_af697f2103779bbda1ffcdc01e2c6dde4} 
+\index{Captain::Util::JsonWriter@{Captain::Util::JsonWriter}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::Util::JsonWriter@{Captain::Util::JsonWriter}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer}{Json\+Writer}} \& Captain\+::\+Util\+::\+Json\+Writer\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer}{Json\+Writer}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{class_captain_1_1_util_1_1_json_writer_ad3d53a00a53b9bb1e85dd4eb073d27c2}\label{class_captain_1_1_util_1_1_json_writer_ad3d53a00a53b9bb1e85dd4eb073d27c2} 
+\index{Captain::Util::JsonWriter@{Captain::Util::JsonWriter}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::Util::JsonWriter@{Captain::Util::JsonWriter}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer}{Json\+Writer}} \& Captain\+::\+Util\+::\+Json\+Writer\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_util_1_1_json_writer}{Json\+Writer}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{class_captain_1_1_util_1_1_json_writer_a743748764d7e9d4183c5e1816a73cc82}\label{class_captain_1_1_util_1_1_json_writer_a743748764d7e9d4183c5e1816a73cc82} 
+\index{Captain::Util::JsonWriter@{Captain::Util::JsonWriter}!TerminateWritingJson@{TerminateWritingJson}}
+\index{TerminateWritingJson@{TerminateWritingJson}!Captain::Util::JsonWriter@{Captain::Util::JsonWriter}}
+\doxysubsubsection{\texorpdfstring{TerminateWritingJson()}{TerminateWritingJson()}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Json\+Writer\+::\+Terminate\+Writing\+Json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_json_writer_a743748764d7e9d4183c5e1816a73cc82_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_json_writer_a923efc1e3c77c3671ae37e7a8ff7fd9d}\label{class_captain_1_1_util_1_1_json_writer_a923efc1e3c77c3671ae37e7a8ff7fd9d} 
+\index{Captain::Util::JsonWriter@{Captain::Util::JsonWriter}!vehicleInfoToJson@{vehicleInfoToJson}}
+\index{vehicleInfoToJson@{vehicleInfoToJson}!Captain::Util::JsonWriter@{Captain::Util::JsonWriter}}
+\doxysubsubsection{\texorpdfstring{vehicleInfoToJson()}{vehicleInfoToJson()}}
+{\footnotesize\ttfamily rapidjson\+::\+Value Captain\+::\+Util\+::\+Json\+Writer\+::vehicle\+Info\+To\+Json (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_info}{Vehicle\+Info}}}]{vehicle\+Info,  }\item[{rapidjson\+::\+Document\+::\+Allocator\+Type \&}]{allocator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_json_writer_a923efc1e3c77c3671ae37e7a8ff7fd9d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_json_writer_a2e07b5af26a6d7b33a62a1f23d120f27}\label{class_captain_1_1_util_1_1_json_writer_a2e07b5af26a6d7b33a62a1f23d120f27} 
+\index{Captain::Util::JsonWriter@{Captain::Util::JsonWriter}!vehiclePathToJson@{vehiclePathToJson}}
+\index{vehiclePathToJson@{vehiclePathToJson}!Captain::Util::JsonWriter@{Captain::Util::JsonWriter}}
+\doxysubsubsection{\texorpdfstring{vehiclePathToJson()}{vehiclePathToJson()}}
+{\footnotesize\ttfamily rapidjson\+::\+Value Captain\+::\+Util\+::\+Json\+Writer\+::vehicle\+Path\+To\+Json (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}}}]{vehicle\+Path,  }\item[{rapidjson\+::\+Document\+::\+Allocator\+Type \&}]{allocator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_json_writer_a2e07b5af26a6d7b33a62a1f23d120f27_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_json_writer_a4c180bec35cbfe8d095dcc20a28d997a}\label{class_captain_1_1_util_1_1_json_writer_a4c180bec35cbfe8d095dcc20a28d997a} 
+\index{Captain::Util::JsonWriter@{Captain::Util::JsonWriter}!vehicleStateToJson@{vehicleStateToJson}}
+\index{vehicleStateToJson@{vehicleStateToJson}!Captain::Util::JsonWriter@{Captain::Util::JsonWriter}}
+\doxysubsubsection{\texorpdfstring{vehicleStateToJson()}{vehicleStateToJson()}}
+{\footnotesize\ttfamily rapidjson\+::\+Value Captain\+::\+Util\+::\+Json\+Writer\+::vehicle\+State\+To\+Json (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}}}]{vehicle\+State,  }\item[{rapidjson\+::\+Document\+::\+Allocator\+Type \&}]{allocator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_json_writer_a4c180bec35cbfe8d095dcc20a28d997a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_json_writer_a4c180bec35cbfe8d095dcc20a28d997a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_json_writer_a4fcec9906fe58ba9c0c5f1b7e708b23a}\label{class_captain_1_1_util_1_1_json_writer_a4fcec9906fe58ba9c0c5f1b7e708b23a} 
+\index{Captain::Util::JsonWriter@{Captain::Util::JsonWriter}!WriteRoute@{WriteRoute}}
+\index{WriteRoute@{WriteRoute}!Captain::Util::JsonWriter@{Captain::Util::JsonWriter}}
+\doxysubsubsection{\texorpdfstring{WriteRoute()}{WriteRoute()}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Json\+Writer\+::\+Write\+Route (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}}}]{path,  }\item[{int}]{source\+Id,  }\item[{int}]{sink\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_json_writer_a4fcec9906fe58ba9c0c5f1b7e708b23a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_json_writer_a4fcec9906fe58ba9c0c5f1b7e708b23a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_json_writer_aaf384bec138d0dcad085e156a43c23d7}\label{class_captain_1_1_util_1_1_json_writer_aaf384bec138d0dcad085e156a43c23d7} 
+\index{Captain::Util::JsonWriter@{Captain::Util::JsonWriter}!WriteRouteFromIntersection@{WriteRouteFromIntersection}}
+\index{WriteRouteFromIntersection@{WriteRouteFromIntersection}!Captain::Util::JsonWriter@{Captain::Util::JsonWriter}}
+\doxysubsubsection{\texorpdfstring{WriteRouteFromIntersection()}{WriteRouteFromIntersection()}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Json\+Writer\+::\+Write\+Route\+From\+Intersection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}}}]{path,  }\item[{int}]{intersection\+Id,  }\item[{int}]{sink\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_json_writer_aaf384bec138d0dcad085e156a43c23d7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_json_writer_aaf384bec138d0dcad085e156a43c23d7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_util_1_1_json_writer_a8b4d8516d9229fdbab5e68f1f97786df}\label{class_captain_1_1_util_1_1_json_writer_a8b4d8516d9229fdbab5e68f1f97786df} 
+\index{Captain::Util::JsonWriter@{Captain::Util::JsonWriter}!WriteVehicle@{WriteVehicle}}
+\index{WriteVehicle@{WriteVehicle}!Captain::Util::JsonWriter@{Captain::Util::JsonWriter}}
+\doxysubsubsection{\texorpdfstring{WriteVehicle()}{WriteVehicle()}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Json\+Writer\+::\+Write\+Vehicle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_descriptor}{Vehicle\+Descriptor}}}]{descriptor,  }\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_path}{Vehicle\+Path}}}]{path,  }\item[{std\+::vector$<$ double $>$}]{lanepriority,  }\item[{int}]{num\+Available\+Passengers,  }\item[{int}]{num\+Passengers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_json_writer_a8b4d8516d9229fdbab5e68f1f97786df_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_util_1_1_json_writer_a8b4d8516d9229fdbab5e68f1f97786df_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Util/\mbox{\hyperlink{_json_parser_8hpp}{Json\+Parser.\+hpp}}\end{DoxyCompactItemize}

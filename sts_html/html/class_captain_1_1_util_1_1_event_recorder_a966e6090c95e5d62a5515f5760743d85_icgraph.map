@@ -1,0 +1,8 @@
+<map id="Captain::Util::EventRecorder::RecordLane" name="Captain::Util::EventRecorder::RecordLane">
+<area shape="rect" id="Node000001" title=" " alt="" coords="225,51,409,93"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_meso_unit.html#ab09b7181c64a8b8cc48f5c0ac2ddd418" title="Records information to temporary buffer." alt="" coords="8,5,174,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,53,174,46,175,41,210,48"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_node_1_1_micro_lane.html#a1a70849c68e9dccdb5e08d01dd043766" title=" " alt="" coords="5,96,177,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,96,178,103,177,97,209,91"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="128,83,114,77,91,75,70,77,57,81,52,87,53,95,48,96,46,86,54,77,69,71,91,69,115,72,130,78"/>
+</map>

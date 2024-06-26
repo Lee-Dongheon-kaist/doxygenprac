@@ -1,0 +1,9 @@
+<map id="Captain::VehicleReservationInfo" name="Captain::VehicleReservationInfo">
+<area shape="rect" id="Node000001" title=" " alt="" coords="141,523,336,784"/>
+<area shape="rect" id="Node000002" href="$struct_captain_1_1_vehicle_info.html" title=" " alt="" coords="5,5,133,459"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,427,148,458,169,506,164,508,143,460,131,429"/>
+<area shape="rect" id="Node000003" href="$struct_captain_1_1_vehicle_path.html" title="Describes path of the vehicle." alt="" coords="158,5,319,459"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="241,459,241,506,236,506,236,459"/>
+<area shape="rect" id="Node000004" href="$struct_captain_1_1_message.html" title="Message for v2x." alt="" coords="344,144,461,320"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="381,321,334,460,314,509,309,507,330,458,376,319"/>
+</map>

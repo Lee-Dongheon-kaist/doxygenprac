@@ -1,0 +1,15 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$struct_captain_1_1_node_1_1_i_linkable.html" title="Interface that defines classes that can link directly to other units in the network." alt="" coords="5,89,168,116"/>
+<area shape="rect" id="Node000001" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html" title=" " alt="" coords="216,13,441,40"/>
+<area shape="poly" id="edge34_Node000000_Node000001" title=" " alt="" coords="132,80,215,49,258,38,259,43,216,55,134,85"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_node_1_1_meso_link.html" title="Link represents directional road connecting two intersections." alt="" coords="245,64,412,91"/>
+<area shape="poly" id="edge36_Node000000_Node000003" title=" " alt="" coords="183,90,244,83,244,89,184,95"/>
+<area shape="rect" id="Node000004" href="$class_captain_1_1_node_1_1_micro_link.html" title=" " alt="" coords="245,115,412,141"/>
+<area shape="poly" id="edge37_Node000000_Node000004" title=" " alt="" coords="184,110,244,117,244,122,183,115"/>
+<area shape="rect" id="Node000005" href="$class_captain_1_1_node_1_1_uniform_link.html" title=" " alt="" coords="239,165,418,192"/>
+<area shape="poly" id="edge38_Node000000_Node000005" title=" " alt="" coords="134,120,216,151,259,162,258,167,215,156,132,125"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_intersection_micro_link.html" title=" " alt="" coords="523,5,701,48"/>
+<area shape="poly" id="edge35_Node000001_Node000002" title=" " alt="" coords="457,24,523,24,523,29,457,29"/>
+<area shape="rect" id="Node000006" href="$class_captain_1_1_node_1_1_uniform_intersection_link.html" title=" " alt="" coords="489,165,735,192"/>
+<area shape="poly" id="edge39_Node000005_Node000006" title=" " alt="" coords="433,176,489,176,489,181,433,181"/>
+</map>

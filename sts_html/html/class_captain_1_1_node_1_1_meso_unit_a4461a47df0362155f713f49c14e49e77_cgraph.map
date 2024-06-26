@@ -1,0 +1,9 @@
+<map id="Captain::Node::MesoUnit::MoveWaitingVehiclesToMainQueue" name="Captain::Node::MesoUnit::MoveWaitingVehiclesToMainQueue">
+<area shape="rect" id="Node000001" title="Move vehicles in the m_vehicleWaitQueueUp to m_vehicleMainQueue." alt="" coords="5,72,239,115"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_util_1_1_vehicle_queue.html#a615e903a007fbedb5111262c2867b269" title=" " alt="" coords="287,5,468,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,69,278,50,279,55,207,74"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_util_1_1_vehicle_queue.html#a3b1d50e6a57ecce1358f76b874906805" title=" " alt="" coords="287,72,468,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="239,91,271,91,271,96,239,96"/>
+<area shape="rect" id="Node000004" href="$class_captain_1_1_util_1_1_vehicle_queue.html#a3d4c31f703ddc93aec3976f825ed7b23" title=" " alt="" coords="287,139,468,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="207,113,279,132,278,137,206,118"/>
+</map>

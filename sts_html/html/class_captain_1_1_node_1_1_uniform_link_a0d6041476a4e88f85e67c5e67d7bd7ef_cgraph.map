@@ -1,0 +1,19 @@
+<map id="Captain::Node::UniformLink::UpdateV2XMessage" name="Captain::Node::UniformLink::UpdateV2XMessage">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,173,185,216"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#ae65b36f53670d4de3b41f9ff1e42165b" title=" " alt="" coords="233,173,434,216"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,192,217,192,217,197,185,197"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_util_1_1_vehicle_queue.html#abf94a44e54cfe64a5a522b8be85f3c87" title=" " alt="" coords="484,5,686,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="348,171,401,107,438,72,481,42,493,36,495,40,483,46,442,76,405,110,352,175"/>
+<area shape="rect" id="Node000004" href="$class_captain_1_1_util_1_1_vehicle_queue.html#ac1d0e70d8b5517efe399a8e511f3851c" title=" " alt="" coords="494,56,675,99"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="367,171,420,139,481,108,496,102,498,107,483,113,422,144,370,175"/>
+<area shape="rect" id="Node000005" href="$class_captain_1_1_v2_x.html#aa8718d96a1d4de06a0defa7a489337d8" title=" " alt="" coords="501,123,668,149"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="427,170,509,151,510,156,428,175"/>
+<area shape="rect" id="Node000006" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#a4bf3d64990b07e9ba85b8fde270e77c8" title="Returns reference of lane in corresponding lane index." alt="" coords="484,173,685,216"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="434,192,468,192,468,197,434,197"/>
+<area shape="rect" id="Node000007" href="$class_captain_1_1_v2_x.html#adf234c791e4dc09f585e415f77f3c961" title=" " alt="" coords="482,240,687,267"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="428,214,510,233,509,238,427,219"/>
+<area shape="rect" id="Node000008" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#afd9318be843bf7b24adb1a4ca1a30458" title=" " alt="" coords="484,291,685,333"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="370,214,422,245,483,276,498,282,496,287,481,281,420,250,367,219"/>
+<area shape="rect" id="Node000009" href="$class_captain_1_1_util_1_1_vehicle_queue.html#a3d4c31f703ddc93aec3976f825ed7b23" title=" " alt="" coords="494,357,675,400"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="352,215,406,278,443,313,483,343,492,348,489,352,481,348,439,317,402,282,348,218"/>
+</map>

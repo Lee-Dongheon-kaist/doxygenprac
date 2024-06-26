@@ -1,0 +1,11 @@
+<map id="Captain::Node::MesoUnit::GetCurrentNumVehicles" name="Captain::Node::MesoUnit::GetCurrentNumVehicles">
+<area shape="rect" id="Node000001" title="Brings current number of vehicles." alt="" coords="220,105,389,148"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_meso_unit.html#a150630bae9d84917bb3ccadd51d840ef" title="Computes ICF from previous cell when multiple cells are forwarded to this cell." alt="" coords="5,5,172,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,100,171,62,144,51,147,46,173,58,250,95"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_node_1_1_meso_unit.html#acc1b172b3662b27185618d9910d4bbf6" title="omputes LC to lane change from current unit stores result to m_laneChangeIndexVector" alt="" coords="5,72,172,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="204,114,172,109,173,104,205,109"/>
+<area shape="rect" id="Node000004" href="$class_captain_1_1_node_1_1_meso_unit.html#a0b773761ca1f7aa49ea4cd718398e6b5" title="Gets weight (average pass time) of this unit." alt="" coords="5,139,172,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="205,145,173,150,172,144,204,139"/>
+<area shape="rect" id="Node000005" href="$class_captain_1_1_node_1_1_meso_unit.html#ab09b7181c64a8b8cc48f5c0ac2ddd418" title="Records information to temporary buffer." alt="" coords="5,205,172,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="250,158,173,196,147,207,144,202,171,191,248,153"/>
+</map>

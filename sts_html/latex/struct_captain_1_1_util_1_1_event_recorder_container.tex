@@ -1,0 +1,165 @@
+\doxysection{Captain\+::Util\+::Event\+Recorder\+Container Struct Reference}
+\hypertarget{struct_captain_1_1_util_1_1_event_recorder_container}{}\label{struct_captain_1_1_util_1_1_event_recorder_container}\index{Captain::Util::EventRecorderContainer@{Captain::Util::EventRecorderContainer}}
+
+
+structure used to store Event\+Recorders for further record flushing  
+
+
+
+
+{\ttfamily \#include $<$Event\+Recorder.\+hpp$>$}
+
+
+
+Collaboration diagram for Captain\+::Util\+::Event\+Recorder\+Container\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{struct_captain_1_1_util_1_1_event_recorder_container__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_util_1_1_event_recorder_container_ae6c7089aef1ae364e23eb669a5bec3a0}{Event\+Recorder\+Container}} ()=default
+\item 
+void \mbox{\hyperlink{struct_captain_1_1_util_1_1_event_recorder_container_ac4a28ed4a115163cbc7b9b0e4671fbfc}{Grab\+Lane\+Event\+Recorder\+Info}} (\mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Event\+Recorder}} \&recorder)
+\item 
+void \mbox{\hyperlink{struct_captain_1_1_util_1_1_event_recorder_container_a478c6c74de5d3441db5a1f90f5a28b74}{Grab\+Vehicle\+Event\+Recorder\+Info}} (\mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Event\+Recorder}} \&recorder)
+\item 
+void \mbox{\hyperlink{struct_captain_1_1_util_1_1_event_recorder_container_a1f9c920eafc5a1d788d32dfadaa1fba4}{Grab\+Station\+Event\+Recorder\+Info}} (\mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Event\+Recorder}} \&recorder)
+\item 
+void \mbox{\hyperlink{struct_captain_1_1_util_1_1_event_recorder_container_a7b56795aa00664774a8dafa7794f66d2}{Grab\+Meso\+Event\+Recorder\+Info}} (\mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Event\+Recorder}} \&recorder)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_vehicle_record_info}{Vehicle\+Record\+Info}} $>$ \mbox{\hyperlink{struct_captain_1_1_util_1_1_event_recorder_container_a1ee5fe4d0d7badc0d9ca16ab328f3678}{Vehicle\+Record\+Info\+Vector}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_lane_record_info}{Lane\+Record\+Info}} $>$ \mbox{\hyperlink{struct_captain_1_1_util_1_1_event_recorder_container_af738330849b5dc0e82141622cdb15eec}{Lane\+Record\+Info\+Vector}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_captain_1_1_station_record_info}{Station\+Record\+Info}} $>$ \mbox{\hyperlink{struct_captain_1_1_util_1_1_event_recorder_container_a2b1aaf820c8461f9f09ac07f94c79604}{Station\+Record\+Info\+Vector}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+structure used to store Event\+Recorders for further record flushing 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_captain_1_1_util_1_1_event_recorder_container_ae6c7089aef1ae364e23eb669a5bec3a0}\label{struct_captain_1_1_util_1_1_event_recorder_container_ae6c7089aef1ae364e23eb669a5bec3a0} 
+\index{Captain::Util::EventRecorderContainer@{Captain::Util::EventRecorderContainer}!EventRecorderContainer@{EventRecorderContainer}}
+\index{EventRecorderContainer@{EventRecorderContainer}!Captain::Util::EventRecorderContainer@{Captain::Util::EventRecorderContainer}}
+\doxysubsubsection{\texorpdfstring{EventRecorderContainer()}{EventRecorderContainer()}}
+{\footnotesize\ttfamily Captain\+::\+Util\+::\+Event\+Recorder\+Container\+::\+Event\+Recorder\+Container (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_captain_1_1_util_1_1_event_recorder_container_ac4a28ed4a115163cbc7b9b0e4671fbfc}\label{struct_captain_1_1_util_1_1_event_recorder_container_ac4a28ed4a115163cbc7b9b0e4671fbfc} 
+\index{Captain::Util::EventRecorderContainer@{Captain::Util::EventRecorderContainer}!GrabLaneEventRecorderInfo@{GrabLaneEventRecorderInfo}}
+\index{GrabLaneEventRecorderInfo@{GrabLaneEventRecorderInfo}!Captain::Util::EventRecorderContainer@{Captain::Util::EventRecorderContainer}}
+\doxysubsubsection{\texorpdfstring{GrabLaneEventRecorderInfo()}{GrabLaneEventRecorderInfo()}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Event\+Recorder\+Container\+::\+Grab\+Lane\+Event\+Recorder\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Event\+Recorder}} \&}]{recorder }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_captain_1_1_util_1_1_event_recorder_container_ac4a28ed4a115163cbc7b9b0e4671fbfc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_captain_1_1_util_1_1_event_recorder_container_ac4a28ed4a115163cbc7b9b0e4671fbfc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_captain_1_1_util_1_1_event_recorder_container_a7b56795aa00664774a8dafa7794f66d2}\label{struct_captain_1_1_util_1_1_event_recorder_container_a7b56795aa00664774a8dafa7794f66d2} 
+\index{Captain::Util::EventRecorderContainer@{Captain::Util::EventRecorderContainer}!GrabMesoEventRecorderInfo@{GrabMesoEventRecorderInfo}}
+\index{GrabMesoEventRecorderInfo@{GrabMesoEventRecorderInfo}!Captain::Util::EventRecorderContainer@{Captain::Util::EventRecorderContainer}}
+\doxysubsubsection{\texorpdfstring{GrabMesoEventRecorderInfo()}{GrabMesoEventRecorderInfo()}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Event\+Recorder\+Container\+::\+Grab\+Meso\+Event\+Recorder\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Event\+Recorder}} \&}]{recorder }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_captain_1_1_util_1_1_event_recorder_container_a7b56795aa00664774a8dafa7794f66d2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_captain_1_1_util_1_1_event_recorder_container_a7b56795aa00664774a8dafa7794f66d2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_captain_1_1_util_1_1_event_recorder_container_a1f9c920eafc5a1d788d32dfadaa1fba4}\label{struct_captain_1_1_util_1_1_event_recorder_container_a1f9c920eafc5a1d788d32dfadaa1fba4} 
+\index{Captain::Util::EventRecorderContainer@{Captain::Util::EventRecorderContainer}!GrabStationEventRecorderInfo@{GrabStationEventRecorderInfo}}
+\index{GrabStationEventRecorderInfo@{GrabStationEventRecorderInfo}!Captain::Util::EventRecorderContainer@{Captain::Util::EventRecorderContainer}}
+\doxysubsubsection{\texorpdfstring{GrabStationEventRecorderInfo()}{GrabStationEventRecorderInfo()}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Event\+Recorder\+Container\+::\+Grab\+Station\+Event\+Recorder\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Event\+Recorder}} \&}]{recorder }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_captain_1_1_util_1_1_event_recorder_container_a1f9c920eafc5a1d788d32dfadaa1fba4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_captain_1_1_util_1_1_event_recorder_container_a478c6c74de5d3441db5a1f90f5a28b74}\label{struct_captain_1_1_util_1_1_event_recorder_container_a478c6c74de5d3441db5a1f90f5a28b74} 
+\index{Captain::Util::EventRecorderContainer@{Captain::Util::EventRecorderContainer}!GrabVehicleEventRecorderInfo@{GrabVehicleEventRecorderInfo}}
+\index{GrabVehicleEventRecorderInfo@{GrabVehicleEventRecorderInfo}!Captain::Util::EventRecorderContainer@{Captain::Util::EventRecorderContainer}}
+\doxysubsubsection{\texorpdfstring{GrabVehicleEventRecorderInfo()}{GrabVehicleEventRecorderInfo()}}
+{\footnotesize\ttfamily void Captain\+::\+Util\+::\+Event\+Recorder\+Container\+::\+Grab\+Vehicle\+Event\+Recorder\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Event\+Recorder}} \&}]{recorder }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_captain_1_1_util_1_1_event_recorder_container_a478c6c74de5d3441db5a1f90f5a28b74_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_captain_1_1_util_1_1_event_recorder_container_a478c6c74de5d3441db5a1f90f5a28b74_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_captain_1_1_util_1_1_event_recorder_container_af738330849b5dc0e82141622cdb15eec}\label{struct_captain_1_1_util_1_1_event_recorder_container_af738330849b5dc0e82141622cdb15eec} 
+\index{Captain::Util::EventRecorderContainer@{Captain::Util::EventRecorderContainer}!LaneRecordInfoVector@{LaneRecordInfoVector}}
+\index{LaneRecordInfoVector@{LaneRecordInfoVector}!Captain::Util::EventRecorderContainer@{Captain::Util::EventRecorderContainer}}
+\doxysubsubsection{\texorpdfstring{LaneRecordInfoVector}{LaneRecordInfoVector}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{struct_captain_1_1_lane_record_info}{Lane\+Record\+Info}}$>$ Captain\+::\+Util\+::\+Event\+Recorder\+Container\+::\+Lane\+Record\+Info\+Vector}
+
+\Hypertarget{struct_captain_1_1_util_1_1_event_recorder_container_a2b1aaf820c8461f9f09ac07f94c79604}\label{struct_captain_1_1_util_1_1_event_recorder_container_a2b1aaf820c8461f9f09ac07f94c79604} 
+\index{Captain::Util::EventRecorderContainer@{Captain::Util::EventRecorderContainer}!StationRecordInfoVector@{StationRecordInfoVector}}
+\index{StationRecordInfoVector@{StationRecordInfoVector}!Captain::Util::EventRecorderContainer@{Captain::Util::EventRecorderContainer}}
+\doxysubsubsection{\texorpdfstring{StationRecordInfoVector}{StationRecordInfoVector}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{struct_captain_1_1_station_record_info}{Station\+Record\+Info}}$>$ Captain\+::\+Util\+::\+Event\+Recorder\+Container\+::\+Station\+Record\+Info\+Vector}
+
+\Hypertarget{struct_captain_1_1_util_1_1_event_recorder_container_a1ee5fe4d0d7badc0d9ca16ab328f3678}\label{struct_captain_1_1_util_1_1_event_recorder_container_a1ee5fe4d0d7badc0d9ca16ab328f3678} 
+\index{Captain::Util::EventRecorderContainer@{Captain::Util::EventRecorderContainer}!VehicleRecordInfoVector@{VehicleRecordInfoVector}}
+\index{VehicleRecordInfoVector@{VehicleRecordInfoVector}!Captain::Util::EventRecorderContainer@{Captain::Util::EventRecorderContainer}}
+\doxysubsubsection{\texorpdfstring{VehicleRecordInfoVector}{VehicleRecordInfoVector}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{struct_captain_1_1_vehicle_record_info}{Vehicle\+Record\+Info}}$>$ Captain\+::\+Util\+::\+Event\+Recorder\+Container\+::\+Vehicle\+Record\+Info\+Vector}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Util/\mbox{\hyperlink{_event_recorder_8hpp}{Event\+Recorder.\+hpp}}\item 
+Sources/captain/\+Util/\mbox{\hyperlink{_event_recorder_8cpp}{Event\+Recorder.\+cpp}}\end{DoxyCompactItemize}

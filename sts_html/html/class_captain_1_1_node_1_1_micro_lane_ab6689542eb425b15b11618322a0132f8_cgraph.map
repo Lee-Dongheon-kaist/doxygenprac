@@ -1,0 +1,5 @@
+<map id="Captain::Node::MicroLane::GetCurrentNumWaitingVehicles" name="Captain::Node::MicroLane::GetCurrentNumWaitingVehicles">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,219,48"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_util_1_1_vehicle_queue.html#a3d4c31f703ddc93aec3976f825ed7b23" title=" " alt="" coords="267,5,448,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,24,251,24,251,29,219,29"/>
+</map>

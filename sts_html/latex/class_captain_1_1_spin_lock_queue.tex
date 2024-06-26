@@ -1,0 +1,361 @@
+\doxysection{Captain\+::Spin\+Lock\+Queue\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_captain_1_1_spin_lock_queue}{}\label{class_captain_1_1_spin_lock_queue}\index{Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Spin\+Lock\+Queue-\/\+Decl.\+hpp$>$}
+
+
+
+Collaboration diagram for Captain\+::Spin\+Lock\+Queue\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{class_captain_1_1_spin_lock_queue__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_captain_1_1_spin_lock_queue_a386b4d0a4a0bb95a19aa7597a4a9e493}{Spin\+Lock\+Queue}} (std\+::size\+\_\+t max\+Capacity)
+\item 
+\mbox{\hyperlink{class_captain_1_1_spin_lock_queue_a54f7ddb82128e2184ba40bbf32419401}{Spin\+Lock\+Queue}} (\mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Spin\+Lock\+Queue}} \&spin\+Lock\+Queue)=delete
+\begin{DoxyCompactList}\small\item\em Delete copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_captain_1_1_spin_lock_queue_a19d2fceac7fd6f0c4de11d8801bf8260}{Spin\+Lock\+Queue}} (\mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Spin\+Lock\+Queue}} \&\&spin\+Lock\+Queue) noexcept
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Spin\+Lock\+Queue}} \& \mbox{\hyperlink{class_captain_1_1_spin_lock_queue_a5754b607a5a8cab23631df6ea03e90b2}{operator=}} (\mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Spin\+Lock\+Queue}} \&spin\+Lock\+Queue)=delete
+\begin{DoxyCompactList}\small\item\em Delete copy assign operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Spin\+Lock\+Queue}} \& \mbox{\hyperlink{class_captain_1_1_spin_lock_queue_a2869e89ab2595982de2251544b892c18}{operator=}} (\mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Spin\+Lock\+Queue}} \&\&spin\+Lock\+Queue) noexcept
+\begin{DoxyCompactList}\small\item\em Move assign operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_captain_1_1_spin_lock_queue_af3a6ce5dd383e36304aa3387130db0fb}{\texorpdfstring{$\sim$}{\string~}\+Spin\+Lock\+Queue}} ()=default
+\item 
+{\footnotesize template$<$typename U $>$ }\\void \mbox{\hyperlink{class_captain_1_1_spin_lock_queue_af62a5bcb788d358731129e6c2723121e}{Enqueue}} (U \&\&elem)
+\item 
+{\footnotesize template$<$typename U $>$ }\\bool \mbox{\hyperlink{class_captain_1_1_spin_lock_queue_a83c9d93428d75bb1797cffd713147439}{Try\+Enqueue}} (U \&\&elem)
+\item 
+T \mbox{\hyperlink{class_captain_1_1_spin_lock_queue_a5221494ef9b87bcdf01d1771f038d423}{Dequeue}} ()
+\item 
+std\+::tuple$<$ T, bool $>$ \mbox{\hyperlink{class_captain_1_1_spin_lock_queue_a28b42a06b8d9f54f50e03ba5b76266d8}{Try\+Dequeue}} ()
+\item 
+{\footnotesize template$<$typename U $>$ }\\bool \mbox{\hyperlink{class_captain_1_1_spin_lock_queue_af885d073a5cb70e0546a9ceacca512e2}{Try\+Insert}} (U \&\&elem, std\+::size\+\_\+t index)
+\item 
+{\footnotesize template$<$typename U $>$ }\\void \mbox{\hyperlink{class_captain_1_1_spin_lock_queue_aa1b649941e5a12d3f1e4462b585a2e8d}{Insert}} (U \&\&elem, std\+::size\+\_\+t index)
+\item 
+{\footnotesize template$<$typename U $>$ }\\bool \mbox{\hyperlink{class_captain_1_1_spin_lock_queue_a466f36fe35930327f83d9cc97d511675}{Try\+Compare\+And\+Insert}} (U \&\&elem, std\+::function$<$ bool(T \&, T \&)$>$ \&\&lambda)
+\item 
+{\footnotesize template$<$typename U $>$ }\\void \mbox{\hyperlink{class_captain_1_1_spin_lock_queue_a23207a36bbb717348238a5f7ed52a791}{Compare\+And\+Insert}} (U \&\&elem, std\+::function$<$ bool(T \&, T \&)$>$ lambda)
+\item 
+std\+::tuple$<$ T, bool $>$ \mbox{\hyperlink{class_captain_1_1_spin_lock_queue_a53f8fa8d2c3a4aa21436276b820ef7b0}{Try\+Extract}} (std\+::size\+\_\+t index)
+\item 
+T \mbox{\hyperlink{class_captain_1_1_spin_lock_queue_a0282f49b46eb2663ee2e939758e13047}{Extract}} (std\+::size\+\_\+t index)
+\item 
+T \& \mbox{\hyperlink{class_captain_1_1_spin_lock_queue_a286b9402860b1b1adbc74aac7ffc0e7e}{At}} (std\+::size\+\_\+t index)
+\item 
+std\+::size\+\_\+t \mbox{\hyperlink{class_captain_1_1_spin_lock_queue_a589fb66716668232b1810a81d4168294}{Size}} ()
+\item 
+void \mbox{\hyperlink{class_captain_1_1_spin_lock_queue_ab2e732572128cc042e1ad4e9f4c7316b}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em Clears the list. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U $>$ }\\bool \mbox{\hyperlink{class_captain_1_1_spin_lock_queue_a0b4e8beed68ddf803b64f02a17d63797}{Try\+Insert}} (U \&\&elem, size\+\_\+t index)
+\item 
+{\footnotesize template$<$typename U $>$ }\\void \mbox{\hyperlink{class_captain_1_1_spin_lock_queue_a25698b5d782b7685966a4bf6df130a62}{Insert}} (U \&\&elem, size\+\_\+t index)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Captain\+::\+Spin\+Lock\+Queue$<$ T $>$}
+\doxylink{class_captain_1_1_spin_lock_queue}{Spin\+Lock\+Queue} ~\newline
+ Thread safe spin\+Lock\+Queue which enqueues and dequeues, accesses element using spinlocks 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \+: type of object to store \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_captain_1_1_spin_lock_queue_a386b4d0a4a0bb95a19aa7597a4a9e493}\label{class_captain_1_1_spin_lock_queue_a386b4d0a4a0bb95a19aa7597a4a9e493} 
+\index{Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}!SpinLockQueue@{SpinLockQueue}}
+\index{SpinLockQueue@{SpinLockQueue}!Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SpinLockQueue()}{SpinLockQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Captain\+::\+Spin\+Lock\+Queue}}$<$ T $>$\+::\+Spin\+Lock\+Queue (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{max\+Capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructor Initializes queue with given capacity (type must support default constructor 
+\begin{DoxyParams}{Parameters}
+{\em max\+Capacity} & \+: size of the queue \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_captain_1_1_spin_lock_queue_a54f7ddb82128e2184ba40bbf32419401}\label{class_captain_1_1_spin_lock_queue_a54f7ddb82128e2184ba40bbf32419401} 
+\index{Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}!SpinLockQueue@{SpinLockQueue}}
+\index{SpinLockQueue@{SpinLockQueue}!Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SpinLockQueue()}{SpinLockQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Captain\+::\+Spin\+Lock\+Queue}}$<$ T $>$\+::\+Spin\+Lock\+Queue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Spin\+Lock\+Queue}}$<$ T $>$ \&}]{spin\+Lock\+Queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Delete copy constructor. 
+
+\Hypertarget{class_captain_1_1_spin_lock_queue_a19d2fceac7fd6f0c4de11d8801bf8260}\label{class_captain_1_1_spin_lock_queue_a19d2fceac7fd6f0c4de11d8801bf8260} 
+\index{Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}!SpinLockQueue@{SpinLockQueue}}
+\index{SpinLockQueue@{SpinLockQueue}!Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SpinLockQueue()}{SpinLockQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Captain\+::\+Spin\+Lock\+Queue}}$<$ T $>$\+::\+Spin\+Lock\+Queue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Spin\+Lock\+Queue}}$<$ T $>$ \&\&}]{spin\+Lock\+Queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Move constructor. 
+
+\Hypertarget{class_captain_1_1_spin_lock_queue_af3a6ce5dd383e36304aa3387130db0fb}\label{class_captain_1_1_spin_lock_queue_af3a6ce5dd383e36304aa3387130db0fb} 
+\index{Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}!````~SpinLockQueue@{\texorpdfstring{$\sim$}{\string~}SpinLockQueue}}
+\index{````~SpinLockQueue@{\texorpdfstring{$\sim$}{\string~}SpinLockQueue}!Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SpinLockQueue()}{\string~SpinLockQueue()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Captain\+::\+Spin\+Lock\+Queue}}$<$ T $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Spin\+Lock\+Queue}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_captain_1_1_spin_lock_queue_a286b9402860b1b1adbc74aac7ffc0e7e}\label{class_captain_1_1_spin_lock_queue_a286b9402860b1b1adbc74aac7ffc0e7e} 
+\index{Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}!At@{At}}
+\index{At@{At}!Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{At()}{At()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \& \mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Captain\+::\+Spin\+Lock\+Queue}}$<$ T $>$\+::\+At (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+Access method to the index internally locks the spinlock in shared state 
+\begin{DoxyParams}{Parameters}
+{\em index} & \+: index to access \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: reference to the element in specified index 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_spin_lock_queue_ab2e732572128cc042e1ad4e9f4c7316b}\label{class_captain_1_1_spin_lock_queue_ab2e732572128cc042e1ad4e9f4c7316b} 
+\index{Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}!Clear@{Clear}}
+\index{Clear@{Clear}!Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Captain\+::\+Spin\+Lock\+Queue}}$<$ T $>$\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Clears the list. 
+
+\Hypertarget{class_captain_1_1_spin_lock_queue_a23207a36bbb717348238a5f7ed52a791}\label{class_captain_1_1_spin_lock_queue_a23207a36bbb717348238a5f7ed52a791} 
+\index{Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}!CompareAndInsert@{CompareAndInsert}}
+\index{CompareAndInsert@{CompareAndInsert}!Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CompareAndInsert()}{CompareAndInsert()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename U $>$ \\
+void \mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Captain\+::\+Spin\+Lock\+Queue}}$<$ T $>$\+::\+Compare\+And\+Insert (\begin{DoxyParamCaption}\item[{U \&\&}]{elem,  }\item[{std\+::function$<$ bool(T \&, T \&)$>$}]{lambda }\end{DoxyParamCaption})}
+
+\Hypertarget{class_captain_1_1_spin_lock_queue_a5221494ef9b87bcdf01d1771f038d423}\label{class_captain_1_1_spin_lock_queue_a5221494ef9b87bcdf01d1771f038d423} 
+\index{Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}!Dequeue@{Dequeue}}
+\index{Dequeue@{Dequeue}!Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Dequeue()}{Dequeue()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Captain\+::\+Spin\+Lock\+Queue}}$<$ T $>$\+::\+Dequeue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Dequeue object from the queue This waits until there are some elements ready to be dequeued. Otherwise, it busy waits \begin{DoxyReturn}{Returns}
+\+: dequeued object from the queue 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_spin_lock_queue_a5221494ef9b87bcdf01d1771f038d423_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_spin_lock_queue_af62a5bcb788d358731129e6c2723121e}\label{class_captain_1_1_spin_lock_queue_af62a5bcb788d358731129e6c2723121e} 
+\index{Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}!Enqueue@{Enqueue}}
+\index{Enqueue@{Enqueue}!Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Enqueue()}{Enqueue()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename U $>$ \\
+void \mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Captain\+::\+Spin\+Lock\+Queue}}$<$ T $>$\+::\+Enqueue (\begin{DoxyParamCaption}\item[{U \&\&}]{elem }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_spin_lock_queue_af62a5bcb788d358731129e6c2723121e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_spin_lock_queue_a0282f49b46eb2663ee2e939758e13047}\label{class_captain_1_1_spin_lock_queue_a0282f49b46eb2663ee2e939758e13047} 
+\index{Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}!Extract@{Extract}}
+\index{Extract@{Extract}!Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Extract()}{Extract()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Captain\+::\+Spin\+Lock\+Queue}}$<$ T $>$\+::\+Extract (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+Extracts element from the container repeats until extract is successful 
+\begin{DoxyParams}{Parameters}
+{\em index} & \+: index of the element to extract \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: extracted element 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_spin_lock_queue_a25698b5d782b7685966a4bf6df130a62}\label{class_captain_1_1_spin_lock_queue_a25698b5d782b7685966a4bf6df130a62} 
+\index{Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}!Insert@{Insert}}
+\index{Insert@{Insert}!Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename U $>$ \\
+void \mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Captain\+::\+Spin\+Lock\+Queue}}$<$ T $>$\+::\+Insert (\begin{DoxyParamCaption}\item[{U \&\&}]{elem,  }\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+\Hypertarget{class_captain_1_1_spin_lock_queue_aa1b649941e5a12d3f1e4462b585a2e8d}\label{class_captain_1_1_spin_lock_queue_aa1b649941e5a12d3f1e4462b585a2e8d} 
+\index{Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}!Insert@{Insert}}
+\index{Insert@{Insert}!Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename U $>$ \\
+void \mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Captain\+::\+Spin\+Lock\+Queue}}$<$ T $>$\+::\+Insert (\begin{DoxyParamCaption}\item[{U \&\&}]{elem,  }\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+Inserts element into the queue until it successes 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em U} & \+: template type of element to insert \mbox{]}\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em elem} & \+: element to insert \\
+\hline
+{\em index} & \+: index to insert the element \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_captain_1_1_spin_lock_queue_a2869e89ab2595982de2251544b892c18}\label{class_captain_1_1_spin_lock_queue_a2869e89ab2595982de2251544b892c18} 
+\index{Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Spin\+Lock\+Queue}}$<$ T $>$ \& \mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Captain\+::\+Spin\+Lock\+Queue}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Spin\+Lock\+Queue}}$<$ T $>$ \&\&}]{spin\+Lock\+Queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Move assign operator. 
+
+\Hypertarget{class_captain_1_1_spin_lock_queue_a5754b607a5a8cab23631df6ea03e90b2}\label{class_captain_1_1_spin_lock_queue_a5754b607a5a8cab23631df6ea03e90b2} 
+\index{Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Spin\+Lock\+Queue}} \& \mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Captain\+::\+Spin\+Lock\+Queue}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Spin\+Lock\+Queue}}$<$ T $>$ \&}]{spin\+Lock\+Queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Delete copy assign operator. 
+
+\Hypertarget{class_captain_1_1_spin_lock_queue_a589fb66716668232b1810a81d4168294}\label{class_captain_1_1_spin_lock_queue_a589fb66716668232b1810a81d4168294} 
+\index{Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}!Size@{Size}}
+\index{Size@{Size}!Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Size()}{Size()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+size\+\_\+t \mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Captain\+::\+Spin\+Lock\+Queue}}$<$ T $>$\+::\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets size of the queue after locking shared spinlock \begin{DoxyReturn}{Returns}
+\+: current size (number of used elements) of the queue 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_captain_1_1_spin_lock_queue_a589fb66716668232b1810a81d4168294_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_captain_1_1_spin_lock_queue_a466f36fe35930327f83d9cc97d511675}\label{class_captain_1_1_spin_lock_queue_a466f36fe35930327f83d9cc97d511675} 
+\index{Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}!TryCompareAndInsert@{TryCompareAndInsert}}
+\index{TryCompareAndInsert@{TryCompareAndInsert}!Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TryCompareAndInsert()}{TryCompareAndInsert()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename U $>$ \\
+bool \mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Captain\+::\+Spin\+Lock\+Queue}}$<$ T $>$\+::\+Try\+Compare\+And\+Insert (\begin{DoxyParamCaption}\item[{U \&\&}]{elem,  }\item[{std\+::function$<$ bool(T \&, T \&)$>$ \&\&}]{lambda }\end{DoxyParamCaption})}
+
+\Hypertarget{class_captain_1_1_spin_lock_queue_a28b42a06b8d9f54f50e03ba5b76266d8}\label{class_captain_1_1_spin_lock_queue_a28b42a06b8d9f54f50e03ba5b76266d8} 
+\index{Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}!TryDequeue@{TryDequeue}}
+\index{TryDequeue@{TryDequeue}!Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TryDequeue()}{TryDequeue()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::tuple$<$ T, bool $>$ \mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Captain\+::\+Spin\+Lock\+Queue}}$<$ T $>$\+::\+Try\+Dequeue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Tries to dequeue element from the queue \begin{DoxyReturn}{Returns}
+\+: tuple which contains first element as dequeued object(if successful) and second as whether dequeue was successful 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_spin_lock_queue_a83c9d93428d75bb1797cffd713147439}\label{class_captain_1_1_spin_lock_queue_a83c9d93428d75bb1797cffd713147439} 
+\index{Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}!TryEnqueue@{TryEnqueue}}
+\index{TryEnqueue@{TryEnqueue}!Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TryEnqueue()}{TryEnqueue()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename U $>$ \\
+bool \mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Captain\+::\+Spin\+Lock\+Queue}}$<$ T $>$\+::\+Try\+Enqueue (\begin{DoxyParamCaption}\item[{U \&\&}]{elem }\end{DoxyParamCaption})}
+
+Definite\+Enqueue object to the queue 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em U} & \+: type of object to store this type must be same as \doxylink{class_captain_1_1_spin_lock_queue}{Spin\+Lock\+Queue}\textquotesingle{}s template type \textquotesingle{}T\textquotesingle{} \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em elem} & \+: element to enqueue \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: whether enqueue has been succeeded. This can fail if queue goes over the capacity 
+\end{DoxyReturn}
+Check if type of class and argument is identical\Hypertarget{class_captain_1_1_spin_lock_queue_a53f8fa8d2c3a4aa21436276b820ef7b0}\label{class_captain_1_1_spin_lock_queue_a53f8fa8d2c3a4aa21436276b820ef7b0} 
+\index{Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}!TryExtract@{TryExtract}}
+\index{TryExtract@{TryExtract}!Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TryExtract()}{TryExtract()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::tuple$<$ T, bool $>$ \mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Captain\+::\+Spin\+Lock\+Queue}}$<$ T $>$\+::\+Try\+Extract (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+Tries to extract element in the corresponding index The index must be in the range 
+\begin{DoxyParams}{Parameters}
+{\em index} & \+: index of the element to extract \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: tuple with extracted element and whether extract was successful 
+\end{DoxyReturn}
+\Hypertarget{class_captain_1_1_spin_lock_queue_a0b4e8beed68ddf803b64f02a17d63797}\label{class_captain_1_1_spin_lock_queue_a0b4e8beed68ddf803b64f02a17d63797} 
+\index{Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}!TryInsert@{TryInsert}}
+\index{TryInsert@{TryInsert}!Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TryInsert()}{TryInsert()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename U $>$ \\
+bool \mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Captain\+::\+Spin\+Lock\+Queue}}$<$ T $>$\+::\+Try\+Insert (\begin{DoxyParamCaption}\item[{U \&\&}]{elem,  }\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+\Hypertarget{class_captain_1_1_spin_lock_queue_af885d073a5cb70e0546a9ceacca512e2}\label{class_captain_1_1_spin_lock_queue_af885d073a5cb70e0546a9ceacca512e2} 
+\index{Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}!TryInsert@{TryInsert}}
+\index{TryInsert@{TryInsert}!Captain::SpinLockQueue$<$ T $>$@{Captain::SpinLockQueue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TryInsert()}{TryInsert()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename U $>$ \\
+bool \mbox{\hyperlink{class_captain_1_1_spin_lock_queue}{Captain\+::\+Spin\+Lock\+Queue}}$<$ T $>$\+::\+Try\+Insert (\begin{DoxyParamCaption}\item[{U \&\&}]{elem,  }\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+Tries to insert an element to the container Element is inserted in the corresponding index, and pushes rest to the back 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em U} & \+: Type of element to insert(\+This must have same time with T) This method uses Exclusive\+Lock \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em elem} & \+: forwarding reference of element to insert \\
+\hline
+{\em index} & \+: index to insert to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: true if insertion successes false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Util/\mbox{\hyperlink{_spin_lock_queue-_decl_8hpp}{Spin\+Lock\+Queue-\/\+Decl.\+hpp}}\item 
+Includes/captain/\+Util/\mbox{\hyperlink{_spin_lock_queue_8hpp}{Spin\+Lock\+Queue.\+hpp}}\end{DoxyCompactItemize}

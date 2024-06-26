@@ -1,0 +1,76 @@
+\doxysection{Includes/captain/\+Util/\+Event\+Recorder.hpp File Reference}
+\hypertarget{_event_recorder_8hpp}{}\label{_event_recorder_8hpp}\index{Includes/captain/Util/EventRecorder.hpp@{Includes/captain/Util/EventRecorder.hpp}}
+{\ttfamily \#include $<$deque$>$}\newline
+{\ttfamily \#include $<$captain/\+Structs/\+General\+Structs.\+hpp$>$}\newline
+{\ttfamily \#include $<$captain/\+Util/\+Global\+Hyper\+Parameters.\+hpp$>$}\newline
+{\ttfamily \#include $<$filesystem$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include $<$captain/\+Util/\+Xml\+Parser.\+hpp$>$}\newline
+{\ttfamily \#include $<$captain/\+Util/\+Json\+Parser.\+hpp$>$}\newline
+{\ttfamily \#include $<$captain/\+Util/\+Shared\+Ptr.\+hpp$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+Include dependency graph for Event\+Recorder.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_event_recorder_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_event_recorder_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Captain\+::\+Util\+::\+Event\+Recorder}}
+\item 
+struct \mbox{\hyperlink{struct_captain_1_1_util_1_1_event_recorder_container}{Captain\+::\+Util\+::\+Event\+Recorder\+Container}}
+\begin{DoxyCompactList}\small\item\em structure used to store Event\+Recorders for further record flushing \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_captain}{Captain}}
+\begin{DoxyCompactList}\small\item\em \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_captain_1_1_util}{Captain\+::\+Util}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespace_captain_1_1_util_a53b4cb54f3218c67643407a602174f41}{Captain\+::\+Util\+::\+Event\+Type}} \{ \mbox{\hyperlink{namespace_captain_1_1_util_a53b4cb54f3218c67643407a602174f41a902b0d55fddef6f8d651fe1035b7d4bd}{Captain\+::\+Util\+::\+Error}}
+, \mbox{\hyperlink{namespace_captain_1_1_util_a53b4cb54f3218c67643407a602174f41a0eaadb4fcb48a0a0ed7bc9868be9fbaa}{Captain\+::\+Util\+::\+Warning}}
+, \mbox{\hyperlink{namespace_captain_1_1_util_a53b4cb54f3218c67643407a602174f41a29c2c02a361c9d7028472e5d92cd4a54}{Captain\+::\+Util\+::\+Output}}
+ \}
+\item 
+enum class \mbox{\hyperlink{namespace_captain_1_1_util_a0ed47eb0380f54b9ff76d8a40e794832}{Captain\+::\+Util\+::\+Event\+Recording\+Type}} \{ \mbox{\hyperlink{namespace_captain_1_1_util_a0ed47eb0380f54b9ff76d8a40e794832a8fa7fe786724b2340a8ed6d7fc21439c}{Captain\+::\+Util\+::\+LANE}}
+, \mbox{\hyperlink{namespace_captain_1_1_util_a0ed47eb0380f54b9ff76d8a40e794832ae9fa318f4d73c31493e98096efa497e2}{Captain\+::\+Util\+::\+VEHICLE}}
+, \mbox{\hyperlink{namespace_captain_1_1_util_a0ed47eb0380f54b9ff76d8a40e794832aa0b67bb0a7cfbb35a3b71363059d5d80}{Captain\+::\+Util\+::\+STATION}}
+, \mbox{\hyperlink{namespace_captain_1_1_util_a0ed47eb0380f54b9ff76d8a40e794832acb226b99e7aeebd6f05f2314b416f7a7}{Captain\+::\+Util\+::\+MESO}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{namespace_captain_1_1_util_abdabc05bebfc76ae7dbc60972a59e8a7}{Captain\+::\+Util\+::compare\+Timestamp}} (const T \&lhs, const T \&rhs)
+\item 
+std\+::string \mbox{\hyperlink{namespace_captain_1_1_util_ae3f131a909132d19ba648351b29b2529}{Captain\+::\+Util\+::\+Vehicle\+Record\+Info\+To\+Text}} (const \mbox{\hyperlink{struct_captain_1_1_vehicle_record_info}{Vehicle\+Record\+Info}} \&vehicle\+Record\+Info)
+\item 
+std\+::string \mbox{\hyperlink{namespace_captain_1_1_util_ad4f9b0cdca913106b62c914748221126}{Captain\+::\+Util\+::\+Lane\+Record\+Info\+To\+Text}} (const \mbox{\hyperlink{struct_captain_1_1_lane_record_info}{Lane\+Record\+Info}} \&meso\+Record\+Info)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+STS19 \doxylink{namespace_captain}{Captain} Copyright (c) 2019 Justin Kim, Kaist Copying, reproducing and commercial use is not allowed. We are not conveying any rights to any intellectual property of any third parties
+
+\begin{DoxyVersion}{Version}
+\+: 1.\+0 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+\+: Justin Kim 
+\end{DoxyAuthor}

@@ -1,0 +1,7 @@
+<map id="Captain::DMode::DLC" name="Captain::DMode::DLC">
+<area shape="rect" id="Node000001" title=" " alt="" coords="132,464,271,576"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_d_mode_1_1_drive_model.html" title=" " alt="" coords="5,5,189,416"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,429,185,463,180,465,169,431"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_d_mode_1_1_i_multiple_vehicle_trackable.html" title=" " alt="" coords="213,40,400,381"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="246,396,222,465,217,464,241,395"/>
+</map>

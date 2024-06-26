@@ -1,0 +1,13 @@
+<map id="Captain::VehicleDescriptor" name="Captain::VehicleDescriptor">
+<area shape="rect" id="Node000001" title=" " alt="" coords="24,992,191,1061"/>
+<area shape="rect" id="Node000002" href="$struct_captain_1_1_vehicle_info.html" title=" " alt="" coords="13,475,141,928"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,927,105,975,100,975,95,928"/>
+<area shape="rect" id="Node000003" href="$struct_captain_1_1_vehicle_state.html" title="This Expresses specific state of the vehicle." alt="" coords="165,507,319,896"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,897,140,969,136,978,131,976,136,967,167,895"/>
+<area shape="rect" id="Node000004" href="$struct_captain_1_1_path_identifier.html" title=" " alt="" coords="5,16,159,384"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="82,383,93,418,110,449,119,458,130,461,142,464,154,473,169,491,165,494,151,477,140,469,129,466,117,462,106,452,88,420,77,385"/>
+<area shape="rect" id="Node000005" href="$struct_captain_1_1_position.html" title="Wrapper for representing positions of units." alt="" coords="186,144,298,256"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="245,256,245,490,239,490,239,256"/>
+<area shape="rect" id="Node000006" href="$struct_captain_1_1_unit_identifier.html" title=" " alt="" coords="332,5,472,395"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="389,395,375,451,354,507,329,562,324,559,350,505,370,450,384,393"/>
+</map>

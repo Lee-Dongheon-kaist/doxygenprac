@@ -1,0 +1,11 @@
+<map id="Captain::V2X::getMessageSend" name="Captain::V2X::getMessageSend">
+<area shape="rect" id="Node000001" title=" " alt="" coords="526,47,731,73"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_enhanced_micro_link.html#ae65b36f53670d4de3b41f9ff1e42165b" title=" " alt="" coords="276,5,478,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="510,47,478,43,478,37,511,42"/>
+<area shape="rect" id="Node000004" href="$class_captain_1_1_node_1_1_intersection_micro_link.html#a19898c4accf8c5279db99be0be5cfd9e" title=" " alt="" coords="276,72,478,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="511,78,479,83,478,77,510,73"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_node_1_1_uniform_link.html#a0d6041476a4e88f85e67c5e67d7bd7ef" title=" " alt="" coords="27,5,206,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="260,29,206,29,206,24,260,24"/>
+<area shape="rect" id="Node000005" href="$class_captain_1_1_node_1_1_uniform_intersection_link.html#ab74874f2fa4e1eb926fdaf3f287ad0c5" title=" " alt="" coords="5,72,228,115"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="260,96,228,96,228,91,260,91"/>
+</map>

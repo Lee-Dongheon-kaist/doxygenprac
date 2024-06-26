@@ -1,0 +1,153 @@
+\doxysection{Captain\+::Node\+::Unit\+Connection\+Info Struct Reference}
+\hypertarget{struct_captain_1_1_node_1_1_unit_connection_info}{}\label{struct_captain_1_1_node_1_1_unit_connection_info}\index{Captain::Node::UnitConnectionInfo@{Captain::Node::UnitConnectionInfo}}
+
+
+Used to store connections in perspective of lane.  
+
+
+
+
+{\ttfamily \#include $<$Unit\+Connection\+Info.\+hpp$>$}
+
+
+
+Collaboration diagram for Captain\+::Node\+::Unit\+Connection\+Info\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{struct_captain_1_1_node_1_1_unit_connection_info__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info_adf3a4b9e2138a7193c9c4f59fd36c45b}{Unit\+Connection\+Info}} ()=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info_a43c51b913de1783301797118e9e8c43e}{Unit\+Connection\+Info}} (\mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} $>$ previous\+Unit\+Vector)
+\item 
+bool \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info_a51599b08717a088e4f4f33aacde75d5b}{operator==}} (const \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} \&unit\+Connection\+Info) const
+\item 
+bool \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info_ab0ff448b94e3930f72941d18f1c8830a}{operator!=}} (const \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} \&unit\+Connection\+Info) const
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info_a72dbde331d77d1b1ac259f29d15e688f}{Unit\+Connection\+Info}} (std\+::vector$<$ \mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} $>$ $>$ unit\+Vector, std\+::vector$<$ double $>$ unit\+Priority, std\+::size\+\_\+t time\+Period=0)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} $>$ $>$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info_ae658d7c785483f58643d797942f3db8c}{Unit\+Ptr\+Vector}}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info_a721d6f65cafcee1dc300c1b910749e4d}{Unit\+Priority\+Vector}}
+\begin{DoxyCompactList}\small\item\em Vector of ptr to previous Cells. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_captain_1_1_v2_x}{V2X}} \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info_a388cadc3f4d5bb75f1b6ce064f07af97}{Unit\+V2X}}
+\begin{DoxyCompactList}\small\item\em Vector of priority of previous Cells. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info_af0f0ee7c669771875d37f1ad62796782}{cycle\+Length}} = 0
+\begin{DoxyCompactList}\small\item\em Vector of v2x of previous Cells. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info_ac6ed26d102951738aa9b915db942db21}{offset}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Used to store connections in perspective of lane. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_captain_1_1_node_1_1_unit_connection_info_adf3a4b9e2138a7193c9c4f59fd36c45b}\label{struct_captain_1_1_node_1_1_unit_connection_info_adf3a4b9e2138a7193c9c4f59fd36c45b} 
+\index{Captain::Node::UnitConnectionInfo@{Captain::Node::UnitConnectionInfo}!UnitConnectionInfo@{UnitConnectionInfo}}
+\index{UnitConnectionInfo@{UnitConnectionInfo}!Captain::Node::UnitConnectionInfo@{Captain::Node::UnitConnectionInfo}}
+\doxysubsubsection{\texorpdfstring{UnitConnectionInfo()}{UnitConnectionInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Captain\+::\+Node\+::\+Unit\+Connection\+Info\+::\+Unit\+Connection\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{struct_captain_1_1_node_1_1_unit_connection_info_a43c51b913de1783301797118e9e8c43e}\label{struct_captain_1_1_node_1_1_unit_connection_info_a43c51b913de1783301797118e9e8c43e} 
+\index{Captain::Node::UnitConnectionInfo@{Captain::Node::UnitConnectionInfo}!UnitConnectionInfo@{UnitConnectionInfo}}
+\index{UnitConnectionInfo@{UnitConnectionInfo}!Captain::Node::UnitConnectionInfo@{Captain::Node::UnitConnectionInfo}}
+\doxysubsubsection{\texorpdfstring{UnitConnectionInfo()}{UnitConnectionInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Captain\+::\+Node\+::\+Unit\+Connection\+Info\+::\+Unit\+Connection\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} $>$}]{previous\+Unit\+Vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+\Hypertarget{struct_captain_1_1_node_1_1_unit_connection_info_a72dbde331d77d1b1ac259f29d15e688f}\label{struct_captain_1_1_node_1_1_unit_connection_info_a72dbde331d77d1b1ac259f29d15e688f} 
+\index{Captain::Node::UnitConnectionInfo@{Captain::Node::UnitConnectionInfo}!UnitConnectionInfo@{UnitConnectionInfo}}
+\index{UnitConnectionInfo@{UnitConnectionInfo}!Captain::Node::UnitConnectionInfo@{Captain::Node::UnitConnectionInfo}}
+\doxysubsubsection{\texorpdfstring{UnitConnectionInfo()}{UnitConnectionInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Captain\+::\+Node\+::\+Unit\+Connection\+Info\+::\+Unit\+Connection\+Info (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} $>$ $>$}]{unit\+Vector,  }\item[{std\+::vector$<$ double $>$}]{unit\+Priority,  }\item[{std\+::size\+\_\+t}]{time\+Period = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\doxylink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info} 
+\begin{DoxyParams}{Parameters}
+{\em unit\+Vector} & \+: vector of previous Unit that this lane is connected \\
+\hline
+{\em unit\+Priority} & \+: unit priority for previous units to get vehicles from \\
+\hline
+{\em time\+Period} & \+: time interval of this unit being connected if 0, it indicates that this connection is set forever (used for \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_captain_1_1_node_1_1_unit_connection_info_ab0ff448b94e3930f72941d18f1c8830a}\label{struct_captain_1_1_node_1_1_unit_connection_info_ab0ff448b94e3930f72941d18f1c8830a} 
+\index{Captain::Node::UnitConnectionInfo@{Captain::Node::UnitConnectionInfo}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Captain::Node::UnitConnectionInfo@{Captain::Node::UnitConnectionInfo}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Captain\+::\+Node\+::\+Unit\+Connection\+Info\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} \&}]{unit\+Connection\+Info }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_captain_1_1_node_1_1_unit_connection_info_a51599b08717a088e4f4f33aacde75d5b}\label{struct_captain_1_1_node_1_1_unit_connection_info_a51599b08717a088e4f4f33aacde75d5b} 
+\index{Captain::Node::UnitConnectionInfo@{Captain::Node::UnitConnectionInfo}!operator==@{operator==}}
+\index{operator==@{operator==}!Captain::Node::UnitConnectionInfo@{Captain::Node::UnitConnectionInfo}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Captain\+::\+Node\+::\+Unit\+Connection\+Info\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_node_1_1_unit_connection_info}{Unit\+Connection\+Info}} \&}]{unit\+Connection\+Info }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_captain_1_1_node_1_1_unit_connection_info_a51599b08717a088e4f4f33aacde75d5b_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_captain_1_1_node_1_1_unit_connection_info_af0f0ee7c669771875d37f1ad62796782}\label{struct_captain_1_1_node_1_1_unit_connection_info_af0f0ee7c669771875d37f1ad62796782} 
+\index{Captain::Node::UnitConnectionInfo@{Captain::Node::UnitConnectionInfo}!cycleLength@{cycleLength}}
+\index{cycleLength@{cycleLength}!Captain::Node::UnitConnectionInfo@{Captain::Node::UnitConnectionInfo}}
+\doxysubsubsection{\texorpdfstring{cycleLength}{cycleLength}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Captain\+::\+Node\+::\+Unit\+Connection\+Info\+::cycle\+Length = 0}
+
+
+
+Vector of v2x of previous Cells. 
+
+\Hypertarget{struct_captain_1_1_node_1_1_unit_connection_info_ac6ed26d102951738aa9b915db942db21}\label{struct_captain_1_1_node_1_1_unit_connection_info_ac6ed26d102951738aa9b915db942db21} 
+\index{Captain::Node::UnitConnectionInfo@{Captain::Node::UnitConnectionInfo}!offset@{offset}}
+\index{offset@{offset}!Captain::Node::UnitConnectionInfo@{Captain::Node::UnitConnectionInfo}}
+\doxysubsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily std\+::size\+\_\+t Captain\+::\+Node\+::\+Unit\+Connection\+Info\+::offset = 0}
+
+\Hypertarget{struct_captain_1_1_node_1_1_unit_connection_info_a721d6f65cafcee1dc300c1b910749e4d}\label{struct_captain_1_1_node_1_1_unit_connection_info_a721d6f65cafcee1dc300c1b910749e4d} 
+\index{Captain::Node::UnitConnectionInfo@{Captain::Node::UnitConnectionInfo}!UnitPriorityVector@{UnitPriorityVector}}
+\index{UnitPriorityVector@{UnitPriorityVector}!Captain::Node::UnitConnectionInfo@{Captain::Node::UnitConnectionInfo}}
+\doxysubsubsection{\texorpdfstring{UnitPriorityVector}{UnitPriorityVector}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ Captain\+::\+Node\+::\+Unit\+Connection\+Info\+::\+Unit\+Priority\+Vector}
+
+
+
+Vector of ptr to previous Cells. 
+
+\Hypertarget{struct_captain_1_1_node_1_1_unit_connection_info_ae658d7c785483f58643d797942f3db8c}\label{struct_captain_1_1_node_1_1_unit_connection_info_ae658d7c785483f58643d797942f3db8c} 
+\index{Captain::Node::UnitConnectionInfo@{Captain::Node::UnitConnectionInfo}!UnitPtrVector@{UnitPtrVector}}
+\index{UnitPtrVector@{UnitPtrVector}!Captain::Node::UnitConnectionInfo@{Captain::Node::UnitConnectionInfo}}
+\doxysubsubsection{\texorpdfstring{UnitPtrVector}{UnitPtrVector}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}}$>$ $>$ Captain\+::\+Node\+::\+Unit\+Connection\+Info\+::\+Unit\+Ptr\+Vector}
+
+\Hypertarget{struct_captain_1_1_node_1_1_unit_connection_info_a388cadc3f4d5bb75f1b6ce064f07af97}\label{struct_captain_1_1_node_1_1_unit_connection_info_a388cadc3f4d5bb75f1b6ce064f07af97} 
+\index{Captain::Node::UnitConnectionInfo@{Captain::Node::UnitConnectionInfo}!UnitV2X@{UnitV2X}}
+\index{UnitV2X@{UnitV2X}!Captain::Node::UnitConnectionInfo@{Captain::Node::UnitConnectionInfo}}
+\doxysubsubsection{\texorpdfstring{UnitV2X}{UnitV2X}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_v2_x}{V2X}} Captain\+::\+Node\+::\+Unit\+Connection\+Info\+::\+Unit\+V2X}
+
+
+
+Vector of priority of previous Cells. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Network/\mbox{\hyperlink{_unit_connection_info_8hpp}{Unit\+Connection\+Info.\+hpp}}\end{DoxyCompactItemize}

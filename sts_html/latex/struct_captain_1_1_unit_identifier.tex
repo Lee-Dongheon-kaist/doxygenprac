@@ -1,0 +1,270 @@
+\doxysection{Captain\+::Unit\+Identifier Struct Reference}
+\hypertarget{struct_captain_1_1_unit_identifier}{}\label{struct_captain_1_1_unit_identifier}\index{Captain::UnitIdentifier@{Captain::UnitIdentifier}}
+
+
+{\ttfamily \#include $<$Unit\+Identifier.\+hpp$>$}
+
+
+
+Collaboration diagram for Captain\+::Unit\+Identifier\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{struct_captain_1_1_unit_identifier__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_unit_identifier_ac533cb1cbf910aa0a5b30075c5cdd15e}{Unit\+Identifier}} ()=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_unit_identifier_af2a6440c56fda27b55d93f45b421423d}{Unit\+Identifier}} (int primary\+ID, int sub\+ID, \mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}} unit\+Type=\mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12edaec0fc0100c4fc1ce4eea230c3dc10360}{Unit\+Type\+::\+Undefined}})
+\item 
+\mbox{\hyperlink{struct_captain_1_1_unit_identifier_ad26e52bd26ab2deb82feedb48a0a361a}{Unit\+Identifier}} (int primary\+ID, \mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}} unit\+Type=\mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12edaec0fc0100c4fc1ce4eea230c3dc10360}{Unit\+Type\+::\+Undefined}})
+\item 
+\mbox{\hyperlink{struct_captain_1_1_unit_identifier_a21189f5a7c956bfa4920f30a0e759193}{Unit\+Identifier}} (int primary\+ID, \mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}} unit\+Type, int recordprimary\+ID)
+\item 
+\mbox{\hyperlink{struct_captain_1_1_unit_identifier_a26dea611c66254c117071baf405417be}{\texorpdfstring{$\sim$}{\string~}\+Unit\+Identifier}} ()=default
+\item 
+bool \mbox{\hyperlink{struct_captain_1_1_unit_identifier_a6214904c89ba52714b11989f117ada74}{operator==}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&unit\+Identifier) const
+\item 
+bool \mbox{\hyperlink{struct_captain_1_1_unit_identifier_a6a1c11d08e55db87e850e77a3b02e1cc}{operator!=}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&unit\+Identifier) const
+\item 
+\mbox{\hyperlink{struct_captain_1_1_unit_identifier_a6bc2d03ff7d10e96815ed50a45eef8f6}{Unit\+Identifier}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&unit\+Identifier)=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_unit_identifier_a07114bd0335a149ad9d67e4ca07b1daa}{Unit\+Identifier}} (\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&\&unit\+Identifier) noexcept
+\item 
+\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \& \mbox{\hyperlink{struct_captain_1_1_unit_identifier_afdb36443385494f0a83e16a05d622815}{operator=}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&unit\+Identifier)
+\item 
+\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \& \mbox{\hyperlink{struct_captain_1_1_unit_identifier_acb8c204f8e264cd3ce73f66d3903f5d3}{operator=}} (\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&\&unit\+Identifier) noexcept
+\item 
+\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \mbox{\hyperlink{struct_captain_1_1_unit_identifier_aa3c00b710caca42b33a2c2977cabd23d}{With\+Sub\+ID}} (int lane\+ID) const
+\item 
+std\+::string \mbox{\hyperlink{struct_captain_1_1_unit_identifier_aa2fff54586061f179fb7f41acc41d802}{Get\+Prefix}} () const
+\item 
+std\+::filesystem\+::path \mbox{\hyperlink{struct_captain_1_1_unit_identifier_afffc9a87382802c99fa8ec4dd9933ed7}{Get\+File\+Path}} (int cell\+Id=0) const
+\item 
+void \mbox{\hyperlink{struct_captain_1_1_unit_identifier_ab4cc54cd2c8f1cd60f55401b43061bea}{Set\+Save\+Dir}} (std\+::filesystem\+::path dir\+Path)
+\item 
+void \mbox{\hyperlink{struct_captain_1_1_unit_identifier_acd5139c561f81f73253ab2c1af4c1949}{Set\+Record\+Info}} (int record\+Primary\+Id, std\+::vector$<$ int $>$ record\+Lane\+Id\+Vector, std\+::vector$<$ double $>$ offset\+Vector)
+\item 
+void \mbox{\hyperlink{struct_captain_1_1_unit_identifier_a32c0be890b3b2ba760e4548f3be3a805}{Set\+Record\+Info}} (int record\+Primary\+Id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{struct_captain_1_1_unit_identifier_a02ffd5bac139e8da74137cd91ea0527d}{Primary\+ID}} = -\/1
+\item 
+int \mbox{\hyperlink{struct_captain_1_1_unit_identifier_aa4e713c12f8ae18c5a9b704eee9c7097}{Sub\+ID}} = -\/1
+\item 
+\mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}} \mbox{\hyperlink{struct_captain_1_1_unit_identifier_ac105f7546699da74ab3db76adb3f2a48}{Type}} = \mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12edaec0fc0100c4fc1ce4eea230c3dc10360}{Unit\+Type\+::\+Undefined}}
+\item 
+int \mbox{\hyperlink{struct_captain_1_1_unit_identifier_add6f488dfb184802ae262fbfb1218db0}{Record\+Primary\+ID}} = -\/1
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{struct_captain_1_1_unit_identifier_a65e9c43c687d6551602981ef1d3022a7}{Record\+Lane\+Id\+Vector}}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{struct_captain_1_1_unit_identifier_af30a85efdf064d4bb0ff8e2ae2a2618d}{Record\+Offset\+Vector}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_captain_1_1_unit_identifier_ac533cb1cbf910aa0a5b30075c5cdd15e}\label{struct_captain_1_1_unit_identifier_ac533cb1cbf910aa0a5b30075c5cdd15e} 
+\index{Captain::UnitIdentifier@{Captain::UnitIdentifier}!UnitIdentifier@{UnitIdentifier}}
+\index{UnitIdentifier@{UnitIdentifier}!Captain::UnitIdentifier@{Captain::UnitIdentifier}}
+\doxysubsubsection{\texorpdfstring{UnitIdentifier()}{UnitIdentifier()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily Captain\+::\+Unit\+Identifier\+::\+Unit\+Identifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{struct_captain_1_1_unit_identifier_af2a6440c56fda27b55d93f45b421423d}\label{struct_captain_1_1_unit_identifier_af2a6440c56fda27b55d93f45b421423d} 
+\index{Captain::UnitIdentifier@{Captain::UnitIdentifier}!UnitIdentifier@{UnitIdentifier}}
+\index{UnitIdentifier@{UnitIdentifier}!Captain::UnitIdentifier@{Captain::UnitIdentifier}}
+\doxysubsubsection{\texorpdfstring{UnitIdentifier()}{UnitIdentifier()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily Captain\+::\+Unit\+Identifier\+::\+Unit\+Identifier (\begin{DoxyParamCaption}\item[{int}]{primary\+ID,  }\item[{int}]{sub\+ID,  }\item[{\mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}}}]{unit\+Type = {\ttfamily \mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12edaec0fc0100c4fc1ce4eea230c3dc10360}{Unit\+Type\+::\+Undefined}}} }\end{DoxyParamCaption})}
+
+Constructor for cell Units 
+\begin{DoxyParams}{Parameters}
+{\em primary\+ID} & \+: ID of the link \\
+\hline
+{\em sub\+ID} & \+: ID of the lane \\
+\hline
+{\em unit\+Type} & \+: type of the unit \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_captain_1_1_unit_identifier_ad26e52bd26ab2deb82feedb48a0a361a}\label{struct_captain_1_1_unit_identifier_ad26e52bd26ab2deb82feedb48a0a361a} 
+\index{Captain::UnitIdentifier@{Captain::UnitIdentifier}!UnitIdentifier@{UnitIdentifier}}
+\index{UnitIdentifier@{UnitIdentifier}!Captain::UnitIdentifier@{Captain::UnitIdentifier}}
+\doxysubsubsection{\texorpdfstring{UnitIdentifier()}{UnitIdentifier()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily Captain\+::\+Unit\+Identifier\+::\+Unit\+Identifier (\begin{DoxyParamCaption}\item[{int}]{primary\+ID,  }\item[{\mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}}}]{unit\+Type = {\ttfamily \mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12edaec0fc0100c4fc1ce4eea230c3dc10360}{Unit\+Type\+::\+Undefined}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructor for link Units 
+\begin{DoxyParams}{Parameters}
+{\em primary\+ID} & \+: ID of the link \\
+\hline
+{\em unit\+Type} & \+: type of the unit \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_captain_1_1_unit_identifier_a21189f5a7c956bfa4920f30a0e759193}\label{struct_captain_1_1_unit_identifier_a21189f5a7c956bfa4920f30a0e759193} 
+\index{Captain::UnitIdentifier@{Captain::UnitIdentifier}!UnitIdentifier@{UnitIdentifier}}
+\index{UnitIdentifier@{UnitIdentifier}!Captain::UnitIdentifier@{Captain::UnitIdentifier}}
+\doxysubsubsection{\texorpdfstring{UnitIdentifier()}{UnitIdentifier()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily Captain\+::\+Unit\+Identifier\+::\+Unit\+Identifier (\begin{DoxyParamCaption}\item[{int}]{primary\+ID,  }\item[{\mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}}}]{unit\+Type,  }\item[{int}]{recordprimary\+ID }\end{DoxyParamCaption})}
+
+Constructor for link Units with Record\+Primary\+ID 
+\begin{DoxyParams}{Parameters}
+{\em primary\+ID} & \+: ID of the link \\
+\hline
+{\em unit\+Type} & \+: type of the unit \\
+\hline
+{\em Record\+Primary\+ID} & ID of the Record\+Primary\+ID \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_captain_1_1_unit_identifier_a26dea611c66254c117071baf405417be}\label{struct_captain_1_1_unit_identifier_a26dea611c66254c117071baf405417be} 
+\index{Captain::UnitIdentifier@{Captain::UnitIdentifier}!````~UnitIdentifier@{\texorpdfstring{$\sim$}{\string~}UnitIdentifier}}
+\index{````~UnitIdentifier@{\texorpdfstring{$\sim$}{\string~}UnitIdentifier}!Captain::UnitIdentifier@{Captain::UnitIdentifier}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}UnitIdentifier()}{\string~UnitIdentifier()}}
+{\footnotesize\ttfamily Captain\+::\+Unit\+Identifier\+::\texorpdfstring{$\sim$}{\string~}\+Unit\+Identifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{struct_captain_1_1_unit_identifier_a6bc2d03ff7d10e96815ed50a45eef8f6}\label{struct_captain_1_1_unit_identifier_a6bc2d03ff7d10e96815ed50a45eef8f6} 
+\index{Captain::UnitIdentifier@{Captain::UnitIdentifier}!UnitIdentifier@{UnitIdentifier}}
+\index{UnitIdentifier@{UnitIdentifier}!Captain::UnitIdentifier@{Captain::UnitIdentifier}}
+\doxysubsubsection{\texorpdfstring{UnitIdentifier()}{UnitIdentifier()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily Captain\+::\+Unit\+Identifier\+::\+Unit\+Identifier (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{unit\+Identifier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{struct_captain_1_1_unit_identifier_a07114bd0335a149ad9d67e4ca07b1daa}\label{struct_captain_1_1_unit_identifier_a07114bd0335a149ad9d67e4ca07b1daa} 
+\index{Captain::UnitIdentifier@{Captain::UnitIdentifier}!UnitIdentifier@{UnitIdentifier}}
+\index{UnitIdentifier@{UnitIdentifier}!Captain::UnitIdentifier@{Captain::UnitIdentifier}}
+\doxysubsubsection{\texorpdfstring{UnitIdentifier()}{UnitIdentifier()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily Captain\+::\+Unit\+Identifier\+::\+Unit\+Identifier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&\&}]{unit\+Identifier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_captain_1_1_unit_identifier_afffc9a87382802c99fa8ec4dd9933ed7}\label{struct_captain_1_1_unit_identifier_afffc9a87382802c99fa8ec4dd9933ed7} 
+\index{Captain::UnitIdentifier@{Captain::UnitIdentifier}!GetFilePath@{GetFilePath}}
+\index{GetFilePath@{GetFilePath}!Captain::UnitIdentifier@{Captain::UnitIdentifier}}
+\doxysubsubsection{\texorpdfstring{GetFilePath()}{GetFilePath()}}
+{\footnotesize\ttfamily std\+::filesystem\+::path Captain\+::\+Unit\+Identifier\+::\+Get\+File\+Path (\begin{DoxyParamCaption}\item[{int}]{cell\+Id = {\ttfamily 0} }\end{DoxyParamCaption}) const}
+
+\Hypertarget{struct_captain_1_1_unit_identifier_aa2fff54586061f179fb7f41acc41d802}\label{struct_captain_1_1_unit_identifier_aa2fff54586061f179fb7f41acc41d802} 
+\index{Captain::UnitIdentifier@{Captain::UnitIdentifier}!GetPrefix@{GetPrefix}}
+\index{GetPrefix@{GetPrefix}!Captain::UnitIdentifier@{Captain::UnitIdentifier}}
+\doxysubsubsection{\texorpdfstring{GetPrefix()}{GetPrefix()}}
+{\footnotesize\ttfamily std\+::string Captain\+::\+Unit\+Identifier\+::\+Get\+Prefix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{struct_captain_1_1_unit_identifier_a6a1c11d08e55db87e850e77a3b02e1cc}\label{struct_captain_1_1_unit_identifier_a6a1c11d08e55db87e850e77a3b02e1cc} 
+\index{Captain::UnitIdentifier@{Captain::UnitIdentifier}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Captain::UnitIdentifier@{Captain::UnitIdentifier}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Captain\+::\+Unit\+Identifier\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{unit\+Identifier }\end{DoxyParamCaption}) const}
+
+\Hypertarget{struct_captain_1_1_unit_identifier_afdb36443385494f0a83e16a05d622815}\label{struct_captain_1_1_unit_identifier_afdb36443385494f0a83e16a05d622815} 
+\index{Captain::UnitIdentifier@{Captain::UnitIdentifier}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::UnitIdentifier@{Captain::UnitIdentifier}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \& Captain\+::\+Unit\+Identifier\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{unit\+Identifier }\end{DoxyParamCaption})}
+
+\Hypertarget{struct_captain_1_1_unit_identifier_acb8c204f8e264cd3ce73f66d3903f5d3}\label{struct_captain_1_1_unit_identifier_acb8c204f8e264cd3ce73f66d3903f5d3} 
+\index{Captain::UnitIdentifier@{Captain::UnitIdentifier}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::UnitIdentifier@{Captain::UnitIdentifier}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \& Captain\+::\+Unit\+Identifier\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&\&}]{unit\+Identifier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\Hypertarget{struct_captain_1_1_unit_identifier_a6214904c89ba52714b11989f117ada74}\label{struct_captain_1_1_unit_identifier_a6214904c89ba52714b11989f117ada74} 
+\index{Captain::UnitIdentifier@{Captain::UnitIdentifier}!operator==@{operator==}}
+\index{operator==@{operator==}!Captain::UnitIdentifier@{Captain::UnitIdentifier}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Captain\+::\+Unit\+Identifier\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{unit\+Identifier }\end{DoxyParamCaption}) const}
+
+\Hypertarget{struct_captain_1_1_unit_identifier_a32c0be890b3b2ba760e4548f3be3a805}\label{struct_captain_1_1_unit_identifier_a32c0be890b3b2ba760e4548f3be3a805} 
+\index{Captain::UnitIdentifier@{Captain::UnitIdentifier}!SetRecordInfo@{SetRecordInfo}}
+\index{SetRecordInfo@{SetRecordInfo}!Captain::UnitIdentifier@{Captain::UnitIdentifier}}
+\doxysubsubsection{\texorpdfstring{SetRecordInfo()}{SetRecordInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Captain\+::\+Unit\+Identifier\+::\+Set\+Record\+Info (\begin{DoxyParamCaption}\item[{int}]{record\+Primary\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_captain_1_1_unit_identifier_acd5139c561f81f73253ab2c1af4c1949}\label{struct_captain_1_1_unit_identifier_acd5139c561f81f73253ab2c1af4c1949} 
+\index{Captain::UnitIdentifier@{Captain::UnitIdentifier}!SetRecordInfo@{SetRecordInfo}}
+\index{SetRecordInfo@{SetRecordInfo}!Captain::UnitIdentifier@{Captain::UnitIdentifier}}
+\doxysubsubsection{\texorpdfstring{SetRecordInfo()}{SetRecordInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Captain\+::\+Unit\+Identifier\+::\+Set\+Record\+Info (\begin{DoxyParamCaption}\item[{int}]{record\+Primary\+Id,  }\item[{std\+::vector$<$ int $>$}]{record\+Lane\+Id\+Vector,  }\item[{std\+::vector$<$ double $>$}]{offset\+Vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_captain_1_1_unit_identifier_acd5139c561f81f73253ab2c1af4c1949_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_captain_1_1_unit_identifier_ab4cc54cd2c8f1cd60f55401b43061bea}\label{struct_captain_1_1_unit_identifier_ab4cc54cd2c8f1cd60f55401b43061bea} 
+\index{Captain::UnitIdentifier@{Captain::UnitIdentifier}!SetSaveDir@{SetSaveDir}}
+\index{SetSaveDir@{SetSaveDir}!Captain::UnitIdentifier@{Captain::UnitIdentifier}}
+\doxysubsubsection{\texorpdfstring{SetSaveDir()}{SetSaveDir()}}
+{\footnotesize\ttfamily void Captain\+::\+Unit\+Identifier\+::\+Set\+Save\+Dir (\begin{DoxyParamCaption}\item[{std\+::filesystem\+::path}]{dir\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_captain_1_1_unit_identifier_aa3c00b710caca42b33a2c2977cabd23d}\label{struct_captain_1_1_unit_identifier_aa3c00b710caca42b33a2c2977cabd23d} 
+\index{Captain::UnitIdentifier@{Captain::UnitIdentifier}!WithSubID@{WithSubID}}
+\index{WithSubID@{WithSubID}!Captain::UnitIdentifier@{Captain::UnitIdentifier}}
+\doxysubsubsection{\texorpdfstring{WithSubID()}{WithSubID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} Captain\+::\+Unit\+Identifier\+::\+With\+Sub\+ID (\begin{DoxyParamCaption}\item[{int}]{lane\+ID }\end{DoxyParamCaption}) const}
+
+Adds lane\+ID to current copy of \doxylink{struct_captain_1_1_unit_identifier}{Unit\+Identifier} 
+\begin{DoxyParams}{Parameters}
+{\em lane\+ID} & \+: ID of the lane to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: copy of this \doxylink{struct_captain_1_1_unit_identifier}{Unit\+Identifier} with given lane\+ID 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_captain_1_1_unit_identifier_aa3c00b710caca42b33a2c2977cabd23d_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_captain_1_1_unit_identifier_a02ffd5bac139e8da74137cd91ea0527d}\label{struct_captain_1_1_unit_identifier_a02ffd5bac139e8da74137cd91ea0527d} 
+\index{Captain::UnitIdentifier@{Captain::UnitIdentifier}!PrimaryID@{PrimaryID}}
+\index{PrimaryID@{PrimaryID}!Captain::UnitIdentifier@{Captain::UnitIdentifier}}
+\doxysubsubsection{\texorpdfstring{PrimaryID}{PrimaryID}}
+{\footnotesize\ttfamily int Captain\+::\+Unit\+Identifier\+::\+Primary\+ID = -\/1}
+
+\Hypertarget{struct_captain_1_1_unit_identifier_a65e9c43c687d6551602981ef1d3022a7}\label{struct_captain_1_1_unit_identifier_a65e9c43c687d6551602981ef1d3022a7} 
+\index{Captain::UnitIdentifier@{Captain::UnitIdentifier}!RecordLaneIdVector@{RecordLaneIdVector}}
+\index{RecordLaneIdVector@{RecordLaneIdVector}!Captain::UnitIdentifier@{Captain::UnitIdentifier}}
+\doxysubsubsection{\texorpdfstring{RecordLaneIdVector}{RecordLaneIdVector}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Captain\+::\+Unit\+Identifier\+::\+Record\+Lane\+Id\+Vector}
+
+\Hypertarget{struct_captain_1_1_unit_identifier_af30a85efdf064d4bb0ff8e2ae2a2618d}\label{struct_captain_1_1_unit_identifier_af30a85efdf064d4bb0ff8e2ae2a2618d} 
+\index{Captain::UnitIdentifier@{Captain::UnitIdentifier}!RecordOffsetVector@{RecordOffsetVector}}
+\index{RecordOffsetVector@{RecordOffsetVector}!Captain::UnitIdentifier@{Captain::UnitIdentifier}}
+\doxysubsubsection{\texorpdfstring{RecordOffsetVector}{RecordOffsetVector}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ Captain\+::\+Unit\+Identifier\+::\+Record\+Offset\+Vector}
+
+\Hypertarget{struct_captain_1_1_unit_identifier_add6f488dfb184802ae262fbfb1218db0}\label{struct_captain_1_1_unit_identifier_add6f488dfb184802ae262fbfb1218db0} 
+\index{Captain::UnitIdentifier@{Captain::UnitIdentifier}!RecordPrimaryID@{RecordPrimaryID}}
+\index{RecordPrimaryID@{RecordPrimaryID}!Captain::UnitIdentifier@{Captain::UnitIdentifier}}
+\doxysubsubsection{\texorpdfstring{RecordPrimaryID}{RecordPrimaryID}}
+{\footnotesize\ttfamily int Captain\+::\+Unit\+Identifier\+::\+Record\+Primary\+ID = -\/1}
+
+\Hypertarget{struct_captain_1_1_unit_identifier_aa4e713c12f8ae18c5a9b704eee9c7097}\label{struct_captain_1_1_unit_identifier_aa4e713c12f8ae18c5a9b704eee9c7097} 
+\index{Captain::UnitIdentifier@{Captain::UnitIdentifier}!SubID@{SubID}}
+\index{SubID@{SubID}!Captain::UnitIdentifier@{Captain::UnitIdentifier}}
+\doxysubsubsection{\texorpdfstring{SubID}{SubID}}
+{\footnotesize\ttfamily int Captain\+::\+Unit\+Identifier\+::\+Sub\+ID = -\/1}
+
+\Hypertarget{struct_captain_1_1_unit_identifier_ac105f7546699da74ab3db76adb3f2a48}\label{struct_captain_1_1_unit_identifier_ac105f7546699da74ab3db76adb3f2a48} 
+\index{Captain::UnitIdentifier@{Captain::UnitIdentifier}!Type@{Type}}
+\index{Type@{Type}!Captain::UnitIdentifier@{Captain::UnitIdentifier}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}} Captain\+::\+Unit\+Identifier\+::\+Type = \mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12edaec0fc0100c4fc1ce4eea230c3dc10360}{Unit\+Type\+::\+Undefined}}}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Structs/\mbox{\hyperlink{_unit_identifier_8hpp}{Unit\+Identifier.\+hpp}}\item 
+Sources/captain/\+Structs/\mbox{\hyperlink{_unit_identifier_8cpp}{Unit\+Identifier.\+cpp}}\end{DoxyCompactItemize}

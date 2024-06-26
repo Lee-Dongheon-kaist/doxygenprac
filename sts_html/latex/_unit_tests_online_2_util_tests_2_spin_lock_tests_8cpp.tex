@@ -1,0 +1,70 @@
+\doxysection{Tests/\+Unit\+Tests\+Online/\+Util\+Tests/\+Spin\+Lock\+Tests.cpp File Reference}
+\hypertarget{_unit_tests_online_2_util_tests_2_spin_lock_tests_8cpp}{}\label{_unit_tests_online_2_util_tests_2_spin_lock_tests_8cpp}\index{Tests/UnitTestsOnline/UtilTests/SpinLockTests.cpp@{Tests/UnitTestsOnline/UtilTests/SpinLockTests.cpp}}
+{\ttfamily \#include "{}Spin\+Lock\+Tests.\+hpp"{}}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$captain/\+Util/\+Spin\+Lock\+Vehicle\+Queue.\+hpp$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$doctest/doctest/doctest.\+h$>$}\newline
+Include dependency graph for Spin\+Lock\+Tests.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_unit_tests_online_2_util_tests_2_spin_lock_tests_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_util_test_1_1_task}{Util\+Test\+::\+Task}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_util_test}{Util\+Test}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07}{Util\+Test\+::\+Task\+Type}} \{ \newline
+\mbox{\hyperlink{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07a960b44c579bc2f6818d2daaf9e4c16f0}{Util\+Test\+::\+Normal}}
+, \mbox{\hyperlink{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07aa286d9991c6a547ae25a5f5216164b8f}{Util\+Test\+::\+Join}}
+, \mbox{\hyperlink{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07ace2c8aed9c2fa0cfbed56cbda4d8bf07}{Util\+Test\+::\+Empty}}
+, \mbox{\hyperlink{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07a960b44c579bc2f6818d2daaf9e4c16f0}{Util\+Test\+::\+Normal}}
+, \newline
+\mbox{\hyperlink{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07aa286d9991c6a547ae25a5f5216164b8f}{Util\+Test\+::\+Join}}
+, \mbox{\hyperlink{namespace_util_test_af90c00d3cbee2fc94067224be5d3ff07ace2c8aed9c2fa0cfbed56cbda4d8bf07}{Util\+Test\+::\+Empty}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_util_test_a516b72083700c488d8f1b9923622933f}{Util\+Test\+::\+Spin\+Lock\+Vehicle\+Queue\+Enqueue\+Dequeue}} ()
+\item 
+void \mbox{\hyperlink{namespace_util_test_ae7a643ae574ce868d7974effa6882a8c}{Util\+Test\+::\+Spin\+Lock\+Vehicle\+Queue\+Definite\+Enqueue\+Dequeue}} ()
+\item 
+void \mbox{\hyperlink{namespace_util_test_aefcd34bdd1418b09f9fcebec1519818e}{Util\+Test\+::\+Thread\+Enqueue}} (\mbox{\hyperlink{class_captain_1_1_spin_lock_vehicle_queue}{Spin\+Lock\+Vehicle\+Queue}} \texorpdfstring{$\ast$}{*}vehicle\+Queue\+Ptr, \mbox{\hyperlink{namespace_util_test_a575b0c7d1a86debcd924ed587803267c}{size\+\_\+t}} num)
+\item 
+void \mbox{\hyperlink{namespace_util_test_a2b84c910a1938d0339b9fdd3d6e92a3a}{Util\+Test\+::\+Thread\+Dequeue}} (\mbox{\hyperlink{class_captain_1_1_spin_lock_vehicle_queue}{Spin\+Lock\+Vehicle\+Queue}} \texorpdfstring{$\ast$}{*}vehicle\+Queue\+Ptr, \mbox{\hyperlink{namespace_util_test_a575b0c7d1a86debcd924ed587803267c}{size\+\_\+t}} num)
+\item 
+void \mbox{\hyperlink{namespace_util_test_ad8caf84b46ff9a974082ebc3423f8990}{Util\+Test\+::\+Spin\+Lock\+Parallel\+Enqueue\+Dequeue}} (\mbox{\hyperlink{namespace_util_test_a575b0c7d1a86debcd924ed587803267c}{size\+\_\+t}} thread\+Num)
+\item 
+void \mbox{\hyperlink{namespace_util_test_a64f0062ccc7c63c0e29f78e8aa5df61e}{Util\+Test\+::\+Spin\+Lock\+Serial\+Enqueue\+Dequeue}} ()
+\item 
+void \mbox{\hyperlink{namespace_util_test_aeb873af6536b653bdc82817590316d82}{Util\+Test\+::\+Spin\+Lock\+Parallel\+Enqueue\+Dequeue}} ()
+\item 
+void \mbox{\hyperlink{namespace_util_test_a86ab91e561dc794a669256c9e3ef6671}{Util\+Test\+::\+Spin\+Lock\+Queue\+Insert\+Extract}} ()
+\item 
+void \mbox{\hyperlink{namespace_util_test_ac7df144f01b0eb844d8e9ca6e43b50c1}{Util\+Test\+::\+Spin\+Lock\+Vehicle\+Queue\+Compare\+Insert\+Test}} (\mbox{\hyperlink{namespace_util_test_a575b0c7d1a86debcd924ed587803267c}{size\+\_\+t}} capacity)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+STS19 \doxylink{namespace_captain}{Captain} Copyright (c) 2019 Justin Kim, Kaist Copying, reproducing and commercial use is not allowed. We are not conveying any rights to any intellectual property of any third parties
+
+\begin{DoxyVersion}{Version}
+\+: 1.\+0 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Author}
+\+: Justin Kim 
+\end{DoxyAuthor}

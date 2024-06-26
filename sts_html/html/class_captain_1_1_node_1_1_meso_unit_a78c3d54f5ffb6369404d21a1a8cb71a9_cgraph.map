@@ -1,0 +1,5 @@
+<map id="Captain::Node::MesoUnit::MoveLaneChangeVehicles" name="Captain::Node::MesoUnit::MoveLaneChangeVehicles">
+<area shape="rect" id="Node000001" title="Moves vehicle that will Lane change to left or right." alt="" coords="5,5,187,48"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_util_1_1_vehicle_queue.html#a4fba47e268eae735f1e2bd4def05a789" title=" " alt="" coords="235,5,416,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,24,219,24,219,29,187,29"/>
+</map>

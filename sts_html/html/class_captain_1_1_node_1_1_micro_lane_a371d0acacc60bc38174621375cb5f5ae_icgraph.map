@@ -1,0 +1,7 @@
+<map id="Captain::Node::MicroLane::GetCurrentFollowerUnitNum" name="Captain::Node::MicroLane::GetCurrentFollowerUnitNum">
+<area shape="rect" id="Node000001" title=" " alt="" coords="298,39,488,81"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_micro_lane.html#af76a177c26d2913f37b977f9a9b0a6f9" title=" " alt="" coords="42,5,213,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="282,49,213,40,214,35,283,43"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_node_1_1_micro_lane.html#a1b7a35256242768fde5f54fb27145804" title=" " alt="" coords="5,72,250,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="282,77,250,81,250,75,282,71"/>
+</map>

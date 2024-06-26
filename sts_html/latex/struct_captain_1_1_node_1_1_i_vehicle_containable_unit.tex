@@ -1,0 +1,488 @@
+\doxysection{Captain\+::Node\+::IVehicle\+Containable\+Unit Struct Reference}
+\hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+
+
+Interface that defines methods for classes that can possess vehicles required by meso and micro links.  
+
+
+
+
+{\ttfamily \#include $<$Interfaces.\+hpp$>$}
+
+
+
+Inheritance diagram for Captain\+::Node\+::IVehicle\+Containable\+Unit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_captain_1_1_node_1_1_i_vehicle_containable_unit__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Captain\+::Node\+::IVehicle\+Containable\+Unit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{struct_captain_1_1_node_1_1_i_vehicle_containable_unit__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a3db1dd4b55b697a798f64e8f5900b02c}{IVehicle\+Containable\+Unit}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&unit\+Identifier)
+\item 
+virtual \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_abfb684c58bb0826a607b417773ce8863}{\texorpdfstring{$\sim$}{\string~}\+IVehicle\+Containable\+Unit}} ()=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_aa56da4b677191490dc5209e59083bd6f}{IVehicle\+Containable\+Unit}} (const \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} \&i\+Vehicle\+Containable\+Unit)=delete
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a592d1e3a3110a78d054ddf08019d605d}{IVehicle\+Containable\+Unit}} (\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} \&\&i\+Vehicle\+Containable\+Unit) noexcept
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} \& \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a838a2faf2c5147dff03f4b903b4f145d}{operator=}} (const \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} \&i\+Linkable)=default
+\item 
+\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} \& \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a9c8bb064ece505f6208335f24b61702b}{operator=}} (\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} \&\&i\+Linkable) noexcept=default
+\item 
+virtual std\+::size\+\_\+t \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a5f5ff81d850ec7aad0e1db06d4360a2b}{Get\+Current\+Num\+Vehicles}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets current number of vehicles in the queue. \end{DoxyCompactList}\item 
+virtual std\+::size\+\_\+t \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a735c35cf60c90a1c21dcd856cb6d9fa7}{Get\+Current\+Num\+Waiting\+Vehicles}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets current number of vehicles in the wait queue. \end{DoxyCompactList}\item 
+virtual std\+::optional$<$ \mbox{\hyperlink{namespace_captain_ac03838c8d2941d5da8169c3ec7a4d868}{Vehicle\+Weak\+Ptr}} $>$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a6a2df75712eaa89245eb1664dbd9e6d7}{Get\+Leading\+Vehicle\+Ptr}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets vehicle\+Ptr of leading vehicle. \end{DoxyCompactList}\item 
+virtual std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a112617dfc6bde6bf4555699d2813d1d6}{Get\+Following\+Vehicle\+Ptr}} ()=0
+\begin{DoxyCompactList}\small\item\em Brings back vehicle\+Ptr of following vehicle. \end{DoxyCompactList}\item 
+virtual std\+::optional$<$ \mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$ $>$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a88721d263688e77810d5a044a9525b2c}{Find\+Leader\+Vehicle\+By\+Position}} (\mbox{\hyperlink{struct_captain_1_1_position}{Position}} position)
+\item 
+virtual std\+::optional$<$ \mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$ $>$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a7c51f1b3d268ce26ab44f54636e7f8fd}{Find\+Follower\+Vehicle\+By\+Position}} (\mbox{\hyperlink{struct_captain_1_1_position}{Position}} position)
+\item 
+virtual void \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_ae3fb8f20863fb4aeb1e569152763d3b4}{Push\+Vehicle}} (\mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} \&\&vehicle\+Ptr)=0
+\begin{DoxyCompactList}\small\item\em Adds vehicle to this unit. \end{DoxyCompactList}\item 
+virtual std\+::size\+\_\+t \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_acf2c6e94010bee623330e583be4044c4}{Get\+Num\+Vehicle\+In\+Cell}} (double length, std\+::size\+\_\+t cycle, bool from\+Front)=0
+\item 
+virtual std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_aee7da19fad5088987ef15476f60594d6}{Pop\+Vehicle}} ()=0
+\begin{DoxyCompactList}\small\item\em Pops vehicle from previous Link from specific lane\textquotesingle{}s waiting container. \end{DoxyCompactList}\item 
+virtual std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a7fb9975a6b067c428bf518e7e3e0c6fb}{Peek\+Vehicle}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets reference to last vehicle in the queue. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a200a71997b29c63d95109fd3c821909c}{Identifier}} () const
+\begin{DoxyCompactList}\small\item\em Gets unique identifier of the particular unit. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a7a5ce0cc29d1acef69942f3ff6eb4029}{Get\+Length}} () const =0
+\begin{DoxyCompactList}\small\item\em Gets Length of unit. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a064eeaeccd3c012721ddfaeeca64ee63}{Get\+Width}} () const =0
+\begin{DoxyCompactList}\small\item\em Gets Width of unit. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a4c8737b7681dd892635d0b352f804405}{Get\+Stop\+Vehicle}} (\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} identifier)
+\item 
+void \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a01db5817d9fd00fb8103b0bfe0895fcb}{Set\+Stop\+Vehicle}} (\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} identifier, \mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}} state)
+\item 
+void \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a1e88a800cb808f28b715444d5999eb02}{Initialize\+Signal}} ()
+\item 
+virtual \mbox{\hyperlink{namespace_captain_abc914229623e9ca890ab012482a5e89c}{Signal\+Mode}} \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a9c0d17f26b92fe37699922e13b6f8eb9}{Get\+Signal\+Mode}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&leader\+Unit) const
+\begin{DoxyCompactList}\small\item\em Gets signal mode of given leader Unit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_af7357fcfe246c5a1de302c4bfbdd1e00}{Set\+Signal}} (const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&leader\+Unit, \mbox{\hyperlink{namespace_captain_abc914229623e9ca890ab012482a5e89c}{Signal\+Mode}} signal)
+\begin{DoxyCompactList}\small\item\em Sets signal for given leader unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a1aedde0c7a1f383f31fbff1f2e8f1b63}{Is\+Equal}} (\mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} $>$ laneA, \mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} $>$ laneB)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a9bb687a4ebb768bf466d53dbf8b1c9d0}{Max\+Speed}} = 0
+\item 
+\mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}} \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a5d3e6931c36d2a3a72a1ed6fe884e8be}{Parent\+Link\+Unit\+Type}} = \mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12edaf19516d11f2946f894070e92fcb56b6d}{Unit\+Type\+::\+Uniform}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_adfd5d171b6579448e9850efb9e46f658}{m\+\_\+identifier}}
+\item 
+std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}}, \mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$ $>$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_ae655029155119ae6b493b2bfece9eaf2}{m\+\_\+stop\+Vehicle\+Map}}
+\item 
+\mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Util\+::\+Event\+Recorder}} \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_adbca2a3847e90e8edc1bfe0342ed3e89}{m\+\_\+event\+Recorder}}
+\item 
+std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}}, \mbox{\hyperlink{namespace_captain_abc914229623e9ca890ab012482a5e89c}{Signal\+Mode}} $>$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a0f9cf92cd1b6df83d77d8c578896cab7}{m\+\_\+signal\+Map}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface that defines methods for classes that can possess vehicles required by meso and micro links. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a3db1dd4b55b697a798f64e8f5900b02c}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a3db1dd4b55b697a798f64e8f5900b02c} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!IVehicleContainableUnit@{IVehicleContainableUnit}}
+\index{IVehicleContainableUnit@{IVehicleContainableUnit}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{IVehicleContainableUnit()}{IVehicleContainableUnit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::\+IVehicle\+Containable\+Unit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{unit\+Identifier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_abfb684c58bb0826a607b417773ce8863}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_abfb684c58bb0826a607b417773ce8863} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!````~IVehicleContainableUnit@{\texorpdfstring{$\sim$}{\string~}IVehicleContainableUnit}}
+\index{````~IVehicleContainableUnit@{\texorpdfstring{$\sim$}{\string~}IVehicleContainableUnit}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IVehicleContainableUnit()}{\string~IVehicleContainableUnit()}}
+{\footnotesize\ttfamily virtual Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::\texorpdfstring{$\sim$}{\string~}\+IVehicle\+Containable\+Unit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_aa56da4b677191490dc5209e59083bd6f}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_aa56da4b677191490dc5209e59083bd6f} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!IVehicleContainableUnit@{IVehicleContainableUnit}}
+\index{IVehicleContainableUnit@{IVehicleContainableUnit}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{IVehicleContainableUnit()}{IVehicleContainableUnit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::\+IVehicle\+Containable\+Unit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} \&}]{i\+Vehicle\+Containable\+Unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a592d1e3a3110a78d054ddf08019d605d}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a592d1e3a3110a78d054ddf08019d605d} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!IVehicleContainableUnit@{IVehicleContainableUnit}}
+\index{IVehicleContainableUnit@{IVehicleContainableUnit}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{IVehicleContainableUnit()}{IVehicleContainableUnit()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::\+IVehicle\+Containable\+Unit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} \&\&}]{i\+Vehicle\+Containable\+Unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a7c51f1b3d268ce26ab44f54636e7f8fd}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a7c51f1b3d268ce26ab44f54636e7f8fd} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!FindFollowerVehicleByPosition@{FindFollowerVehicleByPosition}}
+\index{FindFollowerVehicleByPosition@{FindFollowerVehicleByPosition}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{FindFollowerVehicleByPosition()}{FindFollowerVehicleByPosition()}}
+{\footnotesize\ttfamily virtual std\+::optional$<$ \mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$ $>$ Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::\+Find\+Follower\+Vehicle\+By\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_position}{Position}}}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a566b68b994166d1e5d6cf8ab55cd1185}{Captain\+::\+Node\+::\+Micro\+Lane}}.
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a88721d263688e77810d5a044a9525b2c}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a88721d263688e77810d5a044a9525b2c} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!FindLeaderVehicleByPosition@{FindLeaderVehicleByPosition}}
+\index{FindLeaderVehicleByPosition@{FindLeaderVehicleByPosition}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{FindLeaderVehicleByPosition()}{FindLeaderVehicleByPosition()}}
+{\footnotesize\ttfamily virtual std\+::optional$<$ \mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$ $>$ Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::\+Find\+Leader\+Vehicle\+By\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_position}{Position}}}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a7bd169080fa3941ebd3fbc92c93eb902}{Captain\+::\+Node\+::\+Micro\+Lane}}.
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a5f5ff81d850ec7aad0e1db06d4360a2b}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a5f5ff81d850ec7aad0e1db06d4360a2b} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!GetCurrentNumVehicles@{GetCurrentNumVehicles}}
+\index{GetCurrentNumVehicles@{GetCurrentNumVehicles}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{GetCurrentNumVehicles()}{GetCurrentNumVehicles()}}
+{\footnotesize\ttfamily virtual std\+::size\+\_\+t Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::\+Get\+Current\+Num\+Vehicles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets current number of vehicles in the queue. 
+
+\begin{DoxyReturn}{Returns}
+number of vehicles in main queue 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a5d2c8ab6900d6686555c6339463b707b}{Captain\+::\+Node\+::\+Meso\+Unit}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a71fd46fa5babd47b8010adaf7f0527d3}{Captain\+::\+Node\+::\+Micro\+Lane}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_sink_unit_ae7014def6b6592103c99f61b8e64fa76}{Captain\+::\+Node\+::\+Sink\+Unit}}, and \mbox{\hyperlink{class_captain_1_1_node_1_1_source_unit_ae41f679106ba4782323f36d354eecf1e}{Captain\+::\+Node\+::\+Source\+Unit}}.
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a735c35cf60c90a1c21dcd856cb6d9fa7}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a735c35cf60c90a1c21dcd856cb6d9fa7} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!GetCurrentNumWaitingVehicles@{GetCurrentNumWaitingVehicles}}
+\index{GetCurrentNumWaitingVehicles@{GetCurrentNumWaitingVehicles}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{GetCurrentNumWaitingVehicles()}{GetCurrentNumWaitingVehicles()}}
+{\footnotesize\ttfamily virtual std\+::size\+\_\+t Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::\+Get\+Current\+Num\+Waiting\+Vehicles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets current number of vehicles in the wait queue. 
+
+\begin{DoxyReturn}{Returns}
+number of vehicles in the wait queue 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_ab6689542eb425b15b11618322a0132f8}{Captain\+::\+Node\+::\+Micro\+Lane}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_ab0acad8e1d9a7afbfa897de15bfe27de}{Captain\+::\+Node\+::\+Meso\+Unit}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_sink_unit_ab53e99c2592ea06caa1aaf73ec7773b3}{Captain\+::\+Node\+::\+Sink\+Unit}}, and \mbox{\hyperlink{class_captain_1_1_node_1_1_source_unit_abe4dc4ba85c61d8ecbdfe3e1d6e3ac86}{Captain\+::\+Node\+::\+Source\+Unit}}.
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a112617dfc6bde6bf4555699d2813d1d6}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a112617dfc6bde6bf4555699d2813d1d6} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!GetFollowingVehiclePtr@{GetFollowingVehiclePtr}}
+\index{GetFollowingVehiclePtr@{GetFollowingVehiclePtr}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{GetFollowingVehiclePtr()}{GetFollowingVehiclePtr()}}
+{\footnotesize\ttfamily virtual std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::\+Get\+Following\+Vehicle\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Brings back vehicle\+Ptr of following vehicle. 
+
+\begin{DoxyReturn}{Returns}
+vehicle\+Ptr of leading vehicle of the unit m\+\_\+default\+Vehicle\+Ptr if such vehicle does not exist 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a37b669b81efce94d681fb46711add799}{Captain\+::\+Node\+::\+Meso\+Unit}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a0986f7ad56e0a1f863e77d52fe3a4dce}{Captain\+::\+Node\+::\+Micro\+Lane}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_sink_unit_a5aac80f3be71ca21268fa27c3d5f1ac2}{Captain\+::\+Node\+::\+Sink\+Unit}}, and \mbox{\hyperlink{class_captain_1_1_node_1_1_source_unit_a7ec5074b120d5d21559b7f5489e00eb7}{Captain\+::\+Node\+::\+Source\+Unit}}.
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a6a2df75712eaa89245eb1664dbd9e6d7}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a6a2df75712eaa89245eb1664dbd9e6d7} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!GetLeadingVehiclePtr@{GetLeadingVehiclePtr}}
+\index{GetLeadingVehiclePtr@{GetLeadingVehiclePtr}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{GetLeadingVehiclePtr()}{GetLeadingVehiclePtr()}}
+{\footnotesize\ttfamily virtual std\+::optional$<$ \mbox{\hyperlink{namespace_captain_ac03838c8d2941d5da8169c3ec7a4d868}{Vehicle\+Weak\+Ptr}} $>$ Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::\+Get\+Leading\+Vehicle\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets vehicle\+Ptr of leading vehicle. 
+
+\begin{DoxyReturn}{Returns}
+vehicle\+Ptr of leading vehicle of the unit m\+\_\+default\+Vehicle\+Ptr if such vehicle does not exist 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a77c9bfe76f3c87ab8dda54ecd2ec0414}{Captain\+::\+Node\+::\+Meso\+Unit}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a5804cd5a20b9e47642d108dd2d8bdafc}{Captain\+::\+Node\+::\+Micro\+Lane}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_sink_unit_a09b032432210860cc0674805639707f7}{Captain\+::\+Node\+::\+Sink\+Unit}}, and \mbox{\hyperlink{class_captain_1_1_node_1_1_source_unit_aff83a07c7a41dcc0b0b8be8a205eae66}{Captain\+::\+Node\+::\+Source\+Unit}}.
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a7a5ce0cc29d1acef69942f3ff6eb4029}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a7a5ce0cc29d1acef69942f3ff6eb4029} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!GetLength@{GetLength}}
+\index{GetLength@{GetLength}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{GetLength()}{GetLength()}}
+{\footnotesize\ttfamily virtual double Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::\+Get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets Length of unit. 
+
+\begin{DoxyReturn}{Returns}
+Length of the unit 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a870178534f01be86d89cbb5038f061ce}{Captain\+::\+Node\+::\+Meso\+Unit}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_af086e53cdead1318fcd1e9ea835a2344}{Captain\+::\+Node\+::\+Micro\+Lane}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_sink_unit_acb65a2ecc1a626a1879435f68dba031d}{Captain\+::\+Node\+::\+Sink\+Unit}}, and \mbox{\hyperlink{class_captain_1_1_node_1_1_source_unit_aa5953f2f314b3cf095be4f7880402abd}{Captain\+::\+Node\+::\+Source\+Unit}}.
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_acf2c6e94010bee623330e583be4044c4}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_acf2c6e94010bee623330e583be4044c4} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!GetNumVehicleInCell@{GetNumVehicleInCell}}
+\index{GetNumVehicleInCell@{GetNumVehicleInCell}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{GetNumVehicleInCell()}{GetNumVehicleInCell()}}
+{\footnotesize\ttfamily virtual std\+::size\+\_\+t Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::\+Get\+Num\+Vehicle\+In\+Cell (\begin{DoxyParamCaption}\item[{double}]{length,  }\item[{std\+::size\+\_\+t}]{cycle,  }\item[{bool}]{from\+Front }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_acd960f884563dfea1fb028ec1556bbb8}{Captain\+::\+Node\+::\+Micro\+Lane}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_abe783a2e964a03b9f425499f56d7ee5a}{Captain\+::\+Node\+::\+Meso\+Unit}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_sink_unit_a76c46103164ab25094995c56c1bbf2f4}{Captain\+::\+Node\+::\+Sink\+Unit}}, and \mbox{\hyperlink{class_captain_1_1_node_1_1_source_unit_a3e2b74a8869a64171c15cac8e16b334e}{Captain\+::\+Node\+::\+Source\+Unit}}.
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a9c0d17f26b92fe37699922e13b6f8eb9}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a9c0d17f26b92fe37699922e13b6f8eb9} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!GetSignalMode@{GetSignalMode}}
+\index{GetSignalMode@{GetSignalMode}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{GetSignalMode()}{GetSignalMode()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_captain_abc914229623e9ca890ab012482a5e89c}{Signal\+Mode}} Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::\+Get\+Signal\+Mode (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{leader\+Unit }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets signal mode of given leader Unit. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_captain_1_1_node_1_1_sink_unit_aa3257b133a2185892f157cb094126af0}{Captain\+::\+Node\+::\+Sink\+Unit}}.
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a4c8737b7681dd892635d0b352f804405}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a4c8737b7681dd892635d0b352f804405} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!GetStopVehicle@{GetStopVehicle}}
+\index{GetStopVehicle@{GetStopVehicle}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{GetStopVehicle()}{GetStopVehicle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}} $>$ Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::\+Get\+Stop\+Vehicle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}}}]{identifier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a064eeaeccd3c012721ddfaeeca64ee63}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a064eeaeccd3c012721ddfaeeca64ee63} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{GetWidth()}{GetWidth()}}
+{\footnotesize\ttfamily virtual double Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets Width of unit. 
+
+\begin{DoxyReturn}{Returns}
+width of the unit 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a4b7c22bcc037931355790e2f0d7effa8}{Captain\+::\+Node\+::\+Meso\+Unit}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a0e809c90e411c6e213147384a3ec9026}{Captain\+::\+Node\+::\+Micro\+Lane}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_sink_unit_a11503ffacc04459d24ea2d6c6656b542}{Captain\+::\+Node\+::\+Sink\+Unit}}, and \mbox{\hyperlink{class_captain_1_1_node_1_1_source_unit_aa61962250d54061258931fb708d0cb2e}{Captain\+::\+Node\+::\+Source\+Unit}}.
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a200a71997b29c63d95109fd3c821909c}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a200a71997b29c63d95109fd3c821909c} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!Identifier@{Identifier}}
+\index{Identifier@{Identifier}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{Identifier()}{Identifier()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::\+Identifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets unique identifier of the particular unit. 
+
+\begin{DoxyReturn}{Returns}
+unique \doxylink{struct_captain_1_1_unit_identifier}{Unit\+Identifier} of the unit 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a200a71997b29c63d95109fd3c821909c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a1e88a800cb808f28b715444d5999eb02}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a1e88a800cb808f28b715444d5999eb02} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!InitializeSignal@{InitializeSignal}}
+\index{InitializeSignal@{InitializeSignal}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{InitializeSignal()}{InitializeSignal()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::\+Initialize\+Signal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a1e88a800cb808f28b715444d5999eb02_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a1aedde0c7a1f383f31fbff1f2e8f1b63}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a1aedde0c7a1f383f31fbff1f2e8f1b63} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!IsEqual@{IsEqual}}
+\index{IsEqual@{IsEqual}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{IsEqual()}{IsEqual()}}
+{\footnotesize\ttfamily static bool Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::\+Is\+Equal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} $>$}]{laneA,  }\item[{\mbox{\hyperlink{class_captain_1_1_weak_ptr}{Weak\+Ptr}}$<$ \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} $>$}]{laneB }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a1aedde0c7a1f383f31fbff1f2e8f1b63_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a838a2faf2c5147dff03f4b903b4f145d}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a838a2faf2c5147dff03f4b903b4f145d} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} \& Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} \&}]{i\+Linkable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a838a2faf2c5147dff03f4b903b4f145d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a9c8bb064ece505f6208335f24b61702b}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a9c8bb064ece505f6208335f24b61702b} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!operator=@{operator=}}
+\index{operator=@{operator=}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} \& Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_node_1_1_i_vehicle_containable_unit}{IVehicle\+Containable\+Unit}} \&\&}]{i\+Linkable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a7fb9975a6b067c428bf518e7e3e0c6fb}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a7fb9975a6b067c428bf518e7e3e0c6fb} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!PeekVehicle@{PeekVehicle}}
+\index{PeekVehicle@{PeekVehicle}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{PeekVehicle()}{PeekVehicle()}}
+{\footnotesize\ttfamily virtual std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::\+Peek\+Vehicle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets reference to last vehicle in the queue. 
+
+\begin{DoxyReturn}{Returns}
+reference to last vehicle in the queue 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_ab5435bd1e06cd98cafd200cb6a3d3900}{Captain\+::\+Node\+::\+Meso\+Unit}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a4b7102e1805113a99fd626bbc022e361}{Captain\+::\+Node\+::\+Micro\+Lane}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_sink_unit_aec9b2bb233d82155e06419d26fe9576f}{Captain\+::\+Node\+::\+Sink\+Unit}}, and \mbox{\hyperlink{class_captain_1_1_node_1_1_source_unit_a59f8fbff14eb0b4335daa2929c53c23d}{Captain\+::\+Node\+::\+Source\+Unit}}.
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_aee7da19fad5088987ef15476f60594d6}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_aee7da19fad5088987ef15476f60594d6} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!PopVehicle@{PopVehicle}}
+\index{PopVehicle@{PopVehicle}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{PopVehicle()}{PopVehicle()}}
+{\footnotesize\ttfamily virtual std\+::optional$<$ \mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} $>$ Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::\+Pop\+Vehicle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pops vehicle from previous Link from specific lane\textquotesingle{}s waiting container. 
+
+\begin{DoxyReturn}{Returns}
+Vehicle\+Ptr that has been popped nullptr if it fails 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a5c6e0a074a9d2e1eb5b5d0ccb22af0c6}{Captain\+::\+Node\+::\+Meso\+Unit}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a44ef1d91152f4c065a0f10ea7cdc680f}{Captain\+::\+Node\+::\+Micro\+Lane}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_sink_unit_aedbdf85eabfc5f9f9ccf9ed57b6e5423}{Captain\+::\+Node\+::\+Sink\+Unit}}, and \mbox{\hyperlink{class_captain_1_1_node_1_1_source_unit_ab19f84652eeed3494500e64030eb17ec}{Captain\+::\+Node\+::\+Source\+Unit}}.
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_ae3fb8f20863fb4aeb1e569152763d3b4}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_ae3fb8f20863fb4aeb1e569152763d3b4} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!PushVehicle@{PushVehicle}}
+\index{PushVehicle@{PushVehicle}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{PushVehicle()}{PushVehicle()}}
+{\footnotesize\ttfamily virtual void Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::\+Push\+Vehicle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_captain_aa93445088331f71b3cbf8411328fbc92}{Vehicle\+Ptr}} \&\&}]{vehicle\+Ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds vehicle to this unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vehicle\+Ptr} & ptr to vehicle to accept and push \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_captain_1_1_node_1_1_meso_unit_a942d8030b0dd71d82f7e769c51715be1}{Captain\+::\+Node\+::\+Meso\+Unit}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_micro_lane_a1268626fcdf20aef960d86d49efa668e}{Captain\+::\+Node\+::\+Micro\+Lane}}, \mbox{\hyperlink{class_captain_1_1_node_1_1_sink_unit_aea5b2945e46b9e08182cf383b3acad5a}{Captain\+::\+Node\+::\+Sink\+Unit}}, and \mbox{\hyperlink{class_captain_1_1_node_1_1_source_unit_ade7c8ac0982c32e4da89c11320e65ddc}{Captain\+::\+Node\+::\+Source\+Unit}}.
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_af7357fcfe246c5a1de302c4bfbdd1e00}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_af7357fcfe246c5a1de302c4bfbdd1e00} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!SetSignal@{SetSignal}}
+\index{SetSignal@{SetSignal}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{SetSignal()}{SetSignal()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::\+Set\+Signal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} \&}]{leader\+Unit,  }\item[{\mbox{\hyperlink{namespace_captain_abc914229623e9ca890ab012482a5e89c}{Signal\+Mode}}}]{signal }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets signal for given leader unit. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_af7357fcfe246c5a1de302c4bfbdd1e00_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a01db5817d9fd00fb8103b0bfe0895fcb}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a01db5817d9fd00fb8103b0bfe0895fcb} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!SetStopVehicle@{SetStopVehicle}}
+\index{SetStopVehicle@{SetStopVehicle}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{SetStopVehicle()}{SetStopVehicle()}}
+{\footnotesize\ttfamily void Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::\+Set\+Stop\+Vehicle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}}}]{identifier,  }\item[{\mbox{\hyperlink{struct_captain_1_1_vehicle_state}{Vehicle\+State}}}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a01db5817d9fd00fb8103b0bfe0895fcb_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_adbca2a3847e90e8edc1bfe0342ed3e89}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_adbca2a3847e90e8edc1bfe0342ed3e89} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!m\_eventRecorder@{m\_eventRecorder}}
+\index{m\_eventRecorder@{m\_eventRecorder}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{m\_eventRecorder}{m\_eventRecorder}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_captain_1_1_util_1_1_event_recorder}{Util\+::\+Event\+Recorder}} Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::m\+\_\+event\+Recorder\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_adfd5d171b6579448e9850efb9e46f658}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_adfd5d171b6579448e9850efb9e46f658} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!m\_identifier@{m\_identifier}}
+\index{m\_identifier@{m\_identifier}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{m\_identifier}{m\_identifier}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}} Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::m\+\_\+identifier\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a0f9cf92cd1b6df83d77d8c578896cab7}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a0f9cf92cd1b6df83d77d8c578896cab7} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!m\_signalMap@{m\_signalMap}}
+\index{m\_signalMap@{m\_signalMap}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{m\_signalMap}{m\_signalMap}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}}, \mbox{\hyperlink{namespace_captain_abc914229623e9ca890ab012482a5e89c}{Signal\+Mode}}$>$ Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::m\+\_\+signal\+Map\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_ae655029155119ae6b493b2bfece9eaf2}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_ae655029155119ae6b493b2bfece9eaf2} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!m\_stopVehicleMap@{m\_stopVehicleMap}}
+\index{m\_stopVehicleMap@{m\_stopVehicleMap}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{m\_stopVehicleMap}{m\_stopVehicleMap}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$\mbox{\hyperlink{struct_captain_1_1_unit_identifier}{Unit\+Identifier}}, \mbox{\hyperlink{class_captain_1_1_shared_ptr}{Shared\+Ptr}}$<$\mbox{\hyperlink{class_captain_1_1_vehicle}{Vehicle}}$>$ $>$ Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::m\+\_\+stop\+Vehicle\+Map\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a9bb687a4ebb768bf466d53dbf8b1c9d0}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a9bb687a4ebb768bf466d53dbf8b1c9d0} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!MaxSpeed@{MaxSpeed}}
+\index{MaxSpeed@{MaxSpeed}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{MaxSpeed}{MaxSpeed}}
+{\footnotesize\ttfamily double Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::\+Max\+Speed = 0}
+
+\Hypertarget{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a5d3e6931c36d2a3a72a1ed6fe884e8be}\label{struct_captain_1_1_node_1_1_i_vehicle_containable_unit_a5d3e6931c36d2a3a72a1ed6fe884e8be} 
+\index{Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}!ParentLinkUnitType@{ParentLinkUnitType}}
+\index{ParentLinkUnitType@{ParentLinkUnitType}!Captain::Node::IVehicleContainableUnit@{Captain::Node::IVehicleContainableUnit}}
+\doxysubsubsection{\texorpdfstring{ParentLinkUnitType}{ParentLinkUnitType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12ed}{Unit\+Type}} Captain\+::\+Node\+::\+IVehicle\+Containable\+Unit\+::\+Parent\+Link\+Unit\+Type = \mbox{\hyperlink{namespace_captain_a38149aa61f72b199b74c440c961e12edaf19516d11f2946f894070e92fcb56b6d}{Unit\+Type\+::\+Uniform}}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Includes/captain/\+Network/\mbox{\hyperlink{_interfaces_8hpp}{Interfaces.\+hpp}}\end{DoxyCompactItemize}

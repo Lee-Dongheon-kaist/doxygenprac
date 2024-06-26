@@ -1,0 +1,8 @@
+<map id="Captain::Node::EnhancedMicroLink::Initialize" name="Captain::Node::EnhancedMicroLink::Initialize">
+<area shape="rect" id="Node000001" title="Initializes Linkable unit and ready to be executed." alt="" coords="503,5,704,48"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_uniform_intersection_link.html#acf29dec344b5b4845b0a5464d6b44a06" title="Initializes Linkable unit and ready to be executed." alt="" coords="5,5,228,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="487,26,455,25,276,25,228,26,228,21,276,20,455,20,487,21"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_node_1_1_uniform_link.html#a855d32334913df4bfc9e3cf37c39f931" title="Initializes Linkable unit and ready to be executed." alt="" coords="276,35,455,77"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="488,44,456,48,455,42,487,38"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="260,46,228,42,228,37,261,41"/>
+</map>

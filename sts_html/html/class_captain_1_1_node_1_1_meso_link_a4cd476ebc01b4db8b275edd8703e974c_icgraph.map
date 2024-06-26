@@ -1,0 +1,5 @@
+<map id="Captain::Node::MesoLink::GetLaneSize" name="Captain::Node::MesoLink::GetLaneSize">
+<area shape="rect" id="Node000001" title="Brings size of lane vector." alt="" coords="233,5,400,48"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_uniform_link.html#af2e36ae53cb5ba736529659dc2f5545e" title=" " alt="" coords="5,5,185,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,29,185,29,185,24,217,24"/>
+</map>

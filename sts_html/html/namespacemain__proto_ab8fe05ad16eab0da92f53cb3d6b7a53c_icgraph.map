@@ -1,0 +1,10 @@
+<map id="main_proto.link_ids" name="main_proto.link_ids">
+<area shape="rect" id="Node000001" title=" " alt="" coords="363,31,496,57"/>
+<area shape="rect" id="Node000002" href="$namespacemain__proto.html#adb3cacccc3bcc0a1c76375cae9346592" title=" " alt="" coords="5,5,152,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="347,41,152,27,152,21,347,35"/>
+<area shape="rect" id="Node000003" href="$namespacemain__proto.html#a9c87ca6be07c77a5bb72e8e350bd9f6d" title=" " alt="" coords="200,56,315,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="348,59,316,64,315,58,347,53"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="192,54,128,35,129,30,194,49"/>
+<area shape="rect" id="Node000004" href="$namespacemain__proto.html#a33b7c50e4e23eac7ac5285ed3f48fa8e" title=" " alt="" coords="11,56,146,99"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="184,75,146,77,146,72,184,70"/>
+</map>

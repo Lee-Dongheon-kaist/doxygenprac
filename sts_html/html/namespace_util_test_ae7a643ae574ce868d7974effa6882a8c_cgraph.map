@@ -1,0 +1,9 @@
+<map id="UtilTest::SpinLockVehicleQueueDefiniteEnqueueDequeue" name="UtilTest::SpinLockVehicleQueueDefiniteEnqueueDequeue">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,72,210,115"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_spin_lock_vehicle_queue.html#afffac359f78b4c274f6b46b1551f7f0c" title=" " alt="" coords="258,5,428,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,69,249,50,251,55,186,74"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_spin_lock_vehicle_queue.html#a1e77130fe04ed28b3587acd054868f7d" title=" " alt="" coords="258,72,428,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,91,242,91,242,96,210,96"/>
+<area shape="rect" id="Node000004" href="$class_captain_1_1_spin_lock_vehicle_queue.html#a57e192eb1ae67c0ca307ae347a8e0b3b" title=" " alt="" coords="258,139,428,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="186,113,251,131,249,136,184,118"/>
+</map>
