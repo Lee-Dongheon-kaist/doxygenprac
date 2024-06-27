@@ -21,7 +21,6 @@ var searchData=
   ['originwavetraveltime_18',['OriginWaveTravelTime',['../struct_captain_1_1_vehicle_info.html#abc2b0c5ac580b98629571fa9ad6aa2ab',1,'Captain::VehicleInfo']]],
   ['outflow_19',['Outflow',['../struct_captain_1_1_lane_record_info.html#aa163b0ae34bc3e948379b9db4be78375',1,'Captain::LaneRecordInfo']]],
   ['output_20',['Output',['../namespace_captain_1_1_util.html#a53b4cb54f3218c67643407a602174f41a29c2c02a361c9d7028472e5d92cd4a54',1,'Captain::Util']]],
-  ['output_20handler_21',['STS19 Simulation Input/Output Handler',['../md__libraries_2gookto__io_2_r_e_a_d_m_e.html',1,'']]],
-  ['outputcycle_22',['OutputCycle',['../class_captain_1_1_vehicle_reservation_info.html#a4865a1df80bb24cb4a1c8ebd6afe9c3e',1,'Captain::VehicleReservationInfo']]],
-  ['outputdirectory_23',['OutputDirectory',['../namespace_captain_1_1_recorder_params.html#a6b1e4cafa727e88517981cd850a998dd',1,'Captain::RecorderParams']]]
+  ['outputcycle_21',['OutputCycle',['../class_captain_1_1_vehicle_reservation_info.html#a4865a1df80bb24cb4a1c8ebd6afe9c3e',1,'Captain::VehicleReservationInfo']]],
+  ['outputdirectory_22',['OutputDirectory',['../namespace_captain_1_1_recorder_params.html#a6b1e4cafa727e88517981cd850a998dd',1,'Captain::RecorderParams']]]
 ];

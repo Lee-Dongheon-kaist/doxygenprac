@@ -24,8 +24,8 @@
 */
 var NAVTREE =
 [
-  [ "STS19", "index.html", [
-    [ "STS19 Simulation Input/Output Handler", "md__libraries_2gookto__io_2_r_e_a_d_m_e.html", [
+  [ "NextSIM", "index.html", [
+    [ "IO Handler", "md__libraries_2gookto__io_2_r_e_a_d_m_e.html", [
       [ "Build", "md__libraries_2gookto__io_2_r_e_a_d_m_e.html#autotoc_md1", null ]
     ] ],
     [ "Todo List", "todo.html", null ],
