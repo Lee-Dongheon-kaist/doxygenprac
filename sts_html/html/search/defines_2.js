@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['dec_0',['DEC',['../_c_make_c_compiler_id_8c.html#ad1280362da42492bbc11aa78cbf776ad',1,'DEC:&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#ad1280362da42492bbc11aa78cbf776ad',1,'DEC:&#160;CMakeCXXCompilerId.cpp']]],
-  ['doctest_5fconfig_5fimplement_5fwith_5fmain_1',['DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN',['../_route_generator_2_tests_8cpp.html#a623b8690a262536536a43eab2d7df03d',1,'DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN:&#160;Tests.cpp'],['../_unit_tests_offline_2_tests_8cpp.html#a623b8690a262536536a43eab2d7df03d',1,'DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN:&#160;Tests.cpp'],['../_unit_tests_online_2_tests_8cpp.html#a623b8690a262536536a43eab2d7df03d',1,'DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN:&#160;Tests.cpp']]]
+  ['unused_0',['UNUSED',['../_interfaces_8hpp.html#aea1d71af1a30c261dbd16745c82e94ba',1,'Interfaces.hpp']]]
 ];

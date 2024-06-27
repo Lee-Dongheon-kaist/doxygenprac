@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['tixmlattributeset_0',['TiXmlAttributeSet',['../class_ti_xml_attribute.html#a35a7b7f89f708527677d5078d41ce0bf',1,'TiXmlAttribute']]],
-  ['tixmldocument_1',['TiXmlDocument',['../class_ti_xml_base.html#a173617f6dfe902cf484ce5552b950475',1,'TiXmlBase::TiXmlDocument'],['../class_ti_xml_node.html#a173617f6dfe902cf484ce5552b950475',1,'TiXmlNode::TiXmlDocument'],['../class_ti_xml_parsing_data.html#a173617f6dfe902cf484ce5552b950475',1,'TiXmlParsingData::TiXmlDocument']]],
-  ['tixmlelement_2',['TiXmlElement',['../class_ti_xml_base.html#ab6592e32cb9132be517cc12a70564c4b',1,'TiXmlBase::TiXmlElement'],['../class_ti_xml_node.html#ab6592e32cb9132be517cc12a70564c4b',1,'TiXmlNode::TiXmlElement'],['../class_ti_xml_text.html#ab6592e32cb9132be517cc12a70564c4b',1,'TiXmlText::TiXmlElement']]],
-  ['tixmlnode_3',['TiXmlNode',['../class_ti_xml_base.html#a218872a0d985ae30e78c55adc4bdb196',1,'TiXmlBase']]]
+  ['weakptr_0',['WeakPtr',['../class_captain_1_1_weak_ptr.html#a2df746dc8f5450b6f1eb70897d8d5c8b',1,'Captain::WeakPtr']]],
+  ['weakptr_3c_20t_20_3e_1',['WeakPtr&lt; T &gt;',['../class_captain_1_1_shared_ptr.html#aa41019c2e01db7e96b47e2bf8b2a9f13',1,'Captain::SharedPtr']]]
 ];

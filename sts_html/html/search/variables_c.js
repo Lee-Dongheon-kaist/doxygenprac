@@ -1,16 +1,18 @@
 var searchData=
 [
-  ['od_5flist_0',['od_list',['../namespacemain__proto.html#a19294e8d5b3118df08181fccdd346869',1,'main_proto']]],
-  ['od_5fsection_5flist_1',['od_section_list',['../namespacemain__proto.html#af14d05ff2c58b69c6386d887ed445428',1,'main_proto']]],
-  ['odarr_2',['odArr',['../_unit_tests_offline_2_input_library_tests_8cpp.html#a3d89929170b09c1bbf9dfe622f3dcb10',1,'odArr:&#160;InputLibraryTests.cpp'],['../_unit_tests_online_2_input_library_tests_8cpp.html#a3d89929170b09c1bbf9dfe622f3dcb10',1,'odArr:&#160;InputLibraryTests.cpp']]],
-  ['odscenarioarr_3',['odScenarioArr',['../_unit_tests_offline_2_input_library_tests_8cpp.html#a311d65293e6451a2a6f3a4bbb841150b',1,'odScenarioArr:&#160;InputLibraryTests.cpp'],['../_unit_tests_online_2_input_library_tests_8cpp.html#a311d65293e6451a2a6f3a4bbb841150b',1,'odScenarioArr:&#160;InputLibraryTests.cpp']]],
-  ['offset_4',['offset',['../struct_captain_1_1_node_1_1_unit_connection_info.html#ac6ed26d102951738aa9b915db942db21',1,'Captain::Node::UnitConnectionInfo::offset'],['../namespacemain__proto.html#a752f3431e1ef3dbec591bb7594c6275a',1,'main_proto.offset']]],
-  ['order_5',['order',['../namespacemain__proto.html#ac336dcb9e71b3718bb87c3b56deb310d',1,'main_proto']]],
-  ['origin_5fsection_5fdata_6',['origin_section_data',['../namespacemain__proto.html#a0173551ceaf53c0a96d2170924470127',1,'main_proto']]],
-  ['originjamgap_7',['OriginJamGap',['../struct_captain_1_1_vehicle_info.html#aa095846882c127cfc7d7a870ff658c8d',1,'Captain::VehicleInfo']]],
-  ['originmaxspeed_8',['OriginMaxSpeed',['../struct_captain_1_1_vehicle_info.html#ae407e4f675ad587a1e1d2c4e89f2a5ff',1,'Captain::VehicleInfo']]],
-  ['originwavetraveltime_9',['OriginWaveTravelTime',['../struct_captain_1_1_vehicle_info.html#abc2b0c5ac580b98629571fa9ad6aa2ab',1,'Captain::VehicleInfo']]],
-  ['outflow_10',['Outflow',['../struct_captain_1_1_lane_record_info.html#aa163b0ae34bc3e948379b9db4be78375',1,'Captain::LaneRecordInfo']]],
-  ['outputcycle_11',['OutputCycle',['../class_captain_1_1_vehicle_reservation_info.html#a4865a1df80bb24cb4a1c8ebd6afe9c3e',1,'Captain::VehicleReservationInfo']]],
-  ['outputdirectory_12',['OutputDirectory',['../namespace_captain_1_1_recorder_params.html#a6b1e4cafa727e88517981cd850a998dd',1,'Captain::RecorderParams']]]
+  ['parentlinkunittype_0',['ParentLinkUnitType',['../struct_captain_1_1_node_1_1_i_vehicle_containable_unit.html#a5d3e6931c36d2a3a72a1ed6fe884e8be',1,'Captain::Node::IVehicleContainableUnit']]],
+  ['parked_1',['Parked',['../struct_captain_1_1_vehicle_state.html#ab06f2a4bac469bb10f7de0a4a1bf1516',1,'Captain::VehicleState']]],
+  ['path_2',['Path',['../class_captain_1_1_vehicle.html#adea7555d9a8c25c2c68cc0e418003faa',1,'Captain::Vehicle::Path'],['../class_captain_1_1_vehicle_reservation_info.html#a8f3c0e641381f475f05f38f116c50873',1,'Captain::VehicleReservationInfo::Path']]],
+  ['pathdistance_3',['PathDistance',['../struct_captain_1_1_vehicle_path.html#ac72a14d17bc507d8dda35363c34b4245',1,'Captain::VehiclePath']]],
+  ['pathvector_4',['PathVector',['../struct_captain_1_1_vehicle_path.html#a7fc7da77b0ec18ffa61de76f7f57a331',1,'Captain::VehiclePath']]],
+  ['pax_5',['pax',['../struct_captain_1_1_station_record_info.html#aae79149e0b0c62ed7ff3f939f384278f',1,'Captain::StationRecordInfo']]],
+  ['paxin_6',['paxin',['../struct_captain_1_1_station_record_info.html#a0eee718c3aed1765c0ac57903d3b0920',1,'Captain::StationRecordInfo']]],
+  ['paxout_7',['paxout',['../struct_captain_1_1_station_record_info.html#af46478adbb6d845ae7a58e3f74dfb3d6',1,'Captain::StationRecordInfo']]],
+  ['phaseoffset_8',['PhaseOffset',['../struct_captain_1_1_unit_connection_descriptor.html#af7d578b48505884d1adc2c9bc9a6c8e4',1,'Captain::UnitConnectionDescriptor']]],
+  ['pos_9',['pos',['../struct_captain_1_1_micro_link_event_info.html#a54b5166fd7d629ee4d30b22254b18523',1,'Captain::MicroLinkEventInfo']]],
+  ['previouslaneid_10',['PreviousLaneID',['../struct_captain_1_1_vehicle_state.html#aceae06e542cb7857dd57a016e79618f2',1,'Captain::VehicleState']]],
+  ['previouslinkid_11',['PreviousLinkID',['../struct_captain_1_1_vehicle_state.html#a03cc2192be5cd79d4318ef6893aa71a6',1,'Captain::VehicleState']]],
+  ['primaryid_12',['PrimaryID',['../struct_captain_1_1_unit_identifier.html#a02ffd5bac139e8da74137cd91ea0527d',1,'Captain::UnitIdentifier']]],
+  ['printprogramlog_13',['PrintProgramLog',['../namespace_captain_1_1_recorder_params.html#a5e1135ec9b7b77997ca643ca522a038a',1,'Captain::RecorderParams']]],
+  ['priorityvector_14',['PriorityVector',['../struct_captain_1_1_unit_connection_descriptor.html#a0972692b9959a828194b21acd45aa616',1,'Captain::UnitConnectionDescriptor']]]
 ];

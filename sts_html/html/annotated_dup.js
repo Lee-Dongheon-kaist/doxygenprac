@@ -102,9 +102,6 @@ var annotated_dup =
     [ "std", "namespacestd.html", [
       [ "hash< Captain::UnitIdentifier >", "structstd_1_1hash_3_01_captain_1_1_unit_identifier_01_4.html", "structstd_1_1hash_3_01_captain_1_1_unit_identifier_01_4" ]
     ] ],
-    [ "UtilTest", "namespace_util_test.html", [
-      [ "Task", "struct_util_test_1_1_task.html", "struct_util_test_1_1_task" ]
-    ] ],
     [ "AgentsArr", "class_agents_arr.html", "class_agents_arr" ],
     [ "AgentTypesArr", "class_agent_types_arr.html", "class_agent_types_arr" ],
     [ "connection", "classconnection.html", "classconnection" ],
@@ -135,22 +132,5 @@ var annotated_dup =
     [ "PaxArr", "class_pax_arr.html", "class_pax_arr" ],
     [ "port", "classport.html", "classport" ],
     [ "Scenario", "class_scenario.html", "class_scenario" ],
-    [ "StationArr", "class_station_arr.html", "class_station_arr" ],
-    [ "TiXmlAttribute", "class_ti_xml_attribute.html", "class_ti_xml_attribute" ],
-    [ "TiXmlAttributeSet", "class_ti_xml_attribute_set.html", "class_ti_xml_attribute_set" ],
-    [ "TiXmlBase", "class_ti_xml_base.html", "class_ti_xml_base" ],
-    [ "TiXmlComment", "class_ti_xml_comment.html", "class_ti_xml_comment" ],
-    [ "TiXmlCursor", "struct_ti_xml_cursor.html", "struct_ti_xml_cursor" ],
-    [ "TiXmlDeclaration", "class_ti_xml_declaration.html", "class_ti_xml_declaration" ],
-    [ "TiXmlDocument", "class_ti_xml_document.html", "class_ti_xml_document" ],
-    [ "TiXmlElement", "class_ti_xml_element.html", "class_ti_xml_element" ],
-    [ "TiXmlHandle", "class_ti_xml_handle.html", "class_ti_xml_handle" ],
-    [ "TiXmlNode", "class_ti_xml_node.html", "class_ti_xml_node" ],
-    [ "TiXmlOutStream", "class_ti_xml_out_stream.html", "class_ti_xml_out_stream" ],
-    [ "TiXmlParsingData", "class_ti_xml_parsing_data.html", "class_ti_xml_parsing_data" ],
-    [ "TiXmlPrinter", "class_ti_xml_printer.html", "class_ti_xml_printer" ],
-    [ "TiXmlString", "class_ti_xml_string.html", "class_ti_xml_string" ],
-    [ "TiXmlText", "class_ti_xml_text.html", "class_ti_xml_text" ],
-    [ "TiXmlUnknown", "class_ti_xml_unknown.html", "class_ti_xml_unknown" ],
-    [ "TiXmlVisitor", "class_ti_xml_visitor.html", "class_ti_xml_visitor" ]
+    [ "StationArr", "class_station_arr.html", "class_station_arr" ]
 ];

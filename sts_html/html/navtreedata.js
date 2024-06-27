@@ -24,17 +24,15 @@
 */
 var NAVTREE =
 [
-  [ "My Project", "index.html", [
-    [ "readme", "md__libraries_2gookto__io_2_input_generator_2readme.html", null ],
+  [ "STS19", "index.html", [
     [ "STS19 Simulation Input/Output Handler", "md__libraries_2gookto__io_2_r_e_a_d_m_e.html", [
       [ "Build", "md__libraries_2gookto__io_2_r_e_a_d_m_e.html#autotoc_md1", null ]
     ] ],
     [ "Todo List", "todo.html", null ],
-    [ "Deprecated List", "deprecated.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
-        [ "All", "namespacemembers.html", "namespacemembers_dup" ],
+        [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
         [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ],
@@ -49,9 +47,6 @@ var NAVTREE =
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ],
-        [ "Typedefs", "functions_type.html", null ],
-        [ "Enumerations", "functions_enum.html", null ],
-        [ "Enumerator", "functions_eval.html", null ],
         [ "Related Symbols", "functions_rela.html", null ]
       ] ]
     ] ],
@@ -61,8 +56,6 @@ var NAVTREE =
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
-        [ "Enumerations", "globals_enum.html", null ],
-        [ "Enumerator", "globals_eval.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -72,23 +65,19 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_agent_types_arr_8cpp.html",
-"_node_arr_8cpp.html",
-"_unit_tests_online_2intersection_test_8cpp.html",
-"class_captain_1_1_d_mode_1_1_m_c_f.html#a2d3464b927afe12bd91a039fe60c6c02",
-"class_captain_1_1_node_1_1_enhanced_micro_link.html#a22fa74421e5a024197bde0b5fcf59076",
-"class_captain_1_1_node_1_1_meso_link.html#afbb1c4a6f4d16467ffd0e331d541bfc1",
-"class_captain_1_1_node_1_1_micro_link.html#a514808d89eac28175de9761142c7a25d",
-"class_captain_1_1_node_1_1_uniform_link.html#a65b8d23530cdbb9bff93d5a2c11a00fa",
-"class_captain_1_1_uniform_distribution.html#a33bb7df113458e5a809a7c1ed1356ff4",
-"class_captain_1_1_vehicle.html#a4b4dc4771ae528a7132323679123ec21",
-"class_input_link.html#ad2c24d21a6a784aecd7c8af0545cdc19",
-"class_ti_xml_document.html#a323a7486e7da6099cdc19a5ff7e74b07",
-"classconnection.html#abf70ef0d35acd40b77a0feec58cdab98",
-"md__libraries_2gookto__io_2_r_e_a_d_m_e.html#autotoc_md1",
-"namespacemain__proto.html#a838f481615e8c552011b4e53edff2dd1",
-"struct_captain_1_1_node_1_1_i_linkable.html#a1d02456407b492adcc960d026907bd5a",
-"struct_captain_1_1_unit_identifier.html",
-"struct_captain_1_1_vehicle_record_info.html#a991239a3ab97766fc4e17064d8b1af48"
+"_station_8hpp.html",
+"class_captain_1_1_d_mode_1_1_intersection_c_f.html#a256edcfe19baeadd2846c9fbbb28597c",
+"class_captain_1_1_node_1_1_enhanced_micro_link.html#a123c27f645e0572641ba3915c5135a02",
+"class_captain_1_1_node_1_1_meso_link.html#aea12c9a42d96e285c9b77e1cfd0217cc",
+"class_captain_1_1_node_1_1_micro_link.html",
+"class_captain_1_1_node_1_1_uniform_link.html#a605d692a49830ea0ac5378272e02dd8d",
+"class_captain_1_1_spin_lock_vehicle_queue.html#af7a762fdcb2aa8d68d2453932ba06d2c",
+"class_captain_1_1_vehicle.html#a3c8f2279f6b81c0d797f2d16ecc0ca17",
+"class_input_link.html#a8a5df8e2705cdcfbc39404387fa2e9a8",
+"functions_func_v.html",
+"struct_captain_1_1_i_event_recordable.html#aed6ba9b275dfef1362cf6ad32d092453",
+"struct_captain_1_1_path_identifier.html#a80ca8828c611382e4dcbebe0391be260",
+"struct_captain_1_1_vehicle_info.html#abc2b0c5ac580b98629571fa9ad6aa2ab"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

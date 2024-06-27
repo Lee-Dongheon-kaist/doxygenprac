@@ -1,16 +1,12 @@
 <map id="Captain::stringToUnitType" name="Captain::stringToUnitType">
-<area shape="rect" id="Node000001" title=" " alt="" coords="936,35,1106,61"/>
-<area shape="rect" id="Node000002" href="$class_captain_1_1_engine.html#a1d24c67492ad8ce4ae4ba01e216dd90a" title=" " alt="" coords="664,5,888,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="920,39,888,35,889,29,920,33"/>
-<area shape="rect" id="Node000007" href="$class_captain_1_1_engine.html#ad81e51c73e2b257fe0df2aedf1d6a424" title=" " alt="" coords="678,56,874,99"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="921,63,875,68,874,63,920,57"/>
-<area shape="rect" id="Node000003" href="$class_captain_1_1_engine.html#a6cd29623750e0874cb7b4b6080570035" title=" " alt="" coords="430,5,615,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="649,21,616,21,616,16,649,16"/>
-<area shape="rect" id="Node000006" href="$class_captain_1_1_engine.html#af256ec7a83b9a7d1cf794aac0c978dd9" title=" " alt="" coords="429,60,616,87"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="697,38,588,62,587,57,696,33"/>
-<area shape="rect" id="Node000004" href="$namespace_captain.html#a28d05f81eb9a6ae94957ef0d19dbadae" title=" " alt="" coords="150,5,381,32"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="414,21,382,21,382,16,414,16"/>
-<area shape="rect" id="Node000005" href="$_unit_tests_offline_2_tests_8cpp.html#ac3f953ba175aad09655a164a3cd6d61e" title=" " alt="" coords="5,5,102,32"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="134,21,102,21,102,16,134,16"/>
-<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="662,78,617,77,617,72,662,73"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="512,35,682,61"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_engine.html#a1d24c67492ad8ce4ae4ba01e216dd90a" title=" " alt="" coords="241,5,464,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="496,39,464,35,465,29,497,33"/>
+<area shape="rect" id="Node000005" href="$class_captain_1_1_engine.html#ad81e51c73e2b257fe0df2aedf1d6a424" title=" " alt="" coords="254,56,451,99"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="497,63,451,68,451,63,496,57"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_engine.html#a6cd29623750e0874cb7b4b6080570035" title=" " alt="" coords="6,5,192,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="225,21,192,21,192,16,225,16"/>
+<area shape="rect" id="Node000004" href="$class_captain_1_1_engine.html#af256ec7a83b9a7d1cf794aac0c978dd9" title=" " alt="" coords="5,60,193,87"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="273,38,165,62,164,57,272,33"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="239,78,193,77,193,72,239,73"/>
 </map>

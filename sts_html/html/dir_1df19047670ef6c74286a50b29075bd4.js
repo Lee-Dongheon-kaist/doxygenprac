@@ -1,7 +1,6 @@
 var dir_1df19047670ef6c74286a50b29075bd4 =
 [
     [ "intersection", "dir_b9f7b04877e6f1efc4d33738340bb4c4.html", "dir_b9f7b04877e6f1efc4d33738340bb4c4" ],
-    [ "tinyapi", "dir_6bee52bb8297955f1a986d8c8ea2d28b.html", "dir_6bee52bb8297955f1a986d8c8ea2d28b" ],
     [ "AgentsArr.cpp", "_agents_arr_8cpp.html", null ],
     [ "AgentTypesArr.cpp", "_agent_types_arr_8cpp.html", null ],
     [ "Demand.cpp", "_demand_8cpp.html", null ],

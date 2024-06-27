@@ -1,7 +1,5 @@
 <map id="Captain::SharedPtr::GetCurrentRefCount" name="Captain::SharedPtr::GetCurrentRefCount">
-<area shape="rect" id="Node000001" title=" " alt="" coords="220,27,365,69"/>
-<area shape="rect" id="Node000002" href="$namespace_captain.html#a04863314395903a4c95022acd7e9ac7b" title=" " alt="" coords="5,5,172,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,38,172,33,172,28,205,33"/>
-<area shape="rect" id="Node000003" href="$class_captain_1_1_shared_ptr.html#ad86df0632eeaef19a75127d9345d8342" title=" " alt="" coords="23,56,154,99"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="205,63,155,71,154,65,204,58"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="185,5,330,48"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_shared_ptr.html#ad86df0632eeaef19a75127d9345d8342" title=" " alt="" coords="5,5,137,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,29,137,29,137,24,169,24"/>
 </map>

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['none_0',['None',['../namespace_captain.html#adb2da0ffbadc1747f448261fec9e7d2ba6adf97f83acf6453d4a6a4b1070f3754',1,'Captain']]],
-  ['normal_1',['Normal',['../namespace_captain.html#a7beee45092c6ec8047abf2040729bfcaa960b44c579bc2f6818d2daaf9e4c16f0',1,'Captain::Normal'],['../namespace_util_test.html#af90c00d3cbee2fc94067224be5d3ff07a960b44c579bc2f6818d2daaf9e4c16f0',1,'UtilTest::Normal'],['../namespace_util_test.html#af90c00d3cbee2fc94067224be5d3ff07a960b44c579bc2f6818d2daaf9e4c16f0',1,'UtilTest::Normal'],['../namespace_util_test.html#af90c00d3cbee2fc94067224be5d3ff07a960b44c579bc2f6818d2daaf9e4c16f0',1,'UtilTest::Normal'],['../namespace_util_test.html#af90c00d3cbee2fc94067224be5d3ff07a960b44c579bc2f6818d2daaf9e4c16f0',1,'UtilTest::Normal']]]
+  ['off_0',['off',['../namespace_captain.html#a4534e2a65e59cb670cb8dbc573f1c38fa3262d48df5d75e3452f0f16b313b7808',1,'Captain']]],
+  ['on_1',['on',['../namespace_captain.html#a4534e2a65e59cb670cb8dbc573f1c38faed2b5c0139cec8ad2873829dc1117d50',1,'Captain']]],
+  ['output_2',['Output',['../namespace_captain_1_1_util.html#a53b4cb54f3218c67643407a602174f41a29c2c02a361c9d7028472e5d92cd4a54',1,'Captain::Util']]]
 ];

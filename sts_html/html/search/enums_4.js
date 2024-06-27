@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nodetype_0',['NodeType',['../class_ti_xml_node.html#a836eded4920ab9e9ef28496f48cd95a2',1,'TiXmlNode']]]
+  ['signalmode_0',['SignalMode',['../namespace_captain.html#abc914229623e9ca890ab012482a5e89c',1,'Captain']]]
 ];

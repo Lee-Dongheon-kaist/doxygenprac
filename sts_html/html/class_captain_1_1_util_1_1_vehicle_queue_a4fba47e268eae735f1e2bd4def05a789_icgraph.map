@@ -1,7 +1,5 @@
 <map id="Captain::Util::VehicleQueue::Extract" name="Captain::Util::VehicleQueue::Extract">
-<area shape="rect" id="Node000001" title=" " alt="" coords="240,39,421,81"/>
-<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_meso_unit.html#a78c3d54f5ffb6369404d21a1a8cb71a9" title="Moves vehicle that will Lane change to left or right." alt="" coords="8,5,189,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,47,189,42,190,37,224,42"/>
-<area shape="rect" id="Node000003" href="$namespace_util_test.html#a5103e6ad5dff7cbfa52d417bef7cd94f" title=" " alt="" coords="5,72,192,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="224,78,193,83,192,77,224,73"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="235,5,416,48"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_meso_unit.html#a78c3d54f5ffb6369404d21a1a8cb71a9" title="Moves vehicle that will Lane change to left or right." alt="" coords="5,5,187,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,29,187,29,187,24,219,24"/>
 </map>

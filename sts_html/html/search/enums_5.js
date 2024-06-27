@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['signalmode_0',['SignalMode',['../namespace_captain.html#abc914229623e9ca890ab012482a5e89c',1,'Captain']]]
+  ['unittype_0',['UnitType',['../namespace_captain.html#a38149aa61f72b199b74c440c961e12ed',1,'Captain']]]
 ];

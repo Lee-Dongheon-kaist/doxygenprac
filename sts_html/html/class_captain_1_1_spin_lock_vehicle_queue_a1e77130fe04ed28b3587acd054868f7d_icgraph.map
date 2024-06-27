@@ -1,13 +1,7 @@
 <map id="Captain::SpinLockVehicleQueue::DefiniteEnqueue" name="Captain::SpinLockVehicleQueue::DefiniteEnqueue">
-<area shape="rect" id="Node000001" title=" " alt="" coords="476,105,646,148"/>
-<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_source_unit.html#a965464c356d41e5254bf792e85fd0e62" title=" " alt="" coords="236,5,416,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="506,100,427,62,397,51,399,46,429,58,508,95"/>
-<area shape="rect" id="Node000003" href="$class_captain_1_1_node_1_1_source_unit.html#ade7c8ac0982c32e4da89c11320e65ddc" title=" " alt="" coords="238,72,414,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="461,115,413,108,414,103,461,110"/>
-<area shape="rect" id="Node000004" href="$namespace_util_test.html#ae7a643ae574ce868d7974effa6882a8c" title=" " alt="" coords="224,139,428,181"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="461,143,429,148,428,143,460,138"/>
-<area shape="rect" id="Node000005" href="$namespace_util_test.html#aefcd34bdd1418b09f9fcebec1519818e" title=" " alt="" coords="244,205,408,232"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="510,158,429,196,393,207,391,202,427,191,508,153"/>
-<area shape="rect" id="Node000006" href="$namespace_util_test.html#ad8caf84b46ff9a974082ebc3423f8990" title=" " alt="" coords="5,197,176,240"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="229,221,176,221,176,216,229,216"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="234,39,404,81"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_node_1_1_source_unit.html#a965464c356d41e5254bf792e85fd0e62" title=" " alt="" coords="5,5,186,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,48,186,43,187,38,219,42"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_node_1_1_source_unit.html#ade7c8ac0982c32e4da89c11320e65ddc" title=" " alt="" coords="8,72,183,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="219,78,184,83,183,78,218,72"/>
 </map>

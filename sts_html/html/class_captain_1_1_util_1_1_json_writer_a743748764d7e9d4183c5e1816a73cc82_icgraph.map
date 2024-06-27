@@ -1,15 +1,7 @@
 <map id="Captain::Util::JsonWriter::TerminateWritingJson" name="Captain::Util::JsonWriter::TerminateWritingJson">
-<area shape="rect" id="Node000001" title=" " alt="" coords="655,39,818,81"/>
-<area shape="rect" id="Node000002" href="$class_captain_1_1_engine.html#a921cc1015bd55ffc7c1674d8b74f02b1" title=" " alt="" coords="437,5,600,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="640,48,600,42,601,37,640,43"/>
-<area shape="rect" id="Node000005" href="$class_captain_1_1_engine.html#a35bea714497e63ced4fd1d00805b8adc" title=" " alt="" coords="429,72,607,115"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="640,77,608,82,607,77,640,72"/>
-<area shape="rect" id="Node000003" href="$namespace_captain.html#a28d05f81eb9a6ae94957ef0d19dbadae" title=" " alt="" coords="150,13,381,40"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="421,29,381,29,381,24,421,24"/>
-<area shape="rect" id="Node000004" href="$_unit_tests_offline_2_tests_8cpp.html#ac3f953ba175aad09655a164a3cd6d61e" title=" " alt="" coords="5,13,102,40"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="134,29,102,29,102,24,134,24"/>
-<area shape="rect" id="Node000006" href="$namespace_captain.html#a665a166c7e1e452720b28e98e4a977e8" title=" " alt="" coords="180,80,351,107"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="414,96,351,96,351,91,414,91"/>
-<area shape="rect" id="Node000007" href="$_route_generator_2_tests_8cpp.html#a5aecfdcebd415ce15807205d456f4f0b" title=" " alt="" coords="5,80,102,107"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="165,96,102,96,102,91,165,91"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="232,39,394,81"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_engine.html#a921cc1015bd55ffc7c1674d8b74f02b1" title=" " alt="" coords="13,5,176,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,48,176,42,177,37,217,43"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_engine.html#a35bea714497e63ced4fd1d00805b8adc" title=" " alt="" coords="5,72,184,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,77,185,82,184,77,216,72"/>
 </map>

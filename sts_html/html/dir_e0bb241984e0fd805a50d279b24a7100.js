@@ -1,7 +1,6 @@
 var dir_e0bb241984e0fd805a50d279b24a7100 =
 [
     [ "intersection", "dir_5e04ee9b70d3b34a8fbbc529769ae47c.html", "dir_5e04ee9b70d3b34a8fbbc529769ae47c" ],
-    [ "tinyapi", "dir_87701bfcb2b34668c98fa1cf2eb31cb0.html", "dir_87701bfcb2b34668c98fa1cf2eb31cb0" ],
     [ "AgentsArr.hpp", "_agents_arr_8hpp.html", "_agents_arr_8hpp" ],
     [ "AgentTypesArr.hpp", "_agent_types_arr_8hpp.html", "_agent_types_arr_8hpp" ],
     [ "BaseClass.hpp", "_base_class_8hpp.html", "_base_class_8hpp" ],

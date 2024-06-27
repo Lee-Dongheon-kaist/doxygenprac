@@ -1,22 +1,17 @@
 <map id="Captain::Util::JsonWriter::vehiclePathToJson" name="Captain::Util::JsonWriter::vehiclePathToJson">
-<area shape="rect" id="Node000001" title=" " alt="" coords="840,72,1002,115"/>
-<area shape="rect" id="Node000002" href="$class_captain_1_1_util_1_1_json_writer.html#a4fcec9906fe58ba9c0c5f1b7e708b23a" title=" " alt="" coords="615,5,777,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="831,70,770,51,771,46,833,65"/>
-<area shape="rect" id="Node000006" href="$class_captain_1_1_util_1_1_json_writer.html#aaf384bec138d0dcad085e156a43c23d7" title=" " alt="" coords="600,72,792,115"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="824,96,792,96,792,91,824,91"/>
-<area shape="rect" id="Node000008" href="$class_captain_1_1_util_1_1_json_writer.html#a8b4d8516d9229fdbab5e68f1f97786df" title=" " alt="" coords="615,139,777,181"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="833,122,771,141,770,135,831,117"/>
-<area shape="rect" id="Node000003" href="$class_captain_1_1_engine.html#ad37d2ef3bc43787bc2cfb5c8c02f0c8e" title=" " alt="" coords="379,5,542,48"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="599,29,542,29,542,24,599,24"/>
-<area shape="rect" id="Node000004" href="$namespace_captain.html#a665a166c7e1e452720b28e98e4a977e8" title=" " alt="" coords="150,47,320,73"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="364,44,321,50,320,45,363,38"/>
-<area shape="rect" id="Node000005" href="$_route_generator_2_tests_8cpp.html#a5aecfdcebd415ce15807205d456f4f0b" title=" " alt="" coords="5,47,102,73"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="134,63,102,63,102,57,134,57"/>
-<area shape="rect" id="Node000007" href="$class_captain_1_1_engine.html#a89d809e4a2570a738b8454fa37bf656e" title=" " alt="" coords="379,72,542,115"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="585,96,542,96,542,91,585,91"/>
-<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="363,82,320,75,321,70,364,76"/>
-<area shape="rect" id="Node000009" href="$class_captain_1_1_util_1_1_event_recorder.html#a7b50ab5f3c04e09333b73ec7d45e0121" title=" " alt="" coords="368,139,552,181"/>
-<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="599,163,553,163,553,157,599,157"/>
-<area shape="rect" id="Node000010" href="$class_captain_1_1_vehicle.html#a4ad0dd90e10a75c0f5533226fec1244f" title=" " alt="" coords="152,139,318,181"/>
-<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="352,163,319,163,319,157,352,157"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="691,72,854,115"/>
+<area shape="rect" id="Node000002" href="$class_captain_1_1_util_1_1_json_writer.html#a4fcec9906fe58ba9c0c5f1b7e708b23a" title=" " alt="" coords="467,5,629,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="683,70,622,51,623,46,685,65"/>
+<area shape="rect" id="Node000004" href="$class_captain_1_1_util_1_1_json_writer.html#aaf384bec138d0dcad085e156a43c23d7" title=" " alt="" coords="452,72,643,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="676,96,644,96,644,91,676,91"/>
+<area shape="rect" id="Node000006" href="$class_captain_1_1_util_1_1_json_writer.html#a8b4d8516d9229fdbab5e68f1f97786df" title=" " alt="" coords="467,139,629,181"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="685,122,623,141,622,135,683,117"/>
+<area shape="rect" id="Node000003" href="$class_captain_1_1_engine.html#ad37d2ef3bc43787bc2cfb5c8c02f0c8e" title=" " alt="" coords="230,5,394,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="451,29,394,29,394,24,451,24"/>
+<area shape="rect" id="Node000005" href="$class_captain_1_1_engine.html#a89d809e4a2570a738b8454fa37bf656e" title=" " alt="" coords="230,72,394,115"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="436,96,394,96,394,91,436,91"/>
+<area shape="rect" id="Node000007" href="$class_captain_1_1_util_1_1_event_recorder.html#a7b50ab5f3c04e09333b73ec7d45e0121" title=" " alt="" coords="220,139,404,181"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="451,163,404,163,404,157,451,157"/>
+<area shape="rect" id="Node000008" href="$class_captain_1_1_vehicle.html#a4ad0dd90e10a75c0f5533226fec1244f" title=" " alt="" coords="5,139,172,181"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="204,163,172,163,172,157,204,157"/>
 </map>
