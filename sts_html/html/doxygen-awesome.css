@@ -546,7 +546,7 @@ a.anchor {
     height: var(--searchbar-height);
     background: var(--searchbar-background);
     border-radius: var(--searchbar-border-radius);
-    border: 3px solid #F0D109;/*var(--separator-color)*/
+    border: 2px solid #F0D109;/*var(--separator-color)*/
     overflow: hidden;
     width: var(--searchbar-width);
     position: relative;
