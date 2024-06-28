@@ -601,8 +601,8 @@ a.anchor {
 }
 
 #MSearchBox.MSearchBoxActive {
-    border-color: #ffc000;/*var(--primary-color)*/
-    box-shadow: inset 0 0 0 1px #ffc000;/*var(--primary-color)*/
+    border-color: #F0D109;/*var(--primary-color)*/
+    box-shadow: inset 0 0 0 1px #F0D109;/*var(--primary-color)*/
 }
 
 #main-menu > li:last-child {
