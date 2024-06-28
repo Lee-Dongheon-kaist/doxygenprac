@@ -29,7 +29,7 @@ SOFTWARE.
 
 html {
     /* primary theme color. This will affect the entire websites color scheme: links, arrows, labels, ... */
-    --primary-color: #1779c4;
+    --primary-color: #223764;
     --primary-dark-color: #335c80;
     --primary-light-color: #70b1e9;
 
@@ -101,7 +101,7 @@ html {
 
     /* blockquote colors */
     --blockquote-background: #f8f9fa;
-    --blockquote-foreground: #636568;
+    --blockquote-foreground: #96989b;
 
     /* table colors */
     --tablehead-background: #f1f1f1;
@@ -332,7 +332,7 @@ p.reference, p.definition {
 }
 
 a:link, a:visited, a:hover, a:focus, a:active {
-    color: #c00000 !important; /*var(--primary-color)*/
+    color: #5679c6 !important; /*var(--primary-color)*/
     font-weight: 500;
     background: none;
 }
@@ -939,7 +939,7 @@ td.memSeparator {
 }
 
 span.mlabel {
-    background: #ffff00;/*var(--primary-color)*/
+    background: var(--primary-color);
     border: none;
     padding: 4px 9px;
     border-radius: 12px;
@@ -2069,7 +2069,7 @@ table.directory tr.odd {
 }
 
 .icon {
-    background: #7030a0;/*var(--primary-color)*/
+    background: #f0d109;/*var(--primary-color)*/
     border-radius: var(--border-radius-small);
     font-size: var(--page-font-size);
     padding: calc(var(--page-font-size) / 5);
@@ -2188,7 +2188,7 @@ address.footer {
 .navpath li.navelem a {
     text-shadow: none;
     display: inline-block;
-    color: #e59edd !important;/*var(--primary-color)*/
+    color: var(--primary-color);
 }
 
 .navpath li.navelem b {
