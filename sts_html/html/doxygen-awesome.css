@@ -29,7 +29,7 @@ SOFTWARE.
 
 html {
     /* primary theme color. This will affect the entire websites color scheme: links, arrows, labels, ... */
-    --primary-color: #223764;
+    --primary-color: #1779c4;
     --primary-dark-color: #335c80;
     --primary-light-color: #70b1e9;
 
@@ -332,7 +332,7 @@ p.reference, p.definition {
 }
 
 a:link, a:visited, a:hover, a:focus, a:active {
-    color: var(--primary-color) !important;
+    color: #c00000 !important; /*var(--primary-color)*/
     font-weight: 500;
     background: none;
 }
@@ -601,8 +601,8 @@ a.anchor {
 }
 
 #MSearchBox.MSearchBoxActive {
-    border-color: var(--primary-color);
-    box-shadow: inset 0 0 0 1px var(--primary-color);
+    border-color: #ffc000;/*var(--primary-color)*/
+    box-shadow: inset 0 0 0 1px #ffc000;/*var(--primary-color)*/
 }
 
 #main-menu > li:last-child {
@@ -939,7 +939,7 @@ td.memSeparator {
 }
 
 span.mlabel {
-    background: var(--primary-color);
+    background: #ffff00;/*var(--primary-color)*/
     border: none;
     padding: 4px 9px;
     border-radius: 12px;
@@ -1132,7 +1132,7 @@ div.toc li a {
 }
 
 div.toc li a:hover, div.toc li a.active {
-    color: var(--primary-color) !important;
+    color: #92d050!important; /*var(--primary-color)*/
 }
 
 div.toc li a.aboveActive {
@@ -1177,7 +1177,7 @@ div.toc li a.aboveActive {
         height: 0; 
         border-left: 4px solid transparent;
         border-right: 4px solid transparent;
-        border-top: 5px solid var(--primary-color);
+        border-top: 5px solid #00b050; /*var(--primary-color)*/
         display: inline-block;
         margin-right: var(--spacing-small);
         margin-bottom: calc(var(--navigation-font-size) / 4);
@@ -1196,7 +1196,7 @@ div.toc li a.aboveActive {
     }
 
     div.contents .toc a, div.contents .toc a.active {
-        color: var(--primary-color) !important;
+        color: #00b0f0 !important; /*var(--primary-color)*/
     }
 
     div.contents .toc a:hover {
@@ -1874,7 +1874,7 @@ div.dynheader img[src="closed.png"] {
     height: 0; 
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-top: 5px solid var(--primary-color);
+    border-top: 5px solid #0070c0;/*var(--primary-color)*/
     margin-top: 8px;
     display: block;
     float: left;
@@ -2069,7 +2069,7 @@ table.directory tr.odd {
 }
 
 .icon {
-    background: var(--primary-color);
+    background: #7030a0;/*var(--primary-color)*/
     border-radius: var(--border-radius-small);
     font-size: var(--page-font-size);
     padding: calc(var(--page-font-size) / 5);
@@ -2188,7 +2188,7 @@ address.footer {
 .navpath li.navelem a {
     text-shadow: none;
     display: inline-block;
-    color: var(--primary-color) !important;
+    color: #e59edd !important;/*var(--primary-color)*/
 }
 
 .navpath li.navelem b {
@@ -2231,7 +2231,7 @@ li.navelem:first-child:before {
 }
 
 .navpath li.navelem a:hover {
-    color: var(--primary-color);
+    color: #7f7f7f; /*var(--primary-color)*/
 }
 
 /*
@@ -2560,7 +2560,7 @@ h2:hover a.anchorlink, h1:hover a.anchorlink, h3:hover a.anchorlink, h4:hover a.
     width: 0%;
     margin: 0 auto;
     border-radius: var(--border-radius-small) var(--border-radius-small) 0 0;
-    background-color: var(--primary-color);
+    background-color: #88fcd5;/*var(--primary-color)*/
     transition: width var(--animation-duration) ease-in-out, height var(--animation-duration) ease-in-out;
 }
 
